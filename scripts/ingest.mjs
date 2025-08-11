@@ -215,7 +215,8 @@ ${body}`);
   try {
     const writtenContent = await fs.readFile(publicData, 'utf8');
     const parsedContent = JSON.parse(writtenContent);
-    console.log(`Verified: Written file contains ${parsedContent.length} items`);
+    const itemCount = parsedContent.articles ? parsedContent.articles.length : parsedContent.length;
+    console.log(`Verified: Written file contains ${itemCount} items`);
   } catch (verifyError) {
     console.error('Failed to verify written file:', verifyError.message);
   }
