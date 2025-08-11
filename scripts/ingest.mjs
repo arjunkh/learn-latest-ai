@@ -105,7 +105,14 @@ async function main() {
   const parser = new Parser();
   const cacheDir = path.join(process.cwd(), 'data', 'cache');
   const publicData = path.join(process.cwd(), 'public', 'data', 'items.json');
+  
+  // Debug: Print current working directory and paths
+  console.log(`Current working directory: ${process.cwd()}`);
+  console.log(`Cache directory: ${cacheDir}`);
+  console.log(`Public data file: ${publicData}`);
+  
   await fs.mkdir(cacheDir, { recursive: true });
+  await fs.mkdir(path.dirname(publicData), { recursive: true });
 
   const existing = new Set(await fs.readdir(cacheDir).catch(() => []));
   const records = [];
@@ -182,8 +189,30 @@ ${body}`);
   const latest = records.filter(r => new Date(r.published_at).getTime() >= cutoff)
                         .sort((a, b) => b.published_at.localeCompare(a.published_at));
 
-  await fs.mkdir(path.dirname(publicData), { recursive: true });
+  // Debug: Show what we're about to write
+  console.log(`About to write ${latest.length} items to: ${publicData}`);
+  console.log(`Sample titles: ${latest.slice(0, 3).map(item => item.title).join(', ')}`);
+  
+  // Check if file exists before writing
+  const fileExistsBefore = await fs.access(publicData).then(() => true).catch(() => false);
+  console.log(`File exists before write: ${fileExistsBefore}`);
+  
+  // Write the file
   await fs.writeFile(publicData, JSON.stringify(latest, null, 2));
+  
+  // Verify the file was written
+  const fileExistsAfter = await fs.access(publicData).then(() => true).catch(() => false);
+  console.log(`File exists after write: ${fileExistsAfter}`);
+  
+  // Read back and verify content
+  try {
+    const writtenContent = await fs.readFile(publicData, 'utf8');
+    const parsedContent = JSON.parse(writtenContent);
+    console.log(`Verified: Written file contains ${parsedContent.length} items`);
+  } catch (verifyError) {
+    console.error('Failed to verify written file:', verifyError.message);
+  }
+  
   console.log(`Built ${latest.length} items → public/data/items.json`);
 }
 
