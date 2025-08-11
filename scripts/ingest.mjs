@@ -59,16 +59,18 @@ Dek: ${lede}`;
 }
 
 async function summarizeArticle(fullText) {
-  const prompt = `You are a precise AI news editor. Summarize the article.
+  const prompt = `You are an expert AI news analyst. Create a high-quality summary that captures what makes this article unique and important.
 
 Return ONLY a valid JSON object (no markdown formatting) with keys:
-- speedrun: <=40 words, one sentence, plain English
-- why_it_matters: array of 2 bullets, each <=14 words
+
+- speedrun: 60-80 words explaining the core news/development and its immediate significance
+- why_it_matters: array of 2 bullets, each 20-30 words, focusing on specific implications and concrete impacts  
 - lenses:
-  - eli12: 2-3 sentences, simple language
-  - pm: 2-3 sentences on users, market, differentiation, risks
-  - engineer: 2-3 sentences on method, data, constraints, limits
-Constraints: Be factual. No hype. If uncertain, state what is unknown.
+  - eli12: 3-4 sentences using simple language to explain what happened, why it's cool, and what it means for regular people
+  - pm: 3-4 sentences covering: who will use this, what problems it solves, competitive advantages, and real business risks/opportunities
+  - engineer: 3-4 sentences on: technical approach, architecture/methods, performance characteristics, and specific limitations or constraints
+
+Focus on what makes THIS article unique. Avoid generic statements. Be specific about capabilities, use cases, and implications.
 
 Article:
 ${fullText}`;
@@ -76,7 +78,7 @@ ${fullText}`;
   const res = await client.chat.completions.create({
     model: 'gpt-4o-mini',
     messages: [{ role: 'user', content: prompt }],
-    temperature: 0.2
+    temperature: 0.3
   });
   
   let content = res.choices[0]?.message?.content || '{}';
