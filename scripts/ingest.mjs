@@ -198,7 +198,14 @@ ${body}`);
   console.log(`File exists before write: ${fileExistsBefore}`);
   
   // Write the file
-  await fs.writeFile(publicData, JSON.stringify(latest, null, 2));
+  // Add metadata to ensure file always changes
+  const output = {
+    generated_at: new Date().toISOString(),
+    total_articles: latest.length,
+    articles: latest
+  };
+  
+  await fs.writeFile(publicData, JSON.stringify(output, null, 2));
   
   // Verify the file was written
   const fileExistsAfter = await fs.access(publicData).then(() => true).catch(() => false);
