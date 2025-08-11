@@ -37,15 +37,15 @@ export default async function Page() {
   )
 }
 
-// function Filters() {
-//   return (
-//     <div className="flex flex-wrap gap-2">
-//       {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
-//         <span key={t} className="badge">{t}</span>
-//       ))}
-//     </div>
-//   )
-// }
+function Filters() {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
+        <span key={t} className="badge">{t}</span>
+      ))}
+    </div>
+  )
+}
 
 function EmptyState() {
   return (
