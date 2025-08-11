@@ -2,9 +2,24 @@
 import { useState } from 'react'
 import clsx from 'clsx'
 
-export type Lens = 'eli12' | 'pm' | 'engineer'
+export type Lens = 'simple' | 'pm' | 'engineer'
+
+function getCategoryDisplayName(category: string): string {
+  switch (category) {
+    case 'capabilities_and_how':
+      return 'Breakthroughs'
+    case 'in_action_real_world':
+      return 'AI in Action'
+    case 'trends_risks_outlook':
+      return 'Trends, Risks & Outlook'
+    default:
+      return category.replace(/_/g, ' ')
+  }
+}
+
 export default function Card({ item }: { item: any }) {
-  const [lens, setLens] = useState<Lens>('eli12')
+  const [lens, setLens] = useState<Lens>('simple')
+  
   return (
     <article className="card mb-3">
       <div className="flex items-center justify-between gap-2 mb-2">
@@ -13,7 +28,7 @@ export default function Card({ item }: { item: any }) {
           'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200': item.category==='in_action_real_world',
           'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200': item.category==='trends_risks_outlook',
         })}>
-          {item.category.replace(/_/g,' ')}
+          {getCategoryDisplayName(item.category)}
         </span>
         <span className="text-xs text-gray-500">{new Date(item.published_at).toLocaleDateString()}</span>
       </div>
@@ -26,15 +41,15 @@ export default function Card({ item }: { item: any }) {
       </ul>
 
       <div className="flex gap-2 mb-2">
-        {(['eli12','pm','engineer'] as Lens[]).map((l)=>(
+        {(['simple','pm','engineer'] as Lens[]).map((l)=>(
           <button key={l} onClick={()=>setLens(l)}
             className={clsx('btn', lens===l && 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900')}>
-            {l.toUpperCase()}
+            {l === 'simple' ? 'Simple' : l.toUpperCase()}
           </button>
         ))}
       </div>
 
-      <p className="text-sm">{item.lenses?.[lens]}</p>
+      <p className="text-sm">{item.lenses?.[lens] || item.lenses?.['eli12']}</p>
 
       <div className="mt-3 flex items-center justify-between text-xs text-gray-500">
         <span>{item.source}</span>
