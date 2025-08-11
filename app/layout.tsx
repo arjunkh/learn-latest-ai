@@ -2,8 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Learn & Latest AI',
-  description: 'Understand AI capabilities and stay current — fast, mobile-first summaries.',
+  title: 'AIByte',
+  description: 'Bite-sized AI insights, daily — fast, mobile-first summaries.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -12,8 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className="container py-4">
           <header className="mb-4">
-            <h1 className="text-xl font-semibold">Learn & Latest AI</h1>
-            <p className="text-sm text-gray-500">3 categories • 3 lenses • zero fluff</p>
+            <h1 className="text-xl font-semibold">AIByte</h1>
+            <p className="text-sm text-gray-500">Bite-sized AI insights, daily</p>
           </header>
           {children}
           <footer className="mt-10 mb-6 text-xs text-gray-500">
