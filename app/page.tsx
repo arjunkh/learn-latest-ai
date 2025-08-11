@@ -9,7 +9,10 @@ async function getItems() {
     
     if (fs.existsSync(filePath)) {
       const fileContent = fs.readFileSync(filePath, 'utf8')
-      return JSON.parse(fileContent)
+      const data = JSON.parse(fileContent)
+      
+      // Handle both old format (array) and new format (object with articles)
+      return data.articles || data || []
     }
     
     // Fallback - return empty array if file doesn't exist
