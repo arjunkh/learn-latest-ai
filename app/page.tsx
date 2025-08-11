@@ -29,21 +29,17 @@ export default async function Page() {
   
   return (
     <main>
-      <Filters />
+      {/* Category filter badges commented out */}
+      {/* <div className="flex flex-wrap gap-2 mb-3">
+        {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
+          <span key={t} className="badge">{t}</span>
+        ))}
+      </div> */}
+      
       <div className="mt-3" id="feed">
         {items?.length ? items.map((it:any)=>(<Card key={it.id} item={it} />)) : <EmptyState />}
       </div>
     </main>
-  )
-}
-
-function Filters() {
-  return (
-    <div className="flex flex-wrap gap-2">
-      {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
-        <span key={t} className="badge">{t}</span>
-      ))}
-    </div>
   )
 }
 
