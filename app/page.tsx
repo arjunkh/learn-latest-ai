@@ -1,17 +1,29 @@
 import Card from '@/components/Card'
+import fs from 'fs'
+import path from 'path'
 
 async function getItems() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/items.json`, { next: { revalidate: 60 } })
-  try { return await res.json() } catch { return [] }
+  try {
+    // Always read from filesystem during build/server-side
+    const filePath = path.join(process.cwd(), 'public', 'data', 'items.json')
+    
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, 'utf8')
+      return JSON.parse(fileContent)
+    }
+    
+    // Fallback - return empty array if file doesn't exist
+    console.log('items.json not found, returning empty array')
+    return []
+  } catch (error) {
+    console.error('Error reading items.json:', error)
+    return []
+  }
 }
 
 export default async function Page() {
   const items = await getItems()
-  const categories = [
-    { id: 'capabilities_and_how', label: 'AI Capabilities & How' },
-    { id: 'in_action_real_world', label: 'AI in Action' },
-    { id: 'trends_risks_outlook', label: 'Trends, Risks & Outlook' }
-  ]
+  
   return (
     <main>
       <Filters />
@@ -36,7 +48,7 @@ function EmptyState() {
   return (
     <div className="card">
       <h2 className="font-semibold mb-2">No stories yet</h2>
-      <p className="text-sm text-gray-600 dark:text-gray-300">Run the ingestion job to populate today’s feed.</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300">Run the ingestion job to populate today's feed.</p>
     </div>
   )
 }
