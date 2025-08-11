@@ -25,27 +25,43 @@ function ruleClassify({ domain, title, lede }) {
 }
 
 async function classifyTieBreaker(title, lede) {
-  const prompt = `Classify this headline + first paragraph into exactly one:
+  const prompt = `Classify this headline + first paragraph into exactly one category:
 - capabilities_and_how
-- in_action_real_world
+- in_action_real_world  
 - trends_risks_outlook
-Return only the id.
+
+Return ONLY the category id, nothing else.
+
 Headline: ${title}
 Dek: ${lede}`;
 
-  const res = await client.chat.completions.create({
-    model: 'gpt-4o-mini',
-    messages: [{ role: 'user', content: prompt }],
-    temperature: 0
-  });
-  
-  return (res.choices[0]?.message?.content || '').trim();
+  try {
+    const res = await client.chat.completions.create({
+      model: 'gpt-4o-mini',
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0
+    });
+    
+    const content = (res.choices[0]?.message?.content || '').trim();
+    
+    // Validate the response is one of our expected categories
+    const validCategories = ['capabilities_and_how', 'in_action_real_world', 'trends_risks_outlook'];
+    if (validCategories.includes(content)) {
+      return content;
+    } else {
+      console.warn(`Invalid category returned: ${content}, defaulting to capabilities_and_how`);
+      return 'capabilities_and_how';
+    }
+  } catch (error) {
+    console.error('Classification failed:', error.message);
+    return 'capabilities_and_how'; // Default fallback
+  }
 }
 
 async function summarizeArticle(fullText) {
   const prompt = `You are a precise AI news editor. Summarize the article.
 
-Return JSON with keys:
+Return ONLY a valid JSON object (no markdown formatting) with keys:
 - speedrun: <=40 words, one sentence, plain English
 - why_it_matters: array of 2 bullets, each <=14 words
 - lenses:
@@ -63,7 +79,26 @@ ${fullText}`;
     temperature: 0.2
   });
   
-  return JSON.parse(res.choices[0]?.message?.content || '{}');
+  let content = res.choices[0]?.message?.content || '{}';
+  
+  // Strip markdown code blocks if present
+  content = content.replace(/```json\s*/, '').replace(/```\s*$/, '').trim();
+  
+  try {
+    return JSON.parse(content);
+  } catch (error) {
+    console.error('Failed to parse JSON response:', content);
+    // Return a fallback structure
+    return {
+      speedrun: "Unable to summarize article at this time.",
+      why_it_matters: ["Summary unavailable", "Please check original source"],
+      lenses: {
+        eli12: "We couldn't process this article right now.",
+        pm: "Article processing failed - check the original source for details.",
+        engineer: "JSON parsing error - the AI response was malformed."
+      }
+    };
+  }
 }
 
 async function main() {
@@ -76,56 +111,70 @@ async function main() {
   const records = [];
 
   for (const s of SOURCES) {
-    const feed = await parser.parseURL(s.rss);
-    for (const item of (feed.items || []).slice(0, 8)) {
-      const title = item.title || '';
-      const url = item.link || '';
-      const lede = (item.contentSnippet || item.content || '').slice(0, 400);
-      const published_at = item.isoDate || item.pubDate || new Date().toISOString();
-      const source = s.name;
-      const body = (item.contentSnippet || item.content || title).toString();
+    console.log(`Processing source: ${s.name}`);
+    try {
+      const feed = await parser.parseURL(s.rss);
+      for (const item of (feed.items || []).slice(0, 8)) {
+        try {
+          const title = item.title || '';
+          const url = item.link || '';
+          const lede = (item.contentSnippet || item.content || '').slice(0, 400);
+          const published_at = item.isoDate || item.pubDate || new Date().toISOString();
+          const source = s.name;
+          const body = (item.contentSnippet || item.content || title).toString();
 
-      const hash = contentHash({ title, source, published_at, body });
-      const cachePath = path.join(cacheDir, `${hash}.json`);
+          const hash = contentHash({ title, source, published_at, body });
+          const cachePath = path.join(cacheDir, `${hash}.json`);
 
-      let rec;
-      if (existing.has(`${hash}.json`)) {
-        rec = JSON.parse(await fs.readFile(cachePath, 'utf8'));
-      } else {
-        let category = ruleClassify({ domain: s.domain, title, lede });
-        if (!category) category = await classifyTieBreaker(title, lede);
-        const sum = await summarizeArticle(`${title}
+          let rec;
+          if (existing.has(`${hash}.json`)) {
+            rec = JSON.parse(await fs.readFile(cachePath, 'utf8'));
+            console.log(`Using cached: ${title.slice(0, 50)}...`);
+          } else {
+            console.log(`Processing new article: ${title.slice(0, 50)}...`);
+            let category = ruleClassify({ domain: s.domain, title, lede });
+            if (!category) category = await classifyTieBreaker(title, lede);
+            const sum = await summarizeArticle(`${title}
 
 ${lede}
 
 ${body}`);
-        rec = {
-          content_hash: hash, title, url, source, published_at,
-          raw_excerpt: lede, raw_body: body,
-          category, category_confidence: category ? 'medium':'low',
-          speedrun: sum.speedrun,
-          why_it_matters: sum.why_it_matters,
-          lenses: sum.lenses,
-          hype_meter: 3,
-          model_meta: { model: 'gpt-4o-mini', prompt_version: 'v1.0' },
-          created_at: new Date().toISOString(),
-          updated_at: new Date().toISOString()
-        };
-        await fs.writeFile(cachePath, JSON.stringify(rec, null, 2));
-      }
+            rec = {
+              content_hash: hash, title, url, source, published_at,
+              raw_excerpt: lede, raw_body: body,
+              category, category_confidence: category ? 'medium':'low',
+              speedrun: sum.speedrun,
+              why_it_matters: sum.why_it_matters,
+              lenses: sum.lenses,
+              hype_meter: 3,
+              model_meta: { model: 'gpt-4o-mini', prompt_version: 'v1.0' },
+              created_at: new Date().toISOString(),
+              updated_at: new Date().toISOString()
+            };
+            await fs.writeFile(cachePath, JSON.stringify(rec, null, 2));
+            console.log(`Processed and cached: ${title.slice(0, 50)}...`);
+          }
 
-      records.push({
-        id: hash,
-        category: rec.category,
-        title: rec.title,
-        source: rec.source,
-        url: rec.url,
-        published_at: rec.published_at,
-        speedrun: rec.speedrun,
-        why_it_matters: rec.why_it_matters,
-        lenses: rec.lenses,
-        hype_meter: rec.hype_meter
-      });
+          records.push({
+            id: hash,
+            category: rec.category,
+            title: rec.title,
+            source: rec.source,
+            url: rec.url,
+            published_at: rec.published_at,
+            speedrun: rec.speedrun,
+            why_it_matters: rec.why_it_matters,
+            lenses: rec.lenses,
+            hype_meter: rec.hype_meter
+          });
+        } catch (itemError) {
+          console.error(`Failed to process item "${item.title || 'unknown'}":`, itemError.message);
+          // Continue with next item
+        }
+      }
+    } catch (sourceError) {
+      console.error(`Failed to process source ${s.name}:`, sourceError.message);
+      // Continue with next source
     }
   }
 
