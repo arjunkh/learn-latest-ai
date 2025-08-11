@@ -32,8 +32,14 @@ async function classifyTieBreaker(title, lede) {
 Return only the id.
 Headline: ${title}
 Dek: ${lede}`;
-  const res = await client.responses.create({ model: 'gpt-4o-mini', input: prompt, temperature: 0 });
-  return (res.output_text || '').trim();
+
+  const res = await client.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: [{ role: 'user', content: prompt }],
+    temperature: 0
+  });
+  
+  return (res.choices[0]?.message?.content || '').trim();
 }
 
 async function summarizeArticle(fullText) {
@@ -50,8 +56,14 @@ Constraints: Be factual. No hype. If uncertain, state what is unknown.
 
 Article:
 ${fullText}`;
-  const res = await client.responses.create({ model: 'gpt-4o-mini', input: prompt, temperature: 0.2 });
-  return JSON.parse(res.output_text);
+
+  const res = await client.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: [{ role: 'user', content: prompt }],
+    temperature: 0.2
+  });
+  
+  return JSON.parse(res.choices[0]?.message?.content || '{}');
 }
 
 async function main() {
