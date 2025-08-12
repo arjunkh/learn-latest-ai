@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'AIByte',
@@ -11,13 +12,41 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <div className="container py-4">
-          <header className="mb-4">
+          <header className="mb-4 text-center">
+            {/* Logo at the top - responsive sizing */}
+            <div className="mb-3">
+              {/* Mobile logo (32px) - shows on small screens */}
+              <Image
+                src="/images/logo-32.svg"
+                alt="AIByte Logo"
+                width={32}
+                height={32}
+                className="sm:hidden mx-auto"
+                priority
+              />
+              
+              {/* Desktop logo (40px) - shows on larger screens */}
+              <Image
+                src="/images/logo-40.svg"
+                alt="AIByte Logo"
+                width={40}
+                height={40}
+                className="hidden sm:block mx-auto"
+                priority
+              />
+            </div>
+            
+            {/* Product name */}
             <h1 className="text-xl font-semibold">AIByte</h1>
+            
+            {/* Tagline */}
             <p className="text-sm text-gray-500">Bite-sized AI insights, daily</p>
           </header>
+          
           {children}
+          
           <footer className="mt-10 mb-6 text-xs text-gray-500">
-            Built fast. Sources: OpenAI, DeepMind, The Verge.
+            Built for curious minds. Don't miss the AI revolution - hop on!
           </footer>
         </div>
       </body>
