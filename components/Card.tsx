@@ -4,6 +4,7 @@ import clsx from 'clsx'
 
 export type Lens = 'simple' | 'pm' | 'engineer'
 
+// TASK 2: Updated category labels - "Industry Insights" instead of "Trends, Risks & Outlook"
 function getCategoryDisplayName(category: string): string {
   switch (category) {
     case 'capabilities_and_how':
@@ -11,7 +12,7 @@ function getCategoryDisplayName(category: string): string {
     case 'in_action_real_world':
       return 'AI in Action'
     case 'trends_risks_outlook':
-      return 'Trends, Risks & Outlook'
+      return 'Industry Insights'  // Changed from "Trends, Risks & Outlook"
     default:
       return category.replace(/_/g, ' ')
   }
