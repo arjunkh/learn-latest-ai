@@ -4,10 +4,18 @@ import crypto from 'crypto';
 import Parser from 'rss-parser';
 import OpenAI from 'openai';
 
+// TASK 1: Updated sources array - 7 sources, 4 items each = 28 total articles
 const SOURCES = [
+  // Existing sources
   { id: 'openai', name: 'OpenAI', rss: 'https://openai.com/blog/rss.xml', domain: 'openai.com' },
   { id: 'deepmind', name: 'Google DeepMind', rss: 'https://deepmind.google/discover/rss', domain: 'deepmind.google' },
-  { id: 'verge-ai', name: 'The Verge (AI)', rss: 'https://www.theverge.com/rss/ai/index.xml', domain: 'theverge.com' }
+  { id: 'verge-ai', name: 'The Verge (AI)', rss: 'https://www.theverge.com/rss/ai/index.xml', domain: 'theverge.com' },
+  
+  // New sources
+  { id: 'towards-data-science', name: 'Towards Data Science', rss: 'https://towardsdatascience.com/feed', domain: 'towardsdatascience.com' },
+  { id: 'ai-business', name: 'AI Business', rss: 'https://aibusiness.com/rss.xml', domain: 'aibusiness.com' },
+  { id: 'reddit-chatgpt', name: 'Reddit ChatGPT', rss: 'https://www.reddit.com/r/ChatGPT/.rss', domain: 'reddit.com' },
+  { id: 'ai-news', name: 'AI News', rss: 'https://www.artificialintelligence-news.com/feed/rss/', domain: 'artificialintelligence-news.com' }
 ];
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -16,12 +24,25 @@ function contentHash({ title, source, published_at, body }) {
   return crypto.createHash('sha256').update(`${title.trim().toLowerCase()}||${source}||${published_at}||${body}`).digest('hex');
 }
 
+// TASK 3: Updated domain rules - auto-assign towardsdatascience.com to "Breakthroughs"
 function ruleClassify({ domain, title, lede }) {
   const t = `${title} ${lede}`.toLowerCase();
-  if (['openai.com','deepmind.google','huggingface.co'].some(d => domain.includes(d))) return 'capabilities_and_how';
-  if (['launch','rollout','deploys','integrates','partners','available','beta'].some(w => t.includes(w))) return 'in_action_real_world';
-  if (['policy','regulation','ethics','governance','risk','impact','jobs','economy','law'].some(w => t.includes(w))) return 'trends_risks_outlook';
-  return null;
+  
+  // Auto-assign "Breakthroughs" for technical/research sources
+  if (['openai.com', 'deepmind.google', 'huggingface.co', 'towardsdatascience.com'].some(d => domain.includes(d))) {
+    return 'capabilities_and_how';
+  }
+  
+  // Keep flexible AI classification for varied content sources
+  if (['launch', 'rollout', 'deploys', 'integrates', 'partners', 'available', 'beta'].some(w => t.includes(w))) {
+    return 'in_action_real_world';
+  }
+  
+  if (['policy', 'regulation', 'ethics', 'governance', 'risk', 'impact', 'jobs', 'economy', 'law'].some(w => t.includes(w))) {
+    return 'trends_risks_outlook';
+  }
+  
+  return null; // Will use AI classification
 }
 
 async function classifyTieBreaker(title, lede) {
@@ -103,6 +124,7 @@ ${fullText}`;
   }
 }
 
+// TASK 4: Updated main function with 4 items per source and sorting fix
 async function main() {
   const parser = new Parser();
   const cacheDir = path.join(process.cwd(), 'data', 'cache');
@@ -123,7 +145,8 @@ async function main() {
     console.log(`Processing source: ${s.name}`);
     try {
       const feed = await parser.parseURL(s.rss);
-      for (const item of (feed.items || []).slice(0, 8)) {
+      // Changed from 8 to 4 items per source
+      for (const [index, item] of (feed.items || []).slice(0, 4).entries()) {
         try {
           const title = item.title || '';
           const url = item.link || '';
@@ -158,7 +181,8 @@ ${body}`);
               hype_meter: 3,
               model_meta: { model: 'gpt-4o-mini', prompt_version: 'v1.0' },
               created_at: new Date().toISOString(),
-              updated_at: new Date().toISOString()
+              updated_at: new Date().toISOString(),
+              processing_order: Date.now() + index // Add processing order for sorting tiebreaker
             };
             await fs.writeFile(cachePath, JSON.stringify(rec, null, 2));
             console.log(`Processed and cached: ${title.slice(0, 50)}...`);
@@ -174,7 +198,8 @@ ${body}`);
             speedrun: rec.speedrun,
             why_it_matters: rec.why_it_matters,
             lenses: rec.lenses,
-            hype_meter: rec.hype_meter
+            hype_meter: rec.hype_meter,
+            processing_order: rec.processing_order || Date.now() // Fallback for existing records
           });
         } catch (itemError) {
           console.error(`Failed to process item "${item.title || 'unknown'}":`, itemError.message);
@@ -189,7 +214,14 @@ ${body}`);
 
   const cutoff = Date.now() - 14 * 24 * 3600 * 1000;
   const latest = records.filter(r => new Date(r.published_at).getTime() >= cutoff)
-                        .sort((a, b) => b.published_at.localeCompare(a.published_at));
+                        .sort((a, b) => {
+                          // Primary sort: by published date (newest first)
+                          const dateCompare = b.published_at.localeCompare(a.published_at);
+                          if (dateCompare !== 0) return dateCompare;
+                          
+                          // Tiebreaker: by processing order (newest processed first)
+                          return (b.processing_order || 0) - (a.processing_order || 0);
+                        });
 
   // Debug: Show what we're about to write
   console.log(`About to write ${latest.length} items to: ${publicData}`);
@@ -199,12 +231,11 @@ ${body}`);
   const fileExistsBefore = await fs.access(publicData).then(() => true).catch(() => false);
   console.log(`File exists before write: ${fileExistsBefore}`);
   
-  // Write the file
-  // Add metadata to ensure file always changes
+  // Write the file with metadata
   const output = {
     generated_at: new Date().toISOString(),
     total_articles: latest.length,
-    articles: latest
+    articles: latest.map(({ processing_order, ...item }) => item) // Remove processing_order from public output
   };
   
   await fs.writeFile(publicData, JSON.stringify(output, null, 2));
