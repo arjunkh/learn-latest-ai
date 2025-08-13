@@ -1,6 +1,7 @@
 import Card from '@/components/Card'
 import fs from 'fs'
 import path from 'path'
+import Script from 'next/script'
 
 async function getItems() {
   try {
@@ -28,18 +29,44 @@ export default async function Page() {
   const items = await getItems()
   
   return (
-    <main>
-      {/* Category filter badges commented out */}
-      {/* <div className="flex flex-wrap gap-2 mb-3">
-        {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
-          <span key={t} className="badge">{t}</span>
-        ))}
-      </div> */}
+    <>
+      <Script id="page-analytics" strategy="afterInteractive">
+        {`
+          // Track feed load
+          if (window.va) {
+            window.va('track', 'feed_loaded', {
+              article_count: ${items?.length || 0},
+              timestamp: new Date().toISOString()
+            });
+          }
+          
+          // Track time on page
+          const startTime = Date.now();
+          window.addEventListener('beforeunload', function() {
+            const timeSpent = Math.round((Date.now() - startTime) / 1000);
+            if (window.va) {
+              window.va('track', 'time_on_feed', {
+                seconds: timeSpent,
+                articles_available: ${items?.length || 0}
+              });
+            }
+          });
+        `}
+      </Script>
       
-      <div className="mt-3" id="feed">
-        {items?.length ? items.map((it:any)=>(<Card key={it.id} item={it} />)) : <EmptyState />}
-      </div>
-    </main>
+      <main>
+        {/* Category filter badges commented out */}
+        {/* <div className="flex flex-wrap gap-2 mb-3">
+          {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
+            <span key={t} className="badge">{t}</span>
+          ))}
+        </div> */}
+        
+        <div className="mt-3" id="feed">
+          {items?.length ? items.map((it:any)=>(<Card key={it.id} item={it} />)) : <EmptyState />}
+        </div>
+      </main>
+    </>
   )
 }
 
