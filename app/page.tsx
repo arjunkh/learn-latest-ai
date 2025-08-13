@@ -30,6 +30,7 @@ export default async function Page() {
   
   return (
     <>
+      {/* YOUR ANALYTICS SCRIPT - UNCHANGED */}
       <Script id="page-analytics" strategy="afterInteractive">
         {`
           // Track feed load
@@ -55,14 +56,15 @@ export default async function Page() {
       </Script>
       
       <main>
-        {/* Category filter badges commented out */}
+        {/* Category filter badges commented out - UNCHANGED */}
         {/* <div className="flex flex-wrap gap-2 mb-3">
           {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
             <span key={t} className="badge">{t}</span>
           ))}
         </div> */}
         
-        <div className="mt-3" id="feed">
+        {/* MAIN CHANGE: Added responsive grid classes */}
+        <div className="mt-3 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6" id="feed">
           {items?.length ? items.map((it:any)=>(<Card key={it.id} item={it} />)) : <EmptyState />}
         </div>
       </main>
