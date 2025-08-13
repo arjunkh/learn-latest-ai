@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'AIByte',
@@ -78,6 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </footer>
         </div>
+        
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   )
