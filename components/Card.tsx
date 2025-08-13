@@ -38,7 +38,6 @@ export default function Card({ item }: { item: any }) {
   }
   
   return (
-    {/* MINOR CHANGES: Removed mb-3, added h-full and flex flex-col for equal heights in grid */}
     <article className="card h-full flex flex-col">
       <div className="flex items-center justify-between gap-2 mb-2">
         <span className={clsx('badge', {
@@ -51,7 +50,6 @@ export default function Card({ item }: { item: any }) {
         <span className="text-xs text-gray-500">{new Date(item.published_at).toLocaleDateString()}</span>
       </div>
       
-      {/* Added responsive text size classes */}
       <h2 className="text-base md:text-lg font-semibold mb-2">
         <a 
           href={item.url} 
@@ -65,7 +63,6 @@ export default function Card({ item }: { item: any }) {
       
       <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{item.speedrun}</p>
       
-      {/* Added flex-grow to push buttons to bottom */}
       <ul className="text-xs list-disc pl-5 space-y-1 mb-3 flex-grow">
         {item.why_it_matters?.map((b:string, i:number) => (<li key={i}>{b}</li>))}
       </ul>
