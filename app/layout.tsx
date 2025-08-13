@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Analytics } from '@vercel/analytics/react'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'AIByte',
@@ -12,6 +13,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+      <Script id="analytics-setup" strategy="afterInteractive">
+          {`
+            // Track signup clicks
+            document.addEventListener('click', function(e) {
+              const target = e.target;
+              if (target.href && target.href.includes('airtable.com')) {
+                if (window.va) {
+                  window.va('track', 'signup_clicked', {
+                    location: 'footer',
+                    cta_text: target.textContent,
+                    destination: 'airtable_form'
+                  });
+                }
+              }
+            });
+            
+            // Track scroll depth
+            let maxScroll = 0;
+            document.addEventListener('scroll', function() {
+              const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+              if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+                maxScroll = scrollPercent;
+                if (window.va) {
+                  window.va('track', 'scroll_depth', {
+                    depth: scrollPercent,
+                    page: window.location.pathname
+                  });
+                }
+              }
+            });
+          `}
+        </Script>
         <div className="container py-4">
           <header className="mb-4 text-center">
             {/* Logo at the top - responsive sizing */}
