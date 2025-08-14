@@ -2,10 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light dark; }
-body { @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100; }
+/* Import Inter font for modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* MAIN CHANGE: Responsive container that adapts to screen size */
+:root { 
+  color-scheme: light dark;
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #FFFFFF;
+  --dark-primary: #0A0A0B;
+  --dark-secondary: #141416;
+}
+
+/* Modern background with subtle texture */
+body { 
+  @apply text-gray-900 dark:text-gray-100 min-h-screen;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+}
+
+body.dark {
+  background: var(--dark-primary);
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+}
+
+/* Responsive container - UNCHANGED for responsiveness */
 .container { 
   @apply max-w-xl mx-auto px-4 
          md:max-w-2xl md:px-6 
@@ -13,7 +38,132 @@ body { @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100; }
          xl:max-w-6xl; 
 }
 
-/* NO CHANGES to existing card, badge, btn classes - they stay exactly the same */
-.card { @apply rounded-xl border border-gray-200 dark:border-gray-800 p-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur; }
-.badge { @apply text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800; }
-.btn { @apply text-sm px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700; }
+/* Modern card design - Flipboard inspired */
+.card { 
+  @apply rounded-2xl p-6 md:p-7
+         bg-white dark:bg-gray-900/90
+         border border-gray-200/60 dark:border-gray-800/60
+         shadow-sm hover:shadow-md
+         transition-all duration-300 ease-out
+         backdrop-blur-sm;
+}
+
+/* Sophisticated badge styling */
+.badge { 
+  @apply text-xs px-3 py-1 rounded-full font-medium
+         border border-transparent
+         transition-all duration-200;
+}
+
+/* Category-specific badge colors - More sophisticated */
+.badge-breakthrough {
+  @apply bg-indigo-50 text-indigo-700 border-indigo-200/50
+         dark:bg-indigo-950/30 dark:text-indigo-300 dark:border-indigo-800/50;
+}
+
+.badge-action {
+  @apply bg-emerald-50 text-emerald-700 border-emerald-200/50
+         dark:bg-emerald-950/30 dark:text-emerald-300 dark:border-emerald-800/50;
+}
+
+.badge-insights {
+  @apply bg-amber-50 text-amber-700 border-amber-200/50
+         dark:bg-amber-950/30 dark:text-amber-300 dark:border-amber-800/50;
+}
+
+/* Modern button design - Pill shaped */
+.btn { 
+  @apply text-sm px-4 py-1.5 rounded-full font-medium
+         border border-gray-300 dark:border-gray-700
+         bg-transparent hover:bg-gray-50 dark:hover:bg-gray-800
+         transition-all duration-200
+         active:scale-95;
+}
+
+.btn-active {
+  @apply bg-gray-900 text-white border-gray-900
+         dark:bg-white dark:text-gray-900 dark:border-white
+         hover:bg-gray-800 dark:hover:bg-gray-100;
+}
+
+/* Typography improvements */
+h1 { @apply font-bold tracking-tight; }
+h2 { @apply font-semibold tracking-tight; }
+h3 { @apply font-semibold; }
+p { @apply leading-relaxed; }
+
+/* Header zone styling */
+.header-zone {
+  @apply bg-white/70 dark:bg-gray-900/70 
+         backdrop-blur-md
+         border-b border-gray-200/50 dark:border-gray-800/50
+         -mx-4 md:-mx-6 lg:-mx-8
+         px-4 md:px-6 lg:px-8
+         py-6 md:py-8
+         mb-6 md:mb-8;
+}
+
+/* Footer improvements */
+.footer-card {
+  @apply rounded-2xl p-8 md:p-10
+         bg-gradient-to-br from-white to-gray-50
+         dark:from-gray-900 dark:to-gray-800
+         border border-gray-200/60 dark:border-gray-700/60
+         shadow-lg;
+}
+
+/* CTA Button - More prominent */
+.cta-button {
+  @apply inline-flex items-center justify-center
+         bg-gray-900 dark:bg-white 
+         text-white dark:text-gray-900
+         px-8 py-3 md:px-10 md:py-3.5
+         rounded-full
+         text-sm md:text-base font-semibold
+         hover:bg-gray-800 dark:hover:bg-gray-100
+         transform hover:scale-105
+         transition-all duration-200
+         shadow-lg hover:shadow-xl;
+}
+
+/* Hype meter visual */
+.hype-meter {
+  @apply inline-flex items-center gap-1;
+}
+
+.hype-dot {
+  @apply w-1.5 h-1.5 rounded-full transition-all duration-200;
+}
+
+.hype-dot-filled {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+.hype-dot-empty {
+  @apply bg-gray-200 dark:bg-gray-700;
+}
+
+/* Link hover effects */
+a.article-link {
+  @apply hover:text-indigo-600 dark:hover:text-indigo-400
+         transition-colors duration-200;
+}
+
+/* List improvements */
+ul.bullet-list {
+  @apply space-y-1.5;
+}
+
+ul.bullet-list li {
+  @apply text-gray-600 dark:text-gray-400 leading-relaxed;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
