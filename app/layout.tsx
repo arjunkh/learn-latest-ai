@@ -47,10 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         
-        <div className="container py-4 md:py-6 lg:py-8">
-          <header className="mb-4 md:mb-6 text-center">
-            {/* Logo at the top - responsive sizing */}
-            <div className="mb-3">
+        <div className="container">
+          {/* Header with special background treatment */}
+          <header className="header-zone text-center">
+            {/* Logo with more breathing room */}
+            <div className="mb-4">
               {/* Mobile logo (32px) - shows on small screens */}
               <Image
                 src="/images/logo-32.svg"
@@ -61,56 +62,84 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 priority
               />
               
-              {/* Desktop logo (40px) - shows on larger screens */}
+              {/* Desktop logo (48px) - larger for desktop */}
               <Image
                 src="/images/logo-40.svg"
                 alt="AIByte Logo"
-                width={40}
-                height={40}
+                width={48}
+                height={48}
                 className="hidden sm:block mx-auto"
                 priority
               />
             </div>
             
-            {/* Product name - added responsive sizing */}
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">AIByte</h1>
+            {/* Product name - better typography */}
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
+              AIByte
+            </h1>
             
-            {/* Tagline - added responsive sizing */}
-            <p className="text-sm md:text-base text-gray-500">Bite-sized AI insights, daily</p>
+            {/* Tagline - more subtle */}
+            <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
+              Bite-sized AI insights, daily
+            </p>
           </header>
           
-          {children}
+          {/* Main content area */}
+          <div className="animate-fade-in">
+            {children}
+          </div>
           
-          {/* Footer with signup section - added responsive text */}
-          <footer className="mt-10 mb-6">
-            <div className="card text-center max-w-2xl mx-auto">
-              <h3 className="text-lg md:text-xl font-semibold mb-2">📍 You just experienced AIByte v0.1</h3>
+          {/* Redesigned footer */}
+          <footer className="mt-16 mb-8">
+            <div className="footer-card max-w-2xl mx-auto">
+              {/* Version badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-xs font-medium text-gray-700 dark:text-gray-300 mb-6">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                AIByte v0.1 - Live Preview
+              </div>
               
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-3">
-                If this daily AI digest helped you stay current, we want to build something bigger. 
-                Think personalized feeds, deeper insights, AI tool recommendations, and community discussions.
+              {/* Main message - cleaner structure */}
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                Ready for the full experience?
+              </h3>
+              
+              <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed max-w-lg mx-auto">
+                If this daily digest helped you stay current, imagine what we could build together — 
+                personalized feeds, deeper insights, AI tool recommendations, and community discussions.
               </p>
               
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-3">
-                This was our trailer. Want us to build the full product?
-              </p>
+              {/* Features preview */}
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
+                <span className="px-3 py-1 bg-indigo-50 dark:bg-indigo-950/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">
+                  🎯 Personalized
+                </span>
+                <span className="px-3 py-1 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm font-medium">
+                  🚀 Real-time
+                </span>
+                <span className="px-3 py-1 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 rounded-full text-sm font-medium">
+                  💬 Community
+                </span>
+              </div>
               
-              <p className="text-sm md:text-base font-medium text-gray-900 dark:text-gray-100 mb-4">
-                We're building AIByte with you, not just for you.
-              </p>
-              
-              <a 
-                href="https://airtable.com/appkDsWtxghcCVm83/pagsVdQKVnZwe5YB8/form"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-6 py-2 md:px-8 md:py-2.5 rounded-lg text-sm md:text-base font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-              >
-                Join the Journey
-              </a>
-              
-              <p className="text-xs md:text-sm text-gray-500 mt-3">
-                Built for curious minds. Don't miss the AI revolution - hop on!
-              </p>
+              {/* CTA Section */}
+              <div className="text-center">
+                <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide">
+                  We're building with you, not just for you
+                </p>
+                
+                <a 
+                  href="https://airtable.com/appkDsWtxghcCVm83/pagsVdQKVnZwe5YB8/form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button"
+                >
+                  Join the Journey →
+                </a>
+                
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
+                  Built for curious minds • Don't miss the AI revolution
+                </p>
+              </div>
             </div>
           </footer>
         </div>
