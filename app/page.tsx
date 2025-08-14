@@ -82,23 +82,11 @@ export default async function Page() {
           </div>
         </div>
         
-        {/* Grid layout with featured first item on desktop */}
+        {/* Grid layout - clean and simple */}
         {items?.length ? (
           <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-6">
-            {/* Featured first item - spans 2 columns on xl screens */}
-            {items.length > 0 && (
-              <div className="xl:col-span-1 xl:row-span-1">
-                <div className="relative">
-                  <div className="absolute -top-3 left-4 px-2 py-0.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-semibold rounded">
-                    FEATURED
-                  </div>
-                  <Card item={items[0]} />
-                </div>
-              </div>
-            )}
-            
-            {/* Rest of the items */}
-            {items.slice(1).map((item: any) => (
+            {/* All items with equal treatment */}
+            {items.map((item: any) => (
               <Card key={item.id} item={item} />
             ))}
           </div>
