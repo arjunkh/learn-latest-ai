@@ -18,6 +18,21 @@ function getCategoryDisplayName(category: string): string {
   }
 }
 
+// Visual hype meter component
+function HypeMeter({ value }: { value: number }) {
+  return (
+    <div className="hype-meter">
+      <span className="text-xs text-gray-500 dark:text-gray-400 mr-2">Hype</span>
+      {[1, 2, 3, 4, 5].map((i) => (
+        <span
+          key={i}
+          className={clsx('hype-dot', i <= value ? 'hype-dot-filled' : 'hype-dot-empty')}
+        />
+      ))}
+    </div>
+  )
+}
+
 export default function Card({ item }: { item: any }) {
   const [lens, setLens] = useState<Lens>('simple')
   
@@ -37,53 +52,89 @@ export default function Card({ item }: { item: any }) {
     trackLensSwitch(newLens, item.title);
   }
   
+  // Get badge class based on category
+  const getBadgeClass = (category: string) => {
+    switch(category) {
+      case 'capabilities_and_how':
+        return 'badge-breakthrough'
+      case 'in_action_real_world':
+        return 'badge-action'
+      case 'trends_risks_outlook':
+        return 'badge-insights'
+      default:
+        return 'badge'
+    }
+  }
+  
   return (
-    <article className="card h-full flex flex-col">
-      <div className="flex items-center justify-between gap-2 mb-2">
-        <span className={clsx('badge', {
-          'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200': item.category==='capabilities_and_how',
-          'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200': item.category==='in_action_real_world',
-          'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200': item.category==='trends_risks_outlook',
-        })}>
+    <article className="card h-full flex flex-col group">
+      {/* Header section with better spacing */}
+      <div className="flex items-start justify-between gap-3 mb-4">
+        <span className={clsx('badge', getBadgeClass(item.category))}>
           {getCategoryDisplayName(item.category)}
         </span>
-        <span className="text-xs text-gray-500">{new Date(item.published_at).toLocaleDateString()}</span>
+        <time className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+          {new Date(item.published_at).toLocaleDateString('en-US', { 
+            month: 'short', 
+            day: 'numeric' 
+          })}
+        </time>
       </div>
       
-      <h2 className="text-base md:text-lg font-semibold mb-2">
+      {/* Title with better typography */}
+      <h2 className="text-lg md:text-xl lg:text-[22px] font-semibold leading-tight mb-3 text-gray-900 dark:text-white">
         <a 
           href={item.url} 
           target="_blank" 
           rel="noreferrer"
           onClick={handleArticleClick}
+          className="article-link"
         >
           {item.title}
         </a>
       </h2>
       
-      <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{item.speedrun}</p>
+      {/* Speedrun with better contrast */}
+      <p className="text-sm md:text-[15px] text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+        {item.speedrun}
+      </p>
       
-      <ul className="text-xs list-disc pl-5 space-y-1 mb-3 flex-grow">
-        {item.why_it_matters?.map((b:string, i:number) => (<li key={i}>{b}</li>))}
+      {/* Why it matters - improved styling */}
+      <ul className="bullet-list text-sm list-disc pl-5 mb-4 flex-grow">
+        {item.why_it_matters?.map((b:string, i:number) => (
+          <li key={i} className="text-gray-600 dark:text-gray-400">
+            {b}
+          </li>
+        ))}
       </ul>
 
-      <div className="flex gap-2 mb-2">
+      {/* Lens selector - pill shaped buttons */}
+      <div className="flex gap-2 mb-4 pt-3 border-t border-gray-100 dark:border-gray-800">
         {(['simple','pm','engineer'] as Lens[]).map((l)=>(
           <button 
             key={l} 
             onClick={()=>handleLensChange(l)}
-            className={clsx('btn', lens===l && 'bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900')}
+            className={clsx(
+              'btn',
+              lens === l && 'btn-active'
+            )}
           >
             {l === 'simple' ? 'Simple' : l.toUpperCase()}
           </button>
         ))}
       </div>
 
-      <p className="text-sm">{item.lenses?.[lens] || item.lenses?.['eli12']}</p>
+      {/* Lens content with better typography */}
+      <p className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+        {item.lenses?.[lens] || item.lenses?.['eli12']}
+      </p>
 
-      <div className="mt-3 flex items-center justify-between text-xs text-gray-500">
-        <span>{item.source}</span>
-        <span>Hype meter: {item.hype_meter ?? 3}/5</span>
+      {/* Footer with source and hype meter */}
+      <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
+        <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+          {item.source}
+        </span>
+        <HypeMeter value={item.hype_meter ?? 3} />
       </div>
     </article>
   )
