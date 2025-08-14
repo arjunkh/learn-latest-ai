@@ -46,7 +46,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             });
           `}
         </Script>
-        
+        <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-EESKG35GJD"
+  strategy="afterInteractive"
+/>
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EESKG35GJD');
+  `}
+</Script>        
         <div className="container">
           {/* Header with special background treatment */}
           <header className="header-zone text-center">
