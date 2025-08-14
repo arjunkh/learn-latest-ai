@@ -56,17 +56,55 @@ export default async function Page() {
       </Script>
       
       <main>
-        {/* Category filter badges commented out - UNCHANGED */}
-        {/* <div className="flex flex-wrap gap-2 mb-3">
-          {['AI Capabilities & How','AI in Action','Trends, Risks & Outlook'].map((t)=>(
-            <span key={t} className="badge">{t}</span>
-          ))}
-        </div> */}
-        
-        {/* MAIN CHANGE: Added responsive grid classes */}
-        <div className="mt-3 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6" id="feed">
-          {items?.length ? items.map((it:any)=>(<Card key={it.id} item={it} />)) : <EmptyState />}
+        {/* Section header for better hierarchy */}
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-2">
+            Today's Intelligence
+          </h2>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            {items?.length || 0} curated insights from the AI frontier
+          </p>
         </div>
+        
+        {/* Category overview badges */}
+        <div className="flex flex-wrap gap-2 mb-6 md:mb-8">
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-indigo-50 dark:bg-indigo-950/20 rounded-full">
+            <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
+            <span className="text-xs font-medium text-indigo-700 dark:text-indigo-300">Breakthroughs</span>
+          </div>
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 dark:bg-emerald-950/20 rounded-full">
+            <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+            <span className="text-xs font-medium text-emerald-700 dark:text-emerald-300">AI in Action</span>
+          </div>
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-50 dark:bg-amber-950/20 rounded-full">
+            <span className="w-2 h-2 bg-amber-500 rounded-full"></span>
+            <span className="text-xs font-medium text-amber-700 dark:text-amber-300">Industry Insights</span>
+          </div>
+        </div>
+        
+        {/* Grid layout with featured first item on desktop */}
+        {items?.length ? (
+          <div className="space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:gap-6">
+            {/* Featured first item - spans 2 columns on xl screens */}
+            {items.length > 0 && (
+              <div className="xl:col-span-1 xl:row-span-1">
+                <div className="relative">
+                  <div className="absolute -top-3 left-4 px-2 py-0.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-semibold rounded">
+                    FEATURED
+                  </div>
+                  <Card item={items[0]} />
+                </div>
+              </div>
+            )}
+            
+            {/* Rest of the items */}
+            {items.slice(1).map((item: any) => (
+              <Card key={item.id} item={item} />
+            ))}
+          </div>
+        ) : (
+          <EmptyState />
+        )}
       </main>
     </>
   )
@@ -74,9 +112,16 @@ export default async function Page() {
 
 function EmptyState() {
   return (
-    <div className="card">
-      <h2 className="font-semibold mb-2">No stories yet</h2>
-      <p className="text-sm text-gray-600 dark:text-gray-300">Run the ingestion job to populate today's feed.</p>
+    <div className="card text-center py-12">
+      <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+        </svg>
+      </div>
+      <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">No stories yet</h2>
+      <p className="text-sm text-gray-600 dark:text-gray-400">
+        Waiting for today's AI intelligence to arrive
+      </p>
     </div>
   )
 }
