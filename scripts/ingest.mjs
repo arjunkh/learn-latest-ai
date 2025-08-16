@@ -124,13 +124,54 @@ ${fullText}`;
   }
 }
 
-// TASK 4: Updated main function with 4 items per source and sorting fix
+// PHASE 1 IMPLEMENTATION: Load all cached articles first
+async function loadAllCachedArticles(cacheDir) {
+  const records = [];
+  
+  try {
+    const cacheFiles = await fs.readdir(cacheDir).catch(() => []);
+    console.log(`Found ${cacheFiles.length} cached articles`);
+    
+    for (const filename of cacheFiles) {
+      if (!filename.endsWith('.json')) continue;
+      
+      try {
+        const filePath = path.join(cacheDir, filename);
+        const cached = JSON.parse(await fs.readFile(filePath, 'utf8'));
+        
+        // Build record from cached data
+        records.push({
+          id: cached.content_hash,
+          category: cached.category,
+          title: cached.title,
+          source: cached.source,
+          url: cached.url,
+          published_at: cached.published_at,
+          speedrun: cached.speedrun,
+          why_it_matters: cached.why_it_matters,
+          lenses: cached.lenses,
+          hype_meter: cached.hype_meter,
+          processing_order: cached.processing_order || Date.now()
+        });
+      } catch (e) {
+        console.error(`Failed to load cache file ${filename}:`, e.message);
+      }
+    }
+    
+    console.log(`Successfully loaded ${records.length} articles from cache`);
+  } catch (error) {
+    console.error('Error loading cached articles:', error.message);
+  }
+  
+  return records;
+}
+
+// Updated main function with accumulation logic
 async function main() {
   const parser = new Parser();
   const cacheDir = path.join(process.cwd(), 'data', 'cache');
   const publicData = path.join(process.cwd(), 'public', 'data', 'items.json');
   
-  // Debug: Print current working directory and paths
   console.log(`Current working directory: ${process.cwd()}`);
   console.log(`Cache directory: ${cacheDir}`);
   console.log(`Public data file: ${publicData}`);
@@ -138,15 +179,25 @@ async function main() {
   await fs.mkdir(cacheDir, { recursive: true });
   await fs.mkdir(path.dirname(publicData), { recursive: true });
 
-  const existing = new Set(await fs.readdir(cacheDir).catch(() => []));
-  const records = [];
+  // PHASE 1: Load ALL cached articles first (no time limit!)
+  const records = await loadAllCachedArticles(cacheDir);
+  const existingHashes = new Set(records.map(r => r.id));
+  console.log(`Starting with ${records.length} existing articles`);
+  
+  // Keep track of cache files for checking
+  const cacheFiles = new Set(await fs.readdir(cacheDir).catch(() => []));
 
+  // Process RSS feeds for new articles
+  let newArticlesCount = 0;
   for (const s of SOURCES) {
     console.log(`Processing source: ${s.name}`);
     try {
       const feed = await parser.parseURL(s.rss);
-      // Changed from 8 to 4 items per source
-      for (const [index, item] of (feed.items || []).slice(0, 4).entries()) {
+      // Take up to 4 items per source (could be 0-4)
+      const itemsToProcess = (feed.items || []).slice(0, 4);
+      console.log(`  Found ${itemsToProcess.length} items in RSS feed`);
+      
+      for (const [index, item] of itemsToProcess.entries()) {
         try {
           const title = item.title || '';
           const url = item.link || '';
@@ -158,23 +209,46 @@ async function main() {
           const hash = contentHash({ title, source, published_at, body });
           const cachePath = path.join(cacheDir, `${hash}.json`);
 
-          let rec;
-          if (existing.has(`${hash}.json`)) {
-            rec = JSON.parse(await fs.readFile(cachePath, 'utf8'));
-            console.log(`Using cached: ${title.slice(0, 50)}...`);
+          // Skip if already in our loaded records
+          if (existingHashes.has(hash)) {
+            console.log(`  Already have: ${title.slice(0, 50)}...`);
+            continue;
+          }
+
+          // Check if it's in cache but wasn't loaded (edge case)
+          if (cacheFiles.has(`${hash}.json`)) {
+            const cached = JSON.parse(await fs.readFile(cachePath, 'utf8'));
+            records.push({
+              id: hash,
+              category: cached.category,
+              title: cached.title,
+              source: cached.source,
+              url: cached.url,
+              published_at: cached.published_at,
+              speedrun: cached.speedrun,
+              why_it_matters: cached.why_it_matters,
+              lenses: cached.lenses,
+              hype_meter: cached.hype_meter,
+              processing_order: cached.processing_order || Date.now()
+            });
+            console.log(`  Loaded from cache: ${title.slice(0, 50)}...`);
           } else {
-            console.log(`Processing new article: ${title.slice(0, 50)}...`);
+            // Process new article
+            console.log(`  Processing NEW article: ${title.slice(0, 50)}...`);
             let category = ruleClassify({ domain: s.domain, title, lede });
             if (!category) category = await classifyTieBreaker(title, lede);
-            const sum = await summarizeArticle(`${title}
-
-${lede}
-
-${body}`);
-            rec = {
-              content_hash: hash, title, url, source, published_at,
-              raw_excerpt: lede, raw_body: body,
-              category, category_confidence: category ? 'medium':'low',
+            const sum = await summarizeArticle(`${title}\n\n${lede}\n\n${body}`);
+            
+            const articleData = {
+              content_hash: hash,
+              title,
+              url,
+              source,
+              published_at,
+              raw_excerpt: lede,
+              raw_body: body,
+              category,
+              category_confidence: category ? 'medium' : 'low',
               speedrun: sum.speedrun,
               why_it_matters: sum.why_it_matters,
               lenses: sum.lenses,
@@ -182,79 +256,74 @@ ${body}`);
               model_meta: { model: 'gpt-4o-mini', prompt_version: 'v1.0' },
               created_at: new Date().toISOString(),
               updated_at: new Date().toISOString(),
-              processing_order: Date.now() + index // Add processing order for sorting tiebreaker
+              processing_order: Date.now() + index
             };
-            await fs.writeFile(cachePath, JSON.stringify(rec, null, 2));
-            console.log(`Processed and cached: ${title.slice(0, 50)}...`);
+            
+            // Save to cache
+            await fs.writeFile(cachePath, JSON.stringify(articleData, null, 2));
+            
+            // Add to records
+            records.push({
+              id: hash,
+              category: articleData.category,
+              title: articleData.title,
+              source: articleData.source,
+              url: articleData.url,
+              published_at: articleData.published_at,
+              speedrun: articleData.speedrun,
+              why_it_matters: articleData.why_it_matters,
+              lenses: articleData.lenses,
+              hype_meter: articleData.hype_meter,
+              processing_order: articleData.processing_order
+            });
+            
+            newArticlesCount++;
+            console.log(`  ✓ Processed and cached new article`);
           }
-
-          records.push({
-            id: hash,
-            category: rec.category,
-            title: rec.title,
-            source: rec.source,
-            url: rec.url,
-            published_at: rec.published_at,
-            speedrun: rec.speedrun,
-            why_it_matters: rec.why_it_matters,
-            lenses: rec.lenses,
-            hype_meter: rec.hype_meter,
-            processing_order: rec.processing_order || Date.now() // Fallback for existing records
-          });
         } catch (itemError) {
-          console.error(`Failed to process item "${item.title || 'unknown'}":`, itemError.message);
-          // Continue with next item
+          console.error(`  ✗ Failed to process item "${item.title || 'unknown'}":`, itemError.message);
         }
       }
     } catch (sourceError) {
       console.error(`Failed to process source ${s.name}:`, sourceError.message);
-      // Continue with next source
     }
   }
 
-  const cutoff = Date.now() - 14 * 24 * 3600 * 1000;
-  const latest = records.filter(r => new Date(r.published_at).getTime() >= cutoff)
-                        .sort((a, b) => {
-                          // Primary sort: by published date (newest first)
-                          const dateCompare = b.published_at.localeCompare(a.published_at);
-                          if (dateCompare !== 0) return dateCompare;
-                          
-                          // Tiebreaker: by processing order (newest processed first)
-                          return (b.processing_order || 0) - (a.processing_order || 0);
-                        });
+  console.log(`\nAdded ${newArticlesCount} new articles`);
+  console.log(`Total articles in system: ${records.length}`);
 
-  // Debug: Show what we're about to write
-  console.log(`About to write ${latest.length} items to: ${publicData}`);
-  console.log(`Sample titles: ${latest.slice(0, 3).map(item => item.title).join(', ')}`);
-  
-  // Check if file exists before writing
-  const fileExistsBefore = await fs.access(publicData).then(() => true).catch(() => false);
-  console.log(`File exists before write: ${fileExistsBefore}`);
-  
+  // Sort all records by published date (newest first)
+  const sortedRecords = records.sort((a, b) => {
+    const dateCompare = new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
+    if (dateCompare !== 0) return dateCompare;
+    return (b.processing_order || 0) - (a.processing_order || 0);
+  });
+
+  // For now, keep backward compatibility - output last 30 days to items.json
+  const thirtyDaysAgo = Date.now() - 30 * 24 * 3600 * 1000;
+  const recentArticles = sortedRecords.filter(r => 
+    new Date(r.published_at).getTime() >= thirtyDaysAgo
+  );
+
   // Write the file with metadata
   const output = {
     generated_at: new Date().toISOString(),
-    total_articles: latest.length,
-    articles: latest.map(({ processing_order, ...item }) => item) // Remove processing_order from public output
+    total_articles: recentArticles.length,
+    total_in_cache: records.length, // New field showing total accumulated
+    articles: recentArticles.map(({ processing_order, ...item }) => item)
   };
   
   await fs.writeFile(publicData, JSON.stringify(output, null, 2));
   
   // Verify the file was written
-  const fileExistsAfter = await fs.access(publicData).then(() => true).catch(() => false);
-  console.log(`File exists after write: ${fileExistsAfter}`);
-  
-  // Read back and verify content
   try {
     const writtenContent = await fs.readFile(publicData, 'utf8');
     const parsedContent = JSON.parse(writtenContent);
-    const itemCount = parsedContent.articles ? parsedContent.articles.length : parsedContent.length;
-    console.log(`Verified: Written file contains ${itemCount} items`);
+    console.log(`\n✓ Written ${parsedContent.articles.length} recent articles to items.json`);
+    console.log(`✓ Total cached articles: ${parsedContent.total_in_cache}`);
   } catch (verifyError) {
     console.error('Failed to verify written file:', verifyError.message);
   }
-  
-  console.log(`Built ${latest.length} items → public/data/items.json`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
