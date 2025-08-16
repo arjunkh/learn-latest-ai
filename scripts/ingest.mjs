@@ -124,6 +124,92 @@ ${fullText}`;
   }
 }
 
+// PHASE 2: Create monthly organized files
+async function createMonthlyFiles(allArticles, publicDataPath) {
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+  
+  // Group articles by month
+  const articlesByMonth = {};
+  const monthsIndex = [];
+  
+  for (const article of allArticles) {
+    const date = new Date(article.published_at);
+    const year = date.getFullYear();
+    const monthNum = date.getMonth();
+    const monthName = monthNames[monthNum];
+    
+    // Create filename like "December_2024_News"
+    const monthKey = `${monthName}_${year}_News`;
+    const monthDisplay = `${monthName} ${year}`;
+    
+    if (!articlesByMonth[monthKey]) {
+      articlesByMonth[monthKey] = {
+        month: monthDisplay,
+        year: year,
+        month_num: monthNum + 1, // 1-12 for sorting
+        filename: `${monthKey}.json`,
+        articles: []
+      };
+    }
+    
+    articlesByMonth[monthKey].articles.push(article);
+  }
+  
+  // Write each month's file
+  const dataDir = path.dirname(publicDataPath);
+  console.log('\nCreating monthly files:');
+  
+  for (const [monthKey, monthData] of Object.entries(articlesByMonth)) {
+    const monthFile = path.join(dataDir, monthData.filename);
+    
+    // Sort articles within month (newest first)
+    monthData.articles.sort((a, b) => {
+      const dateCompare = new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
+      if (dateCompare !== 0) return dateCompare;
+      return (b.processing_order || 0) - (a.processing_order || 0);
+    });
+    
+    const monthOutput = {
+      month: monthData.month,
+      year: monthData.year,
+      total: monthData.articles.length,
+      generated_at: new Date().toISOString(),
+      articles: monthData.articles.map(({ processing_order, ...item }) => item)
+    };
+    
+    await fs.writeFile(monthFile, JSON.stringify(monthOutput, null, 2));
+    console.log(`  ✓ ${monthData.filename}: ${monthData.articles.length} articles`);
+    
+    // Add to index
+    monthsIndex.push({
+      month: monthData.month,
+      year: monthData.year,
+      month_num: monthData.month_num,
+      filename: monthData.filename,
+      article_count: monthData.articles.length
+    });
+  }
+  
+  // Sort index by date (newest first)
+  monthsIndex.sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    return b.month_num - a.month_num;
+  });
+  
+  // Write metadata file
+  const metadataFile = path.join(dataDir, 'metadata.json');
+  const metadata = {
+    generated_at: new Date().toISOString(),
+    total_articles: allArticles.length,
+    total_months: monthsIndex.length,
+    months: monthsIndex
+  };
+  
+  await fs.writeFile(metadataFile, JSON.stringify(metadata, null, 2));
+  console.log(`  ✓ metadata.json: ${monthsIndex.length} months indexed`);
+}
+
 // PHASE 1 IMPLEMENTATION: Load all cached articles first
 async function loadAllCachedArticles(cacheDir) {
   const records = [];
@@ -299,23 +385,31 @@ async function main() {
     return (b.processing_order || 0) - (a.processing_order || 0);
   });
 
-  // For now, keep backward compatibility - output last 30 days to items.json
+  // PHASE 2: Create monthly files
+  await createMonthlyFiles(sortedRecords, publicData);
+
+  // For backward compatibility - output last 30 days to items.json
   const thirtyDaysAgo = Date.now() - 30 * 24 * 3600 * 1000;
   const recentArticles = sortedRecords.filter(r => 
     new Date(r.published_at).getTime() >= thirtyDaysAgo
   );
 
-  // Write the file with metadata
-  const output = {
+  // Also create items-latest.json (same as items.json for now)
+  const latestOutput = {
     generated_at: new Date().toISOString(),
     total_articles: recentArticles.length,
-    total_in_cache: records.length, // New field showing total accumulated
+    total_in_cache: records.length,
     articles: recentArticles.map(({ processing_order, ...item }) => item)
   };
   
-  await fs.writeFile(publicData, JSON.stringify(output, null, 2));
+  // Write both files for compatibility
+  await fs.writeFile(publicData, JSON.stringify(latestOutput, null, 2));
+  await fs.writeFile(
+    path.join(path.dirname(publicData), 'items-latest.json'),
+    JSON.stringify(latestOutput, null, 2)
+  );
   
-  // Verify the file was written
+  // Verify the files were written
   try {
     const writtenContent = await fs.readFile(publicData, 'utf8');
     const parsedContent = JSON.parse(writtenContent);
