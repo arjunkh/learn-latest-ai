@@ -14,7 +14,8 @@ const SOURCES = [
   // New sources
   { id: 'towards-data-science', name: 'Towards Data Science', rss: 'https://towardsdatascience.com/feed', domain: 'towardsdatascience.com' },
   { id: 'ai-business', name: 'AI Business', rss: 'https://aibusiness.com/rss.xml', domain: 'aibusiness.com' },
-  { id: 'reddit-chatgpt', name: 'Reddit ChatGPT', rss: 'https://www.reddit.com/r/ChatGPT/.rss', domain: 'reddit.com' },
+  { id: 'hackernews-ai', name: 'Hacker News AI', rss: 'https://hnrss.org/newest?q=AI', domain: 'news.ycombinator.com' },
+  { id: 'venturebeat', name: 'VentureBeat', rss: 'https://feeds.feedburner.com/venturebeat/SZYF', domain: 'venturebeat.com' },
   { id: 'ai-news', name: 'AI News', rss: 'https://www.artificialintelligence-news.com/feed/rss/', domain: 'artificialintelligence-news.com' }
 ];
 
