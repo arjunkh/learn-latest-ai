@@ -1,0 +1,29 @@
+{
+  "content_hash": "e9c2932a6b131f0a736604c6783d77584cd268678787503fc2bf263f2a64c322",
+  "title": "Show HN: SamwiseOS – A web-based, AI-first OS with a Python kernel in Pyodide",
+  "url": "https://samwiseos.neocities.org",
+  "source": "Hacker News AI",
+  "published_at": "2025-08-18T03:57:44.000Z",
+  "raw_excerpt": "For the past few months, I've poured all my energy into building something I'm incredibly passionate about: SamwiseOS, a completely in-browser, AI-first operating system.\nWhat is it?\nSamwiseOS is a persistent, single-page web app that looks and feels like a real operating system, complete with a terminal, a robust virtual filesystem (that saves to your browser's IndexedDB), user/group management, ",
+  "raw_body": "For the past few months, I've poured all my energy into building something I'm incredibly passionate about: SamwiseOS, a completely in-browser, AI-first operating system.\nWhat is it?\nSamwiseOS is a persistent, single-page web app that looks and feels like a real operating system, complete with a terminal, a robust virtual filesystem (that saves to your browser's IndexedDB), user/group management, and even graphical applications.\nThe twist? The entire core logic—filesystem, command execution, user management, everything—runs on a Python kernel powered by Pyodide (WebAssembly). The JS frontend acts as a \"Stage Manager,\" handling the UI, sound, and other browser APIs, while the Python kernel is the single source of truth. They talk to each other through a simple effect contract, which is a fancy way of saying they're best friends who communicate really, really well.\nWhy did I build this?\nI wanted to explore what a truly AI-first OS would feel like. Instead of just a command line, you can interact with SamwiseOS through conversation. The gemini command can use system tools to answer questions about your files, forge can generate code for you, and storyboard can analyze a whole directory of code and tell you what it does. It’s like having a brilliant, tireless intern who lives in your browser. It’s the civil servant of operating systems – for the people, by the people (and AI).\nFeatures I'm especially proud of:\nHybrid Kernel: A robust, sandboxed Python kernel running in WASM, with a nimble JavaScript frontend. It's the best of both worlds!\nAI-Powered Shell: Use commands like gemini, chidi, and forge to interact with the OS using natural language.\n100+ POSIX-like Commands: We've got everything from ls, grep, and awk to sudo, chmod, and useradd. It's a real, functional environment.\nGUI Apps: It's not just a terminal! Use edit for a text/code editor, paint for an ASCII art editor, top for a process viewer, chidi to analyze documents, and even adventure to play text-based games.\nPersistence: Your session, files, users, and command history are all saved in IndexedDB, so you can pick up right where you left off.\nMulti-User & Permissions: A full-fledged user and group system, including a virtual /etc/sudoers file and sudo capabilities.\nThe project is entirely self-contained and runs offline.\nI've had an absolute blast building this, and I'm bursting with ideas for the future (check out the roadmap in the README!). I would be honored if you'd take a look, poke around the filesystem, and let me know what you think.\nComments URL: https://news.ycombinator.com/item?id=44937273\nPoints: 1\n# Comments: 0",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "SamwiseOS is an innovative, AI-first operating system that operates entirely in the browser, utilizing a Python kernel via Pyodide. It features a persistent virtual filesystem, user management, and natural language commands, allowing users to interact with the OS conversationally. This unique approach not only enhances user experience but also democratizes access to powerful computing tools directly from the web.",
+  "why_it_matters": [
+    "SamwiseOS empowers users with an AI-driven interface, making complex tasks more accessible and efficient, particularly for those without extensive technical knowledge.",
+    "By running entirely in the browser, it eliminates the need for traditional installations, fostering greater collaboration and experimentation in software development."
+  ],
+  "lenses": {
+    "eli12": "SamwiseOS is a new type of operating system that you can use right in your web browser. It lets you talk to the computer using normal language, making it easier for everyone to do things like coding or managing files. This is exciting because it means you don’t need to install anything, and you can use it anywhere with internet access.",
+    "pm": "SamwiseOS is designed for developers and tech enthusiasts who want a flexible, AI-enhanced environment. It solves the problem of needing complex setups by providing a fully functional OS in the browser. Its competitive advantage lies in its unique AI commands and ease of access, while risks include potential performance limitations and reliance on browser capabilities.",
+    "engineer": "SamwiseOS employs a hybrid architecture with a Python kernel running in WebAssembly, enabling efficient execution of commands and operations. The system leverages IndexedDB for persistent storage, allowing users to maintain their sessions seamlessly. However, limitations may arise from browser performance constraints and the complexity of maintaining a fully functional OS in a web environment."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-18T04:12:34.331Z",
+  "updated_at": "2025-08-18T04:12:34.331Z",
+  "processing_order": 1755490354331
+}
