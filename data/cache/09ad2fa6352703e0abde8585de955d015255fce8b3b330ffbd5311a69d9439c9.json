@@ -1,0 +1,30 @@
+{
+  "content_hash": "09ad2fa6352703e0abde8585de955d015255fce8b3b330ffbd5311a69d9439c9",
+  "share_id": "ssdnsn",
+  "title": "Show HN: Scoring dev work by how hard it is for AI to copy it",
+  "url": "https://github.com/valdrox/devscorer",
+  "source": "Hacker News AI",
+  "published_at": "2025-08-18T12:43:49.000Z",
+  "raw_excerpt": "Started this weekend project because I was thinking about whether software engineers’ performance should be tied to business impact like other engineers (as opposed to having PMs focus on that and devs executing) and then started thinking about Dev KPIs.\nDeveloper work is unusually public. Aside from git diffs, you can see PR comments, Linear threads, and get a sense of both the complexity of the ",
+  "raw_body": "Started this weekend project because I was thinking about whether software engineers’ performance should be tied to business impact like other engineers (as opposed to having PMs focus on that and devs executing) and then started thinking about Dev KPIs.\nDeveloper work is unusually public. Aside from git diffs, you can see PR comments, Linear threads, and get a sense of both the complexity of the work and how people collaborate.\nI tried a little adversarial experiment:  \n- Take recent commits and have an LLM guess the \"spec\" (simulating a ticket on Linear, without building this step)\n- Ask Claude Code to implement the same thing  \n- Use another LLM to compare the two solutions blindly  \n- If the LLM version is worse than the human version, keep giving it hints until it matches or exceeds the human contribution \n- More elaborate hints = higher complexity score - Evaluating comments is even simpler. I didn’t try an adversarial approach, but there’s no reason it wouldn’t work.\nThis turned into a small library I hacked together. You can score devs on repos for fun.\nI wonder if managers use numbers simply because they can’t hold all the context of a person’s contributions, and so lose out on nuance. What if LLMs could hold all of the context of your work and give a fairer evaluation? Could we move away from PMs deciding the “what” and engineers deciding the “how”, to Engineers deciding both?\nPRs welcome!\nComments URL: https://news.ycombinator.com/item?id=44939951\nPoints: 1\n# Comments: 0",
+  "category": "trends_risks_outlook",
+  "category_confidence": "medium",
+  "speedrun": "A developer has created a project that scores software engineering work based on how challenging it is for AI to replicate. This initiative aims to redefine performance metrics for developers, suggesting that their contributions should be evaluated similarly to other engineering roles, emphasizing business impact and collaboration.",
+  "why_it_matters": [
+    "This approach could transform how software engineers are evaluated, promoting a more nuanced understanding of their contributions and potentially leading to fairer performance reviews.",
+    "By integrating AI into the evaluation process, organizations may enhance productivity and innovation, allowing engineers to take on more strategic roles in decision-making."
+  ],
+  "lenses": {
+    "eli12": "A developer made a tool to see how hard it is for AI to copy their work. This is cool because it could help managers understand how valuable each engineer's contributions are. It means engineers might get more credit for their unique skills.",
+    "pm": "This tool will be useful for team leaders and managers who want to assess developer contributions more accurately. It solves the problem of vague performance metrics and offers a competitive edge by allowing engineers to influence both project direction and execution, but it also risks over-reliance on AI assessments.",
+    "engineer": "The project uses large language models (LLMs) to evaluate the complexity of developer contributions by simulating ticket specifications and comparing AI-generated solutions to human work. While this method provides a novel way to quantify developer performance, it may struggle with context and subjective nuances inherent in software development."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-18T13:13:08.309Z",
+  "updated_at": "2025-08-18T13:13:08.309Z",
+  "processing_order": 1755522788310
+}
