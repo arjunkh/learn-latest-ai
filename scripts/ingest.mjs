@@ -263,7 +263,19 @@ async function main() {
   console.log(`Current working directory: ${process.cwd()}`);
   console.log(`Cache directory: ${cacheDir}`);
   console.log(`Public data file: ${publicData}`);
-  
+
+  // Test all RSS feeds first
+  console.log('\n🔍 Testing RSS feeds...');
+  for (const s of SOURCES) {
+    try {
+      const testFeed = await parser.parseURL(s.rss);
+      console.log(`✅ ${s.name}: ${testFeed.items?.length || 0} items available`);
+    } catch (e) {
+      console.log(`❌ ${s.name}: FAILED - ${e.message}`);
+    }
+  }
+  console.log('RSS feed test complete.\n');
+
   await fs.mkdir(cacheDir, { recursive: true });
   await fs.mkdir(path.dirname(publicData), { recursive: true });
 
@@ -284,6 +296,7 @@ async function main() {
       // Take up to 4 items per source (could be 0-4)
       const itemsToProcess = (feed.items || []).slice(0, 4);
       console.log(`  Found ${itemsToProcess.length} items in RSS feed`);
+      console.log(`  Items from ${s.name}:`, itemsToProcess.map(item => item.title?.slice(0, 50)));
       
       for (const [index, item] of itemsToProcess.entries()) {
         try {
@@ -368,6 +381,7 @@ async function main() {
             });
             
             newArticlesCount++;
+            console.log(`    ✓ NEW from ${s.name}: "${title.slice(0, 40)}..." (Total new: ${newArticlesCount})`);
             console.log(`  ✓ Processed and cached new article`);
           }
         } catch (itemError) {
@@ -377,6 +391,7 @@ async function main() {
     } catch (sourceError) {
       console.error(`Failed to process source ${s.name}:`, sourceError.message);
     }
+    console.log(`✅ Finished ${s.name}: Total articles now = ${records.length}`);
   }
 
   console.log(`\nAdded ${newArticlesCount} new articles`);
