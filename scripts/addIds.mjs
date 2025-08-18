@@ -2,7 +2,10 @@ import fs from 'fs';
 import { generateShortId } from './utils/shortId.mjs';
 
 // Read current items.json
-const items = JSON.parse(fs.readFileSync('public/data/items.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('public/data/items.json', 'utf8'));
+
+// Handle both formats: array or object with articles
+const items = Array.isArray(data) ? data : (data.articles || []);
 
 // Add IDs to all articles
 const updatedItems = items.map(item => ({
@@ -10,7 +13,11 @@ const updatedItems = items.map(item => ({
   id: item.id || generateShortId(item.title)
 }));
 
-// Save back
-fs.writeFileSync('public/data/items.json', JSON.stringify(updatedItems, null, 2));
+// Save back in the same format
+const output = Array.isArray(data) 
+  ? updatedItems 
+  : { ...data, articles: updatedItems };
+
+fs.writeFileSync('public/data/items.json', JSON.stringify(output, null, 2));
 
 console.log(`✅ Added IDs to ${updatedItems.length} articles`);
