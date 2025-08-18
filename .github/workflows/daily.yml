@@ -40,6 +40,12 @@ jobs:
       - run: npm run ingest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - name: Add Share IDs to Articles
+        run: |
+          echo "=== ADDING SHARE IDs ==="
+          node scripts/addIds.mjs
+          echo "=== SHARE IDs ADDED ==="
           
       - name: Show what changed
         run: |
