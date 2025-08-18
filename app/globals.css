@@ -167,3 +167,54 @@ ul.bullet-list li {
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out;
 }
+
+/* ===== SHARE FEATURE STYLES ===== */
+
+/* Share button hover effect */
+.share-button {
+  @apply p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200;
+}
+
+.share-button:active {
+  @apply scale-95;
+}
+
+/* Toast notification animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Use different class name to avoid conflict */
+.toast-slide-in {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Share icon subtle pulse on first view */
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.share-hint {
+  animation: subtlePulse 2s ease-in-out 2;
+}
