@@ -89,7 +89,7 @@ export default function Card({ item }: { item: any }) {
     const shareData = {
       title: `${item.title}`,
       text: `${item.speedrun}\n\nCheck it out on AIByte:`,
-      url: `https://aibyte.co.in/a/${item.share_id || item.id}` // Short URL format
+      url: `https://www.aibyte.co.in/a/${item.share_id}`
     };
     
     try {
