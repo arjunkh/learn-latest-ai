@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import clsx from 'clsx'
+import Link from 'next/link'
 import { trackArticleClick, trackLensSwitch, trackShare } from '@/lib/analytics'
 
 export type Lens = 'simple' | 'pm' | 'engineer'
@@ -232,6 +233,17 @@ export default function Card({ item }: { item: any }) {
         </span>
         <HypeMeter value={item.hype_meter ?? 3} />
       </div>
+      {/* Add a "View Full Article" link for desktop users */}
+      {!isMobile && (
+        <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+          <Link
+            href={`/article/${item.id}`}
+            className="text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
+          >
+            View full article →
+          </Link>
+        </div>
+      )}
     </article>
-  )
-}
+    )
+  }
