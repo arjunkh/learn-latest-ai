@@ -8,11 +8,10 @@ import Card from '@/components/Card'
 // Get article by ID (either regular ID or share_id)
 async function getArticle(id: string) {
   try {
-    const filePath = path.join(process.cwd(), 'public/data/items.json')
-    const fileContent = fs.readFileSync(filePath, 'utf8')
-    const data = JSON.parse(fileContent)
+    // Fetch via HTTP instead of filesystem
+    const response = await fetch(`https://www.aibyte.co.in/data/items.json`)
+    const data = await response.json()
     
-    // Try to find by regular ID first, then by share_id
     const article = data.articles.find((item: any) => 
       item.id === id || item.share_id === id
     )
