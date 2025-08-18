@@ -3,6 +3,7 @@ import path from 'path';
 import crypto from 'crypto';
 import Parser from 'rss-parser';
 import OpenAI from 'openai';
+import { generateShortId } from './utils/shortId.mjs';
 
 // TASK 1: Updated sources array - 7 sources, 4 items each = 28 total articles
 const SOURCES = [
@@ -328,6 +329,7 @@ async function main() {
             
             const articleData = {
               content_hash: hash,
+              share_id: generateShortId(title),
               title,
               url,
               source,
@@ -352,6 +354,7 @@ async function main() {
             // Add to records
             records.push({
               id: hash,
+              share_id: articleData.share_id,
               category: articleData.category,
               title: articleData.title,
               source: articleData.source,
