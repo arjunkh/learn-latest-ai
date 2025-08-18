@@ -12,6 +12,7 @@ jobs:
         with: { node-version: '20' }
       - run: npm ci
       - run: npm run ingest
+      - run: node scripts/addIds.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - name: Commit & push
