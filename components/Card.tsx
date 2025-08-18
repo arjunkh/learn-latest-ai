@@ -1,7 +1,7 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import clsx from 'clsx'
-import { trackArticleClick, trackLensSwitch } from '@/lib/analytics'
+import { trackArticleClick, trackLensSwitch, trackShare } from '@/lib/analytics'
 
 export type Lens = 'simple' | 'pm' | 'engineer'
 
@@ -33,10 +33,31 @@ function HypeMeter({ value }: { value: number }) {
   )
 }
 
+// Mobile detection hook
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+        window.innerWidth < 768
+      )
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+  
+  return isMobile
+}
+
 export default function Card({ item }: { item: any }) {
   const [lens, setLens] = useState<Lens>('simple')
+  const [showShareToast, setShowShareToast] = useState(false)
+  const isMobile = useIsMobile()
   
-  // YOUR ANALYTICS HANDLERS - UNCHANGED
   const handleArticleClick = () => {
     trackArticleClick({
       title: item.title,
@@ -50,6 +71,48 @@ export default function Card({ item }: { item: any }) {
   const handleLensChange = (newLens: Lens) => {
     setLens(newLens);
     trackLensSwitch(newLens, item.title);
+  }
+  
+  const handleShare = async () => {
+    // Track the share attempt
+    trackShare({
+      title: item.title,
+      source: item.source,
+      category: getCategoryDisplayName(item.category),
+      url: item.url,
+      hype_meter: item.hype_meter,
+      lens: lens
+    });
+    
+    // Create share data
+    const shareData = {
+      title: `${item.title}`,
+      text: `${item.speedrun}\n\nCheck it out on AIByte:`,
+      url: `https://aibyte.co.in/a/${item.id}` // Short URL format
+    };
+    
+    try {
+      if (navigator.share) {
+        // Use native share on mobile
+        await navigator.share(shareData);
+        
+        // Show success toast
+        setShowShareToast(true);
+        setTimeout(() => setShowShareToast(false), 3000);
+      } else {
+        // Fallback for browsers that don't support native share
+        // Copy to clipboard as fallback
+        await navigator.clipboard.writeText(
+          `${shareData.title}\n\n${shareData.text}\n${shareData.url}`
+        );
+        
+        setShowShareToast(true);
+        setTimeout(() => setShowShareToast(false), 3000);
+      }
+    } catch (error) {
+      // User cancelled share or error occurred
+      console.log('Share cancelled or failed');
+    }
   }
   
   // Get badge class based on category
@@ -67,18 +130,50 @@ export default function Card({ item }: { item: any }) {
   }
   
   return (
-    <article className="card h-full flex flex-col group">
+    <article className="card h-full flex flex-col group relative">
+      {/* Share Success Toast */}
+      {showShareToast && (
+        <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg z-10 animate-fade-in">
+          ✓ Ready to share!
+        </div>
+      )}
+      
       {/* Header section with better spacing */}
       <div className="flex items-start justify-between gap-3 mb-4">
         <span className={clsx('badge', getBadgeClass(item.category))}>
           {getCategoryDisplayName(item.category)}
         </span>
-        <time className="text-xs text-gray-400 dark:text-gray-500 font-medium">
-          {new Date(item.published_at).toLocaleDateString('en-US', { 
-            month: 'short', 
-            day: 'numeric' 
-          })}
-        </time>
+        <div className="flex items-center gap-2">
+          <time className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+            {new Date(item.published_at).toLocaleDateString('en-US', { 
+              month: 'short', 
+              day: 'numeric' 
+            })}
+          </time>
+          
+          {/* Mobile-only share button */}
+          {isMobile && (
+            <button
+              onClick={handleShare}
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              aria-label="Share article"
+            >
+              <svg 
+                className="w-4 h-4 text-gray-500 dark:text-gray-400" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.032 4.024a3 3 0 004.243 4.243m0 0a3 3 0 10-4.243-4.243m4.243 4.243L12 12"
+                />
+              </svg>
+            </button>
+          )}
+        </div>
       </div>
       
       {/* Title with better typography */}
