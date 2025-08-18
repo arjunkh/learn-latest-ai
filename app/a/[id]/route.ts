@@ -1,9 +1,7 @@
 // app/a/[id]/route.ts
-// This handles short URL redirects like aibyte.co.in/a/abc123
-
 import { redirect } from 'next/navigation'
-import fs from 'fs'
-import path from 'path'
+
+export const dynamic = 'force-dynamic'
 
 export async function GET(
   request: Request,
@@ -12,25 +10,23 @@ export async function GET(
   const { id } = params
   
   try {
-    // Read items.json to find the article
-    const filePath = path.join(process.cwd(), 'public/data/items.json')
-    const fileContent = fs.readFileSync(filePath, 'utf8')
-    const data = JSON.parse(fileContent)
+    // Fetch items.json via HTTP (Railway can't read files in route handlers)
+    const host = request.headers.get('host') || 'www.aibyte.co.in'
+    const protocol = host.includes('localhost') ? 'http' : 'https'
+    const response = await fetch(`${protocol}://${host}/data/items.json`)
+    const data = await response.json()
     
     // Find article with matching share_id
     const article = data.articles.find((item: any) => item.share_id === id)
     
     if (article) {
-      // Redirect to the article page on YOUR site
       redirect(`/article/${article.id}`)
     } else {
-      // If not found, redirect to home
       console.log(`Share ID not found: ${id}`)
       redirect('/')
     }
   } catch (error) {
-    console.error('Error finding article:', error)
-    // On error, redirect to home
+    console.error('Error:', error)
     redirect('/')
   }
 }
