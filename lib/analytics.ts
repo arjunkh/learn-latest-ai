@@ -30,6 +30,35 @@ export const trackArticleClick = (articleData: {
   });
 };
 
+// NEW: Share tracking
+export const trackShare = (shareData: {
+  title: string;
+  source: string;
+  category: string;
+  url: string;
+  hype_meter?: number;
+  lens: string;
+  time_on_article?: number;
+}) => {
+  track('article_shared', {
+    article_title: shareData.title,
+    source: shareData.source,
+    category: shareData.category,
+    article_url: shareData.url,
+    hype_meter: shareData.hype_meter || 0,
+    current_lens: shareData.lens,
+    device_type: 'mobile', // We know it's mobile-only
+    share_method: 'native_share',
+    timestamp: new Date().toISOString()
+  });
+  
+  gtag('event', 'share', {
+    article_title: shareData.title,
+    category: shareData.category,
+    method: 'native_share'
+  });
+};
+
 // Lens switching (Simple/PM/Engineer views)
 export const trackLensSwitch = (lens: string, articleTitle: string) => {
   track('lens_switched', {
