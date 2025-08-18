@@ -4,20 +4,18 @@ import { generateShortId } from './utils/shortId.mjs';
 // Read current items.json
 const data = JSON.parse(fs.readFileSync('public/data/items.json', 'utf8'));
 
-// Handle both formats: array or object with articles
-const items = Array.isArray(data) ? data : (data.articles || []);
-
-// Add IDs to all articles
-const updatedItems = items.map(item => ({
+// ADD share_id without touching existing id
+const updatedArticles = data.articles.map(item => ({
   ...item,
-  id: item.id || generateShortId(item.title)
+  share_id: item.share_id || generateShortId(item.title)  // ADD new field
 }));
 
-// Save back in the same format
-const output = Array.isArray(data) 
-  ? updatedItems 
-  : { ...data, articles: updatedItems };
+// Save back with updated articles
+const output = {
+  ...data,
+  articles: updatedArticles
+};
 
 fs.writeFileSync('public/data/items.json', JSON.stringify(output, null, 2));
 
-console.log(`✅ Added IDs to ${updatedItems.length} articles`);
+console.log(`✅ Added share_ids to ${updatedArticles.length} articles`);
