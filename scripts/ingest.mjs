@@ -9,13 +9,15 @@ import { generateShortId } from './utils/shortId.mjs';
 const SOURCES = [
   // Existing sources
   { id: 'openai', name: 'OpenAI', rss: 'https://openai.com/blog/rss.xml', domain: 'openai.com' },
-  { id: 'deepmind', name: 'Google DeepMind', rss: 'https://deepmind.google/discover/rss', domain: 'deepmind.google' },
+  // Replace broken ones with these:
+{ id: 'mit-tech', name: 'MIT Technology Review', rss: 'https://www.technologyreview.com/feed/', domain: 'technologyreview.com' },
+{ id: 'arxiv-ai', name: 'ArXiv AI', rss: 'http://arxiv.org/rss/cs.AI', domain: 'arxiv.org' },
   { id: 'verge-ai', name: 'The Verge (AI)', rss: 'https://www.theverge.com/rss/ai/index.xml', domain: 'theverge.com' },
   
   // New sources
   { id: 'towards-data-science', name: 'Towards Data Science', rss: 'https://towardsdatascience.com/feed', domain: 'towardsdatascience.com' },
   { id: 'ai-business', name: 'AI Business', rss: 'https://aibusiness.com/rss.xml', domain: 'aibusiness.com' },
-  { id: 'hackernews-ai', name: 'Hacker News AI', rss: 'https://hnrss.org/newest?q=AI', domain: 'news.ycombinator.com' },
+ // { id: 'hackernews-ai', name: 'Hacker News AI', rss: 'https://hnrss.org/newest?q=AI', domain: 'news.ycombinator.com' },
   { id: 'venturebeat', name: 'VentureBeat', rss: 'https://feeds.feedburner.com/venturebeat/SZYF', domain: 'venturebeat.com' },
   { id: 'ai-news', name: 'AI News', rss: 'https://www.artificialintelligence-news.com/feed/rss/', domain: 'artificialintelligence-news.com' }
 ];
