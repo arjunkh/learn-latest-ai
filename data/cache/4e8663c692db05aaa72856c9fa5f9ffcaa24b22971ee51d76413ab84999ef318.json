@@ -1,0 +1,30 @@
+{
+  "content_hash": "4e8663c692db05aaa72856c9fa5f9ffcaa24b22971ee51d76413ab84999ef318",
+  "share_id": "esib18",
+  "title": "EvoCut: Strengthening Integer Programs via Evolution-Guided Language Models",
+  "url": "https://arxiv.org/abs/2508.11850",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-19T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.11850v1 Announce Type: new \nAbstract: Integer programming lies at the heart of crucial combinatorial optimization tasks but remains challenging due to its NP-hard nature. An effective approach for practically solving integer programs is the manual design of acceleration cuts, i.e. inequalities that improve solver performance. However, this creative process demands deep expertise and is ",
+  "raw_body": "arXiv:2508.11850v1 Announce Type: new \nAbstract: Integer programming lies at the heart of crucial combinatorial optimization tasks but remains challenging due to its NP-hard nature. An effective approach for practically solving integer programs is the manual design of acceleration cuts, i.e. inequalities that improve solver performance. However, this creative process demands deep expertise and is yet to be automated. Our proposed framework, EvoCut, automates the generation of acceleration cuts by combining large language models (LLMs) with an evolutionary search. EvoCut (i) initializes a diverse population of candidate cuts via an LLM-based initializer agent; (ii) for each cut empirically evaluates both preservation of the optimal solution and its ability to cut off fractional solutions across a verification set; and (iii) iteratively refines the population through evolutionary crossover and mutation agents. We quantify each cut's utility by its relative reduction in the solver's optimality gap. Our comparisons against standard integer programming practice show that EvoCut reduces optimality gap by 17-57% within a fixed time. It obtains the same solutions up to 4 times as fast, and obtains higher-quality solutions within the same time limit. Requiring no human expert input, EvoCut reliably generates, improves, and empirically verifies cuts that generalize to unseen instances. The code is available at https://github.com/milad1378yz/EvoCut.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "EvoCut introduces a novel framework that automates the generation of acceleration cuts for integer programming using evolutionary algorithms and large language models. This innovation significantly enhances solver performance, reducing the optimality gap by 17-57% and achieving solutions up to four times faster without requiring expert input, making it a game-changer in combinatorial optimization.",
+  "why_it_matters": [
+    "EvoCut democratizes access to advanced integer programming techniques, allowing organizations without deep expertise to solve complex optimization problems efficiently, potentially lowering operational costs.",
+    "By improving the speed and quality of solutions, EvoCut can enhance decision-making processes in industries like logistics and finance, where optimal resource allocation is critical."
+  ],
+  "lenses": {
+    "eli12": "EvoCut is a new tool that helps computers solve tricky math problems faster and better. It uses smart technology to create solutions without needing expert help. This means more people can solve complex problems easily.",
+    "pm": "Businesses in sectors like logistics and finance will use EvoCut to optimize resource allocation and improve operational efficiency. It addresses the challenge of needing expert knowledge for integer programming, providing a competitive edge by speeding up processes and reducing costs.",
+    "engineer": "EvoCut employs a hybrid approach that combines large language models for initial cut generation with evolutionary algorithms for refinement. This architecture allows for the empirical evaluation of cuts based on their effectiveness in reducing optimality gaps. However, it may face limitations in handling extremely large or complex integer programming instances."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-19T04:30:29.264Z",
+  "updated_at": "2025-08-19T04:30:29.264Z",
+  "processing_order": 1755577829265
+}

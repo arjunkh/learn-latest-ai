@@ -1,9 +1,89 @@
 {
   "month": "August 2025",
   "year": 2025,
-  "total": 108,
-  "generated_at": "2025-08-19T03:54:10.447Z",
+  "total": 112,
+  "generated_at": "2025-08-19T04:30:38.861Z",
   "articles": [
+    {
+      "id": "068d3b45f038f733793c77df732577b3f4cf6c043b8091898bbed796cb4856f0",
+      "share_id": "qmfdo9",
+      "category": "capabilities_and_how",
+      "title": "QuarkMed Medical Foundation Model Technical Report",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2508.11894",
+      "published_at": "2025-08-19T04:00:00.000Z",
+      "speedrun": "The QuarkMed Medical Foundation Model introduces a specialized AI designed for healthcare, achieving 70% accuracy on the Chinese Medical Licensing Examination. This model enhances medical consultations and diagnostics, addressing the need for accuracy and customization in medical applications, and is already utilized by millions of users.",
+      "why_it_matters": [
+        "QuarkMed's model improves the reliability of AI in healthcare, potentially transforming patient care and medical decision-making through enhanced accuracy and tailored solutions.",
+        "By achieving high performance on medical benchmarks, QuarkMed sets a new standard for AI applications in healthcare, encouraging further investment and innovation in this critical field."
+      ],
+      "lenses": {
+        "eli12": "QuarkMed created a smart AI that helps doctors and patients by giving accurate medical advice. It's exciting because it can learn from lots of medical data, making it better at its job. This means people can get better healthcare support.",
+        "pm": "Healthcare providers will use QuarkMed to enhance patient interactions and streamline diagnostics. It solves the problem of needing precise medical knowledge while offering a competitive edge in accuracy. However, businesses must manage risks related to data privacy and regulatory compliance.",
+        "engineer": "QuarkMed employs a unique architecture combining curated medical data with Retrieval-Augmented Generation (RAG) techniques. This allows the model to generate contextually relevant medical information while maintaining high performance. Limitations may include dependency on data quality and potential biases in training datasets."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "a1450e246562d1e30d617d1b105fbec2c9f1c2280bc273001dadf76a2af0dde3",
+      "share_id": "lthjwn",
+      "category": "capabilities_and_how",
+      "title": "LARC: Towards Human-level Constrained Retrosynthesis Planning through an Agentic Framework",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2508.11860",
+      "published_at": "2025-08-19T04:00:00.000Z",
+      "speedrun": "The article introduces LARC, a pioneering framework that utilizes large language models (LLMs) for constrained retrosynthesis planning in chemistry. By integrating agentic feedback mechanisms, LARC significantly enhances the efficiency and accuracy of identifying synthetic routes, achieving a 72.9% success rate on complex tasks. This development is crucial as it brings LLMs closer to human-level performance in a vital scientific domain.",
+      "why_it_matters": [
+        "LARC's high success rate in retrosynthesis planning could accelerate drug discovery and materials science, leading to faster innovations and reduced costs in research and development.",
+        "The framework's extensibility suggests future applications in various scientific fields, potentially transforming how researchers approach complex problem-solving with AI assistance."
+      ],
+      "lenses": {
+        "eli12": "LARC is a new tool that helps chemists figure out how to make complex molecules. It uses smart AI to suggest the best ways to create these molecules quickly and accurately. This is exciting because it can help scientists discover new medicines and materials faster than ever before.",
+        "pm": "Researchers and pharmaceutical companies will use LARC to streamline the process of creating new compounds. It solves the problem of slow and error-prone retrosynthesis planning, offering a competitive edge in drug development. However, reliance on AI also poses risks, such as potential over-dependence on technology for critical decision-making.",
+        "engineer": "LARC employs a novel architecture that integrates agentic feedback into the retrosynthesis planning process, allowing for real-time evaluation of constraints. Its performance is characterized by a 72.9% success rate on complex tasks, showcasing its efficiency. Limitations may include dependency on the quality of input data and the need for further refinement in diverse chemical contexts."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "4e8663c692db05aaa72856c9fa5f9ffcaa24b22971ee51d76413ab84999ef318",
+      "share_id": "esib18",
+      "category": "capabilities_and_how",
+      "title": "EvoCut: Strengthening Integer Programs via Evolution-Guided Language Models",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2508.11850",
+      "published_at": "2025-08-19T04:00:00.000Z",
+      "speedrun": "EvoCut introduces a novel framework that automates the generation of acceleration cuts for integer programming using evolutionary algorithms and large language models. This innovation significantly enhances solver performance, reducing the optimality gap by 17-57% and achieving solutions up to four times faster without requiring expert input, making it a game-changer in combinatorial optimization.",
+      "why_it_matters": [
+        "EvoCut democratizes access to advanced integer programming techniques, allowing organizations without deep expertise to solve complex optimization problems efficiently, potentially lowering operational costs.",
+        "By improving the speed and quality of solutions, EvoCut can enhance decision-making processes in industries like logistics and finance, where optimal resource allocation is critical."
+      ],
+      "lenses": {
+        "eli12": "EvoCut is a new tool that helps computers solve tricky math problems faster and better. It uses smart technology to create solutions without needing expert help. This means more people can solve complex problems easily.",
+        "pm": "Businesses in sectors like logistics and finance will use EvoCut to optimize resource allocation and improve operational efficiency. It addresses the challenge of needing expert knowledge for integer programming, providing a competitive edge by speeding up processes and reducing costs.",
+        "engineer": "EvoCut employs a hybrid approach that combines large language models for initial cut generation with evolutionary algorithms for refinement. This architecture allows for the empirical evaluation of cuts based on their effectiveness in reducing optimality gaps. However, it may face limitations in handling extremely large or complex integer programming instances."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "e6474663c55cf9df6281f2f0608932379c789a3956700f105024e5e0377c17ce",
+      "share_id": "faelfp",
+      "category": "capabilities_and_how",
+      "title": "Finite Automata Extraction: Low-data World Model Learning as Programs from Gameplay Video",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2508.11836",
+      "published_at": "2025-08-19T04:00:00.000Z",
+      "speedrun": "The article introduces Finite Automata Extraction (FAE), a novel method for learning world models from gameplay videos using a neuro-symbolic approach. This technique utilizes a domain-specific language, Retro Coder, to create more precise and generalizable models, enhancing explainability and transferability compared to traditional neural network methods. Its significance lies in improving the efficiency and accuracy of AI systems in understanding complex environments.",
+      "why_it_matters": [
+        "FAE's ability to generate explainable models from low-data scenarios could revolutionize AI applications in gaming and robotics, making them more adaptable and user-friendly.",
+        "By leveraging a domain-specific language, FAE enhances the transferability of learned models, potentially reducing the time and resources needed for training AI in new environments."
+      ],
+      "lenses": {
+        "eli12": "This article talks about a new way to teach computers about their surroundings using videos from games. It's cool because it helps computers understand better and explain what they learned. This means that everyday technology, like robots or video games, can become smarter and easier to use.",
+        "pm": "Developers in gaming and robotics will use FAE to create smarter AI that learns from fewer examples. It solves the problem of explainability in AI models, giving businesses a competitive edge by reducing training time and costs. However, they must be cautious about the complexity of implementation and potential limitations in diverse environments.",
+        "engineer": "FAE employs a neuro-symbolic framework that extracts finite automata from gameplay videos, resulting in a more structured representation of environments. The architecture uses a domain-specific language, Retro Coder, to enhance model precision and generalizability. Limitations may include the need for high-quality video data and potential challenges in scaling to more complex environments."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "e08d9c20fa54f4a228938c0e68379cfea849f0fe93fd7700dc0d16d8d89b8744",
       "share_id": "cltsj9",
@@ -186,6 +266,7 @@
     },
     {
       "id": "e6921eb5cbdc6b11a0ce3b4d74a9ba276a0f3bf3b471949ef4e089e73d0f3644",
+      "share_id": "aiislxf",
       "category": "trends_risks_outlook",
       "title": "AI Is Power-Hungry",
       "source": "Hacker News AI",
@@ -205,6 +286,7 @@
     },
     {
       "id": "595af88806c9094a231cc5af77d69a373894d52cc228bd41eea06c8a6fe64796",
+      "share_id": "pfiq1h",
       "category": "capabilities_and_how",
       "title": "Privacy First AI Inference",
       "source": "Hacker News AI",
@@ -224,6 +306,7 @@
     },
     {
       "id": "8a8751d434c1eb9e3fdbcb45c4864415138ae906cdd1d5f15d19c2988d232b6d",
+      "share_id": "girbfe",
       "category": "capabilities_and_how",
       "title": "GSA Issues RFI for AI-Based Procurement Ecosystem",
       "source": "Hacker News AI",
@@ -243,6 +326,7 @@
     },
     {
       "id": "78d30e95f65ed6679bd60f394bd5908620faec79dafd9a3fe45130e6b9d17c3d",
+      "share_id": "etab27",
       "category": "trends_risks_outlook",
       "title": "Empowering Tomorrow: Autonomous Agents in a World of Responsible AI",
       "source": "AI Business",
@@ -262,6 +346,7 @@
     },
     {
       "id": "aacd72dff5691d521246b4fd1cbaa0b47b4a196199621e1c0f186f5663626a84",
+      "share_id": "stp6eo",
       "category": "trends_risks_outlook",
       "title": "We should thank pigeons for our AI breakthroughs",
       "source": "Hacker News AI",
@@ -281,6 +366,7 @@
     },
     {
       "id": "eec837504d39483b982f331bcaf40059c28670f36eb53bef9abef3ac1c529b9b",
+      "share_id": "wscexy",
       "category": "trends_risks_outlook",
       "title": "Why security chiefs demand urgent regulation of AI like DeepSeek",
       "source": "AI News",
@@ -300,6 +386,7 @@
     },
     {
       "id": "25c20d1a15f5d58e4206a2de35d5e1e7cca0fac6153c406bf2a6e5ed138d451d",
+      "share_id": "pa3hpr",
       "category": "trends_risks_outlook",
       "title": "Is Perplexity AI’s $34.5b Chrome bid a strategic master stroke or elaborate PR stunt?",
       "source": "AI News",
@@ -319,6 +406,7 @@
     },
     {
       "id": "635cc1b94fcc35d4ae1b50cee944d3d632146c633bf84a17adeff414c2688d1d",
+      "share_id": "suit63",
       "category": "trends_risks_outlook",
       "title": "Scammers Using AI to Impersonate Sir Billy Connolly",
       "source": "Hacker News AI",
@@ -338,6 +426,7 @@
     },
     {
       "id": "09ad2fa6352703e0abde8585de955d015255fce8b3b330ffbd5311a69d9439c9",
+      "share_id": "ssdnsn",
       "category": "trends_risks_outlook",
       "title": "Show HN: Scoring dev work by how hard it is for AI to copy it",
       "source": "Hacker News AI",
@@ -357,6 +446,7 @@
     },
     {
       "id": "c590da5579efcb642d4b8d9d4f05da9aacfa43de50460cf432b7cfa40a2de52d",
+      "share_id": "dhjwu3",
       "category": "in_action_real_world",
       "title": "UK drafts AI to help Joe Public decipher its own baffling bureaucracy",
       "source": "Hacker News AI",
@@ -376,6 +466,7 @@
     },
     {
       "id": "9a5941122d4ca22cf00718babd3bbd359e28791402ef7aae75c996e3a69e1ba3",
+      "share_id": "ser5c0",
       "category": "trends_risks_outlook",
       "title": "Show HN: Extension to Replace AI With :duck:",
       "source": "Hacker News AI",
@@ -1961,6 +2052,25 @@
       "hype_meter": 3
     },
     {
+      "id": "cd22807bbdf0db00d121baec8660824746ea7e656c4e66a67456bc158ba99b83",
+      "category": "capabilities_and_how",
+      "title": "First look at GPT-5",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/gpt-5-first-look",
+      "published_at": "2025-08-07T00:00:00.000Z",
+      "speedrun": "The article provides an exclusive first look at GPT-5, showcasing its capabilities through the experiences of leading developers. This initial exposure highlights significant advancements in AI language processing, suggesting a transformative impact on various applications and industries.",
+      "why_it_matters": [
+        "GPT-5's enhanced language understanding can revolutionize customer service, content creation, and software development, leading to increased efficiency and innovation across sectors.",
+        "The insights from top developers using GPT-5 may set new benchmarks for AI integration, influencing future AI development and competitive strategies in technology."
+      ],
+      "lenses": {
+        "eli12": "A group of top developers just tried out GPT-5, the latest AI tool. It's exciting because it can understand and generate text even better than before. This means everyday tasks like writing emails or getting help online could become much easier for everyone.",
+        "pm": "Businesses across various sectors will leverage GPT-5 to improve operations, enhance customer interactions, and streamline workflows. The tool addresses challenges in communication and content generation, offering a competitive edge. However, companies must navigate potential risks related to AI ethics and data security.",
+        "engineer": "GPT-5 employs advanced neural network architectures and improved training methodologies to enhance language processing capabilities. Its performance is characterized by better contextual understanding and generation speed. However, limitations may include biases in training data and resource-intensive computational requirements."
+      },
+      "hype_meter": 3
+    },
+    {
       "id": "d2fd0daf632860a5b0363159542dc319d36925eb31db71a03703138512a6bd31",
       "category": "capabilities_and_how",
       "title": "From hard refusals to safe-completions: toward output-centric safety training",
@@ -1995,25 +2105,6 @@
         "eli12": "Cursor has added a powerful tool called GPT-5 to help people write computer code. This is cool because it makes coding easier for everyone, even those who aren't experts. It means more people can create apps and websites without needing to be professional programmers.",
         "pm": "Developers and businesses will use Cursor with GPT-5 to speed up coding and debugging processes. It solves the problem of complex coding tasks, making software development faster and more efficient. The competitive advantage lies in reduced development time, while risks include reliance on AI for critical coding tasks.",
         "engineer": "Cursor employs GPT-5's advanced natural language processing capabilities to interpret user commands and generate code. The architecture leverages machine learning models for real-time code suggestions and debugging. However, limitations include potential inaccuracies in generated code and the need for user oversight to ensure quality."
-      },
-      "hype_meter": 3
-    },
-    {
-      "id": "cd22807bbdf0db00d121baec8660824746ea7e656c4e66a67456bc158ba99b83",
-      "category": "capabilities_and_how",
-      "title": "First look at GPT-5",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/gpt-5-first-look",
-      "published_at": "2025-08-07T00:00:00.000Z",
-      "speedrun": "The article provides an exclusive first look at GPT-5, showcasing its capabilities through the experiences of leading developers. This initial exposure highlights significant advancements in AI language processing, suggesting a transformative impact on various applications and industries.",
-      "why_it_matters": [
-        "GPT-5's enhanced language understanding can revolutionize customer service, content creation, and software development, leading to increased efficiency and innovation across sectors.",
-        "The insights from top developers using GPT-5 may set new benchmarks for AI integration, influencing future AI development and competitive strategies in technology."
-      ],
-      "lenses": {
-        "eli12": "A group of top developers just tried out GPT-5, the latest AI tool. It's exciting because it can understand and generate text even better than before. This means everyday tasks like writing emails or getting help online could become much easier for everyone.",
-        "pm": "Businesses across various sectors will leverage GPT-5 to improve operations, enhance customer interactions, and streamline workflows. The tool addresses challenges in communication and content generation, offering a competitive edge. However, companies must navigate potential risks related to AI ethics and data security.",
-        "engineer": "GPT-5 employs advanced neural network architectures and improved training methodologies to enhance language processing capabilities. Its performance is characterized by better contextual understanding and generation speed. However, limitations may include biases in training data and resource-intensive computational requirements."
       },
       "hype_meter": 3
     },

@@ -1,0 +1,30 @@
+{
+  "content_hash": "a1450e246562d1e30d617d1b105fbec2c9f1c2280bc273001dadf76a2af0dde3",
+  "share_id": "lthjwn",
+  "title": "LARC: Towards Human-level Constrained Retrosynthesis Planning through an Agentic Framework",
+  "url": "https://arxiv.org/abs/2508.11860",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-19T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.11860v1 Announce Type: new \nAbstract: Large language model (LLM) agent evaluators leverage specialized tools to ground the rational decision-making of LLMs, making them well-suited to aid in scientific discoveries, such as constrained retrosynthesis planning. Constrained retrosynthesis planning is an essential, yet challenging, process within chemistry for identifying synthetic routes f",
+  "raw_body": "arXiv:2508.11860v1 Announce Type: new \nAbstract: Large language model (LLM) agent evaluators leverage specialized tools to ground the rational decision-making of LLMs, making them well-suited to aid in scientific discoveries, such as constrained retrosynthesis planning. Constrained retrosynthesis planning is an essential, yet challenging, process within chemistry for identifying synthetic routes from commercially available starting materials to desired target molecules, subject to practical constraints. Here, we present LARC, the first LLM-based Agentic framework for Retrosynthesis planning under Constraints. LARC incorporates agentic constraint evaluation, through an Agent-as-a-Judge, directly into the retrosynthesis planning process, using agentic feedback grounded in tool-based reasoning to guide and constrain route generation. We rigorously evaluate LARC on a carefully curated set of 48 constrained retrosynthesis planning tasks across 3 constraint types. LARC achieves a 72.9% success rate on these tasks, vastly outperforming LLM baselines and approaching human expert-level success in substantially less time. The LARC framework is extensible, and serves as a first step towards an effective agentic tool or a co-scientist to human experts for constrained retrosynthesis.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article introduces LARC, a pioneering framework that utilizes large language models (LLMs) for constrained retrosynthesis planning in chemistry. By integrating agentic feedback mechanisms, LARC significantly enhances the efficiency and accuracy of identifying synthetic routes, achieving a 72.9% success rate on complex tasks. This development is crucial as it brings LLMs closer to human-level performance in a vital scientific domain.",
+  "why_it_matters": [
+    "LARC's high success rate in retrosynthesis planning could accelerate drug discovery and materials science, leading to faster innovations and reduced costs in research and development.",
+    "The framework's extensibility suggests future applications in various scientific fields, potentially transforming how researchers approach complex problem-solving with AI assistance."
+  ],
+  "lenses": {
+    "eli12": "LARC is a new tool that helps chemists figure out how to make complex molecules. It uses smart AI to suggest the best ways to create these molecules quickly and accurately. This is exciting because it can help scientists discover new medicines and materials faster than ever before.",
+    "pm": "Researchers and pharmaceutical companies will use LARC to streamline the process of creating new compounds. It solves the problem of slow and error-prone retrosynthesis planning, offering a competitive edge in drug development. However, reliance on AI also poses risks, such as potential over-dependence on technology for critical decision-making.",
+    "engineer": "LARC employs a novel architecture that integrates agentic feedback into the retrosynthesis planning process, allowing for real-time evaluation of constraints. Its performance is characterized by a 72.9% success rate on complex tasks, showcasing its efficiency. Limitations may include dependency on the quality of input data and the need for further refinement in diverse chemical contexts."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-19T04:30:33.476Z",
+  "updated_at": "2025-08-19T04:30:33.476Z",
+  "processing_order": 1755577833478
+}
