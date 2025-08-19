@@ -1,0 +1,30 @@
+{
+  "content_hash": "c9de401823a2c77692c398994cb58966d6cae3b51b5c15cc6d33366b75ebd1d2",
+  "share_id": "gra3la",
+  "title": "Grounding Rule-Based Argumentation Using Datalog",
+  "url": "https://arxiv.org/abs/2508.10976",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.10976v1 Announce Type: new \nAbstract: ASPIC+ is one of the main general frameworks for rule-based argumentation for AI. Although first-order rules are commonly used in ASPIC+ examples, most existing approaches to reason over rule-based argumentation only support propositional rules. To enable reasoning over first-order instances, a preliminary grounding step is required. As groundings c",
+  "raw_body": "arXiv:2508.10976v1 Announce Type: new \nAbstract: ASPIC+ is one of the main general frameworks for rule-based argumentation for AI. Although first-order rules are commonly used in ASPIC+ examples, most existing approaches to reason over rule-based argumentation only support propositional rules. To enable reasoning over first-order instances, a preliminary grounding step is required. As groundings can lead to an exponential increase in the size of the input theories, intelligent procedures are needed. However, there is a lack of dedicated solutions for ASPIC+. Therefore, we propose an intelligent grounding procedure that keeps the size of the grounding manageable while preserving the correctness of the reasoning process. To this end, we translate the first-order ASPIC+ instance into a Datalog program and query a Datalog engine to obtain ground substitutions to perform the grounding of rules and contraries. Additionally, we propose simplifications specific to the ASPIC+ formalism to avoid grounding of rules that have no influence on the reasoning process. Finally, we performed an empirical evaluation of a prototypical implementation to show scalability.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article introduces a novel grounding procedure for the ASPIC+ framework, enhancing rule-based argumentation in AI by enabling reasoning over first-order rules. This development addresses the scalability issues associated with grounding, ensuring manageable input sizes while maintaining reasoning accuracy, which is crucial for complex AI applications.",
+  "why_it_matters": [
+    "This advancement allows AI systems to handle more complex arguments, improving their decision-making capabilities in real-world applications like legal reasoning and automated negotiation.",
+    "By optimizing the grounding process, the research mitigates performance bottlenecks, making AI systems more efficient and scalable, which is vital for industries relying on large datasets."
+  ],
+  "lenses": {
+    "eli12": "The article talks about a new way to help AI understand complex arguments better. It makes it easier for AI to think about many ideas at once without getting confused. This is exciting because it means AI can help us solve tougher problems in everyday life, like making decisions or negotiating deals.",
+    "pm": "Researchers and developers in AI will use this new grounding procedure to enhance argumentation systems. It solves the problem of scalability in reasoning over complex rules, giving businesses a competitive edge in developing more sophisticated AI applications. However, there are risks in implementation, as improper grounding could lead to incorrect conclusions.",
+    "engineer": "The proposed method translates first-order ASPIC+ instances into Datalog programs, leveraging Datalog engines for efficient grounding. This architecture allows for intelligent simplifications, reducing unnecessary computations. Limitations include potential complexity in translating certain rules and ensuring the Datalog engine's performance under varying input sizes."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-19T03:53:04.518Z",
+  "updated_at": "2025-08-19T03:53:04.518Z",
+  "processing_order": 1755575584518
+}

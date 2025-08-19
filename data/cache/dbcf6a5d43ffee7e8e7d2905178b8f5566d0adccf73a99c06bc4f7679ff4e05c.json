@@ -1,0 +1,30 @@
+{
+  "content_hash": "dbcf6a5d43ffee7e8e7d2905178b8f5566d0adccf73a99c06bc4f7679ff4e05c",
+  "share_id": "fimi1b",
+  "title": "From Individual to Multi-Agent Algorithmic Recourse: Minimizing the Welfare Gap via Capacitated Bipartite Matching",
+  "url": "https://arxiv.org/abs/2508.11070",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.11070v1 Announce Type: new \nAbstract: Decision makers are increasingly relying on machine learning in sensitive situations. In such settings, algorithmic recourse aims to provide individuals with actionable and minimally costly steps to reverse unfavorable AI-driven decisions. While existing research predominantly focuses on single-individual (i.e., seeker) and single-model (i.e., provi",
+  "raw_body": "arXiv:2508.11070v1 Announce Type: new \nAbstract: Decision makers are increasingly relying on machine learning in sensitive situations. In such settings, algorithmic recourse aims to provide individuals with actionable and minimally costly steps to reverse unfavorable AI-driven decisions. While existing research predominantly focuses on single-individual (i.e., seeker) and single-model (i.e., provider) scenarios, real-world applications often involve multiple interacting stakeholders. Optimizing outcomes for seekers under an individual welfare approach overlooks the inherently multi-agent nature of real-world systems, where individuals interact and compete for limited resources. To address this, we introduce a novel framework for multi-agent algorithmic recourse that accounts for multiple recourse seekers and recourse providers. We model this many-to-many interaction as a capacitated weighted bipartite matching problem, where matches are guided by both recourse cost and provider capacity. Edge weights, reflecting recourse costs, are optimized for social welfare while quantifying the welfare gap between individual welfare and this collectively feasible outcome. We propose a three-layer optimization framework: (1) basic capacitated matching, (2) optimal capacity redistribution to minimize the welfare gap, and (3) cost-aware optimization balancing welfare maximization with capacity adjustment costs. Experimental validation on synthetic and real-world datasets demonstrates that our framework enables the many-to-many algorithmic recourse to achieve near-optimal welfare with minimum modification in system settings. This work extends algorithmic recourse from individual recommendations to system-level design, providing a tractable path toward higher social welfare while maintaining individual actionability.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "This article presents a groundbreaking framework for multi-agent algorithmic recourse, addressing the limitations of traditional single-agent approaches. By modeling interactions as a capacitated bipartite matching problem, it optimizes outcomes for multiple stakeholders, enhancing social welfare while minimizing costs. This advancement is significant as it aligns AI decision-making with real-world complexities, offering a more equitable solution for individuals affected by algorithmic decisions.",
+  "why_it_matters": [
+    "The framework allows for a more equitable distribution of resources in AI-driven decisions, which can lead to improved outcomes for marginalized groups facing algorithmic bias.",
+    "By addressing the multi-agent nature of real-world scenarios, this research opens new avenues for implementing AI in complex systems, potentially transforming industries reliant on fair decision-making."
+  ],
+  "lenses": {
+    "eli12": "This article talks about a new way to help people who are affected by unfair AI decisions. Instead of just helping one person at a time, it helps many people together. This is cool because it makes sure everyone gets a fair chance, which is important in real-life situations where resources are limited.",
+    "pm": "Businesses and organizations that rely on AI for decision-making will use this framework to ensure fair treatment of multiple stakeholders. It solves the problem of resource allocation in complex scenarios, giving companies a competitive edge by improving social welfare. However, they must be cautious about implementing this in systems with existing biases, as it could introduce new risks.",
+    "engineer": "The article introduces a three-layer optimization framework that employs capacitated bipartite matching to facilitate multi-agent algorithmic recourse. It balances individual welfare with system-level efficiency by optimizing edge weights based on recourse costs. While the approach shows promising results in experimental settings, its performance may be constrained by the complexity of real-world interactions and the need for accurate data on provider capacities."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-19T03:53:14.410Z",
+  "updated_at": "2025-08-19T03:53:14.410Z",
+  "processing_order": 1755575594411
+}
