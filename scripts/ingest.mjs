@@ -232,6 +232,7 @@ async function loadAllCachedArticles(cacheDir) {
         // Build record from cached data
         records.push({
           id: cached.content_hash,
+          share_id: cached.share_id,
           category: cached.category,
           title: cached.title,
           source: cached.source,
@@ -323,6 +324,7 @@ async function main() {
             const cached = JSON.parse(await fs.readFile(cachePath, 'utf8'));
             records.push({
               id: hash,
+              share_id: cached.share_id,
               category: cached.category,
               title: cached.title,
               source: cached.source,
