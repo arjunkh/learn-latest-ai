@@ -55,7 +55,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-EESKG35GJD');
+   gtag('config', 'G-EESKG35GJD', {
+  'debug_mode': true
+});
   `}
 </Script>        
         <div className="container">
