@@ -1,0 +1,30 @@
+{
+  "content_hash": "5af70f4a6e0c9e84f1b998fc09252e597c25825a859f1b41e7c3bfaff7d1b14a",
+  "share_id": "ceaswt",
+  "title": "Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL",
+  "url": "https://arxiv.org/abs/2508.13167",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.13167v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) and multi-agent systems have demonstrated remarkable capabilities in complex problem-solving tasks such as deep research, vibe coding, and mathematical reasoning. However, most existing multi-agent systems are built upon manual prompt/workflow engineering with sophisticated agent frameworks, making the",
+  "raw_body": "arXiv:2508.13167v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) and multi-agent systems have demonstrated remarkable capabilities in complex problem-solving tasks such as deep research, vibe coding, and mathematical reasoning. However, most existing multi-agent systems are built upon manual prompt/workflow engineering with sophisticated agent frameworks, making them computationally inefficient, less capable, and can not benefit from data-centric learning. In this work, we introduce Chain-of-Agents (CoA), a novel paradigm of LLM reasoning that enables native end-to-end complex problem-solving in the same way as a multi-agent system (i.e., multi-turn problem solving with multiple tools and multiple agents) within one model. In chain-of-agents problem-solving, the model dynamically activates different tool agents and role-playing agents to simulate multi-agent collaboration in an end-to-end fashion. To elicit end-to-end chain-of-agents problem-solving abilities in LLMs, we introduce a multi-agent distillation framework to distill state-of-the-art multi-agent systems into chain-of-agents trajectories for agentic supervised fine-tuning. We then use agentic reinforcement learning on verifiable agentic tasks to further improve the models' capabilities on chain-of-agents problem solving. We call the resulting models Agent Foundation Models (AFMs). Our empirical studies demonstrate that AFM establishes new state-of-the-art performance across diverse benchmarks in both web agent and code agent settings. We make the entire research, including the model weights, code for training and evaluation, and the training data, fully open-sourced, which offers a solid starting point for future research on agent models and agentic RL.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article introduces Chain-of-Agents (CoA), a groundbreaking framework that enhances large language models (LLMs) by enabling end-to-end multi-agent collaboration for complex problem-solving. This innovation allows models to dynamically activate various agents for tasks, improving efficiency and performance while eliminating the need for manual prompt engineering. The open-sourcing of the model and its training data is significant for future research and development in agent-based AI.",
+  "why_it_matters": [
+    "The introduction of Agent Foundation Models (AFMs) could revolutionize how AI systems tackle complex tasks, making them more efficient and capable of real-time problem-solving.",
+    "By open-sourcing the model and its components, the research fosters collaboration and innovation in the AI community, potentially accelerating advancements in multi-agent systems."
+  ],
+  "lenses": {
+    "eli12": "A new AI system called Chain-of-Agents helps computers solve tough problems by using many smaller helpers that work together. This is exciting because it makes AI smarter and faster. It means everyday people might get better tools for research, coding, and more.",
+    "pm": "Businesses in tech, research, and software development will utilize Chain-of-Agents for enhanced problem-solving capabilities. It addresses inefficiencies in existing multi-agent systems, offering a competitive edge through improved performance and reduced manual effort. However, companies must consider the risks of relying on open-source models and the evolving landscape of AI capabilities.",
+    "engineer": "The Chain-of-Agents framework employs a multi-agent distillation approach to integrate various agent functionalities into a single model, enhancing its problem-solving capabilities. It utilizes agentic reinforcement learning to refine the model's performance on complex tasks. However, the system's reliance on dynamic activation of agents may introduce challenges in scalability and consistency across different problem domains."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-21T03:52:12.556Z",
+  "updated_at": "2025-08-21T03:52:12.556Z",
+  "processing_order": 1755748332556
+}
