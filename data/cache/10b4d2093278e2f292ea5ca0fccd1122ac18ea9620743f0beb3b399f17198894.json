@@ -1,0 +1,30 @@
+{
+  "content_hash": "10b4d2093278e2f292ea5ca0fccd1122ac18ea9620743f0beb3b399f17198894",
+  "share_id": "aomj64",
+  "title": "Automated Optimization Modeling through Expert-Guided Large Language Model Reasoning",
+  "url": "https://arxiv.org/abs/2508.14410",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-21T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.14410v1 Announce Type: new \nAbstract: Optimization Modeling (OM) is essential for solving complex decision-making problems. However, the process remains time-consuming and error-prone, heavily relying on domain experts. While Large Language Models (LLMs) show promise in addressing these challenges through their natural language understanding and reasoning capabilities, current approache",
+  "raw_body": "arXiv:2508.14410v1 Announce Type: new \nAbstract: Optimization Modeling (OM) is essential for solving complex decision-making problems. However, the process remains time-consuming and error-prone, heavily relying on domain experts. While Large Language Models (LLMs) show promise in addressing these challenges through their natural language understanding and reasoning capabilities, current approaches face three critical limitations: high benchmark labeling error rates reaching up to 42\\%, narrow evaluation scope that only considers optimal values, and computational inefficiency due to heavy reliance on multi-agent systems or model fine-tuning. In this work, we first enhance existing datasets through systematic error correction and more comprehensive annotation. Additionally, we introduce LogiOR, a new optimization modeling benchmark from the logistics domain, containing more complex problems with standardized annotations. Furthermore, we present ORThought, a novel framework that leverages expert-level optimization modeling principles through chain-of-thought reasoning to automate the OM process. Through extensive empirical evaluation, we demonstrate that ORThought outperforms existing approaches, including multi-agent frameworks, with particularly significant advantages on complex optimization problems. Finally, we provide a systematic analysis of our method, identifying critical success factors and failure modes, providing valuable insights for future research on LLM-based optimization modeling.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces ORThought, a framework that automates Optimization Modeling (OM) using expert-guided reasoning with Large Language Models (LLMs). This approach addresses critical limitations in existing methods, enhancing accuracy and efficiency in solving complex decision-making problems, which is significant for industries relying on optimization.",
+  "why_it_matters": [
+    "The introduction of ORThought could drastically reduce the time and errors in optimization modeling, making advanced decision-making tools accessible to non-experts and improving operational efficiency across various sectors.",
+    "By providing a new benchmark and systematic error correction, this research paves the way for future advancements in LLM applications, potentially transforming industries like logistics, finance, and supply chain management."
+  ],
+  "lenses": {
+    "eli12": "A new method called ORThought helps computers solve complicated problems faster and more accurately. It uses smart reasoning to make decisions easier for everyone. This means businesses can work better and save time.",
+    "pm": "Businesses in logistics, finance, and other sectors will utilize ORThought to streamline their decision-making processes. It solves the problem of slow and error-prone optimization modeling, offering a competitive edge by enhancing efficiency and accuracy. However, companies must consider the risks of relying on automated systems and ensure robust oversight.",
+    "engineer": "ORThought employs a chain-of-thought reasoning approach to enhance optimization modeling, addressing issues like high labeling error rates and computational inefficiencies. The framework's architecture allows for systematic error correction and comprehensive annotation, improving performance on complex problems. Limitations may include the need for extensive domain knowledge and potential challenges in scaling the model across diverse applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-22T03:52:06.878Z",
+  "updated_at": "2025-08-22T03:52:06.878Z",
+  "processing_order": 1755834726880
+}
