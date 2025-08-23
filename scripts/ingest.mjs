@@ -13,6 +13,9 @@ const SOURCES = [
   { id: 'verge-ai', name: 'The Verge (AI)', rss: 'https://www.theverge.com/rss/ai/index.xml', domain: 'theverge.com' },
   { id: 'towards-data-science', name: 'Towards Data Science', rss: 'https://towardsdatascience.com/feed', domain: 'towardsdatascience.com' },
   { id: 'ai-business', name: 'AI Business', rss: 'https://aibusiness.com/rss.xml', domain: 'aibusiness.com' },
+  { id: 'hackernews-ai', name: 'Hacker News AI', rss: 'https://hnrss.org/newest?q=AI', domain: 'news.ycombinator.com' },
+  { id: 'google-ai', name: 'Google AI Blog', rss: 'https://blog.research.google/feeds/posts/default?alt=rss', domain: 'blog.research.google' },
+  { id: 'anthropic', name: 'Anthropic', rss: 'https://www.anthropic.com/rss.xml', domain: 'anthropic.com' },
   { id: 'venturebeat', name: 'VentureBeat', rss: 'https://feeds.feedburner.com/venturebeat/SZYF', domain: 'venturebeat.com' },
   { id: 'ai-news', name: 'AI News', rss: 'https://www.artificialintelligence-news.com/feed/rss/', domain: 'artificialintelligence-news.com' }
 ];
