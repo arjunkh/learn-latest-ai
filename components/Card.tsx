@@ -187,7 +187,7 @@ export default function Card({ item }: { item: any }) {
           onClick={handleArticleClick}
           className="article-link"
         >
-         {item.optimized_headline || item.title}
+{(item.optimized_headline || item.title || '').toString()}
         </a>
       </h2>
       
