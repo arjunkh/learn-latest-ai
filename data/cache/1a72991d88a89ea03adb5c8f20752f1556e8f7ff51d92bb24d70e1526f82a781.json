@@ -1,0 +1,30 @@
+{
+  "content_hash": "1a72991d88a89ea03adb5c8f20752f1556e8f7ff51d92bb24d70e1526f82a781",
+  "share_id": "ecdn7h",
+  "title": "Emergent Crowds Dynamics from Language-Driven Multi-Agent Interactions",
+  "url": "https://arxiv.org/abs/2508.15047",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-22T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.15047v1 Announce Type: new \nAbstract: Animating and simulating crowds using an agent-based approach is a well-established area where every agent in the crowd is individually controlled such that global human-like behaviour emerges. We observe that human navigation and movement in crowds are often influenced by complex social and environmental interactions, driven mainly by language and ",
+  "raw_body": "arXiv:2508.15047v1 Announce Type: new \nAbstract: Animating and simulating crowds using an agent-based approach is a well-established area where every agent in the crowd is individually controlled such that global human-like behaviour emerges. We observe that human navigation and movement in crowds are often influenced by complex social and environmental interactions, driven mainly by language and dialogue. However, most existing work does not consider these dimensions and leads to animations where agent-agent and agent-environment interactions are largely limited to steering and fixed higher-level goal extrapolation.\n  We propose a novel method that exploits large language models (LLMs) to control agents' movement. Our method has two main components: a dialogue system and language-driven navigation. We periodically query agent-centric LLMs conditioned on character personalities, roles, desires, and relationships to control the generation of inter-agent dialogue when necessitated by the spatial and social relationships with neighbouring agents. We then use the conversation and each agent's personality, emotional state, vision, and physical state to control the navigation and steering of each agent. Our model thus enables agents to make motion decisions based on both their perceptual inputs and the ongoing dialogue.\n  We validate our method in two complex scenarios that exemplify the interplay between social interactions, steering, and crowding. In these scenarios, we observe that grouping and ungrouping of agents automatically occur. Additionally, our experiments show that our method serves as an information-passing mechanism within the crowd. As a result, our framework produces more realistic crowd simulations, with emergent group behaviours arising naturally from any environmental setting.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article introduces a groundbreaking method for crowd simulation that utilizes large language models (LLMs) to enhance agent interactions. By integrating dialogue-driven navigation, agents can make movement decisions influenced by social dynamics, resulting in more realistic and emergent crowd behaviors. This advancement significantly improves the realism of simulations in various applications, from gaming to urban planning.",
+  "why_it_matters": [
+    "This approach allows for more lifelike crowd simulations, enhancing user experiences in gaming and virtual environments, where realistic interactions are crucial.",
+    "The method can be applied in urban planning and safety simulations, providing insights into crowd behavior during emergencies or large events, potentially saving lives."
+  ],
+  "lenses": {
+    "eli12": "Researchers have created a new way to simulate crowds using smart computer programs that understand language. This means that characters in games or simulations can talk and move like real people, making everything feel more real. It's cool because it helps designers create better experiences for players and planners.",
+    "pm": "Game developers and urban planners will use this technology to create more engaging and realistic environments. It solves the problem of lifeless crowd simulations by allowing agents to interact meaningfully. The competitive advantage lies in offering unique, immersive experiences, while risks include reliance on complex AI models that may not always perform as expected.",
+    "engineer": "The technical approach involves using large language models to generate dialogue based on agent characteristics and environmental context. The architecture integrates dialogue systems with navigation algorithms, allowing agents to adapt their movements based on social interactions. Limitations may include computational demands and the need for extensive training data to ensure realistic dialogue generation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-23T03:49:21.344Z",
+  "updated_at": "2025-08-23T03:49:21.344Z",
+  "processing_order": 1755920961347
+}

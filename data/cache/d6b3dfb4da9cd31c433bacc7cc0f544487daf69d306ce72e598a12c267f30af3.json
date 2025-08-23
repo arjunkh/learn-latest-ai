@@ -1,0 +1,30 @@
+{
+  "content_hash": "d6b3dfb4da9cd31c433bacc7cc0f544487daf69d306ce72e598a12c267f30af3",
+  "share_id": "clatx9",
+  "title": "Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism",
+  "url": "https://arxiv.org/abs/2508.15030",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-22T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.15030v1 Announce Type: new \nAbstract: We propose Collab-REC, a multi-agent framework designed to counteract popularity bias and enhance diversity in tourism recommendations. In our setting, three LLM-based agents -- Personalization, Popularity, and Sustainability generate city suggestions from complementary perspectives. A non-LLM moderator then merges and refines these proposals via mu",
+  "raw_body": "arXiv:2508.15030v1 Announce Type: new \nAbstract: We propose Collab-REC, a multi-agent framework designed to counteract popularity bias and enhance diversity in tourism recommendations. In our setting, three LLM-based agents -- Personalization, Popularity, and Sustainability generate city suggestions from complementary perspectives. A non-LLM moderator then merges and refines these proposals via multi-round negotiation, ensuring each agent's viewpoint is incorporated while penalizing spurious or repeated responses. Experiments on European city queries show that Collab-REC improves diversity and overall relevance compared to a single-agent baseline, surfacing lesser-visited locales that often remain overlooked. This balanced, context-aware approach addresses over-tourism and better aligns with constraints provided by the user, highlighting the promise of multi-stakeholder collaboration in LLM-driven recommender systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Collab-REC introduces a novel multi-agent framework that utilizes LLMs to enhance diversity in tourism recommendations by countering popularity bias. By integrating perspectives from Personalization, Popularity, and Sustainability, it generates more relevant suggestions, promoting lesser-known destinations and addressing over-tourism. This approach not only improves user satisfaction but also aligns with sustainable tourism practices.",
+  "why_it_matters": [
+    "This framework encourages exploration of lesser-visited locales, helping to distribute tourist traffic more evenly and reduce the strain on popular destinations.",
+    "By incorporating diverse perspectives, Collab-REC enhances user experience and satisfaction, making tourism recommendations more personalized and aligned with sustainability goals."
+  ],
+  "lenses": {
+    "eli12": "Collab-REC is a new system that helps people find unique travel spots instead of just popular ones. It uses three different agents to suggest cities based on personal tastes, popularity, and sustainability. This means travelers can discover hidden gems while also being mindful of the environment.",
+    "pm": "Tourism platforms and travel agencies will benefit from Collab-REC, as it provides diverse recommendations that cater to different user preferences. It solves the problem of over-reliance on popular destinations, offering a competitive edge in attracting eco-conscious travelers. However, businesses must adapt to this new model to avoid losing relevance in a changing market.",
+    "engineer": "Collab-REC employs a multi-agent architecture where three LLM-based agents generate recommendations from distinct viewpoints, moderated by a non-LLM entity for refinement. This method enhances diversity and relevance by penalizing repetitive suggestions. However, the system's reliance on negotiation may introduce latency and complexity in real-time applications, necessitating further optimization."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v1.0"
+  },
+  "created_at": "2025-08-23T03:49:14.961Z",
+  "updated_at": "2025-08-23T03:49:14.961Z",
+  "processing_order": 1755920954963
+}
