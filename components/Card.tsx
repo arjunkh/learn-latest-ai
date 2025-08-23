@@ -54,46 +54,113 @@ function useIsMobile() {
   return isMobile
 }
 
+// Safe string converter - handles all types
+function safeString(value: any): string {
+  if (typeof value === 'string') return value
+  if (typeof value === 'number') return value.toString()
+  if (value === null || value === undefined) return ''
+  if (typeof value === 'object') {
+    // Try to extract text from common object patterns
+    if (value.text) return safeString(value.text)
+    if (value.content) return safeString(value.content)
+    if (value.value) return safeString(value.value)
+    // If it's an array, join it
+    if (Array.isArray(value)) return value.map(v => safeString(v)).join(' ')
+    // Last resort - stringify
+    try {
+      return JSON.stringify(value)
+    } catch {
+      return ''
+    }
+  }
+  return ''
+}
+
+// Safe array extractor
+function safeArray(value: any): string[] {
+  if (Array.isArray(value)) {
+    return value.map(item => safeString(item)).filter(s => s !== '')
+  }
+  if (typeof value === 'string') {
+    return [value]
+  }
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    // Try to extract array from object properties
+    if (value.items && Array.isArray(value.items)) return safeArray(value.items)
+    if (value.list && Array.isArray(value.list)) return safeArray(value.list)
+    if (value.bullets && Array.isArray(value.bullets)) return safeArray(value.bullets)
+  }
+  return []
+}
+
 export default function Card({ item }: { item: any }) {
   const [lens, setLens] = useState<Lens>('simple')
   const [showShareToast, setShowShareToast] = useState(false)
   const isMobile = useIsMobile()
   
-  // Handle both old and new field names
-  const whyItMatters = item.why_it_matters || item.why_this_matters_NOW || []
+  // Safely extract all fields
+  const title = safeString(item.title)
+  const optimizedHeadline = safeString(item.optimized_headline)
+  const displayTitle = optimizedHeadline || title || 'Untitled'
+  
+  const speedrun = safeString(item.speedrun)
+  const source = safeString(item.source) || 'Unknown Source'
+  const category = safeString(item.category) || 'trends_risks_outlook'
+  const url = safeString(item.url) || '#'
+  const shareId = safeString(item.share_id)
+  
+  // Handle both old and new field names for why_it_matters
+  const whyItMattersRaw = item.why_it_matters || item.why_this_matters_NOW || []
+  const whyItMatters = safeArray(whyItMattersRaw)
+  
+  // Safely extract lenses
   const itemLenses = item.lenses || {}
+  const simpleLens = safeString(itemLenses.simple || itemLenses.eli12 || '')
+  const pmLens = safeString(itemLenses.pm || '')
+  const engineerLens = safeString(itemLenses.engineer || '')
+  
+  const getCurrentLensContent = () => {
+    switch(lens) {
+      case 'simple': return simpleLens
+      case 'pm': return pmLens
+      case 'engineer': return engineerLens
+      default: return simpleLens
+    }
+  }
   
   const handleArticleClick = () => {
     trackArticleClick({
-      title: item.title,
-      source: item.source,
-      category: getCategoryDisplayName(item.category),
-      url: item.url,
+      title: displayTitle,
+      source: source,
+      category: getCategoryDisplayName(category),
+      url: url,
       hype_meter: item.hype_meter
     });
   }
   
   const handleLensChange = (newLens: Lens) => {
     setLens(newLens);
-    trackLensSwitch(newLens, item.title);
+    trackLensSwitch(newLens, displayTitle);
   }
   
   const handleShare = async () => {
+    if (!shareId) return
+    
     // Track the share attempt
     trackShare({
-      title: item.title,
-      source: item.source,
-      category: getCategoryDisplayName(item.category),
-      url: item.url,
+      title: displayTitle,
+      source: source,
+      category: getCategoryDisplayName(category),
+      url: url,
       hype_meter: item.hype_meter,
       lens: lens
     });
     
     // Create share data
     const shareData = {
-      title: `${item.title}`,
-      text: `${item.speedrun}\n\nCheck it out on AIByte:`,
-      url: `https://www.aibyte.co.in/a/${item.share_id}`
+      title: displayTitle,
+      text: `${speedrun}\n\nCheck it out on AIByte:`,
+      url: `https://www.aibyte.co.in/a/${shareId}`
     };
     
     try {
@@ -134,6 +201,18 @@ export default function Card({ item }: { item: any }) {
     }
   }
   
+  // Safely parse date
+  const publishedDate = (() => {
+    try {
+      return new Date(item.published_at).toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric' 
+      })
+    } catch {
+      return 'Recent'
+    }
+  })()
+  
   return (
     <article className="card h-full flex flex-col group relative">
       {/* Share Success Toast */}
@@ -145,19 +224,16 @@ export default function Card({ item }: { item: any }) {
       
       {/* Header section with better spacing */}
       <div className="flex items-start justify-between gap-3 mb-4">
-        <span className={clsx('badge', getBadgeClass(item.category))}>
-          {getCategoryDisplayName(item.category)}
+        <span className={clsx('badge', getBadgeClass(category))}>
+          {getCategoryDisplayName(category)}
         </span>
         <div className="flex items-center gap-2">
           <time className="text-xs text-gray-400 dark:text-gray-500 font-medium">
-            {new Date(item.published_at).toLocaleDateString('en-US', { 
-              month: 'short', 
-              day: 'numeric' 
-            })}
+            {publishedDate}
           </time>
           
           {/* Mobile-only share button */}
-          {isMobile && item.share_id && (
+          {isMobile && shareId && (
             <button
               onClick={handleShare}
               className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -185,27 +261,29 @@ export default function Card({ item }: { item: any }) {
       {/* Title with better typography */}
       <h2 className="text-lg md:text-xl lg:text-[22px] font-semibold leading-tight mb-3 text-gray-900 dark:text-white">
         <a 
-          href={item.url} 
+          href={url} 
           target="_blank" 
           rel="noreferrer"
           onClick={handleArticleClick}
           className="article-link"
         >
-          {String(item.optimized_headline || item.title || '')}
+          {displayTitle}
         </a>
       </h2>
       
       {/* Speedrun with better contrast */}
-      <p className="text-sm md:text-[15px] text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-        {item.speedrun}
-      </p>
+      {speedrun && (
+        <p className="text-sm md:text-[15px] text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+          {speedrun}
+        </p>
+      )}
       
       {/* Why it matters - improved styling */}
-      {Array.isArray(whyItMatters) && whyItMatters.length > 0 && (
+      {whyItMatters.length > 0 && (
         <ul className="bullet-list text-sm list-disc pl-5 mb-4 flex-grow">
-          {whyItMatters.map((b: string, i: number) => (
+          {whyItMatters.map((bullet, i) => (
             <li key={i} className="text-gray-600 dark:text-gray-400">
-              {String(b)}
+              {bullet}
             </li>
           ))}
         </ul>
@@ -228,14 +306,16 @@ export default function Card({ item }: { item: any }) {
       </div>
 
       {/* Lens content with better typography */}
-      <p className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-        {String(itemLenses[lens] || itemLenses['eli12'] || '')}
-      </p>
+      {getCurrentLensContent() && (
+        <p className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          {getCurrentLensContent()}
+        </p>
+      )}
 
       {/* Footer with source and hype meter */}
       <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between">
         <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
-          {item.source}
+          {source}
         </span>
         <HypeMeter value={item.hype_meter ?? 3} />
       </div>
