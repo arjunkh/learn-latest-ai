@@ -62,7 +62,7 @@ function safeString(value: any): string {
   if (typeof value === 'object') {
     // Handle speedrun object format - create a narrative
     if (value.core_development || value.verified_scope || value.critical_caveat) {
-      const parts = []
+      const parts: string[] = []
       
       // Core development - main point
       if (value.core_development) {
@@ -112,7 +112,7 @@ function safeString(value: any): string {
 // Safe array extractor - handles various data formats
 function safeArray(value: any): string[] {
   if (Array.isArray(value)) {
-    return value.map(item => safeString(item)).filter(s => s !== '')
+    return value.map((item: any) => safeString(item)).filter((s: string) => s !== '')
   }
   if (typeof value === 'string' && value !== '') {
     return [value]
@@ -123,8 +123,8 @@ function safeArray(value: any): string[] {
     if (value.list && Array.isArray(value.list)) return safeArray(value.list)
     if (value.bullets && Array.isArray(value.bullets)) return safeArray(value.bullets)
     // If it's an object with string values, convert to array
-    const values = Object.values(value).filter(v => typeof v === 'string')
-    if (values.length > 0) return values as string[]
+    const values: string[] = Object.values(value).filter((v: any) => typeof v === 'string') as string[]
+    if (values.length > 0) return values
   }
   return []
 }
@@ -148,12 +148,12 @@ export default function Card({ item }: { item: any }) {
   const shareId = safeString(item.share_id)
   
   // Handle why_it_matters - check multiple possible locations and formats
-  let whyItMattersRaw = item.why_it_matters || item.why_this_matters_NOW || []
+  let whyItMattersRaw: any = item.why_it_matters || item.why_this_matters_NOW || []
   
   // If why_it_matters is an object with numbered keys or similar
   if (whyItMattersRaw && typeof whyItMattersRaw === 'object' && !Array.isArray(whyItMattersRaw)) {
     // Convert object to array of values
-    const values = Object.values(whyItMattersRaw).filter(v => v && typeof v === 'string')
+    const values: string[] = Object.values(whyItMattersRaw).filter((v: any) => v && typeof v === 'string') as string[]
     if (values.length > 0) {
       whyItMattersRaw = values
     }
@@ -175,7 +175,7 @@ export default function Card({ item }: { item: any }) {
     if (typeof lensData === 'string') return lensData
     if (lensData && typeof lensData === 'object') {
       // If it's an object with text properties, combine them
-      const parts = []
+      const parts: string[] = []
       Object.values(lensData).forEach(value => {
         const str = safeString(value)
         if (str) parts.push(str)
