@@ -127,46 +127,41 @@ Original Headline: ${title}`;
 
 // CHANGED: Complete rewrite with critical analyst prompt
 async function summarizeArticle(fullText) {
-  const prompt = `You are a critical AI analyst who verifies claims and provides actionable intelligence.
+  const prompt = `You are an explainer who distills complex AI news into clear, engaging, and trustworthy insights. 
 
-Analyze this article with healthy skepticism. Look for:
-- What's actually proven vs what's only claimed
-- Hidden limitations or caveats (if none given, write "not specified")
-- The gap between headline hype and article reality
-- Who benefits most from this development
+Your role is to:
+- Keep it concise and approachable: plain English, short sentences, no jargon.
+- Include the most memorable specific detail (number, comparison, or quote) if one exists.
+- Prioritize clarity and flow over rigid structure. Avoid forced checklists or "X: Y" constructions.
+- Use analogies or vivid examples only if they appear in the article, to make the story stick.
+- Highlight why this matters now for real users, companies, or society.
+- Include caveats or missing risks only if the article itself emphasizes them, or if their absence is a critical blind spot.
+- Never invent details.
 
-Return ONLY a valid JSON object with these exact keys:
+Return ONLY a valid JSON object with these keys:
 
-- speedrun: 70-90 words that capture:
-  * The core development (what actually happened)
-  * The VERIFIED scope (not the claimed scope)
-  * One critical caveat or limitation (use "not specified" if missing)
-  * Why this matters NOW specifically
+- speedrun: 3–4 crisp sentences (70-90 words total). Capture:
+  * What happened
+  * One factual datapoint or example if present
+  * Why it matters now
   
-- why_it_matters: Array of exactly 2 bullets (20-30 words each):
-  * First bullet: Immediate practical impact with specific affected group
-  * Second bullet: Strategic implication or market dynamic shift
-  * Include concrete metrics/timeframes when mentioned
-  * Avoid vague phrases like "could transform"
-
+- why_it_matters: Array of exactly 2 bullets (20–30 words each):
+  * First bullet: Immediate impact for a specific group, grounded in the article
+  * Second bullet: Strategic or market-level implication
+  
 - lenses:
-  - eli12: 3-4 sentences that:
-    * Explain what happened using a simple analogy
-    * Identify who this helps/hurts in plain terms
-    * Add one "but watch out for..." warning
-    * End with why a young person should care
-    
-  - pm: 3-4 sentences covering:
-    * One SPECIFIC use case enabled/blocked
-    * Clear competitive edge (with company names if mentioned)
-    * Hidden cost/dependency not in headline
-    * One concrete next step a PM should take
-    
-  - engineer: 3-4 sentences analyzing:
-    * The technical approach (use only details present; otherwise "not specified")
-    * One key limitation/bottleneck
-    * Compare to an existing solution with metrics if available
-    * Flag one technical red flag or unaddressed challenge
+  - eli12: 3–4 sentences (60-80 words) in plain, conversational language. Use a simple analogy from the article if present, otherwise create one that's contextually relevant. End with why it matters to everyday people.
+  
+  - pm: 3–4 sentences (60-80 words) explaining what this means for product managers. Cover user needs, competitive advantage, and one practical next step.
+  
+  - engineer: 3–4 sentences (60-80 words) with a technical angle. Note approach, limitations, and comparisons if present. Mention risks only if emphasized in the article.
+
+Style & constraints:
+- Use plain English; replace heavy terms with everyday phrases (e.g. "too flattering" instead of "sycophancy").
+- Focus on brevity, clarity, and natural flow.
+- Do not add filler like "game-changing" or "revolutionary."
+- Do not add warnings unless meaningful.
+- Never invent content not in the article.
 
 Article:
 ${fullText}`;
@@ -174,7 +169,7 @@ ${fullText}`;
   const res = await client.chat.completions.create({
     model: 'gpt-4o-mini',
     messages: [{ role: 'user', content: prompt }],
-    temperature: 0.4  // CHANGED: Increased from 0.3 to 0.4 as specified
+    temperature: 0.5  // CHANGED: Increased from 0.4 to 0.5 as specified
   });
   
   let content = res.choices[0]?.message?.content || '{}';
