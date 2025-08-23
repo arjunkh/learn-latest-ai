@@ -54,34 +54,67 @@ function useIsMobile() {
   return isMobile
 }
 
-// Safe string converter - handles all types
+// Safe string converter - handles all types including speedrun objects
 function safeString(value: any): string {
   if (typeof value === 'string') return value
   if (typeof value === 'number') return value.toString()
   if (value === null || value === undefined) return ''
   if (typeof value === 'object') {
+    // Handle speedrun object format - create a narrative
+    if (value.core_development || value.verified_scope || value.critical_caveat) {
+      const parts = []
+      
+      // Core development - main point
+      if (value.core_development) {
+        parts.push(value.core_development)
+      }
+      
+      // Verified scope - what's confirmed
+      if (value.verified_scope && value.verified_scope !== value.core_development) {
+        parts.push(value.verified_scope)
+      }
+      
+      // Critical caveat - limitations
+      if (value.critical_caveat && value.critical_caveat !== 'not specified') {
+        parts.push(`A critical limitation is that ${value.critical_caveat}`)
+      }
+      
+      // Why it matters now - current relevance
+      if (value.why_this_matters_NOW) {
+        parts.push(value.why_this_matters_NOW)
+      }
+      
+      // Join with proper punctuation
+      return parts.map(part => {
+        // Ensure each part ends with punctuation
+        const trimmed = part.trim()
+        if (trimmed && !trimmed.match(/[.!?]$/)) {
+          return trimmed + '.'
+        }
+        return trimmed
+      }).join(' ')
+    }
+    
     // Try to extract text from common object patterns
     if (value.text) return safeString(value.text)
     if (value.content) return safeString(value.content)
     if (value.value) return safeString(value.value)
+    
     // If it's an array, join it
     if (Array.isArray(value)) return value.map(v => safeString(v)).join(' ')
-    // Last resort - stringify
-    try {
-      return JSON.stringify(value)
-    } catch {
-      return ''
-    }
+    
+    // Don't stringify objects - return empty string instead
+    return ''
   }
   return ''
 }
 
-// Safe array extractor
+// Safe array extractor - handles various data formats
 function safeArray(value: any): string[] {
   if (Array.isArray(value)) {
     return value.map(item => safeString(item)).filter(s => s !== '')
   }
-  if (typeof value === 'string') {
+  if (typeof value === 'string' && value !== '') {
     return [value]
   }
   if (value && typeof value === 'object' && !Array.isArray(value)) {
@@ -89,6 +122,9 @@ function safeArray(value: any): string[] {
     if (value.items && Array.isArray(value.items)) return safeArray(value.items)
     if (value.list && Array.isArray(value.list)) return safeArray(value.list)
     if (value.bullets && Array.isArray(value.bullets)) return safeArray(value.bullets)
+    // If it's an object with string values, convert to array
+    const values = Object.values(value).filter(v => typeof v === 'string')
+    if (values.length > 0) return values as string[]
   }
   return []
 }
@@ -103,21 +139,55 @@ export default function Card({ item }: { item: any }) {
   const optimizedHeadline = safeString(item.optimized_headline)
   const displayTitle = optimizedHeadline || title || 'Untitled'
   
+  // Handle speedrun - could be string or object
   const speedrun = safeString(item.speedrun)
+  
   const source = safeString(item.source) || 'Unknown Source'
   const category = safeString(item.category) || 'trends_risks_outlook'
   const url = safeString(item.url) || '#'
   const shareId = safeString(item.share_id)
   
-  // Handle both old and new field names for why_it_matters
-  const whyItMattersRaw = item.why_it_matters || item.why_this_matters_NOW || []
+  // Handle why_it_matters - check multiple possible locations and formats
+  let whyItMattersRaw = item.why_it_matters || item.why_this_matters_NOW || []
+  
+  // If why_it_matters is an object with numbered keys or similar
+  if (whyItMattersRaw && typeof whyItMattersRaw === 'object' && !Array.isArray(whyItMattersRaw)) {
+    // Convert object to array of values
+    const values = Object.values(whyItMattersRaw).filter(v => v && typeof v === 'string')
+    if (values.length > 0) {
+      whyItMattersRaw = values
+    }
+  }
+  
+  // If still empty and speedrun is an object, check if it has why_this_matters_NOW
+  if ((!whyItMattersRaw || (Array.isArray(whyItMattersRaw) && whyItMattersRaw.length === 0)) && 
+      item.speedrun && typeof item.speedrun === 'object' && item.speedrun.why_this_matters_NOW) {
+    whyItMattersRaw = [item.speedrun.why_this_matters_NOW]
+  }
+  
   const whyItMatters = safeArray(whyItMattersRaw)
   
-  // Safely extract lenses
+  // Safely extract lenses - handle objects and strings
   const itemLenses = item.lenses || {}
-  const simpleLens = safeString(itemLenses.simple || itemLenses.eli12 || '')
-  const pmLens = safeString(itemLenses.pm || '')
-  const engineerLens = safeString(itemLenses.engineer || '')
+  
+  // Helper to extract lens content
+  const getLensContent = (lensData: any): string => {
+    if (typeof lensData === 'string') return lensData
+    if (lensData && typeof lensData === 'object') {
+      // If it's an object with text properties, combine them
+      const parts = []
+      Object.values(lensData).forEach(value => {
+        const str = safeString(value)
+        if (str) parts.push(str)
+      })
+      return parts.join(' ')
+    }
+    return ''
+  }
+  
+  const simpleLens = getLensContent(itemLenses.simple || itemLenses.eli12) || ''
+  const pmLens = getLensContent(itemLenses.pm) || ''
+  const engineerLens = getLensContent(itemLenses.engineer) || ''
   
   const getCurrentLensContent = () => {
     switch(lens) {
