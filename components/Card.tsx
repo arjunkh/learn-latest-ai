@@ -59,6 +59,10 @@ export default function Card({ item }: { item: any }) {
   const [showShareToast, setShowShareToast] = useState(false)
   const isMobile = useIsMobile()
   
+  // Handle both old and new field names
+  const whyItMatters = item.why_it_matters || item.why_this_matters_NOW || []
+  const itemLenses = item.lenses || {}
+  
   const handleArticleClick = () => {
     trackArticleClick({
       title: item.title,
@@ -187,7 +191,7 @@ export default function Card({ item }: { item: any }) {
           onClick={handleArticleClick}
           className="article-link"
         >
-{(item.optimized_headline || item.title || '').toString()}
+          {String(item.optimized_headline || item.title || '')}
         </a>
       </h2>
       
@@ -197,13 +201,15 @@ export default function Card({ item }: { item: any }) {
       </p>
       
       {/* Why it matters - improved styling */}
-      <ul className="bullet-list text-sm list-disc pl-5 mb-4 flex-grow">
-        {item.why_it_matters?.map((b:string, i:number) => (
-          <li key={i} className="text-gray-600 dark:text-gray-400">
-            {b}
-          </li>
-        ))}
-      </ul>
+      {Array.isArray(whyItMatters) && whyItMatters.length > 0 && (
+        <ul className="bullet-list text-sm list-disc pl-5 mb-4 flex-grow">
+          {whyItMatters.map((b: string, i: number) => (
+            <li key={i} className="text-gray-600 dark:text-gray-400">
+              {String(b)}
+            </li>
+          ))}
+        </ul>
+      )}
 
       {/* Lens selector - pill shaped buttons */}
       <div className="flex gap-2 mb-4 pt-3 border-t border-gray-100 dark:border-gray-800">
@@ -223,7 +229,7 @@ export default function Card({ item }: { item: any }) {
 
       {/* Lens content with better typography */}
       <p className="text-sm md:text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-        {item.lenses?.[lens] || item.lenses?.['eli12']}
+        {String(itemLenses[lens] || itemLenses['eli12'] || '')}
       </p>
 
       {/* Footer with source and hype meter */}
@@ -233,6 +239,7 @@ export default function Card({ item }: { item: any }) {
         </span>
         <HypeMeter value={item.hype_meter ?? 3} />
       </div>
+      
       {/* Add a "View Full Article" link for desktop users */}
       {!isMobile && (
         <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
@@ -245,5 +252,5 @@ export default function Card({ item }: { item: any }) {
         </div>
       )}
     </article>
-    )
-  }
+  )
+}
