@@ -79,6 +79,11 @@ export default async function PatternLatestPage() {
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6">
             {formatWeekRange(pattern.week_start, pattern.week_end)}
           </p>
+          
+          {/* Add subtle context line */}
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            Based on {pattern.article_count} AI stories from this week
+          </p>
         </div>
 
         {/* 💡 The Hidden Signal */}
@@ -223,7 +228,7 @@ export default async function PatternLatestPage() {
 
         {/* 💬 Quote of the Week */}
         {pattern.quote && (
-          <section className="mb-8">
+          <section>
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
               💬 Quote of the Week
             </h2>
@@ -238,44 +243,7 @@ export default async function PatternLatestPage() {
           </section>
         )}
 
-        {/* 📊 Weekly Stats */}
-        <section className="pt-8 border-t border-gray-200 dark:border-gray-700">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            📊 Weekly Stats
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-                {pattern.week_id}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">Week ID</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
-                {pattern.article_count}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">Articles Analyzed</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">
-                {formatWeekRange(pattern.week_start, pattern.week_end)}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">Coverage</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-                {new Date(pattern.generated_at).toLocaleDateString('en-US', { 
-                  month: 'short', 
-                  day: 'numeric' 
-                })}
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">Generated</div>
-            </div>
-          </div>
-        </section>
+        {/* REMOVED THE WEEKLY STATS SECTION */}
       </article>
       
       {/* Navigation */}
