@@ -64,9 +64,9 @@ export default function PatternHeroBanner() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900 relative overflow-hidden border-b border-gray-200">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
+    <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 text-white relative overflow-hidden border-b border-gray-200">
+      {/* Background pattern - keep subtle */}
+      <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -83,21 +83,23 @@ export default function PatternHeroBanner() {
         <div className="flex items-center justify-between mb-8">
           {/* AIByte Logo */}
           <div className="flex items-center gap-3">
-            <Image
-              src="/images/logo-40.svg"
-              alt="AIByte Logo"
-              width={40}
-              height={40}
-              className="rounded-lg"
-              priority
-            />
-            <span className="text-xl font-bold">AIByte</span>
+            <div className="bg-white p-2 rounded-lg">
+              <Image
+                src="/images/logo-40.svg"
+                alt="AIByte Logo"
+                width={40}
+                height={40}
+                className="rounded"
+                priority
+              />
+            </div>
+            <span className="text-xl font-bold text-white">AIByte</span>
           </div>
           
-          {/* Week indicator - clean text only */}
+          {/* Week indicator */}
           <div className="hidden md:flex items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <span className="text-gray-500">
+              <span className="text-indigo-100">
                 Week {formatWeekRange(pattern.week_start, pattern.week_end)}
               </span>
             </div>
@@ -108,19 +110,19 @@ export default function PatternHeroBanner() {
         <Link href="/pattern/latest" className="block">
           <div className="text-center max-w-4xl mx-auto cursor-pointer group">
             {/* Pattern indicator */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full text-sm font-medium text-indigo-700 mb-6 group-hover:bg-indigo-200 transition-all duration-200">
-              <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur rounded-full text-sm font-medium text-white mb-6 group-hover:bg-white/30 transition-all duration-200">
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
               The Pattern • This Week
             </div>
             
-            {/* Main headline - from pattern data */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white group-hover:text-gray-100 transition-colors duration-200">
+            {/* Main headline */}
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white group-hover:text-indigo-50 transition-colors duration-200">
               {pattern.headline}
             </h1>
             
             {/* Subtitle with dynamic article count */}
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed group-hover:text-gray-200 transition-colors duration-200">
-              <span className="font-semibold text-indigo-400">{pattern.article_count}</span> AI stories revealed something everyone missed this week...
+            <p className="text-xl md:text-2xl text-indigo-100 mb-8 leading-relaxed group-hover:text-white transition-colors duration-200">
+              <span className="font-semibold text-white">{pattern.article_count}</span> AI stories revealed something everyone missed this week...
             </p>
             
             {/* Stats and CTA */}
@@ -128,25 +130,25 @@ export default function PatternHeroBanner() {
               {/* Stats */}
               <div className="flex items-center gap-6 text-sm">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                  <div className="text-2xl font-bold text-white">
                     {pattern.article_count}
                   </div>
-                  <div className="text-gray-400">Articles</div>
+                  <div className="text-indigo-200">Articles</div>
                 </div>
-                <div className="w-px h-8 bg-gray-600"></div>
+                <div className="w-px h-8 bg-indigo-400/50"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-400 group-hover:text-purple-300 transition-colors">1</div>
-                  <div className="text-gray-400">Pattern</div>
+                  <div className="text-2xl font-bold text-white">1</div>
+                  <div className="text-indigo-200">Pattern</div>
                 </div>
-                <div className="w-px h-8 bg-gray-600"></div>
+                <div className="w-px h-8 bg-indigo-400/50"></div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">3</div>
-                  <div className="text-gray-400">Min Read</div>
+                  <div className="text-2xl font-bold text-white">3</div>
+                  <div className="text-indigo-200">Min Read</div>
                 </div>
               </div>
               
               {/* CTA Button */}
-              <div className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 flex items-center gap-2 group-hover:scale-105">
+              <div className="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:bg-indigo-50 transition-all duration-200 flex items-center gap-2 group-hover:scale-105 shadow-xl">
                 Read the Diagnosis
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -156,7 +158,7 @@ export default function PatternHeroBanner() {
             
             {/* Visual connection to articles below */}
             <div className="flex items-center justify-center">
-              <div className="flex items-center gap-2 text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+              <div className="flex items-center gap-2 text-xs text-indigo-200 group-hover:text-white transition-colors">
                 <span>From today's intelligence</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
