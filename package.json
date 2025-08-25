@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "ingest": "node scripts/ingest.mjs"
+    "ingest": "node scripts/ingest.mjs",
+    "pattern:generate": "node scripts/weekly-pattern.mjs"
   },
   "dependencies": {
     "next": "14.2.5",
