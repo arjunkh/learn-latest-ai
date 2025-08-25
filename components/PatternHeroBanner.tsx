@@ -64,9 +64,9 @@ export default function PatternHeroBanner() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-gray-900 to-indigo-900 text-white relative overflow-hidden">
+    <div className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900 relative overflow-hidden border-b border-gray-200">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -97,7 +97,7 @@ export default function PatternHeroBanner() {
           {/* Week indicator - clean text only */}
           <div className="hidden md:flex items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <span className="text-gray-300">
+              <span className="text-gray-500">
                 Week {formatWeekRange(pattern.week_start, pattern.week_end)}
               </span>
             </div>
@@ -108,8 +108,8 @@ export default function PatternHeroBanner() {
         <Link href="/pattern/latest" className="block">
           <div className="text-center max-w-4xl mx-auto cursor-pointer group">
             {/* Pattern indicator */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 group-hover:bg-white/15 transition-all duration-200">
-              <span className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-100 rounded-full text-sm font-medium text-indigo-700 mb-6 group-hover:bg-indigo-200 transition-all duration-200">
+              <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
               The Pattern • This Week
             </div>
             
