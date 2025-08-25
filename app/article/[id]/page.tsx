@@ -4,6 +4,7 @@ import path from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Card from '@/components/Card'
+import SimpleHeader from '@/components/SimpleHeader'
 
 // Get article by ID (either regular ID or share_id)
 async function getArticle(id: string) {
@@ -36,6 +37,8 @@ export default async function ArticlePage({
   
   return (
     <main className="max-w-3xl mx-auto">
+      {/* Add header for article page */}
+      <SimpleHeader />
       {/* Back button */}
       <div className="mb-6">
         <Link 

@@ -3,6 +3,7 @@ import fs from 'fs/promises'
 import path from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import SimpleHeader from '@/components/SimpleHeader'
 
 // Get the latest pattern
 async function getLatestPattern() {
@@ -47,6 +48,8 @@ export default async function PatternLatestPage() {
   
   return (
     <main className="max-w-4xl mx-auto">
+      {/* Add header for pattern page */}
+      <SimpleHeader />
       {/* Back button */}
       <div className="mb-6">
         <Link 
