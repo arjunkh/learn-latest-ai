@@ -94,21 +94,9 @@ export default function PatternHeroBanner() {
             <span className="text-xl font-bold">AIByte</span>
           </div>
           
-          {/* Week indicator */}
+          {/* Week indicator - clean text only */}
           <div className="hidden md:flex items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <div className="flex gap-1">
-                {[1,2,3,4,5].map(i => (
-                  <div 
-                    key={i} 
-                    className={`w-1 rounded-full ${
-                      i <= 3 ? 'bg-red-400 h-6' : 
-                      i === 4 ? 'bg-yellow-400 h-4' : 
-                      'bg-green-400 h-2'
-                    }`} 
-                  />
-                ))}
-              </div>
               <span className="text-gray-300">
                 Week {formatWeekRange(pattern.week_start, pattern.week_end)}
               </span>
