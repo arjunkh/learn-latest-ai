@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Card from '@/components/Card'
+import PatternHeroBanner from '@/components/PatternHeroBanner'
 import Script from 'next/script'
 
 const ARTICLES_PER_PAGE = 9
@@ -146,7 +147,7 @@ export default function Page() {
   
   return (
     <>
-      {/* YOUR ANALYTICS SCRIPT - UNCHANGED */}
+      {/* Analytics script */}
       <Script id="page-analytics" strategy="afterInteractive">
         {`
           // Track feed load
@@ -192,8 +193,11 @@ export default function Page() {
         `}
       </Script>
       
-      <main>
-        {/* Section header for better hierarchy */}
+      {/* NEW: Pattern Hero Banner */}
+      <PatternHeroBanner />
+      
+      <main className="container">
+        {/* Section header for articles */}
         <div className="mb-6 md:mb-8">
           <h2 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-2">
             Today's Intelligence
@@ -223,7 +227,7 @@ export default function Page() {
           </div>
         </div>
         
-        {/* Grid layout - now always 3x3 on larger screens */}
+        {/* Grid layout */}
         {currentItems?.length ? (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -232,7 +236,7 @@ export default function Page() {
                 <Card key={item.id} item={item} />
               ))}
               
-              {/* Add empty cells if last page has fewer than 9 items (optional for consistent grid) */}
+              {/* Add empty cells if last page has fewer than 9 items */}
               {currentItems.length < ARTICLES_PER_PAGE && currentPage === totalPages && (
                 <>
                   {Array.from({ length: ARTICLES_PER_PAGE - currentItems.length }).map((_, i) => (
