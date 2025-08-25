@@ -61,41 +61,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   `}
 </Script>        
         <div className="container">
-          {/* Header with special background treatment */}
-          <header className="header-zone text-center">
-            {/* Logo with more breathing room */}
-            <div className="mb-4">
-              {/* Mobile logo (32px) - shows on small screens */}
-              <Image
-                src="/images/logo-32.svg"
-                alt="AIByte Logo"
-                width={32}
-                height={32}
-                className="sm:hidden mx-auto"
-                priority
-              />
-              
-              {/* Desktop logo (48px) - larger for desktop */}
-              <Image
-                src="/images/logo-40.svg"
-                alt="AIByte Logo"
-                width={48}
-                height={48}
-                className="hidden sm:block mx-auto"
-                priority
-              />
-            </div>
-            
-            {/* Product name - better typography */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
-              AIByte
-            </h1>
-            
-            {/* Tagline - more subtle */}
-            <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
-              Bite-sized AI insights, daily
-            </p>
-          </header>
+        {/* REMOVE THIS ENTIRE HEADER SECTION
+<header className="header-zone text-center">
+  <div className="mb-4">
+    <Image
+      src="/images/logo-32.svg"
+      alt="AIByte Logo"
+      width={32}
+      height={32}
+      className="sm:hidden mx-auto"
+      priority
+    />
+    
+    <Image
+      src="/images/logo-40.svg"
+      alt="AIByte Logo"
+      width={48}
+      height={48}
+      className="hidden sm:block mx-auto"
+      priority
+    />
+  </div>
+  
+  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
+    AIByte
+  </h1>
+  
+  <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 mt-2">
+    Bite-sized AI insights, daily
+  </p>
+</header>
+*/}
           
           {/* Main content area */}
           <div className="animate-fade-in">
