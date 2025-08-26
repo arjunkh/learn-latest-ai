@@ -1,0 +1,31 @@
+{
+  "content_hash": "7de0df8cca0fd49bded70264cd40eb3a86d0ac6020b65799ebff93f5e62e80df",
+  "share_id": "gfmmhy",
+  "title": "Generative Foundation Model for Structured and Unstructured Electronic Health Records",
+  "optimized_headline": "Revolutionizing Health Records: A New Model for Structured and Unstructured Data",
+  "url": "https://arxiv.org/abs/2508.16054",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.16054v1 Announce Type: new \nAbstract: Electronic health records (EHRs) are rich clinical data sources but complex repositories of patient data, spanning structured elements (demographics, vitals, lab results, codes), unstructured clinical notes and other modalities of data. Harnessing this heterogeneity is critical for improving patient outcomes. Recent advances in large language models",
+  "raw_body": "arXiv:2508.16054v1 Announce Type: new \nAbstract: Electronic health records (EHRs) are rich clinical data sources but complex repositories of patient data, spanning structured elements (demographics, vitals, lab results, codes), unstructured clinical notes and other modalities of data. Harnessing this heterogeneity is critical for improving patient outcomes. Recent advances in large language models (LLMs) have enabled foundation models that can learn from multiple data modalities and support clinical tasks. However, most current approaches simply serialize numeric EHR data into text, which risks losing temporal and quantitative detail. We introduce Generative Deep Patient (GDP), a multimodal foundation model that natively encodes structured EHR time-series via a CNN-Transformer encoder and fuses it with unstructured EHRs through cross-modal attention into a LLaMA-based decoder. GDP is trained in two stages: (1) generative pretraining, where it learns to produce clinical narratives from raw patient timelines while also performing masked feature prediction (MFP) and next time-step prediction (NTP) to capture temporal dynamics; and (2) multi-task fine-tuning for clinically meaningful predictions (e.g., heart failure, type 2 diabetes, 30-day readmission). In clinical prediction, GDP demonstrated superior performance on MIMIC-IV: heart failure AUROC = 0.923, type 2 diabetes AUROC = 0.817, and 30-day readmission AUROC = 0.627. For narrative generation, GDP achieved ROUGE-L = 0.135 and BERTScore-F1 = 0.545. In a blinded human evaluation, GDP-Instruct scored highest on faithfulness, fluency, and overall clinical utility, suggesting reduced hospital documentation workload without sacrificing accuracy. Our results demonstrate that a single multimodal foundation model can both predict clinically actionable events and generate high-quality clinical narratives. Furthermore, GDP's flexible architecture can be extended to additional modalities.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new AI model called Generative Deep Patient (GDP) is designed to better analyze electronic health records (EHRs). It combines structured data like lab results with unstructured notes for improved patient predictions, achieving an impressive heart failure prediction accuracy of 92.3%. This matters now as it could reduce hospital documentation workload while enhancing patient care.",
+  "why_it_matters": [
+    "Healthcare providers can expect more accurate patient predictions, potentially leading to better treatment outcomes and reduced workload in documentation.",
+    "The development of GDP positions healthcare companies to leverage AI for improved efficiency and patient care, giving them a competitive edge in the market."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle with pieces scattered everywhere. The GDP model helps put together patient information from various sources, making it easier for doctors to see the big picture. This can lead to better treatments and less paperwork for healthcare workers, which is great news for everyone who relies on medical care.",
+    "pm": "For product managers, GDP presents a chance to address user needs by providing tools that enhance clinical predictions and reduce documentation burden. This could lead to higher satisfaction among healthcare professionals. A practical next step is exploring partnerships with health systems to integrate this model into existing EHR platforms.",
+    "engineer": "The GDP model utilizes a CNN-Transformer architecture to effectively handle both structured and unstructured EHR data. It’s trained in two stages to capture temporal dynamics and improve prediction accuracy. While promising, it may still face challenges in real-world application, such as integration with existing systems and ensuring data privacy."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.0"
+  },
+  "created_at": "2025-08-26T03:53:10.376Z",
+  "updated_at": "2025-08-26T03:53:10.376Z",
+  "processing_order": 1756180390379
+}

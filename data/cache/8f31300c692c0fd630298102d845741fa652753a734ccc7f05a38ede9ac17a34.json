@@ -1,0 +1,31 @@
+{
+  "content_hash": "8f31300c692c0fd630298102d845741fa652753a734ccc7f05a38ede9ac17a34",
+  "share_id": "mtfk5f",
+  "title": "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+  "optimized_headline": "Unlocking Multimodal Multi-hop Question Answering with a Training-Free Approach",
+  "url": "https://arxiv.org/abs/2508.16051",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.16051v1 Announce Type: new \nAbstract: Multimodal Multi-hop question answering requires integrating information from diverse sources, such as images and texts, to derive answers. Existing methods typically rely on sequential retrieval and reasoning, where each step builds on the previous output. However, this single-path paradigm makes them vulnerable to errors due to misleading intermed",
+  "raw_body": "arXiv:2508.16051v1 Announce Type: new \nAbstract: Multimodal Multi-hop question answering requires integrating information from diverse sources, such as images and texts, to derive answers. Existing methods typically rely on sequential retrieval and reasoning, where each step builds on the previous output. However, this single-path paradigm makes them vulnerable to errors due to misleading intermediate steps. Moreover, developing multimodal models can be computationally expensive, often requiring extensive training. To address these limitations, we propose a training-free framework guided by an Adaptive Planning Graph, which consists of planning, retrieval and reasoning modules. The planning module analyzes the current state of the Adaptive Planning Graph, determines the next action and where to expand the graph, which enables dynamic and flexible exploration of reasoning paths. To handle retrieval of text to unspecified target modalities, we devise modality-specific strategies that dynamically adapt to distinct data types. Our approach preserves the characteristics of multimodal information without costly task-specific training, enabling seamless integration with up-to-date models. Finally, the experiments on MultimodalQA and WebQA show that our approach matches or outperforms existing models that rely on training.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called MMAPG allows for multimodal multi-hop question answering without the need for extensive training. It uses an Adaptive Planning Graph to dynamically explore different reasoning paths. This is important now because it can improve the accuracy of answers derived from various sources like images and texts while being less resource-intensive.",
+  "why_it_matters": [
+    "This development benefits researchers and developers in AI, as it simplifies the process of creating effective multimodal models without heavy computational costs.",
+    "For the tech industry, this could lead to more efficient AI systems, enhancing capabilities in areas like customer support and information retrieval."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle with pieces from different boxes. The new MMAPG framework helps AI systems grab the right pieces without needing to sort through everything first. This means everyday tools, like virtual assistants, could become smarter and faster in answering your questions.",
+    "pm": "For product managers, MMAPG opens up new possibilities for integrating multimodal capabilities into products. It addresses user needs for quick and accurate answers while reducing the costs associated with training models. A practical next step is to explore how this framework can be applied to existing products for enhanced user experiences.",
+    "engineer": "From a technical standpoint, MMAPG's use of an Adaptive Planning Graph allows for flexible reasoning without extensive training. This contrasts with traditional methods that rely on sequential steps. While promising, the approach must be tested across various contexts to ensure reliability and robustness in real-world applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.0"
+  },
+  "created_at": "2025-08-26T03:53:03.982Z",
+  "updated_at": "2025-08-26T03:53:03.982Z",
+  "processing_order": 1756180383984
+}
