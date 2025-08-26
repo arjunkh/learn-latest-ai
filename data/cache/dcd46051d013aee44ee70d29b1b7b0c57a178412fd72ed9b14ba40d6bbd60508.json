@@ -1,0 +1,31 @@
+{
+  "content_hash": "dcd46051d013aee44ee70d29b1b7b0c57a178412fd72ed9b14ba40d6bbd60508",
+  "share_id": "efpgjd",
+  "title": "Explainable AI for Predicting and Understanding Mathematics Achievement: A Cross-National Analysis of PISA 2018",
+  "optimized_headline": "Unlocking Math Success: How Explainable AI Analyzes PISA 2018 Results",
+  "url": "https://arxiv.org/abs/2508.16747",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-26T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.16747v1 Announce Type: new \nAbstract: Understanding the factors that shape students' mathematics performance is vital for designing effective educational policies. This study applies explainable artificial intelligence (XAI) techniques to PISA 2018 data to predict math achievement and identify key predictors across ten countries (67,329 students). We tested four models: Multiple Linear ",
+  "raw_body": "arXiv:2508.16747v1 Announce Type: new \nAbstract: Understanding the factors that shape students' mathematics performance is vital for designing effective educational policies. This study applies explainable artificial intelligence (XAI) techniques to PISA 2018 data to predict math achievement and identify key predictors across ten countries (67,329 students). We tested four models: Multiple Linear Regression (MLR), Random Forest (RF), CATBoost, and Artificial Neural Networks (ANN), using student, family, and school variables. Models were trained on 70% of the data (with 5-fold cross-validation) and tested on 30%, stratified by country. Performance was assessed with R^2 and Mean Absolute Error (MAE). To ensure interpretability, we used feature importance, SHAP values, and decision tree visualizations. Non-linear models, especially RF and ANN, outperformed MLR, with RF balancing accuracy and generalizability. Key predictors included socio-economic status, study time, teacher motivation, and students' attitudes toward mathematics, though their impact varied across countries. Visual diagnostics such as scatterplots of predicted vs actual scores showed RF and CATBoost aligned closely with actual performance. Findings highlight the non-linear and context-dependent nature of achievement and the value of XAI in educational research. This study uncovers cross-national patterns, informs equity-focused reforms, and supports the development of personalized learning strategies.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study used explainable AI to analyze data from 67,329 students across ten countries to predict math achievement. It found that factors like socio-economic status and study time significantly influenced performance. This is crucial now as it can help shape educational policies to improve student outcomes globally.",
+  "why_it_matters": [
+    "Educators and policymakers can tailor strategies to boost math performance based on clear predictors, improving student success.",
+    "The findings can guide countries in reforming education systems, promoting equity, and personalizing learning approaches."
+  ],
+  "lenses": {
+    "eli12": "Think of this study like a map for a road trip. It shows where students succeed in math and what helps them get there. By understanding these factors, schools can better support students. This matters because better math skills can open doors for students in their future careers.",
+    "pm": "For product managers in education tech, this study highlights user needs for personalized learning tools. By focusing on key predictors like study habits and socio-economic factors, they can create features that truly support students. A practical next step is to integrate these insights into product development for targeted educational solutions.",
+    "engineer": "The study applied various AI models to analyze student data, with Random Forest and Artificial Neural Networks showing the best performance. It emphasized the importance of interpretability in AI, using SHAP values and decision trees to explain results. While the models were effective, the context-specific nature of predictors suggests that local adjustments may be necessary for broader application."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.0"
+  },
+  "created_at": "2025-08-26T07:24:29.437Z",
+  "updated_at": "2025-08-26T07:24:29.437Z",
+  "processing_order": 1756193069438
+}

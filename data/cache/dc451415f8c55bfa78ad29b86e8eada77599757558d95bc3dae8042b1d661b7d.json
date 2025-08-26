@@ -1,0 +1,31 @@
+{
+  "content_hash": "dc451415f8c55bfa78ad29b86e8eada77599757558d95bc3dae8042b1d661b7d",
+  "share_id": "ealgsu",
+  "title": "Evaluation and LLM-Guided Learning of ICD Coding Rationales",
+  "optimized_headline": "Uncovering Insights: How LLMs Enhance ICD Coding Rationales Evaluation",
+  "url": "https://arxiv.org/abs/2508.16777",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-26T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.16777v1 Announce Type: new \nAbstract: Automated clinical coding involves mapping unstructured text from Electronic Health Records (EHRs) to standardized code systems such as the International Classification of Diseases (ICD). While recent advances in deep learning have significantly improved the accuracy and efficiency of ICD coding, the lack of explainability in these models remains a ",
+  "raw_body": "arXiv:2508.16777v1 Announce Type: new \nAbstract: Automated clinical coding involves mapping unstructured text from Electronic Health Records (EHRs) to standardized code systems such as the International Classification of Diseases (ICD). While recent advances in deep learning have significantly improved the accuracy and efficiency of ICD coding, the lack of explainability in these models remains a major limitation, undermining trust and transparency. Current explorations about explainability largely rely on attention-based techniques and qualitative assessments by physicians, yet lack systematic evaluation using consistent criteria on high-quality rationale datasets, as well as dedicated approaches explicitly trained to generate rationales for further enhancing explanation. In this work, we conduct a comprehensive evaluation of the explainability of the rationales for ICD coding through two key lenses: faithfulness that evaluates how well explanations reflect the model's actual reasoning and plausibility that measures how consistent the explanations are with human expert judgment. To facilitate the evaluation of plausibility, we construct a new rationale-annotated dataset, offering denser annotations with diverse granularity and aligns better with current clinical practice, and conduct evaluation across three types of rationales of ICD coding. Encouraged by the promising plausibility of LLM-generated rationales for ICD coding, we further propose new rationale learning methods to improve the quality of model-generated rationales, where rationales produced by prompting LLMs with/without annotation examples are used as distant supervision signals. We empirically find that LLM-generated rationales align most closely with those of human experts. Moreover, incorporating few-shot human-annotated examples not only further improves rationale generation but also enhances rationale-learning approaches.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study evaluates how well AI explains its decisions in clinical coding, specifically for ICD codes. Researchers found that AI-generated explanations closely match those of human experts, especially when using few-shot examples. This is crucial now as trust in AI's decision-making is essential for its adoption in healthcare.",
+  "why_it_matters": [
+    "Healthcare professionals can rely on AI-generated explanations for coding, enhancing their confidence in automated systems and improving patient care.",
+    "This development could lead to better AI tools in healthcare, giving companies a competitive edge in providing reliable coding solutions."
+  ],
+  "lenses": {
+    "eli12": "Think of AI in healthcare like a translator. It turns complex medical notes into standardized codes. If the translator can explain its choices clearly, doctors will trust it more. This matters because clearer explanations can lead to better patient outcomes.",
+    "pm": "For product managers, this means focusing on user trust in AI tools. By ensuring that AI can explain its coding decisions, you can meet user needs more effectively. A practical next step is to integrate explanation features into your product roadmap.",
+    "engineer": "From a technical perspective, the study emphasizes the importance of explainability in AI models for clinical coding. It highlights using LLMs to generate rationales that align with human judgment. However, the challenge remains in consistently evaluating these explanations' quality and relevance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.0"
+  },
+  "created_at": "2025-08-26T07:24:36.031Z",
+  "updated_at": "2025-08-26T07:24:36.031Z",
+  "processing_order": 1756193076033
+}
