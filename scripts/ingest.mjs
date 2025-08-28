@@ -13,7 +13,6 @@ const SOURCES = [
   { id: 'verge-ai', name: 'The Verge (AI)', rss: 'https://www.theverge.com/rss/ai/index.xml', domain: 'theverge.com' },
   { id: 'towards-data-science', name: 'Towards Data Science', rss: 'https://towardsdatascience.com/feed', domain: 'towardsdatascience.com' },
   { id: 'ai-business', name: 'AI Business', rss: 'https://aibusiness.com/rss.xml', domain: 'aibusiness.com' },
- // { id: 'hackernews-ai', name: 'Hacker News AI', rss: 'https://hnrss.org/newest?q=AI', domain: 'news.ycombinator.com' },
   { id: 'google-ai', name: 'Google AI Blog', rss: 'https://blog.research.google/feeds/posts/default?alt=rss', domain: 'blog.research.google' },
   { id: 'anthropic', name: 'Anthropic', rss: 'https://www.anthropic.com/rss.xml', domain: 'anthropic.com' },
   { id: 'venturebeat', name: 'VentureBeat', rss: 'https://feeds.feedburner.com/venturebeat/SZYF', domain: 'venturebeat.com' },
@@ -26,7 +25,7 @@ function contentHash({ title, source, published_at, body }) {
   return crypto.createHash('sha256').update(`${title.trim().toLowerCase()}||${source}||${published_at}||${body}`).digest('hex');
 }
 
-// CHANGED: Enhanced rule classification with smarter patterns
+// Enhanced rule classification with smarter patterns
 function ruleClassify({ domain, title, lede }) {
   const t = `${title} ${lede}`.toLowerCase();
   
@@ -54,7 +53,7 @@ function ruleClassify({ domain, title, lede }) {
   return null; // Use AI classification
 }
 
-// CHANGED: Updated classification prompt with POSSIBLE/HAPPENING/COMING logic
+// Classification prompt with POSSIBLE/HAPPENING/COMING logic
 async function classifyTieBreaker(title, lede) {
   const prompt = `Classify this article into exactly one category:
 - capabilities_and_how (technical breakthroughs, new models, research)
@@ -72,7 +71,7 @@ First paragraph: ${lede}`;
     const res = await client.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [{ role: 'user', content: prompt }],
-      temperature: 0  // CHANGED: Confirmed at 0 for deterministic classification
+      temperature: 0
     });
     
     const content = (res.choices[0]?.message?.content || '').trim();
@@ -90,7 +89,7 @@ First paragraph: ${lede}`;
   }
 }
 
-// NEW: Headline rewriter function
+// Headline rewriter function
 async function rewriteHeadline(title) {
   const prompt = `Rewrite this headline to maximize clarity + curiosity in under 12 words.
 
@@ -107,7 +106,7 @@ Original Headline: ${title}`;
     const res = await client.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [{ role: 'user', content: prompt }],
-      temperature: 0.6  // CHANGED: As specified for creative headlines
+      temperature: 0.6
     });
     
     const newHeadline = (res.choices[0]?.message?.content || '').trim();
@@ -125,43 +124,42 @@ Original Headline: ${title}`;
   }
 }
 
-// CHANGED: Complete rewrite with critical analyst prompt
+// UPDATED: New summarization prompt
 async function summarizeArticle(fullText) {
-  const prompt = `You are an explainer who distills complex AI news into clear, engaging, and trustworthy insights. 
+  const prompt = `You are an ace explainer and analyst whose job is to make AI news simple, educative, and worth sharing. 
+Your goal: keep both experts and newcomers hooked by surfacing the big idea AND the most important data that supports or challenges it. 
 
-Your role is to:
-- Keep it concise and approachable: plain English, short sentences, no jargon.
-- Include the most memorable specific detail (number, comparison, or quote) if one exists.
-- Prioritize clarity and flow over rigid structure. Avoid forced checklists or "X: Y" constructions.
-- Use analogies or vivid examples only if they appear in the article, to make the story stick.
-- Highlight why this matters now for real users, companies, or society.
-- Include caveats or missing risks only if the article itself emphasizes them, or if their absence is a critical blind spot.
+Rules:
+- Always preserve the core message of the article.
+- Include 1–2 of the most important factual details (numbers, benchmarks, models, comparisons, or quotes) if present. Ignore trivial ones.
+- Use plain English, short sentences, and natural flow.
+- Use an analogy only if it helps explain the concept (prefer the article's, otherwise create one).
+- Write with a guiding voice (analysis + context) but avoid being prescriptive. Use phrasing like "could" or "would" instead of "should/must."
+- Maintain a consistent structure, but allow natural length variation (60–90 words per section).
+
+Return ONLY valid JSON with this structure:
+{
+  "speedrun": "3–4 crisp sentences (70–90 words). Explain what happened, highlight 1–2 key specifics, and end with why it matters now.",
+  
+  "why_it_matters": [
+    "Immediate impact for a specific group, with the mechanism (20–30 words).",
+    "Strategic or market-level implication that shows a broader shift (20–30 words)."
+  ],
+  
+  "lenses": {
+    "eli12": "3–4 sentences (60–80 words). Use plain, friendly language. Add an analogy if it clarifies the idea. End with why it matters to everyday people.",
+    
+    "pm": "3–4 sentences (60–80 words). Explain what this means for product managers or founders. Cover user need, cost/efficiency angle, and one practical implication.",
+    
+    "engineer": "3–4 sentences (60–80 words). Explain the technical angle with 1–2 key specifics (models, benchmarks, results, or comparisons). Mention caveats only if the article stresses them."
+  }
+}
+
+Style:
+- Be clear, natural, and educational.
+- Don't force structure like 'X: Y'. Use flowing sentences.
+- No filler words like 'game-changing' or 'revolutionary.'
 - Never invent details.
-
-Return ONLY a valid JSON object with these keys:
-
-- speedrun: 3–4 crisp sentences (70-90 words total). Capture:
-  * What happened
-  * One factual datapoint or example if present
-  * Why it matters now
-  
-- why_it_matters: Array of exactly 2 bullets (20–30 words each):
-  * First bullet: Immediate impact for a specific group, grounded in the article
-  * Second bullet: Strategic or market-level implication
-  
-- lenses:
-  - eli12: 3–4 sentences (60-80 words) in plain, conversational language. Use a simple analogy from the article if present, otherwise create one that's contextually relevant. End with why it matters to everyday people.
-  
-  - pm: 3–4 sentences (60-80 words) explaining what this means for product managers. Cover user needs, competitive advantage, and one practical next step.
-  
-  - engineer: 3–4 sentences (60-80 words) with a technical angle. Note approach, limitations, and comparisons if present. Mention risks only if emphasized in the article.
-
-Style & constraints:
-- Use plain English; replace heavy terms with everyday phrases (e.g. "too flattering" instead of "sycophancy").
-- Focus on brevity, clarity, and natural flow.
-- Do not add filler like "game-changing" or "revolutionary."
-- Do not add warnings unless meaningful.
-- Never invent content not in the article.
 
 Article:
 ${fullText}`;
@@ -169,7 +167,7 @@ ${fullText}`;
   const res = await client.chat.completions.create({
     model: 'gpt-4o-mini',
     messages: [{ role: 'user', content: prompt }],
-    temperature: 0.5  // CHANGED: Increased from 0.4 to 0.5 as specified
+    temperature: 0.5
   });
   
   let content = res.choices[0]?.message?.content || '{}';
@@ -193,7 +191,7 @@ ${fullText}`;
   }
 }
 
-// NEW: Dynamic hype meter calculation
+// Dynamic hype meter calculation
 function calculateHypeMeter(article, summary) {
   const title = article.title.toLowerCase();
   const content = JSON.stringify(summary).toLowerCase();
@@ -261,7 +259,7 @@ function calculateHypeMeter(article, summary) {
   const notSpecifiedCount = (content.match(/not specified/g) || []).length;
   evidenceScore -= notSpecifiedCount * 2;
   
-  // Source credibility (CHANGED: Added your sources)
+  // Source credibility
   const credibleSources = ['mit', 'stanford', 'arxiv', 'nature', 'science', 'openai'];
   const hypeSources = ['techcrunch', 'venturebeat', 'businessinsider', 'ai-business'];
   
@@ -295,7 +293,7 @@ function calculateHypeMeter(article, summary) {
   return 5;                      // Very hyped
 }
 
-// PHASE 2: Create monthly organized files - UNCHANGED
+// PHASE 2: Create monthly organized files
 async function createMonthlyFiles(allArticles, publicDataPath) {
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
                       'July', 'August', 'September', 'October', 'November', 'December'];
@@ -374,7 +372,7 @@ async function createMonthlyFiles(allArticles, publicDataPath) {
   console.log(`  ✓ metadata.json: ${monthsIndex.length} months indexed`);
 }
 
-// PHASE 1: Load all cached articles - UNCHANGED
+// PHASE 1: Load all cached articles
 async function loadAllCachedArticles(cacheDir) {
   const records = [];
   
@@ -389,13 +387,13 @@ async function loadAllCachedArticles(cacheDir) {
         const filePath = path.join(cacheDir, filename);
         const cached = JSON.parse(await fs.readFile(filePath, 'utf8'));
         
-        // CHANGED: Support both old (no optimized_headline) and new cache structures
+        // Support both old (no optimized_headline) and new cache structures
         records.push({
           id: cached.content_hash,
           share_id: cached.share_id,
           category: cached.category,
           title: cached.title,
-          optimized_headline: cached.optimized_headline || null,  // NEW: May not exist in old cache
+          optimized_headline: cached.optimized_headline || null,
           source: cached.source,
           url: cached.url,
           published_at: cached.published_at,
@@ -428,7 +426,7 @@ async function main() {
   console.log(`Cache directory: ${cacheDir}`);
   console.log(`Public data file: ${publicData}`);
 
-  // Test RSS feeds - UNCHANGED
+  // Test RSS feeds
   console.log('\n🔍 Testing RSS feeds...');
   for (const s of SOURCES) {
     try {
@@ -481,7 +479,7 @@ async function main() {
               share_id: cached.share_id,
               category: cached.category,
               title: cached.title,
-              optimized_headline: cached.optimized_headline || null,  // NEW
+              optimized_headline: cached.optimized_headline || null,
               source: cached.source,
               url: cached.url,
               published_at: cached.published_at,
@@ -503,24 +501,24 @@ async function main() {
             // Summarization
             const sum = await summarizeArticle(`${title}\n\n${lede}\n\n${body}`);
             
-            // NEW: Headline optimization
+            // Headline optimization
             const optimizedHeadline = await rewriteHeadline(title);
             
-            // NEW: Build article data for hype calculation
+            // Build article data for hype calculation
             const articleData = {
               title,
               source,
               category
             };
             
-            // NEW: Dynamic hype meter
+            // Dynamic hype meter
             const hypeMeter = calculateHypeMeter(articleData, sum);
             
             const fullArticleData = {
               content_hash: hash,
               share_id: generateShortId(title),
               title,
-              optimized_headline: optimizedHeadline,  // NEW
+              optimized_headline: optimizedHeadline,
               url,
               source,
               published_at,
@@ -531,10 +529,10 @@ async function main() {
               speedrun: sum.speedrun,
               why_it_matters: sum.why_it_matters,
               lenses: sum.lenses,
-              hype_meter: hypeMeter,  // CHANGED: Now dynamic
+              hype_meter: hypeMeter,
               model_meta: { 
                 model: 'gpt-4o-mini', 
-                prompt_version: 'v2.0'  // CHANGED: Version bump for new prompts
+                prompt_version: 'v2.1'  // Updated version for new prompt
               },
               created_at: new Date().toISOString(),
               updated_at: new Date().toISOString(),
@@ -550,7 +548,7 @@ async function main() {
               share_id: fullArticleData.share_id,
               category: fullArticleData.category,
               title: fullArticleData.title,
-              optimized_headline: fullArticleData.optimized_headline,  // NEW
+              optimized_headline: fullArticleData.optimized_headline,
               source: fullArticleData.source,
               url: fullArticleData.url,
               published_at: fullArticleData.published_at,
@@ -615,7 +613,7 @@ async function main() {
     console.log(`\n✓ Written ${parsedContent.articles.length} recent articles to items.json`);
     console.log(`✓ Total cached articles: ${parsedContent.total_in_cache}`);
     
-    // NEW: Show sample of optimized headlines
+    // Show sample of optimized headlines
     const withOptimized = parsedContent.articles.filter(a => a.optimized_headline);
     if (withOptimized.length > 0) {
       console.log(`✓ ${withOptimized.length} articles have optimized headlines`);
