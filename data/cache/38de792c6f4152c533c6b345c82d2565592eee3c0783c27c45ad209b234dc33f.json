@@ -1,0 +1,31 @@
+{
+  "content_hash": "38de792c6f4152c533c6b345c82d2565592eee3c0783c27c45ad209b234dc33f",
+  "share_id": "qbdbf4",
+  "title": "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs",
+  "optimized_headline": "Evaluating the Truthfulness of Quantized LLMs: Surprising Findings Uncovered",
+  "url": "https://arxiv.org/abs/2508.19432",
+  "source": "ArXiv AI",
+  "published_at": "2025-08-28T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2508.19432v1 Announce Type: new \nAbstract: Quantization enables efficient deployment of large language models (LLMs) in resource-constrained environments by significantly reducing memory and computation costs. While quantized LLMs often maintain performance on perplexity and zero-shot tasks, their impact on truthfulness-whether generating truthful or deceptive responses-remains largely unexp",
+  "raw_body": "arXiv:2508.19432v1 Announce Type: new \nAbstract: Quantization enables efficient deployment of large language models (LLMs) in resource-constrained environments by significantly reducing memory and computation costs. While quantized LLMs often maintain performance on perplexity and zero-shot tasks, their impact on truthfulness-whether generating truthful or deceptive responses-remains largely unexplored. In this work, we introduce TruthfulnessEval, a comprehensive evaluation framework for assessing the truthfulness of quantized LLMs across three dimensions: (1) Truthfulness on Logical Reasoning; (2) Truthfulness on Common Sense; and (3) Truthfulness on Imitative Falsehoods. Using this framework, we examine mainstream quantization techniques (ranging from 4-bit to extreme 2-bit) across several open-source LLMs. Surprisingly, we find that while quantized models retain internally truthful representations, they are more susceptible to producing false outputs under misleading prompts. To probe this vulnerability, we test 15 rephrased variants of \"honest\", \"neutral\" and \"deceptive\" prompts and observe that \"deceptive\" prompts can override truth-consistent behavior, whereas \"honest\" and \"neutral\" prompts maintain stable outputs. Further, we reveal that quantized models \"know\" the truth internally yet still produce false outputs when guided by \"deceptive\" prompts via layer-wise probing and PCA visualizations. Our findings provide insights into future designs of quantization-aware alignment and truthfulness interventions.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated the truthfulness of quantized large language models (LLMs) using a new framework called TruthfulnessEval. While these models reduce memory and computation costs, they can produce false outputs when prompted with deceptive phrases, despite having truthful representations internally. The research tested various quantization techniques, revealing that deceptive prompts can override truthfulness. This matters because it highlights the importance of understanding how quantization affects the reliability of AI responses in real-world applications.",
+  "why_it_matters": [
+    "This finding is crucial for developers and users relying on AI to provide accurate information, as deceptive prompts could mislead outputs.",
+    "On a larger scale, it signals a need for improved alignment strategies in AI, ensuring that models remain truthful even under manipulation."
+  ],
+  "lenses": {
+    "eli12": "Imagine a smart friend who knows the truth but sometimes gets tricked into saying wrong things when asked in a sneaky way. This study shows that quantized LLMs, while efficient, can fall into the same trap. They may understand what's right but can still say what's wrong if prompted incorrectly. This matters because we rely on AI for accurate information, and we need to ensure they don't get misled.",
+    "pm": "For product managers and founders, this research highlights a critical user need: ensuring AI models provide reliable information. While quantized models are cost-effective, their susceptibility to deceptive prompts could affect user trust. A practical implication is the necessity to develop better alignment strategies to maintain truthfulness, which could enhance user satisfaction and retention.",
+    "engineer": "From a technical standpoint, the study introduces TruthfulnessEval to assess quantized LLMs across three dimensions of truthfulness. It tested models with quantization levels from 4-bit to 2-bit, revealing that while these models can maintain internal truthfulness, they are vulnerable to deceptive prompts. This suggests a need for future designs that incorporate quantization-aware alignment interventions to enhance the reliability of AI outputs."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-08-29T03:48:36.703Z",
+  "updated_at": "2025-08-29T03:48:36.703Z",
+  "processing_order": 1756439316705
+}
