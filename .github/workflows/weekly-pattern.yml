@@ -3,8 +3,8 @@ name: Generate Weekly Pattern
 
 on:
   schedule:
-    # Run every Sunday at 11 PM UTC (4:30 AM Monday IST)
-    - cron: '0 23 * * 0'
+    # Run every Sunday at 12:30 pm
+    - cron: '0 7 * * 0'    # 7 AM UTC = 12:30 PM IST
   workflow_dispatch:  # Allow manual trigger for testing
 
 permissions:
