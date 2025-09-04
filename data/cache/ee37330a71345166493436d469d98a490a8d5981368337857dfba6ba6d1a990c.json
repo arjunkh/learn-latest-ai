@@ -1,0 +1,31 @@
+{
+  "content_hash": "ee37330a71345166493436d469d98a490a8d5981368337857dfba6ba6d1a990c",
+  "share_id": "csch8z",
+  "title": "A Comparative Study of Controllability, Explainability, and Performance in Dysfluency Detection Models",
+  "optimized_headline": "\"Exploring Controllability and Explainability in Dysfluency Detection Models: A Comparative Study\"",
+  "url": "https://arxiv.org/abs/2509.00058",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.00058v1 Announce Type: new \nAbstract: Recent advances in dysfluency detection have introduced a variety of modeling paradigms, ranging from lightweight object-detection inspired networks (YOLOStutter) to modular interpretable frameworks (UDM). While performance on benchmark datasets continues to improve, clinical adoption requires more than accuracy: models must be controllable and expl",
+  "raw_body": "arXiv:2509.00058v1 Announce Type: new \nAbstract: Recent advances in dysfluency detection have introduced a variety of modeling paradigms, ranging from lightweight object-detection inspired networks (YOLOStutter) to modular interpretable frameworks (UDM). While performance on benchmark datasets continues to improve, clinical adoption requires more than accuracy: models must be controllable and explainable. In this paper, we present a systematic comparative analysis of four representative approaches--YOLO-Stutter, FluentNet, UDM, and SSDM--along three dimensions: performance, controllability, and explainability. Through comprehensive evaluation on multiple datasets and expert clinician assessment, we find that YOLO-Stutter and FluentNet provide efficiency and simplicity, but with limited transparency; UDM achieves the best balance of accuracy and clinical interpretability; and SSDM, while promising, could not be fully reproduced in our experiments. Our analysis highlights the trade-offs among competing approaches and identifies future directions for clinically viable dysfluency modeling. We also provide detailed implementation insights and practical deployment considerations for each approach.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study examined four dysfluency detection models: YOLO-Stutter, FluentNet, UDM, and SSDM. It found that while YOLO-Stutter and FluentNet excel in efficiency, they lack transparency. UDM stands out for balancing accuracy with clinical interpretability. This research is crucial as it highlights the need for models that are not only accurate but also controllable and explainable for real-world clinical use.",
+  "why_it_matters": [
+    "Clinicians need reliable tools to assess speech dysfluencies, and models must be understandable to ensure trust and usability.",
+    "The findings indicate a shift towards prioritizing explainability in AI models, reflecting a broader trend in healthcare technology towards transparency and user-friendliness."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how well different AI models detect speech issues, like stuttering. Think of it like choosing a car: some are fast but hard to drive, while others are easier but slower. For everyday people, having AI that explains its decisions can lead to better tools for understanding and treating speech disorders.",
+    "pm": "For product managers, this research highlights the need to balance efficiency with user understanding in AI tools. While speed is important, the findings suggest that products must also be interpretable to be adopted in clinical settings. This could mean prioritizing features that enhance explainability in future developments.",
+    "engineer": "The study systematically compared four dysfluency detection models across performance, controllability, and explainability. YOLO-Stutter and FluentNet are efficient but lack transparency, while UDM offers the best interpretability. SSDM showed promise but faced reproducibility issues. These insights can guide engineers in developing more clinically viable models."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-04T03:44:43.189Z",
+  "updated_at": "2025-09-04T03:44:43.189Z",
+  "processing_order": 1756957483189
+}

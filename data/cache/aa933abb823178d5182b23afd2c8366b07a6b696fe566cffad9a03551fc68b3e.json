@@ -1,0 +1,31 @@
+{
+  "content_hash": "aa933abb823178d5182b23afd2c8366b07a6b696fe566cffad9a03551fc68b3e",
+  "share_id": "bmrdk2",
+  "title": "Beyond Memorization: Reasoning-Driven Synthesis as a Mitigation Strategy Against Benchmark Contamination",
+  "optimized_headline": "\"How Reasoning-Driven Synthesis Can Combat Benchmark Contamination Effectively\"",
+  "url": "https://arxiv.org/abs/2509.00072",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.00072v1 Announce Type: new \nAbstract: Capability evaluation of large language models (LLMs) is increasingly shadowed by rising concerns of data contamination that cast doubts on whether static benchmarks measure genuine reasoning or mere memorization. We present an empirical study using an infinitely scalable framework to synthesize research-level QA directly from arXiv papers, harnessi",
+  "raw_body": "arXiv:2509.00072v1 Announce Type: new \nAbstract: Capability evaluation of large language models (LLMs) is increasingly shadowed by rising concerns of data contamination that cast doubts on whether static benchmarks measure genuine reasoning or mere memorization. We present an empirical study using an infinitely scalable framework to synthesize research-level QA directly from arXiv papers, harnessing the natural temporal structure of research publications where performance decay after knowledge cutoffs may indicate potential contamination. We evaluated 4 frontier model represented by 2 models of different knowledge cutoff dates per family on 1,643 multi-step reasoning questions synthesized from 20,277 arXiv papers stratified over 26 months, covering at least 6 months before and after all cutoff dates. Our results consistently showed a lack of significant performance decay near knowledge cutoff dates for models of various sizes, developers, and release dates. We further performed a comparative analysis with previous longitudinal studies that reported significant post-cutoff performance decay using directly retrieved questions based on public data. we hypothesize that the multi-step reasoning required by our synthesis pipeline offered additional complexity that goes deeper than shallow memorization, which effectively serves a mitigation strategy against benchmark contamination. We fully open source our code and dataset to aid reproducibility and advocate for a paradigm shift that prioritize reasoning-driven synthesis to construct benchmarks over simply collecting newly released questions periodically.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study examined how well large language models (LLMs) perform on reasoning tasks and whether their results are influenced by data contamination. Researchers synthesized 1,643 multi-step reasoning questions from 20,277 arXiv papers, finding no significant performance drop near knowledge cutoff dates. This suggests that reasoning-driven synthesis could be a better way to assess LLM capabilities. Understanding this is crucial as it challenges the reliability of current benchmarking methods.",
+  "why_it_matters": [
+    "For AI developers, this research offers a more reliable method to evaluate LLMs, potentially leading to better models for users.",
+    "This study signals a shift in how AI benchmarks are constructed, emphasizing reasoning over simple memorization, which could redefine evaluation standards."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how well AI can think, rather than just remember facts. By creating complex questions from research papers, researchers found that AI didn’t just rely on memory, which is good news. It's like teaching a child to solve puzzles instead of just memorizing answers. This matters because it helps ensure that AI can truly understand and reason through information.",
+    "pm": "For product managers, this research highlights a new way to evaluate AI performance that focuses on reasoning. This could lead to more effective models that meet user needs better. By emphasizing reasoning-driven benchmarks, companies might save on costs related to flawed evaluations and improve efficiency in product development, ultimately enhancing user experience.",
+    "engineer": "This study utilized an infinitely scalable framework to synthesize 1,643 multi-step reasoning questions from 20,277 arXiv papers, showing no significant performance decay near knowledge cutoffs. The hypothesis is that the complexity of the synthesized questions encourages deeper reasoning processes, countering memorization effects seen in previous studies. This approach could influence future model evaluations and benchmark construction significantly."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-04T03:44:50.611Z",
+  "updated_at": "2025-09-04T03:44:50.611Z",
+  "processing_order": 1756957490612
+}
