@@ -1,0 +1,31 @@
+{
+  "content_hash": "255ddaaa149218418877a3ad6a7682fce00fe32de867051f689243415ed1dfc7",
+  "share_id": "drt6h0",
+  "title": "Deep Research is the New Analytics System: Towards Building the Runtime for AI-Driven Analytics",
+  "optimized_headline": "Deep Research: The Future of AI-Driven Analytics Unveiled",
+  "url": "https://arxiv.org/abs/2509.02751",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-04T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.02751v1 Announce Type: new \nAbstract: With advances in large language models (LLMs), researchers are creating new systems that can perform AI-driven analytics over large unstructured datasets. Recent work has explored executing such analytics queries using semantic operators -- a declarative set of AI-powered data transformations with natural language specifications. However, even when ",
+  "raw_body": "arXiv:2509.02751v1 Announce Type: new \nAbstract: With advances in large language models (LLMs), researchers are creating new systems that can perform AI-driven analytics over large unstructured datasets. Recent work has explored executing such analytics queries using semantic operators -- a declarative set of AI-powered data transformations with natural language specifications. However, even when optimized, these operators can be expensive to execute on millions of records and their iterator execution semantics make them ill-suited for interactive data analytics tasks. In another line of work, Deep Research systems have demonstrated an ability to answer natural language question(s) over large datasets. These systems use one or more LLM agent(s) to plan their execution, process the dataset(s), and iteratively refine their answer. However, these systems do not explicitly optimize their query plans which can lead to poor plan execution. In order for AI-driven analytics to excel, we need a runtime which combines the optimized execution of semantic operators with the flexibility and more dynamic execution of Deep Research systems. As a first step towards this vision, we build a prototype which enables Deep Research agents to write and execute optimized semantic operator programs. We evaluate our prototype and demonstrate that it can outperform a handcrafted semantic operator program and open Deep Research systems on two basic queries. Compared to a standard open Deep Research agent, our prototype achieves up to 1.95x better F1-score. Furthermore, even if we give the agent access to semantic operators as tools, our prototype still achieves cost and runtime savings of up to 76.8% and 72.7% thanks to its optimized execution.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers are developing a new AI-driven analytics system that merges optimized execution of semantic operators with the flexibility of Deep Research systems. Their prototype outperforms traditional methods, achieving up to 1.95 times better F1-score and reducing costs and runtime by up to 76.8% and 72.7%, respectively. This advancement addresses the limitations of current analytics systems, making it easier to analyze large datasets efficiently. As businesses increasingly rely on data insights, this innovation could enhance decision-making processes.",
+  "why_it_matters": [
+    "This could significantly improve data analysis for businesses, allowing them to derive insights faster and more accurately.",
+    "This shift indicates a growing trend towards integrating AI capabilities into analytics, potentially reshaping how organizations handle data."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to find a book in a massive library without a catalog. This new system helps users quickly navigate through vast amounts of data, answering complex questions more effectively. It matters because faster, more accurate data analysis can lead to better decisions in everyday life, from shopping to healthcare.",
+    "pm": "For product managers, this innovation highlights the need for analytics tools that are not only powerful but also efficient. By reducing costs and improving response times, it could enhance user experience and satisfaction. Teams could focus on strategic decisions rather than getting bogged down in data processing.",
+    "engineer": "From a technical perspective, this prototype combines semantic operators with Deep Research systems, optimizing query execution. It achieves up to 1.95 times better F1-score and reduces costs and runtime significantly. This suggests a promising direction for developing more efficient AI analytics systems, although further optimization may still be needed."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-05T03:46:17.397Z",
+  "updated_at": "2025-09-05T03:46:17.397Z",
+  "processing_order": 1757043977400
+}

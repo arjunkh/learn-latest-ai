@@ -1,0 +1,31 @@
+{
+  "content_hash": "3b8b134028ee88889a83c4c311717b7f34d0a3c95c1016a0cc7e00d459b57005",
+  "share_id": "pwr1rk",
+  "title": "Planning with Reasoning using Vision Language World Model",
+  "optimized_headline": "Unlocking Vision Language World Models for Smarter Planning Strategies",
+  "url": "https://arxiv.org/abs/2509.02722",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-04T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.02722v1 Announce Type: new \nAbstract: Effective planning requires strong world models, but high-level world models that can understand and reason about actions with semantic and temporal abstraction remain largely underdeveloped. We introduce the Vision Language World Model (VLWM), a foundation model trained for language-based world modeling on natural videos. Given visual observations,",
+  "raw_body": "arXiv:2509.02722v1 Announce Type: new \nAbstract: Effective planning requires strong world models, but high-level world models that can understand and reason about actions with semantic and temporal abstraction remain largely underdeveloped. We introduce the Vision Language World Model (VLWM), a foundation model trained for language-based world modeling on natural videos. Given visual observations, the VLWM first infers the overall goal achievements then predicts a trajectory composed of interleaved actions and world state changes. Those targets are extracted by iterative LLM Self-Refine conditioned on compressed future observations represented by Tree of Captions. The VLWM learns both an action policy and a dynamics model, which respectively facilitates reactive system-1 plan decoding and reflective system-2 planning via cost minimization. The cost evaluates the semantic distance between the hypothetical future states given by VLWM roll-outs and the expected goal state, and is measured by a critic model that we trained in a self-supervised manner. The VLWM achieves state-of-the-art Visual Planning for Assistance (VPA) performance on both benchmark evaluations and our proposed PlannerArena human evaluations, where system-2 improves the Elo score by +27% upon system-1. The VLWM models also outperforms strong VLM baselines on RoboVQA and WorldPrediction benchmark.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed the Vision Language World Model (VLWM), a foundation model that enhances planning by combining visual observations with language understanding. It predicts actions and changes in the world state, achieving a 27% improvement in planning performance compared to previous models. This advancement could significantly improve AI's ability to assist in complex tasks by understanding and reasoning about actions more effectively, making it relevant for various applications now.",
+  "why_it_matters": [
+    "This model could improve AI systems that assist in real-world tasks, enhancing their decision-making capabilities.",
+    "The development signals a shift towards more sophisticated AI models that integrate visual and language understanding, impacting industries reliant on automation."
+  ],
+  "lenses": {
+    "eli12": "The Vision Language World Model (VLWM) is like teaching a robot not just to see but to think about what it sees. It learns to plan actions based on visual cues and language, making it smarter in handling tasks. This matters because it could lead to better AI helpers in everyday life, from smart assistants to robots that understand our needs.",
+    "pm": "For product managers and founders, the VLWM represents a significant leap in how AI can plan and execute tasks. By understanding both visual data and language, it addresses user needs for more intuitive interactions. This efficiency could reduce costs and improve user satisfaction, making it a valuable tool for developing smarter products.",
+    "engineer": "From a technical standpoint, the VLWM utilizes a combination of action policy learning and dynamics modeling to enhance planning. It employs a critic model trained self-supervised to evaluate future states against expected goals, achieving state-of-the-art performance on benchmarks like PlannerArena. This model's ability to interleave actions with world state changes could set new standards in visual planning tasks."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-05T03:46:11.968Z",
+  "updated_at": "2025-09-05T03:46:11.968Z",
+  "processing_order": 1757043971970
+}
