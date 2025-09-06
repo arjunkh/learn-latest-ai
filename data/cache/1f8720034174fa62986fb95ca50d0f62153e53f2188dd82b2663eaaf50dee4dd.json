@@ -1,0 +1,31 @@
+{
+  "content_hash": "1f8720034174fa62986fb95ca50d0f62153e53f2188dd82b2663eaaf50dee4dd",
+  "share_id": "lwp37d",
+  "title": "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents",
+  "optimized_headline": "Mastering Test-Time Compute: Optimize LLM Agents for Maximum Efficiency",
+  "url": "https://arxiv.org/abs/2509.03581",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-05T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.03581v1 Announce Type: new \nAbstract: Training large language models (LLMs) to reason via reinforcement learning (RL) significantly improves their problem-solving capabilities. In agentic settings, existing methods like ReAct prompt LLMs to explicitly plan before every action; however, we demonstrate that always planning is computationally expensive and degrades performance on long-hori",
+  "raw_body": "arXiv:2509.03581v1 Announce Type: new \nAbstract: Training large language models (LLMs) to reason via reinforcement learning (RL) significantly improves their problem-solving capabilities. In agentic settings, existing methods like ReAct prompt LLMs to explicitly plan before every action; however, we demonstrate that always planning is computationally expensive and degrades performance on long-horizon tasks, while never planning further limits performance. To address this, we introduce a conceptual framework formalizing dynamic planning for LLM agents, enabling them to flexibly decide when to allocate test-time compute for planning. We propose a simple two-stage training pipeline: (1) supervised fine-tuning on diverse synthetic data to prime models for dynamic planning, and (2) RL to refine this capability in long-horizon environments. Experiments on the Crafter environment show that dynamic planning agents trained with this approach are more sample-efficient and consistently achieve more complex objectives. Additionally, we demonstrate that these agents can be effectively steered by human-written plans, surpassing their independent capabilities. To our knowledge, this work is the first to explore training LLM agents for dynamic test-time compute allocation in sequential decision-making tasks, paving the way for more efficient, adaptive, and controllable agentic systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new method for training large language models (LLMs) to improve their problem-solving skills through dynamic planning. Instead of requiring LLMs to plan before every action, which is costly and less effective for long tasks, this approach allows them to decide when to plan. Experiments show that these dynamic planning agents are more sample-efficient and can achieve complex objectives better than traditional methods. This development is significant as it could lead to more efficient AI systems in various applications.",
+  "why_it_matters": [
+    "This method could enhance LLM performance for developers needing efficient AI solutions, particularly in tasks requiring long-term planning.",
+    "It signals a shift toward more adaptive AI systems, potentially impacting industries that rely on complex decision-making processes."
+  ],
+  "lenses": {
+    "eli12": "Imagine teaching a student when to study for a test instead of making them study every day. The new method for training LLMs lets them choose when to plan their actions, making them smarter and faster at solving problems. This matters because it can help create AI that works better in real-life situations, like helping businesses make decisions.",
+    "pm": "For product managers, this new training method addresses the need for more efficient AI that can handle complex tasks without constant oversight. By allowing LLMs to decide when to plan, the cost of computation could decrease while improving overall performance. This could lead to products that are not only more effective but also more user-friendly.",
+    "engineer": "From a technical perspective, the new framework enables LLMs to dynamically allocate test-time compute for planning, which is a shift from the traditional ReAct method. The two-stage training process includes supervised fine-tuning followed by reinforcement learning, enhancing sample efficiency and task complexity handling. This approach could set a benchmark for future LLM training methodologies."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-06T03:42:50.668Z",
+  "updated_at": "2025-09-06T03:42:50.668Z",
+  "processing_order": 1757130170671
+}

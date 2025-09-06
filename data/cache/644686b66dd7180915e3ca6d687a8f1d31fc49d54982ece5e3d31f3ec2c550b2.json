@@ -1,0 +1,31 @@
+{
+  "content_hash": "644686b66dd7180915e3ca6d687a8f1d31fc49d54982ece5e3d31f3ec2c550b2",
+  "share_id": "malt7c",
+  "title": "Multilinear and Linear Programs for Partially Identifiable Queries in Quasi-Markovian Structural Causal Models",
+  "optimized_headline": "Exploring Multilinear and Linear Programs in Quasi-Markovian Causal Models",
+  "url": "https://arxiv.org/abs/2509.03548",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-05T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.03548v1 Announce Type: new \nAbstract: We investigate partially identifiable queries in a class of causal models. We focus on acyclic Structural Causal Models that are quasi-Markovian (that is, each endogenous variable is connected with at most one exogenous confounder). We look into scenarios where endogenous variables are observed (and a distribution over them is known), while exogenou",
+  "raw_body": "arXiv:2509.03548v1 Announce Type: new \nAbstract: We investigate partially identifiable queries in a class of causal models. We focus on acyclic Structural Causal Models that are quasi-Markovian (that is, each endogenous variable is connected with at most one exogenous confounder). We look into scenarios where endogenous variables are observed (and a distribution over them is known), while exogenous variables are not fully specified. This leads to a representation that is in essence a Bayesian network where the distribution of root variables is not uniquely determined. In such circumstances, it may not be possible to precisely compute a probability value of interest. We thus study the computation of tight probability bounds, a problem that has been solved by multilinear programming in general, and by linear programming when a single confounded component is intervened upon. We present a new algorithm to simplify the construction of such programs by exploiting input probabilities over endogenous variables. For scenarios with a single intervention, we apply column generation to compute a probability bound through a sequence of auxiliary linear integer programs, thus showing that a representation with polynomial cardinality for exogenous variables is possible. Experiments show column generation techniques to be superior to existing methods.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have explored partially identifiable queries in quasi-Markovian Structural Causal Models, focusing on scenarios with known distributions of endogenous variables but unspecified exogenous ones. They developed a new algorithm that simplifies the computation of tight probability bounds using multilinear and linear programming techniques. This matters now because it enhances our ability to make informed decisions in causal inference, particularly in complex systems where not all variables are fully understood.",
+  "why_it_matters": [
+    "This research could directly impact fields like epidemiology or economics, where understanding causal relationships is crucial despite incomplete data.",
+    "On a broader level, it signals a shift towards more sophisticated models in causal inference, potentially leading to better predictive analytics across various industries."
+  ],
+  "lenses": {
+    "eli12": "This study tackles the challenge of understanding cause-and-effect relationships when not all data is available. Think of it like trying to solve a puzzle with missing pieces; researchers are finding ways to estimate what those missing pieces could be. This matters to everyday people because clearer insights into causation can improve decision-making in healthcare, policy, and beyond.",
+    "pm": "For product managers and founders, this work highlights the importance of understanding causal relationships even with incomplete data. It could lead to more accurate predictions about user behavior, reducing uncertainty in product development. A practical takeaway is the potential to refine analytics tools that help businesses make better-informed decisions.",
+    "engineer": "From a technical perspective, this research introduces a new algorithm for computing tight probability bounds in quasi-Markovian models. It leverages multilinear programming and demonstrates the effectiveness of column generation techniques, showing improved performance over existing methods. These advancements could be pivotal for engineers working on causal inference applications where data is often incomplete."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-06T03:42:40.184Z",
+  "updated_at": "2025-09-06T03:42:40.184Z",
+  "processing_order": 1757130160185
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "0dbfab8cbca5893bcfe2e8217b87d28f1eb4c8db4a85d0c68f534b715edba8a5",
+  "share_id": "papzsa",
+  "title": "PG-Agent: An Agent Powered by Page Graph",
+  "optimized_headline": "Discover PG-Agent: The Innovative Agent Utilizing Page Graph Technology",
+  "url": "https://arxiv.org/abs/2509.03536",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-05T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.03536v1 Announce Type: new \nAbstract: Graphical User Interface (GUI) agents possess significant commercial and social value, and GUI agents powered by advanced multimodal large language models (MLLMs) have demonstrated remarkable potential. Currently, existing GUI agents usually utilize sequential episodes of multi-step operations across pages as the prior GUI knowledge, which fails to ",
+  "raw_body": "arXiv:2509.03536v1 Announce Type: new \nAbstract: Graphical User Interface (GUI) agents possess significant commercial and social value, and GUI agents powered by advanced multimodal large language models (MLLMs) have demonstrated remarkable potential. Currently, existing GUI agents usually utilize sequential episodes of multi-step operations across pages as the prior GUI knowledge, which fails to capture the complex transition relationship between pages, making it challenging for the agents to deeply perceive the GUI environment and generalize to new scenarios. Therefore, we design an automated pipeline to transform the sequential episodes into page graphs, which explicitly model the graph structure of the pages that are naturally connected by actions. To fully utilize the page graphs, we further introduce Retrieval-Augmented Generation (RAG) technology to effectively retrieve reliable perception guidelines of GUI from them, and a tailored multi-agent framework PG-Agent with task decomposition strategy is proposed to be injected with the guidelines so that it can generalize to unseen scenarios. Extensive experiments on various benchmarks demonstrate the effectiveness of PG-Agent, even with limited episodes for page graph construction.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced PG-Agent, a new GUI agent that utilizes page graphs to improve its understanding of complex user interfaces. By transforming sequential operations into a graph structure, PG-Agent can better generalize to new scenarios. The agent employs Retrieval-Augmented Generation (RAG) technology to enhance its performance. This development is significant as it could lead to more effective and adaptable GUI agents in various applications.",
+  "why_it_matters": [
+    "This advancement could enhance user experience for software developers and businesses relying on intuitive interfaces, improving efficiency.",
+    "On a broader scale, it suggests a shift towards more intelligent and adaptable AI systems, which could redefine how we interact with technology."
+  ],
+  "lenses": {
+    "eli12": "PG-Agent is like giving a robot a map of a city instead of just directions. By using page graphs, it can understand how different parts of a user interface connect. This matters because it could make software easier to use for everyone, helping people interact with technology more smoothly.",
+    "pm": "For product managers, PG-Agent highlights the need for adaptable user interfaces that can learn from user interactions. Its ability to generalize could reduce development costs and improve user satisfaction. This means creating products that feel more intuitive and responsive to users' needs.",
+    "engineer": "PG-Agent leverages page graphs to represent GUI operations, improving its understanding of user interfaces. It integrates Retrieval-Augmented Generation (RAG) to retrieve context-specific guidelines, enhancing performance even with limited data. This approach could set a new benchmark for developing intelligent GUI agents."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-06T03:42:35.568Z",
+  "updated_at": "2025-09-06T03:42:35.568Z",
+  "processing_order": 1757130155568
+}
