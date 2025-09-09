@@ -1,0 +1,31 @@
+{
+  "content_hash": "a314fdbc60885e9ae6d7f1f27c0941427fa55608cff24941c93cbffd2e3fbaca",
+  "share_id": "mjgr9u",
+  "title": "Maestro: Joint Graph & Config Optimization for Reliable AI Agents",
+  "optimized_headline": "\"Discover Maestro: Optimizing Graphs and Configurations for AI Reliability\"",
+  "url": "https://arxiv.org/abs/2509.04642",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-08T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.04642v1 Announce Type: new \nAbstract: Building reliable LLM agents requires decisions at two levels: the graph (which modules exist and how information flows) and the configuration of each node (models, prompts, tools, control knobs). Most existing optimizers tune configurations while holding the graph fixed, leaving structural failure modes unaddressed. We introduce Maestro, a framewor",
+  "raw_body": "arXiv:2509.04642v1 Announce Type: new \nAbstract: Building reliable LLM agents requires decisions at two levels: the graph (which modules exist and how information flows) and the configuration of each node (models, prompts, tools, control knobs). Most existing optimizers tune configurations while holding the graph fixed, leaving structural failure modes unaddressed. We introduce Maestro, a framework-agnostic holistic optimizer for LLM agents that jointly searches over graphs and configurations to maximize agent quality, subject to explicit rollout/token budgets. Beyond numeric metrics, Maestro leverages reflective textual feedback from traces to prioritize edits, improving sample efficiency and targeting specific failure modes. On the IFBench and HotpotQA benchmarks, Maestro consistently surpasses leading prompt optimizers--MIPROv2, GEPA, and GEPA+Merge--by an average of 12%, 4.9%, and 4.86%, respectively; even when restricted to prompt-only optimization, it still leads by 9.65%, 2.37%, and 2.41%. Maestro achieves these results with far fewer rollouts than GEPA. We further show large gains on two applications (interviewer & RAG agents), highlighting that joint graph & configuration search addresses structural failure modes that prompt tuning alone cannot fix.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Maestro, a new optimizer for large language model (LLM) agents that simultaneously adjusts both the structure of the model and its configurations. Unlike traditional methods that only tweak settings, Maestro addresses structural issues, improving performance significantly. It outperforms leading optimizers by an average of 12% on key benchmarks while using fewer resources. This advancement could enhance the reliability of AI agents across various applications, making them more efficient and effective.",
+  "why_it_matters": [
+    "AI developers can create more reliable agents, reducing the risk of failures in critical applications like customer support.",
+    "This development signals a shift towards more holistic approaches in AI, emphasizing the importance of both structure and configuration."
+  ],
+  "lenses": {
+    "eli12": "Maestro is like a coach that not only trains players on their individual skills but also designs better team strategies. By optimizing both the structure and settings of LLM agents, it helps them perform better in real-world tasks. This matters because it could lead to smarter and more dependable AI tools in our daily lives.",
+    "pm": "For product managers, Maestro's approach means creating AI agents that can adapt more effectively to user needs. This could reduce costs by minimizing failures and improving efficiency. Implementing such technology might lead to more reliable products, enhancing user satisfaction and retention.",
+    "engineer": "Maestro employs a joint optimization strategy that adjusts both the structural graph and node configurations of LLM agents. It has shown an average performance improvement of 12% over existing optimizers like MIPROv2 and GEPA on benchmarks such as IFBench and HotpotQA. This approach not only boosts performance but also does so with fewer rollouts, making it a more resource-efficient solution."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-09T03:47:38.725Z",
+  "updated_at": "2025-09-09T03:47:38.725Z",
+  "processing_order": 1757389658726
+}
