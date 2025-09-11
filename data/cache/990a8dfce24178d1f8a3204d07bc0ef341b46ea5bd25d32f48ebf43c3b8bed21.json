@@ -1,0 +1,31 @@
+{
+  "content_hash": "990a8dfce24178d1f8a3204d07bc0ef341b46ea5bd25d32f48ebf43c3b8bed21",
+  "share_id": "iaeq54",
+  "title": "Instruction Agent: Enhancing Agent with Expert Demonstration",
+  "optimized_headline": "\"Discover How Instruction Agents Transform Learning with Expert Demonstrations\"",
+  "url": "https://arxiv.org/abs/2509.07098",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-10T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.07098v1 Announce Type: new \nAbstract: Graphical user interface (GUI) agents have advanced rapidly but still struggle with complex tasks involving novel UI elements, long-horizon actions, and personalized trajectories. In this work, we introduce Instruction Agent, a GUI agent that leverages expert demonstrations to solve such tasks, enabling completion of otherwise difficult workflows. G",
+  "raw_body": "arXiv:2509.07098v1 Announce Type: new \nAbstract: Graphical user interface (GUI) agents have advanced rapidly but still struggle with complex tasks involving novel UI elements, long-horizon actions, and personalized trajectories. In this work, we introduce Instruction Agent, a GUI agent that leverages expert demonstrations to solve such tasks, enabling completion of otherwise difficult workflows. Given a single demonstration, the agent extracts step-by-step instructions and executes them by strictly following the trajectory intended by the user, which avoids making mistakes during execution. The agent leverages the verifier and backtracker modules further to improve robustness. Both modules are critical to understand the current outcome from each action and handle unexpected interruptions(such as pop-up windows) during execution. Our experiments show that Instruction Agent achieves a 60% success rate on a set of tasks in OSWorld that all top-ranked agents failed to complete. The Instruction Agent offers a practical and extensible framework, bridging the gap between current GUI agents and reliable real-world GUI task automation.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new tool called Instruction Agent aims to enhance GUI agents by using expert demonstrations to tackle complex tasks. This agent can follow detailed step-by-step instructions, achieving a 60% success rate in challenging scenarios where other top agents failed. By incorporating verification and backtracking, it adapts to unexpected interruptions during task execution. This development is significant as it could lead to more reliable automation in real-world applications.",
+  "why_it_matters": [
+    "This advancement could significantly aid users who rely on automated systems for complex workflows, reducing errors and enhancing efficiency.",
+    "At a broader level, this reflects a shift towards more intelligent and adaptable AI systems, potentially reshaping automation in various industries."
+  ],
+  "lenses": {
+    "eli12": "The Instruction Agent is like having a skilled assistant who can follow detailed instructions to complete tasks accurately. By learning from expert demonstrations, it can handle tricky situations better than previous agents. This matters to everyday people because it could make technology easier to use, especially for complicated tasks.",
+    "pm": "For product managers and founders, the Instruction Agent addresses a key user need for reliable task automation. Its ability to learn from expert demonstrations could lower costs associated with errors and improve user satisfaction. This suggests a potential market opportunity for developing user-friendly automation tools.",
+    "engineer": "From a technical perspective, the Instruction Agent uses expert demonstrations to extract instructions, achieving a 60% success rate on complex tasks in OSWorld. It employs verifier and backtracker modules to enhance its robustness, allowing it to manage unexpected interruptions effectively. This could set a new benchmark for GUI agent performance in real-world applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-11T03:47:17.751Z",
+  "updated_at": "2025-09-11T03:47:17.751Z",
+  "processing_order": 1757562437754
+}
