@@ -1,0 +1,31 @@
+{
+  "content_hash": "7d8a8bf2c6e0ffe25121f9de644060d60be109f774268e561c97e3bc333baee9",
+  "share_id": "erpx2j",
+  "title": "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following",
+  "optimized_headline": "Innovative Techniques for Continuous Instruction Following in Robotics Explained",
+  "url": "https://arxiv.org/abs/2509.08222",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-11T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.08222v1 Announce Type: new \nAbstract: This study presents an Exploratory Retrieval-Augmented Planning (ExRAP) framework, designed to tackle continual instruction following tasks of embodied agents in dynamic, non-stationary environments. The framework enhances Large Language Models' (LLMs) embodied reasoning capabilities by efficiently exploring the physical environment and establishing",
+  "raw_body": "arXiv:2509.08222v1 Announce Type: new \nAbstract: This study presents an Exploratory Retrieval-Augmented Planning (ExRAP) framework, designed to tackle continual instruction following tasks of embodied agents in dynamic, non-stationary environments. The framework enhances Large Language Models' (LLMs) embodied reasoning capabilities by efficiently exploring the physical environment and establishing the environmental context memory, thereby effectively grounding the task planning process in time-varying environment contexts. In ExRAP, given multiple continual instruction following tasks, each instruction is decomposed into queries on the environmental context memory and task executions conditioned on the query results. To efficiently handle these multiple tasks that are performed continuously and simultaneously, we implement an exploration-integrated task planning scheme by incorporating the {information-based exploration} into the LLM-based planning process. Combined with memory-augmented query evaluation, this integrated scheme not only allows for a better balance between the validity of the environmental context memory and the load of environment exploration, but also improves overall task performance. Furthermore, we devise a {temporal consistency refinement} scheme for query evaluation to address the inherent decay of knowledge in the memory. Through experiments with VirtualHome, ALFRED, and CARLA, our approach demonstrates robustness against a variety of embodied instruction following scenarios involving different instruction scales and types, and non-stationarity degrees, and it consistently outperforms other state-of-the-art LLM-based task planning approaches in terms of both goal success rate and execution efficiency.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called Exploratory Retrieval-Augmented Planning (ExRAP) aims to improve how embodied agents follow instructions in changing environments. It enhances Large Language Models (LLMs) by integrating environmental context memory and efficient task planning. Key experiments show that ExRAP outperforms existing approaches in goal success rates and execution efficiency. This development could significantly advance robotics and AI applications in dynamic settings.",
+  "why_it_matters": [
+    "This framework could enhance the performance of robots and AI in real-world tasks, making them more effective in unpredictable environments.",
+    "The success of ExRAP reflects a broader trend in AI towards integrating memory and exploration, indicating a shift in how we approach complex task planning."
+  ],
+  "lenses": {
+    "eli12": "ExRAP is like giving a robot a map and a memory to remember places it has been. This helps the robot make better decisions while following instructions in changing environments. For everyday people, this means robots could become more reliable helpers in homes or workplaces.",
+    "pm": "For product managers, ExRAP highlights the importance of integrating memory and exploration in AI tools. This could lead to more efficient task execution, reducing costs and improving user experience. It suggests that focusing on context-aware capabilities could meet user needs better.",
+    "engineer": "Technically, ExRAP combines memory-augmented query evaluation with an exploration-integrated task planning scheme. By addressing knowledge decay through temporal consistency refinement, it improves the robustness of LLMs in various scenarios. This approach consistently outperformed state-of-the-art methods in experiments across platforms like VirtualHome and ALFRED."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-12T03:43:44.903Z",
+  "updated_at": "2025-09-12T03:43:44.903Z",
+  "processing_order": 1757648624906
+}
