@@ -1,0 +1,31 @@
+{
+  "content_hash": "4d61ef05a7955a68fcebd32eaf7714239398fe3c9a0a043afca18ed40f11efc9",
+  "share_id": "hwcs3o",
+  "title": "How well can LLMs provide planning feedback in grounded environments?",
+  "optimized_headline": "Exploring LLMs' Effectiveness in Offering Planning Feedback in Real-World Settings",
+  "url": "https://arxiv.org/abs/2509.09790",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.09790v1 Announce Type: new \nAbstract: Learning to plan in grounded environments typically requires carefully designed reward functions or high-quality annotated demonstrations. Recent works show that pretrained foundation models, such as large language models (LLMs) and vision language models (VLMs), capture background knowledge helpful for planning, which reduces the amount of reward d",
+  "raw_body": "arXiv:2509.09790v1 Announce Type: new \nAbstract: Learning to plan in grounded environments typically requires carefully designed reward functions or high-quality annotated demonstrations. Recent works show that pretrained foundation models, such as large language models (LLMs) and vision language models (VLMs), capture background knowledge helpful for planning, which reduces the amount of reward design and demonstrations needed for policy learning. We evaluate how well LLMs and VLMs provide feedback across symbolic, language, and continuous control environments. We consider prominent types of feedback for planning including binary feedback, preference feedback, action advising, goal advising, and delta action feedback. We also consider inference methods that impact feedback performance, including in-context learning, chain-of-thought, and access to environment dynamics. We find that foundation models can provide diverse high-quality feedback across domains. Moreover, larger and reasoning models consistently provide more accurate feedback, exhibit less bias, and benefit more from enhanced inference methods. Finally, feedback quality degrades for environments with complex dynamics or continuous state spaces and action spaces.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research examines how well large language models (LLMs) and vision language models (VLMs) can provide planning feedback in various environments. The study found that these models can significantly reduce the need for detailed reward functions and demonstrations by offering diverse, high-quality feedback. Notably, larger models tend to provide more accurate responses, especially when enhanced inference methods are used. This is important as it could streamline the planning process in complex scenarios, making AI more efficient.",
+  "why_it_matters": [
+    "This could help developers and researchers needing efficient AI planning tools, reducing time spent on reward design.",
+    "The findings indicate a shift towards using foundational models to improve AI planning capabilities, potentially transforming how AI systems are developed."
+  ],
+  "lenses": {
+    "eli12": "This study shows that big AI models can help with planning tasks by giving useful feedback without needing a lot of extra work. Think of it like having a smart assistant that knows what you need, making your planning easier. This matters because it could make AI tools more accessible and effective for everyday tasks.",
+    "pm": "For product managers and founders, this research suggests that leveraging LLMs and VLMs could enhance user experience by simplifying planning processes. Reducing the need for complex reward systems may lower development costs and improve efficiency. It emphasizes the importance of integrating advanced models to meet user needs effectively.",
+    "engineer": "The study evaluates LLMs and VLMs across different feedback types, including binary and goal advising, revealing that larger models yield better performance. Key inference methods like chain-of-thought and in-context learning enhance feedback accuracy. However, the performance drops in environments with complex dynamics, highlighting a limitation in using these models."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-16T03:44:55.516Z",
+  "updated_at": "2025-09-16T03:44:55.516Z",
+  "processing_order": 1757994295518
+}
