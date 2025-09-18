@@ -1,0 +1,31 @@
+{
+  "content_hash": "f8b994639e80e7152a94114a76b94347dc8d8a32ac1d2b4e698df2c80381cb17",
+  "share_id": "idlotk",
+  "title": "InPhyRe Discovers: Large Multimodal Models Struggle in Inductive Physical Reasoning",
+  "optimized_headline": "InPhyRe Reveals Multimodal Models' Unexpected Challenges in Physical Reasoning",
+  "url": "https://arxiv.org/abs/2509.12263",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.12263v1 Announce Type: new \nAbstract: Large multimodal models (LMMs) encode universal physical laws observed during training, such as momentum conservation, as parametric knowledge. It allows LMMs to answer physical reasoning queries, such as the outcome of a potential collision event from visual input. However, since parametric knowledge includes only the physical laws seen during trai",
+  "raw_body": "arXiv:2509.12263v1 Announce Type: new \nAbstract: Large multimodal models (LMMs) encode universal physical laws observed during training, such as momentum conservation, as parametric knowledge. It allows LMMs to answer physical reasoning queries, such as the outcome of a potential collision event from visual input. However, since parametric knowledge includes only the physical laws seen during training, it is insufficient for reasoning when the inference scenario violates these physical laws. In contrast, humans possess the skill to adapt their physical reasoning to unseen physical environments from a few visual examples. This ability, which we refer to as inductive physical reasoning, is indispensable for LMMs if they are to replace human agents in safety-critical applications. Despite its importance, existing visual benchmarks evaluate only the parametric knowledge in LMMs, and not inductive physical reasoning. To this end, we propose InPhyRe, the first visual question answering benchmark to measure inductive physical reasoning in LMMs. InPhyRe evaluates LMMs on their ability to predict the outcome of collision events in algorithmically generated synthetic collision videos. By inspecting 13 LMMs, InPhyRe informs us that (1) LMMs struggle to apply their limited parametric knowledge about universal physical laws to reasoning, (2) inductive physical reasoning in LMMs is weak when demonstration samples violate universal physical laws, and (3) inductive physical reasoning in LMMs suffers from language bias and largely ignores the visual inputs, questioning the trustworthiness of LMMs regarding visual inputs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research reveals that large multimodal models (LMMs) struggle with inductive physical reasoning, which is crucial for adapting to new physical environments. The study found that LMMs often fail to apply learned physical laws, like momentum conservation, when faced with scenarios that violate these laws. This matters now as LMMs are increasingly considered for safety-critical applications, highlighting the need for better reasoning capabilities.",
+  "why_it_matters": [
+    "LMMs' struggles could directly affect industries relying on accurate physical reasoning, such as robotics and autonomous vehicles.",
+    "This research signals a broader shift in AI development, emphasizing the need for models that can generalize knowledge beyond their training data."
+  ],
+  "lenses": {
+    "eli12": "This study shows that large AI models, which learn physical laws, can't always apply them to new situations. It's like a student who knows math but can't solve a problem that doesn't fit the examples they've seen. This matters because it affects how we trust AI in important areas like driving or safety.",
+    "pm": "For product managers, this highlights a gap in LMM capabilities that could impact user trust and safety. Users expect AI to adapt to new scenarios, and if models can't do this, it may lead to failures in applications. Addressing this could improve efficiency and user satisfaction in AI products.",
+    "engineer": "From a technical standpoint, the study examines 13 LMMs using the InPhyRe benchmark to assess inductive physical reasoning. It found that these models often struggle to apply their learned physical laws when faced with unconventional scenarios, indicating a limitation in their reasoning abilities. This raises concerns about the reliability of LMMs in visual inputs and safety-critical applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-18T03:46:26.707Z",
+  "updated_at": "2025-09-18T03:46:26.707Z",
+  "processing_order": 1758167186709
+}
