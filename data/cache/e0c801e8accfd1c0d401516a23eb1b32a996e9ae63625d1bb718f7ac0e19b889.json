@@ -1,0 +1,31 @@
+{
+  "content_hash": "e0c801e8accfd1c0d401516a23eb1b32a996e9ae63625d1bb718f7ac0e19b889",
+  "share_id": "fucoco",
+  "title": "FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness",
+  "optimized_headline": "\"FRIT: Enhancing Chain-of-Thought Faithfulness Through Causal Importance Techniques\"",
+  "url": "https://arxiv.org/abs/2509.13334",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.13334v1 Announce Type: new \nAbstract: Chain-of-thought (CoT) reasoning has emerged as a powerful tool for improving large language model performance on complex tasks, but recent work shows that reasoning steps often fail to causally influence the final answer, creating brittle and untrustworthy outputs. Prior approaches focus primarily on measuring faithfulness, while methods for system",
+  "raw_body": "arXiv:2509.13334v1 Announce Type: new \nAbstract: Chain-of-thought (CoT) reasoning has emerged as a powerful tool for improving large language model performance on complex tasks, but recent work shows that reasoning steps often fail to causally influence the final answer, creating brittle and untrustworthy outputs. Prior approaches focus primarily on measuring faithfulness, while methods for systematically improving it remain limited. We introduce Faithful Reasoning via Intervention Training (FRIT), a scalable alignment method that trains models to produce causally consistent reasoning by learning from systematically corrupted examples. FRIT generates synthetic training data by intervening on individual reasoning steps in model-generated CoTs, creating faithful/unfaithful pairs that highlight when reasoning breaks down. We then apply Direct Preference Optimization to teach models to prefer causally consistent reasoning paths. Evaluating on Qwen3-8B and Mistral-7B-v0.1 across factual and symbolic reasoning tasks, FRIT increases faithful reasoning by $3.4$ percentage points for Mistral on GSM8K while improving accuracy by $7.6$ percentage points. Our approach provides the first scalable, supervision-free method for training language models to produce more reliable and interpretable reasoning, addressing a critical gap between reasoning performance and trustworthiness. We release our code at \\href{https://github.com/Anut-py/frit}.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new method called Faithful Reasoning via Intervention Training (FRIT) to enhance the reliability of chain-of-thought (CoT) reasoning in language models. By generating synthetic training data that highlights when reasoning fails, FRIT improved the accuracy of the Mistral model by 7.6 percentage points on complex tasks. This advancement is crucial as it addresses the trustworthiness of AI outputs, which is essential for their broader adoption in critical applications.",
+  "why_it_matters": [
+    "This method could directly benefit developers and researchers working with AI, as it enhances the reliability of model outputs. Improved trust in AI could lead to wider implementation in sensitive fields.",
+    "On a market level, FRIT signals a shift towards prioritizing trustworthy AI systems, which could influence investment and development strategies in AI technology."
+  ],
+  "lenses": {
+    "eli12": "FRIT is like teaching a student to recognize when their reasoning goes off track. By showing models examples of faulty reasoning, they learn to avoid those mistakes. This improvement in AI reasoning could help make everyday applications, like virtual assistants, more reliable and trustworthy.",
+    "pm": "For product managers and founders, FRIT highlights the importance of reliable outputs in AI tools. By improving accuracy and trustworthiness, products could better meet user expectations and reduce customer dissatisfaction. This could ultimately lead to increased adoption and customer loyalty.",
+    "engineer": "Technically, FRIT enhances language models by creating pairs of faithful and unfaithful reasoning steps, allowing models to learn from their mistakes. In evaluations, Mistral-7B-v0.1 showed a 3.4 percentage point increase in faithful reasoning on GSM8K tasks, demonstrating FRIT's effectiveness in improving model outputs without requiring extensive supervision."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-19T03:46:53.507Z",
+  "updated_at": "2025-09-19T03:46:53.507Z",
+  "processing_order": 1758253613509
+}

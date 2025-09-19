@@ -1,0 +1,31 @@
+{
+  "content_hash": "d2c636f058a9eebba5fbfd8455b7bdacf6fb09a88a1280d574ac12fbafef0c1a",
+  "share_id": "ermsgh",
+  "title": "Explicit Reasoning Makes Better Judges: A Systematic Study on Accuracy, Efficiency, and Robustness",
+  "optimized_headline": "How Explicit Reasoning Enhances Judges’ Accuracy and Efficiency: A Study",
+  "url": "https://arxiv.org/abs/2509.13332",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.13332v1 Announce Type: new \nAbstract: As Large Language Models (LLMs) are increasingly adopted as automated judges in benchmarking and reward modeling, ensuring their reliability, efficiency, and robustness has become critical. In this work, we present a systematic comparison of \"thinking\" and \"non-thinking\" LLMs in the LLM-as-a-judge paradigm using open-source Qwen 3 models of relative",
+  "raw_body": "arXiv:2509.13332v1 Announce Type: new \nAbstract: As Large Language Models (LLMs) are increasingly adopted as automated judges in benchmarking and reward modeling, ensuring their reliability, efficiency, and robustness has become critical. In this work, we present a systematic comparison of \"thinking\" and \"non-thinking\" LLMs in the LLM-as-a-judge paradigm using open-source Qwen 3 models of relatively small sizes (0.6B, 1.7B, and 4B parameters). We evaluate both accuracy and computational efficiency (FLOPs) on RewardBench tasks, and further examine augmentation strategies for non-thinking models, including in-context learning, rubric-guided judging, reference-based evaluation, and n-best aggregation. Our results show that despite these enhancements, non-thinking models generally fall short of their thinking counterparts. Our results show that thinking models achieve approximately 10% points higher accuracy with little overhead (under 2x), in contrast to augmentation strategies like few-shot learning, which deliver modest gains at a higher cost (>8x). Bias and robustness analyses further demonstrate that thinking models maintain significantly greater consistency under a variety of bias conditions such as positional, bandwagon, identity, diversity, and random biases (6% higher on average). We further extend our experiments to the multilingual setting and our results confirm that explicit reasoning extends its benefits beyond English. Overall, our work results in several important findings that provide systematic evidence that explicit reasoning offers clear advantages in the LLM-as-a-judge paradigm not only in accuracy and efficiency but also in robustness.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights the advantages of 'thinking' Large Language Models (LLMs) as automated judges compared to 'non-thinking' models. Using Qwen 3 models, the study found that thinking models achieved about 10% higher accuracy while maintaining efficiency, with only a minor increase in computational costs. This research underscores the importance of explicit reasoning in LLMs, especially as they become more integrated into decision-making processes in various fields.",
+  "why_it_matters": [
+    "This study could directly impact developers and researchers who rely on LLMs for accurate decision-making, enhancing their systems' reliability.",
+    "On a broader scale, it suggests a shift towards prioritizing reasoning capabilities in AI, which could influence future AI model designs and applications."
+  ],
+  "lenses": {
+    "eli12": "This research shows that AI models that think through problems can make better decisions than those that don’t. Think of it like a student who studies for a test versus one who guesses answers. This matters because more reliable AI could lead to fairer outcomes in everything from grading to legal judgments.",
+    "pm": "For product managers and founders, this study suggests that investing in LLMs with explicit reasoning could meet user needs for accuracy and reliability. The findings indicate that while thinking models may be slightly more costly, their efficiency and better performance could lead to superior user experiences and outcomes.",
+    "engineer": "The study systematically compared 'thinking' and 'non-thinking' Qwen 3 models using metrics like accuracy and computational efficiency (FLOPs) on RewardBench tasks. Thinking models outperformed non-thinking ones by achieving about 10% higher accuracy with less than double the computational overhead, while non-thinking models required over 8x more resources for modest improvements. This underscores the importance of explicit reasoning in enhancing model robustness across various biases."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-19T03:46:38.439Z",
+  "updated_at": "2025-09-19T03:46:38.439Z",
+  "processing_order": 1758253598439
+}
