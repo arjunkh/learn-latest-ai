@@ -1,0 +1,31 @@
+{
+  "content_hash": "74c98c2e9060a72d115a4a0da8ce3c922b0c93c0f36d9c79504f2e7e35166923",
+  "share_id": "ktn1mt",
+  "title": "KNARsack: Teaching Neural Algorithmic Reasoners to Solve Pseudo-Polynomial Problems",
+  "optimized_headline": "Unlocking KNARsack: How Neural Algorithmic Reasoners Tackle Complex Problems",
+  "url": "https://arxiv.org/abs/2509.15239",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-22T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.15239v1 Announce Type: new \nAbstract: Neural algorithmic reasoning (NAR) is a growing field that aims to embed algorithmic logic into neural networks by imitating classical algorithms. In this extended abstract, we detail our attempt to build a neural algorithmic reasoner that can solve Knapsack, a pseudo-polynomial problem bridging classical algorithms and combinatorial optimisation, b",
+  "raw_body": "arXiv:2509.15239v1 Announce Type: new \nAbstract: Neural algorithmic reasoning (NAR) is a growing field that aims to embed algorithmic logic into neural networks by imitating classical algorithms. In this extended abstract, we detail our attempt to build a neural algorithmic reasoner that can solve Knapsack, a pseudo-polynomial problem bridging classical algorithms and combinatorial optimisation, but omitted in standard NAR benchmarks. Our neural algorithmic reasoner is designed to closely follow the two-phase pipeline for the Knapsack problem, which involves first constructing the dynamic programming table and then reconstructing the solution from it. The approach, which models intermediate states through dynamic programming supervision, achieves better generalization to larger problem instances than a direct-prediction baseline that attempts to select the optimal subset only from the problem inputs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers are developing a neural algorithmic reasoner (NAR) to tackle the Knapsack problem, a complex pseudo-polynomial challenge in optimization. This new model uses a two-phase approach, first creating a dynamic programming table and then reconstructing the solution. Impressively, it shows improved performance on larger problem instances compared to traditional methods that only predict outcomes from inputs. This advancement could enhance how AI systems solve complex problems more effectively.",
+  "why_it_matters": [
+    "This development could benefit fields like logistics and finance, where optimization is crucial for resource allocation and decision-making.",
+    "On a broader scale, it signals a shift towards combining neural networks with classical algorithms, potentially improving AI's problem-solving capabilities."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to pack a suitcase efficiently; you need to decide what to take based on space and weight limits. The new neural algorithmic reasoner does something similar for complex problems, using a smart method to find the best solution. This matters because it could help everyday systems, like delivery services or budgeting apps, work more efficiently.",
+    "pm": "For product managers, this innovation highlights a user need for more efficient problem-solving tools in applications like logistics or finance. By leveraging NAR, products could reduce costs and improve decision-making speed. This approach may lead to more robust features that can handle complex scenarios better than traditional methods.",
+    "engineer": "From a technical perspective, the neural algorithmic reasoner employs a two-phase pipeline, integrating dynamic programming supervision to model intermediate states. This method outperforms a direct-prediction baseline by effectively generalizing to larger instances of the Knapsack problem. Such advancements could push the boundaries of how neural networks are applied in combinatorial optimization tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-23T03:46:17.829Z",
+  "updated_at": "2025-09-23T03:46:17.829Z",
+  "processing_order": 1758599177830
+}
