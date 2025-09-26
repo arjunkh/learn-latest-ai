@@ -1,0 +1,31 @@
+{
+  "content_hash": "82e00416e1d86c81d3ae46db7348f141b9b049e05111b87f8ba97447e4bb2a20",
+  "share_id": "cllids",
+  "title": "Cognitive Load Limits in Large Language Models: Benchmarking Multi-Hop Reasoning",
+  "optimized_headline": "Exploring Cognitive Load Limits in Language Models: Insights on Multi-Hop Reasoning",
+  "url": "https://arxiv.org/abs/2509.19517",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.19517v1 Announce Type: new \nAbstract: The scaling of Large Language Models (LLMs) has exposed a critical gap between their performance on static benchmarks and their fragility in dynamic, information-rich environments. While models excel at isolated tasks, the computational limits that govern their reasoning under cognitive load remain poorly understood. In this work, we introduce a for",
+  "raw_body": "arXiv:2509.19517v1 Announce Type: new \nAbstract: The scaling of Large Language Models (LLMs) has exposed a critical gap between their performance on static benchmarks and their fragility in dynamic, information-rich environments. While models excel at isolated tasks, the computational limits that govern their reasoning under cognitive load remain poorly understood. In this work, we introduce a formal theory of computational cognitive load, positing that extraneous, task-irrelevant information (Context Saturation) and interference from task-switching (Attentional Residue) are key mechanisms that degrade performance. We designed the Interleaved Cognitive Evaluation (ICE), a deconfounded benchmark to systematically manipulate these load factors on challenging multi-hop reasoning tasks. A comprehensive study (N = 10 replications per item across 200 questions) revealed significant performance variations across five instruction-tuned models. Smaller open-source architectures (Llama-3-8B-Instruct, Mistral-7B-Instruct-v0.2) exhibited baseline brittleness, achieving 0% accuracy (SEM = 0.0) across all conditions, including clean controls, on this high-intrinsic-load task. In contrast, Gemini-2.0-Flash-001 showed partial resilience, achieving 85% accuracy in control conditions, with a statistically significant degradation under context saturation ($\\beta = -0.003$ per % load, $p < 0.001$). These findings provide preliminary evidence that cognitive load is a key contributor to reasoning failures, supporting theories of hallucination-as-guessing under uncertainty. We conclude that dynamic, cognitive-aware stress testing, as exemplified by the ICE benchmark, is essential for evaluating the true resilience and safety of advanced AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights a significant gap in how well Large Language Models (LLMs) perform under cognitive load compared to static benchmarks. The study introduced a new benchmark called the Interleaved Cognitive Evaluation (ICE), revealing that smaller models like Llama-3-8B-Instruct struggled with 0% accuracy on complex tasks, while Gemini-2.0-Flash-001 managed 85% accuracy under optimal conditions. Understanding these limitations is crucial as it informs the development of more resilient AI systems in dynamic environments.",
+  "why_it_matters": [
+    "This research is vital for AI developers who need to ensure models can handle real-world complexities, not just isolated tasks.",
+    "It signals a shift in AI evaluation, emphasizing the importance of cognitive load testing to improve model reliability and safety."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how well AI models think when faced with complicated tasks. Just like humans can struggle to focus when there's too much going on, AI models also have limits. The findings matter because they can lead to better AI that works smoothly in everyday situations, like answering questions or providing information.",
+    "pm": "For product managers, this research underscores the need for AI that can handle real-world complexity. Understanding cognitive load can guide product development to enhance user experience. It suggests focusing on robust testing to ensure models perform well under various conditions, which could improve user satisfaction and trust.",
+    "engineer": "The study introduces the ICE benchmark to quantify cognitive load effects on LLMs. Smaller models like Llama-3-8B-Instruct showed 0% accuracy under high cognitive load, while Gemini-2.0-Flash-001 achieved 85% in control conditions, indicating varying resilience. These results highlight the importance of accounting for cognitive load in model design and evaluation."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-26T03:47:34.837Z",
+  "updated_at": "2025-09-26T03:47:34.837Z",
+  "processing_order": 1758858454840
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "8520f4bd1b5b81fb3072fc26a34c21db9e79c34fda71377cc62314af8591fb07",
+  "share_id": "erlhce",
+  "title": "Evaluation-Aware Reinforcement Learning",
+  "optimized_headline": "Unlocking Evaluation-Aware Reinforcement Learning: What You Need to Know",
+  "url": "https://arxiv.org/abs/2509.19464",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.19464v1 Announce Type: new \nAbstract: Policy evaluation is often a prerequisite for deploying safety- and performance-critical systems. Existing evaluation approaches frequently suffer from high variance due to limited data and long-horizon tasks, or high bias due to unequal support or inaccurate environmental models. We posit that these challenges arise, in part, from the standard rein",
+  "raw_body": "arXiv:2509.19464v1 Announce Type: new \nAbstract: Policy evaluation is often a prerequisite for deploying safety- and performance-critical systems. Existing evaluation approaches frequently suffer from high variance due to limited data and long-horizon tasks, or high bias due to unequal support or inaccurate environmental models. We posit that these challenges arise, in part, from the standard reinforcement learning (RL) paradigm of policy learning without explicit consideration of evaluation. As an alternative, we propose evaluation-aware reinforcement learning (EvA-RL), in which a policy is trained to maximize expected return while simultaneously minimizing expected evaluation error under a given value prediction scheme -- in other words, being \"easy\" to evaluate. We formalize a framework for EvA-RL and design an instantiation that enables accurate policy evaluation, conditioned on a small number of rollouts in an assessment environment that can be different than the deployment environment. However, our theoretical analysis and empirical results show that there is often a tradeoff between evaluation accuracy and policy performance when using a fixed value-prediction scheme within EvA-RL. To mitigate this tradeoff, we extend our approach to co-learn an assessment-conditioned state-value predictor alongside the policy. Empirical results across diverse discrete and continuous action domains demonstrate that EvA-RL can substantially reduce evaluation error while maintaining competitive returns. This work lays the foundation for a broad new class of RL methods that treat reliable evaluation as a first-class principle during training.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach called evaluation-aware reinforcement learning (EvA-RL) aims to improve policy evaluation in safety-critical systems. Traditional methods often struggle with high variance and bias, making accurate assessments difficult. EvA-RL trains policies to maximize expected returns while minimizing evaluation errors, even in different environments. This matters now as it could lead to more reliable AI systems in critical applications, enhancing both safety and performance.",
+  "why_it_matters": [
+    "Developers of safety-critical AI systems could benefit from more reliable evaluation methods, leading to safer deployments.",
+    "This approach signals a shift in reinforcement learning, emphasizing evaluation alongside performance, which could reshape future AI training practices."
+  ],
+  "lenses": {
+    "eli12": "Evaluation-aware reinforcement learning (EvA-RL) helps AI systems assess their own performance more accurately. Think of it like a student preparing for a test by practicing with similar questions. This is important because it could lead to safer and more effective AI in everyday applications, like self-driving cars or healthcare systems.",
+    "pm": "For product managers and founders, EvA-RL addresses a key user need: reliable performance evaluation. By focusing on evaluation during training, it could reduce costs associated with deploying flawed systems. This approach encourages better decision-making and risk management in product development.",
+    "engineer": "From a technical perspective, EvA-RL introduces a framework that balances evaluation accuracy with policy performance. It co-learns a state-value predictor alongside the policy to mitigate tradeoffs inherent in traditional methods. Empirical results show significant reductions in evaluation errors across various action domains, suggesting a robust foundation for future reinforcement learning techniques."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-26T03:47:13.579Z",
+  "updated_at": "2025-09-26T03:47:13.579Z",
+  "processing_order": 1758858433580
+}
