@@ -1,0 +1,31 @@
+{
+  "content_hash": "eb772111b2405e231c061c468b23a7df94db128cbc5d4b8b3e1fa5e80a02cfe8",
+  "share_id": "lla8q8",
+  "title": "LATTS: Locally Adaptive Test-Time Scaling",
+  "optimized_headline": "Discover LATTS: A New Approach to Adaptive Test-Time Scaling",
+  "url": "https://arxiv.org/abs/2509.20368",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-26T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.20368v1 Announce Type: new \nAbstract: One common strategy for improving the performance of Large Language Models (LLMs) on downstream tasks involves using a \\emph{verifier model} to either select the best answer from a pool of candidates or to steer the auto-regressive generation process towards better outputs. This class of methods typically results in improved accuracy at the cost of ",
+  "raw_body": "arXiv:2509.20368v1 Announce Type: new \nAbstract: One common strategy for improving the performance of Large Language Models (LLMs) on downstream tasks involves using a \\emph{verifier model} to either select the best answer from a pool of candidates or to steer the auto-regressive generation process towards better outputs. This class of methods typically results in improved accuracy at the cost of increased computation at test-time, a paradigm known as \\emph{test-time scaling}. However, most existing approaches increase computation uniformly across all samples and generation steps, without considering the complexity of individual instances, leading to inefficient resource use. We address this limitation by proposing an approach, called \\emph{Locally Adaptive Test-Time Scaling (LATTS)}, that allocates variable compute across generation steps. Specifically, at each generation step, LATTS employs a verifier-based acceptance criterion to decide whether to resample, backtrack, restart, or stop the generation process. This criterion effectively adjusts the per-step computational effort based on a precise notion of \\emph{local difficulty} derived from the verifier model. Empirical results show that LATTS achieves significantly superior accuracy--compute tradeoffs compared to standard verifier-based methods.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Locally Adaptive Test-Time Scaling (LATTS) to optimize the performance of Large Language Models (LLMs) by adjusting computation based on task difficulty. Instead of applying the same computational effort uniformly, LATTS uses a verifier model to determine when to resample or stop, improving accuracy without wasting resources. This method has shown significant gains in accuracy while being more efficient. The advancement is crucial as it could lead to more effective and resource-friendly AI applications.",
+  "why_it_matters": [
+    "LATTS could enhance LLM performance for developers and researchers, making AI tools more reliable in real-world applications.",
+    "This innovation signals a shift towards smarter resource allocation in AI, potentially lowering operational costs while improving model outputs."
+  ],
+  "lenses": {
+    "eli12": "LATTS is like having a smart assistant that knows when to spend more time on a tricky task and when to move on. Instead of treating every question the same, it adjusts based on how difficult the question seems. This could help make AI tools work better in everyday life, saving time and effort.",
+    "pm": "For product managers, LATTS could mean more efficient AI tools that meet user needs without excessive costs. By tailoring computation based on task difficulty, it could enhance user experience while reducing the computational burden, allowing for smoother interactions and faster responses.",
+    "engineer": "LATTS leverages a verifier model to assess local difficulty at each generation step, enabling dynamic computation allocation. This approach outperforms traditional methods, achieving better accuracy-compute tradeoffs. By focusing resources where they're needed most, LATTS could optimize LLM performance significantly."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-27T03:43:17.003Z",
+  "updated_at": "2025-09-27T03:43:17.003Z",
+  "processing_order": 1758944597004
+}
