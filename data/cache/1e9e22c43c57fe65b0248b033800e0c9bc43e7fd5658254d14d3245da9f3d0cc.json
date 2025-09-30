@@ -1,0 +1,31 @@
+{
+  "content_hash": "1e9e22c43c57fe65b0248b033800e0c9bc43e7fd5658254d14d3245da9f3d0cc",
+  "share_id": "tmilcn",
+  "title": "Towards mitigating information leakage when evaluating safety monitors",
+  "optimized_headline": "\"New Strategies to Prevent Information Leakage in Safety Monitor Evaluations\"",
+  "url": "https://arxiv.org/abs/2509.21344",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-29T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.21344v1 Announce Type: new \nAbstract: White box monitors that analyze model internals offer promising advantages for detecting potentially harmful behaviors in large language models, including lower computational costs and integration into layered defense systems.However, training and evaluating these monitors requires response exemplars that exhibit the target behaviors, typically elic",
+  "raw_body": "arXiv:2509.21344v1 Announce Type: new \nAbstract: White box monitors that analyze model internals offer promising advantages for detecting potentially harmful behaviors in large language models, including lower computational costs and integration into layered defense systems.However, training and evaluating these monitors requires response exemplars that exhibit the target behaviors, typically elicited through prompting or fine-tuning. This presents a challenge when the information used to elicit behaviors inevitably leaks into the data that monitors ingest, inflating their effectiveness. We present a systematic framework for evaluating a monitor's performance in terms of its ability to detect genuine model behavior rather than superficial elicitation artifacts. Furthermore, we propose three novel strategies to evaluate the monitor: content filtering (removing deception-related text from inputs), score filtering (aggregating only over task-relevant tokens), and prompt distilled fine-tuned model organisms (models trained to exhibit deceptive behavior without explicit prompting). Using deception detection as a representative case study, we identify two forms of leakage that inflate monitor performance: elicitation leakage from prompts that explicitly request harmful behavior, and reasoning leakage from models that verbalize their deceptive actions. Through experiments on multiple deception benchmarks, we apply our proposed mitigation strategies and measure performance retention. Our evaluation of the monitors reveal three crucial findings: (1) Content filtering is a good mitigation strategy that allows for a smooth removal of elicitation signal and can decrease probe AUROC by 30\\% (2) Score filtering was found to reduce AUROC by 15\\% but is not as straightforward to attribute to (3) A finetuned model organism improves monitor evaluations but reduces their performance by upto 40\\%, even when re-trained.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers are tackling the challenge of information leakage in white box monitors designed to detect harmful behaviors in large language models. They introduced a framework to evaluate these monitors and proposed three strategies to mitigate leakage. Notably, content filtering can reduce the effectiveness of monitors by up to 30%, while fine-tuned model organisms may lower performance by 40%. This work is crucial as it aims to improve the reliability of safety monitoring in AI systems.",
+  "why_it_matters": [
+    "This research directly impacts AI safety teams by providing tools to enhance the accuracy of behavior detection, making AI interactions safer.",
+    "On a broader scale, these findings could influence the development of more robust AI systems, reflecting a shift towards heightened safety standards in AI technology."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to catch a sneaky cat by watching its behavior, but you keep getting distracted by the treats you used to lure it. This research helps ensure that AI monitors focus on genuine behaviors rather than misleading cues. It matters because it could lead to safer AI systems that better understand and manage harmful actions.",
+    "pm": "For product managers, this study highlights the importance of accuracy in behavior detection for AI applications. By adopting strategies like content filtering, teams could enhance user safety while managing costs. Understanding these methods could lead to more reliable AI products that meet user needs effectively.",
+    "engineer": "This study presents a framework to evaluate white box monitors, focusing on mitigating elicitation and reasoning leakage. Content filtering significantly reduces performance inflation by up to 30%, while fine-tuned models may drop effectiveness by 40%. These insights are vital for engineers aiming to refine safety monitors, ensuring they accurately detect genuine model behaviors."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-09-30T03:47:22.937Z",
+  "updated_at": "2025-09-30T03:47:22.937Z",
+  "processing_order": 1759204042937
+}
