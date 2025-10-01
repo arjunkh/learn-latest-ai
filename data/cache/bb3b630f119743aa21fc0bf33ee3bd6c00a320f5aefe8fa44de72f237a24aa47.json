@@ -1,0 +1,31 @@
+{
+  "content_hash": "bb3b630f119743aa21fc0bf33ee3bd6c00a320f5aefe8fa44de72f237a24aa47",
+  "share_id": "hrbx2v",
+  "title": "Hilbert: Recursively Building Formal Proofs with Informal Reasoning",
+  "optimized_headline": "Hilbert's Method: Creating Formal Proofs Through Informal Reasoning Techniques",
+  "url": "https://arxiv.org/abs/2509.22819",
+  "source": "ArXiv AI",
+  "published_at": "2025-09-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.22819v1 Announce Type: new \nAbstract: Large Language Models (LLMs) demonstrate impressive mathematical reasoning abilities, but their solutions frequently contain errors that cannot be automatically verified. Formal theorem proving systems such as Lean 4 offer automated verification with complete accuracy, motivating recent efforts to build specialized prover LLMs that generate verifiab",
+  "raw_body": "arXiv:2509.22819v1 Announce Type: new \nAbstract: Large Language Models (LLMs) demonstrate impressive mathematical reasoning abilities, but their solutions frequently contain errors that cannot be automatically verified. Formal theorem proving systems such as Lean 4 offer automated verification with complete accuracy, motivating recent efforts to build specialized prover LLMs that generate verifiable proofs in formal languages. However, a significant gap remains: current prover LLMs solve substantially fewer problems than general-purpose LLMs operating in natural language. We introduce Hilbert, an agentic framework that bridges this gap by combining the complementary strengths of informal reasoning and formal verification. Our system orchestrates four components: an informal LLM that excels at mathematical reasoning, a specialized prover LLM optimized for Lean 4 tactics, a formal verifier, and a semantic theorem retriever. Given a problem that the prover is unable to solve, Hilbert employs recursive decomposition to split the problem into subgoals that it solves with the prover or reasoner LLM. It leverages verifier feedback to refine incorrect proofs as necessary. Experimental results demonstrate that Hilbert substantially outperforms existing approaches on key benchmarks, achieving 99.2% on miniF2F, 6.6% points above the best publicly available method. Hilbert achieves the best known result on PutnamBench. It solves 462/660 problems (70.0%), outperforming proprietary approaches like SeedProver (50.4%) and achieving a 422% improvement over the best publicly available baseline. Thus, Hilbert effectively narrows the gap between informal reasoning and formal proof generation.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Hilbert, a new framework that enhances formal proof generation by combining informal reasoning with formal verification. It outperformed existing models, achieving 99.2% accuracy on miniF2F and solving 70% of problems on PutnamBench, significantly better than competitors. This advancement is crucial as it addresses the accuracy issues in mathematical reasoning from large language models, bridging a gap in AI's ability to generate reliable proofs.",
+  "why_it_matters": [
+    "Mathematicians and researchers can rely more on AI for generating verifiable proofs, increasing efficiency in problem-solving. Hilbert's approach could reduce time spent on verification.",
+    "This development signals a shift in AI capabilities, suggesting that AI could soon handle more complex formal reasoning tasks, impacting fields that rely on rigorous proof structures."
+  ],
+  "lenses": {
+    "eli12": "Hilbert is like a smart assistant that not only helps with math problems but also checks the answers for mistakes. It combines two types of thinking: the creative, informal reasoning of a human and the strict, formal verification of a computer. This matters because it could make math and logic more accessible and reliable for everyone, helping students and professionals alike.",
+    "pm": "For product managers and founders, Hilbert's success shows a growing need for AI tools that ensure accuracy in complex tasks. It highlights the importance of combining different AI strengths to meet user demands for reliable solutions. This could lead to new products that enhance efficiency in fields requiring formal proofs, potentially reducing costs associated with error correction.",
+    "engineer": "From a technical perspective, Hilbert integrates an informal LLM with a specialized prover optimized for Lean 4, achieving a remarkable 99.2% accuracy on miniF2F and solving 70% of problems on PutnamBench. This framework effectively utilizes recursive decomposition to tackle complex problems, refining proofs based on verifier feedback. It represents a significant advancement in bridging the gap between informal reasoning and formal proof generation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-01T03:53:14.220Z",
+  "updated_at": "2025-10-01T03:53:14.220Z",
+  "processing_order": 1759290794222
+}
