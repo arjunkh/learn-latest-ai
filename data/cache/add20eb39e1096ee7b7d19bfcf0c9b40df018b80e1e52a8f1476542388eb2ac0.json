@@ -1,0 +1,31 @@
+{
+  "content_hash": "add20eb39e1096ee7b7d19bfcf0c9b40df018b80e1e52a8f1476542388eb2ac0",
+  "share_id": "bcsh81",
+  "title": "Blueprint-Bench: Comparing spatial intelligence of LLMs, agents and image models",
+  "optimized_headline": "\"Exploring Spatial Intelligence: LLMs, Agents, and Image Models Compared\"",
+  "url": "https://arxiv.org/abs/2509.25229",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-01T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2509.25229v1 Announce Type: new \nAbstract: We introduce Blueprint-Bench, a benchmark designed to evaluate spatial reasoning capabilities in AI models through the task of converting apartment photographs into accurate 2D floor plans. While the input modality (photographs) is well within the training distribution of modern multimodal models, the task of spatial reconstruction requires genuine ",
+  "raw_body": "arXiv:2509.25229v1 Announce Type: new \nAbstract: We introduce Blueprint-Bench, a benchmark designed to evaluate spatial reasoning capabilities in AI models through the task of converting apartment photographs into accurate 2D floor plans. While the input modality (photographs) is well within the training distribution of modern multimodal models, the task of spatial reconstruction requires genuine spatial intelligence: inferring room layouts, understanding connectivity, and maintaining consistent scale. We evaluate leading language models (GPT-5, Claude 4 Opus, Gemini 2.5 Pro, Grok-4), image generation models (GPT-Image, NanoBanana), and agent systems (Codex CLI, Claude Code) on a dataset of 50 apartments with approximately 20 interior images each. Our scoring algorithm measures similarity between generated and ground-truth floor plans based on room connectivity graphs and size rankings. Results reveal a significant blind spot in current AI capabilities: most models perform at or below a random baseline, while human performance remains substantially superior. Image generation models particularly struggle with instruction following, while agent-based approaches with iterative refinement capabilities show no meaningful improvement over single-pass generation. Blueprint-Bench provides the first numerical framework for comparing spatial intelligence across different model architectures. We will continue evaluating new models as they are released and welcome community submissions, monitoring for the emergence of spatial intelligence in generalist AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Blueprint-Bench, a benchmark to assess how well AI models can convert apartment photos into 2D floor plans. Key findings show that leading models like GPT-5 and Claude 4 struggle, often performing at or below random guessing. This highlights a significant gap in spatial reasoning capabilities compared to human performance. Understanding these limitations is crucial as AI continues to evolve and tackle more complex tasks.",
+  "why_it_matters": [
+    "Blueprint-Bench could help developers identify weaknesses in AI models, guiding improvements for applications in real estate and architecture.",
+    "The benchmark signals a broader need for better spatial reasoning in AI, which could influence market trends and drive innovation in multimodal AI technologies."
+  ],
+  "lenses": {
+    "eli12": "Blueprint-Bench is like a test that checks if AI can turn pictures of rooms into accurate floor plans. The study found that many AI models, including popular ones, often fail at this task, performing worse than random guesses. This matters because if AI can't understand spaces well, it won't be useful for things like home design or real estate apps.",
+    "pm": "For product managers, Blueprint-Bench highlights a critical user need: effective spatial reasoning in AI. If AI models can't accurately interpret space, it could lead to poor user experiences in applications like home design tools. Understanding these limitations could help prioritize features that enhance spatial intelligence in future products.",
+    "engineer": "From a technical perspective, Blueprint-Bench evaluates AI models like GPT-5 and Claude 4 on their ability to generate floor plans from images. The benchmark uses a dataset of 50 apartments and measures performance against ground-truth layouts. Notably, many models perform below a random baseline, indicating significant room for improvement in spatial reasoning capabilities."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-02T03:45:23.830Z",
+  "updated_at": "2025-10-02T03:45:23.830Z",
+  "processing_order": 1759376723830
+}
