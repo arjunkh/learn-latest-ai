@@ -1,0 +1,31 @@
+{
+  "content_hash": "e060c6e065e609cce1ba258a622652bf98b805efd32962a8cbf722f03328ee91",
+  "share_id": "omaxt7",
+  "title": "OR-Toolformer: Modeling and Solving Operations Research Problems with Tool Augmented Large Language Models",
+  "optimized_headline": "\"Exploring OR-Toolformer: A New Approach to Operations Research Challenges\"",
+  "url": "https://arxiv.org/abs/2510.01253",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.01253v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate strong mathematical reasoning, but reliance on closed-source APIs for OR tasks raises privacy concerns, and training open-source models from scratch incurs high compute costs. We introduce OR-Toolformer, which fine-tunes Llama-3.1-8B-Instruct with a semi-automatic data synthesis pipeline that generates divers",
+  "raw_body": "arXiv:2510.01253v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate strong mathematical reasoning, but reliance on closed-source APIs for OR tasks raises privacy concerns, and training open-source models from scratch incurs high compute costs. We introduce OR-Toolformer, which fine-tunes Llama-3.1-8B-Instruct with a semi-automatic data synthesis pipeline that generates diverse OR problem-answer pairs and augments the model with external solvers to produce API calls. On three of four standard benchmarks, OR-Toolformer achieves up to 80.1% execution accuracy, exceeding size-matched baselines by over 4.3%. In zero-shot evaluation on two unseen OR problem types, it attains 54% average accuracy, a 21 percentage-point improvement over the strongest baseline. These findings validate the efficacy of tool-augmented fine-tuning LLMs for accurate and generalizable OR problem modeling and solving.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced OR-Toolformer, a model that enhances the Llama-3.1-8B-Instruct with a unique data synthesis method for operations research (OR) problems. This model achieved up to 80.1% execution accuracy on benchmarks, outperforming similar models by over 4.3%. It also showed a 21 percentage-point improvement in zero-shot evaluations on new OR problem types. This advancement could reshape how we approach OR tasks, balancing performance with privacy and cost concerns.",
+  "why_it_matters": [
+    "OR-Toolformer provides a privacy-conscious solution for businesses needing reliable OR problem-solving tools, addressing concerns over closed-source APIs.",
+    "This development signals a shift towards more accessible and efficient open-source AI solutions, potentially democratizing advanced operations research capabilities."
+  ],
+  "lenses": {
+    "eli12": "OR-Toolformer is like a smart assistant that not only understands math problems but also learns from diverse examples to solve them better. It uses a method to create new problems and answers, making it more effective than other models. This matters because it could help businesses and researchers find solutions more quickly and securely without relying on outside tools.",
+    "pm": "For product managers and founders, OR-Toolformer represents a new way to tackle operations research without the high costs of training models from scratch. It meets the user need for accurate problem-solving while ensuring data privacy. This could lead to better decision-making tools that are both efficient and secure, enhancing product offerings.",
+    "engineer": "Technically, OR-Toolformer fine-tunes the Llama-3.1-8B-Instruct model using a semi-automatic data synthesis pipeline, generating diverse OR problem-answer pairs. It achieves up to 80.1% execution accuracy on benchmarks, significantly outperforming similar models. This method showcases the potential of tool-augmented fine-tuning for improving the accuracy and generalizability of LLMs in solving complex operations research problems."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-04T03:41:11.449Z",
+  "updated_at": "2025-10-04T03:41:11.449Z",
+  "processing_order": 1759549271449
+}

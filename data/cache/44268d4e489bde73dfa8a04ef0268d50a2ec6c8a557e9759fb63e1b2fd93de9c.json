@@ -1,0 +1,31 @@
+{
+  "content_hash": "44268d4e489bde73dfa8a04ef0268d50a2ec6c8a557e9759fb63e1b2fd93de9c",
+  "share_id": "momvg7",
+  "title": "Modeling Others' Minds as Code",
+  "optimized_headline": "How Understanding Others' Minds Can Be Modeled as Code",
+  "url": "https://arxiv.org/abs/2510.01272",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.01272v1 Announce Type: new \nAbstract: Accurate prediction of human behavior is essential for robust and safe human-AI collaboration. However, existing approaches for modeling people are often data-hungry and brittle because they either make unrealistic assumptions about rationality or are too computationally demanding to adapt rapidly. Our key insight is that many everyday social intera",
+  "raw_body": "arXiv:2510.01272v1 Announce Type: new \nAbstract: Accurate prediction of human behavior is essential for robust and safe human-AI collaboration. However, existing approaches for modeling people are often data-hungry and brittle because they either make unrealistic assumptions about rationality or are too computationally demanding to adapt rapidly. Our key insight is that many everyday social interactions may follow predictable patterns; efficient \"scripts\" that minimize cognitive load for actors and observers, e.g., \"wait for the green light, then go.\" We propose modeling these routines as behavioral programs instantiated in computer code rather than policies conditioned on beliefs and desires. We introduce ROTE, a novel algorithm that leverages both large language models (LLMs) for synthesizing a hypothesis space of behavioral programs, and probabilistic inference for reasoning about uncertainty over that space. We test ROTE in a suite of gridworld tasks and a large-scale embodied household simulator. ROTE predicts human and AI behaviors from sparse observations, outperforming competitive baselines -- including behavior cloning and LLM-based methods -- by as much as 50% in terms of in-sample accuracy and out-of-sample generalization. By treating action understanding as a program synthesis problem, ROTE opens a path for AI systems to efficiently and effectively predict human behavior in the real-world.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced ROTE, a new algorithm designed to predict human behavior more accurately in human-AI collaboration. Unlike traditional methods that rely heavily on data and often fail, ROTE uses behavioral programs modeled in code to simplify predictions. In tests, ROTE outperformed existing methods by up to 50% in both accuracy and generalization. This advancement could significantly enhance how AI systems interact with humans in everyday situations.",
+  "why_it_matters": [
+    "This development could make AI tools more reliable for users, as they would better anticipate human actions in collaborative environments.",
+    "On a larger scale, ROTE represents a shift towards more efficient AI models that could transform industries by improving human-machine interactions."
+  ],
+  "lenses": {
+    "eli12": "Imagine if predicting how your friend will react was as simple as reading a script. ROTE does just that for AI, allowing it to understand and anticipate human actions more easily. This could lead to smoother interactions with technology, making our daily tasks more efficient and intuitive.",
+    "pm": "For product managers, ROTE's approach to understanding user behavior could enhance user experience by making AI responses feel more natural and timely. By reducing the data needed for accurate predictions, it could also lower development costs and improve efficiency. Implementing ROTE could lead to products that are more aligned with user expectations.",
+    "engineer": "ROTE employs behavioral programming to model human actions, which allows it to predict behavior with fewer data requirements. It combines large language models with probabilistic inference, resulting in a 50% improvement over traditional methods in both in-sample accuracy and out-of-sample generalization. This approach could significantly streamline AI's ability to adapt to real-world scenarios."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-04T03:41:17.315Z",
+  "updated_at": "2025-10-04T03:41:17.316Z",
+  "processing_order": 1759549277317
+}
