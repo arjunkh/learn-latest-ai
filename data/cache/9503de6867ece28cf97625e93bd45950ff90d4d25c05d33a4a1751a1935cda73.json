@@ -1,0 +1,31 @@
+{
+  "content_hash": "9503de6867ece28cf97625e93bd45950ff90d4d25c05d33a4a1751a1935cda73",
+  "share_id": "belit5",
+  "title": "BrowserArena: Evaluating LLM Agents on Real-World Web Navigation Tasks",
+  "optimized_headline": "\"Exploring LLM Agents' Performance in Real-World Web Navigation Challenges\"",
+  "url": "https://arxiv.org/abs/2510.02418",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-06T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.02418v1 Announce Type: new \nAbstract: LLM web agents now browse and take actions on the open web, yet current agent evaluations are constrained to sandboxed environments or artificial tasks. We introduce BrowserArena, a live open-web agent evaluation platform that collects user-submitted tasks, runs Arena-style head-to-head comparisons, and uses step-level human feedback to surface fail",
+  "raw_body": "arXiv:2510.02418v1 Announce Type: new \nAbstract: LLM web agents now browse and take actions on the open web, yet current agent evaluations are constrained to sandboxed environments or artificial tasks. We introduce BrowserArena, a live open-web agent evaluation platform that collects user-submitted tasks, runs Arena-style head-to-head comparisons, and uses step-level human feedback to surface failure modes. Collecting and analyzing step-level annotations on the agent traces, we identify three consistent failure modes: captcha resolution, pop-up banner removal, and direct navigation to URLs. By constructing targeted datasets to further study these tasks, we discover variations in how different language models navigate these failure modes. We find, for example, that o4-mini deploys a wider variety of strategies to circumvent captcha resolution than other models and DeepSeek-R1 consistently misleads users about captcha resolution. Our findings surface both the diversity and brittleness of current web agents. More broadly, our benchmarking methodology provides an approach to evaluating and understanding web agent failure modes at scale.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have launched BrowserArena, a platform designed to evaluate large language model (LLM) agents in real-world web navigation tasks. Unlike previous evaluations limited to controlled settings, BrowserArena collects user-submitted tasks and conducts head-to-head comparisons. The study identified three main failure modes: captcha resolution, pop-up banner removal, and direct navigation. This matters now as it highlights both the potential and limitations of LLM web agents in practical applications.",
+  "why_it_matters": [
+    "Web developers and AI researchers could gain immediate insights into the limitations of LLM agents, enabling them to improve user experience.",
+    "This reflects a broader shift toward more realistic evaluations of AI systems, pushing the industry to focus on real-world performance rather than theoretical capabilities."
+  ],
+  "lenses": {
+    "eli12": "BrowserArena is like a testing ground where AI agents can try to complete real web tasks. It shows how well these agents handle challenges like captchas and pop-ups. Understanding their strengths and weaknesses helps everyday users know what to expect when interacting with them.",
+    "pm": "For product managers and founders, BrowserArena offers insights into how LLM agents perform in real-world scenarios. This could inform product development by highlighting user needs around navigation and efficiency. Knowing where agents struggle allows for better design and user support.",
+    "engineer": "From a technical perspective, BrowserArena provides a structured way to evaluate LLM agents against real web tasks. It identifies specific failure modes, such as captcha resolution strategies where o4-mini outperforms others. This benchmarking approach could help engineers refine models and enhance their robustness in practical applications."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-07T03:46:55.959Z",
+  "updated_at": "2025-10-07T03:46:55.959Z",
+  "processing_order": 1759808815959
+}

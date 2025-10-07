@@ -1,0 +1,31 @@
+{
+  "content_hash": "fe9e6e36f37ae68a6d499737c8cb885b18aa4b9aabb9a9085ff7365400fe494e",
+  "share_id": "saewh7",
+  "title": "Safe and Efficient In-Context Learning via Risk Control",
+  "optimized_headline": "Unlocking In-Context Learning: How Risk Control Ensures Safety and Efficiency",
+  "url": "https://arxiv.org/abs/2510.02480",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-06T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.02480v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate a remarkable ability to learn new tasks from a few in-context examples. However, this flexibility introduces safety concerns: LLMs can be influenced by incorrect or malicious demonstrations -- for example, if an adversary tampers with or injects harmful examples without a human supervisor noticing. This motiv",
+  "raw_body": "arXiv:2510.02480v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate a remarkable ability to learn new tasks from a few in-context examples. However, this flexibility introduces safety concerns: LLMs can be influenced by incorrect or malicious demonstrations -- for example, if an adversary tampers with or injects harmful examples without a human supervisor noticing. This motivates principled designs in which the system itself includes built-in mechanisms to guard against such attacks. We propose a novel approach to limit the degree to which harmful demonstrations can degrade model performance. First, we define a baseline ``safe'' behavior for the model -- the model's performance given no in-context demonstrations (zero-shot). Next, we apply distribution-free risk control (DFRC) to control the extent to which in-context samples can decay performance below zero-shot. We achieve this by leveraging dynamic early exit prediction, ignoring later attention heads that attend the most to the unsafe inputs. Finally, we propose modifications to DFRC that allow it to both control risk for harmful inputs \\textit{and} leverage performance and efficiency gains on helpful inputs. We present both theoretical and empirical results showing that our approach can effectively control risk for harmful in-context demonstrations while simultaneously achieving substantial computational efficiency gains with helpful demonstrations.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a new method to improve the safety of large language models (LLMs) when learning from examples. Their approach uses distribution-free risk control (DFRC) to limit the negative impact of harmful inputs while still benefiting from helpful ones. This method includes a baseline 'safe' behavior and employs dynamic early exit prediction to enhance efficiency. This matters now as it addresses safety concerns in AI, ensuring models can learn effectively without compromising security.",
+  "why_it_matters": [
+    "This method could protect users from harmful AI outputs, especially in sensitive applications where accuracy is crucial.",
+    "It signals a shift toward more responsible AI development, balancing performance with safety in the growing AI market."
+  ],
+  "lenses": {
+    "eli12": "Imagine teaching a child with both good and bad examples. This new method helps large language models learn from positive examples while ignoring harmful ones. It ensures that AI can learn safely and effectively, which is important for everyday users relying on reliable technology.",
+    "pm": "For product managers and founders, this approach highlights the need for balancing user experience with safety. It could reduce the risk of harmful outputs while enhancing efficiency, allowing for more robust AI applications. This means products could be both safer and more effective.",
+    "engineer": "The proposed method employs distribution-free risk control (DFRC) to manage the influence of harmful in-context demonstrations on LLM performance. By establishing a zero-shot baseline and using dynamic early exit prediction, the approach effectively mitigates risk while maintaining computational efficiency. This dual focus on safety and performance could set a new standard for model training."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-07T03:47:14.863Z",
+  "updated_at": "2025-10-07T03:47:14.863Z",
+  "processing_order": 1759808834865
+}
