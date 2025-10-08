@@ -1,0 +1,31 @@
+{
+  "content_hash": "ccb112ed045c8e1b41e7eb700b84689fd0f5e8abd7dd498414c97ece0d4a79ac",
+  "share_id": "cmgbda",
+  "title": "ContraGen: A Multi-Agent Generation Framework for Enterprise Contradictions Detection",
+  "optimized_headline": "\"Discover ContraGen: A Framework for Detecting Contradictions in Enterprises\"",
+  "url": "https://arxiv.org/abs/2510.03418",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-07T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.03418v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) integrates LLMs with external sources, offering advanced capabilities for information access and decision-making. However, contradictions in retrieved evidence can result in inconsistent or untrustworthy outputs, which is especially problematic in enterprise settings where compliance, governance, and accountabili",
+  "raw_body": "arXiv:2510.03418v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) integrates LLMs with external sources, offering advanced capabilities for information access and decision-making. However, contradictions in retrieved evidence can result in inconsistent or untrustworthy outputs, which is especially problematic in enterprise settings where compliance, governance, and accountability are critical. Existing benchmarks for contradiction detection are limited to sentence-level analysis and do not capture the complexity of enterprise documents such as contracts, financial filings, compliance reports, or policy manuals. To address this limitation, we propose ContraGen, a contradiction-aware benchmark framework tailored to enterprise domain. The framework generates synthetic enterprise-style documents with embedded contradictions, enabling systematic evaluation of both intra-document and cross-document consistency. Automated contradiction mining is combined with human-in-the-loop validation to ensure high accuracy. Our contributions include generating realistic enterprise documents, modeling a taxonomy of contradiction types common in business processes, enabling controlled creation of self- and pairwise contradictions, developing a contradiction-aware retrieval evaluation pipeline and embedding human oversight to reflect domain-specific judgment complexity. This work establishes a foundation for more trustworthy and accountable RAG systems in enterprise information-seeking applications, where detecting and resolving contradictions is essential for reducing risk and ensuring compliance.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced ContraGen, a new framework designed to detect contradictions in enterprise documents. Unlike previous benchmarks that only analyze sentences, ContraGen creates synthetic documents filled with contradictions to evaluate consistency. This approach is crucial for enterprises where accuracy in compliance and governance is vital. As businesses increasingly rely on AI for decision-making, ensuring the reliability of information becomes more important than ever.",
+  "why_it_matters": [
+    "This framework could significantly benefit compliance officers and legal teams by improving the accuracy of document reviews, reducing risks associated with misinformation.",
+    "On a broader scale, it reflects a shift towards more reliable AI systems in business, helping to build trust in automated decision-making processes."
+  ],
+  "lenses": {
+    "eli12": "ContraGen is like a teacher who checks students' essays for mistakes and contradictions. It helps businesses ensure their documents, like contracts and reports, are accurate and trustworthy. This is important for everyday people because it means the information they rely on in business dealings is more reliable.",
+    "pm": "For product managers and founders, ContraGen highlights a user need for reliable information in enterprise settings. By improving the accuracy of AI-generated documents, businesses could save time and reduce costs associated with errors. This could lead to more efficient decision-making and better compliance with regulations.",
+    "engineer": "Technically, ContraGen enhances contradiction detection by generating synthetic enterprise documents that simulate real-world complexities. It combines automated contradiction mining with human validation, ensuring high accuracy in identifying inconsistencies. This dual approach could set new benchmarks for evaluating AI systems in enterprise applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-08T03:46:43.588Z",
+  "updated_at": "2025-10-08T03:46:43.588Z",
+  "processing_order": 1759895203591
+}

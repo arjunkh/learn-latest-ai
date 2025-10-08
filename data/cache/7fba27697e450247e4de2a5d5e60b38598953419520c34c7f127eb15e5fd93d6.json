@@ -1,0 +1,31 @@
+{
+  "content_hash": "7fba27697e450247e4de2a5d5e60b38598953419520c34c7f127eb15e5fd93d6",
+  "share_id": "wwaonu",
+  "title": "WAREX: Web Agent Reliability Evaluation on Existing Benchmarks",
+  "optimized_headline": "Evaluating WAREX: How Reliable Are Current Web Agent Benchmarks?",
+  "url": "https://arxiv.org/abs/2510.03285",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-07T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.03285v1 Announce Type: new \nAbstract: Recent advances in browser-based LLM agents have shown promise for automating tasks ranging from simple form filling to hotel booking or online shopping. Current benchmarks measure agent performance in controlled environments, such as containers or stable networks, where websites behave deterministically. However, in the real world, users access web",
+  "raw_body": "arXiv:2510.03285v1 Announce Type: new \nAbstract: Recent advances in browser-based LLM agents have shown promise for automating tasks ranging from simple form filling to hotel booking or online shopping. Current benchmarks measure agent performance in controlled environments, such as containers or stable networks, where websites behave deterministically. However, in the real world, users access websites over networks and HTTPS connections that introduce instability from multiple sources: client-side, server-side issues or broader system failures. Moreover, live websites are prone to web attacks such Cross-Site Scripting, as well as general site modifications which can cause unexpected or malicious pop-ups or improper functionality. To address this gap, we present WAREX: Web Agent Reliability Evaluation on Existing Benchmarks. We measure the impact of WAREX across three popular benchmarks: WebArena, WebVoyager, and REAL. Our experiments show that introducing WAREX leads to significant drops in task success rates, highlighting the limited robustness of state-of-the-art agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduced WAREX, a new evaluation method for browser-based LLM agents that assesses their performance in real-world conditions. Traditional benchmarks, like WebArena and WebVoyager, don't account for the unpredictable nature of live websites, leading to significant drops in task success rates when tested with WAREX. This matters because it reveals the limitations of current AI tools in practical applications, which could affect user trust and adoption.",
+  "why_it_matters": [
+    "Users relying on automated agents for tasks like booking may face frustrations due to reduced success rates in real-world scenarios.",
+    "The findings indicate a shift in how AI performance should be evaluated, pushing for more realistic testing environments that reflect actual user experiences."
+  ],
+  "lenses": {
+    "eli12": "Think of WAREX as a reality check for AI tools that help with online tasks. Just like a driver needs to practice on real roads, AI agents need to be tested in the messy, unpredictable world of the internet. This is important because it shows that while these tools are helpful, they might not always work as expected when faced with real challenges.",
+    "pm": "For product managers or founders, WAREX highlights the necessity of testing AI agents in real-world conditions. This could lead to improved user satisfaction as it identifies weaknesses in current benchmarks. Understanding these limitations allows for better design and development, ensuring that the technology meets user expectations in practical situations.",
+    "engineer": "From a technical perspective, WAREX evaluates browser-based LLM agents against existing benchmarks like WebArena and REAL under real-world conditions. The introduction of WAREX showed significant drops in task success rates, indicating that current models may not be robust enough to handle real-time web challenges, such as network instability and security threats. This underscores the need for more resilient AI systems."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-08T03:46:20.786Z",
+  "updated_at": "2025-10-08T03:46:20.786Z",
+  "processing_order": 1759895180786
+}
