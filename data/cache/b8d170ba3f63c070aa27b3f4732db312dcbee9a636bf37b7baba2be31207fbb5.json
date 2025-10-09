@@ -1,0 +1,31 @@
+{
+  "content_hash": "b8d170ba3f63c070aa27b3f4732db312dcbee9a636bf37b7baba2be31207fbb5",
+  "share_id": "omvalo",
+  "title": "Optimization Modeling via Semantic Anchored Alignment",
+  "optimized_headline": "Unlocking Optimization: Discover Semantic Anchored Alignment's Game-Changing Potential",
+  "url": "https://arxiv.org/abs/2510.05115",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-08T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.05115v1 Announce Type: new \nAbstract: Large language models (LLMs) have opened new paradigms in optimization modeling by enabling the generation of executable solver code from natural language descriptions. Despite this promise, existing approaches typically remain solver-driven: they rely on single-pass forward generation and apply limited post-hoc fixes based on solver error messages,",
+  "raw_body": "arXiv:2510.05115v1 Announce Type: new \nAbstract: Large language models (LLMs) have opened new paradigms in optimization modeling by enabling the generation of executable solver code from natural language descriptions. Despite this promise, existing approaches typically remain solver-driven: they rely on single-pass forward generation and apply limited post-hoc fixes based on solver error messages, leaving undetected semantic errors that silently produce syntactically correct but logically flawed models. To address this challenge, we propose SAC-Opt, a backward-guided correction framework that grounds optimization modeling in problem semantics rather than solver feedback. At each step, SAC-Opt aligns the original semantic anchors with those reconstructed from the generated code and selectively corrects only the mismatched components, driving convergence toward a semantically faithful model. This anchor-driven correction enables fine-grained refinement of constraint and objective logic, enhancing both fidelity and robustness without requiring additional training or supervision. Empirical results on seven public datasets demonstrate that SAC-Opt improves average modeling accuracy by 7.8\\%, with gains of up to 21.9\\% on the ComplexLP dataset. These findings highlight the importance of semantic-anchored correction in LLM-based optimization workflows to ensure faithful translation from problem intent to solver-executable code.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "New research introduces SAC-Opt, a framework that enhances optimization modeling by focusing on semantic accuracy rather than just solver feedback. This method corrects mismatches in generated code, leading to a 7.8% improvement in modeling accuracy, and up to 21.9% for complex datasets. This is significant now as it addresses common issues in current LLM applications, ensuring that models are not just syntactically correct but also logically sound.",
+  "why_it_matters": [
+    "This could immediately benefit developers and researchers who rely on accurate optimization models for complex problems, improving their results significantly.",
+    "On a broader scale, this reflects a shift toward more intelligent AI systems that understand context better, potentially increasing trust and usability in various industries."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to build a Lego set without the instructions. You might get a structure, but it could be all wrong. SAC-Opt helps ensure that when AI generates solutions, they match the original problem's intent, making the results more reliable. This matters for everyday people because it means better decision-making tools in areas like logistics and finance.",
+    "pm": "For product managers, SAC-Opt represents a way to enhance user satisfaction by improving the accuracy of optimization models. This approach could reduce the time spent on debugging and fixing models, leading to cost savings and more efficient workflows. Ultimately, it allows teams to deliver more reliable products to users.",
+    "engineer": "SAC-Opt employs a backward-guided correction mechanism that aligns semantic anchors with generated code to correct mismatches. This process enhances model fidelity without additional training. Empirical results indicate an average accuracy improvement of 7.8%, with a notable 21.9% gain on the ComplexLP dataset, showcasing the effectiveness of semantic-anchored correction."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-09T03:46:54.129Z",
+  "updated_at": "2025-10-09T03:46:54.129Z",
+  "processing_order": 1759981614131
+}
