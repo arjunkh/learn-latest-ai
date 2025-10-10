@@ -1,0 +1,31 @@
+{
+  "content_hash": "9e63498bf3750d7e12f30a4839343d7c36de0f12ac6ab56fd4b13a1a814c2949",
+  "share_id": "aof13j",
+  "title": "AlphaApollo: Orchestrating Foundation Models and Professional Tools into a Self-Evolving System for Deep Agentic Reasoning",
+  "optimized_headline": "AlphaApollo: Merging Foundation Models and Tools for Advanced Self-Evolution in AI",
+  "url": "https://arxiv.org/abs/2510.06261",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-09T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.06261v1 Announce Type: new \nAbstract: We present AlphaApollo, a self-evolving agentic reasoning system that aims to address two bottlenecks in foundation model (FM) reasoning-limited model-intrinsic capacity and unreliable test-time iteration. AlphaApollo orchestrates multiple models with professional tools to enable deliberate, verifiable reasoning. It couples (i) a computation tool (P",
+  "raw_body": "arXiv:2510.06261v1 Announce Type: new \nAbstract: We present AlphaApollo, a self-evolving agentic reasoning system that aims to address two bottlenecks in foundation model (FM) reasoning-limited model-intrinsic capacity and unreliable test-time iteration. AlphaApollo orchestrates multiple models with professional tools to enable deliberate, verifiable reasoning. It couples (i) a computation tool (Python with numerical and symbolic libraries) and (ii) a retrieval tool (task-relevant external information) to execute exact calculations and ground decisions. The system further supports multi-round, multi-model solution evolution via a shared state map that records candidates, executable checks, and feedback for iterative refinement. In evaluations on AIME 2024/2025 across multiple models, AlphaApollo delivers consistent gains: +5.15% Average@32 and +23.34% Pass@32 for Qwen2.5-14B-Instruct, and +8.91% Average@32 with +26.67% Pass@32 for Llama-3.3-70B-Instruct. Tool-use analysis shows that more than 80% of tool calls are successfully executed, with consistent outperformance of non-tool baselines, thereby lifting the capability ceiling of FMs. More empirical results and implementation details will be updated at https://github.com/tmlr-group/AlphaApollo.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The introduction of AlphaApollo marks a significant advancement in AI reasoning systems. It combines multiple foundation models and professional tools to enhance reasoning capabilities, achieving notable performance improvements. In evaluations, AlphaApollo showed a +5.15% gain in average performance and a +23.34% increase in pass rates for one model, highlighting its effectiveness. This development could reshape how AI systems handle complex reasoning tasks, making them more reliable and efficient.",
+  "why_it_matters": [
+    "AlphaApollo could greatly benefit researchers and developers by providing a more reliable framework for AI reasoning tasks, enhancing productivity.",
+    "This development signals a shift in the AI landscape towards more integrated systems, which could lead to more sophisticated applications in various fields."
+  ],
+  "lenses": {
+    "eli12": "AlphaApollo is like a team of experts working together to solve a problem. It uses different models and tools to improve reasoning, making AI smarter and more reliable. This matters because it could help everyone from students to professionals get better answers from AI systems.",
+    "pm": "For product managers and founders, AlphaApollo offers a way to enhance user experiences by improving AI reasoning capabilities. By integrating multiple tools, it could reduce costs and increase efficiency in AI applications. This means products could provide more accurate and reliable outputs, meeting user needs more effectively.",
+    "engineer": "Technically, AlphaApollo orchestrates various foundation models with tools like Python for computations and external information retrieval, addressing key limitations in AI reasoning. It achieved impressive results, with +5.15% and +23.34% performance gains for one model, demonstrating its capability to refine solutions iteratively. This approach could push the boundaries of what foundation models can achieve in complex reasoning tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-10T03:47:03.026Z",
+  "updated_at": "2025-10-10T03:47:03.026Z",
+  "processing_order": 1760068023026
+}

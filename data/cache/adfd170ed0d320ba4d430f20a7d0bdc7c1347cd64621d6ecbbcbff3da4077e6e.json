@@ -1,0 +1,31 @@
+{
+  "content_hash": "adfd170ed0d320ba4d430f20a7d0bdc7c1347cd64621d6ecbbcbff3da4077e6e",
+  "share_id": "bbfm8t",
+  "title": "BuilderBench -- A benchmark for generalist agents",
+  "optimized_headline": "\"BuilderBench: The New Standard for Evaluating Generalist Agents\"",
+  "url": "https://arxiv.org/abs/2510.06288",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-09T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.06288v1 Announce Type: new \nAbstract: Today's AI models learn primarily through mimicry and sharpening, so it is not surprising that they struggle to solve problems beyond the limits set by existing data. To solve novel problems, agents should acquire skills for exploring and learning through experience. Finding a scalable learning mechanism for developing agents that learn through inte",
+  "raw_body": "arXiv:2510.06288v1 Announce Type: new \nAbstract: Today's AI models learn primarily through mimicry and sharpening, so it is not surprising that they struggle to solve problems beyond the limits set by existing data. To solve novel problems, agents should acquire skills for exploring and learning through experience. Finding a scalable learning mechanism for developing agents that learn through interaction remains a major open problem. In this work, we introduce BuilderBench, a benchmark to accelerate research into agent pre-training that centers open-ended exploration. BuilderBench requires agents to learn how to build any structure using blocks. BuilderBench is equipped with $(1)$ a hardware accelerated simulator of a robotic agent interacting with various physical blocks, and $(2)$ a task-suite with over 42 diverse target structures that are carefully curated to test an understanding of physics, mathematics, and long-horizon planning. During training, agents have to explore and learn general principles about the environment without any external supervision. During evaluation, agents have to build the unseen target structures from the task suite. Solving these tasks requires a sort of \\emph{embodied reasoning} that is not reflected in words but rather in actions, experimenting with different strategies and piecing them together. Our experiments show that many of these tasks challenge the current iteration of algorithms. Hence, we also provide a ``training wheels'' protocol, in which agents are trained and evaluated to build a single target structure from the task suite. Finally, we provide single-file implementations of six different algorithms as a reference point for researchers.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "BuilderBench is a new benchmark designed to improve how AI agents learn through exploration and experience. It features a hardware-accelerated simulator where agents build structures using blocks, testing their understanding of physics and planning. With over 42 diverse target structures, it aims to help agents develop skills beyond mere mimicry. This matters now as it addresses a key limitation in current AI models, pushing them towards more autonomous learning.",
+  "why_it_matters": [
+    "This benchmark could significantly enhance AI training for researchers focused on autonomous learning, providing a structured way to assess agent capabilities.",
+    "BuilderBench represents a shift in AI development, promoting exploration-based learning which could lead to more adaptable and intelligent agents in various applications."
+  ],
+  "lenses": {
+    "eli12": "BuilderBench is like a playground for AI, where they learn by trying to build things instead of just copying others. It helps them understand how to solve new problems on their own. This matters to everyday people because it could lead to smarter AI that can tackle real-world challenges more effectively.",
+    "pm": "For product managers and founders, BuilderBench highlights a user need for AI that learns through experience rather than just data. This could improve efficiency in developing AI applications. The practical implication is that products could become more versatile and capable of handling complex tasks autonomously.",
+    "engineer": "From a technical perspective, BuilderBench challenges existing algorithms by requiring agents to demonstrate embodied reasoning in building structures. The benchmark includes a task suite with over 42 target structures, testing various skills without supervision. This could push the boundaries of current AI capabilities, making it essential for researchers focusing on autonomous learning."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-10T03:47:21.077Z",
+  "updated_at": "2025-10-10T03:47:21.077Z",
+  "processing_order": 1760068041079
+}

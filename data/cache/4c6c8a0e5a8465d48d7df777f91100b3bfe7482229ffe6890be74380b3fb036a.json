@@ -1,0 +1,31 @@
+{
+  "content_hash": "4c6c8a0e5a8465d48d7df777f91100b3bfe7482229ffe6890be74380b3fb036a",
+  "share_id": "brljwj",
+  "title": "Bridging Reasoning to Learning: Unmasking Illusions using Complexity Out of Distribution Generalization",
+  "optimized_headline": "Unlocking Learning: How Complexity Reveals Hidden Illusions in Reasoning",
+  "url": "https://arxiv.org/abs/2510.06274",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-09T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.06274v1 Announce Type: new \nAbstract: Recent progress has pushed AI frontiers from pattern recognition tasks toward problems that require step by step, System2 style reasoning, especially with large language models. Yet, unlike learning, where generalization and out of distribution (OoD) evaluation concepts are well formalized, there is no clear, consistent definition or metric for reas",
+  "raw_body": "arXiv:2510.06274v1 Announce Type: new \nAbstract: Recent progress has pushed AI frontiers from pattern recognition tasks toward problems that require step by step, System2 style reasoning, especially with large language models. Yet, unlike learning, where generalization and out of distribution (OoD) evaluation concepts are well formalized, there is no clear, consistent definition or metric for reasoning ability. We propose Complexity Out of Distribution (Complexity OoD) generalization as a framework and problem setting to define and measure reasoning. A model exhibits Complexity OoD generalization when it maintains performance on test instances whose minimal required solution complexity, either representational (richer solution structure) or computational (more reasoning steps/program length), exceeds that of all training examples. We formalize complexity via solution description Kolmogorov complexity and operational proxies (e.g., object/relation counts; reasoning step counts), clarifying how Complexity OoD differs from length and compositional OoD. This lens unifies learning and reasoning: many cases solvable with System1 like processing at low complexity become System2 like under complexity pressure, while System2 can be viewed as generalization over solution structures. We translate this perspective into practice with recommendations for operationalizing Complexity OoD across the stack: incorporating complexity into benchmark and evaluation metric design, rethinking supervision to target solution traces, seeking and designing inductive biases for Complexity OoD generalization, addressing learning to reason spillovers such as spurious shortcuts, semantic robustness, catastrophic forgetting, and step wise calibration. Because Complexity OoD cannot be solved by scaling data alone, progress toward robust reasoning will require architectures and training regimes that explicitly model and allocate computation with respect to complexity.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces a new framework called Complexity Out of Distribution (Complexity OoD) generalization, aimed at measuring reasoning in AI. This framework defines reasoning ability based on solution complexity, requiring models to perform well on tasks that exceed their training examples in complexity. It emphasizes that simply scaling data isn't enough; AI must also adapt its architecture and training to handle more complex reasoning. This is crucial as AI moves from recognizing patterns to solving intricate problems.",
+  "why_it_matters": [
+    "AI developers can better evaluate and enhance reasoning capabilities in models, leading to improved performance in real-world applications.",
+    "This shift highlights a broader trend in AI research, focusing on complex reasoning rather than just data-driven learning, potentially transforming how AI systems are designed."
+  ],
+  "lenses": {
+    "eli12": "Think of AI like a student learning math. At first, they can solve simple problems easily, but as questions get tougher, they need to apply more complex strategies. The new Complexity OoD framework helps measure how well AI can tackle these tougher problems. This matters because better reasoning in AI could lead to smarter, more reliable systems that can assist us in everyday tasks.",
+    "pm": "For product managers and founders, this research underscores the importance of integrating reasoning capabilities into AI products. Users increasingly expect AI to handle complex tasks efficiently. Understanding Complexity OoD could help in designing features that improve user experience and reduce costs by optimizing how AI processes information.",
+    "engineer": "From a technical perspective, Complexity OoD generalization focuses on defining reasoning by solution complexity, using metrics like Kolmogorov complexity. This approach contrasts with traditional methods that rely solely on data volume. Engineers need to consider how to structure AI architectures and training processes to effectively manage complexity in reasoning tasks, as simply increasing data won't suffice."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-10T03:47:11.818Z",
+  "updated_at": "2025-10-10T03:47:11.818Z",
+  "processing_order": 1760068031819
+}
