@@ -1,0 +1,31 @@
+{
+  "content_hash": "f360b6293328de3d6f89c14bba8f63858482b9130ae5d3a1e1875337030acfb7",
+  "share_id": "bmktvh",
+  "title": "Base Models Know How to Reason, Thinking Models Learn When",
+  "optimized_headline": "\"How Base Models Reason While Thinking Models Master Timing\"",
+  "url": "https://arxiv.org/abs/2510.07364",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-10T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.07364v1 Announce Type: new \nAbstract: Why do thinking language models like DeepSeek R1 outperform their base counterparts? Despite consistent performance gains, it remains unclear to what extent thinking models learn entirely new reasoning capabilities or repurpose pre-existing base model ones. In this work, we propose a hybrid model where we activate reasoning mechanisms in base models",
+  "raw_body": "arXiv:2510.07364v1 Announce Type: new \nAbstract: Why do thinking language models like DeepSeek R1 outperform their base counterparts? Despite consistent performance gains, it remains unclear to what extent thinking models learn entirely new reasoning capabilities or repurpose pre-existing base model ones. In this work, we propose a hybrid model where we activate reasoning mechanisms in base models at the right time to elicit thinking-model-level reasoning chains, implying that thinking models exploit already existing capabilities. To ground our analysis, we introduce an unsupervised, bottom-up approach for uncovering human-interpretable reasoning behaviors in thinking models. This approach provides an unbiased method to discover reasoning behaviors without imposing manual or LLM-derived assumptions. Across three base and four thinking models, using GSM8K and MATH500, our hybrid model recovers up to 91% of the performance gap to thinking models without any weight updates while steering only 12% of tokens. Concretely, our empirical setup provides a simple, causal way to test the effectiveness of existing reasoning mechanisms in base models by invoking them directly and measuring the resulting task performance. More broadly, these results reframe our understanding of how thinking models are trained: pre-training is when models acquire most of their reasoning mechanisms, and post-training teaches efficient deployment of these mechanisms at the right time, enabling efficient use of their inference-time compute.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces a hybrid model that enhances base language models' reasoning capabilities by activating pre-existing mechanisms. This approach allows for a significant performance boost, recovering up to 91% of the gap compared to advanced thinking models like DeepSeek R1, while only steering 12% of tokens. This matters now as it reshapes how we understand and utilize reasoning in AI, suggesting that existing models can be more effective without extensive retraining.",
+  "why_it_matters": [
+    "This could immediately benefit developers looking to optimize AI performance without heavy resource investment, enhancing existing models' capabilities.",
+    "On a broader scale, it indicates a shift in AI development strategies, focusing on efficient use of existing resources rather than creating entirely new models."
+  ],
+  "lenses": {
+    "eli12": "Imagine a toolbox where you can use tools more effectively without needing to buy new ones. This research shows that language models can be enhanced by simply activating their existing reasoning tools. This is important because it makes AI smarter without needing to start from scratch, which could lead to better everyday applications.",
+    "pm": "For product managers, this research highlights a user need for more efficient AI solutions. By leveraging existing capabilities, companies could reduce costs and improve performance without significant changes. This could lead to faster deployment of AI features that are more responsive to user demands.",
+    "engineer": "Technically, the study shows that hybrid models can activate reasoning mechanisms in base models to improve performance on tasks like GSM8K and MATH500. By recovering 91% of the performance gap with only 12% of token activation, it demonstrates a practical method for enhancing reasoning without retraining. This suggests a new approach to model optimization that could influence future AI development."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-11T03:43:00.254Z",
+  "updated_at": "2025-10-11T03:43:00.254Z",
+  "processing_order": 1760154180256
+}
