@@ -1,0 +1,31 @@
+{
+  "content_hash": "93205ce4d444e9adb7d8758ab1cd65bb5436a4ea0cc8c95dad598dd085fe0b9f",
+  "share_id": "hcac2o",
+  "title": "How can we assess human-agent interactions? Case studies in software agent design",
+  "optimized_headline": "Evaluating Human-Agent Interactions: Insights from Software Design Case Studies",
+  "url": "https://arxiv.org/abs/2510.09801",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-14T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.09801v1 Announce Type: new \nAbstract: LLM-powered agents are both a promising new technology and a source of complexity, where choices about models, tools, and prompting can affect their usefulness. While numerous benchmarks measure agent accuracy across domains, they mostly assume full automation, failing to represent the collaborative nature of real-world use cases. In this paper, we ",
+  "raw_body": "arXiv:2510.09801v1 Announce Type: new \nAbstract: LLM-powered agents are both a promising new technology and a source of complexity, where choices about models, tools, and prompting can affect their usefulness. While numerous benchmarks measure agent accuracy across domains, they mostly assume full automation, failing to represent the collaborative nature of real-world use cases. In this paper, we make two major steps towards the rigorous assessment of human-agent interactions. First, we propose PULSE, a framework for more efficient human-centric evaluation of agent designs, which comprises collecting user feedback, training an ML model to predict user satisfaction, and computing results by combining human satisfaction ratings with model-generated pseudo-labels. Second, we deploy the framework on a large-scale web platform built around the open-source software agent OpenHands, collecting in-the-wild usage data across over 15k users. We conduct case studies around how three agent design decisions -- choice of LLM backbone, planning strategy, and memory mechanisms -- impact developer satisfaction rates, yielding practical insights for software agent design. We also show how our framework can lead to more robust conclusions about agent design, reducing confidence intervals by 40\\% compared to a standard A/B test. Finally, we find substantial discrepancies between in-the-wild results and benchmark performance (e.g., the anti-correlation between results comparing claude-sonnet-4 and gpt-5), underscoring the limitations of benchmark-driven evaluation. Our findings provide guidance for evaluations of LLM agents with humans and identify opportunities for better agent designs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces PULSE, a framework for assessing human-agent interactions with LLM-powered software. It emphasizes the importance of user feedback and satisfaction, revealing that traditional benchmarks often miss the collaborative nature of these interactions. By analyzing data from over 15,000 users, the researchers found that agent design choices significantly affect user satisfaction and that standard benchmarks can be misleading. This matters now as it pushes for a more user-centered approach in evaluating AI agents.",
+  "why_it_matters": [
+    "Developers can gain immediate insights into improving agent designs, leading to higher user satisfaction and better performance in real-world applications.",
+    "This research signals a shift towards user-centric evaluation methods in AI, which could reshape how companies assess and improve their software agents."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to judge a movie based solely on its trailer. This study shows that assessing AI agents just by benchmarks misses the real user experience. With PULSE, developers can focus on what users really think, making their tools more effective. This matters for everyday people because better AI tools can lead to smoother interactions in daily tasks.",
+    "pm": "For product managers, this research highlights the need to prioritize user feedback in the design of AI agents. By understanding how different design choices impact user satisfaction, teams could enhance the effectiveness of their products. The practical implication is that adopting PULSE could lead to more successful software that meets user needs more effectively.",
+    "engineer": "From a technical perspective, the study presents PULSE as a method to evaluate LLM agents beyond traditional benchmarks, which often assume complete automation. By comparing user satisfaction with model-generated labels, the framework reduces confidence intervals by 40% compared to standard A/B tests. This suggests that engineers should consider user feedback as a critical component in the design and evaluation of AI systems."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-15T03:50:09.762Z",
+  "updated_at": "2025-10-15T03:50:09.762Z",
+  "processing_order": 1760500209763
+}
