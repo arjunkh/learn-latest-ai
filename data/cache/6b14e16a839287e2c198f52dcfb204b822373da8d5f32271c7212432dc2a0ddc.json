@@ -1,0 +1,31 @@
+{
+  "content_hash": "6b14e16a839287e2c198f52dcfb204b822373da8d5f32271c7212432dc2a0ddc",
+  "share_id": "cblqga",
+  "title": "CGBench: Benchmarking Language Model Scientific Reasoning for Clinical Genetics Research",
+  "optimized_headline": "CGBench: Evaluating Language Models' Reasoning in Clinical Genetics Research",
+  "url": "https://arxiv.org/abs/2510.11985",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.11985v1 Announce Type: new \nAbstract: Variant and gene interpretation are fundamental to personalized medicine and translational biomedicine. However, traditional approaches are manual and labor-intensive. Generative language models (LMs) can facilitate this process, accelerating the translation of fundamental research into clinically-actionable insights. While existing benchmarks have ",
+  "raw_body": "arXiv:2510.11985v1 Announce Type: new \nAbstract: Variant and gene interpretation are fundamental to personalized medicine and translational biomedicine. However, traditional approaches are manual and labor-intensive. Generative language models (LMs) can facilitate this process, accelerating the translation of fundamental research into clinically-actionable insights. While existing benchmarks have attempted to quantify the capabilities of LMs for interpreting scientific data, these studies focus on narrow tasks that do not translate to real-world research. To meet these challenges, we introduce CGBench, a robust benchmark that tests reasoning capabilities of LMs on scientific publications. CGBench is built from ClinGen, a resource of expert-curated literature interpretations in clinical genetics. CGBench measures the ability to 1) extract relevant experimental results following precise protocols and guidelines, 2) judge the strength of evidence, and 3) categorize and describe the relevant outcome of experiments. We test 8 different LMs and find that while models show promise, substantial gaps exist in literature interpretation, especially on fine-grained instructions. Reasoning models excel in fine-grained tasks but non-reasoning models are better at high-level interpretations. Finally, we measure LM explanations against human explanations with an LM judge approach, revealing that models often hallucinate or misinterpret results even when correctly classifying evidence. CGBench reveals strengths and weaknesses of LMs for precise interpretation of scientific publications, opening avenues for future research in AI for clinical genetics and science more broadly.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced CGBench, a new benchmark designed to evaluate language models’ reasoning abilities in clinical genetics. This tool assesses how well models can extract experimental results, judge evidence strength, and categorize outcomes. Testing eight different models revealed that while some excel at detailed tasks, many struggle with accurate literature interpretation. Understanding these gaps is crucial as it could enhance the application of AI in personalized medicine, improving patient care.",
+  "why_it_matters": [
+    "Clinicians and researchers could benefit immediately from improved AI tools that streamline the interpretation of genetic data, saving time and resources.",
+    "CGBench highlights a shift towards integrating advanced AI in healthcare, potentially transforming how genetic research is conducted and applied in clinical settings."
+  ],
+  "lenses": {
+    "eli12": "CGBench is like a report card for AI models, testing how well they can understand and summarize scientific studies in genetics. It shows which models are good at detailed tasks and which are better at big-picture ideas. This is important for everyday people because better AI could lead to faster and more accurate medical decisions based on genetic information.",
+    "pm": "For product managers and founders, CGBench highlights the need for AI tools that can accurately interpret complex scientific literature. This could lead to more efficient workflows in clinical settings, reducing the time spent on manual reviews. Understanding the strengths and weaknesses of current models can guide the development of more effective AI solutions in healthcare.",
+    "engineer": "CGBench tests language models on their ability to interpret scientific publications, focusing on tasks like evidence extraction and categorization. The study evaluated eight models, revealing that reasoning models perform well on detailed tasks, while non-reasoning models excel at higher-level interpretations. However, models often misinterpret results, indicating a need for further refinement in their training and application in clinical genetics."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-16T03:50:32.970Z",
+  "updated_at": "2025-10-16T03:50:32.970Z",
+  "processing_order": 1760586632973
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "9fc2b8e9bf0f4ab780a77bf9a7deb5fdd8ac292226f9e8639912404ff86e0a9d",
+  "share_id": "hal5vx",
+  "title": "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation",
+  "optimized_headline": "\"Unlocking AI Agent Evaluation: The Essential Holistic Leaderboard Explained\"",
+  "url": "https://arxiv.org/abs/2510.11977",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.11977v1 Announce Type: new \nAbstract: AI agents have been developed for complex real-world tasks from coding to customer service. But AI agent evaluations suffer from many challenges that undermine our understanding of how well agents really work. We introduce the Holistic Agent Leaderboard (HAL) to address these challenges. We make three main contributions. First, we provide a standard",
+  "raw_body": "arXiv:2510.11977v1 Announce Type: new \nAbstract: AI agents have been developed for complex real-world tasks from coding to customer service. But AI agent evaluations suffer from many challenges that undermine our understanding of how well agents really work. We introduce the Holistic Agent Leaderboard (HAL) to address these challenges. We make three main contributions. First, we provide a standardized evaluation harness that orchestrates parallel evaluations across hundreds of VMs, reducing evaluation time from weeks to hours while eliminating common implementation bugs. Second, we conduct three-dimensional analysis spanning models, scaffolds, and benchmarks. We validate the harness by conducting 21,730 agent rollouts across 9 models and 9 benchmarks in coding, web navigation, science, and customer service with a total cost of about $40,000. Our analysis reveals surprising insights, such as higher reasoning effort reducing accuracy in the majority of runs. Third, we use LLM-aided log inspection to uncover previously unreported behaviors, such as searching for the benchmark on HuggingFace instead of solving a task, or misusing credit cards in flight booking tasks. We share all agent logs, comprising 2.5B tokens of language model calls, to incentivize further research into agent behavior. By standardizing how the field evaluates agents and addressing common pitfalls in agent evaluation, we hope to shift the focus from agents that ace benchmarks to agents that work reliably in the real world.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The introduction of the Holistic Agent Leaderboard (HAL) aims to improve how AI agents are evaluated across various tasks like coding and customer service. By running 21,730 evaluations at a cost of about $40,000, HAL reduces evaluation time from weeks to hours and identifies unexpected behaviors in agents. This is significant as it shifts the focus from merely performing well on benchmarks to ensuring reliability in real-world applications.",
+  "why_it_matters": [
+    "Developers can now assess AI agents more efficiently, leading to faster improvements and more reliable products for users.",
+    "This initiative signals a shift toward more effective AI evaluation methods, potentially raising industry standards and enhancing user trust."
+  ],
+  "lenses": {
+    "eli12": "The Holistic Agent Leaderboard (HAL) helps to better evaluate AI agents, making sure they work well in real life, not just in tests. Imagine if you only judged a car by its speed on a track; HAL ensures we also check how it performs on the road. This matters because it could lead to more dependable AI tools in everyday tasks.",
+    "pm": "For product managers and founders, HAL offers a way to evaluate AI agents that saves time and money, crucial for meeting user needs efficiently. By identifying real-world performance issues, teams can focus on improving the most relevant aspects of their products. This could enhance user satisfaction and trust in AI solutions.",
+    "engineer": "Technically, HAL employs a standardized evaluation harness that conducts 21,730 agent rollouts across 9 models and benchmarks, significantly cutting evaluation time. It also uses LLM-aided log inspection to reveal agent behaviors, such as improper task handling. These insights could inform better design and training practices for AI agents, although the findings suggest that increased reasoning effort may decrease accuracy."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-16T03:50:26.489Z",
+  "updated_at": "2025-10-16T03:50:26.489Z",
+  "processing_order": 1760586626491
+}

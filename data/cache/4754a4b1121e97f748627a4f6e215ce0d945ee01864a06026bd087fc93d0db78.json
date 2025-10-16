@@ -1,0 +1,31 @@
+{
+  "content_hash": "4754a4b1121e97f748627a4f6e215ce0d945ee01864a06026bd087fc93d0db78",
+  "share_id": "aft9bg",
+  "title": "AI Agents for the Dhumbal Card Game: A Comparative Study",
+  "optimized_headline": "\"Exploring AI Agents' Impact on Dhumbal Card Game Strategies\"",
+  "url": "https://arxiv.org/abs/2510.11736",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.11736v1 Announce Type: new \nAbstract: This study evaluates Artificial Intelligence (AI) agents for Dhumbal, a culturally significant multiplayer card game with imperfect information, through a systematic comparison of rule-based, search-based, and learning-based strategies. We formalize Dhumbal's mechanics and implement diverse agents, including heuristic approaches (Aggressive, Conserv",
+  "raw_body": "arXiv:2510.11736v1 Announce Type: new \nAbstract: This study evaluates Artificial Intelligence (AI) agents for Dhumbal, a culturally significant multiplayer card game with imperfect information, through a systematic comparison of rule-based, search-based, and learning-based strategies. We formalize Dhumbal's mechanics and implement diverse agents, including heuristic approaches (Aggressive, Conservative, Balanced, Opportunistic), search-based methods such as Monte Carlo Tree Search (MCTS) and Information Set Monte Carlo Tree Search (ISMCTS), and reinforcement learning approaches including Deep Q-Network (DQN) and Proximal Policy Optimization (PPO), and a random baseline. Evaluation involves within-category tournaments followed by a cross-category championship. Performance is measured via win rate, economic outcome, Jhyap success, cards discarded per round, risk assessment, and decision efficiency. Statistical significance is assessed using Welch's t-test with Bonferroni correction, effect sizes via Cohen's d, and 95% confidence intervals (CI). Across 1024 simulated rounds, the rule-based Aggressive agent achieves the highest win rate (88.3%, 95% CI: [86.3, 90.3]), outperforming ISMCTS (9.0%) and PPO (1.5%) through effective exploitation of Jhyap declarations. The study contributes a reproducible AI framework, insights into heuristic efficacy under partial information, and open-source code, thereby advancing AI research and supporting digital preservation of cultural games.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study compared various AI agents for Dhumbal, a multiplayer card game with imperfect information. The Aggressive rule-based agent achieved an impressive 88.3% win rate over 1024 simulated rounds, significantly outperforming other methods like ISMCTS and PPO. This research not only provides a reproducible AI framework but also helps preserve the cultural significance of Dhumbal, highlighting the potential of AI in understanding complex game strategies.",
+  "why_it_matters": [
+    "Players and game developers could benefit from improved AI strategies that enhance gameplay experiences in Dhumbal and similar games.",
+    "This study indicates a broader trend of using AI to analyze and preserve cultural games, potentially influencing future AI research and applications."
+  ],
+  "lenses": {
+    "eli12": "This study looked at how different AI agents play the card game Dhumbal, which has tricky rules. The Aggressive agent won most games, showing that some strategies work better than others. This matters because it helps us understand how AI can play games more intelligently, making them more fun for everyone.",
+    "pm": "For product managers and founders, this study highlights how different AI strategies can impact user engagement in games like Dhumbal. The success of the Aggressive agent suggests prioritizing effective, rule-based approaches could improve user satisfaction and retention. It also emphasizes the importance of data-driven insights in enhancing game design and player experiences.",
+    "engineer": "The study implemented various AI strategies, including rule-based, search-based, and reinforcement learning techniques. The Aggressive agent achieved a win rate of 88.3% using Jhyap declarations, while ISMCTS and PPO lagged significantly at 9.0% and 1.5%, respectively. This comparison underscores the effectiveness of heuristic methods in games with imperfect information, providing a foundation for future AI advancements."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-16T03:50:12.707Z",
+  "updated_at": "2025-10-16T03:50:12.707Z",
+  "processing_order": 1760586612707
+}
