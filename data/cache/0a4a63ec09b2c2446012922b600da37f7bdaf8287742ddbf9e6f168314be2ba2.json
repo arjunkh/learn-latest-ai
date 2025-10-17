@@ -1,0 +1,31 @@
+{
+  "content_hash": "0a4a63ec09b2c2446012922b600da37f7bdaf8287742ddbf9e6f168314be2ba2",
+  "share_id": "dsp05u",
+  "title": "DeepPlanner: Scaling Planning Capability for Deep Research Agents via Advantage Shaping",
+  "optimized_headline": "\"How DeepPlanner Enhances Research Agents' Planning with Advantage Shaping\"",
+  "url": "https://arxiv.org/abs/2510.12979",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-16T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.12979v1 Announce Type: new \nAbstract: Large language models (LLMs) augmented with multi-step reasoning and action generation abilities have shown promise in leveraging external tools to tackle complex tasks that require long-horizon planning. However, existing approaches either rely on implicit planning in the reasoning stage or introduce explicit planners without systematically address",
+  "raw_body": "arXiv:2510.12979v1 Announce Type: new \nAbstract: Large language models (LLMs) augmented with multi-step reasoning and action generation abilities have shown promise in leveraging external tools to tackle complex tasks that require long-horizon planning. However, existing approaches either rely on implicit planning in the reasoning stage or introduce explicit planners without systematically addressing how to optimize the planning stage. As evidence, we observe that under vanilla reinforcement learning (RL), planning tokens exhibit significantly higher entropy than other action tokens, revealing uncertain decision points that remain under-optimized. To address this, we propose DeepPlanner, an end-to-end RL framework that effectively enhances the planning capabilities of deep research agents. Our approach shapes token-level advantage with an entropy-based term to allocate larger updates to high entropy tokens, and selectively upweights sample-level advantages for planning-intensive rollouts. Extensive experiments across seven deep research benchmarks demonstrate that DeepPlanner improves planning quality and achieves state-of-the-art results under a substantially lower training budget.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced DeepPlanner, a new framework that enhances the planning abilities of large language models (LLMs) in complex tasks. By using an entropy-based method, DeepPlanner allocates more focus to uncertain decision points, leading to improved planning quality. In tests across seven benchmarks, it achieved state-of-the-art performance while significantly reducing training costs. This development matters now as it could make advanced AI planning more accessible and efficient, paving the way for broader applications.",
+  "why_it_matters": [
+    "DeepPlanner could immediately benefit AI developers by improving the efficiency of LLMs in complex task scenarios, enabling better decision-making.",
+    "On a broader scale, this innovation signals a shift toward more efficient AI training methods, potentially lowering costs and enhancing capabilities across industries."
+  ],
+  "lenses": {
+    "eli12": "DeepPlanner is like giving a GPS to an AI, helping it navigate complex tasks more effectively. It focuses on the tricky parts of planning, making those decisions clearer. This matters because it could help everyday applications, like virtual assistants or customer service bots, perform better and more reliably.",
+    "pm": "For product managers, DeepPlanner represents a way to enhance user experience by improving how AI handles complex tasks. It could reduce the costs associated with training models while increasing their effectiveness. This means products could become more capable without requiring extensive resources.",
+    "engineer": "DeepPlanner introduces a reinforcement learning framework that shapes token-level advantages using an entropy-based approach. This method allows the model to focus on uncertain decision points, improving planning quality. The framework has demonstrated state-of-the-art results across seven benchmarks while operating on a lower training budget, showcasing its efficiency."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-17T03:48:06.759Z",
+  "updated_at": "2025-10-17T03:48:06.759Z",
+  "processing_order": 1760672886760
+}
