@@ -1,0 +1,31 @@
+{
+  "content_hash": "a13073b87d9fd23e44fcf4fa8db77f5114404c0a22996058c206291638371ff4",
+  "share_id": "glg4pv",
+  "title": "GammaZero: Learning To Guide POMDP Belief Space Search With Graph Representations",
+  "optimized_headline": "GammaZero's Innovative Approach to Navigating POMDP Belief Spaces Revealed",
+  "url": "https://arxiv.org/abs/2510.14035",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.14035v1 Announce Type: new \nAbstract: We introduce an action-centric graph representation framework for learning to guide planning in Partially Observable Markov Decision Processes (POMDPs). Unlike existing approaches that require domain-specific neural architectures and struggle with scalability, GammaZero leverages a unified graph-based belief representation that enables generalizatio",
+  "raw_body": "arXiv:2510.14035v1 Announce Type: new \nAbstract: We introduce an action-centric graph representation framework for learning to guide planning in Partially Observable Markov Decision Processes (POMDPs). Unlike existing approaches that require domain-specific neural architectures and struggle with scalability, GammaZero leverages a unified graph-based belief representation that enables generalization across problem sizes within a domain. Our key insight is that belief states can be systematically transformed into action-centric graphs where structural patterns learned on small problems transfer to larger instances. We employ a graph neural network with a decoder architecture to learn value functions and policies from expert demonstrations on computationally tractable problems, then apply these learned heuristics to guide Monte Carlo tree search on larger problems. Experimental results on standard POMDP benchmarks demonstrate that GammaZero achieves comparable performance to BetaZero when trained and tested on the same-sized problems, while uniquely enabling zero-shot generalization to problems 2-4 times larger than those seen during training, maintaining solution quality with reduced search requirements.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "GammaZero introduces a new way to enhance planning in Partially Observable Markov Decision Processes (POMDPs) using a graph-based framework. This method allows for the transformation of belief states into action-centric graphs, which can generalize across different problem sizes. Notably, GammaZero shows it can perform well on problems 2-4 times larger than those it was trained on, achieving results similar to existing models like BetaZero. This advancement could significantly improve efficiency in complex decision-making scenarios.",
+  "why_it_matters": [
+    "Researchers and AI developers could benefit from GammaZero's ability to handle larger POMDPs without needing extensive retraining.",
+    "This method signals a potential shift in AI planning techniques, moving towards more scalable and generalizable solutions across various domains."
+  ],
+  "lenses": {
+    "eli12": "GammaZero is like teaching a student to solve math problems by recognizing patterns in different types of questions. Instead of needing separate strategies for each problem size, it learns a general approach that works for many situations. This matters because it could make AI systems smarter and more adaptable in real-world applications.",
+    "pm": "For product managers, GammaZero could streamline the development of AI systems that need to make decisions in uncertain environments. By reducing the need for problem-specific models, it could lower costs and improve efficiency. This means faster deployment and potentially better user experiences in applications like robotics or autonomous systems.",
+    "engineer": "From a technical perspective, GammaZero employs a graph neural network to learn value functions and policies based on expert demonstrations. Its ability to generalize to problems 2-4 times larger than the training set is noteworthy, as it maintains solution quality while reducing search requirements. This could pave the way for more efficient algorithms in complex decision-making tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-18T03:44:03.258Z",
+  "updated_at": "2025-10-18T03:44:03.258Z",
+  "processing_order": 1760759043261
+}

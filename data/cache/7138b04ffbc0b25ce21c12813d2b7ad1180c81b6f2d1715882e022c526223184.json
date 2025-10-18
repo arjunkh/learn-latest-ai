@@ -1,0 +1,31 @@
+{
+  "content_hash": "7138b04ffbc0b25ce21c12813d2b7ad1180c81b6f2d1715882e022c526223184",
+  "share_id": "llmb7i",
+  "title": "Do Large Language Models Show Biases in Causal Learning? Insights from Contingency Judgment",
+  "optimized_headline": "Uncovering Biases in Large Language Models: Insights from Causal Learning",
+  "url": "https://arxiv.org/abs/2510.13985",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.13985v1 Announce Type: new \nAbstract: Causal learning is the cognitive process of developing the capability of making causal inferences based on available information, often guided by normative principles. This process is prone to errors and biases, such as the illusion of causality, in which people perceive a causal relationship between two variables despite lacking supporting evidence",
+  "raw_body": "arXiv:2510.13985v1 Announce Type: new \nAbstract: Causal learning is the cognitive process of developing the capability of making causal inferences based on available information, often guided by normative principles. This process is prone to errors and biases, such as the illusion of causality, in which people perceive a causal relationship between two variables despite lacking supporting evidence. This cognitive bias has been proposed to underlie many societal problems, including social prejudice, stereotype formation, misinformation, and superstitious thinking. In this work, we examine whether large language models are prone to developing causal illusions when faced with a classic cognitive science paradigm: the contingency judgment task. To investigate this, we constructed a dataset of 1,000 null contingency scenarios (in which the available information is not sufficient to establish a causal relationship between variables) within medical contexts and prompted LLMs to evaluate the effectiveness of potential causes. Our findings show that all evaluated models systematically inferred unwarranted causal relationships, revealing a strong susceptibility to the illusion of causality. While there is ongoing debate about whether LLMs genuinely understand causality or merely reproduce causal language without true comprehension, our findings support the latter hypothesis and raise concerns about the use of language models in domains where accurate causal reasoning is essential for informed decision-making.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study explored whether large language models (LLMs) can develop biases in causal learning. Researchers tested LLMs with 1,000 scenarios where the information provided was insufficient to establish causal relationships. The results showed that these models often inferred unwarranted causal links, highlighting their vulnerability to the illusion of causality. This is significant as it raises questions about the reliability of LLMs in fields requiring precise causal reasoning.",
+  "why_it_matters": [
+    "This finding is crucial for sectors like healthcare, where accurate causal assessments can impact patient outcomes and treatment decisions.",
+    "On a broader scale, it signals a need for caution in deploying LLMs in critical areas, as their understanding of causality may not meet necessary standards."
+  ],
+  "lenses": {
+    "eli12": "The study looked at whether AI models can mistakenly think two things are connected when they aren't. By testing them with tricky medical scenarios, researchers found that these models often made incorrect causal assumptions. This matters because if AI can't accurately understand cause and effect, it could lead to wrong decisions that affect people's lives.",
+    "pm": "For product managers and founders, this research highlights a potential gap in AI capabilities regarding causal reasoning. If users rely on LLMs for critical insights, the risk of incorrect assumptions could lead to costly mistakes. It's essential to consider these limitations when developing AI-driven products, especially in sensitive fields like healthcare or finance.",
+    "engineer": "The study tested LLMs using a contingency judgment task with 1,000 null scenarios. The results indicated that all models showed a tendency to infer causal relationships without sufficient evidence, suggesting they do not truly understand causality. This raises concerns about their application in decision-making contexts where accurate causal reasoning is vital."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-18T03:43:58.318Z",
+  "updated_at": "2025-10-18T03:43:58.318Z",
+  "processing_order": 1760759038320
+}
