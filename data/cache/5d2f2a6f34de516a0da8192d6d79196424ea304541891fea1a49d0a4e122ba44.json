@@ -1,0 +1,31 @@
+{
+  "content_hash": "5d2f2a6f34de516a0da8192d6d79196424ea304541891fea1a49d0a4e122ba44",
+  "share_id": "oelw48",
+  "title": "OpenEstimate: Evaluating LLMs on Reasoning Under Uncertainty with Real-World Data",
+  "optimized_headline": "Evaluating LLMs: How OpenEstimate Assesses Reasoning with Real-World Data",
+  "url": "https://arxiv.org/abs/2510.15096",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.15096v1 Announce Type: new \nAbstract: Real-world settings where language models (LMs) are deployed -- in domains spanning healthcare, finance, and other forms of knowledge work -- require models to grapple with incomplete information and reason under uncertainty. Yet most LM evaluations focus on problems with well-defined answers and success criteria. This gap exists in part because nat",
+  "raw_body": "arXiv:2510.15096v1 Announce Type: new \nAbstract: Real-world settings where language models (LMs) are deployed -- in domains spanning healthcare, finance, and other forms of knowledge work -- require models to grapple with incomplete information and reason under uncertainty. Yet most LM evaluations focus on problems with well-defined answers and success criteria. This gap exists in part because natural problems involving uncertainty are difficult to construct: given that LMs have access to most of the same knowledge as humans, it is non-trivial to design questions for which LMs will struggle to produce correct answers, but which humans can answer reliably. As a result, LM performance on reasoning under uncertainty remains poorly characterized. To address this gap, we introduce OpenEstimate, an extensible, multi-domain benchmark for evaluating LMs on numerical estimation tasks that require models to synthesize significant amounts of background information and express predictions as probabilistic priors. We assess these priors for accuracy and calibration, quantifying their usefulness relative to samples from the true distribution of interest. Across six frontier LMs, we find that LM-elicited priors are often inaccurate and overconfident. Performance improves modestly depending on how uncertainty is elicited from the model, but is largely unaffected by changes in sampling strategy, reasoning effort, or prompt design. The OpenEstimate benchmark thus offers a challenging evaluation for frontier LMs and a platform for developing models that are better at probabilistic estimation and reasoning under uncertainty.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced OpenEstimate, a new benchmark to evaluate language models (LMs) on their ability to reason under uncertainty using real-world data. This benchmark assesses how well LMs can make numerical estimates while dealing with incomplete information. The study found that LMs often produce inaccurate and overly confident predictions. This matters now because it highlights the need for better evaluation methods in AI, particularly in critical fields like healthcare and finance.",
+  "why_it_matters": [
+    "This impacts developers and researchers who need reliable AI models for real-world applications, ensuring they can handle uncertainty effectively.",
+    "At a market level, this could shift how AI models are evaluated, emphasizing the importance of probabilistic reasoning in various industries."
+  ],
+  "lenses": {
+    "eli12": "OpenEstimate is like a test for students that focuses not just on correct answers but also on how well they can guess when they don't know everything. It shows that while AI can access a lot of information, it struggles with making good predictions under uncertainty. This matters for everyday people because better AI could lead to more reliable services in healthcare and finance.",
+    "pm": "For product managers and founders, OpenEstimate signals a need for AI solutions that can handle uncertainty in user scenarios, which is crucial for applications in finance and healthcare. It highlights the potential for improved user experience by developing models that provide more accurate estimates. This could ultimately lead to better decision-making tools for users.",
+    "engineer": "From a technical perspective, OpenEstimate evaluates LMs on numerical estimation tasks, focusing on the accuracy and calibration of their probabilistic priors. The study revealed that six advanced LMs often generate overconfident predictions, with only modest improvements based on how uncertainty is elicited. This indicates a need for engineers to refine models to enhance their reasoning capabilities under uncertainty."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-21T03:49:28.262Z",
+  "updated_at": "2025-10-21T03:49:28.262Z",
+  "processing_order": 1761018568262
+}

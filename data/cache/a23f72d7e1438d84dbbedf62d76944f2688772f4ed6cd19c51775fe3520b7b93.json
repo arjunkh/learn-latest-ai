@@ -1,0 +1,31 @@
+{
+  "content_hash": "a23f72d7e1438d84dbbedf62d76944f2688772f4ed6cd19c51775fe3520b7b93",
+  "share_id": "hel4sk",
+  "title": "HugAgent: Evaluating LLMs in Simulating Human-Like Individual Reasoning on Open-Ended Tasks",
+  "optimized_headline": "HugAgent: How LLMs Mimic Human Reasoning in Open-Ended Challenges",
+  "url": "https://arxiv.org/abs/2510.15144",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.15144v1 Announce Type: new \nAbstract: Simulating human reasoning in open-ended tasks has been a long-standing aspiration in AI and cognitive science. While large language models now approximate human responses at scale, they remain tuned to population-level consensus, often erasing the individuality of reasoning styles and belief trajectories. To advance the vision of more human-like re",
+  "raw_body": "arXiv:2510.15144v1 Announce Type: new \nAbstract: Simulating human reasoning in open-ended tasks has been a long-standing aspiration in AI and cognitive science. While large language models now approximate human responses at scale, they remain tuned to population-level consensus, often erasing the individuality of reasoning styles and belief trajectories. To advance the vision of more human-like reasoning in machines, we introduce HugAgent (Human-Grounded Agent Benchmark), a benchmark for average-to-individual reasoning adaptation. The task is to predict how a specific person would reason and update their beliefs in novel scenarios, given partial evidence of their past views. HugAgent adopts a dual-track design: a synthetic track for scale and systematic stress tests, and a human track for ecologically valid, \"out-loud\" reasoning data. This design enables scalable, reproducible evaluation of intra-agent fidelity: whether models can capture not just what people believe, but how their reasoning evolves. Experiments with state-of-the-art LLMs reveal persistent adaptation gaps, positioning HugAgent as the first extensible benchmark for aligning machine reasoning with the individuality of human thought. Our benchmark and chatbot are open-sourced as HugAgent (https://anonymous.4open.science/r/HugAgent) and TraceYourThinking (https://anonymous.4open.science/r/trace-your-thinking).",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced HugAgent, a new benchmark aimed at improving how AI simulates individual human reasoning in open-ended tasks. Current large language models often reflect group consensus rather than unique reasoning styles. HugAgent features a dual-track design to evaluate both synthetic and human reasoning, highlighting significant adaptation gaps in existing models. This development matters now as it pushes AI closer to understanding and mimicking human thought processes more accurately.",
+  "why_it_matters": [
+    "HugAgent could enhance AI applications in personalized education and therapy, providing tailored responses based on individual reasoning styles.",
+    "This benchmark marks a shift towards more nuanced AI, potentially transforming how we interact with technology by making it more human-like in understanding and reasoning."
+  ],
+  "lenses": {
+    "eli12": "HugAgent is like a new test that helps AI think more like individuals rather than just a crowd. It checks how well AI can adapt its reasoning based on a person's past beliefs. This is important because it could lead to smarter AI that understands us better, making it more useful in everyday life.",
+    "pm": "For product managers, HugAgent signals a need to rethink how AI tools cater to individual user needs. By focusing on personalized reasoning, products could become more efficient and effective. This means considering how AI adapts to unique user perspectives, potentially improving user engagement and satisfaction.",
+    "engineer": "HugAgent employs a dual-track design to evaluate AI reasoning, combining synthetic scenarios with real human reasoning data. This approach allows for scalable testing of how well models adapt their reasoning over time. Initial experiments show persistent gaps in adaptation, emphasizing the need for further refinement in aligning AI with individual human thought processes."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-21T03:49:44.448Z",
+  "updated_at": "2025-10-21T03:49:44.448Z",
+  "processing_order": 1761018584451
+}
