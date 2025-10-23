@@ -1,0 +1,31 @@
+{
+  "content_hash": "ce50b49a6e361451f3418913812b93e4f910c256a6d8ea1584f516c5e8eb1c17",
+  "share_id": "fffosz",
+  "title": "FABRIC: Framework for Agent-Based Realistic Intelligence Creation",
+  "optimized_headline": "Unveiling FABRIC: A New Framework for Realistic Agent-Based Intelligence",
+  "url": "https://arxiv.org/abs/2510.17995",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-22T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.17995v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as agents, expected to decompose goals, invoke tools, and verify results in dynamic environments. Realizing these capabilities requires access to agentic data- structured interaction records that couple user intents with tool specifications, argument-grounded calls, and verifiable execution trac",
+  "raw_body": "arXiv:2510.17995v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as agents, expected to decompose goals, invoke tools, and verify results in dynamic environments. Realizing these capabilities requires access to agentic data- structured interaction records that couple user intents with tool specifications, argument-grounded calls, and verifiable execution traces. However, collecting such data from human annotators is costly, time-consuming, and difficult to scale.\n  We present a unified framework for synthesizing agentic data using only LLMs, without any human-in-the-loop supervision. This framework decomposes generation into modular pipelines that produce complete interaction records spanning task specifications, tool definitions, policy pseudocode, natural language exchanges, and execution traces. Records conform to strict syntactic and semantic constraints, ensuring machine-parseability and faithful alignment across inputs, outputs, and tool calls.\n  Beyond single tasks, there is support for both multi-task and multi-turn agent interactions, enabling the construction of datasets that reflect the full spectrum of tool-use competencies. To ensure quality and consistency, the framework integrates constrained generation formats, JSON-schema validation, and judge-based filtering.\n  This paper formalizes the schema for agentic records, details the prompt design principles that guide generation, and introduces scalable pipelines for high-quality synthetic data. By providing a reproducible, LLM-only alternative to manual collection, hence advancing the development of agentic LLMs capable of robust tool use.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced a new framework, FABRIC, to create structured interaction records for large language models (LLMs) without human supervision. This framework generates data that links user intentions to tool specifications and execution traces. It allows for the production of high-quality datasets that reflect complex task interactions, potentially reducing the costs and time associated with traditional data collection methods. This advancement could significantly enhance the capabilities of LLMs in dynamic environments.",
+  "why_it_matters": [
+    "This framework could streamline data generation for AI developers, making it easier to train models for real-world applications.",
+    "It signals a shift towards more automated data synthesis in AI, potentially lowering barriers for innovation in agent-based systems."
+  ],
+  "lenses": {
+    "eli12": "The FABRIC framework helps AI models learn from structured data without needing human input. Think of it like teaching a child to build with blocks by showing them how to stack without direct supervision. This matters because it could make AI smarter and more efficient in handling tasks on its own.",
+    "pm": "For product managers, FABRIC represents a way to efficiently gather the data needed to improve AI tools. By reducing reliance on human annotators, it could lower costs and speed up development cycles. This means faster iterations and more robust features for users.",
+    "engineer": "Technically, FABRIC uses LLMs to synthesize agentic data, creating structured records that adhere to strict syntactic and semantic rules. It employs modular pipelines for generating task specifications, tool definitions, and execution traces, ensuring machine-readability. This could enhance the training of models for complex interactions while maintaining quality through JSON-schema validation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-23T03:49:19.844Z",
+  "updated_at": "2025-10-23T03:49:19.844Z",
+  "processing_order": 1761191359846
+}
