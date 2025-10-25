@@ -1,0 +1,31 @@
+{
+  "content_hash": "ffb7e5b851089bc6b3a3cf211d47aa1cbd7f79c032d021d5eaa616723c266d2f",
+  "share_id": "dgmbcz",
+  "title": "DAG-Math: Graph-Guided Mathematical Reasoning in LLMs",
+  "optimized_headline": "Unlocking DAG-Math: How Graphs Enhance Mathematical Reasoning in LLMs",
+  "url": "https://arxiv.org/abs/2510.19842",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-24T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.19842v1 Announce Type: new \nAbstract: Large Language Models (LLMs) demonstrate strong performance on mathematical problems when prompted with Chain-of-Thought (CoT), yet it remains unclear whether this success stems from search, rote procedures, or rule-consistent reasoning. To address this, we propose modeling CoT as a certain rule-based stochastic process over directed acyclic graphs ",
+  "raw_body": "arXiv:2510.19842v1 Announce Type: new \nAbstract: Large Language Models (LLMs) demonstrate strong performance on mathematical problems when prompted with Chain-of-Thought (CoT), yet it remains unclear whether this success stems from search, rote procedures, or rule-consistent reasoning. To address this, we propose modeling CoT as a certain rule-based stochastic process over directed acyclic graphs (DAGs), where nodes represent intermediate derivation states and edges encode rule applications. Within this framework, we introduce logical closeness, a metric that quantifies how well a model's CoT trajectory (i.e., the LLM's final output) adheres to the DAG structure, providing evaluation beyond classical PASS@k metrics. Building on this, we introduce the DAG-MATH CoT format and construct a benchmark that guides LLMs to generate CoT trajectories in this format, thereby enabling the evaluation of their reasoning ability under our framework. Across standard mathematical reasoning datasets, our analysis uncovers statistically significant differences in reasoning fidelity among representative LLM families-even when PASS@k is comparable-highlighting gaps between final-answer accuracy and rule-consistent derivation. Our framework provides a balance between free-form CoT and formal proofs systems, offering actionable diagnostics for LLMs reasoning evaluation. Our benchmark and code are available at: https://github.com/YuanheZ/DAG-MATH-Formatted-CoT.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a new framework called DAG-Math to better understand how Large Language Models (LLMs) solve mathematical problems using Chain-of-Thought (CoT) reasoning. This model uses directed acyclic graphs (DAGs) to represent reasoning steps, allowing for a new evaluation metric called logical closeness. Their findings reveal significant differences in reasoning fidelity among various LLMs, even when their final answers appear accurate. This matters now as it enhances our ability to diagnose and improve LLM reasoning capabilities.",
+  "why_it_matters": [
+    "This framework could help educators and students by providing deeper insights into LLM reasoning, improving learning tools. ",
+    "It signals a shift in how AI models are evaluated, emphasizing the importance of reasoning processes over just final outputs."
+  ],
+  "lenses": {
+    "eli12": "DAG-Math is like a map that shows the paths LLMs take to solve math problems. Instead of just looking at the answers, it helps us see how they reason through the steps. This is important for teachers and students because it can lead to better educational tools that support learning.",
+    "pm": "For product managers, DAG-Math highlights the need to focus on the reasoning processes of LLMs, not just their outputs. This could lead to more efficient AI tools that help users understand complex problems better. It also suggests that enhancing reasoning capabilities could differentiate products in a crowded market.",
+    "engineer": "Technically, DAG-Math models CoT as a stochastic process over directed acyclic graphs, where nodes represent derivation states. The introduction of logical closeness as a metric offers a new way to evaluate reasoning fidelity beyond traditional measures. This framework could lead to better diagnostics for LLMs, revealing gaps in their reasoning strategies."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-25T03:49:42.025Z",
+  "updated_at": "2025-10-25T03:49:42.025Z",
+  "processing_order": 1761364182028
+}
