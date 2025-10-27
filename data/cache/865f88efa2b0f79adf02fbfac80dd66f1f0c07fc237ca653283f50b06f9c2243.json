@@ -1,0 +1,31 @@
+{
+  "content_hash": "865f88efa2b0f79adf02fbfac80dd66f1f0c07fc237ca653283f50b06f9c2243",
+  "share_id": "smhpko",
+  "title": "Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM",
+  "optimized_headline": "Transform Hand-Drawn Floor Plans into 3D BIM with AI Collaboration",
+  "url": "https://arxiv.org/abs/2510.20838",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-27T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.20838v1 Announce Type: new \nAbstract: This study introduces a human-in-the-loop pipeline that converts unscaled, hand-drawn floor plan sketches into semantically consistent 3D BIM models. The workflow leverages multimodal large language models (MLLMs) within a multi-agent framework, combining perceptual extraction, human feedback, schema validation, and automated BIM scripting. Initiall",
+  "raw_body": "arXiv:2510.20838v1 Announce Type: new \nAbstract: This study introduces a human-in-the-loop pipeline that converts unscaled, hand-drawn floor plan sketches into semantically consistent 3D BIM models. The workflow leverages multimodal large language models (MLLMs) within a multi-agent framework, combining perceptual extraction, human feedback, schema validation, and automated BIM scripting. Initially, sketches are iteratively refined into a structured JSON layout of walls, doors, and windows. Later, these layouts are transformed into executable scripts that generate 3D BIM models. Experiments on ten diverse floor plans demonstrate strong convergence: openings (doors, windows) are captured with high reliability in the initial pass, while wall detection begins around 83% and achieves near-perfect alignment after a few feedback iterations. Across all categories, precision, recall, and F1 scores remain above 0.83, and geometric errors (RMSE, MAE) progressively decrease to zero through feedback corrections. This study demonstrates how MLLM-driven multi-agent reasoning can make BIM creation accessible to both experts and non-experts using only freehand sketches.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study presents Sketch2BIM, a pipeline that transforms hand-drawn floor plans into 3D Building Information Modeling (BIM) models. This process uses multimodal large language models and involves human feedback to refine initial sketches into structured layouts. Experiments show that the system captures openings like doors and windows with high reliability, achieving over 83% accuracy in wall detection. This development could democratize BIM creation, making it easier for both professionals and amateurs to visualize architectural designs.",
+  "why_it_matters": [
+    "This tool could significantly help architects and designers by simplifying the transition from sketches to digital models, enhancing workflow efficiency.",
+    "At a market level, it indicates a shift towards integrating AI in design processes, potentially lowering barriers for non-experts in architecture and construction."
+  ],
+  "lenses": {
+    "eli12": "Sketch2BIM is like turning a rough draft into a polished story. You start with a simple sketch, and through a series of helpful edits, it becomes a detailed 3D model. This matters because it allows more people to bring their ideas to life without needing advanced technical skills.",
+    "pm": "For product managers and founders, Sketch2BIM addresses a user need for accessible design tools. By streamlining the process of creating 3D models from sketches, it could reduce costs and improve efficiency in architectural projects. This innovation may open new markets for design software aimed at non-professionals.",
+    "engineer": "Technically, Sketch2BIM employs a multi-agent framework with multimodal large language models to process hand-drawn sketches. Initial tests show wall detection accuracy starting at 83% and improving with user feedback, while precision and recall metrics exceed 0.83. This suggests that integrating human input significantly enhances model accuracy and reliability."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-27T04:02:20.018Z",
+  "updated_at": "2025-10-27T04:02:20.018Z",
+  "processing_order": 1761537740018
+}

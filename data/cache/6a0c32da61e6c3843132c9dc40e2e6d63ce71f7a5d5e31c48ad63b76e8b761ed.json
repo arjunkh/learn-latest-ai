@@ -1,0 +1,31 @@
+{
+  "content_hash": "6a0c32da61e6c3843132c9dc40e2e6d63ce71f7a5d5e31c48ad63b76e8b761ed",
+  "share_id": "cos0vt",
+  "title": "Customizing Open Source LLMs for Quantitative Medication Attribute Extraction across Heterogeneous EHR Systems",
+  "optimized_headline": "Tailoring Open Source LLMs for Extracting Medication Data from Diverse EHRs",
+  "url": "https://arxiv.org/abs/2510.21027",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-27T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.21027v1 Announce Type: new \nAbstract: Harmonizing medication data across Electronic Health Record (EHR) systems is a persistent barrier to monitoring medications for opioid use disorder (MOUD). In heterogeneous EHR systems, key prescription attributes are scattered across differently formatted fields and freetext notes. We present a practical framework that customizes open source large ",
+  "raw_body": "arXiv:2510.21027v1 Announce Type: new \nAbstract: Harmonizing medication data across Electronic Health Record (EHR) systems is a persistent barrier to monitoring medications for opioid use disorder (MOUD). In heterogeneous EHR systems, key prescription attributes are scattered across differently formatted fields and freetext notes. We present a practical framework that customizes open source large language models (LLMs), including Llama, Qwen, Gemma, and MedGemma, to extract a unified set of MOUD prescription attributes (prescription date, drug name, duration, total quantity, daily quantity, and refills) from heterogeneous, site specific data and compute a standardized metric of medication coverage, \\emph{MOUD days}, per patient. Our pipeline processes records directly in a fixed JSON schema, followed by lightweight normalization and cross-field consistency checks. We evaluate the system on prescription level EHR data from five clinics in a national OUD study (25{,}605 records from 1{,}257 patients), using a previously annotated benchmark of 10{,}369 records (776 patients) as the ground truth. Performance is reported as coverage (share of records with a valid, matchable output) and record-level exact-match accuracy. Larger models perform best overall: Qwen2.5-32B achieves \\textbf{93.4\\%} coverage with \\textbf{93.0\\%} exact-match accuracy across clinics, and MedGemma-27B attains \\textbf{93.1\\%}/\\textbf{92.2\\%}. A brief error review highlights three common issues and fixes: imputing missing dosage fields using within-drug norms, handling monthly/weekly injectables (e.g., Vivitrol) by setting duration from the documented schedule, and adding unit checks to prevent mass units (e.g., ``250 g'') from being misread as daily counts. By removing brittle, site-specific ETL and supporting local, privacy-preserving deployment, this approach enables consistent cross-site analyses of MOUD exposure, adherence, and retention in real-world settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a framework to improve medication data extraction from diverse Electronic Health Record (EHR) systems for monitoring opioid use disorder (MOUD). By customizing open-source large language models like Qwen and MedGemma, they achieved impressive coverage rates—Qwen2.5-32B reached 93.4% coverage and 93.0% accuracy. This advancement matters now as it could streamline data analysis across clinics, enhancing patient care and treatment monitoring.",
+  "why_it_matters": [
+    "Clinics managing opioid use disorder could see improved data consistency, leading to better patient monitoring and outcomes.",
+    "This framework reflects a broader trend toward using AI in healthcare, aiming to harmonize data across varied systems for improved patient insights."
+  ],
+  "lenses": {
+    "eli12": "This study shows how AI can help make sense of messy health records. Think of it like organizing a jumbled closet; the new framework sorts through scattered medication info to create a clearer picture. This matters for everyday people because better data could lead to more effective treatments for opioid use disorder.",
+    "pm": "For product managers and founders, this framework highlights a critical user need for streamlined data extraction in healthcare. By improving efficiency and consistency in medication tracking, it could reduce costs associated with manual data handling. A practical implication is the potential for integrating this AI-driven solution into existing EHR systems to enhance patient care.",
+    "engineer": "The framework leverages advanced large language models like Qwen2.5-32B and MedGemma-27B to extract medication attributes from EHRs, achieving up to 93.4% coverage. It processes data in a fixed JSON schema and implements normalization checks to ensure accuracy. Key challenges include handling missing dosage information and ensuring correct unit interpretations, which the framework addresses effectively."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-27T04:02:52.396Z",
+  "updated_at": "2025-10-27T04:02:52.396Z",
+  "processing_order": 1761537772399
+}
