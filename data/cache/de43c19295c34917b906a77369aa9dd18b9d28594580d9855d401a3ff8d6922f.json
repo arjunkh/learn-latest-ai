@@ -1,0 +1,31 @@
+{
+  "content_hash": "de43c19295c34917b906a77369aa9dd18b9d28594580d9855d401a3ff8d6922f",
+  "share_id": "pps66b",
+  "title": "PREFINE: Personalized Story Generation via Simulated User Critics and User-Specific Rubric Generation",
+  "optimized_headline": "\"Explore PREFINE: How Personalized Story Generation Uses User Feedback for Improvement\"",
+  "url": "https://arxiv.org/abs/2510.21721",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-28T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.21721v1 Announce Type: new \nAbstract: While recent advances in Large Language Models (LLMs) have improved the quality of creative text generation, significant challenges remain in producing personalized stories that reflect individual user preferences. Conventional approaches rely on explicit feedback or fine-tuning, which presents practical issues regarding user burden, data collection",
+  "raw_body": "arXiv:2510.21721v1 Announce Type: new \nAbstract: While recent advances in Large Language Models (LLMs) have improved the quality of creative text generation, significant challenges remain in producing personalized stories that reflect individual user preferences. Conventional approaches rely on explicit feedback or fine-tuning, which presents practical issues regarding user burden, data collection, computational costs, and privacy. In this work, we propose PREFINE (Persona-and-Rubric Guided Critique-and-Refine), a novel framework that extends the Critique-and-Refine paradigm to personalization. PREFINE constructs a pseudo-user agent from a user's interaction history and generates user-specific rubrics (evaluation criteria). By having this agent critique and refine outputs on the user's behalf based on these tailored rubrics, our method achieves personalized generation without requiring parameter updates or direct user feedback. We conducted a comprehensive evaluation on the PerDOC and PerMPST story datasets. We designed three baseline methods and several model variants to verify the contribution of each component of our framework. In automatic evaluations (LLM-as-a-Judge), PREFINE achieved higher win rates and statistically significant scores than the baselines, without compromising general story quality. Analysis of the model variants confirmed that both the pseudo-user agent and the user-specific rubrics are crucial for enhancing personalization performance. Beyond story generation, our approach holds potential for enabling efficient personalization in broader applications, such as dialogue systems, education, and recommendation.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called PREFINE aims to enhance personalized story generation using simulated user critics and tailored evaluation criteria. This method avoids the need for user feedback or extensive data collection, addressing common issues like privacy and user burden. In tests, PREFINE outperformed baseline models in generating personalized content without sacrificing overall quality. This development could significantly improve how AI understands and caters to individual preferences in creative writing.",
+  "why_it_matters": [
+    "Writers and content creators could benefit from more relevant and engaging stories tailored to their audience's tastes, enhancing user experience.",
+    "This framework may signal a shift in AI development towards more user-centric models, making personalization easier and more efficient across various applications."
+  ],
+  "lenses": {
+    "eli12": "PREFINE is like having a personalized assistant that learns what you like and helps create stories just for you. Instead of asking you for constant feedback, it uses past interactions to understand your preferences. This could make reading and storytelling more enjoyable for everyone, as stories would resonate better with individual tastes.",
+    "pm": "For product managers and founders, PREFINE highlights a new way to meet user needs without overwhelming them with feedback requests. By automating personalization through simulated user interactions, it could reduce costs and improve efficiency in content generation. This approach might inspire new features in products that require tailored user experiences.",
+    "engineer": "PREFINE leverages a pseudo-user agent and user-specific rubrics to refine story generation without updating model parameters. In evaluations on the PerDOC and PerMPST datasets, it achieved higher win rates and significant scores compared to baseline methods. The findings underscore the importance of these components in enhancing personalization while maintaining story quality."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-29T03:59:36.428Z",
+  "updated_at": "2025-10-29T03:59:36.428Z",
+  "processing_order": 1761710376429
+}
