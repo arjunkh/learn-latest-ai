@@ -1,0 +1,31 @@
+{
+  "content_hash": "b92187ce6480780066e1acbfa4ccdcf7641a5add0cf70ce5dad85b8cb1c99404",
+  "share_id": "sylj7p",
+  "title": "Scheduling Your LLM Reinforcement Learning with Reasoning Trees",
+  "optimized_headline": "Unlocking LLM Potential: Scheduling Reinforcement Learning with Reasoning Trees Explained",
+  "url": "https://arxiv.org/abs/2510.24832",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.24832v1 Announce Type: new \nAbstract: Using Reinforcement Learning with Verifiable Rewards (RLVR) to optimize Large Language Models (LLMs) can be conceptualized as progressively editing a query's `Reasoning Tree'. This process involves exploring nodes (tokens) and dynamically modifying the model's policy at each node. When combined with data scheduling, this process yields further gains",
+  "raw_body": "arXiv:2510.24832v1 Announce Type: new \nAbstract: Using Reinforcement Learning with Verifiable Rewards (RLVR) to optimize Large Language Models (LLMs) can be conceptualized as progressively editing a query's `Reasoning Tree'. This process involves exploring nodes (tokens) and dynamically modifying the model's policy at each node. When combined with data scheduling, this process yields further gains in data efficiency and accuracy. However, existing RLVR data scheduling methods typically rely on path-based metrics to rank queries, overlooking the reasoning tree structures of these queries. In this paper, we introduce a novel metric, namely Reasoning Score (r-score), which measures the query's learning difficulty based on the structure of its reasoning tree. Based on the r-score, we propose the Reasoning Tree Schedule (Re-Schedule), a scheduling algorithm that constructs a curriculum progressing from structurally simple (high r-score) to complex (low r-score) queries. Experiments on six math-reasoning benchmarks show that Re-Schedule significantly improves average accuracy, achieving gains of up to 3.2%. These strong results validate our approach and demonstrate that a structural understanding of the reasoning tree provides a more powerful and principled foundation for RLVR data scheduling.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach to optimizing Large Language Models (LLMs) using Reinforcement Learning with Verifiable Rewards (RLVR) focuses on editing a query's 'Reasoning Tree.' Researchers introduced the Reasoning Score (r-score) to assess query difficulty based on tree structure, leading to a scheduling algorithm called Re-Schedule. This method improved accuracy by up to 3.2% on math-reasoning tasks. Understanding the reasoning tree structure enhances data scheduling, which could be crucial for future advancements in AI performance.",
+  "why_it_matters": [
+    "This method could directly benefit AI developers by improving model accuracy, making it easier to handle complex queries effectively.",
+    "The introduction of the r-score signifies a shift towards more structured, efficient learning processes in AI, potentially impacting how LLMs are trained in the industry."
+  ],
+  "lenses": {
+    "eli12": "Think of optimizing LLMs like teaching a student how to solve math problems. By understanding which problems are easier or harder based on their structure, we can guide the learning process better. This new method helps AI learn more efficiently, which could lead to smarter, more capable systems that benefit everyone.",
+    "pm": "For product managers and founders, this development highlights the importance of structuring learning processes in AI. By focusing on the reasoning tree, they could enhance user experience through more accurate responses. This approach may also reduce training costs by improving data efficiency.",
+    "engineer": "This research presents a novel metric, the Reasoning Score (r-score), to evaluate the complexity of queries based on their reasoning tree structure. The proposed Re-Schedule algorithm demonstrated a significant accuracy improvement of up to 3.2% on math-reasoning benchmarks. This emphasizes the need for structural insights in optimizing RLVR data scheduling, which could lead to more effective model training."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-10-31T03:54:30.932Z",
+  "updated_at": "2025-10-31T03:54:30.932Z",
+  "processing_order": 1761882870932
+}
