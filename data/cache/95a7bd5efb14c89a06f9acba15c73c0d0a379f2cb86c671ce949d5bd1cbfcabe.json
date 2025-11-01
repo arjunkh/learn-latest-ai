@@ -1,0 +1,31 @@
+{
+  "content_hash": "95a7bd5efb14c89a06f9acba15c73c0d0a379f2cb86c671ce949d5bd1cbfcabe",
+  "share_id": "ssp5am",
+  "title": "Symbolically Scaffolded Play: Designing Role-Sensitive Prompts for Generative NPC Dialogue",
+  "optimized_headline": "\"Creating Engaging NPC Dialogue with Role-Sensitive Play Prompts\"",
+  "url": "https://arxiv.org/abs/2510.25820",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-31T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.25820v1 Announce Type: new \nAbstract: Large Language Models (LLMs) promise to transform interactive games by enabling non-player characters (NPCs) to sustain unscripted dialogue. Yet it remains unclear whether constrained prompts actually improve player experience. We investigate this question through The Interview, a voice-based detective game powered by GPT-4o. A within-subjects usabi",
+  "raw_body": "arXiv:2510.25820v1 Announce Type: new \nAbstract: Large Language Models (LLMs) promise to transform interactive games by enabling non-player characters (NPCs) to sustain unscripted dialogue. Yet it remains unclear whether constrained prompts actually improve player experience. We investigate this question through The Interview, a voice-based detective game powered by GPT-4o. A within-subjects usability study ($N=10$) compared high-constraint (HCP) and low-constraint (LCP) prompts, revealing no reliable experiential differences beyond sensitivity to technical breakdowns. Guided by these findings, we redesigned the HCP into a hybrid JSON+RAG scaffold and conducted a synthetic evaluation with an LLM judge, positioned as an early-stage complement to usability testing. Results uncovered a novel pattern: scaffolding effects were role-dependent: the Interviewer (quest-giver NPC) gained stability, while suspect NPCs lost improvisational believability. These findings overturn the assumption that tighter constraints inherently enhance play. Extending fuzzy-symbolic scaffolding, we introduce \\textit{Symbolically Scaffolded Play}, a framework in which symbolic structures are expressed as fuzzy, numerical boundaries that stabilize coherence where needed while preserving improvisation where surprise sustains engagement.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers explored how different types of prompts affect player experience in NPC dialogue within a voice-based game called The Interview, powered by GPT-4o. They compared high-constraint and low-constraint prompts in a study with 10 participants, finding no significant differences in enjoyment. However, they discovered that the effectiveness of prompts varied by role: while quest-giver NPCs became more stable, suspect NPCs lost their ability to improvise. This matters now as it challenges assumptions about the benefits of strict prompts in gaming.",
+  "why_it_matters": [
+    "Game developers could enhance player engagement by designing prompts that fit NPC roles, improving overall game experience.",
+    "This study indicates a shift in how narrative structures are approached in interactive games, emphasizing the balance between structure and spontaneity."
+  ],
+  "lenses": {
+    "eli12": "This research looked at how prompts for characters in games can change the way players feel about their experience. They found that strict prompts helped some characters stay on track, but made others less believable. It's like trying to control a conversation—too many rules can make it feel stiff. Understanding this could help game designers create more engaging experiences for players.",
+    "pm": "For product managers, this study highlights the importance of tailoring interactions based on character roles in games. By focusing on how prompts can enhance clarity for quest-givers while allowing flexibility for suspects, teams could improve user engagement. This approach may lead to more immersive gameplay, potentially reducing development costs related to player feedback and iteration.",
+    "engineer": "The study tested high-constraint and low-constraint prompts using a within-subjects design with 10 participants, revealing no significant differences in user experience. However, the findings showed that the effectiveness of the prompts was role-dependent, with quest-givers benefiting from tighter constraints while suspects suffered in believability. This suggests that engineers could refine prompt designs to balance stability and improvisation, enhancing NPC interactions."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-01T03:53:31.804Z",
+  "updated_at": "2025-11-01T03:53:31.804Z",
+  "processing_order": 1761969211806
+}

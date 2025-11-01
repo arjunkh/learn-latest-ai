@@ -1,0 +1,31 @@
+{
+  "content_hash": "bc3a4f3f99316a08da479a99c313ae37e80bae633d8dbfbc5133c1ba5d84571b",
+  "share_id": "ttja0d",
+  "title": "Through the Judge's Eyes: Inferred Thinking Traces Improve Reliability of LLM Raters",
+  "optimized_headline": "How Judge Insights Enhance Reliability of LLM Evaluations",
+  "url": "https://arxiv.org/abs/2510.25860",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-31T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.25860v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used as raters for evaluation tasks. However, their reliability is often limited for subjective tasks, when human judgments involve subtle reasoning beyond annotation labels. Thinking traces, the reasoning behind a judgment, are highly informative but challenging to collect and curate. We present a human",
+  "raw_body": "arXiv:2510.25860v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used as raters for evaluation tasks. However, their reliability is often limited for subjective tasks, when human judgments involve subtle reasoning beyond annotation labels. Thinking traces, the reasoning behind a judgment, are highly informative but challenging to collect and curate. We present a human-LLM collaborative framework to infer thinking traces from label-only annotations. The proposed framework uses a simple and effective rejection sampling method to reconstruct these traces at scale. These inferred thinking traces are applied to two complementary tasks: (1) fine-tuning open LLM raters; and (2) synthesizing clearer annotation guidelines for proprietary LLM raters. Across multiple datasets, our methods lead to significantly improved LLM-human agreement. Additionally, the refined annotation guidelines increase agreement among different LLM models. These results suggest that LLMs can serve as practical proxies for otherwise unrevealed human thinking traces, enabling label-only corpora to be extended into thinking-trace-augmented resources that enhance the reliability of LLM raters.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces a framework that enhances the reliability of large language models (LLMs) as raters for subjective evaluation tasks. By inferring 'thinking traces'—the reasoning behind judgments—from label-only annotations, the study shows a significant improvement in agreement between LLMs and human raters. This is achieved through a rejection sampling method, leading to better annotation guidelines. As LLMs become more integrated into evaluation processes, understanding their reasoning could greatly improve their effectiveness.",
+  "why_it_matters": [
+    "This framework could help organizations relying on LLMs for evaluations, ensuring more accurate assessments based on inferred reasoning.",
+    "It indicates a shift toward using LLMs not just for labeling but also for understanding complex human reasoning, potentially transforming evaluation processes."
+  ],
+  "lenses": {
+    "eli12": "This study shows how we can make AI smarter at understanding human reasoning. By figuring out the thought process behind decisions, LLMs can give better feedback. It’s like teaching a student not just to answer questions but to explain their thought process. This could help everyone who relies on AI for evaluations.",
+    "pm": "For product managers and founders, this research highlights a way to enhance user trust in AI evaluations. By improving LLM reliability through inferred reasoning, products could offer more accurate assessments, reducing user frustration. This approach could also lower costs associated with human raters, making AI evaluations more efficient.",
+    "engineer": "From a technical standpoint, the study presents a rejection sampling method to infer thinking traces from label-only annotations, improving LLM-human agreement across multiple datasets. This method allows for fine-tuning LLM raters and creating clearer guidelines for proprietary models. Such advancements can lead to more reliable AI systems in subjective evaluation tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-01T03:53:40.763Z",
+  "updated_at": "2025-11-01T03:53:40.763Z",
+  "processing_order": 1761969220766
+}

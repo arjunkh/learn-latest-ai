@@ -1,0 +1,31 @@
+{
+  "content_hash": "98eab224dd7c3334f0053be1ccd9cd70a16d5fbf5055b963dab3622876c2d7ba",
+  "share_id": "tpeebm",
+  "title": "Towards Piece-by-Piece Explanations for Chess Positions with SHAP",
+  "optimized_headline": "Unlocking Chess Insights: How SHAP Analyzes Positions Step-by-Step",
+  "url": "https://arxiv.org/abs/2510.25775",
+  "source": "ArXiv AI",
+  "published_at": "2025-10-31T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.25775v1 Announce Type: new \nAbstract: Contemporary chess engines offer precise yet opaque evaluations, typically expressed as centipawn scores. While effective for decision-making, these outputs obscure the underlying contributions of individual pieces or patterns. In this paper, we explore adapting SHAP (SHapley Additive exPlanations) to the domain of chess analysis, aiming to attribut",
+  "raw_body": "arXiv:2510.25775v1 Announce Type: new \nAbstract: Contemporary chess engines offer precise yet opaque evaluations, typically expressed as centipawn scores. While effective for decision-making, these outputs obscure the underlying contributions of individual pieces or patterns. In this paper, we explore adapting SHAP (SHapley Additive exPlanations) to the domain of chess analysis, aiming to attribute a chess engines evaluation to specific pieces on the board. By treating pieces as features and systematically ablating them, we compute additive, per-piece contributions that explain the engines output in a locally faithful and human-interpretable manner. This method draws inspiration from classical chess pedagogy, where players assess positions by mentally removing pieces, and grounds it in modern explainable AI techniques. Our approach opens new possibilities for visualization, human training, and engine comparison. We release accompanying code and data to foster future research in interpretable chess AI.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a method using SHAP (SHapley Additive exPlanations) to clarify chess engine evaluations, which are often expressed as centipawn scores. This approach assigns specific contributions to individual pieces, making the analysis more understandable for players. By systematically removing pieces to see their impact, the method echoes traditional chess learning techniques. This advancement could enhance player training and improve how engines are compared, making chess analysis more accessible.",
+  "why_it_matters": [
+    "Chess players can gain deeper insights into their games, making it easier to learn from mistakes and improve strategies.",
+    "This development signals a shift towards more transparent AI in gaming, potentially influencing other fields where explainability is crucial."
+  ],
+  "lenses": {
+    "eli12": "A new method helps explain chess engine evaluations by showing how individual pieces contribute to the game's outcome. Think of it like a coach breaking down a play to highlight what each player did. This clarity could help players understand their decisions better and improve their skills over time.",
+    "pm": "For product managers and founders, this approach could enhance user engagement by providing clearer insights into chess strategies. By making engine evaluations understandable, you could reduce user frustration and increase retention. This clarity might also inspire new features or tools for learning and training.",
+    "engineer": "The researchers adapted SHAP to analyze chess positions, attributing evaluations to specific pieces by systematically ablating them. This method not only improves interpretability but also aligns with classical chess teaching methods. The release of code and data could support further research in making chess AI more transparent."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-01T03:53:10.895Z",
+  "updated_at": "2025-11-01T03:53:10.895Z",
+  "processing_order": 1761969190895
+}
