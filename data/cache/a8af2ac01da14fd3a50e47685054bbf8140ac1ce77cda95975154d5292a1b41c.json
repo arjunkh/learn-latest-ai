@@ -1,0 +1,31 @@
+{
+  "content_hash": "a8af2ac01da14fd3a50e47685054bbf8140ac1ce77cda95975154d5292a1b41c",
+  "share_id": "iksox8",
+  "title": "Inverse Knowledge Search over Verifiable Reasoning: Synthesizing a Scientific Encyclopedia from a Long Chains-of-Thought Knowledge Base",
+  "optimized_headline": "How Inverse Knowledge Search Creates a Scientific Encyclopedia from Reasoning Chains",
+  "url": "https://arxiv.org/abs/2510.26854",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-04T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2510.26854v1 Announce Type: new \nAbstract: Most scientific materials compress reasoning, presenting conclusions while omitting the derivational chains that justify them. This compression hinders verification by lacking explicit, step-wise justifications and inhibits cross-domain links by collapsing the very pathways that establish the logical and causal connections between concepts. We intro",
+  "raw_body": "arXiv:2510.26854v1 Announce Type: new \nAbstract: Most scientific materials compress reasoning, presenting conclusions while omitting the derivational chains that justify them. This compression hinders verification by lacking explicit, step-wise justifications and inhibits cross-domain links by collapsing the very pathways that establish the logical and causal connections between concepts. We introduce a scalable framework that decompresses scientific reasoning, constructing a verifiable Long Chain-of-Thought (LCoT) knowledge base and projecting it into an emergent encyclopedia, SciencePedia. Our pipeline operationalizes an endpoint-driven, reductionist strategy: a Socratic agent, guided by a curriculum of around 200 courses, generates approximately 3 million first-principles questions. To ensure high fidelity, multiple independent solver models generate LCoTs, which are then rigorously filtered by prompt sanitization and cross-model answer consensus, retaining only those with verifiable endpoints. This verified corpus powers the Brainstorm Search Engine, which performs inverse knowledge search -- retrieving diverse, first-principles derivations that culminate in a target concept. This engine, in turn, feeds the Plato synthesizer, which narrates these verified chains into coherent articles. The initial SciencePedia comprises approximately 200,000 fine-grained entries spanning mathematics, physics, chemistry, biology, engineering, and computation. In evaluations across six disciplines, Plato-synthesized articles (conditioned on retrieved LCoTs) exhibit substantially higher knowledge-point density and significantly lower factual error rates than an equally-prompted baseline without retrieval (as judged by an external LLM). Built on this verifiable LCoT knowledge base, this reasoning-centric approach enables trustworthy, cross-domain scientific synthesis at scale and establishes the foundation for an ever-expanding encyclopedia.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework has been developed to enhance scientific reasoning by creating a verifiable knowledge base called SciencePedia. This system generates around 3 million first-principles questions and compiles approximately 200,000 detailed entries across various scientific fields. The approach significantly improves the accuracy of synthesized articles, showing lower factual error rates compared to traditional methods. This innovation could reshape how scientific knowledge is accessed and verified.",
+  "why_it_matters": [
+    "Researchers and educators could benefit from clearer, more verifiable scientific information, making it easier to validate concepts.",
+    "This development could signal a shift towards more transparent scientific communication, fostering interdisciplinary collaboration and innovation."
+  ],
+  "lenses": {
+    "eli12": "Imagine if every scientific article included a clear roadmap of how the conclusions were reached. This new framework does just that by breaking down complex reasoning into understandable steps. It helps ensure that knowledge is not just accepted but can be verified, which is important for everyone relying on science in daily life.",
+    "pm": "For product managers and founders, this framework could enhance user trust by providing clear, verifiable information. It also offers an opportunity to create tools that leverage this knowledge base, potentially reducing costs associated with misinformation. The emphasis on accuracy could improve user satisfaction and engagement.",
+    "engineer": "The framework utilizes a Socratic agent to generate 3 million first-principles questions, creating a Long Chain-of-Thought (LCoT) knowledge base. With a rigorous filtering process ensuring high fidelity, the resulting articles have shown significantly lower factual error rates compared to traditional methods. This could set a new standard for scientific information retrieval and synthesis."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-05T03:55:13.408Z",
+  "updated_at": "2025-11-05T03:55:13.408Z",
+  "processing_order": 1762314913409
+}
