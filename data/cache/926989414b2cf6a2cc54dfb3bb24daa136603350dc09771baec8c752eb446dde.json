@@ -1,0 +1,31 @@
+{
+  "content_hash": "926989414b2cf6a2cc54dfb3bb24daa136603350dc09771baec8c752eb446dde",
+  "share_id": "ecpjzm",
+  "title": "Evaluating Control Protocols for Untrusted AI Agents",
+  "optimized_headline": "Assessing Control Protocols: Can We Trust AI Agents?",
+  "url": "https://arxiv.org/abs/2511.02997",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-06T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.02997v1 Announce Type: new \nAbstract: As AI systems become more capable and widely deployed as agents, ensuring their safe operation becomes critical. AI control offers one approach to mitigating the risk from untrusted AI agents by monitoring their actions and intervening or auditing when necessary. Evaluating the safety of these protocols requires understanding both their effectivenes",
+  "raw_body": "arXiv:2511.02997v1 Announce Type: new \nAbstract: As AI systems become more capable and widely deployed as agents, ensuring their safe operation becomes critical. AI control offers one approach to mitigating the risk from untrusted AI agents by monitoring their actions and intervening or auditing when necessary. Evaluating the safety of these protocols requires understanding both their effectiveness against current attacks and their robustness to adaptive adversaries. In this work, we systematically evaluate a range of control protocols in SHADE-Arena, a dataset of diverse agentic environments. First, we evaluate blue team protocols, including deferral to trusted models, resampling, and deferring on critical actions, against a default attack policy. We find that resampling for incrimination and deferring on critical actions perform best, increasing safety from 50% to 96%. We then iterate on red team strategies against these protocols and find that attack policies with additional affordances, such as knowledge of when resampling occurs or the ability to simulate monitors, can substantially improve attack success rates against our resampling strategy, decreasing safety to 17%. However, deferring on critical actions is highly robust to even our strongest red team strategies, demonstrating the importance of denying attack policies access to protocol internals.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated control protocols for managing untrusted AI agents, highlighting the need for safe AI operations. The research found that resampling and deferring critical actions can boost safety from 50% to 96%. However, advanced attack strategies can significantly reduce safety to 17%. This is crucial as AI systems become more prevalent, emphasizing the importance of robust control mechanisms.",
+  "why_it_matters": [
+    "This research directly impacts developers and users of AI systems, ensuring safer interactions with AI agents through improved control methods.",
+    "On a broader scale, it signals a shift towards more rigorous safety standards in AI deployment, addressing concerns about untrusted AI behavior."
+  ],
+  "lenses": {
+    "eli12": "As AI gets smarter, keeping it safe is like having a safety net for a tightrope walker. This study shows that certain control methods can greatly improve safety when dealing with unpredictable AI. For everyday people, this means safer AI tools that can be trusted in daily life.",
+    "pm": "For product managers, this study highlights the need for effective safety protocols in AI products. By implementing strategies like resampling and deferring critical actions, they could enhance user trust and reduce risks. This approach not only meets user needs but also improves overall product reliability.",
+    "engineer": "From a technical perspective, the study evaluates control protocols in SHADE-Arena, finding that resampling and deferring actions significantly enhance safety. Notably, while resampling can drop safety to 17% against sophisticated attacks, deferring critical actions remains robust. This underscores the importance of designing AI systems that limit access to internal protocols to prevent exploitation."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-07T03:54:04.860Z",
+  "updated_at": "2025-11-07T03:54:04.860Z",
+  "processing_order": 1762487644860
+}

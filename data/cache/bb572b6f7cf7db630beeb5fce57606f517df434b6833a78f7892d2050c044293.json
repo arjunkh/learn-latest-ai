@@ -1,0 +1,31 @@
+{
+  "content_hash": "bb572b6f7cf7db630beeb5fce57606f517df434b6833a78f7892d2050c044293",
+  "share_id": "ntlkii",
+  "title": "No-Human in the Loop: Agentic Evaluation at Scale for Recommendation",
+  "optimized_headline": "“Exploring Agentic Evaluation for Scalable Recommendations Without Human Oversight”",
+  "url": "https://arxiv.org/abs/2511.03051",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-06T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.03051v1 Announce Type: new \nAbstract: Evaluating large language models (LLMs) as judges is increasingly critical for building scalable and trustworthy evaluation pipelines. We present ScalingEval, a large-scale benchmarking study that systematically compares 36 LLMs, including GPT, Gemini, Claude, and Llama, across multiple product categories using a consensus-driven evaluation protocol",
+  "raw_body": "arXiv:2511.03051v1 Announce Type: new \nAbstract: Evaluating large language models (LLMs) as judges is increasingly critical for building scalable and trustworthy evaluation pipelines. We present ScalingEval, a large-scale benchmarking study that systematically compares 36 LLMs, including GPT, Gemini, Claude, and Llama, across multiple product categories using a consensus-driven evaluation protocol. Our multi-agent framework aggregates pattern audits and issue codes into ground-truth labels via scalable majority voting, enabling reproducible comparison of LLM evaluators without human annotation. Applied to large-scale complementary-item recommendation, the benchmark reports four key findings: (i) Anthropic Claude 3.5 Sonnet achieves the highest decision confidence; (ii) Gemini 1.5 Pro offers the best overall performance across categories; (iii) GPT-4o provides the most favorable latency-accuracy-cost tradeoff; and (iv) GPT-OSS 20B leads among open-source models. Category-level analysis shows strong consensus in structured domains (Electronics, Sports) but persistent disagreement in lifestyle categories (Clothing, Food). These results establish ScalingEval as a reproducible benchmark and evaluation protocol for LLMs as judges, with actionable guidance on scaling, reliability, and model family tradeoffs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study called ScalingEval evaluates 36 large language models (LLMs) like GPT and Gemini to determine their effectiveness as judges for recommendations. Key findings include that Anthropic's Claude 3.5 Sonnet has the highest decision confidence and Gemini 1.5 Pro performs best overall. This research matters now as it sets a standard for evaluating AI models without human input, fostering trust in automated systems.",
+  "why_it_matters": [
+    "Businesses and developers can rely on these evaluations to select the best LLMs for their applications, enhancing user experiences.",
+    "This study signals a shift towards automated evaluation methods, reducing reliance on human annotators and increasing efficiency in AI model assessments."
+  ],
+  "lenses": {
+    "eli12": "ScalingEval is like a sports tournament for AI models, where they compete to see who makes the best recommendations. It found that some models, like Gemini, are better overall, while others shine in specific areas. This matters because it helps everyday users find products they’ll love without sifting through endless options.",
+    "pm": "For product managers and founders, ScalingEval provides insights into which LLMs can enhance user recommendations. Knowing that Gemini excels overall while GPT-4o balances speed and cost could guide decisions on model selection. This could lead to better user satisfaction and improved product performance.",
+    "engineer": "The ScalingEval study systematically benchmarks LLMs using a consensus-driven protocol, revealing that Claude 3.5 Sonnet has the highest decision confidence. Gemini 1.5 Pro stands out for overall performance, while GPT-OSS 20B leads in the open-source category. These findings highlight the importance of scalable evaluation methods in developing reliable AI systems."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-07T03:54:24.076Z",
+  "updated_at": "2025-11-07T03:54:24.076Z",
+  "processing_order": 1762487664078
+}
