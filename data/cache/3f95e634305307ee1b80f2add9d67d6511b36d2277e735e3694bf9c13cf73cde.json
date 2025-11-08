@@ -1,0 +1,31 @@
+{
+  "content_hash": "3f95e634305307ee1b80f2add9d67d6511b36d2277e735e3694bf9c13cf73cde",
+  "share_id": "ecpg29",
+  "title": "Evaluating Control Protocols for Untrusted AI Agents",
+  "optimized_headline": "Assessing Control Protocols for AI Agents: What You Need to Know",
+  "url": "https://arxiv.org/abs/2511.02997",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-07T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.02997v1 Announce Type: new \nAbstract: As AI systems become more capable and widely deployed as agents, ensuring their safe operation becomes critical. AI control offers one approach to mitigating the risk from untrusted AI agents by monitoring their actions and intervening or auditing when necessary. Evaluating the safety of these protocols requires understanding both their effectivenes",
+  "raw_body": "arXiv:2511.02997v1 Announce Type: new \nAbstract: As AI systems become more capable and widely deployed as agents, ensuring their safe operation becomes critical. AI control offers one approach to mitigating the risk from untrusted AI agents by monitoring their actions and intervening or auditing when necessary. Evaluating the safety of these protocols requires understanding both their effectiveness against current attacks and their robustness to adaptive adversaries. In this work, we systematically evaluate a range of control protocols in SHADE-Arena, a dataset of diverse agentic environments. First, we evaluate blue team protocols, including deferral to trusted models, resampling, and deferring on critical actions, against a default attack policy. We find that resampling for incrimination and deferring on critical actions perform best, increasing safety from 50% to 96%. We then iterate on red team strategies against these protocols and find that attack policies with additional affordances, such as knowledge of when resampling occurs or the ability to simulate monitors, can substantially improve attack success rates against our resampling strategy, decreasing safety to 17%. However, deferring on critical actions is highly robust to even our strongest red team strategies, demonstrating the importance of denying attack policies access to protocol internals.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated control protocols for untrusted AI agents, focusing on how to ensure their safe operation. The research found that resampling and deferring on critical actions improved safety from 50% to 96%. However, attackers can exploit knowledge of these protocols, reducing safety to just 17% in some scenarios. This highlights the ongoing challenge of securing AI systems as they become more capable and widely used.",
+  "why_it_matters": [
+    "This research directly impacts developers and users of AI systems, emphasizing the need for robust safety measures against potential threats.",
+    "It signals a broader industry shift toward prioritizing safety and resilience in AI, reflecting growing concerns over untrusted agents in various applications."
+  ],
+  "lenses": {
+    "eli12": "The study looks at how to keep AI agents safe from attacks. It tested different strategies and found that some methods can greatly improve safety. For example, one approach increased safety from 50% to 96%. This matters because as AI becomes more common, ensuring its safe operation is crucial for everyone.",
+    "pm": "For product managers, this study highlights the importance of incorporating robust safety protocols in AI applications. The findings suggest that methods like resampling can significantly enhance safety, but they also reveal vulnerabilities that could be exploited. Understanding these dynamics could help in designing products that are both effective and secure.",
+    "engineer": "The research systematically evaluated control protocols using the SHADE-Arena dataset, testing blue team strategies like resampling and deferring critical actions. Resampling increased safety to 96%, but red team strategies reduced it to 17% when attackers exploited protocol knowledge. Notably, deferring on critical actions remained robust against strong attacks, underscoring the need to protect protocol internals."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-08T03:49:12.674Z",
+  "updated_at": "2025-11-08T03:49:12.674Z",
+  "processing_order": 1762573752674
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "0b0f9ac74749394426621c068f6cf7788243b82c71e1c372e8c1225e013ce3f9",
+  "share_id": "ntlk0s",
+  "title": "No-Human in the Loop: Agentic Evaluation at Scale for Recommendation",
+  "optimized_headline": "\"How Agentic Evaluation Transforms Recommendation Systems Without Human Oversight\"",
+  "url": "https://arxiv.org/abs/2511.03051",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-07T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.03051v1 Announce Type: new \nAbstract: Evaluating large language models (LLMs) as judges is increasingly critical for building scalable and trustworthy evaluation pipelines. We present ScalingEval, a large-scale benchmarking study that systematically compares 36 LLMs, including GPT, Gemini, Claude, and Llama, across multiple product categories using a consensus-driven evaluation protocol",
+  "raw_body": "arXiv:2511.03051v1 Announce Type: new \nAbstract: Evaluating large language models (LLMs) as judges is increasingly critical for building scalable and trustworthy evaluation pipelines. We present ScalingEval, a large-scale benchmarking study that systematically compares 36 LLMs, including GPT, Gemini, Claude, and Llama, across multiple product categories using a consensus-driven evaluation protocol. Our multi-agent framework aggregates pattern audits and issue codes into ground-truth labels via scalable majority voting, enabling reproducible comparison of LLM evaluators without human annotation. Applied to large-scale complementary-item recommendation, the benchmark reports four key findings: (i) Anthropic Claude 3.5 Sonnet achieves the highest decision confidence; (ii) Gemini 1.5 Pro offers the best overall performance across categories; (iii) GPT-4o provides the most favorable latency-accuracy-cost tradeoff; and (iv) GPT-OSS 20B leads among open-source models. Category-level analysis shows strong consensus in structured domains (Electronics, Sports) but persistent disagreement in lifestyle categories (Clothing, Food). These results establish ScalingEval as a reproducible benchmark and evaluation protocol for LLMs as judges, with actionable guidance on scaling, reliability, and model family tradeoffs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new benchmarking study called ScalingEval evaluates 36 large language models (LLMs) like GPT and Gemini as judges for recommendation systems. Key findings include that Anthropic's Claude 3.5 Sonnet has the highest decision confidence, while Gemini 1.5 Pro excels in overall performance. This research highlights the potential for LLMs to assess recommendations without human input, making it timely as industries seek scalable and trustworthy AI solutions.",
+  "why_it_matters": [
+    "Businesses relying on recommendations could benefit from more accurate and efficient evaluations, reducing reliance on human reviewers.",
+    "This study signals a shift towards automated evaluation systems, potentially reshaping how companies approach AI-driven decision-making."
+  ],
+  "lenses": {
+    "eli12": "ScalingEval is like a competition where different AI models are tested to see which one makes the best recommendations. It shows that some models, like Gemini 1.5 Pro, perform better overall, while others have strengths in specific areas. This matters to everyday people because it could lead to smarter, more personalized suggestions in online shopping or streaming services.",
+    "pm": "For product managers, ScalingEval provides insights into which AI models can enhance recommendation systems. Knowing that Gemini 1.5 Pro offers the best performance could help in choosing technology that meets user needs efficiently. It suggests that investing in high-performing models might improve user satisfaction and engagement.",
+    "engineer": "The ScalingEval study employs a multi-agent framework to evaluate LLMs without human input, using majority voting for consensus-driven results. It identifies Anthropic Claude 3.5 Sonnet as having the highest decision confidence and GPT-4o as optimal for latency-accuracy-cost. This benchmarking approach offers a reproducible method for comparing LLMs, though it notes variability in lifestyle categories like Clothing and Food."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-08T03:49:27.178Z",
+  "updated_at": "2025-11-08T03:49:27.178Z",
+  "processing_order": 1762573767180
+}

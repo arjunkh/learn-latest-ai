@@ -1,0 +1,31 @@
+{
+  "content_hash": "edc4fbe3a2f8e67d11757a3c95a7f71f55279c4093881054b4024383313a5339",
+  "share_id": "elles0",
+  "title": "Epidemiology of Large Language Models: A Benchmark for Observational Distribution Knowledge",
+  "optimized_headline": "Exploring Large Language Models: A New Benchmark in Epidemiological Insights",
+  "url": "https://arxiv.org/abs/2511.03070",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-07T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.03070v1 Announce Type: new \nAbstract: Artificial intelligence (AI) systems hold great promise for advancing various scientific disciplines, and are increasingly used in real-world applications. Despite their remarkable progress, further capabilities are expected in order to achieve more general types of intelligence. A critical distinction in this context is between factual knowledge, w",
+  "raw_body": "arXiv:2511.03070v1 Announce Type: new \nAbstract: Artificial intelligence (AI) systems hold great promise for advancing various scientific disciplines, and are increasingly used in real-world applications. Despite their remarkable progress, further capabilities are expected in order to achieve more general types of intelligence. A critical distinction in this context is between factual knowledge, which can be evaluated against true or false answers (e.g., \"what is the capital of England?\"), and probabilistic knowledge, reflecting probabilistic properties of the real world (e.g., \"what is the sex of a computer science graduate in the US?\"). In this paper, our goal is to build a benchmark for understanding the capabilities of LLMs in terms of knowledge of probability distributions describing the real world. Given that LLMs are trained on vast amounts of text, it may be plausible that they internalize aspects of these distributions. Indeed, LLMs are touted as powerful universal approximators of real-world distributions. At the same time, classical results in statistics, known as curse of dimensionality, highlight fundamental challenges in learning distributions in high dimensions, challenging the notion of universal distributional learning. In this work, we develop the first benchmark to directly test this hypothesis, evaluating whether LLMs have access to empirical distributions describing real-world populations across domains such as economics, health, education, and social behavior. Our results demonstrate that LLMs perform poorly overall, and do not seem to internalize real-world statistics naturally. When interpreted in the context of Pearl's Causal Hierarchy (PCH), our benchmark demonstrates that language models do not contain knowledge on observational distributions (Layer 1 of PCH), and thus the Causal Hierarchy Theorem implies that interventional (Layer 2) and counterfactual (Layer 3) knowledge of these models is also limited.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study examines how well large language models (LLMs) understand real-world probability distributions. Researchers created a benchmark to test LLMs on their grasp of empirical distributions in areas like economics and health. The findings reveal that LLMs struggle with this task, indicating they do not naturally internalize real-world statistics. This matters now because it highlights limitations in AI's understanding of complex data, which could impact its application in various fields.",
+  "why_it_matters": [
+    "These findings could affect developers and researchers relying on LLMs for accurate data representations in fields like healthcare and social sciences.",
+    "The results suggest a broader need for improvement in AI models, as their current limitations may hinder advancements in data-driven decision-making across industries."
+  ],
+  "lenses": {
+    "eli12": "This research looks at how well AI can understand real-world data. Imagine trying to guess the average height of people in a city just by reading stories about them. The study shows that AI models often miss the mark, which is important because accurate data understanding can help improve everything from healthcare to education.",
+    "pm": "For product managers and founders, this study emphasizes the importance of accurate data representation in AI products. Users expect reliable insights, and if LLMs struggle with real-world statistics, it could lead to flawed decision-making tools. This highlights the need for continued refinement of AI capabilities to meet user needs effectively.",
+    "engineer": "From a technical perspective, this benchmark reveals that LLMs do not possess strong observational distribution knowledge, failing to meet expectations of universal approximators. The study highlights the limitations related to the curse of dimensionality in high-dimensional data. As a result, engineers should be cautious about relying on LLMs for probabilistic insights without further enhancements."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-08T03:49:38.707Z",
+  "updated_at": "2025-11-08T03:49:38.707Z",
+  "processing_order": 1762573778710
+}
