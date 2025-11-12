@@ -1,0 +1,31 @@
+{
+  "content_hash": "468d1de36beeb8d2d8f8906945aea43d5b708407f48a0388d6804b912564391b",
+  "share_id": "rrajg0",
+  "title": "Real-Time Reasoning Agents in Evolving Environments",
+  "optimized_headline": "Exploring Real-Time Reasoning Agents in Dynamic Environments: How They Adapt",
+  "url": "https://arxiv.org/abs/2511.04898",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-11T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.04898v1 Announce Type: new \nAbstract: Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nat",
+  "raw_body": "arXiv:2511.04898v1 Announce Type: new \nAbstract: Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nature. We introduce real-time reasoning as a new problem formulation for agents in evolving environments and build Real-Time Reasoning Gym to demonstrate it. We study two paradigms for deploying language models in agents: (1) reactive agents, which employ language models with bounded reasoning computation for rapid responses, and (2) planning agents, which allow extended reasoning computation for complex problems. Our experiments show that even state-of-the-art models struggle with making logical and timely judgments in either paradigm. To address this limitation, we propose AgileThinker, which simultaneously engages both reasoning paradigms. AgileThinker consistently outperforms agents engaging only one reasoning paradigm as the task difficulty and time pressure rise, effectively balancing reasoning depth and response latency. Our work establishes real-time reasoning as a critical testbed for developing practical agents and provides a foundation for research in temporally constrained AI systems, highlighting a path toward real-time capable agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new approach called real-time reasoning for AI agents, which must make quick and logical decisions in ever-changing environments. They developed the Real-Time Reasoning Gym to test this concept and found that even advanced language models struggle under pressure. The new model, AgileThinker, combines two reasoning styles and shows improved performance as tasks become more complex. This work is crucial for creating AI that can effectively operate in real-world scenarios where timing is essential.",
+  "why_it_matters": [
+    "This could enhance AI applications in critical fields like healthcare or emergency response, where timely decisions can save lives.",
+    "It indicates a shift towards developing AI systems that can handle real-time challenges, potentially transforming industries reliant on quick decision-making."
+  ],
+  "lenses": {
+    "eli12": "Imagine a driver who needs to make quick decisions while navigating traffic. Real-time reasoning helps AI agents do just that, allowing them to respond to changes in their environment swiftly. This matters because it could lead to smarter AI that assists us in daily tasks, making our lives easier and safer.",
+    "pm": "For product managers, this development highlights the importance of building AI that can adapt quickly to user needs. AgileThinker’s ability to balance speed and depth could lead to more efficient solutions, reducing costs and enhancing user satisfaction. This approach could shape future products that rely on real-time data.",
+    "engineer": "From a technical perspective, the introduction of AgileThinker marks a significant advancement in AI reasoning capabilities. It combines reactive and planning paradigms, enabling agents to perform better under time constraints. The experiments revealed that existing models struggle with real-time tasks, emphasizing the need for innovative approaches like AgileThinker."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-12T03:55:25.416Z",
+  "updated_at": "2025-11-12T03:55:25.416Z",
+  "processing_order": 1762919725419
+}

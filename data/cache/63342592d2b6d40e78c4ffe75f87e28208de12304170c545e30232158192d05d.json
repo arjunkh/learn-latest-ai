@@ -1,0 +1,31 @@
+{
+  "content_hash": "63342592d2b6d40e78c4ffe75f87e28208de12304170c545e30232158192d05d",
+  "share_id": "dornej",
+  "title": "DMA: Online RAG Alignment with Human Feedback",
+  "optimized_headline": "\"Exploring DMA's Online RAG Alignment: How Human Feedback Shapes AI\"",
+  "url": "https://arxiv.org/abs/2511.04880",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-11T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.04880v1 Announce Type: new \nAbstract: Retrieval-augmented generation (RAG) systems often rely on static retrieval, limiting adaptation to evolving intent and content drift. We introduce Dynamic Memory Alignment (DMA), an online learning framework that systematically incorporates multi-granularity human feedback to align ranking in interactive settings. DMA organizes document-, list-, an",
+  "raw_body": "arXiv:2511.04880v1 Announce Type: new \nAbstract: Retrieval-augmented generation (RAG) systems often rely on static retrieval, limiting adaptation to evolving intent and content drift. We introduce Dynamic Memory Alignment (DMA), an online learning framework that systematically incorporates multi-granularity human feedback to align ranking in interactive settings. DMA organizes document-, list-, and response-level signals into a coherent learning pipeline: supervised training for pointwise and listwise rankers, policy optimization driven by response-level preferences, and knowledge distillation into a lightweight scorer for low-latency serving. Throughout this paper, memory refers to the model's working memory, which is the entire context visible to the LLM for In-Context Learning.\n  We adopt a dual-track evaluation protocol mirroring deployment: (i) large-scale online A/B ablations to isolate the utility of each feedback source, and (ii) few-shot offline tests on knowledge-intensive benchmarks. Online, a multi-month industrial deployment further shows substantial improvements in human engagement. Offline, DMA preserves competitive foundational retrieval while yielding notable gains on conversational QA (TriviaQA, HotpotQA). Taken together, these results position DMA as a principled approach to feedback-driven, real-time adaptation in RAG without sacrificing baseline capability.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Dynamic Memory Alignment (DMA), a framework that enhances retrieval-augmented generation (RAG) systems by incorporating human feedback in real-time. This method organizes feedback into a structured learning pipeline, improving both ranking and response quality. In extensive online tests, DMA showed significant boosts in user engagement and performed well in conversational question-answering benchmarks. This development is crucial as it allows AI systems to adapt more effectively to changing user needs and content.",
+  "why_it_matters": [
+    "DMA could immediately benefit developers and businesses by improving user interactions with AI systems through real-time feedback integration.",
+    "This signals a broader shift towards more adaptive AI technologies, enhancing responsiveness and relevance in various applications across industries."
+  ],
+  "lenses": {
+    "eli12": "Dynamic Memory Alignment (DMA) helps AI systems learn from human feedback as they interact. Think of it like a student who gets real-time tutoring while taking a test, allowing them to adjust their answers based on guidance. This matters because it means AI can provide more accurate and helpful responses, making technology more user-friendly for everyone.",
+    "pm": "For product managers, DMA addresses the need for AI systems that can adapt to user feedback without losing performance. This could lead to more efficient resource use and better user satisfaction. A practical implication is that companies could see improved engagement metrics as their AI tools become more responsive to real-time user input.",
+    "engineer": "DMA leverages multi-granularity human feedback to enhance RAG systems, employing a structured pipeline for training rankers and optimizing responses. The framework demonstrated substantial improvements in user engagement during a multi-month deployment and maintained competitive performance on benchmarks like TriviaQA and HotpotQA. This approach emphasizes real-time adaptation without compromising the foundational capabilities of retrieval models."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-12T03:55:17.379Z",
+  "updated_at": "2025-11-12T03:55:17.379Z",
+  "processing_order": 1762919717381
+}
