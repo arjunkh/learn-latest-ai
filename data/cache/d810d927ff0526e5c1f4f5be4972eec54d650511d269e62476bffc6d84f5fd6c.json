@@ -1,0 +1,31 @@
+{
+  "content_hash": "d810d927ff0526e5c1f4f5be4972eec54d650511d269e62476bffc6d84f5fd6c",
+  "share_id": "pki0b5",
+  "title": "Procedural Knowledge Improves Agentic LLM Workflows",
+  "optimized_headline": "How Procedural Knowledge Enhances LLM Workflows for Greater Agentic Control",
+  "url": "https://arxiv.org/abs/2511.07568",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-12T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.07568v1 Announce Type: new \nAbstract: Large language models (LLMs) often struggle when performing agentic tasks without substantial tool support, prom-pt engineering, or fine tuning. Despite research showing that domain-dependent, procedural knowledge can dramatically increase planning efficiency, little work evaluates its potential for improving LLM performance on agentic tasks that ma",
+  "raw_body": "arXiv:2511.07568v1 Announce Type: new \nAbstract: Large language models (LLMs) often struggle when performing agentic tasks without substantial tool support, prom-pt engineering, or fine tuning. Despite research showing that domain-dependent, procedural knowledge can dramatically increase planning efficiency, little work evaluates its potential for improving LLM performance on agentic tasks that may require implicit planning. We formalize, implement, and evaluate an agentic LLM workflow that leverages procedural knowledge in the form of a hierarchical task network (HTN). Empirical results of our implementation show that hand-coded HTNs can dramatically improve LLM performance on agentic tasks, and using HTNs can boost a 20b or 70b parameter LLM to outperform a much larger 120b parameter LLM baseline. Furthermore, LLM-created HTNs improve overall performance, though less so. The results suggest that leveraging expertise--from humans, documents, or LLMs--to curate procedural knowledge will become another important tool for improving LLM workflows.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights that large language models (LLMs) can significantly improve their performance on complex tasks by utilizing procedural knowledge, specifically through hierarchical task networks (HTNs). In tests, a 20 billion or 70 billion parameter LLM outperformed a 120 billion parameter model when using HTNs. This finding indicates that incorporating structured knowledge can enhance LLM efficiency and effectiveness in agentic workflows. As LLMs are increasingly relied upon for complex tasks, understanding these improvements is crucial now.",
+  "why_it_matters": [
+    "This advancement could help developers create more efficient AI tools, making them more effective for users who rely on LLMs for complex tasks.",
+    "On a broader scale, it suggests a shift towards integrating structured knowledge in AI, potentially reshaping how LLMs are trained and utilized across industries."
+  ],
+  "lenses": {
+    "eli12": "Think of LLMs as students who can excel in their studies if given the right study guides. By using hierarchical task networks, these models can plan better and tackle complex tasks more effectively. This matters to everyday users because it means AI could become more reliable and helpful in managing intricate tasks, making life easier.",
+    "pm": "For product managers, this research indicates a way to enhance LLM capabilities by integrating procedural knowledge. By focusing on user needs for efficiency in task completion, teams could reduce costs and improve user satisfaction. A practical implication is that incorporating HTNs into LLM workflows could lead to faster and more reliable AI applications.",
+    "engineer": "From a technical perspective, the study demonstrates that hierarchical task networks can significantly boost LLM performance on agentic tasks. Notably, a 20 billion or 70 billion parameter LLM surpassed a 120 billion parameter baseline when using HTNs. This suggests that procedural knowledge, whether sourced from humans or documents, could be vital in optimizing LLMs for complex tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-13T04:00:10.025Z",
+  "updated_at": "2025-11-13T04:00:10.025Z",
+  "processing_order": 1763006410028
+}
