@@ -1,0 +1,31 @@
+{
+  "content_hash": "50eb0f844239ea16a4172fcdf5c960b8e8661b8c8f8d90af41b60015132ec156",
+  "share_id": "pki25o",
+  "title": "Procedural Knowledge Improves Agentic LLM Workflows",
+  "optimized_headline": "How Procedural Knowledge Enhances Agentic Workflows in LLMs",
+  "url": "https://arxiv.org/abs/2511.07568",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-13T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.07568v1 Announce Type: new \nAbstract: Large language models (LLMs) often struggle when performing agentic tasks without substantial tool support, prom-pt engineering, or fine tuning. Despite research showing that domain-dependent, procedural knowledge can dramatically increase planning efficiency, little work evaluates its potential for improving LLM performance on agentic tasks that ma",
+  "raw_body": "arXiv:2511.07568v1 Announce Type: new \nAbstract: Large language models (LLMs) often struggle when performing agentic tasks without substantial tool support, prom-pt engineering, or fine tuning. Despite research showing that domain-dependent, procedural knowledge can dramatically increase planning efficiency, little work evaluates its potential for improving LLM performance on agentic tasks that may require implicit planning. We formalize, implement, and evaluate an agentic LLM workflow that leverages procedural knowledge in the form of a hierarchical task network (HTN). Empirical results of our implementation show that hand-coded HTNs can dramatically improve LLM performance on agentic tasks, and using HTNs can boost a 20b or 70b parameter LLM to outperform a much larger 120b parameter LLM baseline. Furthermore, LLM-created HTNs improve overall performance, though less so. The results suggest that leveraging expertise--from humans, documents, or LLMs--to curate procedural knowledge will become another important tool for improving LLM workflows.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights that large language models (LLMs) often face challenges with agentic tasks without significant tool support or fine-tuning. By implementing hierarchical task networks (HTNs), researchers found that LLMs with procedural knowledge can significantly enhance planning efficiency. For instance, a 20 billion parameter LLM outperformed a 120 billion parameter LLM when using HTNs. This finding is crucial as it suggests new methods to enhance LLM performance in complex tasks.",
+  "why_it_matters": [
+    "This could lead to more effective AI tools for developers and businesses, enabling better task management and execution.",
+    "The findings indicate a shift towards integrating procedural knowledge in AI, which could redefine how LLMs are trained and utilized across industries."
+  ],
+  "lenses": {
+    "eli12": "This research shows that large language models, like AI assistants, can work better if they understand the steps needed to complete tasks. Think of it like a recipe that guides someone through cooking. This improvement could make everyday AI tools more reliable and helpful for everyone.",
+    "pm": "For product managers and founders, this means that incorporating procedural knowledge into LLMs could significantly enhance user experience. By improving task execution efficiency, businesses could save time and resources. This creates an opportunity to develop more sophisticated AI applications that meet user needs effectively.",
+    "engineer": "From a technical perspective, the study demonstrates that hierarchical task networks (HTNs) can enhance the performance of LLMs on agentic tasks. The research shows that a 20 billion parameter LLM, when using HTNs, outperformed a 120 billion parameter model. This suggests a potential for optimizing LLM workflows by integrating structured procedural knowledge."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-14T03:57:47.395Z",
+  "updated_at": "2025-11-14T03:57:47.395Z",
+  "processing_order": 1763092667398
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "8caeab144fe1d05da231ba2ded53e8f758d7c4a320b4355df1c8ef2572aa8bce",
+  "share_id": "aeemqk",
+  "title": "Analysing Environmental Efficiency in AI for X-Ray Diagnosis",
+  "optimized_headline": "Exploring AI's Environmental Efficiency in X-Ray Diagnosis: Key Insights Revealed",
+  "url": "https://arxiv.org/abs/2511.07436",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-13T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.07436v1 Announce Type: new \nAbstract: The integration of AI tools into medical applications has aimed to improve the efficiency of diagnosis. The emergence of large language models (LLMs), such as ChatGPT and Claude, has expanded this integration even further. Because of LLM versatility and ease of use through APIs, these larger models are often utilised even though smaller, custom mode",
+  "raw_body": "arXiv:2511.07436v1 Announce Type: new \nAbstract: The integration of AI tools into medical applications has aimed to improve the efficiency of diagnosis. The emergence of large language models (LLMs), such as ChatGPT and Claude, has expanded this integration even further. Because of LLM versatility and ease of use through APIs, these larger models are often utilised even though smaller, custom models can be used instead. In this paper, LLMs and small discriminative models are integrated into a Mendix application to detect Covid-19 in chest X-rays. These discriminative models are also used to provide knowledge bases for LLMs to improve accuracy. This provides a benchmark study of 14 different model configurations for comparison of accuracy and environmental impact. The findings indicated that while smaller models reduced the carbon footprint of the application, the output was biased towards a positive diagnosis and the output probabilities were lacking confidence. Meanwhile, restricting LLMs to only give probabilistic output caused poor performance in both accuracy and carbon footprint, demonstrating the risk of using LLMs as a universal AI solution. While using the smaller LLM GPT-4.1-Nano reduced the carbon footprint by 94.2% compared to the larger models, this was still disproportionate to the discriminative models; the most efficient solution was the Covid-Net model. Although it had a larger carbon footprint than other small models, its carbon footprint was 99.9% less than when using GPT-4.5-Preview, whilst achieving an accuracy of 95.5%, the highest of all models examined. This paper contributes to knowledge by comparing generative and discriminative models in Covid-19 detection as well as highlighting the environmental risk of using generative tools for classification tasks.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study analyzed the environmental impact of AI models used for X-ray diagnosis, particularly in detecting Covid-19. It compared various configurations, revealing that while smaller models like GPT-4.1-Nano reduced carbon emissions by 94.2%, they struggled with accuracy. In contrast, the Covid-Net model achieved the highest accuracy at 95.5% but had a larger carbon footprint. This highlights the trade-off between efficiency and accuracy in AI applications, raising questions about the sustainability of generative models in healthcare.",
+  "why_it_matters": [
+    "Healthcare professionals could benefit from more accurate diagnostic tools that minimize environmental impact, improving patient outcomes. ",
+    "This study indicates a shift towards prioritizing efficient AI models in medical settings, potentially influencing future AI development and deployment strategies."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how AI models help diagnose Covid-19 from X-rays while considering their environmental effects. Smaller models saved energy but weren't as accurate, like using a low-resolution camera. This matters because finding the right balance could lead to better healthcare solutions that are also eco-friendly.",
+    "pm": "For product managers, this research highlights the importance of balancing accuracy and sustainability in AI tools. Users need reliable diagnostics, but minimizing environmental impact is also crucial. This study suggests that focusing on smaller, efficient models could meet both needs, guiding product development decisions.",
+    "engineer": "The study benchmarks 14 model configurations for Covid-19 detection, revealing that the Covid-Net model achieved 95.5% accuracy while maintaining a 99.9% lower carbon footprint than larger models like GPT-4.5-Preview. However, smaller models showed biases in diagnosis and less confident output. This indicates that while smaller models are environmentally friendly, they may not be universally applicable for all tasks."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-14T03:57:15.350Z",
+  "updated_at": "2025-11-14T03:57:15.350Z",
+  "processing_order": 1763092635350
+}
