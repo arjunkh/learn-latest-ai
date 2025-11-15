@@ -1,0 +1,31 @@
+{
+  "content_hash": "02f7f375f9dea5c140b5772b22277f9238a61fe435022594a23851a415d92e22",
+  "share_id": "eaancg",
+  "title": "An Efficient and Almost Optimal Solver for the Joint Routing-Assignment Problem via Partial JRA and Large-{\\alpha} Optimization",
+  "optimized_headline": "New Solver Enhances Joint Routing-Assignment Efficiency with Large-α Optimization Techniques",
+  "url": "https://arxiv.org/abs/2511.09563",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-14T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.09563v1 Announce Type: new \nAbstract: The Joint Routing-Assignment (JRA) optimization problem simultaneously determines the assignment of items to placeholders and a Hamiltonian cycle that visits each node pair exactly once, with the objective of minimizing total travel cost. Previous studies introduced an exact mixed-integer programming (MIP) solver, along with datasets and a Gurobi im",
+  "raw_body": "arXiv:2511.09563v1 Announce Type: new \nAbstract: The Joint Routing-Assignment (JRA) optimization problem simultaneously determines the assignment of items to placeholders and a Hamiltonian cycle that visits each node pair exactly once, with the objective of minimizing total travel cost. Previous studies introduced an exact mixed-integer programming (MIP) solver, along with datasets and a Gurobi implementation, showing that while the exact approach guarantees optimality, it becomes computationally inefficient for large-scale instances. To overcome this limitation, heuristic methods based on merging algorithms and shaking procedures were proposed, achieving solutions within approximately 1% deviation from the optimum. This work presents a novel and more efficient approach that attains high-accuracy, near-optimal solutions for large-scale JRA problems. The proposed method introduces a Partial Path Reconstructon (PPR) solver that first identifies key item-placeholder pairs to form a reduced subproblem, which is solved efficiently to refine the global solution. Using this PJAR framework, the initial heuristic merging solutions can be further improved, reducing the deviation by half. Moreover, the solution can be iteratively polished with PPR based solver along the optimization path to yield highly accurate tours. Additionally, a global Large-{\\alpha} constraint is incorporated into the JRA model to further enhance solution optimality. Experimental evaluations on benchmark datasets with n = 300, 500, and 1000 demonstrate that the proposed method consistently delivers almost optimal solutions, achieving an average deviation of 0.00% from the ground truth while maintaining high computational efficiency. Beyond the JRA problem, the proposed framework and methodologies exhibit strong potential for broader applications. The Framework can be applied to TSP and related optimization problems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study introduced a new method for solving the Joint Routing-Assignment (JRA) problem, which combines item assignments and routing to minimize travel costs. This approach, using a Partial Path Reconstruction (PPR) solver, achieved nearly optimal solutions with an average deviation of just 0.00% from the best-known results. By improving efficiency for large-scale instances, it could significantly benefit industries relying on complex logistics and routing. This advancement highlights a shift towards more practical optimization methods in operations research.",
+  "why_it_matters": [
+    "Logistics companies could see immediate benefits, as this method enhances route efficiency and reduces costs. This could lead to faster deliveries and improved service.",
+    "On a broader scale, this development reflects a growing trend in optimization towards more efficient, scalable solutions, which could reshape how industries approach complex routing challenges."
+  ],
+  "lenses": {
+    "eli12": "Think of the JRA problem like organizing a delivery route for multiple packages. This new method acts like a smart GPS that not only maps the shortest paths but also assigns packages to drivers efficiently. It matters because better logistics can lead to faster deliveries and lower costs for consumers.",
+    "pm": "For product managers, this new solver addresses the critical user need for efficient routing in logistics. By reducing travel costs and improving delivery times, it could enhance user satisfaction. The practical implication is that integrating this technology could streamline operations and reduce overhead in logistics-heavy products.",
+    "engineer": "This work presents an innovative PPR solver that efficiently narrows down the JRA problem by focusing on key item-placeholder pairs. The model incorporates a global Large-α constraint, improving solution accuracy to an impressive average deviation of 0.00% on benchmark datasets with up to 1000 nodes. This approach not only optimizes JRA but also shows promise for broader applications in related optimization problems."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-15T03:50:45.263Z",
+  "updated_at": "2025-11-15T03:50:45.263Z",
+  "processing_order": 1763178645263
+}
