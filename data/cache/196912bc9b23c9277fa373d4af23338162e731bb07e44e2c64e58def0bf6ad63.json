@@ -1,0 +1,31 @@
+{
+  "content_hash": "196912bc9b23c9277fa373d4af23338162e731bb07e44e2c64e58def0bf6ad63",
+  "share_id": "tslhs6",
+  "title": "The Second Law of Intelligence: Controlling Ethical Entropy in Autonomous Systems",
+  "optimized_headline": "Understanding Ethical Entropy: How the Second Law of Intelligence Shapes Autonomy",
+  "url": "https://arxiv.org/abs/2511.10704",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-17T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.10704v1 Announce Type: new \nAbstract: We propose that unconstrained artificial intelligence obeys a Second Law analogous to thermodynamics, where ethical entropy, defined as a measure of divergence from intended goals, increases spontaneously without continuous alignment work. For gradient-based optimizers, we define this entropy over a finite set of goals {g_i} as S = -{\\Sigma} p(g_i; ",
+  "raw_body": "arXiv:2511.10704v1 Announce Type: new \nAbstract: We propose that unconstrained artificial intelligence obeys a Second Law analogous to thermodynamics, where ethical entropy, defined as a measure of divergence from intended goals, increases spontaneously without continuous alignment work. For gradient-based optimizers, we define this entropy over a finite set of goals {g_i} as S = -{\\Sigma} p(g_i; theta) ln p(g_i; theta), and we prove that its time derivative dS/dt >= 0, driven by exploration noise and specification gaming. We derive the critical stability boundary for alignment work as gamma_crit = (lambda_max / 2) ln N, where lambda_max is the dominant eigenvalue of the Fisher Information Matrix and N is the number of model parameters. Simulations validate this theory. A 7-billion-parameter model (N = 7 x 10^9) with lambda_max = 1.2 drifts from an initial entropy of 0.32 to 1.69 +/- 1.08 nats, while a system regularized with alignment work gamma = 20.4 (1.5 gamma_crit) maintains stability at 0.00 +/- 0.00 nats (p = 4.19 x 10^-17, n = 20 trials). This framework recasts AI alignment as a problem of continuous thermodynamic control, providing a quantitative foundation for maintaining the stability and safety of advanced autonomous systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new paper proposes a 'Second Law of Intelligence' for AI, likening ethical behavior to thermodynamics. It defines 'ethical entropy' as the measure of how much AI diverges from its intended goals, which increases without ongoing alignment efforts. Key findings show that a 7-billion-parameter model's entropy can drift significantly without proper regulation, highlighting the need for continuous control. This research is crucial as AI systems become more autonomous and complex.",
+  "why_it_matters": [
+    "AI developers must now consider ethical entropy, as it directly affects system performance and alignment with human values.",
+    "This research suggests a shift in AI governance, emphasizing the need for ongoing oversight to ensure safety and reliability."
+  ],
+  "lenses": {
+    "eli12": "This paper introduces a new way to think about AI ethics, comparing it to a law in physics. Just like heat can escape a system if not contained, AI can stray from its goals without constant checks. This matters because it means we need to actively manage AI to keep it aligned with our values.",
+    "pm": "For product managers, understanding ethical entropy is vital for developing safe AI products. The research highlights the importance of continuous alignment efforts, which could increase development costs but enhance user trust. This insight could guide product design to ensure features align with ethical standards.",
+    "engineer": "The paper establishes a quantitative framework for AI alignment, introducing the concept of ethical entropy and its mathematical representation. It shows that a 7-billion-parameter model's entropy increased significantly without alignment work, while a regulated system maintained stability. This emphasizes the need for continuous control mechanisms in advanced AI systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-18T03:55:37.341Z",
+  "updated_at": "2025-11-18T03:55:37.341Z",
+  "processing_order": 1763438137341
+}
