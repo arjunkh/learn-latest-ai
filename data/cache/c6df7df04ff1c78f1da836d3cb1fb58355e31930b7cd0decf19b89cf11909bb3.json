@@ -1,0 +1,31 @@
+{
+  "content_hash": "c6df7df04ff1c78f1da836d3cb1fb58355e31930b7cd0decf19b89cf11909bb3",
+  "share_id": "prsspr",
+  "title": "Picking a Representative Set of Solutions in Multiobjective Optimization: Axioms, Algorithms, and Experiments",
+  "optimized_headline": "Exploring Effective Solutions in Multiobjective Optimization: Key Insights and Findings",
+  "url": "https://arxiv.org/abs/2511.10716",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.10716v1 Announce Type: new \nAbstract: Many real-world decision-making problems involve optimizing multiple objectives simultaneously, rendering the selection of the most preferred solution a non-trivial problem: All Pareto optimal solutions are viable candidates, and it is typically up to a decision maker to select one for implementation based on their subjective preferences. To reduce ",
+  "raw_body": "arXiv:2511.10716v1 Announce Type: new \nAbstract: Many real-world decision-making problems involve optimizing multiple objectives simultaneously, rendering the selection of the most preferred solution a non-trivial problem: All Pareto optimal solutions are viable candidates, and it is typically up to a decision maker to select one for implementation based on their subjective preferences. To reduce the cognitive load on the decision maker, previous work has introduced the Pareto pruning problem, where the goal is to compute a fixed-size subset of Pareto optimal solutions that best represent the full set, as evaluated by a given quality measure. Reframing Pareto pruning as a multiwinner voting problem, we conduct an axiomatic analysis of existing quality measures, uncovering several unintuitive behaviors. Motivated by these findings, we introduce a new measure, directed coverage. We also analyze the computational complexity of optimizing various quality measures, identifying previously unknown boundaries between tractable and intractable cases depending on the number and structure of the objectives. Finally, we present an experimental evaluation, demonstrating that the choice of quality measure has a decisive impact on the characteristics of the selected set of solutions and that our proposed measure performs competitively or even favorably across a range of settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study tackles the challenge of choosing the best solution from multiple optimal options in decision-making. It introduces a novel measure called directed coverage to help streamline this process, addressing issues with existing quality measures. The research also highlights the complexity of optimizing these measures, revealing new boundaries between easy and difficult cases. This is significant as it could enhance decision-making efficiency in various real-world applications.",
+  "why_it_matters": [
+    "Decision-makers facing multiple objectives could find it easier to choose solutions, reducing mental strain and improving outcomes.",
+    "This research signals a shift in optimization strategies, potentially leading to more effective methods in fields like engineering and economics."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to pick the best ice cream flavor from dozens of options. This study helps simplify that choice by introducing a new way to evaluate flavors, making it easier for people to decide. It matters because clearer choices can lead to better decisions in everyday life, whether in buying products or planning projects.",
+    "pm": "For product managers, this study highlights the importance of selecting the right criteria for evaluating multiple features. By understanding how different measures impact decision-making, they could streamline product development and enhance user satisfaction. The practical implication is that a better selection process could lead to more appealing products that meet diverse user needs.",
+    "engineer": "From a technical perspective, this study redefines the Pareto pruning problem by framing it as a multiwinner voting challenge. It introduces directed coverage as a new quality measure and explores the computational complexity of various measures, identifying new boundaries between tractable and intractable cases. This insight can guide engineers in developing more efficient algorithms for multiobjective optimization tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-19T03:56:03.763Z",
+  "updated_at": "2025-11-19T03:56:03.763Z",
+  "processing_order": 1763524563765
+}

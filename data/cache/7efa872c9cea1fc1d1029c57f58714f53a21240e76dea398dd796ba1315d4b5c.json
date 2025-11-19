@@ -1,0 +1,31 @@
+{
+  "content_hash": "7efa872c9cea1fc1d1029c57f58714f53a21240e76dea398dd796ba1315d4b5c",
+  "share_id": "seayd7",
+  "title": "Structure-Aware Encodings of Argumentation Properties for Clique-width",
+  "optimized_headline": "Unlocking Argumentation Properties: A New Approach to Clique-width Encodings",
+  "url": "https://arxiv.org/abs/2511.10767",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.10767v1 Announce Type: new \nAbstract: Structural measures of graphs, such as treewidth, are central tools in computational complexity resulting in efficient algorithms when exploiting the parameter. It is even known that modern SAT solvers work efficiently on instances of small treewidth. Since these solvers are widely applied, research interests in compact encodings into (Q)SAT for sol",
+  "raw_body": "arXiv:2511.10767v1 Announce Type: new \nAbstract: Structural measures of graphs, such as treewidth, are central tools in computational complexity resulting in efficient algorithms when exploiting the parameter. It is even known that modern SAT solvers work efficiently on instances of small treewidth. Since these solvers are widely applied, research interests in compact encodings into (Q)SAT for solving and to understand encoding limitations. Even more general is the graph parameter clique-width, which unlike treewidth can be small for dense graphs. Although algorithms are available for clique-width, little is known about encodings. We initiate the quest to understand encoding capabilities with clique-width by considering abstract argumentation, which is a robust framework for reasoning with conflicting arguments. It is based on directed graphs and asks for computationally challenging properties, making it a natural candidate to study computational properties. We design novel reductions from argumentation problems to (Q)SAT. Our reductions linearly preserve the clique-width, resulting in directed decomposition-guided (DDG) reductions. We establish novel results for all argumentation semantics, including counting. Notably, the overhead caused by our DDG reductions cannot be significantly improved under reasonable assumptions.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new approach to understanding how clique-width, a graph parameter, can be encoded for argumentation problems. They developed directed decomposition-guided reductions that maintain clique-width while transforming these problems into (Q)SAT. This work is significant because it enhances our understanding of computational complexity in dense graphs, which could impact various applications relying on efficient problem-solving methods.",
+  "why_it_matters": [
+    "This development could help computer scientists and mathematicians better solve complex argumentation problems using efficient encoding methods.",
+    "It signals a shift in focus towards more effective algorithms for dense graphs, which could influence future research and applications in computational complexity."
+  ],
+  "lenses": {
+    "eli12": "This research looks at how we can better solve complex problems involving arguments by using a property called clique-width. Imagine clique-width as a way to measure how tangled a network of arguments is. By finding efficient ways to encode these arguments, everyday applications like dispute resolution or decision-making could become faster and more effective.",
+    "pm": "For product managers and founders, this research highlights a potential breakthrough in solving complex problems efficiently. The focus on clique-width could lead to new tools that address user needs for quick decision-making. This might reduce costs and improve the speed of resolving conflicting information in various applications.",
+    "engineer": "The study introduces directed decomposition-guided reductions that maintain the clique-width of graphs while transforming argumentation problems to (Q)SAT. This approach preserves computational properties across all argumentation semantics, ensuring efficiency in problem-solving. The findings indicate that the overhead from these reductions cannot be significantly improved under reasonable assumptions, suggesting a boundary for future algorithmic enhancements."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-19T03:56:13.329Z",
+  "updated_at": "2025-11-19T03:56:13.329Z",
+  "processing_order": 1763524573332
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "36f46d7755493a86c5c10fd7417c62bc69aed039e95dbc5c168a2647c6f5204e",
+  "share_id": "cff34t",
+  "title": "Co-EPG: A Framework for Co-Evolution of Planning and Grounding in Autonomous GUI Agents",
+  "optimized_headline": "Exploring Co-EPG: How Autonomous GUI Agents Evolve Planning and Grounding",
+  "url": "https://arxiv.org/abs/2511.10705",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.10705v1 Announce Type: new \nAbstract: Graphical User Interface (GUI) task automation constitutes a critical frontier in artificial intelligence research. While effective GUI agents synergistically integrate planning and grounding capabilities, current methodologies exhibit two fundamental limitations: (1) insufficient exploitation of cross-model synergies, and (2) over-reliance on synth",
+  "raw_body": "arXiv:2511.10705v1 Announce Type: new \nAbstract: Graphical User Interface (GUI) task automation constitutes a critical frontier in artificial intelligence research. While effective GUI agents synergistically integrate planning and grounding capabilities, current methodologies exhibit two fundamental limitations: (1) insufficient exploitation of cross-model synergies, and (2) over-reliance on synthetic data generation without sufficient utilization. To address these challenges, we propose Co-EPG, a self-iterative training framework for Co-Evolution of Planning and Grounding. Co-EPG establishes an iterative positive feedback loop: through this loop, the planning model explores superior strategies under grounding-based reward guidance via Group Relative Policy Optimization (GRPO), generating diverse data to optimize the grounding model. Concurrently, the optimized Grounding model provides more effective rewards for subsequent GRPO training of the planning model, fostering continuous improvement. Co-EPG thus enables iterative enhancement of agent capabilities through self-play optimization and training data distillation. On the Multimodal-Mind2Web and AndroidControl benchmarks, our framework outperforms existing state-of-the-art methods after just three iterations without requiring external data. The agent consistently improves with each iteration, demonstrating robust self-enhancement capabilities. This work establishes a novel training paradigm for GUI agents, shifting from isolated optimization to an integrated, self-driven co-evolution approach.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Co-EPG, a new framework aimed at improving how autonomous GUI agents learn and perform tasks. This method enhances the synergy between planning and grounding, overcoming limitations of previous models that relied heavily on synthetic data. Notably, Co-EPG achieved better performance than existing methods after just three iterations without needing external data. This development is significant as it could lead to more efficient and effective GUI automation in various applications.",
+  "why_it_matters": [
+    "Immediate benefits for developers of GUI automation tools, enabling faster and more effective task execution.",
+    "This shift could mark a broader trend in AI towards self-improving systems that rely less on external data and more on iterative learning."
+  ],
+  "lenses": {
+    "eli12": "Co-EPG is like giving a student both a textbook and a tutor who helps them learn better by providing instant feedback. This framework allows GUI agents to learn from their experiences, improving their performance over time. It matters for everyday users because it could lead to smarter applications that handle tasks more efficiently.",
+    "pm": "For product managers, Co-EPG represents a way to enhance user experience by making GUI agents more adaptive and effective. This could reduce development costs and improve efficiency, as agents learn from their interactions. The practical implication is that products could become more intuitive and responsive to user needs.",
+    "engineer": "From a technical perspective, Co-EPG employs Group Relative Policy Optimization (GRPO) to create a feedback loop between planning and grounding models. It outperformed existing benchmarks like Multimodal-Mind2Web and AndroidControl after just three iterations, showcasing its efficiency. The framework's focus on self-play optimization may redefine how we approach training for autonomous agents."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-19T03:55:51.734Z",
+  "updated_at": "2025-11-19T03:55:51.734Z",
+  "processing_order": 1763524551735
+}

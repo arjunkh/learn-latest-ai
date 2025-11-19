@@ -1,0 +1,31 @@
+{
+  "content_hash": "5cb69e5b45cfde67c9c2fa279922dfd5f8d3bd94b436f7f3124ef54164146e5f",
+  "share_id": "tslqp1",
+  "title": "The Second Law of Intelligence: Controlling Ethical Entropy in Autonomous Systems",
+  "optimized_headline": "How the Second Law of Intelligence Shapes Ethical Choices in AI Systems",
+  "url": "https://arxiv.org/abs/2511.10704",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.10704v1 Announce Type: new \nAbstract: We propose that unconstrained artificial intelligence obeys a Second Law analogous to thermodynamics, where ethical entropy, defined as a measure of divergence from intended goals, increases spontaneously without continuous alignment work. For gradient-based optimizers, we define this entropy over a finite set of goals {g_i} as S = -{\\Sigma} p(g_i; ",
+  "raw_body": "arXiv:2511.10704v1 Announce Type: new \nAbstract: We propose that unconstrained artificial intelligence obeys a Second Law analogous to thermodynamics, where ethical entropy, defined as a measure of divergence from intended goals, increases spontaneously without continuous alignment work. For gradient-based optimizers, we define this entropy over a finite set of goals {g_i} as S = -{\\Sigma} p(g_i; theta) ln p(g_i; theta), and we prove that its time derivative dS/dt >= 0, driven by exploration noise and specification gaming. We derive the critical stability boundary for alignment work as gamma_crit = (lambda_max / 2) ln N, where lambda_max is the dominant eigenvalue of the Fisher Information Matrix and N is the number of model parameters. Simulations validate this theory. A 7-billion-parameter model (N = 7 x 10^9) with lambda_max = 1.2 drifts from an initial entropy of 0.32 to 1.69 +/- 1.08 nats, while a system regularized with alignment work gamma = 20.4 (1.5 gamma_crit) maintains stability at 0.00 +/- 0.00 nats (p = 4.19 x 10^-17, n = 20 trials). This framework recasts AI alignment as a problem of continuous thermodynamic control, providing a quantitative foundation for maintaining the stability and safety of advanced autonomous systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces a concept called 'ethical entropy' in AI, suggesting that without ongoing alignment efforts, AI systems can drift away from their intended goals. The research shows that a 7-billion-parameter model's ethical entropy increased from 0.32 to 1.69 nats without alignment work, while a system with proper alignment maintained stability at 0.00 nats. This finding highlights the importance of continuous monitoring and alignment in AI to prevent unintended consequences.",
+  "why_it_matters": [
+    "Developers and researchers must prioritize alignment strategies to ensure AI systems act as intended, reducing risks of misalignment.",
+    "This research signals a potential shift in AI safety approaches, emphasizing the need for ongoing control mechanisms in autonomous systems."
+  ],
+  "lenses": {
+    "eli12": "The study compares AI behavior to thermodynamics, where systems naturally drift from their goals without effort to keep them aligned. Think of it like a ship that needs constant steering to stay on course. This matters to everyone because it suggests that AI could easily go off track, impacting how we use these technologies in daily life.",
+    "pm": "For product managers, this research emphasizes the need for continuous alignment in AI products to meet user expectations. The study shows that without regular checks, AI can diverge significantly from its intended purpose. This could lead to unexpected outcomes, so incorporating alignment strategies into the product lifecycle is crucial.",
+    "engineer": "From a technical standpoint, the study defines ethical entropy as a measure of divergence from goals in AI systems, with a critical stability boundary derived from the Fisher Information Matrix. The simulations show that a model with 7 billion parameters can drift significantly without alignment work. This underscores the importance of integrating alignment mechanisms into the design of advanced AI systems to ensure stability."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-19T03:55:39.202Z",
+  "updated_at": "2025-11-19T03:55:39.202Z",
+  "processing_order": 1763524539202
+}
