@@ -1,0 +1,31 @@
+{
+  "content_hash": "0c0c1ac7e640d0188062e841f872b0a4cee72da6c33e07edc9635ad88668212c",
+  "share_id": "wdsx96",
+  "title": "When AI Does Science: Evaluating the Autonomous AI Scientist KOSMOS in Radiation Biology",
+  "optimized_headline": "Exploring KOSMOS: Can AI Revolutionize Radiation Biology Research?",
+  "url": "https://arxiv.org/abs/2511.13825",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.13825v1 Announce Type: new \nAbstract: Agentic AI \"scientists\" now use language models to search the literature, run analyses, and generate hypotheses. We evaluate KOSMOS, an autonomous AI scientist, on three problems in radiation biology using simple random-gene null benchmarks. Hypothesis 1: baseline DNA damage response (DDR) capacity across cell lines predicts the p53 transcriptional ",
+  "raw_body": "arXiv:2511.13825v1 Announce Type: new \nAbstract: Agentic AI \"scientists\" now use language models to search the literature, run analyses, and generate hypotheses. We evaluate KOSMOS, an autonomous AI scientist, on three problems in radiation biology using simple random-gene null benchmarks. Hypothesis 1: baseline DNA damage response (DDR) capacity across cell lines predicts the p53 transcriptional response after irradiation (GSE30240). Hypothesis 2: baseline expression of OGT and CDO1 predicts the strength of repressed and induced radiation-response modules in breast cancer cells (GSE59732). Hypothesis 3: a 12-gene expression signature predicts biochemical recurrence-free survival after prostate radiotherapy plus androgen deprivation therapy (GSE116918). The DDR-p53 hypothesis was not supported: DDR score and p53 response were weakly negatively correlated (Spearman rho = -0.40, p = 0.76), indistinguishable from random five-gene scores. OGT showed only a weak association (r = 0.23, p = 0.34), whereas CDO1 was a clear outlier (r = 0.70, empirical p = 0.0039). The 12-gene signature achieved a concordance index of 0.61 (p = 0.017) but a non-unique effect size. Overall, KOSMOS produced one well-supported discovery, one plausible but uncertain result, and one false hypothesis, illustrating that AI scientists can generate useful ideas but require rigorous auditing against appropriate null models.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated KOSMOS, an AI scientist, in radiation biology. KOSMOS generated hypotheses about DNA damage response and gene expression but had mixed results. It produced one strong discovery and one false hypothesis, highlighting the need for careful scrutiny. This matters as AI's role in scientific research grows, emphasizing the importance of validation in AI-generated findings.",
+  "why_it_matters": [
+    "Researchers could benefit from AI tools like KOSMOS, which streamline hypothesis generation and data analysis in complex fields like radiation biology.",
+    "The study reflects a broader trend of integrating AI into scientific research, potentially changing how discoveries are made and validated."
+  ],
+  "lenses": {
+    "eli12": "KOSMOS is like a student who can read a lot of books and propose ideas based on what it learns. It found one solid idea but also made a mistake. This shows that while AI can help in science, we still need to check its work to ensure accuracy. For everyday people, this means AI might help scientists discover new treatments more efficiently.",
+    "pm": "For product managers and founders, KOSMOS illustrates the potential of AI to accelerate research and development. However, the mixed results indicate that user needs for accuracy and reliability are crucial. Companies could focus on developing AI tools that not only generate insights but also include robust validation processes to enhance trustworthiness.",
+    "engineer": "KOSMOS utilized language models to analyze radiation biology data, testing hypotheses with specific benchmarks. It revealed a weak negative correlation (Spearman rho = -0.40) for one hypothesis and a stronger association (r = 0.70) for another. These results highlight the importance of using appropriate null models to evaluate AI-generated hypotheses, underscoring the need for rigorous validation in AI applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-20T03:54:36.167Z",
+  "updated_at": "2025-11-20T03:54:36.167Z",
+  "processing_order": 1763610876169
+}
