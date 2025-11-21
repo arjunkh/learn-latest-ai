@@ -1,0 +1,31 @@
+{
+  "content_hash": "098b3d4822c162c50f5c2a8fdee83394d0ca6358d38b8e8d20b258659016fbab",
+  "share_id": "wds2bi",
+  "title": "When AI Does Science: Evaluating the Autonomous AI Scientist KOSMOS in Radiation Biology",
+  "optimized_headline": "Exploring KOSMOS: How an AI Scientist Advances Radiation Biology Research",
+  "url": "https://arxiv.org/abs/2511.13825",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-20T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.13825v1 Announce Type: new \nAbstract: Agentic AI \"scientists\" now use language models to search the literature, run analyses, and generate hypotheses. We evaluate KOSMOS, an autonomous AI scientist, on three problems in radiation biology using simple random-gene null benchmarks. Hypothesis 1: baseline DNA damage response (DDR) capacity across cell lines predicts the p53 transcriptional ",
+  "raw_body": "arXiv:2511.13825v1 Announce Type: new \nAbstract: Agentic AI \"scientists\" now use language models to search the literature, run analyses, and generate hypotheses. We evaluate KOSMOS, an autonomous AI scientist, on three problems in radiation biology using simple random-gene null benchmarks. Hypothesis 1: baseline DNA damage response (DDR) capacity across cell lines predicts the p53 transcriptional response after irradiation (GSE30240). Hypothesis 2: baseline expression of OGT and CDO1 predicts the strength of repressed and induced radiation-response modules in breast cancer cells (GSE59732). Hypothesis 3: a 12-gene expression signature predicts biochemical recurrence-free survival after prostate radiotherapy plus androgen deprivation therapy (GSE116918). The DDR-p53 hypothesis was not supported: DDR score and p53 response were weakly negatively correlated (Spearman rho = -0.40, p = 0.76), indistinguishable from random five-gene scores. OGT showed only a weak association (r = 0.23, p = 0.34), whereas CDO1 was a clear outlier (r = 0.70, empirical p = 0.0039). The 12-gene signature achieved a concordance index of 0.61 (p = 0.017) but a non-unique effect size. Overall, KOSMOS produced one well-supported discovery, one plausible but uncertain result, and one false hypothesis, illustrating that AI scientists can generate useful ideas but require rigorous auditing against appropriate null models.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers evaluated KOSMOS, an autonomous AI scientist, in radiation biology. It tested three hypotheses, with only one producing a strong result. KOSMOS found a notable correlation between CDO1 expression and radiation response, but many predictions were weak or unsupported. This highlights both the potential and limitations of AI in scientific research, emphasizing the need for careful validation.",
+  "why_it_matters": [
+    "This could help researchers streamline hypothesis generation, making it easier to explore complex biological questions.",
+    "The results indicate a shift towards integrating AI in scientific research, suggesting a future where AI assists in hypothesis testing across various fields."
+  ],
+  "lenses": {
+    "eli12": "KOSMOS is like a smart assistant for scientists, helping to come up with research ideas. It looked at how certain genes react to radiation but only found one strong connection. This shows that while AI can help in science, it still needs human oversight to ensure accuracy. For everyday people, this means AI could make scientific research faster and more efficient.",
+    "pm": "For product managers and founders, KOSMOS illustrates the potential of AI to generate hypotheses in complex fields like biology. Understanding user needs for reliable data can drive product development. The mixed results highlight the importance of building tools that support rigorous validation processes, ensuring that AI-generated insights are both useful and credible.",
+    "engineer": "KOSMOS employed language models to evaluate hypotheses related to radiation biology, testing gene expression correlations. While it identified a strong link with CDO1 (r = 0.70, empirical p = 0.0039), other hypotheses were unsupported, demonstrating the need for robust statistical frameworks. This emphasizes the importance of rigorous benchmarking when developing AI models for scientific applications."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-21T03:54:42.703Z",
+  "updated_at": "2025-11-21T03:54:42.703Z",
+  "processing_order": 1763697282705
+}
