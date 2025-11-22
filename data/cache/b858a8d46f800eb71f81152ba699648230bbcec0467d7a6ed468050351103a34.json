@@ -1,0 +1,31 @@
+{
+  "content_hash": "b858a8d46f800eb71f81152ba699648230bbcec0467d7a6ed468050351103a34",
+  "share_id": "tipg0m",
+  "title": "The Illusion of Procedural Reasoning: Measuring Long-Horizon FSM Execution in LLMs",
+  "optimized_headline": "Unveiling Long-Horizon FSM Execution in LLMs: What the Data Reveals",
+  "url": "https://arxiv.org/abs/2511.14777",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-21T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.14777v1 Announce Type: new \nAbstract: Large language models (LLMs) have achieved remarkable results on tasks framed as reasoning problems, yet their true ability to perform procedural reasoning, executing multi-step, rule-based computations remains unclear. Unlike algorithmic systems, which can deterministically execute long-horizon symbolic procedures, LLMs often degrade under extended",
+  "raw_body": "arXiv:2511.14777v1 Announce Type: new \nAbstract: Large language models (LLMs) have achieved remarkable results on tasks framed as reasoning problems, yet their true ability to perform procedural reasoning, executing multi-step, rule-based computations remains unclear. Unlike algorithmic systems, which can deterministically execute long-horizon symbolic procedures, LLMs often degrade under extended reasoning chains, but there is no controlled, interpretable benchmark to isolate and measure this collapse. We introduce Finite-State Machine (FSM) Execution as a minimal, fully interpretable framework for evaluating the procedural reasoning capacity of LLMs. In our setup, the model is given an explicit FSM definition and must execute it step-by-step given input actions, maintaining state consistency over multiple turns. This task requires no world knowledge, only faithful application of deterministic transition rules, making it a direct probe of the model's internal procedural fidelity. We measure both Turn Accuracy and Task Accuracy to disentangle immediate computation from cumulative state maintenance. Empirical results reveal systematic degradation as task horizon or branching complexity increases. Models perform significantly worse when rule retrieval involves high branching factors than when memory span is long. Larger models show improved local accuracy but remain brittle under multi-step reasoning unless explicitly prompted to externalize intermediate steps. FSM-based evaluation offers a transparent, complexity-controlled probe for diagnosing this failure mode and guiding the design of inductive biases that enable genuine long-horizon procedural competence. By grounding reasoning in measurable execution fidelity rather than surface correctness, this work helps establish a rigorous experimental foundation for understanding and improving the algorithmic reliability of LLMs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights that large language models (LLMs) struggle with procedural reasoning, especially in long, multi-step tasks. A new framework called Finite-State Machine (FSM) Execution was introduced to measure LLMs' ability to follow rule-based computations. Findings show that as task complexity increases, LLMs often perform worse, revealing weaknesses in their reasoning capabilities. This matters now as it could guide improvements in LLM design for better reliability in complex tasks.",
+  "why_it_matters": [
+    "LLMs could face challenges in applications requiring precise procedural reasoning, impacting fields like law or programming.",
+    "The findings suggest a shift towards developing benchmarks that focus on algorithmic reliability, influencing future AI research and applications."
+  ],
+  "lenses": {
+    "eli12": "This research shows that while LLMs can handle many reasoning tasks, they often falter on complex, step-by-step problems. Think of it like a student who can answer simple math questions but struggles with long division. Understanding these limitations helps us know when to rely on LLMs and when they might need help.",
+    "pm": "For product managers and founders, this research indicates that LLMs may not be reliable for products requiring complex decision-making. Users might need more straightforward interfaces or prompts to guide LLMs through tasks. This insight could shape product features that enhance user experience and trust.",
+    "engineer": "From a technical perspective, the study introduces FSM Execution as a benchmark to evaluate LLMs' procedural reasoning. It highlights that larger models show better local accuracy but still struggle with multi-step reasoning unless prompted to clarify their thought process. This suggests that improving LLMs may require integrating better mechanisms for handling complex tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-22T03:49:15.189Z",
+  "updated_at": "2025-11-22T03:49:15.189Z",
+  "processing_order": 1763783355189
+}

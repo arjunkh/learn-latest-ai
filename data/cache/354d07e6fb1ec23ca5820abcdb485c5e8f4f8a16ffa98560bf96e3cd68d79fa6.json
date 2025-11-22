@@ -1,0 +1,31 @@
+{
+  "content_hash": "354d07e6fb1ec23ca5820abcdb485c5e8f4f8a16ffa98560bf96e3cd68d79fa6",
+  "share_id": "awbbfv",
+  "title": "Ask WhAI:Probing Belief Formation in Role-Primed LLM Agents",
+  "optimized_headline": "Exploring How Role-Primed LLM Agents Shape Belief Formation",
+  "url": "https://arxiv.org/abs/2511.14780",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-21T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.14780v1 Announce Type: new \nAbstract: We present Ask WhAI, a systems-level framework for inspecting and perturbing belief states in multi-agent interactions. The framework records and replays agent interactions, supports out-of-band queries into each agent's beliefs and rationale, and enables counterfactual evidence injection to test how belief structures respond to new information. We ",
+  "raw_body": "arXiv:2511.14780v1 Announce Type: new \nAbstract: We present Ask WhAI, a systems-level framework for inspecting and perturbing belief states in multi-agent interactions. The framework records and replays agent interactions, supports out-of-band queries into each agent's beliefs and rationale, and enables counterfactual evidence injection to test how belief structures respond to new information. We apply the framework to a medical case simulator notable for its multi-agent shared memory (a time-stamped electronic medical record, or EMR) and an oracle agent (the LabAgent) that holds ground truth lab results revealed only when explicitly queried. We stress-test the system on a multi-specialty diagnostic journey for a child with an abrupt-onset neuropsychiatric presentation. Large language model agents, each primed with strong role-specific priors (\"act like a neurologist\", \"act like an infectious disease specialist\"), write to a shared medical record and interact with a moderator across sequential or parallel encounters. Breakpoints at key diagnostic moments enable pre- and post-event belief queries, allowing us to distinguish entrenched priors from reasoning or evidence-integration effects. The simulation reveals that agent beliefs often mirror real-world disciplinary stances, including overreliance on canonical studies and resistance to counterevidence, and that these beliefs can be traced and interrogated in ways not possible with human experts. By making such dynamics visible and testable, Ask WhAI offers a reproducible way to study belief formation and epistemic silos in multi-agent scientific reasoning.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The Ask WhAI framework allows for deep inspection of belief formation in multi-agent systems, particularly in medical diagnostics. It records agent interactions and can query their beliefs, testing how they respond to new information. In a simulation involving various specialists, researchers found that agents often reflect real-world biases, such as overreliance on established studies. This framework could enhance our understanding of how beliefs are formed and challenged in collaborative environments.",
+  "why_it_matters": [
+    "This could help medical professionals understand how biases influence diagnostic decisions, improving patient outcomes. By revealing how beliefs are formed, it may guide better training for specialists.",
+    "On a broader scale, this framework could shift how we approach multi-agent systems in research, promoting transparency and adaptability in scientific reasoning."
+  ],
+  "lenses": {
+    "eli12": "The Ask WhAI framework is like a detective's notebook for AI agents, allowing us to see how they form beliefs and make decisions. By recording their interactions and testing their responses to new information, we can uncover biases that might affect their reasoning. This matters because it could lead to better decision-making in fields like medicine, ultimately benefiting patients.",
+    "pm": "For product managers and founders, Ask WhAI highlights the importance of understanding how AI systems form beliefs and make decisions. By revealing biases and decision-making processes, it could inform the design of more effective AI tools. This could lead to enhanced user trust and improved outcomes in applications like healthcare.",
+    "engineer": "Technically, Ask WhAI enables the inspection of belief states in LLM agents through recorded interactions and out-of-band queries. By applying it to a medical case simulator, researchers observed that agents' beliefs often mirrored real-world biases, like overreliance on established studies. This framework allows for a systematic approach to studying belief formation, which could inform future AI model designs."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-22T03:49:32.416Z",
+  "updated_at": "2025-11-22T03:49:32.416Z",
+  "processing_order": 1763783372418
+}

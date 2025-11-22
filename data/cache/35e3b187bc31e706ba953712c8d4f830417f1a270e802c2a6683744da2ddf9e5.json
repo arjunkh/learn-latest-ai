@@ -1,0 +1,31 @@
+{
+  "content_hash": "35e3b187bc31e706ba953712c8d4f830417f1a270e802c2a6683744da2ddf9e5",
+  "share_id": "sggiqf",
+  "title": "Subnational Geocoding of Global Disasters Using Large Language Models",
+  "optimized_headline": "Unlocking Global Disaster Insights: How Language Models Enhance Geocoding",
+  "url": "https://arxiv.org/abs/2511.14788",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-21T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.14788v1 Announce Type: new \nAbstract: Subnational location data of disaster events are critical for risk assessment and disaster risk reduction. Disaster databases such as EM-DAT often report locations in unstructured textual form, with inconsistent granularity or spelling, that make it difficult to integrate with spatial datasets. We present a fully automated LLM-assisted workflow that",
+  "raw_body": "arXiv:2511.14788v1 Announce Type: new \nAbstract: Subnational location data of disaster events are critical for risk assessment and disaster risk reduction. Disaster databases such as EM-DAT often report locations in unstructured textual form, with inconsistent granularity or spelling, that make it difficult to integrate with spatial datasets. We present a fully automated LLM-assisted workflow that processes and cleans textual location information using GPT-4o, and assigns geometries by cross-checking three independent geoinformation repositories: GADM, OpenStreetMap and Wikidata. Based on the agreement and availability of these sources, we assign a reliability score to each location while generating subnational geometries. Applied to the EM-DAT dataset from 2000 to 2024, the workflow geocodes 14,215 events across 17,948 unique locations. Unlike previous methods, our approach requires no manual intervention, covers all disaster types, enables cross-verification across multiple sources, and allows flexible remapping to preferred frameworks. Beyond the dataset, we demonstrate the potential of LLMs to extract and structure geographic information from unstructured text, offering a scalable and reliable method for related analyses.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers developed a new automated workflow using large language models (LLMs) to geocode disaster events, transforming messy text data into structured location information. This system processed 14,215 events from the EM-DAT dataset, covering nearly 18,000 unique locations without any manual input. It cross-references multiple sources like OpenStreetMap and assigns reliability scores to ensure accuracy. This advancement matters now as it enhances disaster risk assessment and response capabilities globally.",
+  "why_it_matters": [
+    "Emergency responders can quickly access accurate location data, improving their ability to act during disasters.",
+    "This approach signals a shift towards using AI for more efficient data management in disaster response and risk reduction."
+  ],
+  "lenses": {
+    "eli12": "This new system uses AI to turn messy disaster location data into clear, usable information. Imagine trying to find a restaurant with a poorly written address; this tool cleans up the data so responders can find where help is needed. For everyday people, this means faster and more effective responses to disasters, potentially saving lives.",
+    "pm": "For product managers, this development highlights a user need for accurate, structured data in disaster response. It can reduce costs associated with manual data entry and improve efficiency in emergency planning. A practical implication is that integrating this technology could enhance the reliability of disaster management platforms.",
+    "engineer": "The workflow employs GPT-4o to clean and geocode disaster event data, achieving automation without manual intervention. By cross-referencing three geoinformation repositories, it assigns reliability scores to locations, enhancing data integrity. This method processes 14,215 events, showcasing LLMs' potential in transforming unstructured text into precise geographic information."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-22T03:49:40.334Z",
+  "updated_at": "2025-11-22T03:49:40.334Z",
+  "processing_order": 1763783380337
+}
