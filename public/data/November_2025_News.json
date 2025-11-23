@@ -1,9 +1,72 @@
 {
   "month": "November 2025",
   "year": 2025,
-  "total": 348,
-  "generated_at": "2025-11-22T03:51:35.448Z",
+  "total": 351,
+  "generated_at": "2025-11-23T04:08:17.173Z",
   "articles": [
+    {
+      "id": "c06d81b183ffaf78b1b6df6954258bc1c634249746dbc163dd06a38975d59521",
+      "share_id": "lht75r",
+      "category": "capabilities_and_how",
+      "title": "Lean4: How the theorem prover works and why it's the new competitive edge in AI",
+      "optimized_headline": "Lean4: Unveiling the Theorem Prover That Transforms AI Development",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in",
+      "published_at": "2025-11-23T00:30:00.000Z",
+      "speedrun": "Lean4, an open-source programming language and theorem prover, is emerging as a crucial tool for enhancing the reliability of AI systems. Unlike traditional large language models (LLMs), which often produce unpredictable outputs, Lean4 ensures that every statement is either proven true or false through rigorous verification. This could significantly reduce errors in high-stakes fields like finance and medicine. As AI continues to evolve, Lean4's ability to provide deterministic results could reshape how we trust AI technologies.",
+      "why_it_matters": [
+        "Lean4 offers immediate benefits for sectors requiring high reliability, like finance and healthcare, by ensuring AI outputs are verifiable and safe.",
+        "The growing adoption of Lean4 indicates a broader shift towards integrating formal verification in AI, enhancing trust and accountability across industries."
+      ],
+      "lenses": {
+        "eli12": "Lean4 is like a strict teacher who checks every answer for correctness. Unlike regular AI, which might give different answers each time, Lean4 guarantees that the output is reliable and can be independently verified. This is important because it helps people trust AI more, especially in critical areas like medicine or finance.",
+        "pm": "For product managers and founders, Lean4 presents an opportunity to enhance product reliability and user trust. By integrating formal verification, products could reduce errors and improve compliance with regulations. This could lead to stronger market positioning as customers increasingly demand trustworthy AI solutions.",
+        "engineer": "From a technical perspective, Lean4 employs a rigorous type-checking mechanism that ensures each theorem is proven either correct or incorrect, eliminating ambiguity. Initial benchmarks show that current LLMs struggle to produce verified Lean4 proofs, achieving only about 12% success on challenges. However, emerging AI agents that self-correct using Lean feedback have increased this rate to nearly 60%, indicating promising advancements in formal verification."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "e8fc40063954dfd7e8c21ddea41b5c4778b644870acdd6e9fd339a9e7e11d15d",
+      "share_id": "emdk25",
+      "category": "capabilities_and_how",
+      "title": "Empirical Mode Decomposition: The Most Intuitive Way to Decompose Complex Signals and Time Series",
+      "optimized_headline": "Discover How Empirical Mode Decomposition Simplifies Complex Signal Analysis",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/preprocessing-signal-data-with-empirical-mode-decomposition/",
+      "published_at": "2025-11-22T15:00:00.000Z",
+      "speedrun": "Empirical Mode Decomposition (EMD) is a method for breaking down complex time series data into simpler components. It helps identify patterns by separating signals into intrinsic mode functions. This is particularly useful in fields like finance and environmental science, where understanding underlying trends can drive better decision-making. As data complexity grows, mastering EMD could enhance how we analyze and interpret time series data.",
+      "why_it_matters": [
+        "Researchers and analysts can gain clearer insights from complex data, leading to more informed decisions in their respective fields.",
+        "As industries increasingly rely on data-driven strategies, EMD represents a shift towards more intuitive and accessible analytical tools."
+      ],
+      "lenses": {
+        "eli12": "Empirical Mode Decomposition is like peeling an onion; you remove layers to see what's inside. It helps break down complicated data into simpler parts, making it easier to spot trends. This method is important for anyone dealing with data, as it can lead to clearer insights and better outcomes in everyday decisions.",
+        "pm": "For product managers and founders, understanding EMD could enhance user experience by providing clearer data insights. This method can reduce costs associated with data analysis by simplifying complex signals. Implementing EMD could lead to more effective features that help users make sense of their data.",
+        "engineer": "From a technical perspective, Empirical Mode Decomposition allows for the extraction of intrinsic mode functions from non-linear and non-stationary time series data. This method improves upon traditional Fourier transforms by adapting to the data's characteristics. However, practitioners should be aware of the computational intensity involved in processing large datasets."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "581a91aa0334e42a8770e7c74d5fdb03c6c9adf50479b5621a15b668b2bee169",
+      "share_id": "oumyg9",
+      "category": "capabilities_and_how",
+      "title": "Overfitting vs. Underfitting: Making Sense of the Bias-Variance Trade-Off",
+      "optimized_headline": "Understanding the Bias-Variance Trade-Off: Overfitting vs. Underfitting Explained",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/overfitting-versus-underfitting/",
+      "published_at": "2025-11-22T13:00:00.000Z",
+      "speedrun": "The article explains the bias-variance trade-off, which is crucial for developing effective machine learning models. It highlights that the best models find a balance between overfitting, where they learn too much from training data, and underfitting, where they fail to capture underlying patterns. This balance is essential for models to generalize well to new data. Understanding this concept is vital now as it directly impacts model performance in real-world applications.",
+      "why_it_matters": [
+        "Data scientists must navigate this trade-off to create models that perform well, affecting their project success and efficiency.",
+        "In a broader context, mastering this balance could lead to advancements in AI applications, enhancing their reliability across various industries."
+      ],
+      "lenses": {
+        "eli12": "Think of model training like preparing for a test. If you memorize every answer (overfitting), you might struggle with new questions. But if you only skim the material (underfitting), you won't know enough. Finding the right balance helps models make accurate predictions in everyday situations, like recommending movies or detecting fraud.",
+        "pm": "For product managers, understanding the bias-variance trade-off is key to developing user-friendly AI features. Striking the right balance can improve model efficiency, reducing costs associated with retraining or fixing errors. This knowledge could lead to more reliable products that meet user expectations.",
+        "engineer": "From a technical perspective, the bias-variance trade-off involves adjusting model complexity to optimize performance. Models that are too complex may have high variance, while overly simple models may display high bias. It's crucial to evaluate metrics like accuracy and F1 score to find the sweet spot for specific datasets."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "10e10681c98aaae2c3e610d8be9f1305e07767587c93763db979828108548f92",
       "share_id": "oeai4k",
