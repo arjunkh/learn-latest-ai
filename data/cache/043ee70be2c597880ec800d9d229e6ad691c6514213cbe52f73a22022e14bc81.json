@@ -1,0 +1,31 @@
+{
+  "content_hash": "043ee70be2c597880ec800d9d229e6ad691c6514213cbe52f73a22022e14bc81",
+  "share_id": "cbibjb",
+  "title": "Cognitive BASIC: An In-Model Interpreted Reasoning Language for LLMs",
+  "optimized_headline": "Unlocking LLMs: Discover Cognitive BASIC, a New Reasoning Language",
+  "url": "https://arxiv.org/abs/2511.16837",
+  "source": "ArXiv AI",
+  "published_at": "2025-11-24T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.16837v1 Announce Type: new \nAbstract: Cognitive BASIC is a minimal, BASIC-style prompting language and in-model interpreter that structures large language model (LLM) reasoning into explicit, stepwise execution traces. Inspired by the simplicity of retro BASIC, we repurpose numbered lines and simple commands as an interpretable cognitive control layer. Modern LLMs can reliably simulate ",
+  "raw_body": "arXiv:2511.16837v1 Announce Type: new \nAbstract: Cognitive BASIC is a minimal, BASIC-style prompting language and in-model interpreter that structures large language model (LLM) reasoning into explicit, stepwise execution traces. Inspired by the simplicity of retro BASIC, we repurpose numbered lines and simple commands as an interpretable cognitive control layer. Modern LLMs can reliably simulate such short programs, enabling transparent multi-step reasoning inside the model. A natural-language interpreter file specifies command semantics, memory updates, and logging behavior. Our mental-model interpreter extracts declarative and procedural knowledge, detects contradictions, and produces resolutions when necessary. A comparison across three LLMs on a benchmark of knowledge extraction, conflict detection, and reasoning tasks shows that all models can execute Cognitive BASIC programs, with overall strong but not uniform performance.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Cognitive BASIC is a new prompting language designed for large language models (LLMs) that simplifies reasoning into clear, step-by-step traces. This language uses a retro BASIC-style format, making it easier for models to simulate programs and enhance transparency in multi-step reasoning. Notably, a benchmark test showed that various LLMs could execute Cognitive BASIC programs, highlighting their capability in knowledge extraction and conflict detection. This development could improve how we understand and trust AI reasoning processes.",
+  "why_it_matters": [
+    "Cognitive BASIC provides a clearer framework for AI developers, potentially improving the interpretability of AI systems for users and stakeholders.",
+    "This advancement could signal a shift in AI development towards more transparent and understandable models, enhancing user trust and application in critical areas."
+  ],
+  "lenses": {
+    "eli12": "Cognitive BASIC is like giving a recipe to a chef, breaking down complex tasks into simple steps. This makes it easier for AI to follow and explain its reasoning. For everyday people, this means AI could become more reliable and understandable in tasks like answering questions or solving problems.",
+    "pm": "For product managers, Cognitive BASIC offers a way to enhance user interactions with AI by making reasoning more transparent. This could lead to improved user trust and satisfaction, as customers better understand AI decisions. Additionally, it may streamline development processes by providing a clearer structure for programming AI behavior.",
+    "engineer": "Cognitive BASIC introduces a structured way for LLMs to perform reasoning tasks through a minimal prompting language. It allows models to execute short programs with explicit command semantics and memory updates. Benchmarks indicate that while all tested LLMs can run these programs, performance varies, suggesting room for optimization in how different models handle reasoning tasks."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-11-25T03:59:21.133Z",
+  "updated_at": "2025-11-25T03:59:21.133Z",
+  "processing_order": 1764043161134
+}
