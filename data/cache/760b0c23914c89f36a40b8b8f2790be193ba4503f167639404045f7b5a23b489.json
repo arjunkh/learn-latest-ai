@@ -1,0 +1,31 @@
+{
+  "content_hash": "760b0c23914c89f36a40b8b8f2790be193ba4503f167639404045f7b5a23b489",
+  "share_id": "ppemra",
+  "title": "Pathology-Aware Prototype Evolution via LLM-Driven Semantic Disambiguation for Multicenter Diabetic Retinopathy Diagnosis",
+  "optimized_headline": "Revolutionizing Diabetic Retinopathy Diagnosis with LLM-Driven Semantic Disambiguation Techniques",
+  "url": "https://arxiv.org/abs/2511.22033",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-01T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.22033v1 Announce Type: new \nAbstract: Diabetic retinopathy (DR) grading plays a critical role in early clinical intervention and vision preservation. Recent explorations predominantly focus on visual lesion feature extraction through data processing and domain decoupling strategies. However, they generally overlook domain-invariant pathological patterns and underutilize the rich context",
+  "raw_body": "arXiv:2511.22033v1 Announce Type: new \nAbstract: Diabetic retinopathy (DR) grading plays a critical role in early clinical intervention and vision preservation. Recent explorations predominantly focus on visual lesion feature extraction through data processing and domain decoupling strategies. However, they generally overlook domain-invariant pathological patterns and underutilize the rich contextual knowledge of foundation models, relying solely on visual information, which is insufficient for distinguishing subtle pathological variations. Therefore, we propose integrating fine-grained pathological descriptions to complement prototypes with additional context, thereby resolving ambiguities in borderline cases. Specifically, we propose a Hierarchical Anchor Prototype Modulation (HAPM) framework to facilitate DR grading. First, we introduce a variance spectrum-driven anchor prototype library that preserves domain-invariant pathological patterns. We further employ a hierarchical differential prompt gating mechanism, dynamically selecting discriminative semantic prompts from both LVLM and LLM sources to address semantic confusion between adjacent DR grades. Finally, we utilize a two-stage prototype modulation strategy that progressively integrates clinical knowledge into visual prototypes through a Pathological Semantic Injector (PSI) and a Discriminative Prototype Enhancer (DPE). Extensive experiments across eight public datasets demonstrate that our approach achieves pathology-guided prototype evolution while outperforming state-of-the-art methods. The code is available at https://github.com/zhcz328/HAPM.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach to diagnosing diabetic retinopathy (DR) uses a model called Hierarchical Anchor Prototype Modulation (HAPM). This method enhances traditional visual analysis by integrating fine-grained pathological descriptions, which helps clarify ambiguities in DR grading. Experiments show it outperforms existing methods across eight public datasets, highlighting the importance of contextual information in medical diagnostics. This advancement could lead to better early interventions and improved patient outcomes.",
+  "why_it_matters": [
+    "Patients with diabetic retinopathy could receive more accurate diagnoses, improving their chances of timely treatment.",
+    "This development reflects a broader trend in healthcare towards integrating advanced AI models for more nuanced medical assessments."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to identify different shades of color without knowing the names of those colors. This new method for diabetic retinopathy diagnosis helps doctors make clearer distinctions between subtle variations in eye health. By using detailed descriptions alongside visual data, it aims to improve early treatment options. This could mean better vision preservation for many people.",
+    "pm": "For product managers, this innovation highlights the need for tools that combine visual data with contextual insights. By addressing user needs for accuracy in medical diagnostics, it could enhance the efficiency of diagnosis processes. Companies could consider developing similar AI-driven solutions to meet evolving healthcare demands.",
+    "engineer": "The proposed HAPM framework employs a variance spectrum-driven anchor prototype library to maintain domain-invariant patterns. It integrates a hierarchical prompt gating mechanism to select relevant semantic prompts from large visual and language models. Performance benchmarks show that this method surpasses state-of-the-art approaches, emphasizing the potential of combining clinical knowledge with visual prototypes."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-02T04:04:13.333Z",
+  "updated_at": "2025-12-02T04:04:13.333Z",
+  "processing_order": 1764648253335
+}

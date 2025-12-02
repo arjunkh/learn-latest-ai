@@ -1,0 +1,31 @@
+{
+  "content_hash": "027bd68e60294ec6d9e766dd66cee1424040733b75c6808df449badaee503001",
+  "share_id": "rplh25",
+  "title": "Real-Time Procedural Learning From Experience for AI Agents",
+  "optimized_headline": "AI Agents Learn in Real-Time: Discover the Power of Procedural Learning",
+  "url": "https://arxiv.org/abs/2511.22074",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-01T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2511.22074v1 Announce Type: new \nAbstract: Learning how to do things from trial and error in real time is a hallmark of biological intelligence, yet most LLM-based agents lack mechanisms to acquire procedural knowledge after deployment. We propose Procedural Recall for Agents with eXperiences Indexed by State (PRAXIS), a lightweight post-training learning mechanism that stores the consequenc",
+  "raw_body": "arXiv:2511.22074v1 Announce Type: new \nAbstract: Learning how to do things from trial and error in real time is a hallmark of biological intelligence, yet most LLM-based agents lack mechanisms to acquire procedural knowledge after deployment. We propose Procedural Recall for Agents with eXperiences Indexed by State (PRAXIS), a lightweight post-training learning mechanism that stores the consequences of actions and retrieves them by jointly matching environmental and internal states of past episodes to the current state. PRAXIS augments agentic action selection with retrieved state-action-result exemplars that are generated in real time. When evaluated on the REAL web browsing benchmark, PRAXIS improves task completion accuracy, reliability, and cost efficiency across different foundation model backbones, and shows preliminary generalization to unseen tasks in similar environments. These results demonstrate that PRAXIS enables the practical adoption of AI agents in fast-evolving stateful environments by helping them learn new procedures effectively.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced PRAXIS, a new learning mechanism for AI agents that allows them to learn from trial and error after deployment. This system improves task completion accuracy and efficiency by storing and retrieving past experiences based on current situations. When tested on the REAL web browsing benchmark, PRAXIS showed enhanced performance across various AI models. This advancement is significant as it could enable AI agents to adapt more effectively in rapidly changing environments.",
+  "why_it_matters": [
+    "AI developers can now create agents that learn from their actions in real-time, enhancing user interactions and satisfaction.",
+    "This development signals a shift towards more adaptive AI systems, potentially leading to smarter applications in various industries."
+  ],
+  "lenses": {
+    "eli12": "Imagine teaching a child to ride a bike by letting them fall and learn from mistakes. PRAXIS does something similar for AI agents, allowing them to learn from their experiences in real-time. This means AI could become more helpful and responsive in everyday tasks, adapting to new challenges as they arise.",
+    "pm": "For product managers, PRAXIS represents a way to enhance user experience by enabling AI agents to learn and improve continuously. This could reduce costs associated with fixing errors and increase efficiency in task completion. Managers might consider integrating such adaptive learning features into their products to meet evolving user needs.",
+    "engineer": "PRAXIS leverages a lightweight post-training mechanism that retrieves past actions based on current environmental and internal states. In tests on the REAL web browsing benchmark, it improved accuracy and efficiency across different AI models. This approach could be crucial for developing AI that can adapt to new tasks without extensive retraining."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-02T04:04:22.384Z",
+  "updated_at": "2025-12-02T04:04:22.384Z",
+  "processing_order": 1764648262387
+}
