@@ -1,0 +1,31 @@
+{
+  "content_hash": "93764c5e5f95623524a1a92aaa230954a2995b3a81436ffc425af3a1f6bc5bbf",
+  "share_id": "rup51h",
+  "title": "Reasoning Under Pressure: How do Training Incentives Influence Chain-of-Thought Monitorability?",
+  "optimized_headline": "Training Incentives: Do They Enhance Chain-of-Thought Monitorability Under Pressure?",
+  "url": "https://arxiv.org/abs/2512.00218",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-02T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.00218v1 Announce Type: new \nAbstract: AI systems that output their reasoning in natural language offer an opportunity for safety -- we can \\emph{monitor} their chain of thought (CoT) for undesirable reasoning, such as the pursuit of harmful objectives. However, the extent to which CoT faithfully reflects the underlying reasoning process, and hence the extent to which it can be usefully ",
+  "raw_body": "arXiv:2512.00218v1 Announce Type: new \nAbstract: AI systems that output their reasoning in natural language offer an opportunity for safety -- we can \\emph{monitor} their chain of thought (CoT) for undesirable reasoning, such as the pursuit of harmful objectives. However, the extent to which CoT faithfully reflects the underlying reasoning process, and hence the extent to which it can be usefully monitored, may be influenced by certain aspects of training. We investigate how different \\emph{training incentives}, applied to a reasoning model, affect its monitorability. We introduce a novel methodology for measuring monitorability according to whether a monitor can predict a key latent variable using the model's reasoning. When controlling for accuracy, we do not find evidence for consistent effects from commonly used incentives (length penalties and KL regularisation), but we find that adversarial optimisation (penalising monitor accuracy) degrades monitor performance, while direct optimisation for monitorability does not reliably lead to improvements. Our code is available at https://github.com/QiyaoWei/reasoning-under-pressure.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study explored how training incentives affect the monitorability of AI's chain of thought (CoT). The researchers found that common incentives, like length penalties, didn't improve monitorability, while adversarial optimization actually harmed it. This matters because understanding how to effectively monitor AI reasoning is crucial for ensuring safety and accountability in AI applications.",
+  "why_it_matters": [
+    "AI developers need effective monitoring to catch harmful reasoning, which impacts safety in critical applications like healthcare.",
+    "This research indicates a shift in focus for AI training, emphasizing the importance of monitorability over traditional accuracy metrics."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to read a friend's thoughts as they solve a puzzle. This study shows that how we train AI affects how clearly we can see their reasoning. If we can't monitor their thinking well, it could lead to dangerous outcomes. Understanding this helps ensure AI systems are safe and reliable for everyone.",
+    "pm": "For product managers, this research highlights the need to prioritize monitorability in AI training. If traditional incentives don't enhance safety, it may be wise to explore new approaches. This could lead to more trustworthy AI products, ultimately addressing user concerns about safety and reliability.",
+    "engineer": "The study introduced a novel method for measuring monitorability, focusing on whether a monitor can predict a latent variable from the model's reasoning. Interestingly, while common training incentives like length penalties showed no consistent benefits, adversarial optimization reduced monitor performance. This suggests that engineers need to rethink how they balance training for accuracy and monitorability."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-03T04:01:41.958Z",
+  "updated_at": "2025-12-03T04:01:41.958Z",
+  "processing_order": 1764734501961
+}
