@@ -1,0 +1,31 @@
+{
+  "content_hash": "81b5666eca6c5b6f76ebb0872c2a1187d4922f2335cfa94fe13a3cf4937b1798",
+  "share_id": "ssfsq9",
+  "title": "STRIDE: A Systematic Framework for Selecting AI Modalities - Agentic AI, AI Assistants, or LLM Calls",
+  "optimized_headline": "Discover STRIDE: Choosing the Right AI Modality for Your Needs",
+  "url": "https://arxiv.org/abs/2512.02228",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.02228v1 Announce Type: new \nAbstract: The rapid shift from stateless large language models (LLMs) to autonomous, goal-driven agents raises a central question: When is agentic AI truly necessary? While agents enable multi-step reasoning, persistent memory, and tool orchestration, deploying them indiscriminately leads to higher cost, complexity, and risk.\n  We present STRIDE (Systematic T",
+  "raw_body": "arXiv:2512.02228v1 Announce Type: new \nAbstract: The rapid shift from stateless large language models (LLMs) to autonomous, goal-driven agents raises a central question: When is agentic AI truly necessary? While agents enable multi-step reasoning, persistent memory, and tool orchestration, deploying them indiscriminately leads to higher cost, complexity, and risk.\n  We present STRIDE (Systematic Task Reasoning Intelligence Deployment Evaluator), a framework that provides principled recommendations for selecting between three modalities: (i) direct LLM calls, (ii) guided AI assistants, and (iii) fully autonomous agentic AI. STRIDE integrates structured task decomposition, dynamism attribution, and self-reflection requirement analysis to produce an Agentic Suitability Score, ensuring that full agentic autonomy is reserved for tasks with inherent dynamism or evolving context.\n  Evaluated across 30 real-world tasks spanning SRE, compliance, and enterprise automation, STRIDE achieved 92% accuracy in modality selection, reduced unnecessary agent deployments by 45%, and cut resource costs by 37%. Expert validation over six months in SRE and compliance domains confirmed its practical utility, with domain specialists agreeing that STRIDE effectively distinguishes between tasks requiring simple LLM calls, guided assistants, or full agentic autonomy. This work reframes agent adoption as a necessity-driven design decision, ensuring autonomy is applied only when its benefits justify the costs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The introduction of STRIDE, a new framework for selecting AI modalities, addresses the challenge of determining when to use agentic AI. It achieved a remarkable 92% accuracy in choosing the right modality across 30 tasks, cutting unnecessary agent use by 45% and resource costs by 37%. This framework is crucial as it helps organizations make informed decisions about deploying AI, balancing complexity and cost with the need for autonomy.",
+  "why_it_matters": [
+    "Organizations looking to optimize AI deployment will benefit from STRIDE's structured approach, minimizing unnecessary complexity and costs.",
+    "This framework signals a shift in AI strategy, emphasizing careful consideration of when to implement fully autonomous agents versus simpler models."
+  ],
+  "lenses": {
+    "eli12": "STRIDE is like a smart guide that helps decide when to use different types of AI. It sorts tasks based on how complex they are, ensuring that advanced AI is used only when needed. This matters for everyday people because it could lead to more efficient and cost-effective AI tools in daily applications.",
+    "pm": "For product managers and founders, STRIDE offers a clear method to assess user needs and choose the right AI tools. By reducing unnecessary complexity and costs, it could enhance product efficiency and user satisfaction. This framework can help prioritize development resources towards the most impactful AI features.",
+    "engineer": "From a technical perspective, STRIDE employs structured task decomposition and an Agentic Suitability Score to evaluate the necessity of agentic AI. With a 92% accuracy in modality selection across 30 tasks, it effectively distinguishes when to use LLM calls, guided assistants, or full autonomy. This precision could streamline AI deployments while minimizing resource waste."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-04T04:04:29.966Z",
+  "updated_at": "2025-12-04T04:04:29.966Z",
+  "processing_order": 1764821069969
+}
