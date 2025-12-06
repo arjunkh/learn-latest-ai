@@ -1,0 +1,31 @@
+{
+  "content_hash": "33ae46b5e117b70f63742957c7af32e6778c6a49c2275fefc1916c6d3ffa15da",
+  "share_id": "ppa37f",
+  "title": "Prior preferences in active inference agents: soft, hard, and goal shaping",
+  "optimized_headline": "Exploring Preference Types in Active Inference Agents: Soft, Hard, and Goal Shaping",
+  "url": "https://arxiv.org/abs/2512.03293",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-05T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.03293v1 Announce Type: new \nAbstract: Active inference proposes expected free energy as an objective for planning and decision-making to adequately balance exploitative and explorative drives in learning agents. The exploitative drive, or what an agent wants to achieve, is formalised as the Kullback-Leibler divergence between a variational probability distribution, updated at each infer",
+  "raw_body": "arXiv:2512.03293v1 Announce Type: new \nAbstract: Active inference proposes expected free energy as an objective for planning and decision-making to adequately balance exploitative and explorative drives in learning agents. The exploitative drive, or what an agent wants to achieve, is formalised as the Kullback-Leibler divergence between a variational probability distribution, updated at each inference step, and a preference probability distribution that indicates what states or observations are more likely for the agent, hence determining the agent's goal in a certain environment. In the literature, the questions of how the preference distribution should be specified and of how a certain specification impacts inference and learning in an active inference agent have been given hardly any attention. In this work, we consider four possible ways of defining the preference distribution, either providing the agents with hard or soft goals and either involving or not goal shaping (i.e., intermediate goals). We compare the performances of four agents, each given one of the possible preference distributions, in a grid world navigation task. Our results show that goal shaping enables the best performance overall (i.e., it promotes exploitation) while sacrificing learning about the environment's transition dynamics (i.e., it hampers exploration).",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study on active inference agents explored how different preference distributions affect decision-making. Researchers compared four models: those with hard goals, soft goals, and those incorporating goal shaping. They found that agents using goal shaping performed best in navigating a grid world but struggled to learn about their environment's dynamics. This research is significant as it highlights the trade-offs between achieving immediate goals and understanding broader contexts in AI agents.",
+  "why_it_matters": [
+    "For AI developers, this could refine how agents are programmed to balance immediate tasks with long-term learning. This balance is crucial for improving AI performance in real-world applications.",
+    "The findings suggest a shift in AI design strategies, emphasizing the need for nuanced goal-setting in agents to enhance their effectiveness in complex environments."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how AI agents decide what to do based on their goals. Imagine a student choosing between studying for a test (exploration) or completing homework (exploitation). The research shows that having intermediate goals helps agents succeed in tasks but may limit their overall learning. This matters because it could help improve how we create AI systems that need to adapt and learn in changing environments.",
+    "pm": "For product managers, understanding how AI agents set and pursue goals can inform feature development. The research highlights that while agents with intermediate goals perform better in tasks, they may miss out on learning about their surroundings. This insight could guide decisions on balancing immediate user needs with long-term adaptability in AI products.",
+    "engineer": "The study examines active inference agents using Kullback-Leibler divergence to manage goals in decision-making. It compares four models in a grid world task, revealing that goal shaping enhances performance but limits exploration of transition dynamics. This could inform engineers on designing more effective AI systems by understanding the trade-offs between immediate goal achievement and broader learning capabilities."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-06T03:53:09.173Z",
+  "updated_at": "2025-12-06T03:53:09.173Z",
+  "processing_order": 1764993189176
+}
