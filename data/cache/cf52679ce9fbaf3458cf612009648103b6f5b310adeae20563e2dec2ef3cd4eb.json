@@ -1,0 +1,31 @@
+{
+  "content_hash": "cf52679ce9fbaf3458cf612009648103b6f5b310adeae20563e2dec2ef3cd4eb",
+  "share_id": "sfape3",
+  "title": "Semantic Faithfulness and Entropy Production Measures to Tame Your LLM Demons and Manage Hallucinations",
+  "optimized_headline": "\"Master LLM Hallucinations: Explore Semantic Faithfulness and Entropy Production\"",
+  "url": "https://arxiv.org/abs/2512.05156",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-08T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.05156v1 Announce Type: new \nAbstract: Evaluating faithfulness of Large Language Models (LLMs) to a given task is a complex challenge. We propose two new unsupervised metrics for faithfulness evaluation using insights from information theory and thermodynamics. Our approach treats an LLM as a bipartite information engine where hidden layers act as a Maxwell demon controlling transformati",
+  "raw_body": "arXiv:2512.05156v1 Announce Type: new \nAbstract: Evaluating faithfulness of Large Language Models (LLMs) to a given task is a complex challenge. We propose two new unsupervised metrics for faithfulness evaluation using insights from information theory and thermodynamics. Our approach treats an LLM as a bipartite information engine where hidden layers act as a Maxwell demon controlling transformations of context $C $ into answer $A$ via prompt $Q$. We model Question-Context-Answer (QCA) triplets as probability distributions over shared topics. Topic transformations from $C$ to $Q$ and $A$ are modeled as transition matrices ${\\bf Q}$ and ${\\bf A}$ encoding the query goal and actual result, respectively. Our semantic faithfulness (SF) metric quantifies faithfulness for any given QCA triplet by the Kullback-Leibler (KL) divergence between these matrices. Both matrices are inferred simultaneously via convex optimization of this KL divergence, and the final SF metric is obtained by mapping the minimal divergence onto the unit interval [0,1], where higher scores indicate greater faithfulness. Furthermore, we propose a thermodynamics-based semantic entropy production (SEP) metric in answer generation, and show that high faithfulness generally implies low entropy production. The SF and SEP metrics can be used jointly or separately for LLM evaluation and hallucination control. We demonstrate our framework on LLM summarization of corporate SEC 10-K filings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces two new metrics for evaluating the faithfulness of Large Language Models (LLMs) when generating answers. These metrics, based on information theory and thermodynamics, help assess how accurately an LLM transforms context into answers. Specifically, the semantic faithfulness (SF) metric uses Kullback-Leibler divergence to measure this accuracy. This work is significant as it offers tools to better manage LLM hallucinations, improving their reliability in critical applications.",
+  "why_it_matters": [
+    "This research could directly benefit developers and users of LLMs, ensuring more accurate outputs for applications like legal and financial document summarization.",
+    "On a broader scale, these metrics signal a shift toward more rigorous evaluation methods in AI, potentially enhancing trust in LLMs across various sectors."
+  ],
+  "lenses": {
+    "eli12": "Think of LLMs like a chef preparing a dish. The new metrics act like taste testers, ensuring the dish matches the recipe. By measuring how closely the final dish resembles the intended flavors, we can help everyday users trust that their AI-generated content is accurate and reliable.",
+    "pm": "For product managers, these metrics highlight the importance of reliability in AI outputs. By focusing on faithfulness, teams could reduce errors in critical areas like finance or healthcare. This could lead to better user satisfaction and lower costs associated with misinformation.",
+    "engineer": "The proposed metrics utilize Kullback-Leibler divergence to quantify the faithfulness of LLM outputs, treating the model as an information engine. By modeling the transition matrices for context, query, and answer, the framework allows for simultaneous optimization of these matrices. It's noteworthy that high faithfulness typically correlates with low entropy production, suggesting a more efficient information processing in LLMs."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-09T04:02:13.910Z",
+  "updated_at": "2025-12-09T04:02:13.910Z",
+  "processing_order": 1765252933911
+}

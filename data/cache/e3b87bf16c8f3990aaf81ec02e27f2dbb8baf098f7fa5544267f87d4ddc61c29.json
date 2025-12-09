@@ -1,0 +1,31 @@
+{
+  "content_hash": "e3b87bf16c8f3990aaf81ec02e27f2dbb8baf098f7fa5544267f87d4ddc61c29",
+  "share_id": "dsp2wh",
+  "title": "Documenting SME Processes with Conversational AI: From Tacit Knowledge to BPMN",
+  "optimized_headline": "Transforming SME Knowledge: How Conversational AI Elevates BPMN Documentation",
+  "url": "https://arxiv.org/abs/2512.05122",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-08T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.05122v1 Announce Type: new \nAbstract: Small and medium-sized enterprises (SMEs) still depend heavily on tacit, experience-based know-how that rarely makes its way into formal documentation. This paper introduces a large-language-model (LLM)-driven conversational assistant that captures such knowledge on the shop floor and converts it incrementally and interactively into standards-compli",
+  "raw_body": "arXiv:2512.05122v1 Announce Type: new \nAbstract: Small and medium-sized enterprises (SMEs) still depend heavily on tacit, experience-based know-how that rarely makes its way into formal documentation. This paper introduces a large-language-model (LLM)-driven conversational assistant that captures such knowledge on the shop floor and converts it incrementally and interactively into standards-compliant Business Process Model and Notation (BPMN) 2.0 diagrams. Powered by Gemini 2.5 Pro and delivered through a lightweight Gradio front-end with client-side bpmn-js visualisation, the assistant conducts an interview-style dialogue: it elicits process details, supports clarifying dialogue and on-demand analysis, and renders live diagrams that users can refine in real time. A proof-of-concept evaluation in an equipment-maintenance scenario shows that the chatbot produced an accurate \"AS-IS\" model, flagged issues via on-diagram annotations, and generated an improved \"TO-BE\" variant, all within about 12-minutes, while keeping API costs within an SME-friendly budget. The study analyses latency sources, model-selection trade-offs, and the challenges of enforcing strict XML schemas, then outlines a roadmap toward agentic and multimodal deployments. The results demonstrate that conversational LLMs can potentially be used to lower the skill and cost barriers to rigorous process documentation, helping SMEs preserve institutional knowledge, enhance operational transparency, and accelerate continuous-improvement efforts.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces a conversational AI assistant that helps small and medium-sized enterprises (SMEs) document their processes. Using the Gemini 2.5 Pro model, the assistant captures tacit knowledge and converts it into Business Process Model and Notation (BPMN) diagrams. In a proof-of-concept, it created accurate process models in about 12 minutes while keeping costs low. This technology could help SMEs improve operational transparency and preserve essential knowledge.",
+  "why_it_matters": [
+    "SMEs could benefit immediately by documenting their processes more efficiently, reducing reliance on informal knowledge.",
+    "This development signifies a shift toward more structured documentation in SMEs, potentially enhancing competitiveness in their markets."
+  ],
+  "lenses": {
+    "eli12": "This new AI tool helps small businesses turn their informal knowledge into structured documents. Think of it like a smart assistant that listens to workers and writes down their tips and tricks. This matters for everyday people because it could lead to smoother operations and better services from local businesses.",
+    "pm": "For product managers and founders, this AI tool addresses the need for efficient process documentation in SMEs. It could save time and reduce costs by automating knowledge capture, allowing teams to focus on improvement. A practical implication is that businesses could implement this solution quickly, enhancing their workflow.",
+    "engineer": "The conversational AI leverages the Gemini 2.5 Pro model to create BPMN 2.0 diagrams from tacit knowledge. In tests, it generated 'AS-IS' and 'TO-BE' models in around 12 minutes, showing efficiency in capturing and refining process data. Challenges include managing XML schema compliance, but the results indicate significant potential for improving process documentation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-09T04:01:59.295Z",
+  "updated_at": "2025-12-09T04:01:59.295Z",
+  "processing_order": 1765252919295
+}
