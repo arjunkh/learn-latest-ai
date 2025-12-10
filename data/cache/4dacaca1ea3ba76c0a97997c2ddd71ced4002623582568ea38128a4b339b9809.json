@@ -1,0 +1,31 @@
+{
+  "content_hash": "4dacaca1ea3ba76c0a97997c2ddd71ced4002623582568ea38128a4b339b9809",
+  "share_id": "amftzh",
+  "title": "ARCANE: A Multi-Agent Framework for Interpretable and Configurable Alignment",
+  "optimized_headline": "Discover ARCANE: A New Framework for Interpretable AI Alignment",
+  "url": "https://arxiv.org/abs/2512.06196",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-09T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.06196v1 Announce Type: new \nAbstract: As agents based on large language models are increasingly deployed to long-horizon tasks, maintaining their alignment with stakeholder preferences becomes critical. Effective alignment in such settings requires reward models that are interpretable so that stakeholders can understand and audit model objectives. Moreover, reward models must be capable",
+  "raw_body": "arXiv:2512.06196v1 Announce Type: new \nAbstract: As agents based on large language models are increasingly deployed to long-horizon tasks, maintaining their alignment with stakeholder preferences becomes critical. Effective alignment in such settings requires reward models that are interpretable so that stakeholders can understand and audit model objectives. Moreover, reward models must be capable of steering agents at interaction time, allowing preference shifts to be incorporated without retraining. We introduce ARCANE, a framework that frames alignment as a multi-agent collaboration problem that dynamically represents stakeholder preferences as natural-language rubrics: weighted sets of verifiable criteria that can be generated on-the-fly from task context. Inspired by utility theory, we formulate rubric learning as a reconstruction problem and apply a regularized Group-Sequence Policy Optimization (GSPO) procedure that balances interpretability, faithfulness, and computational efficiency. Using a corpus of 219 labeled rubrics derived from the GDPVal benchmark, we evaluate ARCANE on challenging tasks requiring multi-step reasoning and tool use. The learned rubrics produce compact, legible evaluations and enable configurable trade-offs (e.g., correctness vs. conciseness) without retraining. Our results show that rubric-based reward models offer a promising path toward interpretable, test-time adaptive alignment for complex, long-horizon AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced ARCANE, a framework designed to improve alignment in AI agents by using interpretable reward models. This system allows for dynamic adjustment of stakeholder preferences in real-time, without needing retraining. It employs a unique approach that uses natural-language criteria, evaluated through a regularized optimization process. The significance of this development lies in its potential to make AI systems more transparent and adaptable, which is increasingly important as these systems take on more complex tasks.",
+  "why_it_matters": [
+    "This framework could directly benefit AI developers and stakeholders by ensuring that AI systems align closely with user preferences, enhancing trust and usability.",
+    "On a broader scale, ARCANE could signal a shift towards more interpretable AI technologies, reflecting a growing demand for accountability and adaptability in AI systems across various industries."
+  ],
+  "lenses": {
+    "eli12": "ARCANE is like giving AI agents a customizable toolbox to understand and follow what people want. Instead of just following rigid rules, these agents can adjust their actions based on clear, understandable criteria. This is important because it means that everyday users can have more control and clarity over how AI makes decisions on their behalf.",
+    "pm": "For product managers and founders, ARCANE highlights the importance of creating AI systems that can adapt to user preferences in real-time. This flexibility could lead to greater user satisfaction and retention, as customers feel their needs are being met without constant updates. It also suggests a potential cost-saving by reducing the need for frequent retraining of models.",
+    "engineer": "From a technical perspective, ARCANE leverages a regularized Group-Sequence Policy Optimization method to balance interpretability and efficiency in multi-agent settings. By using 219 labeled rubrics from the GDPVal benchmark, it demonstrates effective multi-step reasoning and tool use. This approach could pave the way for more sophisticated AI systems that can adjust their objectives dynamically during operation."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-10T04:06:50.050Z",
+  "updated_at": "2025-12-10T04:06:50.050Z",
+  "processing_order": 1765339610052
+}
