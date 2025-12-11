@@ -1,0 +1,31 @@
+{
+  "content_hash": "709c0ec2f6cc75f996439a45b14b4bd95e0f561b595457a11123d42ac4e88cc4",
+  "share_id": "ssszfs",
+  "title": "SkipKV: Selective Skipping of KV Generation and Storage for Efficient Inference with Large Reasoning Models",
+  "optimized_headline": "\"SkipKV: Boosting Inference Efficiency in Large Reasoning Models\"",
+  "url": "https://arxiv.org/abs/2512.07993",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-10T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.07993v1 Announce Type: new \nAbstract: Large reasoning models (LRMs) often cost significant key-value (KV) cache overhead, due to their linear growth with the verbose chain-of-thought (CoT) reasoning process. This costs both memory and throughput bottleneck limiting their efficient deployment. Towards reducing KV cache size during inference, we first investigate the effectiveness of exis",
+  "raw_body": "arXiv:2512.07993v1 Announce Type: new \nAbstract: Large reasoning models (LRMs) often cost significant key-value (KV) cache overhead, due to their linear growth with the verbose chain-of-thought (CoT) reasoning process. This costs both memory and throughput bottleneck limiting their efficient deployment. Towards reducing KV cache size during inference, we first investigate the effectiveness of existing KV cache eviction methods for CoT reasoning. Interestingly, we find that due to unstable token-wise scoring and the reduced effective KV budget caused by padding tokens, state-of-the-art (SoTA) eviction methods fail to maintain accuracy in the multi-batch setting. Additionally, these methods often generate longer sequences than the original model, as semantic-unaware token-wise eviction leads to repeated revalidation during reasoning. To address these issues, we present \\textbf{SkipKV}, a \\textbf{\\textit{training-free}} KV compression method for selective \\textit{eviction} and \\textit{generation} operating at a coarse-grained sentence-level sequence removal for efficient CoT reasoning. In specific, it introduces a \\textit{sentence-scoring metric} to identify and remove highly similar sentences while maintaining semantic coherence. To suppress redundant generation, SkipKV dynamically adjusts a steering vector to update the hidden activation states during inference enforcing the LRM to generate concise response. Extensive evaluations on multiple reasoning benchmarks demonstrate the effectiveness of SkipKV in maintaining up to $\\mathbf{26.7}\\%$ improved accuracy compared to the alternatives, at a similar compression budget. Additionally, compared to SoTA, SkipKV yields up to $\\mathbf{1.6}\\times$ fewer generation length while improving throughput up to $\\mathbf{1.7}\\times$.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced SkipKV, a new method that reduces the overhead of key-value (KV) caches in large reasoning models (LRMs). This technique improves accuracy by up to 26.7% while also reducing generation length by 1.6 times and enhancing throughput by 1.7 times. The method selectively removes similar sentences during inference, which helps maintain performance without requiring additional training. This development is significant as it could make deploying LRMs more efficient and practical.",
+  "why_it_matters": [
+    "Developers and researchers could see immediate benefits in deploying more efficient models, enhancing their applications' performance without added costs.",
+    "This shift signals a broader trend in AI towards optimizing resource usage, potentially making advanced models more accessible across various industries."
+  ],
+  "lenses": {
+    "eli12": "SkipKV is like cleaning up a messy room by removing unnecessary items that clutter space. It helps large reasoning models work faster and more accurately by getting rid of similar sentences without losing important meaning. This is important for everyday people because it could lead to smarter AI tools that are quicker and more efficient in solving problems.",
+    "pm": "For product managers and founders, SkipKV addresses a key user need for faster and more efficient AI responses. By reducing the memory and processing costs associated with large reasoning models, it allows for better performance without increasing expenses. This could lead to more competitive offerings in the AI space, appealing to users who prioritize speed and accuracy.",
+    "engineer": "From a technical perspective, SkipKV operates by selectively evicting and generating sentences based on a new scoring metric. It achieves up to 26.7% improved accuracy and reduces generation length by 1.6 times compared to state-of-the-art methods. Additionally, it enhances throughput by 1.7 times, showcasing its effectiveness in optimizing resource use during inference."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-11T04:09:31.078Z",
+  "updated_at": "2025-12-11T04:09:31.078Z",
+  "processing_order": 1765426171080
+}
