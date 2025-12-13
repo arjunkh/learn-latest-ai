@@ -1,0 +1,31 @@
+{
+  "content_hash": "840ae054513e63d1341d8f25377a1877a7df7487f84649787903fb791bf81cc2",
+  "share_id": "ehmcrm",
+  "title": "Exploring Health Misinformation Detection with Multi-Agent Debate",
+  "optimized_headline": "\"How Multi-Agent Debate Tackles Health Misinformation Detection Challenges\"",
+  "url": "https://arxiv.org/abs/2512.09935",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-12T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.09935v1 Announce Type: new \nAbstract: Fact-checking health-related claims has become increasingly critical as misinformation proliferates online. Effective verification requires both the retrieval of high-quality evidence and rigorous reasoning processes. In this paper, we propose a two-stage framework for health misinformation detection: Agreement Score Prediction followed by Multi-Age",
+  "raw_body": "arXiv:2512.09935v1 Announce Type: new \nAbstract: Fact-checking health-related claims has become increasingly critical as misinformation proliferates online. Effective verification requires both the retrieval of high-quality evidence and rigorous reasoning processes. In this paper, we propose a two-stage framework for health misinformation detection: Agreement Score Prediction followed by Multi-Agent Debate. In the first stage, we employ large language models (LLMs) to independently evaluate retrieved articles and compute an aggregated agreement score that reflects the overall evidence stance. When this score indicates insufficient consensus-falling below a predefined threshold-the system proceeds to a second stage. Multiple agents engage in structured debate to synthesize conflicting evidence and generate well-reasoned verdicts with explicit justifications. Experimental results demonstrate that our two-stage approach achieves superior performance compared to baseline methods, highlighting the value of combining automated scoring with collaborative reasoning for complex verification tasks.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces a two-stage framework to combat health misinformation, using large language models (LLMs) for initial evidence evaluation and multi-agent debate for deeper analysis. The first stage calculates an agreement score from retrieved articles, and if consensus is low, agents debate to clarify conflicting evidence. This method outperformed traditional verification techniques, emphasizing the need for robust fact-checking in an era of rampant misinformation. Its relevance is growing as online health claims become more prevalent.",
+  "why_it_matters": [
+    "This framework could help fact-checkers and health professionals quickly verify claims, improving public trust in health information.",
+    "It signals a shift towards more collaborative and automated approaches in misinformation detection, potentially reshaping how we verify online content."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to settle a disagreement between friends by getting everyone to share their views. This new framework does something similar for health claims. It first checks how much agreement there is on the evidence, and if it's low, it brings in multiple agents to debate the issue. This matters because it could lead to clearer, more trustworthy health information for everyone.",
+    "pm": "For product managers and founders, this framework addresses a critical user need: reliable health information. By integrating automated scoring with collaborative reasoning, it could enhance user confidence in health apps or platforms. The approach could also improve efficiency in content moderation, saving time and resources while ensuring accuracy.",
+    "engineer": "The proposed framework employs large language models (LLMs) to assess health-related articles and compute an agreement score. If this score indicates insufficient consensus, multiple agents engage in a structured debate to resolve conflicting evidence. Experimental results show that this two-stage approach outperforms existing methods, suggesting a promising direction for developing more sophisticated misinformation detection systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-13T03:59:44.891Z",
+  "updated_at": "2025-12-13T03:59:44.891Z",
+  "processing_order": 1765598384893
+}

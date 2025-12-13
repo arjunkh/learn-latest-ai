@@ -1,0 +1,31 @@
+{
+  "content_hash": "6a3101ccafcef72fa54aa099d8df12ac2fc8c5c696eb9cf236391c799feb1d1b",
+  "share_id": "emm0nr",
+  "title": "Echo-CoPilot: A Multi-View, Multi-Task Agent for Echocardiography Interpretation and Reporting",
+  "optimized_headline": "\"Revolutionizing Echocardiography: Discover the Power of Echo-CoPilot's Multi-Tasking Agent\"",
+  "url": "https://arxiv.org/abs/2512.09944",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-12T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.09944v1 Announce Type: new \nAbstract: Echocardiography is central to contemporary cardiovascular care, but full-study interpretation remains a cognitively demanding, multi-view task that is still performed manually. While recent foundation models for echocardiography can achieve strong performance on individual perceptual subtasks such as view classification, segmentation, or disease pr",
+  "raw_body": "arXiv:2512.09944v1 Announce Type: new \nAbstract: Echocardiography is central to contemporary cardiovascular care, but full-study interpretation remains a cognitively demanding, multi-view task that is still performed manually. While recent foundation models for echocardiography can achieve strong performance on individual perceptual subtasks such as view classification, segmentation, or disease prediction, they typically operate in isolation and do not provide a unified, clinically coherent assessment. In this work, we introduce Echo-CoPilot, a multi-view, multi-task agent that uses a large language model to orchestrate a suite of specialized echocardiography tools. Within a ReAct-style loop, the agent decomposes clinician queries, invokes tools for view recognition, cardiac structure segmentation, measurement and disease prediction, and report synthesis, and integrates their outputs into guideline-aware answers and narrative summaries. We evaluate Echo-CoPilot on the public MIMIC-EchoQA benchmark, where it achieves an accuracy of 50.8\\%, outperforming both general-purpose and biomedical video vision-language models. Qualitative analyses further show that the agent leverages quantitative measurements and physiologic context to resolve challenging cases near clinical decision thresholds, such as borderline left ventricular hypertrophy or pericardial effusion severity. The code will be released upon acceptance of the paper.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Echo-CoPilot, an advanced AI agent designed to assist in interpreting echocardiograms. This tool combines multiple specialized functions, achieving an accuracy of 50.8% on the MIMIC-EchoQA benchmark, outperforming existing models. By integrating various tasks, it helps clinicians make more informed decisions about cardiac conditions. This development is significant as it could streamline echocardiography, reducing the cognitive load on healthcare professionals.",
+  "why_it_matters": [
+    "Echo-CoPilot could significantly ease the workload for cardiologists, allowing them to focus on critical decision-making rather than manual interpretations.",
+    "This innovation indicates a shift towards more integrated AI tools in healthcare, enhancing diagnostic accuracy and efficiency in cardiovascular care."
+  ],
+  "lenses": {
+    "eli12": "Echo-CoPilot is like a smart assistant for doctors, helping them analyze heart scans more easily. Instead of handling each part of the scan separately, it combines different tasks into one smooth process. This matters because it could help doctors make quicker and better decisions about patient care.",
+    "pm": "For product managers, Echo-CoPilot highlights a growing need for integrated AI solutions in healthcare. By improving efficiency and accuracy, it addresses user pain points in echocardiography. This could lead to opportunities for developing more comprehensive tools that support clinicians in various medical fields.",
+    "engineer": "From a technical perspective, Echo-CoPilot uses a large language model to orchestrate multiple echocardiography tasks, achieving 50.8% accuracy on the MIMIC-EchoQA benchmark. It effectively integrates view recognition, segmentation, and disease prediction, demonstrating its ability to handle complex clinical scenarios. This performance suggests potential for further advancements in AI-assisted medical diagnostics."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-13T03:59:52.705Z",
+  "updated_at": "2025-12-13T03:59:52.705Z",
+  "processing_order": 1765598392708
+}
