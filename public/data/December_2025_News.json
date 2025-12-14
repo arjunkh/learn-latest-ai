@@ -1,9 +1,93 @@
 {
   "month": "December 2025",
   "year": 2025,
-  "total": 238,
-  "generated_at": "2025-12-13T04:01:32.637Z",
+  "total": 242,
+  "generated_at": "2025-12-14T04:11:29.346Z",
   "articles": [
+    {
+      "id": "e2242702d7767890534ee2a0cd6c71b2615b3a458b536fc64e2946e01512ae5c",
+      "share_id": "wme8ra",
+      "category": "in_action_real_world",
+      "title": "Why most enterprise AI coding pilots underperform (Hint: It's not the model)",
+      "optimized_headline": "Uncovering the Real Reasons Behind Failed Enterprise AI Coding Pilots",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/ai/why-most-enterprise-ai-coding-pilots-underperform-hint-its-not-the-model",
+      "published_at": "2025-12-13T20:00:00.000Z",
+      "speedrun": "Recent advancements in AI coding have shifted from simple assistance to more complex agentic coding, where AI systems plan and execute changes autonomously. However, many enterprise deployments are underperforming, largely due to a lack of structured context around the code. A study indicated that developers using AI in unchanged workflows completed tasks more slowly, highlighting the need for better integration. As enterprises explore these technologies, understanding context will be crucial for success.",
+      "why_it_matters": [
+        "Developers using AI in unchanged workflows faced productivity declines, indicating immediate challenges for teams adopting these tools.",
+        "This trend signals a broader shift in software development, emphasizing the importance of context and workflow design in harnessing AI's potential."
+      ],
+      "lenses": {
+        "eli12": "AI in coding is evolving from just helping with code to actually making decisions about it. Think of it like a chef who not only follows recipes but also plans meals and adjusts based on feedback. For everyday people, this means that as AI becomes smarter in coding, it could lead to better software and more efficient development processes.",
+        "pm": "For product managers and founders, understanding the need for context around AI tools is vital. Simply adding AI to existing workflows can slow down productivity, so rethinking processes is essential. This could lead to improved efficiency and better outcomes, making it important to design workflows that support AI integration.",
+        "engineer": "From a technical standpoint, the shift to agentic coding requires a focus on context engineering. Agents must understand the codebase's structure, dependencies, and history to function effectively. Studies indicate that when agents operate without this structured context, they can produce outputs that are technically correct but disconnected from the actual needs of the project."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "10c69174e93cdc8c39025666487a4c9bf87201556f99a6bcf0271450a436fb56",
+      "share_id": "tml4me",
+      "category": "capabilities_and_how",
+      "title": "The Machine Learning “Advent Calendar” Day 13: LASSO and Ridge Regression in Excel",
+      "optimized_headline": "Unlock Day 13: Explore LASSO and Ridge Regression Techniques in Excel",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/the-machine-learning-advent-calendar-day-13-lasso-and-ridge-regression-in-excel/",
+      "published_at": "2025-12-13T16:56:00.000Z",
+      "speedrun": "Day 13 of the Machine Learning Advent Calendar focuses on Ridge and Lasso regression, which are often seen as complex variations of linear regression. However, the core prediction model remains unchanged; only the training objective shifts. By applying a penalty to the coefficients, these methods encourage more stable solutions, particularly when dealing with correlated features. Understanding this distinction is crucial as it simplifies the implementation of these techniques in Excel.",
+      "why_it_matters": [
+        "Data scientists and analysts can enhance model performance with regularization techniques, leading to better predictions in real-world applications.",
+        "The growing emphasis on model stability reflects a broader trend in data science towards more reliable and interpretable machine learning solutions."
+      ],
+      "lenses": {
+        "eli12": "Ridge and Lasso regression help make predictions more reliable by adding a penalty to the model's coefficients. Think of it like a coach encouraging players to focus on teamwork rather than individual skills. This ensures that the model performs better even when data features are closely related, which is important for everyday decision-making.",
+        "pm": "For product managers, understanding Ridge and Lasso regression can improve user experience by ensuring more accurate predictions. These techniques help manage costs by reducing overfitting, making models more efficient. Implementing them could enhance the reliability of features that depend on data-driven decisions.",
+        "engineer": "Ridge and Lasso regression modify the training objective of linear regression by incorporating penalties on the coefficients. Ridge uses L2 regularization, while Lasso employs L1 regularization, which can lead to sparse solutions. This approach is particularly useful when features are correlated, as it stabilizes the model and improves prediction accuracy."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "a69e92106a78f69d961819fbf74a48b0295c89691a2095eeffb0851a6f0250af",
+      "share_id": "hic3ii",
+      "category": "capabilities_and_how",
+      "title": "How to Increase Coding Iteration Speed",
+      "optimized_headline": "Boost Your Coding Iteration Speed with These 5 Proven Strategies",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/how-to-increase-coding-iteration-speed/",
+      "published_at": "2025-12-13T13:30:00.000Z",
+      "speedrun": "The article discusses methods to enhance coding iteration speed, emphasizing the importance of local testing. By running tests locally, developers can quickly identify and fix issues without relying on external servers. This approach could significantly reduce the time spent on debugging and increase overall productivity. As coding demands grow, improving iteration speed is crucial for staying competitive in software development.",
+      "why_it_matters": [
+        "Developers can save time and resources by testing locally, leading to faster project completion.",
+        "This shift towards local testing reflects a broader trend in software development, prioritizing efficiency and speed."
+      ],
+      "lenses": {
+        "eli12": "Improving coding speed means programmers can work faster and more efficiently. Think of it like practicing a sport in your backyard instead of waiting for a field. Local testing helps developers catch mistakes early, making life easier for everyone involved in a project.",
+        "pm": "For product managers, faster coding iterations mean quicker feature rollouts and improved user satisfaction. By prioritizing local testing, teams could cut costs associated with debugging. This approach allows for more agile responses to user feedback.",
+        "engineer": "From a technical perspective, local testing can streamline the debugging process by allowing developers to run tests in real-time. This could lead to a noticeable reduction in iteration cycles. However, it's important to ensure that local environments mirror production settings to avoid discrepancies."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "a5b45500344b111f1c0d5ac9a5fe8020a01e586bd5251c928de0d8fea1be5fdf",
+      "share_id": "n2b8d0",
+      "category": "capabilities_and_how",
+      "title": "NeurIPS 2025 Best Paper Review: Qwen’s Systematic Exploration of Attention Gating",
+      "optimized_headline": "NeurIPS 2025 Review: How Qwen Revolutionizes Attention Gating Techniques",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/neurips-2025-best-paper-review-qwens-systematic-exploration-of-attention-gating/",
+      "published_at": "2025-12-13T10:16:00.000Z",
+      "speedrun": "At NeurIPS 2025, a paper by Qwen highlighted a new method in attention gating that improves training stability and allows for larger learning rates. This method could lead to more efficient scaling properties in AI models. The findings suggest that even small adjustments in model architecture can significantly impact performance. This is crucial as AI continues to evolve and demands more robust training techniques.",
+      "why_it_matters": [
+        "Researchers and developers could benefit from improved model training, making their work more efficient and reliable.",
+        "This discovery indicates a shift towards optimizing AI architectures, which could enhance overall performance across various applications."
+      ],
+      "lenses": {
+        "eli12": "The Qwen paper shows how a simple tweak in attention mechanisms can make AI models train more steadily. Think of it like adjusting the gears on a bike for a smoother ride. This matters because it could help everyday users enjoy faster and more reliable AI applications.",
+        "pm": "For product managers and founders, this means that refining AI models could lead to better performance without significant cost increases. By adopting these techniques, teams might develop products that are faster and more efficient, ultimately improving user satisfaction.",
+        "engineer": "The paper discusses a systematic approach to attention gating, emphasizing enhanced training stability and the ability to use larger learning rates. This could allow models to scale more effectively, which is crucial for handling complex tasks. However, engineers should consider how these changes might interact with existing architectures."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "1a2b46f9c63c483363e7ef6525e9d4bb187fb0e5a82f26a61ac5dc755236de9f",
       "share_id": "tmlt4n",
