@@ -1,0 +1,31 @@
+{
+  "content_hash": "ebaffbeefe366f2216bbe30f4bc72c042ac9c6efbadce507c2173dde0d45c40e",
+  "share_id": "fpt446",
+  "title": "FutureWeaver: Planning Test-Time Compute for Multi-Agent Systems with Modularized Collaboration",
+  "optimized_headline": "Unlocking Multi-Agent Systems: How FutureWeaver Enhances Test-Time Collaboration Efficiency",
+  "url": "https://arxiv.org/abs/2512.11213",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-15T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.11213v1 Announce Type: new \nAbstract: Scaling test-time computation improves large language model performance without additional training. Recent work demonstrates that techniques such as repeated sampling, self-verification, and self-reflection can significantly enhance task success by allocating more inference-time compute. However, applying these techniques across multiple agents in ",
+  "raw_body": "arXiv:2512.11213v1 Announce Type: new \nAbstract: Scaling test-time computation improves large language model performance without additional training. Recent work demonstrates that techniques such as repeated sampling, self-verification, and self-reflection can significantly enhance task success by allocating more inference-time compute. However, applying these techniques across multiple agents in a multi-agent system is difficult: there does not exist principled mechanisms to allocate compute to foster collaboration among agents, to extend test-time scaling to collaborative interactions, or to distribute compute across agents under explicit budget constraints. To address this gap, we propose FutureWeaver, a framework for planning and optimizing test-time compute allocation in multi-agent systems under fixed budgets. FutureWeaver introduces modularized collaboration, formalized as callable functions that encapsulate reusable multi-agent workflows. These modules are automatically derived through self-play reflection by abstracting recurring interaction patterns from past trajectories. Building on these modules, FutureWeaver employs a dual-level planning architecture that optimizes compute allocation by reasoning over the current task state while also speculating on future steps. Experiments on complex agent benchmarks demonstrate that FutureWeaver consistently outperforms baselines across diverse budget settings, validating its effectiveness for multi-agent collaboration in inference-time optimization.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "FutureWeaver is a new framework designed to enhance the performance of multi-agent systems by optimizing test-time computation without requiring additional training. It introduces modularized collaboration, allowing agents to work together more effectively while adhering to budget constraints. Experiments show that FutureWeaver consistently surpasses existing methods, marking a significant step forward in multi-agent collaboration. This development is important now as it could lead to more efficient AI systems capable of complex tasks.",
+  "why_it_matters": [
+    "AI developers can use FutureWeaver to improve the efficiency of multi-agent systems, enhancing task success rates without added training costs.",
+    "This framework signals a shift towards more collaborative and budget-conscious AI applications, potentially transforming how multi-agent systems are deployed in various industries."
+  ],
+  "lenses": {
+    "eli12": "FutureWeaver helps multiple AI agents work together better by managing how much computing power they use during tasks. Think of it like a team of chefs in a kitchen, each with specific roles, collaborating to create a meal efficiently. This is important for everyday people because it could lead to smarter, more capable AI systems that can handle complex jobs more effectively.",
+    "pm": "For product managers and founders, FutureWeaver offers a way to enhance multi-agent systems without increasing training costs. By optimizing how agents collaborate under budget constraints, it could improve user experiences and operational efficiency. This means products could become more responsive and capable without significant investment in training.",
+    "engineer": "From a technical perspective, FutureWeaver employs a dual-level planning architecture to allocate compute resources effectively among agents. It uses self-play reflection to derive reusable workflows, enhancing collaboration. Experiments indicate it outperforms existing baselines, showing promise for scalable, efficient multi-agent interactions in real-world applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-16T04:09:30.308Z",
+  "updated_at": "2025-12-16T04:09:30.308Z",
+  "processing_order": 1765858170310
+}

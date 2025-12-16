@@ -1,0 +1,31 @@
+{
+  "content_hash": "ac6d1e254f45ee46bf1682a5df427f00eab1758842b3d30547796c3cfc9add81",
+  "share_id": "dlms7v",
+  "title": "Deep Learning--Accelerated Multi-Start Large Neighborhood Search for Real-time Freight Bundling",
+  "optimized_headline": "Revolutionary Deep Learning Method Transforms Real-time Freight Bundling Efficiency",
+  "url": "https://arxiv.org/abs/2512.11187",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-15T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.11187v1 Announce Type: new \nAbstract: Online Freight Exchange Systems (OFEX) play a crucial role in modern freight logistics by facilitating real-time matching between shippers and carrier. However, efficient combinatorial bundling of transporation jobs remains a bottleneck. We model the OFEX combinatorial bundling problem as a multi-commodity one-to-one pickup-and-delivery selective tr",
+  "raw_body": "arXiv:2512.11187v1 Announce Type: new \nAbstract: Online Freight Exchange Systems (OFEX) play a crucial role in modern freight logistics by facilitating real-time matching between shippers and carrier. However, efficient combinatorial bundling of transporation jobs remains a bottleneck. We model the OFEX combinatorial bundling problem as a multi-commodity one-to-one pickup-and-delivery selective traveling salesperson problem (m1-PDSTSP), which optimizes revenue-driven freight bundling under capacity, precedence, and route-length constraints. The key challenge is to couple combinatorial bundle selection with pickup-and-delivery routing under sub-second latency. We propose a learning--accelerated hybrid search pipeline that pairs a Transformer Neural Network-based constructive policy with an innovative Multi-Start Large Neighborhood Search (MSLNS) metaheuristic within a rolling-horizon scheme in which the platform repeatedly freezes the current marketplace into a static snapshot and solves it under a short time budget. This pairing leverages the low-latency, high-quality inference of the learning-based constructor alongside the robustness of improvement search; the multi-start design and plausible seeds help LNS to explore the solution space more efficiently. Across benchmarks, our method outperforms state-of-the-art neural combinatorial optimization and metaheuristic baselines in solution quality with comparable time, achieving an optimality gap of less than 2\\% in total revenue relative to the best available exact baseline method. To our knowledge, this is the first work to establish that a Deep Neural Network-based constructor can reliably provide high-quality seeds for (multi-start) improvement heuristics, with applicability beyond the \\textit{m1-PDSTSP} to a broad class of selective traveling salesperson problems and pickup and delivery problems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduced a new method for optimizing freight bundling in Online Freight Exchange Systems (OFEX), addressing a significant bottleneck in logistics. The approach combines a Transformer Neural Network with a Multi-Start Large Neighborhood Search, achieving an optimality gap of less than 2% in total revenue compared to the best exact methods. This advancement could enhance real-time decision-making in freight logistics, making it more efficient and profitable for shippers and carriers alike.",
+  "why_it_matters": [
+    "Shippers and carriers could see faster and more efficient matching of transportation jobs, improving service delivery times.",
+    "This innovation could signal a shift towards AI-driven logistics solutions, enhancing competitiveness in the freight industry."
+  ],
+  "lenses": {
+    "eli12": "This new method helps match freight jobs more efficiently by using AI to make quick decisions. Imagine a busy restaurant where the chef uses a smart assistant to prioritize orders based on available ingredients. This matters because it could lead to quicker deliveries and lower costs for everyone involved in shipping goods.",
+    "pm": "For product managers and founders, this development highlights the importance of integrating AI into logistics solutions. By addressing the need for real-time job matching, it could reduce operational costs and improve efficiency. Companies might consider adopting similar technologies to stay competitive and enhance customer satisfaction.",
+    "engineer": "The proposed method uses a Transformer Neural Network to generate high-quality initial solutions for the multi-commodity one-to-one pickup-and-delivery problem. It combines this with a Multi-Start Large Neighborhood Search, achieving a remarkable optimality gap of less than 2% in revenue across benchmarks. This could lead to more effective algorithms for solving complex routing problems in logistics."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-16T04:09:21.735Z",
+  "updated_at": "2025-12-16T04:09:21.735Z",
+  "processing_order": 1765858161736
+}

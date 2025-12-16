@@ -1,0 +1,31 @@
+{
+  "content_hash": "6d29e785de5ef513f74b56d3ee53ad59d1d2618bf0e403cc7e6cc98becba7fc0",
+  "share_id": "crlt3v",
+  "title": "CORL: Reinforcement Learning of MILP Policies Solved via Branch and Bound",
+  "optimized_headline": "Unlocking MILP Policies: How CORL Uses Reinforcement Learning and Branch and Bound",
+  "url": "https://arxiv.org/abs/2512.11169",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-15T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.11169v1 Announce Type: new \nAbstract: Combinatorial sequential decision making problems are typically modeled as mixed integer linear programs (MILPs) and solved via branch and bound (B&B) algorithms. The inherent difficulty of modeling MILPs that accurately represent stochastic real world problems leads to suboptimal performance in the real world. Recently, machine learning methods hav",
+  "raw_body": "arXiv:2512.11169v1 Announce Type: new \nAbstract: Combinatorial sequential decision making problems are typically modeled as mixed integer linear programs (MILPs) and solved via branch and bound (B&B) algorithms. The inherent difficulty of modeling MILPs that accurately represent stochastic real world problems leads to suboptimal performance in the real world. Recently, machine learning methods have been applied to build MILP models for decision quality rather than how accurately they model the real world problem. However, these approaches typically rely on supervised learning, assume access to true optimal decisions, and use surrogates for the MILP gradients. In this work, we introduce a proof of concept CORL framework that end to end fine tunes an MILP scheme using reinforcement learning (RL) on real world data to maximize its operational performance. We enable this by casting an MILP solved by B&B as a differentiable stochastic policy compatible with RL. We validate the CORL method in a simple illustrative combinatorial sequential decision making example.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced a new framework called CORL that combines reinforcement learning (RL) with mixed integer linear programming (MILP) to improve decision-making in complex scenarios. Traditional MILP methods often struggle with real-world applications, leading to suboptimal results. CORL fine-tunes MILP models using RL, allowing them to adapt and enhance performance based on actual data. This approach could significantly improve how we solve real-world combinatorial problems.",
+  "why_it_matters": [
+    "This innovation could directly benefit industries relying on complex decision-making, such as logistics and finance, by improving operational efficiency.",
+    "CORL represents a shift towards integrating machine learning with traditional optimization methods, potentially changing how businesses approach problem-solving."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle where the pieces keep changing shape. CORL helps adjust the puzzle-solving strategy using past experiences, making it easier to find the right fit. This matters because it could lead to smarter, faster decisions in everyday tasks like planning deliveries or managing resources.",
+    "pm": "For product managers, CORL offers a way to enhance decision-making tools by integrating RL with existing optimization methods. This could reduce costs and improve efficiency in operations. The practical implication is that products could become more adaptive, learning from real-world data to make better decisions over time.",
+    "engineer": "CORL leverages reinforcement learning to optimize MILP models by treating the B&B algorithm as a differentiable stochastic policy. This approach allows for end-to-end fine-tuning on real-world data, which could lead to improved operational performance compared to traditional supervised learning methods. However, the effectiveness of CORL may depend on the quality and quantity of available data."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-16T04:09:13.296Z",
+  "updated_at": "2025-12-16T04:09:13.296Z",
+  "processing_order": 1765858153296
+}
