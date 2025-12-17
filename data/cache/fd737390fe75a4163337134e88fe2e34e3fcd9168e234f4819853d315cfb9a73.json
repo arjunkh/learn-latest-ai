@@ -1,0 +1,31 @@
+{
+  "content_hash": "fd737390fe75a4163337134e88fe2e34e3fcd9168e234f4819853d315cfb9a73",
+  "share_id": "spmnb5",
+  "title": "Structured Personalization: Modeling Constraints as Matroids for Data-Minimal LLM Agents",
+  "optimized_headline": "Unlocking Data Efficiency: How Matroid Constraints Enhance LLM Personalization",
+  "url": "https://arxiv.org/abs/2512.11907",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-16T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.11907v1 Announce Type: new \nAbstract: Personalizing Large Language Model (LLM) agents requires conditioning them on user-specific data, creating a critical trade-off between task utility and data disclosure. While the utility of adding user data often exhibits diminishing returns (i.e., submodularity), enabling near-optimal greedy selection, real-world personalization is complicated by ",
+  "raw_body": "arXiv:2512.11907v1 Announce Type: new \nAbstract: Personalizing Large Language Model (LLM) agents requires conditioning them on user-specific data, creating a critical trade-off between task utility and data disclosure. While the utility of adding user data often exhibits diminishing returns (i.e., submodularity), enabling near-optimal greedy selection, real-world personalization is complicated by structural constraints. These include logical dependencies (e.g., selecting fact A requires fact B), categorical quotas (e.g., select at most one writing style), and hierarchical rules (e.g., select at most two social media preferences, of which at most one can be for a professional network). These constraints violate the assumptions of standard subset selection algorithms. We propose a principled method to formally model such constraints. We introduce a compilation process that transforms a user's knowledge graph with dependencies into a set of abstract macro-facets. Our central result is a proof that common hierarchical and quota-based constraints over these macro-facets form a valid laminar matroid. This theoretical characterization lets us cast structured personalization as submodular maximization under a matroid constraint, enabling greedy with constant-factor guarantees (and (1-1/e) via continuous greedy) for a much richer and more realistic class of problems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces a new method for personalizing Large Language Model (LLM) agents by modeling user-specific constraints as matroids. This approach addresses the challenge of balancing task utility with data privacy, recognizing that adding user data often leads to diminishing returns. The study shows that common hierarchical and quota-based constraints can be effectively managed using this method, allowing for more efficient and realistic personalization strategies. This is significant as it could enhance user experiences while minimizing data exposure.",
+  "why_it_matters": [
+    "This method could directly impact developers creating personalized AI applications, allowing them to better balance user data use and privacy.",
+    "On a broader scale, it reflects a shift towards more sophisticated AI personalization techniques, potentially influencing market trends in data privacy and user customization."
+  ],
+  "lenses": {
+    "eli12": "This research suggests a smarter way to tailor AI responses to individual users while protecting their privacy. Think of it like organizing a party where you have to choose guests based on various rules, ensuring everyone has a good time without overstepping boundaries. This matters because it could lead to more personalized and safer interactions with AI for everyone.",
+    "pm": "For product managers and founders, this research highlights a user need for personalized experiences without compromising privacy. By adopting this structured approach, they could improve user engagement while managing data costs effectively. A practical implication is the ability to create more tailored features that respect user preferences and constraints.",
+    "engineer": "From a technical perspective, this study proposes a method to model personalization constraints using laminar matroids, which allows for more efficient subset selection. By transforming user knowledge graphs into macro-facets, it enables submodular maximization under constraints, offering constant-factor guarantees for greedy algorithms. This approach could significantly enhance the personalization capabilities of LLMs while adhering to complex user requirements."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-17T04:06:43.236Z",
+  "updated_at": "2025-12-17T04:06:43.236Z",
+  "processing_order": 1765944403239
+}

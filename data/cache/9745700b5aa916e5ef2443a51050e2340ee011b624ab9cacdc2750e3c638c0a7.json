@@ -1,0 +1,31 @@
+{
+  "content_hash": "9745700b5aa916e5ef2443a51050e2340ee011b624ab9cacdc2750e3c638c0a7",
+  "share_id": "wnu16o",
+  "title": "When (Not) to Use Vector DB",
+  "optimized_headline": "\"Key Scenarios for Effectively Using or Avoiding Vector Databases\"",
+  "url": "https://towardsdatascience.com/when-not-to-use-vector-db/",
+  "source": "Towards Data Science",
+  "published_at": "2025-12-16T16:30:00.000Z",
+  "raw_excerpt": "When indexing hurts more than it helps: how we realized our RAG use case needed a key-value store, not a vector database\nThe post When (Not) to Use Vector DB appeared first on Towards Data Science.",
+  "raw_body": "When indexing hurts more than it helps: how we realized our RAG use case needed a key-value store, not a vector database\nThe post When (Not) to Use Vector DB appeared first on Towards Data Science.",
+  "category": "in_action_real_world",
+  "category_confidence": "medium",
+  "speedrun": "A recent article discusses the limitations of using vector databases for certain applications, specifically in retrieval-augmented generation (RAG) use cases. The authors found that a key-value store was more effective, leading to better performance and efficiency. This shift highlights the importance of choosing the right database technology based on specific needs. Understanding when to use each type of database is crucial for optimizing AI applications.",
+  "why_it_matters": [
+    "Developers and data scientists must recognize the right tools for their projects to avoid inefficiencies and wasted resources.",
+    "This insight signals a shift in the market towards more tailored database solutions, emphasizing performance over generic capabilities."
+  ],
+  "lenses": {
+    "eli12": "The article explains that not all databases are created equal. For some tasks, like RAG, a key-value store can be faster and more efficient than a vector database. Think of it like using a toolbox; the right tool makes the job easier. This matters because it helps people choose the best technology for their needs.",
+    "pm": "For product managers, this finding indicates the importance of aligning database choices with user needs. A key-value store could reduce costs and improve efficiency for specific applications. This could lead to faster product iterations and better user experiences.",
+    "engineer": "The article emphasizes that vector databases may not always provide the best performance for RAG use cases. Instead, a key-value store can optimize retrieval speed and reduce latency. This suggests that engineers should evaluate database options based on specific application requirements rather than defaulting to vector databases."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-17T04:06:51.677Z",
+  "updated_at": "2025-12-17T04:06:51.677Z",
+  "processing_order": 1765944411677
+}
