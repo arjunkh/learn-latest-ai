@@ -1,0 +1,31 @@
+{
+  "content_hash": "2f9a3c9acf0526689ecbe9e61ecebe14a21efff4f979624df65bb2953cabc270",
+  "share_id": "acn5as",
+  "title": "Adjudicator: Correcting Noisy Labels with a KG-Informed Council of LLM Agents",
+  "optimized_headline": "How a Council of LLM Agents Fixes Noisy Labels with Knowledge Graphs",
+  "url": "https://arxiv.org/abs/2512.13704",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-17T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.13704v1 Announce Type: new \nAbstract: The performance of production machine learning systems is fundamentally limited by the quality of their training data. In high-stakes industrial applications, noisy labels can degrade performance and erode user trust. This paper presents Adjudicator, a system that addresses the critical data mining challenge of automatically identifying and correcti",
+  "raw_body": "arXiv:2512.13704v1 Announce Type: new \nAbstract: The performance of production machine learning systems is fundamentally limited by the quality of their training data. In high-stakes industrial applications, noisy labels can degrade performance and erode user trust. This paper presents Adjudicator, a system that addresses the critical data mining challenge of automatically identifying and correcting label noise and has been validated for production deployment. Adjudicator models this as a neuro-symbolic task, first constructing a dynamic Knowledge Graph (KG) to unify item context. This KG then informs a \"Council of Agents,\" a novel multi-agent Large Language Model architecture where specialized agents debate and vote on a label's validity. We validate our system on a 1,000-item balanced subset of the AlleNoise benchmark. Our KG-informed model achieves a 0.99 F1-score, significantly outperforming a single-LLM baseline (0.48 F1) and a non-KG council (0.59 F1). Our analysis reveals this is due to a Precision, achieved by a novel override logic that uses the KG to perfectly identify complex, structural errors (complete Recall) -- a class of errors that baselines fail to find. This result demonstrates a robust and explainable system for automated, high-precision data verification, serving as a vital proof-of-concept for generating golden datasets in strictly governed industrial environments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new system called Adjudicator aims to tackle the problem of noisy labels in machine learning, which can harm performance and trust in high-stakes applications. It utilizes a Knowledge Graph and a multi-agent Large Language Model to validate labels, achieving an impressive 0.99 F1-score compared to just 0.48 for a single model. This advancement is crucial as it provides a reliable method for ensuring data quality, essential for industries relying on accurate machine learning outcomes.",
+  "why_it_matters": [
+    "For data scientists and engineers, this means improved accuracy in model training, enhancing reliability in critical applications.",
+    "On a broader scale, this could signal a shift towards more dependable AI systems, fostering greater trust in machine learning applications across industries."
+  ],
+  "lenses": {
+    "eli12": "Adjudicator is like having a panel of experts review and verify information before it’s used. By using a Knowledge Graph, it helps identify and fix errors in data labels, which is important for making sure AI works correctly. This system could lead to more reliable AI tools that people can trust in everyday life.",
+    "pm": "For product managers, Adjudicator addresses a key user need for accurate data in machine learning. By improving label validation, it could reduce costs associated with model retraining and enhance overall efficiency. This means products could be launched faster with higher confidence in their performance.",
+    "engineer": "Technically, Adjudicator employs a neuro-symbolic approach, leveraging a Knowledge Graph to inform a multi-agent architecture. It achieved a 0.99 F1-score on the AlleNoise benchmark, outperforming single-LLM models significantly. This showcases its ability to detect complex errors that traditional methods miss, enhancing data verification processes."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-18T04:07:02.511Z",
+  "updated_at": "2025-12-18T04:07:02.511Z",
+  "processing_order": 1766030822513
+}
