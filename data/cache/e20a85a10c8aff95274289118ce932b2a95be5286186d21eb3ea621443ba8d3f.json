@@ -1,0 +1,31 @@
+{
+  "content_hash": "e20a85a10c8aff95274289118ce932b2a95be5286186d21eb3ea621443ba8d3f",
+  "share_id": "acntde",
+  "title": "Adjudicator: Correcting Noisy Labels with a KG-Informed Council of LLM Agents",
+  "optimized_headline": "\"How a KG-Informed Council of LLM Agents Fixes Noisy Labels\"",
+  "url": "https://arxiv.org/abs/2512.13704",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.13704v1 Announce Type: new \nAbstract: The performance of production machine learning systems is fundamentally limited by the quality of their training data. In high-stakes industrial applications, noisy labels can degrade performance and erode user trust. This paper presents Adjudicator, a system that addresses the critical data mining challenge of automatically identifying and correcti",
+  "raw_body": "arXiv:2512.13704v1 Announce Type: new \nAbstract: The performance of production machine learning systems is fundamentally limited by the quality of their training data. In high-stakes industrial applications, noisy labels can degrade performance and erode user trust. This paper presents Adjudicator, a system that addresses the critical data mining challenge of automatically identifying and correcting label noise and has been validated for production deployment. Adjudicator models this as a neuro-symbolic task, first constructing a dynamic Knowledge Graph (KG) to unify item context. This KG then informs a \"Council of Agents,\" a novel multi-agent Large Language Model architecture where specialized agents debate and vote on a label's validity. We validate our system on a 1,000-item balanced subset of the AlleNoise benchmark. Our KG-informed model achieves a 0.99 F1-score, significantly outperforming a single-LLM baseline (0.48 F1) and a non-KG council (0.59 F1). Our analysis reveals this is due to a Precision, achieved by a novel override logic that uses the KG to perfectly identify complex, structural errors (complete Recall) -- a class of errors that baselines fail to find. This result demonstrates a robust and explainable system for automated, high-precision data verification, serving as a vital proof-of-concept for generating golden datasets in strictly governed industrial environments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new system called Adjudicator has been developed to tackle the issue of noisy labels in machine learning, which can hurt performance and trust in high-stakes applications. It uses a dynamic Knowledge Graph to guide a multi-agent architecture of Large Language Models (LLMs) that debate and vote on label validity. Adjudicator achieved a remarkable 0.99 F1-score on a benchmark dataset, significantly outperforming traditional methods. This advancement is crucial as it helps ensure high-quality training data in critical industrial settings.",
+  "why_it_matters": [
+    "This could immediately improve data quality for industries relying on machine learning, enhancing trust and performance.",
+    "It suggests a shift towards more sophisticated data verification methods, which could redefine standards in machine learning applications."
+  ],
+  "lenses": {
+    "eli12": "Adjudicator is like a team of experts discussing the best answer to a tricky question. It uses a knowledge base to help these experts make better decisions about data labels. This matters because better data leads to more reliable technology that affects everyday services we use.",
+    "pm": "For product managers, Adjudicator highlights the importance of data quality in user trust and product performance. By utilizing a multi-agent system, it could reduce costs related to data correction and improve efficiency in training models. This means products could be launched faster with greater reliability.",
+    "engineer": "Technically, Adjudicator employs a neuro-symbolic approach with a Knowledge Graph to enhance label verification. It achieved a 0.99 F1-score, outperforming single LLM models and non-KG councils significantly. This showcases the potential of combining structured knowledge with advanced language models for high-precision tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-19T04:09:48.093Z",
+  "updated_at": "2025-12-19T04:09:48.093Z",
+  "processing_order": 1766117388095
+}
