@@ -1,0 +1,31 @@
+{
+  "content_hash": "dc284054c113d1422c6654de40eea945b5cb3c5e7109066c2c75c933bae6ed1b",
+  "share_id": "igws1x",
+  "title": "IaC Generation with LLMs: An Error Taxonomy and A Study on Configuration Knowledge Injection",
+  "optimized_headline": "\"Exploring IaC Errors: How LLMs Enhance Configuration Knowledge Injection\"",
+  "url": "https://arxiv.org/abs/2512.14792",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.14792v1 Announce Type: new \nAbstract: Large Language Models (LLMs) currently exhibit low success rates in generating correct and intent-aligned Infrastructure as Code (IaC). This research investigated methods to improve LLM-based IaC generation, specifically for Terraform, by systematically injecting structured configuration knowledge. To facilitate this, an existing IaC-Eval benchmark ",
+  "raw_body": "arXiv:2512.14792v1 Announce Type: new \nAbstract: Large Language Models (LLMs) currently exhibit low success rates in generating correct and intent-aligned Infrastructure as Code (IaC). This research investigated methods to improve LLM-based IaC generation, specifically for Terraform, by systematically injecting structured configuration knowledge. To facilitate this, an existing IaC-Eval benchmark was significantly enhanced with cloud emulation and automated error analysis. Additionally, a novel error taxonomy for LLM-assisted IaC code generation was developed. A series of knowledge injection techniques was implemented and evaluated, progressing from Naive Retrieval-Augmented Generation (RAG) to more sophisticated Graph RAG approaches. These included semantic enrichment of graph components and modeling inter-resource dependencies. Experimental results demonstrated that while baseline LLM performance was poor (27.1% overall success), injecting structured configuration knowledge increased technical validation success to 75.3% and overall success to 62.6%. Despite these gains in technical correctness, intent alignment plateaued, revealing a \"Correctness-Congruence Gap\" where LLMs can become proficient \"coders\" but remain limited \"architects\" in fulfilling nuanced user intent.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights the struggle of Large Language Models (LLMs) in generating accurate Infrastructure as Code (IaC), specifically for Terraform, with a baseline success rate of only 27.1%. By injecting structured configuration knowledge, the success rate improved significantly to 62.6% overall and 75.3% for technical validation. This study reveals a crucial gap in intent alignment, indicating that while LLMs can code effectively, they still struggle to understand complex user intentions. This matters now as organizations increasingly rely on IaC for cloud infrastructure management.",
+  "why_it_matters": [
+    "Developers using LLMs for IaC could see improved accuracy and efficiency, reducing errors in cloud configurations. This could streamline deployment processes.",
+    "The findings indicate a shift in how LLMs can be integrated into DevOps, potentially reshaping tools and practices for infrastructure management in the tech industry."
+  ],
+  "lenses": {
+    "eli12": "This research shows that while LLMs can help write code for cloud infrastructure, they often miss the mark on understanding what users really want. Think of it like a chef who can follow a recipe but doesn’t know how to adjust flavors to suit diners' tastes. This matters because as more businesses adopt cloud technologies, having accurate and intent-aligned code generation could save time and resources.",
+    "pm": "For product managers and founders, this research highlights a significant user need: accurate and context-aware code generation for IaC. The jump from a 27.1% success rate to 62.6% after knowledge injection shows potential for enhancing user efficiency and reducing errors. A practical implication could be developing tools that integrate these knowledge injection techniques to improve user experience in cloud infrastructure management.",
+    "engineer": "From a technical standpoint, this study emphasizes the limitations of LLMs in generating Infrastructure as Code, with a notable baseline success of just 27.1%. By employing structured configuration knowledge and advanced techniques like Graph RAG, the success rate increased to 62.6%. However, the persistent 'Correctness-Congruence Gap' suggests that while LLMs can generate technically correct code, they still struggle with nuanced user intent, indicating areas for further improvement."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-20T03:59:23.995Z",
+  "updated_at": "2025-12-20T03:59:23.995Z",
+  "processing_order": 1766203163997
+}

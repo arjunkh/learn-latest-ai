@@ -1,0 +1,31 @@
+{
+  "content_hash": "eb7c209fa3fbc2a6c0c30fe7b27c50b7f032efbe21986e5b7feca8104c8b11d8",
+  "share_id": "gagux7",
+  "title": "GR-Agent: Adaptive Graph Reasoning Agent under Incomplete Knowledge",
+  "optimized_headline": "Unlocking GR-Agent: How Adaptive Graph Reasoning Thrives on Incomplete Knowledge",
+  "url": "https://arxiv.org/abs/2512.14766",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.14766v1 Announce Type: new \nAbstract: Large language models (LLMs) achieve strong results on knowledge graph question answering (KGQA), but most benchmarks assume complete knowledge graphs (KGs) where direct supporting triples exist. This reduces evaluation to shallow retrieval and overlooks the reality of incomplete KGs, where many facts are missing and answers must be inferred from ex",
+  "raw_body": "arXiv:2512.14766v1 Announce Type: new \nAbstract: Large language models (LLMs) achieve strong results on knowledge graph question answering (KGQA), but most benchmarks assume complete knowledge graphs (KGs) where direct supporting triples exist. This reduces evaluation to shallow retrieval and overlooks the reality of incomplete KGs, where many facts are missing and answers must be inferred from existing facts. We bridge this gap by proposing a methodology for constructing benchmarks under KG incompleteness, which removes direct supporting triples while ensuring that alternative reasoning paths required to infer the answer remain. Experiments on benchmarks constructed using our methodology show that existing methods suffer consistent performance degradation under incompleteness, highlighting their limited reasoning ability. To overcome this limitation, we present the Adaptive Graph Reasoning Agent (GR-Agent). It first constructs an interactive environment from the KG, and then formalizes KGQA as agent environment interaction within this environment. GR-Agent operates over an action space comprising graph reasoning tools and maintains a memory of potential supporting reasoning evidence, including relevant relations and reasoning paths. Extensive experiments demonstrate that GR-Agent outperforms non-training baselines and performs comparably to training-based methods under both complete and incomplete settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced the Adaptive Graph Reasoning Agent (GR-Agent) to tackle knowledge graph question answering (KGQA) in scenarios with incomplete data. Traditional models struggle in these situations, as they rely on complete knowledge graphs, leading to poor performance when faced with missing information. GR-Agent adapts by creating an interactive environment for reasoning, allowing it to infer answers even when direct evidence is lacking. This advancement is significant because it reflects a more realistic approach to how knowledge is often structured in real-world applications.",
+  "why_it_matters": [
+    "This could greatly benefit AI applications in fields like healthcare, where data is often incomplete, allowing for more accurate insights and decisions.",
+    "The shift towards handling incomplete knowledge graphs indicates a broader trend in AI to develop more robust reasoning capabilities, enhancing overall system intelligence."
+  ],
+  "lenses": {
+    "eli12": "The GR-Agent is like a detective solving a case with only partial clues. Instead of needing every piece of evidence, it uses what’s available to piece together the answer. This is important for everyday technology, as it means smarter AI that can provide better responses, even when information is missing.",
+    "pm": "For product managers, GR-Agent highlights a user need for AI systems that can function effectively with incomplete data. This could lead to more efficient solutions, reducing costs associated with data collection and processing. A practical implication is that products can be developed to provide insights in real-time, even when data gaps exist.",
+    "engineer": "Technically, GR-Agent employs an adaptive framework that constructs an interactive environment from knowledge graphs, formalizing KGQA as agent-environment interaction. It utilizes graph reasoning tools and maintains a memory of reasoning paths, which enhances its performance in both complete and incomplete settings. The experiments show a notable improvement over existing methods, indicating a significant leap in reasoning capabilities."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-20T03:59:15.258Z",
+  "updated_at": "2025-12-20T03:59:15.258Z",
+  "processing_order": 1766203155259
+}
