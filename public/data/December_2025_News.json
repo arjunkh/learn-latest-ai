@@ -1,9 +1,72 @@
 {
   "month": "December 2025",
   "year": 2025,
-  "total": 359,
-  "generated_at": "2025-12-21T04:12:08.298Z",
+  "total": 362,
+  "generated_at": "2025-12-22T04:26:01.881Z",
   "articles": [
+    {
+      "id": "0805d459e43ec67c447f70fb1b65710cedf059a9e71e6818a6020517d8baecd3",
+      "share_id": "aawgb0",
+      "category": "trends_risks_outlook",
+      "title": "Agent autonomy without guardrails is an SRE nightmare",
+      "optimized_headline": "\"Why Unchecked Agent Autonomy Poses Risks for SRE Teams\"",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/ai/agent-autonomy-without-guardrails-is-an-sre-nightmare",
+      "published_at": "2025-12-21T19:00:00.000Z",
+      "speedrun": "Organizations are rapidly adopting AI agents to boost efficiency, with over half already using them and many more expected to follow. However, 40% of tech leaders regret not establishing stronger governance from the start, highlighting the need for better policies. As AI agents gain autonomy, they can introduce security risks, making responsible adoption crucial. This is particularly relevant now as companies strive to balance innovation with safety in AI deployment.",
+      "why_it_matters": [
+        "Tech leaders must ensure responsible AI use to safeguard against security risks, especially as adoption rates increase.",
+        "The shift towards AI agents reflects a broader trend in tech where efficiency must be balanced with governance and security measures."
+      ],
+      "lenses": {
+        "eli12": "AI agents are tools that can work autonomously to handle tasks, similar to how a self-driving car navigates without constant input. However, just like we need safety drivers in those cars, organizations need to ensure human oversight when using AI agents. This is important for everyone, as it helps keep systems secure and ensures that AI behaves as expected.",
+        "pm": "For product managers and founders, the rise of AI agents presents an opportunity to enhance user experience while managing risks. Understanding user needs for efficiency must be balanced with implementing robust security measures. A practical implication is that teams should establish clear guidelines for AI agent actions to prevent unintended consequences.",
+        "engineer": "From a technical standpoint, organizations must ensure AI agents operate within defined security parameters and maintain logs of their actions. This means using platforms that comply with standards like SOC2 and ensuring agents have limited permissions based on their roles. Clear, explainable outputs are also essential for tracing actions, which can help mitigate risks associated with agent autonomy."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "cb5822b3fa6f5cf02b6aea2f04fd535dc7fcedf08188c7976d433edef4454e43",
+      "share_id": "hebjoo",
+      "category": "capabilities_and_how",
+      "title": "How to Do Evals on a Bloated RAG Pipeline",
+      "optimized_headline": "Streamlining Evaluations: Optimizing a Bloated RAG Pipeline for Better Results",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/doing-evals-on-a-bloated-rag-pipeline/",
+      "published_at": "2025-12-21T15:30:00.000Z",
+      "speedrun": "The article discusses the challenges of evaluating Retrieval-Augmented Generation (RAG) pipelines, especially when they are overloaded with data. It emphasizes the importance of comparing metrics across different datasets and models to achieve accurate assessments. For instance, understanding how variations in dataset size impact model performance is crucial. This matters now as organizations increasingly rely on RAG systems for data-driven insights.",
+      "why_it_matters": [
+        "Data scientists need reliable evaluation methods to ensure their models perform well across various scenarios, which influences decision-making.",
+        "As RAG systems become more prevalent, standardized evaluation metrics could help organizations benchmark performance and drive innovation."
+      ],
+      "lenses": {
+        "eli12": "Evaluating RAG pipelines is like checking the quality of a restaurant's dishes across different menus. If one menu is too crowded, it can be hard to tell which dish is best. This is important for everyday people because it helps ensure the information we get from AI is accurate and reliable.",
+        "pm": "For product managers, understanding how to evaluate RAG systems can enhance user experience by ensuring the models provide relevant information efficiently. This could lead to cost savings by optimizing the data used in these systems. A practical implication is that better evaluations could improve user satisfaction and retention.",
+        "engineer": "From a technical standpoint, the article highlights the need for consistent metrics when assessing RAG models, particularly when dealing with large datasets. It suggests that variations in dataset size can skew performance results, making it hard to draw reliable conclusions. Engineers should be aware of these factors to refine their models effectively."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "a30ca59934c619fc27799264fdda322b66aebe483c782a1bd0e466d07c713500",
+      "share_id": "tfykd6",
+      "category": "capabilities_and_how",
+      "title": "Tools for Your LLM: a Deep Dive into MCP",
+      "optimized_headline": "Exploring MCP: Essential Tools for Enhancing Your LLM Experience",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/tools-for-your-llm-a-deep-dive-into-mcp/",
+      "published_at": "2025-12-21T13:00:00.000Z",
+      "speedrun": "MCP is a significant advancement that allows large language models (LLMs) to act more like agents by enabling them to access real-time information and perform specific tasks. This capability enhances the functionality of LLMs, making them more useful in dynamic environments. With MCP, LLMs could potentially respond to queries with up-to-date data, improving their relevance and accuracy. This matters now as the demand for intelligent, responsive AI tools continues to grow across various sectors.",
+      "why_it_matters": [
+        "Developers and businesses can leverage MCP to create more responsive AI applications, enhancing user experiences with real-time data access.",
+        "This shift indicates a broader trend towards integrating AI with real-time capabilities, suggesting that LLMs could become essential tools in industries like finance, healthcare, and customer service."
+      ],
+      "lenses": {
+        "eli12": "MCP helps large language models act more like smart assistants by giving them the ability to find current information and complete tasks. Imagine a virtual assistant that not only answers your questions but also checks the latest news or makes reservations for you. This is important for everyday people because it means AI can provide more accurate and timely help in daily life.",
+        "pm": "For product managers and founders, MCP represents a way to enhance AI products by integrating real-time capabilities. This could meet user needs more effectively, as users increasingly expect immediate and relevant responses. A practical implication is that incorporating MCP could improve user engagement and satisfaction by making AI tools more intelligent and useful.",
+        "engineer": "From a technical perspective, MCP enables LLMs to utilize external tools for real-time data retrieval and task execution. This could involve API integrations that allow the model to fetch current information or perform actions based on user input. The implementation of MCP could significantly improve the performance benchmarks of LLMs in applications requiring up-to-date context."
+      },
+      "hype_meter": 2
+    },
     {
       "id": "bf80040027fc9494e4e4b30cf0fb6b80b86d435977549f7eefce3b463a0199a6",
       "share_id": "hsmect",
