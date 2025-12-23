@@ -1,0 +1,31 @@
+{
+  "content_hash": "96bf30755bc68a545cfe77ed3dddd3e34b2bd571b9bc919678d8456c14fc06bb",
+  "share_id": "ppae7i",
+  "title": "PAACE: A Plan-Aware Automated Agent Context Engineering Framework",
+  "optimized_headline": "Discover PAACE: A Revolutionary Framework for Context-Aware Automated Agents",
+  "url": "https://arxiv.org/abs/2512.16970",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-22T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.16970v1 Announce Type: new \nAbstract: Large Language Model (LLM) agents are increasingly deployed in complex, multi-step workflows involving planning, tool use, reflection, and interaction with external knowledge systems. These workflows generate rapidly expanding contexts that must be curated, transformed, and compressed to maintain fidelity, avoid attention dilution, and reduce infere",
+  "raw_body": "arXiv:2512.16970v1 Announce Type: new \nAbstract: Large Language Model (LLM) agents are increasingly deployed in complex, multi-step workflows involving planning, tool use, reflection, and interaction with external knowledge systems. These workflows generate rapidly expanding contexts that must be curated, transformed, and compressed to maintain fidelity, avoid attention dilution, and reduce inference cost. Prior work on summarization and query-aware compression largely ignores the multi-step, plan-aware nature of agentic reasoning. In this work, we introduce PAACE (Plan-Aware Automated Context Engineering), a unified framework for optimizing the evolving state of LLM agents through next-k-task relevance modeling, plan-structure analysis, instruction co-refinement, and function-preserving compression. PAACE comprises (1) PAACE-Syn, a large-scale generator of synthetic agent workflows annotated with stepwise compression supervision, and (2) PAACE-FT, a family of distilled, plan-aware compressors trained from successful teacher demonstrations. Experiments on long-horizon benchmarks (AppWorld, OfficeBench, and 8-Objective QA) demonstrate that PAACE consistently improves agent correctness while substantially reducing context load. On AppWorld, PAACE achieves higher accuracy than all baselines while lowering peak context and cumulative dependency. On OfficeBench and multi-hop QA, PAACE improves both accuracy and F1, achieving fewer steps, lower peak tokens, and reduced attention dependency. Distilled PAACE-FT retains 97 percent of the teacher's performance while reducing inference cost by over an order of magnitude, enabling practical deployment of plan-aware compression with compact models.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced PAACE, a new framework designed to enhance Large Language Model (LLM) agents in complex workflows. It optimizes context management through techniques like plan-structure analysis and function-preserving compression. Notably, PAACE outperforms existing models on benchmarks like AppWorld, achieving higher accuracy while significantly reducing context load. This development could be crucial for deploying LLMs in real-world applications, where efficiency and accuracy are paramount.",
+  "why_it_matters": [
+    "PAACE could streamline workflows for businesses relying on LLMs, improving task execution and reducing operational costs.",
+    "This framework signifies a shift in AI development towards more efficient, context-aware models, potentially transforming how LLMs are utilized across industries."
+  ],
+  "lenses": {
+    "eli12": "PAACE is like a smart assistant that learns how to do tasks better over time. It helps LLMs manage large amounts of information more effectively, making them quicker and more accurate. This matters because it means everyday users could benefit from faster responses and better results when using AI tools.",
+    "pm": "For product managers, PAACE could enhance user experience by delivering more relevant information without overwhelming users with data. It also promises to lower costs associated with running LLMs, making it more feasible for startups to integrate advanced AI. Practically, this means products could become more efficient and user-friendly.",
+    "engineer": "PAACE utilizes next-k-task relevance modeling and plan-structure analysis to optimize LLM workflows. In tests on benchmarks like AppWorld, it achieved higher accuracy while reducing context load and inference costs. The distilled PAACE-FT model retains 97% of the teacher's performance, demonstrating significant efficiency gains in practical applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-23T04:11:53.744Z",
+  "updated_at": "2025-12-23T04:11:53.744Z",
+  "processing_order": 1766463113746
+}
