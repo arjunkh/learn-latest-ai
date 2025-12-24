@@ -1,0 +1,31 @@
+{
+  "content_hash": "8b8eed38b915f486200ac4137f1dc8766582e6ae44500ae49c1d90f971faa9ef",
+  "share_id": "fasgaw",
+  "title": "Faithful and Stable Neuron Explanations for Trustworthy Mechanistic Interpretability",
+  "optimized_headline": "Unlocking Trustworthy Mechanistic Interpretability: The Role of Stable Neurons",
+  "url": "https://arxiv.org/abs/2512.18092",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.18092v1 Announce Type: new \nAbstract: Neuron identification is a popular tool in mechanistic interpretability, aiming to uncover the human-interpretable concepts represented by individual neurons in deep networks. While algorithms such as Network Dissection and CLIP-Dissect achieve great empirical success, a rigorous theoretical foundation remains absent, which is crucial to enable trus",
+  "raw_body": "arXiv:2512.18092v1 Announce Type: new \nAbstract: Neuron identification is a popular tool in mechanistic interpretability, aiming to uncover the human-interpretable concepts represented by individual neurons in deep networks. While algorithms such as Network Dissection and CLIP-Dissect achieve great empirical success, a rigorous theoretical foundation remains absent, which is crucial to enable trustworthy and reliable explanations. In this work, we observe that neuron identification can be viewed as the inverse process of machine learning, which allows us to derive guarantees for neuron explanations. Based on this insight, we present the first theoretical analysis of two fundamental challenges: (1) Faithfulness: whether the identified concept faithfully represents the neuron's underlying function and (2) Stability: whether the identification results are consistent across probing datasets. We derive generalization bounds for widely used similarity metrics (e.g. accuracy, AUROC, IoU) to guarantee faithfulness, and propose a bootstrap ensemble procedure that quantifies stability along with BE (Bootstrap Explanation) method to generate concept prediction sets with guaranteed coverage probability. Experiments on both synthetic and real data validate our theoretical results and demonstrate the practicality of our method, providing an important step toward trustworthy neuron identification.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces a theoretical framework for neuron identification in deep learning, enhancing mechanistic interpretability. This study addresses two key challenges: faithfulness, ensuring that identified concepts accurately reflect a neuron's function, and stability, confirming consistent results across datasets. By deriving generalization bounds and proposing a bootstrap ensemble method, the findings promise more reliable explanations for AI models. This is crucial as AI becomes more integrated into decision-making processes.",
+  "why_it_matters": [
+    "Researchers and developers can now trust neuron explanations better, potentially improving AI transparency and accountability.",
+    "This development signals a shift toward more reliable AI interpretability, which could influence regulatory standards in tech industries."
+  ],
+  "lenses": {
+    "eli12": "This research helps us understand how individual neurons in AI models work. Think of it like decoding a complex puzzle, where each piece (neuron) has a specific role. By ensuring these pieces fit together reliably, we can better understand AI decisions, which matters as AI becomes part of our daily lives.",
+    "pm": "For product managers, this research highlights the need for trustworthy AI explanations. By improving how we identify neuron functions, products can become more transparent, meeting user demands for clarity. This could also reduce costs related to misinterpretations and enhance user trust.",
+    "engineer": "The study presents a theoretical analysis of neuron identification, focusing on faithfulness and stability. It establishes generalization bounds for metrics like accuracy and proposes a bootstrap ensemble method for stability assessment. These advancements could lead to more robust neuron explanations, which are essential for developing reliable AI systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-24T04:09:07.842Z",
+  "updated_at": "2025-12-24T04:09:07.842Z",
+  "processing_order": 1766549347843
+}
