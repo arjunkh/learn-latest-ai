@@ -1,0 +1,31 @@
+{
+  "content_hash": "59e2a0c82f276d4af941393d93b53fac16d885a3e9e05f57fa8f3d014f327a55",
+  "share_id": "ideu4t",
+  "title": "Interpolative Decoding: Exploring the Spectrum of Personality Traits in LLMs",
+  "optimized_headline": "Unlocking Personality Traits in LLMs: What Interpolative Decoding Reveals",
+  "url": "https://arxiv.org/abs/2512.19937",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-24T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.19937v1 Announce Type: new \nAbstract: Recent research has explored using very large language models (LLMs) as proxies for humans in tasks such as simulation, surveys, and studies. While LLMs do not possess a human psychology, they often can emulate human behaviors with sufficiently high fidelity to drive simulations to test human behavioral hypotheses, exhibiting more nuance and range t",
+  "raw_body": "arXiv:2512.19937v1 Announce Type: new \nAbstract: Recent research has explored using very large language models (LLMs) as proxies for humans in tasks such as simulation, surveys, and studies. While LLMs do not possess a human psychology, they often can emulate human behaviors with sufficiently high fidelity to drive simulations to test human behavioral hypotheses, exhibiting more nuance and range than the rule-based agents often employed in behavioral economics. One key area of interest is the effect of personality on decision making, but the requirement that a prompt must be created for every tested personality profile introduces experimental overhead and degrades replicability. To address this issue, we leverage interpolative decoding, representing each dimension of personality as a pair of opposed prompts and employing an interpolation parameter to simulate behavior along the dimension. We show that interpolative decoding reliably modulates scores along each of the Big Five dimensions. We then show how interpolative decoding causes LLMs to mimic human decision-making behavior in economic games, replicating results from human psychological research. Finally, we present preliminary results of our efforts to ``twin'' individual human players in a collaborative game through systematic search for points in interpolation space that cause the system to replicate actions taken by the human subject.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces interpolative decoding as a method to better simulate human personality traits in large language models (LLMs). By representing personality dimensions as opposing prompts, researchers can manipulate LLM behavior more efficiently, enhancing replicability in behavioral studies. This method allows LLMs to mimic human decision-making in economic games, producing results consistent with human psychology. The implications are significant, as this could improve the accuracy of simulations in behavioral research.",
+  "why_it_matters": [
+    "Researchers could benefit from more efficient tools in behavioral studies, reducing overhead and improving replicability of results.",
+    "This approach signals a shift in how AI can be used to understand human behavior, potentially altering methodologies in psychology and economics."
+  ],
+  "lenses": {
+    "eli12": "Interpolative decoding helps LLMs act more like humans by adjusting their responses based on personality traits. Imagine tuning a radio to find the perfect station; this method fine-tunes AI behavior to reflect human-like decision-making. This could help researchers better understand how personality affects choices in real life.",
+    "pm": "For product managers and founders, this research highlights a new way to enhance AI interactions by making them more relatable and human-like. By understanding user personality traits more deeply, products could become more engaging and effective. This approach could streamline the development of AI systems that need to interact with users in a nuanced manner.",
+    "engineer": "The study utilizes interpolative decoding to manipulate LLM responses along the Big Five personality dimensions, which enhances the model's ability to replicate human decision-making in economic games. This method reduces the need for extensive prompt engineering and improves replicability. However, the nuances of human psychology remain complex, and this technique may not capture every aspect of human behavior."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-25T04:11:34.958Z",
+  "updated_at": "2025-12-25T04:11:34.958Z",
+  "processing_order": 1766635894960
+}

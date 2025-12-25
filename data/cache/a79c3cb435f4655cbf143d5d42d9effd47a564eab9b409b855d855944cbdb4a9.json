@@ -1,0 +1,31 @@
+{
+  "content_hash": "a79c3cb435f4655cbf143d5d42d9effd47a564eab9b409b855d855944cbdb4a9",
+  "share_id": "bbcc7c",
+  "title": "Bonferroni vs. Benjamini-Hochberg: Choosing Your P-Value Correction",
+  "optimized_headline": "\"Bonferroni or Benjamini-Hochberg: Which P-Value Correction Should You Choose?\"",
+  "url": "https://towardsdatascience.com/the-time-10-99-was-too-big-superheavy-elements-and-deceit/",
+  "source": "Towards Data Science",
+  "published_at": "2025-12-24T12:00:00.000Z",
+  "raw_excerpt": "Multiple hypothesis testing, P-values, and Monte Carlo\nThe post Bonferroni vs. Benjamini-Hochberg: Choosing Your P-Value Correction appeared first on Towards Data Science.",
+  "raw_body": "Multiple hypothesis testing, P-values, and Monte Carlo\nThe post Bonferroni vs. Benjamini-Hochberg: Choosing Your P-Value Correction appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article discusses two popular methods for correcting P-values in multiple hypothesis testing: Bonferroni and Benjamini-Hochberg. Bonferroni is stricter, controlling the family-wise error rate, while Benjamini-Hochberg is more flexible, focusing on the false discovery rate. The choice between these methods can significantly affect research outcomes, especially in fields with large datasets. Understanding these differences is crucial for researchers to make informed decisions about their findings.",
+  "why_it_matters": [
+    "Researchers face immediate challenges in accurately interpreting results, which can lead to false conclusions if corrections are not applied correctly.",
+    "The choice of correction method reflects a broader trend towards balancing rigor and flexibility in statistical analysis, impacting how studies are designed and reported."
+  ],
+  "lenses": {
+    "eli12": "When researchers test many hypotheses at once, they risk finding false positives. Bonferroni is like a strict teacher who fails all students for a single mistake, while Benjamini-Hochberg allows some flexibility. This choice affects how trustworthy scientific results are, which matters to everyone who relies on research for decisions.",
+    "pm": "For product managers and founders, understanding these correction methods can help in interpreting data from A/B tests or user research. Choosing the right P-value correction can influence product decisions, especially when assessing user engagement or feature effectiveness. It’s vital to ensure that insights derived from data are reliable and actionable.",
+    "engineer": "From a technical perspective, Bonferroni adjusts P-values by dividing the alpha level by the number of tests, making it conservative. In contrast, Benjamini-Hochberg ranks P-values and controls the expected proportion of false discoveries, offering a more nuanced approach. This flexibility can be beneficial in high-dimensional data scenarios, but researchers must be cautious about the trade-offs."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-25T04:12:14.377Z",
+  "updated_at": "2025-12-25T04:12:14.377Z",
+  "processing_order": 1766635934380
+}
