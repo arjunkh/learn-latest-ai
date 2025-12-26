@@ -1,0 +1,31 @@
+{
+  "content_hash": "0ed87c0796c84fecafbfb410731f547d6b8f90b8cea6cd2f3ee8304706e98b07",
+  "share_id": "idento",
+  "title": "Interpolative Decoding: Exploring the Spectrum of Personality Traits in LLMs",
+  "optimized_headline": "Unveiling Interpolative Decoding: How LLMs Reflect Diverse Personality Traits",
+  "url": "https://arxiv.org/abs/2512.19937",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-25T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.19937v1 Announce Type: new \nAbstract: Recent research has explored using very large language models (LLMs) as proxies for humans in tasks such as simulation, surveys, and studies. While LLMs do not possess a human psychology, they often can emulate human behaviors with sufficiently high fidelity to drive simulations to test human behavioral hypotheses, exhibiting more nuance and range t",
+  "raw_body": "arXiv:2512.19937v1 Announce Type: new \nAbstract: Recent research has explored using very large language models (LLMs) as proxies for humans in tasks such as simulation, surveys, and studies. While LLMs do not possess a human psychology, they often can emulate human behaviors with sufficiently high fidelity to drive simulations to test human behavioral hypotheses, exhibiting more nuance and range than the rule-based agents often employed in behavioral economics. One key area of interest is the effect of personality on decision making, but the requirement that a prompt must be created for every tested personality profile introduces experimental overhead and degrades replicability. To address this issue, we leverage interpolative decoding, representing each dimension of personality as a pair of opposed prompts and employing an interpolation parameter to simulate behavior along the dimension. We show that interpolative decoding reliably modulates scores along each of the Big Five dimensions. We then show how interpolative decoding causes LLMs to mimic human decision-making behavior in economic games, replicating results from human psychological research. Finally, we present preliminary results of our efforts to ``twin'' individual human players in a collaborative game through systematic search for points in interpolation space that cause the system to replicate actions taken by the human subject.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research has explored how large language models (LLMs) can simulate human behaviors, particularly in decision-making influenced by personality traits. By using a technique called interpolative decoding, researchers can represent personality dimensions as pairs of prompts, allowing LLMs to mimic human-like decisions in economic games. This approach improves the efficiency of experiments by reducing the need for extensive prompt creation. Understanding this could enhance simulations in behavioral studies and applications across various fields.",
+  "why_it_matters": [
+    "Researchers and psychologists could benefit from more accurate simulations of human behavior, improving the quality of studies and insights.",
+    "This technique could signal a shift in how LLMs are utilized in behavioral economics and psychology, enhancing the replicability of findings."
+  ],
+  "lenses": {
+    "eli12": "This research shows that LLMs can act like humans in decision-making by adjusting personality traits through a method called interpolative decoding. Think of it like tuning a radio to find the right frequency for clear sound. This is important because it could help researchers better understand human behavior without needing to create new prompts for every personality type.",
+    "pm": "For product managers and founders, this technique could streamline user research by allowing for quicker adaptations of LLMs to simulate different user personalities. This could lead to more efficient testing and validation of products based on user behavior. Understanding how LLMs can mimic human decisions might also inform design choices and user engagement strategies.",
+    "engineer": "From a technical perspective, interpolative decoding allows LLMs to adjust their responses based on the Big Five personality traits, enhancing their ability to simulate human-like decision-making. The method uses pairs of opposed prompts and an interpolation parameter to achieve this. Initial results indicate that this approach can replicate human behaviors in economic games, suggesting a promising avenue for further research in AI and behavioral modeling."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2025-12-26T04:08:59.092Z",
+  "updated_at": "2025-12-26T04:08:59.092Z",
+  "processing_order": 1766722139094
+}
