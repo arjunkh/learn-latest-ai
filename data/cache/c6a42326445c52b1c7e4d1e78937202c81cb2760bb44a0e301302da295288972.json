@@ -1,0 +1,31 @@
+{
+  "content_hash": "c6a42326445c52b1c7e4d1e78937202c81cb2760bb44a0e301302da295288972",
+  "share_id": "gesjjb",
+  "title": "GamiBench: Evaluating Spatial Reasoning and 2D-to-3D Planning Capabilities of MLLMs with Origami Folding Tasks",
+  "optimized_headline": "Exploring MLLMs' Spatial Reasoning through Origami Folding Challenges",
+  "url": "https://arxiv.org/abs/2512.22207",
+  "source": "ArXiv AI",
+  "published_at": "2025-12-31T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.22207v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) are proficient in perception and instruction-following, but they still struggle with spatial reasoning: the ability to mentally track and manipulate objects across multiple views and over time. Spatial reasoning is a key component of human intelligence, but most existing benchmarks focus on static images or f",
+  "raw_body": "arXiv:2512.22207v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) are proficient in perception and instruction-following, but they still struggle with spatial reasoning: the ability to mentally track and manipulate objects across multiple views and over time. Spatial reasoning is a key component of human intelligence, but most existing benchmarks focus on static images or final outputs, failing to account for the sequential and viewpoint-dependent nature of this skill. To close this gap, we introduce GamiBench, a benchmark designed to evaluate spatial reasoning and 2D-to-3D planning in MLLMs through origami-inspired folding tasks. GamiBench includes 186 regular and 186 impossible 2D crease patterns paired with their corresponding 3D folded shapes, produced from six distinct viewpoints across three visual question-answering (VQA) tasks: predicting 3D fold configurations, distinguishing valid viewpoints, and detecting impossible patterns. Unlike previous benchmarks that assess only final predictions, GamiBench holistically evaluates the entire reasoning process--measuring cross-view consistency, physical feasibility through impossible-fold detection, and interpretation of intermediate folding steps. It further introduces new diagnostic metrics--viewpoint consistency (VC) and impossible fold selection rate (IFSR)--to measure how well models handle folds of varying complexity. Our experiments show that even leading models such as GPT-5 and Gemini-2.5-Pro struggle on single-step spatial understanding. These contributions establish a standardized framework for evaluating geometric understanding and spatial reasoning in MLLMs. Dataset and code: https://github.com/stvngo/GamiBench.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced GamiBench, a new benchmark to assess how well multimodal large language models (MLLMs) handle spatial reasoning through origami folding tasks. It includes 372 crease patterns and focuses on three visual question-answering tasks, measuring aspects like cross-view consistency. Despite advancements, top models like GPT-5 still struggle with basic spatial understanding. This matters now as it highlights gaps in AI's ability to perform complex reasoning tasks, which are vital for real-world applications.",
+  "why_it_matters": [
+    "GamiBench provides immediate insights for AI developers aiming to enhance spatial reasoning in models, crucial for applications in robotics and design.",
+    "This benchmark signals a broader shift in AI research, emphasizing the need for evaluating reasoning processes rather than just final outputs, which could lead to more capable AI systems."
+  ],
+  "lenses": {
+    "eli12": "GamiBench is like a new test for AI, checking how well it can think about shapes and their movements, similar to how we fold paper into origami. It includes tasks that require understanding from different angles, which is important for tasks like navigation or design. This matters for everyday people because better AI could lead to smarter tools that help us in various tasks, from home design to robotics.",
+    "pm": "For product managers and founders, GamiBench highlights a user need for AI that can understand spatial relationships better, which could enhance applications in fields like augmented reality and gaming. Improving spatial reasoning could reduce errors in design and planning processes. A practical implication is that teams might want to invest in enhancing these capabilities to create more intuitive and reliable products.",
+    "engineer": "GamiBench introduces a structured way to evaluate spatial reasoning in MLLMs, focusing on 372 crease patterns across multiple viewpoints. It emphasizes metrics like viewpoint consistency (VC) and impossible fold selection rate (IFSR) to assess model performance. Notably, even advanced models like GPT-5 and Gemini-2.5-Pro show weaknesses in single-step spatial understanding, indicating significant areas for improvement."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-01T04:32:37.921Z",
+  "updated_at": "2026-01-01T04:32:37.921Z",
+  "processing_order": 1767241957923
+}
