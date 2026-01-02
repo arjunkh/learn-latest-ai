@@ -1,0 +1,31 @@
+{
+  "content_hash": "b414308fdd70b21612234f3b5ba2ec4fb32468abc8e628c2edc7e2679a8141eb",
+  "share_id": "ssperz",
+  "title": "SPARK: Search Personalization via Agent-Driven Retrieval and Knowledge-sharing",
+  "optimized_headline": "Unlocking SPARK: How Agent-Driven Retrieval Transforms Search Personalization",
+  "url": "https://arxiv.org/abs/2512.24008",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-01T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.24008v1 Announce Type: new \nAbstract: Personalized search demands the ability to model users' evolving, multi-dimensional information needs; a challenge for systems constrained by static profiles or monolithic retrieval pipelines. We present SPARK (Search Personalization via Agent-Driven Retrieval and Knowledge-sharing), a framework in which coordinated persona-based large language mode",
+  "raw_body": "arXiv:2512.24008v1 Announce Type: new \nAbstract: Personalized search demands the ability to model users' evolving, multi-dimensional information needs; a challenge for systems constrained by static profiles or monolithic retrieval pipelines. We present SPARK (Search Personalization via Agent-Driven Retrieval and Knowledge-sharing), a framework in which coordinated persona-based large language model (LLM) agents deliver task-specific retrieval and emergent personalization. SPARK formalizes a persona space defined by role, expertise, task context, and domain, and introduces a Persona Coordinator that dynamically interprets incoming queries to activate the most relevant specialized agents. Each agent executes an independent retrieval-augmented generation process, supported by dedicated long- and short-term memory stores and context-aware reasoning modules. Inter-agent collaboration is facilitated through structured communication protocols, including shared memory repositories, iterative debate, and relay-style knowledge transfer. Drawing on principles from cognitive architectures, multi-agent coordination theory, and information retrieval, SPARK models how emergent personalization properties arise from distributed agent behaviors governed by minimal coordination rules. The framework yields testable predictions regarding coordination efficiency, personalization quality, and cognitive load distribution, while incorporating adaptive learning mechanisms for continuous persona refinement. By integrating fine-grained agent specialization with cooperative retrieval, SPARK provides insights for next-generation search systems capable of capturing the complexity, fluidity, and context sensitivity of human information-seeking behavior.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced SPARK, a new framework for personalized search that uses multiple specialized agents to better understand users' evolving information needs. It relies on a Persona Coordinator to activate the most relevant agents based on user queries. Each agent independently retrieves and generates information, collaborating through structured communication. This approach could enhance the personalization quality and efficiency of search systems, making them more responsive to how people actually seek information.",
+  "why_it_matters": [
+    "Users could experience more relevant search results tailored to their specific context and needs, improving their overall search efficiency.",
+    "This development signals a shift towards more dynamic and responsive search technologies, potentially transforming how businesses approach user engagement and information retrieval."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to find a book in a library without a catalog. SPARK acts like a librarian who knows exactly what you want and who can call on different assistants to help you find it. This means that everyday users could enjoy a more tailored search experience, making it easier to find the right information quickly.",
+    "pm": "For product managers, SPARK highlights the need for adaptive search features that respond to user context. By leveraging specialized agents, products could offer more efficient and personalized search experiences, potentially reducing user frustration and increasing engagement. This could lead to higher satisfaction rates and better retention.",
+    "engineer": "SPARK employs a multi-agent system where each agent specializes in different aspects of information retrieval, enhancing personalization. It utilizes a Persona Coordinator to dynamically interpret queries and activate relevant agents, which operate with independent retrieval-augmented generation processes. This framework could improve coordination efficiency and personalization quality while distributing cognitive load among agents."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-02T04:14:43.635Z",
+  "updated_at": "2026-01-02T04:14:43.635Z",
+  "processing_order": 1767327283638
+}

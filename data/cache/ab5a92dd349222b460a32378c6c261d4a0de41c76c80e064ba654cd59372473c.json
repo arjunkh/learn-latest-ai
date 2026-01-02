@@ -1,0 +1,31 @@
+{
+  "content_hash": "ab5a92dd349222b460a32378c6c261d4a0de41c76c80e064ba654cd59372473c",
+  "share_id": "tdavyl",
+  "title": "The Drill-Down and Fabricate Test (DDFT): A Protocol for Measuring Epistemic Robustness in Language Models",
+  "optimized_headline": "New Protocol Reveals How to Measure Language Models' Epistemic Robustness",
+  "url": "https://arxiv.org/abs/2512.23850",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-01T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2512.23850v1 Announce Type: new \nAbstract: Current language model evaluations measure what models know under ideal conditions but not how robustly they know it under realistic stress. Static benchmarks like MMLU and TruthfulQA cannot distinguish a model that lacks knowledge from one whose verification mechanisms collapse when information degrades or adversaries probe for weaknesses. We intro",
+  "raw_body": "arXiv:2512.23850v1 Announce Type: new \nAbstract: Current language model evaluations measure what models know under ideal conditions but not how robustly they know it under realistic stress. Static benchmarks like MMLU and TruthfulQA cannot distinguish a model that lacks knowledge from one whose verification mechanisms collapse when information degrades or adversaries probe for weaknesses. We introduce the Drill-Down and Fabricate Test (DDFT), a protocol that measures epistemic robustness: a model's ability to maintain factual accuracy under progressive semantic compression and adversarial fabrication. We propose a two-system cognitive model comprising a Semantic System that generates fluent text and an Epistemic Verifier that validates factual accuracy. Our findings, based on evaluating 9 frontier models across 8 knowledge domains at 5 compression levels (1,800 turn-level evaluations), reveal that epistemic robustness is orthogonal to conventional design paradigms. Neither parameter count (r=0.083, p=0.832) nor architectural type (r=0.153, p=0.695) significantly predicts robustness, suggesting it emerges from training methodology and verification mechanisms distinct from current approaches. Error detection capability strongly predicts overall robustness (rho=-0.817, p=0.007), indicating this is the critical bottleneck. We find that flagship models exhibit brittleness despite their scale, while smaller models can achieve robust performance, challenging assumptions about the relationship between model size and reliability. The DDFT framework provides both theoretical foundation and practical tools for assessing epistemic robustness before deployment in critical applications.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced the Drill-Down and Fabricate Test (DDFT) to evaluate how well language models maintain accuracy under stress. Unlike traditional benchmarks, DDFT assesses a model's ability to withstand information degradation through a two-system cognitive model. Findings show that error detection capability is a key predictor of robustness, with flagship models often being less reliable than smaller ones. This matters now as it challenges existing beliefs about model size and reliability in critical applications.",
+  "why_it_matters": [
+    "Developers and researchers can better understand how to build more reliable AI systems that perform well under real-world conditions.",
+    "This shift in evaluation could lead to more resilient AI applications, enhancing trust and safety in critical areas like healthcare and finance."
+  ],
+  "lenses": {
+    "eli12": "The DDFT is like a stress test for language models, checking how well they hold up when information gets tricky. Instead of just seeing what they know, it looks at how they cope when facts get fuzzy or misleading. This is important for everyday people because it means AI could become more trustworthy and useful in situations where accuracy is crucial.",
+    "pm": "For product managers and founders, the DDFT highlights the need for robust AI that can handle real-world challenges. It suggests that focusing solely on model size isn't enough; understanding how models verify information is crucial. This insight could lead to better user experiences and more reliable products in the market.",
+    "engineer": "From a technical perspective, the DDFT evaluates language models using a two-system cognitive model that separates text generation from factual verification. The study assessed nine models across eight knowledge domains and found that error detection capability is a strong predictor of robustness. This indicates that current design paradigms may overlook critical factors influencing a model's reliability."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-02T04:14:18.483Z",
+  "updated_at": "2026-01-02T04:14:18.483Z",
+  "processing_order": 1767327258483
+}
