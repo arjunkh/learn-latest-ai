@@ -1,0 +1,31 @@
+{
+  "content_hash": "f374db288217528d9d089b2eb48b902267300d0ce950209b50d7b69be6742f9e",
+  "share_id": "fllzk4",
+  "title": "Finetuning Large Language Models for Automated Depression Screening in Nigerian Pidgin English: GENSCORE Pilot Study",
+  "optimized_headline": "Automated Depression Screening in Nigerian Pidgin: Insights from the GENSCORE Study",
+  "url": "https://arxiv.org/abs/2601.00004",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-05T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.00004v1 Announce Type: new \nAbstract: Depression is a major contributor to the mental-health burden in Nigeria, yet screening coverage remains limited due to low access to clinicians, stigma, and language barriers. Traditional tools like the Patient Health Questionnaire-9 (PHQ-9) were validated in high-income countries but may be linguistically or culturally inaccessible for low- and mi",
+  "raw_body": "arXiv:2601.00004v1 Announce Type: new \nAbstract: Depression is a major contributor to the mental-health burden in Nigeria, yet screening coverage remains limited due to low access to clinicians, stigma, and language barriers. Traditional tools like the Patient Health Questionnaire-9 (PHQ-9) were validated in high-income countries but may be linguistically or culturally inaccessible for low- and middle-income countries and communities such as Nigeria where people communicate in Nigerian Pidgin and more than 520 local languages. This study presents a novel approach to automated depression screening using fine-tuned large language models (LLMs) adapted for conversational Nigerian Pidgin. We collected a dataset of 432 Pidgin-language audio responses from Nigerian young adults aged 18-40 to prompts assessing psychological experiences aligned with PHQ-9 items, performed transcription, rigorous preprocessing and annotation, including semantic labeling, slang and idiom interpretation, and PHQ-9 severity scoring. Three LLMs - Phi-3-mini-4k-instruct, Gemma-3-4B-it, and GPT-4.1 - were fine-tuned on this annotated dataset, and their performance was evaluated quantitatively (accuracy, precision and semantic alignment) and qualitatively (clarity, relevance, and cultural appropriateness). GPT-4.1 achieved the highest quantitative performance, with 94.5% accuracy in PHQ-9 severity scoring prediction, outperforming Gemma-3-4B-it and Phi-3-mini-4k-instruct. Qualitatively, GPT-4.1 also produced the most culturally appropriate, clear, and contextually relevant responses. AI-mediated depression screening for underserved Nigerian communities. This work provides a foundation for deploying conversational mental-health tools in linguistically diverse, resource-constrained environments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study focused on using fine-tuned large language models (LLMs) for depression screening in Nigerian Pidgin English. The research involved 432 audio responses from young adults and found that GPT-4.1 achieved an impressive 94.5% accuracy in predicting PHQ-9 severity scores. This development addresses the significant mental health burden in Nigeria, where traditional screening tools often fall short due to language and cultural barriers.",
+  "why_it_matters": [
+    "This could improve access to mental health support for young Nigerians, helping those who face stigma and language challenges in seeking help.",
+    "The study highlights a shift towards using AI in healthcare, particularly in low-resource settings, which could enhance mental health services globally."
+  ],
+  "lenses": {
+    "eli12": "The study shows how technology can help people struggling with depression in Nigeria by using familiar language. Think of it like having a friend who speaks your language and understands your culture, making it easier to talk about feelings. This matters because it could lead to more people getting the help they need without feeling judged.",
+    "pm": "For product managers and founders, this study illustrates a growing user need for accessible mental health tools in diverse languages. By leveraging AI, companies could create more effective solutions that reduce costs and reach underserved populations. A practical takeaway is the importance of cultural relevance in product design.",
+    "engineer": "From a technical perspective, the study fine-tuned three LLMs, with GPT-4.1 outperforming its peers with 94.5% accuracy in PHQ-9 severity scoring. The approach involved extensive preprocessing of 432 audio responses, including semantic labeling and idiom interpretation. This highlights the potential for LLMs to adapt to various linguistic contexts, though further exploration of scalability and real-world application is needed."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-06T04:13:46.966Z",
+  "updated_at": "2026-01-06T04:13:46.966Z",
+  "processing_order": 1767672826967
+}
