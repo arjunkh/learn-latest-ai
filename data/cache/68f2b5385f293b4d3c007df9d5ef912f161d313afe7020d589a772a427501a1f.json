@@ -1,0 +1,31 @@
+{
+  "content_hash": "68f2b5385f293b4d3c007df9d5ef912f161d313afe7020d589a772a427501a1f",
+  "share_id": "cccdr5",
+  "title": "CogCanvas: Compression-Resistant Cognitive Artifacts for Long LLM Conversations",
+  "optimized_headline": "Discover CogCanvas: Enhancing Long Conversations with Compression-Resistant Cognitive Artifacts",
+  "url": "https://arxiv.org/abs/2601.00821",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-06T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.00821v1 Announce Type: new \nAbstract: Large language models face a fundamental tension between context window limits and information fidelity in long conversations. Existing approaches--truncation and summarization--either discard early information or lose nuanced details. We introduce CogCanvas, a training-free framework that extracts verbatim-grounded cognitive artifacts (decisions, f",
+  "raw_body": "arXiv:2601.00821v1 Announce Type: new \nAbstract: Large language models face a fundamental tension between context window limits and information fidelity in long conversations. Existing approaches--truncation and summarization--either discard early information or lose nuanced details. We introduce CogCanvas, a training-free framework that extracts verbatim-grounded cognitive artifacts (decisions, facts, reminders) from conversation turns and organizes them into a temporal-aware graph for compression-resistant retrieval.\n  On the LoCoMo benchmark, CogCanvas achieves 34.7% overall accuracy, outperforming RAG (25.6%, +9.1pp) and GraphRAG (13.7%, +21.0pp). The advantage is most pronounced on temporal reasoning: 31.5% vs. 9.3% (RAG) and 5.0% (GraphRAG)--a +530% relative improvement. On multi-hop causal reasoning, CogCanvas achieves 81.0% pass rate vs. 40.0% for GraphRAG (+41.0pp). Controlled benchmarks show 97.5% recall (+78.5pp vs. summarization) with 93.0% exact match preservation.\n  While heavily-optimized approaches achieve higher absolute scores through dedicated training (EverMemOS: approximately 92%), our training-free approach provides practitioners with an immediately-deployable alternative that significantly outperforms standard baselines. Code and data: https://github.com/tao-hpu/cog-canvas.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "CogCanvas is a new framework designed to enhance long conversations with large language models by preserving information without needing additional training. It organizes key conversation elements into a graph, allowing for better retrieval. On the LoCoMo benchmark, it achieved 34.7% accuracy, surpassing existing methods like RAG and GraphRAG significantly, especially in temporal reasoning. This development is crucial as it addresses the limitations of current methods in maintaining context during lengthy dialogues.",
+  "why_it_matters": [
+    "CogCanvas could immediately benefit developers of chatbots and virtual assistants, enabling them to maintain context in longer interactions more effectively.",
+    "This advancement reflects a broader shift in AI toward more efficient, user-friendly solutions that don't require extensive training to implement."
+  ],
+  "lenses": {
+    "eli12": "CogCanvas is like a smart notebook that remembers key points from a long conversation without needing to be trained on every detail. It helps large language models keep track of important information over time, making conversations smoother. This is important for everyday users who want more coherent and relevant responses in chats or voice assistants.",
+    "pm": "For product managers, CogCanvas addresses a key user need: maintaining context in long interactions. It offers a cost-effective way to enhance conversation quality without the overhead of extensive training. This could lead to more engaging user experiences and higher satisfaction rates in applications like customer support or personal assistants.",
+    "engineer": "Technically, CogCanvas employs a training-free method to extract and organize cognitive artifacts from conversations into a temporal-aware graph. It outperformed RAG and GraphRAG on benchmarks, achieving a 34.7% accuracy and a 97.5% recall rate. This approach offers a practical alternative for developers looking to enhance context retention without the complexity of training models."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-07T04:14:48.750Z",
+  "updated_at": "2026-01-07T04:14:48.750Z",
+  "processing_order": 1767759288753
+}
