@@ -1,0 +1,31 @@
+{
+  "content_hash": "8d47e8e05282c0545a39586ee36d387110d7ebebc5765f341cc1602e048cf3cf",
+  "share_id": "hswzyy",
+  "title": "HNSW at Scale: Why Your RAG System Gets Worse as the Vector Database Grows",
+  "optimized_headline": "HNSW at Scale: How Growing Vector Databases Impact Your RAG System",
+  "url": "https://towardsdatascience.com/hnsw-at-scale-why-your-rag-system-gets-worse-as-the-vector-database-grows/",
+  "source": "Towards Data Science",
+  "published_at": "2026-01-07T16:30:00.000Z",
+  "raw_excerpt": "How approximate vector search silently degrades Recall—and what to do about It\nThe post HNSW at Scale: Why Your RAG System Gets Worse as the Vector Database Grows appeared first on Towards Data Science.",
+  "raw_body": "How approximate vector search silently degrades Recall—and what to do about It\nThe post HNSW at Scale: Why Your RAG System Gets Worse as the Vector Database Grows appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent article highlights how the performance of approximate vector search, particularly using HNSW (Hierarchical Navigable Small World) algorithms, declines as the size of the vector database increases. Specifically, recall—the ability to retrieve relevant results—can diminish significantly. This matters because many systems rely on accurate retrieval for effective performance, and understanding this issue is crucial for improving search capabilities as databases expand.",
+  "why_it_matters": [
+    "Developers and researchers relying on vector databases may face reduced accuracy, impacting user experience and system efficiency.",
+    "As organizations scale their data, this decline in recall could lead to broader challenges in AI search applications, necessitating improved methodologies."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to find a specific book in an ever-growing library. As more books are added, it becomes harder to locate the one you want. This is similar to how approximate vector search can struggle with recall as databases grow. For everyday users, this means that search tools may not always give the best results as they expand.",
+    "pm": "For product managers and founders, this decline in recall with larger databases highlights a critical user need for more efficient search algorithms. Balancing cost and performance becomes essential, as poor retrieval can lead to user frustration. Addressing this issue could enhance product reliability and user satisfaction.",
+    "engineer": "From a technical perspective, the article points out that HNSW's performance drops in recall as the vector database scales. This decline is attributed to the algorithm's reliance on approximate search methods, which can become less effective with larger datasets. Engineers need to consider alternative strategies or optimizations to maintain recall as their systems grow."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-08T04:14:27.436Z",
+  "updated_at": "2026-01-08T04:14:27.436Z",
+  "processing_order": 1767845667436
+}

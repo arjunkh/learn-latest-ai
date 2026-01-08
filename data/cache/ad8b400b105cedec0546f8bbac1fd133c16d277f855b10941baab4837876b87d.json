@@ -1,0 +1,31 @@
+{
+  "content_hash": "ad8b400b105cedec0546f8bbac1fd133c16d277f855b10941baab4837876b87d",
+  "share_id": "tea5e6",
+  "title": "Textual Explanations and Their Evaluations for Reinforcement Learning Policy",
+  "optimized_headline": "Exploring Textual Explanations: Evaluating Their Impact on Reinforcement Learning Policies",
+  "url": "https://arxiv.org/abs/2601.02514",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-07T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.02514v1 Announce Type: new \nAbstract: Understanding a Reinforcement Learning (RL) policy is crucial for ensuring that autonomous agents behave according to human expectations. This goal can be achieved using Explainable Reinforcement Learning (XRL) techniques. Although textual explanations are easily understood by humans, ensuring their correctness remains a challenge, and evaluations i",
+  "raw_body": "arXiv:2601.02514v1 Announce Type: new \nAbstract: Understanding a Reinforcement Learning (RL) policy is crucial for ensuring that autonomous agents behave according to human expectations. This goal can be achieved using Explainable Reinforcement Learning (XRL) techniques. Although textual explanations are easily understood by humans, ensuring their correctness remains a challenge, and evaluations in state-of-the-art remain limited. We present a novel XRL framework for generating textual explanations, converting them into a set of transparent rules, improving their quality, and evaluating them. Expert's knowledge can be incorporated into this framework, and an automatic predicate generator is also proposed to determine the semantic information of a state. Textual explanations are generated using a Large Language Model (LLM) and a clustering technique to identify frequent conditions. These conditions are then converted into rules to evaluate their properties, fidelity, and performance in the deployed environment. Two refinement techniques are proposed to improve the quality of explanations and reduce conflicting information. Experiments were conducted in three open-source environments to enable reproducibility, and in a telecom use case to evaluate the industrial applicability of the proposed XRL framework. This framework addresses the limitations of an existing method, Autonomous Policy Explanation, and the generated transparent rules can achieve satisfactory performance on certain tasks. This framework also enables a systematic and quantitative evaluation of textual explanations, providing valuable insights for the XRL field.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework for Explainable Reinforcement Learning (XRL) has been introduced to improve the clarity and accuracy of textual explanations generated for RL policies. This framework utilizes a Large Language Model (LLM) and clustering techniques to create transparent rules from explanations, enhancing their quality and evaluation. Experiments showed that these refined explanations can perform well in various environments, addressing existing challenges in ensuring agent behavior aligns with human expectations. This development is significant as it could lead to safer and more understandable AI systems.",
+  "why_it_matters": [
+    "This framework could improve how developers and researchers ensure AI agents behave as intended, making it easier to trust their decisions.",
+    "On a broader scale, enhanced explainability could drive the adoption of AI technologies across industries by addressing transparency concerns."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to understand a robot's decisions like reading a recipe. The new XRL framework helps make these 'recipes' clearer by turning complex explanations into simple rules. This matters because clearer AI behavior can help people feel more comfortable using these technologies in their daily lives.",
+    "pm": "For product managers, this framework could enhance user trust by making AI decisions more transparent. By improving explanation quality, teams might reduce user confusion and increase adoption. A practical implication is that clearer explanations can lead to better user engagement and satisfaction.",
+    "engineer": "This framework leverages a Large Language Model (LLM) and clustering techniques to generate and refine textual explanations for RL policies. By converting these explanations into transparent rules, the framework allows for systematic evaluation of their fidelity and performance. Experiments in open-source environments and a telecom use case demonstrate its practical applicability, addressing limitations in existing XRL methods."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-08T04:13:59.109Z",
+  "updated_at": "2026-01-08T04:13:59.109Z",
+  "processing_order": 1767845639109
+}
