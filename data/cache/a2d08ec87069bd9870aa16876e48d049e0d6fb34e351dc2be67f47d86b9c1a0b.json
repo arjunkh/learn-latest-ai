@@ -1,0 +1,31 @@
+{
+  "content_hash": "a2d08ec87069bd9870aa16876e48d049e0d6fb34e351dc2be67f47d86b9c1a0b",
+  "share_id": "drqh0k",
+  "title": "Digital Red Queen: Adversarial Program Evolution in Core War with LLMs",
+  "optimized_headline": "\"How Adversarial Programs Evolve in the Ongoing Core War with LLMs\"",
+  "url": "https://arxiv.org/abs/2601.03335",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-08T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.03335v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly being used to evolve solutions to problems in many domains, in a process inspired by biological evolution. However, unlike biological evolution, most LLM-evolution frameworks are formulated as static optimization problems, overlooking the open-ended adversarial dynamics that characterize real-world evolu",
+  "raw_body": "arXiv:2601.03335v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly being used to evolve solutions to problems in many domains, in a process inspired by biological evolution. However, unlike biological evolution, most LLM-evolution frameworks are formulated as static optimization problems, overlooking the open-ended adversarial dynamics that characterize real-world evolutionary processes. Here, we study Digital Red Queen (DRQ), a simple self-play algorithm that embraces these so-called \"Red Queen\" dynamics via continual adaptation to a changing objective. DRQ uses an LLM to evolve assembly-like programs, called warriors, which compete against each other for control of a virtual machine in the game of Core War, a Turing-complete environment studied in artificial life and connected to cybersecurity. In each round of DRQ, the model evolves a new warrior to defeat all previous ones, producing a sequence of adapted warriors. Over many rounds, we observe that warriors become increasingly general (relative to a set of held-out human warriors). Interestingly, warriors also become less behaviorally diverse across independent runs, indicating a convergence pressure toward a general-purpose behavioral strategy, much like convergent evolution in nature. This result highlights a potential value of shifting from static objectives to dynamic Red Queen objectives. Our work positions Core War as a rich, controllable sandbox for studying adversarial adaptation in artificial systems and for evaluating LLM-based evolution methods. More broadly, the simplicity and effectiveness of DRQ suggest that similarly minimal self-play approaches could prove useful in other more practical multi-agent adversarial domains, like real-world cybersecurity or combating drug resistance.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced the Digital Red Queen (DRQ), a method using large language models (LLMs) to evolve competitive programs in the game of Core War. Unlike traditional static optimization, DRQ embraces ongoing adaptation, creating increasingly general warriors that adapt to defeat previous versions. Over time, these warriors show reduced behavioral diversity, indicating a trend toward a common strategy. This approach could reshape how we understand and implement evolving systems in fields like cybersecurity.",
+  "why_it_matters": [
+    "For AI researchers, DRQ offers a new framework to explore dynamic adaptation in competitive environments, potentially enhancing AI's problem-solving capabilities.",
+    "This represents a shift in AI development, moving from static models to dynamic systems that better mimic real-world adversarial scenarios, which could influence multiple industries."
+  ],
+  "lenses": {
+    "eli12": "The Digital Red Queen is like a game where players constantly improve their strategies to outsmart their opponents. Instead of sticking to one plan, it adapts and evolves over time. This matters because it shows how AI can learn and grow in complex situations, making it more effective in real-life challenges like cybersecurity.",
+    "pm": "For product managers and founders, DRQ highlights the need for adaptive solutions that evolve with user demands. This could lead to more resilient products that better respond to changing environments, ultimately improving user experience and efficiency in competitive markets.",
+    "engineer": "From a technical perspective, DRQ utilizes a self-play algorithm where LLMs evolve assembly-like programs in a Turing-complete environment. The observed convergence of warriors suggests potential benefits of dynamic objectives over static ones, which could inform future designs in adversarial AI systems. Further exploration could reveal applications in real-world challenges like cybersecurity."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-09T04:14:58.726Z",
+  "updated_at": "2026-01-09T04:14:58.726Z",
+  "processing_order": 1767932098727
+}
