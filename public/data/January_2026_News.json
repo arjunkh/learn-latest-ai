@@ -1,9 +1,72 @@
 {
   "month": "January 2026",
   "year": 2026,
-  "total": 139,
-  "generated_at": "2026-01-10T04:11:01.370Z",
+  "total": 142,
+  "generated_at": "2026-01-11T04:32:20.240Z",
   "articles": [
+    {
+      "id": "71884b076fbef9fc4090f4602790d27227ae108ee8204836573c60001240b6e2",
+      "share_id": "wyl4po",
+      "category": "trends_risks_outlook",
+      "title": "Why your LLM bill is exploding — and how semantic caching can cut it by 73%",
+      "optimized_headline": "\"Discover How Semantic Caching Can Reduce Your LLM Costs by 73%\"",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/why-your-llm-bill-is-exploding-and-how-semantic-caching-can-cut-it-by-73",
+      "published_at": "2026-01-10T19:00:00.000Z",
+      "speedrun": "A recent analysis revealed that LLM API costs were rising 30% monthly due to users asking similar questions in different ways, leading to unnecessary charges. By implementing semantic caching, which identifies queries with the same intent regardless of wording, the cache hit rate soared from 18% to 67%, slashing costs by 73%. This approach highlights the importance of optimizing query handling to manage expenses effectively in AI applications.",
+      "why_it_matters": [
+        "Businesses using LLMs could save significantly on operational costs, improving their bottom line through smarter query management.",
+        "This shift towards semantic caching represents a broader trend in AI efficiency, emphasizing the need for advanced techniques to handle user interactions."
+      ],
+      "lenses": {
+        "eli12": "Imagine asking for directions to a restaurant but phrasing it in multiple ways. Semantic caching helps AI understand that all these questions seek the same answer, saving time and resources. This matters because it can lower costs for companies while maintaining service quality, making AI more accessible and efficient for everyone.",
+        "pm": "For product managers, this means recognizing user behavior patterns can lead to significant cost savings. By implementing semantic caching, teams could reduce API expenses while improving response times. It’s a practical way to enhance user experience without inflating budgets.",
+        "engineer": "From a technical perspective, semantic caching uses query embeddings to identify similar queries, improving hit rates from 18% to 67%. This method requires careful threshold tuning to avoid incorrect responses, highlighting the need for a nuanced approach to caching in LLM systems."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "5549cb1f6d9617bd3e45191e924c6600d8fc4138edb4c4e30fec50a25938f6ce",
+      "share_id": "flphw5",
+      "category": "capabilities_and_how",
+      "title": "Federated Learning, Part 1: The Basics of Training Models Where the Data Lives",
+      "optimized_headline": "Unlocking Federated Learning: How Models Train Without Moving Your Data",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/federated-learning-part-1-the-basics-of-training-models-where-the-data-lives/",
+      "published_at": "2026-01-10T15:00:00.000Z",
+      "speedrun": "Federated learning is a method of training machine learning models where data remains on users' devices rather than being sent to a central server. This approach enhances privacy and reduces the risk of data breaches. By allowing models to learn from decentralized data, federated learning could improve performance while respecting user confidentiality. As concerns about data privacy grow, this method is becoming increasingly relevant in the tech landscape.",
+      "why_it_matters": [
+        "Users gain more control over their data, which could lead to increased trust in technology companies and their services.",
+        "The shift towards decentralized data processing reflects a broader trend in AI that prioritizes user privacy and security."
+      ],
+      "lenses": {
+        "eli12": "Federated learning is like teaching a class where students learn from their own notes instead of sharing them. Each student improves their knowledge without revealing personal information. This matters because it helps protect our privacy while still allowing technology to get smarter.",
+        "pm": "For product managers and founders, federated learning addresses user privacy needs while maintaining model efficiency. It could lower data handling costs and improve user trust. Implementing this approach might lead to innovative features that prioritize user confidentiality.",
+        "engineer": "Federated learning trains models across multiple devices, improving data privacy and reducing the need for centralized data storage. It typically uses algorithms like FedAvg, which aggregates model updates without accessing raw data. While effective, it might face challenges in communication efficiency and model convergence."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "40f59bc87eb8a63a313291deddf0c312b616db2f6ebf1d374766e960ac7dcd6d",
+      "share_id": "btfnmm",
+      "category": "capabilities_and_how",
+      "title": "Beyond the Flat Table: Building an Enterprise-Grade Financial Model in Power BI",
+      "optimized_headline": "Transforming Financial Models: Discover Enterprise-Grade Solutions in Power BI",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/beyond-the-flat-table-building-an-enterprise-grade-financial-model-in-power-bi/",
+      "published_at": "2026-01-10T13:00:00.000Z",
+      "speedrun": "The article outlines a detailed process for creating a robust financial model using Power BI, focusing on data transformation, star schema modeling, and DAX variance analysis. Key specifics include the importance of structuring data effectively and using DAX for nuanced analysis. This approach aims to enhance decision-making in enterprises. Understanding these methods is crucial now as businesses increasingly rely on data-driven insights.",
+      "why_it_matters": [
+        "Financial analysts and business intelligence professionals can improve their reporting accuracy with better modeling techniques, enabling more informed decisions.",
+        "This reflects a broader trend towards sophisticated data analytics in business, indicating a shift towards more strategic, data-informed operations."
+      ],
+      "lenses": {
+        "eli12": "Creating a financial model in Power BI is like building a detailed map for a road trip. You need to lay out the routes (data transformation) and landmarks (star schema modeling) to find the best path. This matters because better maps help businesses navigate their finances more effectively.",
+        "pm": "For product managers or founders, this article highlights the need for accurate financial insights to guide product strategy. By implementing robust data models, teams can reduce costs and improve efficiency in decision-making. A practical takeaway is to invest time in mastering DAX for deeper financial analysis.",
+        "engineer": "The article emphasizes the use of star schema modeling to organize data efficiently, which can significantly enhance query performance in Power BI. It also discusses DAX variance analysis, which allows for detailed financial insights. Understanding these techniques can help engineers optimize data workflows and reporting accuracy."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "8f03e3a9418d8bc8eede614f2c52f3d9259c88ff52ceadca78267dcb84b4760b",
       "share_id": "acdgcb",
