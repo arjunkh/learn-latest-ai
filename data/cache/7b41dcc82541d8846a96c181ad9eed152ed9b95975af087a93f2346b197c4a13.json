@@ -1,0 +1,31 @@
+{
+  "content_hash": "7b41dcc82541d8846a96c181ad9eed152ed9b95975af087a93f2346b197c4a13",
+  "share_id": "gtpysq",
+  "title": "GUI-Eyes: Tool-Augmented Perception for Visual Grounding in GUI Agents",
+  "optimized_headline": "Revolutionary Tool Enhances GUI Agents' Visual Grounding Capabilities",
+  "url": "https://arxiv.org/abs/2601.09770",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-16T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.09770v1 Announce Type: new \nAbstract: Recent advances in vision-language models (VLMs) and reinforcement learning (RL) have driven progress in GUI automation. However, most existing methods rely on static, one-shot visual inputs and passive perception, lacking the ability to adaptively determine when, whether, and how to observe the interface. We present GUI-Eyes, a reinforcement learni",
+  "raw_body": "arXiv:2601.09770v1 Announce Type: new \nAbstract: Recent advances in vision-language models (VLMs) and reinforcement learning (RL) have driven progress in GUI automation. However, most existing methods rely on static, one-shot visual inputs and passive perception, lacking the ability to adaptively determine when, whether, and how to observe the interface. We present GUI-Eyes, a reinforcement learning framework for active visual perception in GUI tasks. To acquire more informative observations, the agent learns to make strategic decisions on both whether and how to invoke visual tools, such as cropping or zooming, within a two-stage reasoning process. To support this behavior, we introduce a progressive perception strategy that decomposes decision-making into coarse exploration and fine-grained grounding, coordinated by a two-level policy. In addition, we design a spatially continuous reward function tailored to tool usage, which integrates both location proximity and region overlap to provide dense supervision and alleviate the reward sparsity common in GUI environments. On the ScreenSpot-Pro benchmark, GUI-Eyes-3B achieves 44.8% grounding accuracy using only 3k labeled samples, significantly outperforming both supervised and RL-based baselines. These results highlight that tool-aware active perception, enabled by staged policy reasoning and fine-grained reward feedback, is critical for building robust and data-efficient GUI agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced GUI-Eyes, a new framework that enhances GUI automation through active visual perception. Unlike traditional methods that use static inputs, GUI-Eyes employs reinforcement learning to make strategic observations, improving its decision-making capabilities. It achieved 44.8% grounding accuracy on the ScreenSpot-Pro benchmark with only 3,000 labeled samples, outperforming existing models. This advancement is significant as it could lead to more efficient and adaptable GUI agents in various applications.",
+  "why_it_matters": [
+    "GUI-Eyes could immediately benefit developers creating automated GUI agents, providing them with a more intelligent tool for observation and interaction.",
+    "This shift towards active perception in AI could signal a broader trend in automation, prioritizing adaptability and efficiency in machine learning models."
+  ],
+  "lenses": {
+    "eli12": "GUI-Eyes is like giving a robot glasses that help it decide when to look closer or zoom in on details. This tool allows it to understand and interact with computer interfaces better. For everyday people, it means smarter software that can handle tasks more efficiently, making technology easier to use.",
+    "pm": "For product managers, GUI-Eyes addresses the need for more intelligent automation tools that can adapt to different situations. By improving efficiency and reducing the amount of labeled data required, it could lower development costs. This means teams could focus on building better features rather than spending time on data collection.",
+    "engineer": "Technically, GUI-Eyes utilizes a two-stage reasoning process to enhance visual perception in GUI tasks. It achieved a 44.8% grounding accuracy on the ScreenSpot-Pro benchmark with just 3,000 labeled samples, surpassing existing supervised and RL-based methods. The use of a spatially continuous reward function tailored to tool usage is a notable innovation, addressing the common issue of reward sparsity in GUI environments."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-17T04:07:04.697Z",
+  "updated_at": "2026-01-17T04:07:04.697Z",
+  "processing_order": 1768622824698
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "09e45f43606f003dec01dea1a4dbe934c193f1e243900073f333bcf88c22e92d",
+  "share_id": "papesc",
+  "title": "PCN-Rec: Agentic Proof-Carrying Negotiation for Reliable Governance-Constrained Recommendation",
+  "optimized_headline": "Unveiling Agentic Proof-Carrying Negotiation for Enhanced Governance in Recommendations",
+  "url": "https://arxiv.org/abs/2601.09771",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-16T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.09771v1 Announce Type: new \nAbstract: Modern LLM-based recommenders can generate compelling ranked lists, but they struggle to reliably satisfy governance constraints such as minimum long-tail exposure or diversity requirements. We present PCN-Rec, a proof-carrying negotiation pipeline that separates natural-language reasoning from deterministic enforcement. A base recommender (MF/CF) p",
+  "raw_body": "arXiv:2601.09771v1 Announce Type: new \nAbstract: Modern LLM-based recommenders can generate compelling ranked lists, but they struggle to reliably satisfy governance constraints such as minimum long-tail exposure or diversity requirements. We present PCN-Rec, a proof-carrying negotiation pipeline that separates natural-language reasoning from deterministic enforcement. A base recommender (MF/CF) produces a candidate window of size W, which is negotiated by two agents: a User Advocate optimizing relevance and a Policy Agent enforcing constraints. A mediator LLM synthesizes a top-N slate together with a structured certificate (JSON) describing the claimed constraint satisfaction. A deterministic verifier recomputes all constraints from the slate and accepts only verifier-checked certificates; if verification fails, a deterministic constrained-greedy repair produces a compliant slate for re-verification, yielding an auditable trace. On MovieLens-100K with governance constraints, PCN-Rec achieves a 98.55% pass rate on feasible users (n = 551, W = 80) versus a one-shot single-LLM baseline without verification/repair, while preserving utility with only a 0.021 absolute drop in NDCG@10 (0.403 vs. 0.424); differences are statistically significant (p < 0.05).",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced PCN-Rec, a new negotiation framework for recommendation systems that ensures compliance with governance constraints like diversity and long-tail exposure. It uses a two-agent system—a User Advocate for relevance and a Policy Agent for constraints—supported by a mediator LLM. In tests on MovieLens-100K, PCN-Rec achieved a 98.55% success rate in meeting these constraints while maintaining high recommendation quality. This advancement is significant as it addresses the challenge of balancing user preferences with governance requirements in AI recommendations.",
+  "why_it_matters": [
+    "PCN-Rec could enhance user experience by providing personalized recommendations while adhering to necessary guidelines, benefiting both users and content providers.",
+    "This development signals a shift in the recommendation market towards systems that prioritize ethical governance alongside user engagement, potentially influencing industry standards."
+  ],
+  "lenses": {
+    "eli12": "PCN-Rec is like having two friends help you choose a movie: one picks what you like, while the other ensures it meets certain rules, like including diverse options. This system helps make sure recommendations aren't just good but also fair. It matters because it could lead to better choices for everyone, making sure no one gets left out.",
+    "pm": "For product managers, PCN-Rec offers a way to meet user needs for personalized content while ensuring compliance with governance standards. This dual approach could reduce the risk of backlash over biased recommendations while maintaining user satisfaction. Implementing such systems could enhance brand trust and loyalty in a competitive market.",
+    "engineer": "PCN-Rec employs a two-agent negotiation framework to enforce governance constraints in recommendation systems. It achieved a 98.55% constraint satisfaction rate on MovieLens-100K, significantly outperforming a baseline model. The integration of a deterministic verifier adds robustness, ensuring that recommendations meet specified criteria while only slightly affecting overall utility."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-17T04:07:12.669Z",
+  "updated_at": "2026-01-17T04:07:12.669Z",
+  "processing_order": 1768622832671
+}
