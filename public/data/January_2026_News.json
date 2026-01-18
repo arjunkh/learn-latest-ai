@@ -1,9 +1,72 @@
 {
   "month": "January 2026",
   "year": 2026,
-  "total": 241,
-  "generated_at": "2026-01-17T04:08:35.008Z",
+  "total": 248,
+  "generated_at": "2026-01-18T04:28:00.240Z",
   "articles": [
+    {
+      "id": "e74fa00525cdcb3969953497812085e1dd44ac3743eeb20fd32d98cca6c365d9",
+      "share_id": "wrllgs",
+      "category": "capabilities_and_how",
+      "title": "Why reinforcement learning plateaus without representation depth (and other key takeaways from NeurIPS 2025)",
+      "optimized_headline": "\"NeurIPS 2025 Insights: How Representation Depth Affects Reinforcement Learning Progress\"",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/why-reinforcement-learning-plateaus-without-representation-depth-and-other",
+      "published_at": "2026-01-17T19:00:00.000Z",
+      "speedrun": "At NeurIPS 2025, key papers challenged long-held beliefs in AI, emphasizing that progress is limited by architecture and evaluation rather than just model size. Notably, one study showed that reinforcement learning (RL) can scale significantly by increasing network depth, yielding performance boosts of 2X to 50X. Another paper revealed that attention mechanisms could be improved with a simple gating technique, enhancing model reliability. This shift in understanding is crucial for developers and researchers aiming to optimize AI systems effectively.",
+      "why_it_matters": [
+        "AI practitioners must adapt their approaches to focus on system design and evaluation metrics, impacting how they develop and assess models.",
+        "The industry is moving towards a deeper understanding of AI systems, suggesting that future advancements will rely more on architecture than on merely increasing model size."
+      ],
+      "lenses": {
+        "eli12": "NeurIPS 2025 highlighted that AI advancement isn't just about making bigger models. It's more about how we design and evaluate them. For example, one study showed that adding depth to networks could improve RL performance significantly. This matters because it suggests that smarter design choices could lead to better AI in everyday applications.",
+        "pm": "For product managers, the findings from NeurIPS 2025 indicate that understanding system design is essential. Instead of just focusing on larger models, they should consider how architectural changes can enhance user experience. For instance, incorporating diversity metrics in creative tools could lead to more engaging outputs.",
+        "engineer": "From a technical perspective, NeurIPS 2025 revealed that scaling RL through depth, rather than just data, can yield substantial performance gains. One study demonstrated that increasing network layers to 1,000 led to improvements between 2X and 50X. This suggests that architectural choices are critical and that engineers should explore these dimensions to optimize AI systems."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "3d58054dbfb73a7f132a8501a93f76f423e0f497aa5e2dbeb0ad37fc6f9b610f",
+      "share_id": "dpm3cq",
+      "category": "trends_risks_outlook",
+      "title": "Data Poisoning in Machine Learning: Why and How People Manipulate Training Data",
+      "optimized_headline": "Uncovering Data Poisoning: How Manipulating Training Data Affects Machine Learning",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/data-poisoning-in-machine-learning-why-and-how-people-manipulate-training-data/",
+      "published_at": "2026-01-17T15:00:00.000Z",
+      "speedrun": "Data poisoning is a tactic where individuals intentionally manipulate training data to mislead machine learning models. This can degrade model performance and produce inaccurate predictions. For example, a study found that even a small percentage of poisoned data could significantly alter outcomes. Understanding this issue is crucial now as AI systems become more integrated into decision-making processes across various industries.",
+      "why_it_matters": [
+        "Organizations relying on AI for critical decisions could face risks if their models are compromised by bad data. This could lead to poor outcomes in sectors like healthcare or finance.",
+        "Data poisoning highlights a growing concern in AI security, indicating that as reliance on AI increases, so does the need for robust data integrity measures."
+      ],
+      "lenses": {
+        "eli12": "Data poisoning is like adding salt to a recipe; too much can ruin the dish. When bad data is fed to AI models, it can lead to wrong predictions. This matters because many people depend on AI for things like recommendations and safety, so keeping data clean is essential.",
+        "pm": "For product managers, data poisoning emphasizes the need for quality control in training datasets. Ensuring data integrity could reduce costs associated with model retraining and improve user trust. This means investing in monitoring systems to catch anomalies early.",
+        "engineer": "From a technical perspective, data poisoning can be particularly harmful even with a small percentage of compromised data. For instance, research shows that injecting just 1% of poisoned data can lead to a 90% drop in model accuracy. Engineers must focus on robust data validation techniques to mitigate these risks."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "497cc642d406faa121ddb9e4ea32fe8478ba8c394cf4ad56b1a26acc9c7c8960",
+      "share_id": "gmsv3w",
+      "category": "capabilities_and_how",
+      "title": "A Geometric Method to Spot Hallucinations Without an LLM Judge",
+      "optimized_headline": "Discover a New Geometric Approach to Detect Hallucinations in AI Models",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/the-red-bird/",
+      "published_at": "2026-01-17T13:00:00.000Z",
+      "speedrun": "Researchers have developed a geometric method to identify hallucinations in AI without relying on a large language model (LLM) judge. This approach mimics how birds fly in formation, achieving global order through local coordination. By focusing on the relationships between data points, this method could enhance the reliability of AI outputs. It matters now as AI continues to be integrated into critical applications, where accuracy is essential.",
+      "why_it_matters": [
+        "This method could directly benefit AI developers by providing a more efficient way to ensure accuracy in AI outputs.",
+        "It indicates a shift towards decentralized techniques in AI evaluation, potentially reducing reliance on resource-intensive models."
+      ],
+      "lenses": {
+        "eli12": "Think of a flock of birds flying together without a leader. Each bird follows its neighbors, creating a beautiful formation. This new method for spotting AI errors works similarly, focusing on how data points relate to one another. It could help everyday people by making AI tools more trustworthy in their daily tasks.",
+        "pm": "For product managers, this method addresses the need for reliable AI outputs without heavy computational costs. By utilizing local data relationships, it could improve efficiency in detecting errors. This means faster iterations and potentially lower costs in developing AI-driven products.",
+        "engineer": "This geometric approach leverages local coordination principles to identify hallucinations in AI outputs. By analyzing the relationships between data points instead of using a large language model, it offers a more lightweight solution. However, engineers should consider the trade-offs in accuracy and the contexts where this method is applied."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "195861a2327b39b5c8c86c16097cda95cd63f248733a62d30655f728ae9f165d",
       "share_id": "bflps3",
@@ -173,6 +236,27 @@
       "hype_meter": 3
     },
     {
+      "id": "862de84eb17faef1a7be38e572dc9e6d317705bd5d94e70a2b8d713c9fe63298",
+      "share_id": "rbcnns",
+      "category": "in_action_real_world",
+      "title": "Retailers bring conversational AI and analytics closer to the user",
+      "optimized_headline": "Retailers Enhance User Experience with Conversational AI and Advanced Analytics",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/retailers-bring-conversational-ai-and-analytics-closer-to-the-user/",
+      "published_at": "2026-01-16T13:10:00.000Z",
+      "speedrun": "Retailers are shifting focus from traditional data dashboards to conversational AI, aiming to integrate consumer insights directly into daily decisions. First Insight, a US-based analytics firm, emphasizes that the future of retail AI should prioritize dialogue. After a three-month beta program, they are pushing for this change in how businesses interact with consumer feedback. This approach could enhance customer engagement and improve decision-making in real-time.",
+      "why_it_matters": [
+        "Retailers could improve customer satisfaction by making decisions based on real-time consumer feedback, enhancing the shopping experience.",
+        "This shift signals a broader trend in the retail industry towards more interactive and responsive technology, potentially changing how businesses operate."
+      ],
+      "lenses": {
+        "eli12": "Retailers are moving away from just looking at charts and graphs to having actual conversations with AI. Think of it like having a helpful friend who knows what you like and can give you advice while you shop. This change could make shopping more enjoyable and personalized for everyone.",
+        "pm": "For product managers and founders, this means focusing on user engagement through interactive AI. By leveraging real-time consumer feedback, companies could make quicker, more informed decisions. This could lead to better product offerings and potentially lower costs by aligning with what customers truly want.",
+        "engineer": "From a technical perspective, this approach emphasizes conversational AI models that can interpret and respond to consumer feedback effectively. First Insight's beta program likely tested various natural language processing techniques to facilitate these interactions. The success of this method could set benchmarks for future AI applications in retail."
+      },
+      "hype_meter": 2
+    },
+    {
       "id": "0972ed848ace09c4c40c09ecb0dc6efb75dc4d4ad7597f45c2af49c46b2a1d52",
       "share_id": "tdcrt5",
       "category": "trends_risks_outlook",
@@ -192,6 +276,27 @@
         "engineer": "From a technical perspective, AI coding tools utilize machine learning models to generate code snippets. While they can enhance productivity, there are concerns about the quality and maintainability of the code produced. Engineers must evaluate the generated code carefully to ensure it meets project standards."
       },
       "hype_meter": 2
+    },
+    {
+      "id": "f44f37991582f0d652c129704d216e169b4ec586b1d51c7f97855a768aed000d",
+      "share_id": "bopviy",
+      "category": "in_action_real_world",
+      "title": "Banks operationalise as Plumery AI launches standardised integration",
+      "optimized_headline": "Plumery AI Unveils Standardised Integration, Transforming Bank Operations Worldwide",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/banks-operationalise-ai-as-plumery-ai-launches-standardised-integration/",
+      "published_at": "2026-01-16T12:49:35.000Z",
+      "speedrun": "Plumery AI has introduced a new technology called 'AI Fabric' that helps banks integrate artificial intelligence into their daily operations. This framework aims to address concerns around governance, security, and regulatory compliance, moving beyond mere proofs of concept. By standardizing how AI is embedded in banking, Plumery could streamline operations significantly. This development matters now as financial institutions increasingly seek efficient AI solutions without sacrificing oversight.",
+      "why_it_matters": [
+        "Banks can now more easily adopt AI technologies, improving their services while ensuring compliance and security.",
+        "This move signifies a shift in the financial sector towards more integrated and efficient use of AI, potentially reshaping how banks operate."
+      ],
+      "lenses": {
+        "eli12": "Plumery AI's 'AI Fabric' is like a universal plug that allows banks to easily connect and use AI tools without worrying about rules and safety. It helps banks use AI in their daily tasks, making things smoother and more efficient. This matters because it could lead to better banking services for everyone.",
+        "pm": "For product managers and founders, Plumery's 'AI Fabric' offers a way to enhance banking products using AI while ensuring compliance. This could reduce costs associated with regulatory hurdles and improve operational efficiency. A practical implication is the potential for faster deployment of AI features in banking applications.",
+        "engineer": "Plumery AI's 'AI Fabric' provides a standardized framework for integrating generative AI into banking operations. This framework emphasizes maintaining governance and security while facilitating AI adoption. Key specifics include its focus on regulatory compliance, which is crucial for financial institutions navigating complex legal landscapes."
+      },
+      "hype_meter": 3
     },
     {
       "id": "f2a486dcadd2d60be7f991490774e59a95b727425907e0a062f62884ea2574af",
@@ -446,6 +551,27 @@
       "hype_meter": 4
     },
     {
+      "id": "22c82bfd78c72dd8966403c0d9f4c841bbcb0b5a9384fe6390ab8fc4064e8c4d",
+      "share_id": "dtcqsn",
+      "category": "trends_risks_outlook",
+      "title": "AI dominated the conversation in 2025, CIOs shift gears in 2026",
+      "optimized_headline": "In 2026, CIOs Rethink Strategies After AI's 2025 Dominance",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/ai-predictions-dominated-the-conversation-in-2025-cios-shift-gears-in-2026/",
+      "published_at": "2026-01-15T19:29:00.000Z",
+      "speedrun": "In 2026, CIOs are expected to take a more strategic approach to AI following a year of rapid adoption in 2025. The rise of AI copilots has set high expectations, prompting leaders to focus on steering AI development wisely rather than just accelerating it. This shift is crucial as organizations seek to harness AI's potential while mitigating risks. The emphasis on strategy could lead to more effective and responsible AI integration across industries.",
+      "why_it_matters": [
+        "CIOs will likely prioritize responsible AI use, impacting how businesses implement technology and ensuring alignment with organizational goals.",
+        "This shift indicates a broader trend in the market, where strategic oversight of AI could lead to more sustainable and effective technological advancements."
+      ],
+      "lenses": {
+        "eli12": "CIOs are starting to think more carefully about how they use AI in 2026. After a busy year of trying new AI tools, they want to make sure these technologies are beneficial and safe. This change matters because it could lead to better tech solutions that help everyone, not just companies.",
+        "pm": "For product managers and founders, this strategic shift means focusing on user needs while ensuring AI tools are both efficient and responsible. Companies might invest more in understanding the long-term impacts of AI, which could affect product development timelines. This could lead to products that are not only innovative but also ethically sound.",
+        "engineer": "From a technical perspective, CIOs are likely to emphasize frameworks that guide AI development in 2026. This could involve adopting best practices for integrating AI copilots while ensuring they align with business objectives. Engineers may need to focus on creating scalable models that prioritize both performance and ethical considerations."
+      },
+      "hype_meter": 3
+    },
+    {
       "id": "3e4d6f58019b2837fe21cc045f4866121517c601bbd8fb9e0824fdff5609d54b",
       "share_id": "hraxeg",
       "category": "in_action_real_world",
@@ -568,6 +694,27 @@
         "eli12": "Imagine you’re building a personal scoreboard for your life goals. The 2026 Goal Tracker helps you see daily habits and long-term dreams all in one place. It’s like having a coach that reminds you of your goals and tracks your progress. This matters because it can help anyone stay focused and motivated in their busy lives.",
         "pm": "For product managers and founders, the 2026 Goal Tracker highlights a user need for organized goal management tools. It showcases a cost-effective way to improve user engagement by simplifying habit tracking. A potential implication is the opportunity to develop similar tools that cater to personal development, tapping into a growing market.",
         "engineer": "The 2026 Goal Tracker leverages Python for backend logic, Streamlit for user interface, and Neon for database management. This combination allows for real-time updates and visualizations of progress. The use of these technologies could streamline personal goal tracking, making it more accessible and user-friendly."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "92374796b5253eebdb10e523ad27c4861f37a8df9e03168938ef5370a4e54df3",
+      "share_id": "mtn0zi",
+      "category": "trends_risks_outlook",
+      "title": "Meeting the new ETSI standard for AI security",
+      "optimized_headline": "How the New ETSI Standard is Redefining AI Security Practices",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/meeting-the-new-etsi-standard-for-ai-security/",
+      "published_at": "2026-01-15T13:23:47.000Z",
+      "speedrun": "The new ETSI EN 304 223 standard sets baseline security requirements for AI, which enterprises must adopt in their governance frameworks. This is the first European Standard aimed at enhancing AI cybersecurity, providing specific guidelines for securing AI models and systems. As organizations increasingly rely on machine learning, this standard is crucial for ensuring the safety and integrity of AI applications. Its implementation will likely shape how businesses approach AI security moving forward.",
+      "why_it_matters": [
+        "For enterprises, this standard means they must now prioritize AI security, which could lead to improved protection against cyber threats.",
+        "On a broader scale, this standard signals a shift towards more stringent regulations in AI security, influencing global practices and standards."
+      ],
+      "lenses": {
+        "eli12": "The ETSI EN 304 223 standard is like a safety manual for using AI in business. It tells companies how to protect their AI systems from cyber threats. This matters because as more businesses use AI, ensuring its security helps keep everyone's data safe and builds trust in technology.",
+        "pm": "For product managers and founders, this standard highlights the need to incorporate security into AI product development. It could increase costs initially, but investing in security may lead to greater efficiency and user trust in the long run. Companies that comply could gain a competitive edge by demonstrating their commitment to safety.",
+        "engineer": "From a technical perspective, the ETSI EN 304 223 standard outlines specific security measures for AI models and systems. It establishes a framework that organizations must follow, which could include guidelines on data protection and model validation. This standard could influence the design and implementation of future AI systems, ensuring they are more robust against potential threats."
       },
       "hype_meter": 3
     },
