@@ -1,0 +1,31 @@
+{
+  "content_hash": "eca1aa7dc1d1bb39a29e96589e087d1b3348728128c7f517fb258a4b84e0a532",
+  "share_id": "osl4oe",
+  "title": "ORBITFLOW: SLO-Aware Long-Context LLM Serving with Fine-Grained KV Cache Reconfiguration",
+  "optimized_headline": "Unlocking ORBITFLOW: A Deep Dive into SLO-Aware Long-Context LLM Innovations",
+  "url": "https://arxiv.org/abs/2601.10729",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.10729v1 Announce Type: new \nAbstract: Serving long-context LLMs is challenging because request lengths and batch composition vary during token generation, causing the memory footprint to fluctuate significantly at runtime. Offloading KV caches to host memory limits effective memory usage, but existing static and predetermined offloading strategies cannot adapt to the rapidly shifting me",
+  "raw_body": "arXiv:2601.10729v1 Announce Type: new \nAbstract: Serving long-context LLMs is challenging because request lengths and batch composition vary during token generation, causing the memory footprint to fluctuate significantly at runtime. Offloading KV caches to host memory limits effective memory usage, but existing static and predetermined offloading strategies cannot adapt to the rapidly shifting memory demands of long-context serving. This often leads to excessive CPU-to-GPU KV transfers that translate into latency spikes and frequent SLO violations. To address these challenges, we introduce ORBITFLOW, a fine-grained and adaptive KV cache management system that meets latency SLOs in long-context LLM serving. ORBITFLOW employs a lightweight ILP solver to decide which layers' KV caches to retain on the GPU for each request, within memory capacity constraints. It continuously refines KV placements based on runtime feedback when the active plan becomes suboptimal during token generation. Under heavy load, ORBITFLOW invokes a fallback mechanism to temporarily defer in-flight requests with large memory footprints, preserving overall SLO attainment. Our experiments demonstrate that ORBITFLOW improves SLO attainment for TPOT and TBT by up to 66% and 48%, respectively, while reducing the 95th percentile latency by 38% and achieving up to 3.3x higher throughput compared to existing offloading methods.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced ORBITFLOW, a new adaptive system for managing long-context LLMs that optimizes memory usage and meets latency service level objectives (SLOs). By using a lightweight integer linear programming (ILP) solver, ORBITFLOW dynamically adjusts which key-value (KV) caches stay on the GPU, improving SLO attainment by up to 66% for certain models. This development is significant as it addresses the challenges of fluctuating memory needs and latency spikes in AI applications.",
+  "why_it_matters": [
+    "This improvement directly benefits developers and companies relying on long-context LLMs, enhancing performance and user experience.",
+    "On a broader scale, it signifies a shift in AI technology towards more efficient memory management, potentially lowering costs and increasing accessibility."
+  ],
+  "lenses": {
+    "eli12": "ORBITFLOW is like a smart traffic controller for AI, deciding which data to keep close for quick access. This helps AI models run faster and smoother, especially when they handle large amounts of information. It matters because it could lead to better apps and services that rely on AI, making them more responsive and user-friendly.",
+    "pm": "For product managers, ORBITFLOW means improved performance for applications using long-context LLMs, which could enhance user satisfaction. By optimizing memory usage, it may lower operational costs and improve efficiency. This could allow teams to focus on developing features rather than troubleshooting latency issues.",
+    "engineer": "From a technical perspective, ORBITFLOW employs a lightweight ILP solver to optimize KV cache management dynamically, allowing for significant improvements in SLO attainment—up to 66% for TPOT models. It also reduces the 95th percentile latency by 38% and achieves up to 3.3x higher throughput compared to traditional methods, showcasing its effectiveness in real-time applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-20T04:30:34.068Z",
+  "updated_at": "2026-01-20T04:30:34.068Z",
+  "processing_order": 1768883434071
+}

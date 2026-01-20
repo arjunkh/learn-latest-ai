@@ -1,0 +1,31 @@
+{
+  "content_hash": "7fc1e1b55a5721e50af1fbcc4ac3ec29137aebf46b08c0d895415844f100ec4c",
+  "share_id": "jasxl0",
+  "title": "Japanese AI Agent System on Human Papillomavirus Vaccination: System Design",
+  "optimized_headline": "Innovative Japanese AI System Enhances Human Papillomavirus Vaccination Strategies",
+  "url": "https://arxiv.org/abs/2601.10718",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.10718v1 Announce Type: new \nAbstract: Human papillomavirus (HPV) vaccine hesitancy poses significant public health challenges, particularly in Japan where proactive vaccination recommendations were suspended from 2013 to 2021. The resulting information gap is exacerbated by misinformation on social media, and traditional ways cannot simultaneously address individual queries while monito",
+  "raw_body": "arXiv:2601.10718v1 Announce Type: new \nAbstract: Human papillomavirus (HPV) vaccine hesitancy poses significant public health challenges, particularly in Japan where proactive vaccination recommendations were suspended from 2013 to 2021. The resulting information gap is exacerbated by misinformation on social media, and traditional ways cannot simultaneously address individual queries while monitoring population-level discourse. This study aimed to develop a dual-purpose AI agent system that provides verified HPV vaccine information through a conversational interface while generating analytical reports for medical institutions based on user interactions and social media. We implemented a system comprising: a vector database integrating academic papers, government sources, news media, and social media; a Retrieval-Augmented Generation chatbot using ReAct agent architecture with multi-tool orchestration across five knowledge sources; and an automated report generation system with modules for news analysis, research synthesis, social media sentiment analysis, and user interaction pattern identification. Performance was assessed using a 0-5 scoring scale. For single-turn evaluation, the chatbot achieved mean scores of 4.83 for relevance, 4.89 for routing, 4.50 for reference quality, 4.90 for correctness, and 4.88 for professional identity (overall 4.80). Multi-turn evaluation yielded higher scores: context retention 4.94, topic coherence 5.00, and overall 4.98. The report generation system achieved completeness 4.00-5.00, correctness 4.00-5.00, and helpfulness 3.67-5.00, with reference validity 5.00 across all periods. This study demonstrates the feasibility of an integrated AI agent system for bidirectional HPV vaccine communication. The architecture enables verified information delivery with source attribution while providing systematic public discourse analysis, with a transferable framework for adaptation to other medical contexts.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new AI agent system has been developed in Japan to tackle HPV vaccine hesitancy, which worsened due to misinformation and a lack of proactive recommendations from 2013 to 2021. This system combines a chatbot that provides verified vaccine information with tools for analyzing public discourse and user interactions. Performance evaluations showed high scores across various metrics, indicating its effectiveness. This matters now as it could improve public health communication and trust in vaccination efforts.",
+  "why_it_matters": [
+    "This system could directly assist individuals seeking accurate HPV vaccine information, helping to reduce hesitancy and misinformation.",
+    "On a larger scale, it signals a shift towards using AI for public health, potentially improving communication strategies in other medical contexts."
+  ],
+  "lenses": {
+    "eli12": "Imagine having a knowledgeable friend who can answer your questions about the HPV vaccine anytime you need. This new AI system acts like that friend, providing reliable information while also analyzing how people talk about vaccines online. It matters because better information could lead to more people getting vaccinated, which is crucial for public health.",
+    "pm": "For product managers and founders, this AI system highlights a growing user need for trustworthy health information. By providing verified answers and analyzing public sentiment, it could enhance engagement and trust in health initiatives. This approach may lead to more efficient communication strategies, saving time and resources.",
+    "engineer": "From a technical perspective, this AI system integrates a vector database with various knowledge sources, including academic papers and social media, to deliver accurate information. The chatbot, built on the ReAct agent architecture, scored impressively across multiple evaluations, achieving a mean score of 4.80 overall. Its automated report generation also provides valuable insights into public discourse, showcasing the potential for AI in healthcare communication."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-20T04:30:10.462Z",
+  "updated_at": "2026-01-20T04:30:10.462Z",
+  "processing_order": 1768883410462
+}

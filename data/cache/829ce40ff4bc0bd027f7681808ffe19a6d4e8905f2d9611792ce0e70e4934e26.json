@@ -1,0 +1,31 @@
+{
+  "content_hash": "829ce40ff4bc0bd027f7681808ffe19a6d4e8905f2d9611792ce0e70e4934e26",
+  "share_id": "bail00",
+  "title": "Building AI Agents to Improve Job Referral Requests to Strangers",
+  "optimized_headline": "\"How AI Agents Enhance Job Referral Requests to Strangers\"",
+  "url": "https://arxiv.org/abs/2601.10726",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.10726v1 Announce Type: new \nAbstract: This paper develops AI agents that help job seekers write effective requests for job referrals in a professional online community. The basic workflow consists of an improver agent that rewrites the referral request and an evaluator agent that measures the quality of revisions using a model trained to predict the probability of receiving referrals fr",
+  "raw_body": "arXiv:2601.10726v1 Announce Type: new \nAbstract: This paper develops AI agents that help job seekers write effective requests for job referrals in a professional online community. The basic workflow consists of an improver agent that rewrites the referral request and an evaluator agent that measures the quality of revisions using a model trained to predict the probability of receiving referrals from other users. Revisions suggested by the LLM (large language model) increase predicted success rates for weaker requests while reducing them for stronger requests. Enhancing the LLM with Retrieval-Augmented Generation (RAG) prevents edits that worsen stronger requests while it amplifies improvements for weaker requests. Overall, using LLM revisions with RAG increases the predicted success rate for weaker requests by 14\\% without degrading performance on stronger requests. Although improvements in model-predicted success do not guarantee more referrals in the real world, they provide low-cost signals for promising features before running higher-stakes experiments on real users.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study introduced AI agents designed to help job seekers craft better requests for job referrals. These agents, an improver and an evaluator, use a model to predict the likelihood of receiving referrals. Notably, revisions from a large language model (LLM) boosted success rates for weaker requests by 14%, while maintaining performance on stronger ones. This development is significant as it offers a low-cost way to test and refine referral strategies before real-world applications.",
+  "why_it_matters": [
+    "Job seekers can gain a better chance of receiving referrals, making their applications more effective.",
+    "This reflects a growing trend in using AI to enhance communication in professional settings, potentially reshaping networking dynamics."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to ask a stranger for a favor, like a job referral. These AI agents act like helpful friends, rewriting your request to make it sound better. They can boost your chances of getting a positive response, especially if your original message wasn't strong. This matters because it can help everyday people land jobs more easily.",
+    "pm": "For product managers and founders, these AI agents highlight a user need for better communication tools in job searching. By improving the quality of referral requests, they could enhance user engagement and success rates. This suggests a potential market for AI-driven career support tools that streamline networking and increase efficiency.",
+    "engineer": "The study employs a large language model (LLM) enhanced with Retrieval-Augmented Generation (RAG) to refine job referral requests. The LLM's revisions increased the predicted success rate for weaker requests by 14% while preserving performance for stronger ones. This dual-agent system demonstrates the effectiveness of AI in optimizing communication, though real-world results may vary."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-20T04:30:26.505Z",
+  "updated_at": "2026-01-20T04:30:26.505Z",
+  "processing_order": 1768883426507
+}

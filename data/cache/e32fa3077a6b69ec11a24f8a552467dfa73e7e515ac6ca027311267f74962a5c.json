@@ -1,0 +1,31 @@
+{
+  "content_hash": "e32fa3077a6b69ec11a24f8a552467dfa73e7e515ac6ca027311267f74962a5c",
+  "share_id": "ytcc2g",
+  "title": "Do You Trust Me? Cognitive-Affective Signatures of Trustworthiness in Large Language Models",
+  "optimized_headline": "Exploring Trustworthiness: How Language Models Reveal Cognitive-Affective Signatures",
+  "url": "https://arxiv.org/abs/2601.10719",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.10719v1 Announce Type: new \nAbstract: Perceived trustworthiness underpins how users navigate online information, yet it remains unclear whether large language models (LLMs),increasingly embedded in search, recommendation, and conversational systems, represent this construct in psychologically coherent ways. We analyze how instruction-tuned LLMs (Llama 3.1 8B, Qwen 2.5 7B, Mistral 7B) en",
+  "raw_body": "arXiv:2601.10719v1 Announce Type: new \nAbstract: Perceived trustworthiness underpins how users navigate online information, yet it remains unclear whether large language models (LLMs),increasingly embedded in search, recommendation, and conversational systems, represent this construct in psychologically coherent ways. We analyze how instruction-tuned LLMs (Llama 3.1 8B, Qwen 2.5 7B, Mistral 7B) encode perceived trustworthiness in web-like narratives using the PEACE-Reviews dataset annotated for cognitive appraisals, emotions, and behavioral intentions. Across models, systematic layer- and head-level activation differences distinguish high- from low-trust texts, revealing that trust cues are implicitly encoded during pretraining. Probing analyses show linearly de-codable trust signals and fine-tuning effects that refine rather than restructure these representations. Strongest associations emerge with appraisals of fairness, certainty, and accountability-self -- dimensions central to human trust formation online. These findings demonstrate that modern LLMs internalize psychologically grounded trust signals without explicit supervision, offering a representational foundation for designing credible, transparent, and trust-worthy AI systems in the web ecosystem. Code and appendix are available at: https://github.com/GerardYeo/TrustworthinessLLM.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research explores how large language models (LLMs) like Llama 3.1 and Mistral 7B encode trustworthiness in their responses. The study found that these models can distinguish between high- and low-trust texts based on specific psychological cues, such as fairness and accountability. This is significant because it suggests that LLMs can inherently understand and represent trust signals, which is crucial as they become more integrated into online systems. Understanding this could improve how these models are used in applications requiring user trust.",
+  "why_it_matters": [
+    "Users relying on AI for information will benefit from models that better understand trust cues, enhancing their online experience.",
+    "This research indicates a shift towards developing AI systems that prioritize transparency and credibility, which could reshape user interactions with technology."
+  ],
+  "lenses": {
+    "eli12": "This study reveals that language models can pick up on what makes information trustworthy. Think of it like a friend who knows when to give you reliable advice based on how fair and certain they feel about a topic. This matters because as we use AI more, having trustworthy systems can help us make better decisions online.",
+    "pm": "For product managers and founders, this research highlights the importance of trust in AI interactions. Users want to feel confident in the information provided by LLMs, which could inform how products are designed. Ensuring that AI systems reflect trustworthiness could lead to higher user satisfaction and retention.",
+    "engineer": "The study analyzes how LLMs like Llama 3.1 and Mistral 7B encode trustworthiness through layer- and head-level activation differences. It shows that these models can linearly decode trust signals, particularly linked to fairness and accountability. This suggests that trust cues are embedded during pretraining, allowing for more effective fine-tuning without needing explicit supervision."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-20T04:30:18.957Z",
+  "updated_at": "2026-01-20T04:30:18.957Z",
+  "processing_order": 1768883418958
+}
