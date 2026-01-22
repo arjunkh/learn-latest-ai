@@ -1,0 +1,31 @@
+{
+  "content_hash": "dc7da7d7fc9c7556a1473fb96f3d028197dd4334d3d3404fa9d7723f03912923",
+  "share_id": "mclast",
+  "title": "MIMIC-RD: Can LLMs differentially diagnose rare diseases in real-world clinical settings?",
+  "optimized_headline": "MIMIC-RD: Can LLMs Accurately Diagnose Rare Diseases in Practice?",
+  "url": "https://arxiv.org/abs/2601.11559",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-21T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.11559v1 Announce Type: new \nAbstract: Despite rare diseases affecting 1 in 10 Americans, their differential diagnosis remains challenging. Due to their impressive recall abilities, large language models (LLMs) have been recently explored for differential diagnosis. Existing approaches to evaluating LLM-based rare disease diagnosis suffer from two critical limitations: they rely on ideal",
+  "raw_body": "arXiv:2601.11559v1 Announce Type: new \nAbstract: Despite rare diseases affecting 1 in 10 Americans, their differential diagnosis remains challenging. Due to their impressive recall abilities, large language models (LLMs) have been recently explored for differential diagnosis. Existing approaches to evaluating LLM-based rare disease diagnosis suffer from two critical limitations: they rely on idealized clinical case studies that fail to capture real-world clinical complexity, or they use ICD codes as disease labels, which significantly undercounts rare diseases since many lack direct mappings to comprehensive rare disease databases like Orphanet. To address these limitations, we explore MIMIC-RD, a rare disease differential diagnosis benchmark constructed by directly mapping clinical text entities to Orphanet. Our methodology involved an initial LLM-based mining process followed by validation from four medical annotators to confirm identified entities were genuine rare diseases. We evaluated various models on our dataset of 145 patients and found that current state-of-the-art LLMs perform poorly on rare disease differential diagnosis, highlighting the substantial gap between existing capabilities and clinical needs. From our findings, we outline several future steps towards improving differential diagnosis of rare diseases.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced MIMIC-RD, a benchmark designed to improve how large language models (LLMs) diagnose rare diseases in real-world settings. Unlike previous methods that used idealized cases or limited ICD codes, MIMIC-RD maps clinical text to a comprehensive rare disease database, Orphanet. Testing on 145 patients revealed that current LLMs struggle with rare disease diagnosis, underscoring a significant gap between technology and clinical needs. This matters now as it could lead to better diagnostic tools for the 1 in 10 Americans affected by rare diseases.",
+  "why_it_matters": [
+    "Patients with rare diseases could benefit from more accurate diagnoses, potentially leading to earlier treatment and better outcomes.",
+    "The findings suggest a broader need for AI tools that align more closely with real-world clinical challenges, indicating a shift in how AI could be integrated into healthcare."
+  ],
+  "lenses": {
+    "eli12": "MIMIC-RD is a new tool that helps AI systems diagnose rare diseases more effectively. Think of it as a map that connects complicated medical terms to a detailed list of rare diseases. This is important because it could help doctors make better decisions for patients who often struggle to get the right diagnosis.",
+    "pm": "For product managers and founders, MIMIC-RD highlights a pressing user need for better diagnostic tools in healthcare. The current AI models are not meeting the efficiency and accuracy required for rare diseases, suggesting an opportunity for innovation. Developing solutions that address this gap could not only improve patient outcomes but also create a valuable market niche.",
+    "engineer": "MIMIC-RD presents a new benchmark for evaluating LLMs in rare disease diagnosis by mapping clinical text to Orphanet, a comprehensive rare disease database. The study assessed various models on a dataset of 145 patients, revealing that state-of-the-art LLMs performed poorly, indicating significant limitations in their current capabilities. This research emphasizes the need for more robust models tailored to the complexities of real-world clinical data."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-22T04:33:05.744Z",
+  "updated_at": "2026-01-22T04:33:05.744Z",
+  "processing_order": 1769056385744
+}
