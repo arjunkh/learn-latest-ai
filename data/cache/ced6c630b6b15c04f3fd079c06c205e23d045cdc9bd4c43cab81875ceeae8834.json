@@ -1,0 +1,31 @@
+{
+  "content_hash": "ced6c630b6b15c04f3fd079c06c205e23d045cdc9bd4c43cab81875ceeae8834",
+  "share_id": "sppipa",
+  "title": "Scaling PostgreSQL to power 800 million ChatGPT users",
+  "optimized_headline": "How PostgreSQL Supports 800 Million ChatGPT Users Efficiently",
+  "url": "https://openai.com/index/scaling-postgresql",
+  "source": "OpenAI",
+  "published_at": "2026-01-22T12:00:00.000Z",
+  "raw_excerpt": "An inside look at how OpenAI scaled PostgreSQL to millions of queries per second using replicas, caching, rate limiting, and workload isolation.",
+  "raw_body": "An inside look at how OpenAI scaled PostgreSQL to millions of queries per second using replicas, caching, rate limiting, and workload isolation.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "OpenAI has successfully scaled PostgreSQL to handle millions of queries per second, supporting 800 million ChatGPT users. They achieved this through strategies like using replicas, caching, rate limiting, and isolating workloads. This scaling is crucial as it ensures that the database can efficiently manage the massive demand from users, maintaining performance and reliability. As AI applications grow, managing backend systems effectively becomes increasingly important.",
+  "why_it_matters": [
+    "This has immediate benefits for ChatGPT users, ensuring they experience fast and reliable responses without delays.",
+    "On a broader scale, it highlights the importance of efficient database management in AI, potentially influencing how other companies approach scaling their systems."
+  ],
+  "lenses": {
+    "eli12": "OpenAI has made PostgreSQL work for millions of users by using smart techniques like caching and workload isolation. Think of it like a busy restaurant using multiple chefs to prepare meals quickly, ensuring diners don’t wait too long. This matters because it helps keep AI tools like ChatGPT running smoothly for everyone.",
+    "pm": "For product managers and founders, this scaling means that as user numbers grow, the backend can handle increased demand without sacrificing performance. It highlights the need to prioritize efficient database management strategies, which could reduce costs and improve user experience. A practical takeaway is to consider how your product's infrastructure can scale with demand.",
+    "engineer": "From a technical perspective, OpenAI's scaling of PostgreSQL involved optimizing query handling through replicas and caching mechanisms, allowing for millions of queries per second. They also implemented rate limiting and workload isolation to manage traffic effectively. These strategies are crucial for maintaining performance under heavy loads, showcasing the importance of robust database architecture."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-23T04:27:32.437Z",
+  "updated_at": "2026-01-23T04:27:32.437Z",
+  "processing_order": 1769142452437
+}

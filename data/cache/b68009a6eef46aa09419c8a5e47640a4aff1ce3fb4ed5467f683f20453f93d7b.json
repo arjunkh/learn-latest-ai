@@ -1,0 +1,31 @@
+{
+  "content_hash": "b68009a6eef46aa09419c8a5e47640a4aff1ce3fb4ed5467f683f20453f93d7b",
+  "share_id": "vct0zd",
+  "title": "VisTIRA: Closing the Image-Text Modality Gap in Visual Math Reasoning via Structured Tool Integration",
+  "optimized_headline": "VisTIRA: How Structured Tools Enhance Visual Math Reasoning with Image-Text Connection",
+  "url": "https://arxiv.org/abs/2601.14440",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-22T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.14440v1 Announce Type: new \nAbstract: Vision-language models (VLMs) lag behind text-only language models on mathematical reasoning when the same problems are presented as images rather than text. We empirically characterize this as a modality gap: the same question in text form yields markedly higher accuracy than its visually typeset counterpart, due to compounded failures in reading d",
+  "raw_body": "arXiv:2601.14440v1 Announce Type: new \nAbstract: Vision-language models (VLMs) lag behind text-only language models on mathematical reasoning when the same problems are presented as images rather than text. We empirically characterize this as a modality gap: the same question in text form yields markedly higher accuracy than its visually typeset counterpart, due to compounded failures in reading dense formulas, layout, and mixed symbolic-diagrammatic context. First, we introduce VisTIRA (Vision and Tool-Integrated Reasoning Agent), a tool-integrated reasoning framework that enables structured problem solving by iteratively decomposing a given math problem (as an image) into natural language rationales and executable Python steps to determine the final answer. Second, we build a framework to measure and improve visual math reasoning: a LaTeX-based pipeline that converts chain-of-thought math corpora (e.g., NuminaMath) into challenging image counterparts, and a large set of synthetic tool-use trajectories derived from a real-world, homework-style image dataset (called SnapAsk) for fine-tuning VLMs. Our experiments show that tool-integrated supervision improves image-based reasoning, and OCR grounding can further narrow the gap for smaller models, although its benefit diminishes at scale. These findings highlight that modality gap severity inversely correlates with model size, and that structured reasoning and OCR-based grounding are complementary strategies for advancing visual mathematical reasoning.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have identified a significant gap in how well vision-language models (VLMs) perform on mathematical reasoning when problems are presented visually versus textually. They introduced VisTIRA, a new framework that breaks down math problems into natural language and executable steps. Their experiments reveal that integrating structured reasoning and optical character recognition (OCR) can improve performance, especially in smaller models. This matters now as it could enhance educational tools that rely on visual problem-solving.",
+  "why_it_matters": [
+    "Students and educators could benefit from improved tools that help in visual math problem-solving, making learning more effective.",
+    "This research could signal a shift in AI development, emphasizing the need for models that effectively handle diverse modalities, especially in education."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a math problem written on a chalkboard versus one typed out on paper. This study shows that AI struggles more with the chalkboard version. The new VisTIRA framework helps AI break down these visual problems into simpler steps, making it easier to find answers. This could lead to better learning tools that help students solve math visually.",
+    "pm": "For product managers, this research highlights the need to create tools that can handle both text and images effectively. Users often encounter math in various formats, and improving AI's reasoning in visual contexts could enhance user experience. Implementing structured reasoning and OCR could also reduce costs associated with error-prone interpretations in educational products.",
+    "engineer": "From a technical perspective, the study reveals that VLMs struggle with visual math due to a modality gap, where accuracy drops significantly for images compared to text. The VisTIRA framework employs structured reasoning and integrates OCR to improve performance. Notably, the research found that the effectiveness of these strategies inversely correlates with model size, suggesting tailored approaches for different model scales."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-23T04:28:31.613Z",
+  "updated_at": "2026-01-23T04:28:31.613Z",
+  "processing_order": 1769142511615
+}

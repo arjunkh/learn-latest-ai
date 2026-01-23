@@ -1,0 +1,31 @@
+{
+  "content_hash": "81d91d6e3a0e7cd56a911054bb757299ed3762640e5022c362e9adcecb5ee6e3",
+  "share_id": "tgg690",
+  "title": "On the Generalization Gap in LLM Planning: Tests and Verifier-Reward RL",
+  "optimized_headline": "Exploring the Generalization Gap in LLM Planning: Insights from New Tests",
+  "url": "https://arxiv.org/abs/2601.14456",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-22T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.14456v1 Announce Type: new \nAbstract: Recent work shows that fine-tuned Large Language Models (LLMs) can achieve high valid plan rates on PDDL planning tasks. However, it remains unclear whether this reflects transferable planning competence or domain-specific memorization. In this work, we fine-tune a 1.7B-parameter LLM on 40,000 domain-problem-plan tuples from 10 IPC 2023 domains, and",
+  "raw_body": "arXiv:2601.14456v1 Announce Type: new \nAbstract: Recent work shows that fine-tuned Large Language Models (LLMs) can achieve high valid plan rates on PDDL planning tasks. However, it remains unclear whether this reflects transferable planning competence or domain-specific memorization. In this work, we fine-tune a 1.7B-parameter LLM on 40,000 domain-problem-plan tuples from 10 IPC 2023 domains, and evaluate both in-domain and cross-domain generalization. While the model reaches 82.9% valid plan rate in in-domain conditions, it achieves 0% on two unseen domains. To analyze this failure, we introduce three diagnostic interventions, namely (i) instance-wise symbol anonymization, (ii) compact plan serialization, and (iii) verifier-reward fine-tuning using the VAL validator as a success-focused reinforcement signal. Symbol anonymization and compact serialization cause significant performance drops despite preserving plan semantics, thus revealing strong sensitivity to surface representations. Verifier-reward fine-tuning reaches performance saturation in half the supervised training epochs, but does not improve cross-domain generalization. For the explored configurations, in-domain performance plateaus around 80%, while cross-domain performance collapses, suggesting that our fine-tuned model relies heavily on domain-specific patterns rather than transferable planning competence in this setting. Our results highlight a persistent generalization gap in LLM-based planning and provide diagnostic tools for studying its causes.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research has explored the generalization abilities of fine-tuned Large Language Models (LLMs) in planning tasks. A 1.7B-parameter LLM was fine-tuned on 40,000 planning examples, achieving an 82.9% valid plan rate in familiar domains but failing completely in two unseen domains. This suggests that while LLMs can perform well in specific contexts, they struggle to transfer that knowledge to new situations. Understanding this limitation is crucial for improving LLMs in real-world applications.",
+  "why_it_matters": [
+    "This work highlights the challenges for AI developers aiming to create models that can adapt to new planning scenarios effectively.",
+    "The findings point to a broader issue in AI development, emphasizing the need for models that can generalize across different domains rather than just memorizing specific tasks."
+  ],
+  "lenses": {
+    "eli12": "The study shows that LLMs can plan well in familiar situations but struggle with new ones. It's like a student who excels in one subject but fails a test in a different topic. This matters because improving AI's adaptability could lead to better tools for everyday problem-solving.",
+    "pm": "For product managers and founders, this research underscores the importance of building AI systems that can generalize across various contexts. Understanding user needs in diverse scenarios could enhance product versatility. The insights on verifier-reward fine-tuning could also inform strategies for improving model performance efficiently.",
+    "engineer": "This study reveals that a fine-tuned 1.7B-parameter LLM achieves an 82.9% valid plan rate in familiar domains but collapses to 0% in unseen domains. Techniques like symbol anonymization and compact serialization significantly affect performance, indicating the model's sensitivity to specific representations. The findings highlight a critical generalization gap, suggesting that further research is needed to enhance cross-domain capabilities."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-23T04:28:39.365Z",
+  "updated_at": "2026-01-23T04:28:39.365Z",
+  "processing_order": 1769142519368
+}
