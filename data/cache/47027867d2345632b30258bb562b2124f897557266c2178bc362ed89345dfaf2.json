@@ -1,0 +1,31 @@
+{
+  "content_hash": "47027867d2345632b30258bb562b2124f897557266c2178bc362ed89345dfaf2",
+  "share_id": "ahnt4a",
+  "title": "Aeon: High-Performance Neuro-Symbolic Memory Management for Long-Horizon LLM Agents",
+  "optimized_headline": "Unlocking Aeon's Neuro-Symbolic Memory for Enhanced Long-Horizon LLM Performance",
+  "url": "https://arxiv.org/abs/2601.15311",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.15311v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are fundamentally constrained by the quadratic computational cost of self-attention and the \"Lost in the Middle\" phenomenon, where reasoning capabilities degrade as context windows expand. Existing solutions, primarily \"Flat RAG\" architectures relying on vector databases, treat memory as an unstructured bag of embeddings",
+  "raw_body": "arXiv:2601.15311v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are fundamentally constrained by the quadratic computational cost of self-attention and the \"Lost in the Middle\" phenomenon, where reasoning capabilities degrade as context windows expand. Existing solutions, primarily \"Flat RAG\" architectures relying on vector databases, treat memory as an unstructured bag of embeddings. This approach fails to capture the hierarchical and temporal structure of long-horizon interactions, leading to \"Vector Haze\", the retrieval of disjointed facts lacking episodic continuity. We propose Aeon, a Neuro-Symbolic Cognitive Operating System that redefines memory not as a static store, but as a managed OS resource. Aeon structures memory into a Memory Palace (a spatial index implemented via Atlas, a SIMD-accelerated Page-Clustered Vector Index that combines small-world graph navigation with B+ Tree-style disk locality to minimize read amplification) and a Trace (a neuro-symbolic episodic graph). We introduce the Semantic Lookaside Buffer (SLB), a predictive caching mechanism that exploits conversational locality to achieve sub-millisecond retrieval latencies. Benchmarks demonstrate that Aeon achieves < 1ms retrieval latency on conversational workloads while ensuring state consistency via a zero-copy C++/Python bridge, effectively enabling persistent, structured memory for autonomous agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Aeon, a new Neuro-Symbolic Cognitive Operating System designed to enhance memory management in Large Language Models (LLMs). It addresses issues like high computational costs and disjointed fact retrieval, achieving retrieval latencies under 1 millisecond. By organizing memory hierarchically and using innovative caching, Aeon aims to improve reasoning over long contexts. This development is significant as it could lead to more efficient and capable AI agents in various applications.",
+  "why_it_matters": [
+    "Aeon could greatly benefit developers of AI systems that require quick and coherent responses, enhancing user experience in real-time applications.",
+    "This innovation might signal a broader shift in AI architecture, moving towards more structured and efficient memory management solutions that improve LLM performance."
+  ],
+  "lenses": {
+    "eli12": "Aeon is like organizing your messy room into neat sections, making it easier to find what you need. It helps AI remember things better and respond faster, especially in long conversations. This matters because it could make AI tools more helpful and user-friendly for everyone.",
+    "pm": "For product managers, Aeon presents an opportunity to enhance user engagement by delivering faster and more coherent AI responses. The predictive caching could reduce operational costs while improving efficiency. This means that products could become more responsive, meeting user needs more effectively.",
+    "engineer": "Technically, Aeon redefines memory management in LLMs by using a Memory Palace and a neuro-symbolic episodic graph. It combines SIMD-accelerated indexing with a caching mechanism that achieves sub-millisecond retrieval times. Notably, it maintains state consistency through a zero-copy C++/Python bridge, which could significantly improve performance in autonomous agent applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-24T04:11:45.972Z",
+  "updated_at": "2026-01-24T04:11:45.972Z",
+  "processing_order": 1769227905975
+}

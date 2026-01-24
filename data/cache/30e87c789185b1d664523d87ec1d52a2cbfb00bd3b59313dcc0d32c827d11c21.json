@@ -1,0 +1,31 @@
+{
+  "content_hash": "30e87c789185b1d664523d87ec1d52a2cbfb00bd3b59313dcc0d32c827d11c21",
+  "share_id": "gsapoe",
+  "title": "Gated Sparse Attention: Combining Computational Efficiency with Training Stability for Long-Context Language Models",
+  "optimized_headline": "Unlocking Long-Context Language Models: The Efficiency of Gated Sparse Attention",
+  "url": "https://arxiv.org/abs/2601.15305",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.15305v1 Announce Type: new \nAbstract: The computational burden of attention in long-context language models has motivated two largely independent lines of work: sparse attention mechanisms that reduce complexity by attending to selected tokens, and gated attention variants that improve training sta-bility while mitigating the attention sink phenomenon. We observe that these approaches a",
+  "raw_body": "arXiv:2601.15305v1 Announce Type: new \nAbstract: The computational burden of attention in long-context language models has motivated two largely independent lines of work: sparse attention mechanisms that reduce complexity by attending to selected tokens, and gated attention variants that improve training sta-bility while mitigating the attention sink phenomenon. We observe that these approaches address complementary weaknesses and propose Gated Sparse Attention (GSA), an architecture that realizes the benefits of both. GSA incorporates a gated lightning indexer with sigmoid activations that produce bounded, interpretable selection scores, an adaptive sparsity controller that modulates the number of attended tokens based on local uncertainty, and dual gating at the value and output stages. We establish theoretical foundations for the approach, including complexity analysis, expressiveness results, and convergence guarantees. In experiments with 1.7B parameter models trained on 400B tokens, GSA matches the efficiency of sparse-only baselines (12-16x speedup at 128K context) while achieving the quality gains associated with gated attention: perplexity improves from 6.03 to 5.70, RULER scores at 128K context nearly double, and attention to the first token, a proxy for attention sinks, drops from 47% to under 4%. Training stability improves markedly, with loss spikes reduced by 98%.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Gated Sparse Attention (GSA), a new architecture that combines the efficiency of sparse attention with the stability of gated attention for long-context language models. In tests with a 1.7 billion parameter model, GSA achieved a 12-16x speedup while improving perplexity from 6.03 to 5.70. This advancement means models can handle longer texts more efficiently and reliably, which is crucial as demand for AI understanding of extensive information grows.",
+  "why_it_matters": [
+    "This could significantly benefit developers working on applications that require processing long texts, as GSA enhances both speed and reliability.",
+    "On a broader scale, GSA's efficiency could influence the competitive landscape of AI models, pushing others to adopt similar strategies for long-context processing."
+  ],
+  "lenses": {
+    "eli12": "Gated Sparse Attention (GSA) is like a smart filter for long texts, choosing which parts to focus on while keeping things stable. It helps language models read and understand longer documents faster and with fewer mistakes. This is important for everyone, as it could lead to better AI tools that make reading and processing information easier.",
+    "pm": "For product managers and founders, GSA presents a way to meet user needs for efficient and reliable AI interactions. By reducing costs associated with processing long texts, companies could improve performance and user satisfaction. This means that integrating such models could lead to practical benefits in applications like chatbots or document analysis tools.",
+    "engineer": "From a technical perspective, GSA merges sparse attention and gated mechanisms to enhance performance in long-context models. It achieves a 12-16x speedup at 128K context while reducing perplexity and improving training stability, with loss spikes decreased by 98%. This architecture could set new benchmarks for efficiency in handling extensive data, making it a key development in AI research."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-24T04:11:14.383Z",
+  "updated_at": "2026-01-24T04:11:14.383Z",
+  "processing_order": 1769227874383
+}

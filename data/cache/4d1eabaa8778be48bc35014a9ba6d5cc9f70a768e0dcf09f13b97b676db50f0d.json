@@ -1,0 +1,31 @@
+{
+  "content_hash": "4d1eabaa8778be48bc35014a9ba6d5cc9f70a768e0dcf09f13b97b676db50f0d",
+  "share_id": "ulby72",
+  "title": "Uncovering Latent Bias in LLM-Based Emergency Department Triage Through Proxy Variables",
+  "optimized_headline": "Revealing Hidden Bias in Emergency Triage Using LLM Proxy Variables",
+  "url": "https://arxiv.org/abs/2601.15306",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.15306v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) have enabled their integration into clinical decision-making; however, hidden biases against patients across racial, social, economic, and clinical backgrounds persist. In this study, we investigate bias in LLM-based medical AI systems applied to emergency department (ED) triage. We employ 32 patient-l",
+  "raw_body": "arXiv:2601.15306v1 Announce Type: new \nAbstract: Recent advances in large language models (LLMs) have enabled their integration into clinical decision-making; however, hidden biases against patients across racial, social, economic, and clinical backgrounds persist. In this study, we investigate bias in LLM-based medical AI systems applied to emergency department (ED) triage. We employ 32 patient-level proxy variables, each represented by paired positive and negative qualifiers, and evaluate their effects using both public (MIMIC-IV-ED Demo, MIMIC-IV Demo) and restricted-access credentialed (MIMIC-IV-ED and MIMIC-IV) datasets as appropriate~\\cite{mimiciv_ed_demo,mimiciv_ed,mimiciv}. Our results reveal discriminatory behavior mediated through proxy variables in ED triage scenarios, as well as a systematic tendency for LLMs to modify perceived patient severity when specific tokens appear in the input context, regardless of whether they are framed positively or negatively. These findings indicate that AI systems is still imperfectly trained on noisy, sometimes non-causal signals that do not reliably reflect true patient acuity. Consequently, more needs to be done to ensure the safe and responsible deployment of AI technologies in clinical settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study highlights hidden biases in large language model (LLM) systems used for emergency department triage. By analyzing 32 patient-level proxy variables, researchers found that LLMs often misjudge patient severity based on biased input, regardless of positive or negative framing. This matters now because it underscores the urgent need for improved training methods to ensure fair and accurate AI decision-making in healthcare.",
+  "why_it_matters": [
+    "Patients from diverse backgrounds could face unequal treatment due to biases in AI systems, affecting their health outcomes.",
+    "This highlights a broader trend in healthcare technology, where ensuring fairness in AI could reshape trust and effectiveness in clinical decision-making."
+  ],
+  "lenses": {
+    "eli12": "This study shows that AI tools used in hospitals might not treat everyone fairly. They sometimes judge patients based on hidden biases, which is like assuming someone is less serious just because of their background. This matters because it could lead to unfair treatment for patients, affecting their care in critical situations.",
+    "pm": "For product managers and founders, this research points to a crucial user need: ensuring AI systems are unbiased and reliable. The cost of deploying flawed AI could lead to serious health consequences and damage trust. A practical takeaway is to prioritize fairness and transparency in AI training processes.",
+    "engineer": "The study used 32 patient-level proxy variables to assess bias in LLMs during emergency triage. It revealed that LLMs can alter patient severity assessments based on biased inputs, which suggests they rely on non-causal signals. This indicates a need for refining training datasets to minimize bias and improve decision-making accuracy."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-24T04:11:26.451Z",
+  "updated_at": "2026-01-24T04:11:26.451Z",
+  "processing_order": 1769227886452
+}
