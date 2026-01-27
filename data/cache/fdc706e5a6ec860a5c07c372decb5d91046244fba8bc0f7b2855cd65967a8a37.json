@@ -1,0 +1,31 @@
+{
+  "content_hash": "fdc706e5a6ec860a5c07c372decb5d91046244fba8bc0f7b2855cd65967a8a37",
+  "share_id": "diskz5",
+  "title": "Doc2AHP: Inferring Structured Multi-Criteria Decision Models via Semantic Trees with LLMs",
+  "optimized_headline": "\"How Doc2AHP Transforms Decision-Making with Semantic Trees and LLMs\"",
+  "url": "https://arxiv.org/abs/2601.16479",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-26T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.16479v1 Announce Type: new \nAbstract: While Large Language Models (LLMs) demonstrate remarkable proficiency in semantic understanding, they often struggle to ensure structural consistency and reasoning reliability in complex decision-making tasks that demand rigorous logic. Although classical decision theories, such as the Analytic Hierarchy Process (AHP), offer systematic rational fram",
+  "raw_body": "arXiv:2601.16479v1 Announce Type: new \nAbstract: While Large Language Models (LLMs) demonstrate remarkable proficiency in semantic understanding, they often struggle to ensure structural consistency and reasoning reliability in complex decision-making tasks that demand rigorous logic. Although classical decision theories, such as the Analytic Hierarchy Process (AHP), offer systematic rational frameworks, their construction relies heavily on labor-intensive domain expertise, creating an \"expert bottleneck\" that hinders scalability in general scenarios. To bridge the gap between the generalization capabilities of LLMs and the rigor of decision theory, we propose Doc2AHP, a novel structured inference framework guided by AHP principles. Eliminating the need for extensive annotated data or manual intervention, our approach leverages the structural principles of AHP as constraints to direct the LLM in a constrained search within the unstructured document space, thereby enforcing the logical entailment between parent and child nodes. Furthermore, we introduce a multi-agent weighting mechanism coupled with an adaptive consistency optimization strategy to ensure the numerical consistency of weight allocation. Empirical results demonstrate that Doc2AHP not only empowers non-expert users to construct high-quality decision models from scratch but also significantly outperforms direct generative baselines in both logical completeness and downstream task accuracy.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Doc2AHP, a framework that helps Large Language Models (LLMs) create structured decision models using principles from the Analytic Hierarchy Process (AHP). This method reduces the need for extensive expert input, allowing non-experts to build high-quality decision models. It improves upon traditional methods by ensuring logical consistency and better accuracy in decision-making tasks. This advancement is significant as it could democratize access to complex decision-making tools.",
+  "why_it_matters": [
+    "Non-expert users can now create structured decision models without needing extensive training or domain expertise.",
+    "This development signifies a shift towards more accessible AI tools, potentially transforming decision-making processes across various industries."
+  ],
+  "lenses": {
+    "eli12": "Doc2AHP helps users make decisions by using a smart system that organizes ideas like a tree. Imagine trying to sort your closet: you need a clear plan to decide what goes where. This tool simplifies complex choices, making it easier for everyone, not just experts, to make informed decisions.",
+    "pm": "For product managers and founders, Doc2AHP addresses the need for efficient decision-making tools that anyone can use. By reducing reliance on expert input, it could lower costs and streamline processes. This means teams can focus on strategic decisions rather than getting bogged down in complex frameworks.",
+    "engineer": "Doc2AHP integrates LLMs with AHP principles to enhance decision-making accuracy. It employs a multi-agent weighting mechanism and an adaptive consistency optimization strategy, ensuring logical coherence between decision nodes. Empirical results indicate it outperforms existing generative models in both logical completeness and task accuracy, marking a notable advancement in AI-driven decision support."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-27T04:31:48.838Z",
+  "updated_at": "2026-01-27T04:31:48.838Z",
+  "processing_order": 1769488308841
+}
