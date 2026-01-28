@@ -1,0 +1,31 @@
+{
+  "content_hash": "d25c5eccbdb4ae8b262c1a1bfcf968237925d4c8d593b9d78fd32be76b552ab8",
+  "share_id": "dhfp82",
+  "title": "DSGym: A Holistic Framework for Evaluating and Training Data Science Agents",
+  "optimized_headline": "Discover DSGym: A Comprehensive Approach to Training Data Science Agents",
+  "url": "https://arxiv.org/abs/2601.16344",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-27T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.16344v1 Announce Type: new \nAbstract: Data science agents promise to accelerate discovery and insight-generation by turning data into executable analyses and findings. Yet existing data science benchmarks fall short due to fragmented evaluation interfaces that make cross-benchmark comparison difficult, narrow task coverage and a lack of rigorous data grounding. In particular, we show th",
+  "raw_body": "arXiv:2601.16344v1 Announce Type: new \nAbstract: Data science agents promise to accelerate discovery and insight-generation by turning data into executable analyses and findings. Yet existing data science benchmarks fall short due to fragmented evaluation interfaces that make cross-benchmark comparison difficult, narrow task coverage and a lack of rigorous data grounding. In particular, we show that a substantial portion of tasks in current benchmarks can be solved without using the actual data. To address these limitations, we introduce DSGym, a standardized framework for evaluating and training data science agents in self-contained execution environments. Unlike static benchmarks, DSGym provides a modular architecture that makes it easy to add tasks, agent scaffolds, and tools, positioning it as a live, extensible testbed. We curate DSGym-Tasks, a holistic task suite that standardizes and refines existing benchmarks via quality and shortcut solvability filtering. We further expand coverage with (1) DSBio: expert-derived bioinformatics tasks grounded in literature and (2) DSPredict: challenging prediction tasks spanning domains such as computer vision, molecular prediction, and single-cell perturbation. Beyond evaluation, DSGym enables agent training via execution-verified data synthesis pipeline. As a case study, we build a 2,000-example training set and trained a 4B model in DSGym that outperforms GPT-4o on standardized analysis benchmarks. Overall, DSGym enables rigorous end-to-end measurement of whether agents can plan, implement, and validate data analyses in realistic scientific context.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "DSGym is a new framework designed to evaluate and train data science agents, addressing shortcomings in current benchmarks. It offers a modular architecture, allowing easy addition of tasks and tools, and includes a curated task suite called DSGym-Tasks. Notably, a 4 billion parameter model trained in DSGym outperformed GPT-4o on standardized analysis benchmarks. This matters now as it could enhance the effectiveness of data science agents in real-world applications.",
+  "why_it_matters": [
+    "Data scientists and researchers could benefit immediately from improved tools that enhance analysis capabilities and streamline workflows.",
+    "The introduction of DSGym signals a shift in how data science agents are evaluated, potentially leading to more robust and reliable AI solutions in various fields."
+  ],
+  "lenses": {
+    "eli12": "DSGym is like a gym for data science agents, providing a space where they can train and improve their skills. It fixes problems with current benchmarks by offering a flexible way to evaluate agents on a variety of tasks. This matters because better-trained agents could help everyone from researchers to businesses make smarter decisions based on data.",
+    "pm": "For product managers and founders, DSGym represents a significant opportunity to enhance data analysis products. By providing a more comprehensive evaluation framework, it could lead to more efficient tools that meet user needs for accuracy and reliability. This means companies could potentially save time and resources while improving their data-driven decision-making.",
+    "engineer": "From a technical perspective, DSGym introduces a modular architecture that allows for the easy addition of tasks and tools, which is a departure from static benchmarks. It includes specialized task sets like DSBio and DSPredict, covering diverse domains. The framework's ability to train a 4 billion parameter model that surpasses GPT-4o on standardized benchmarks demonstrates its potential for advancing data science agent capabilities in complex tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-28T04:31:12.783Z",
+  "updated_at": "2026-01-28T04:31:12.783Z",
+  "processing_order": 1769574672785
+}

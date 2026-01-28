@@ -1,0 +1,31 @@
+{
+  "content_hash": "94447bc2cf289eb1d3fecf2a6a6fd7a96a27b6309a426199f510ecb09d94994a",
+  "share_id": "wafmq2",
+  "title": "When Agents Fail to Act: A Diagnostic Framework for Tool Invocation Reliability in Multi-Agent LLM Systems",
+  "optimized_headline": "Exploring Tool Invocation Reliability in Multi-Agent LLM Systems: A Diagnostic Framework",
+  "url": "https://arxiv.org/abs/2601.16280",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-27T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.16280v1 Announce Type: new \nAbstract: Multi-agent systems powered by large language models (LLMs) are transforming enterprise automation, yet systematic evaluation methodologies for assessing tool-use reliability remain underdeveloped. We introduce a comprehensive diagnostic framework that leverages big data analytics to evaluate procedural reliability in intelligent agent systems, addr",
+  "raw_body": "arXiv:2601.16280v1 Announce Type: new \nAbstract: Multi-agent systems powered by large language models (LLMs) are transforming enterprise automation, yet systematic evaluation methodologies for assessing tool-use reliability remain underdeveloped. We introduce a comprehensive diagnostic framework that leverages big data analytics to evaluate procedural reliability in intelligent agent systems, addressing critical needs for SME-centric deployment in privacy-sensitive environments. Our approach features a 12-category error taxonomy capturing failure modes across tool initialization, parameter handling, execution, and result interpretation. Through systematic evaluation of 1,980 deterministic test instances spanning both open-weight models (Qwen2.5 series, Functionary) and proprietary alternatives (GPT-4, Claude 3.5/3.7) across diverse edge hardware configurations, we identify actionable reliability thresholds for production deployment. Our analysis reveals that procedural reliability, particularly tool initialization failures, constitutes the primary bottleneck for smaller models, while qwen2.5:32b achieves flawless performance matching GPT-4.1. The framework demonstrates that mid-sized models (qwen2.5:14b) offer practical accuracy-efficiency trade-offs on commodity hardware (96.6\\% success rate, 7.3 s latency), enabling cost-effective intelligent agent deployment for resource-constrained organizations. This work establishes foundational infrastructure for systematic reliability evaluation of tool-augmented multi-agent AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework has been introduced to assess the reliability of tool-use in multi-agent systems powered by large language models (LLMs). This framework analyzes 1,980 test instances across several models, revealing that tool initialization failures are a significant challenge, especially for smaller models. Notably, the qwen2.5:32b model performed flawlessly, matching GPT-4.1. This matters now as businesses seek reliable AI solutions for automation in sensitive environments.",
+  "why_it_matters": [
+    "Small and medium enterprises could benefit from improved tool reliability, enhancing their automation capabilities in privacy-sensitive sectors.",
+    "This framework indicates a shift towards systematic evaluation methods, which could lead to more robust LLM applications across various industries."
+  ],
+  "lenses": {
+    "eli12": "This new framework helps understand how well AI systems use tools. Think of it like a coach analyzing players' performance to improve teamwork. By identifying common issues, businesses can better deploy AI in sensitive areas, making technology more reliable for everyday tasks.",
+    "pm": "For product managers, this framework highlights the importance of tool reliability in AI systems. It shows that smaller models can still perform well, offering a balance between cost and efficiency. This insight could guide decisions on model selection for budget-conscious deployments.",
+    "engineer": "The framework evaluates procedural reliability in multi-agent LLM systems through a 12-category error taxonomy. It analyzed 1,980 test instances, revealing that smaller models struggle primarily with tool initialization. Notably, the qwen2.5:32b model achieved a flawless performance, indicating its potential for production use."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-28T04:30:49.446Z",
+  "updated_at": "2026-01-28T04:30:49.446Z",
+  "processing_order": 1769574649446
+}
