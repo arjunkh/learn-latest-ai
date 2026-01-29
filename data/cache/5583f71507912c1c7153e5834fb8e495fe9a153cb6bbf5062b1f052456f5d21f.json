@@ -1,0 +1,31 @@
+{
+  "content_hash": "5583f71507912c1c7153e5834fb8e495fe9a153cb6bbf5062b1f052456f5d21f",
+  "share_id": "rrilje",
+  "title": "RIFT: Reordered Instruction Following Testbed To Evaluate Instruction Following in Singular Multistep Prompt Structures",
+  "optimized_headline": "RIFT: A New Testbed for Evaluating Multistep Instruction Following Techniques",
+  "url": "https://arxiv.org/abs/2601.18924",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-28T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.18924v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly relied upon for complex workflows, yet their ability to maintain flow of instructions remains underexplored. Existing benchmarks conflate task complexity with structural ordering, making it difficult to isolate the impact of prompt topology on performance. We introduce RIFT, Reordered Instruction Followi",
+  "raw_body": "arXiv:2601.18924v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly relied upon for complex workflows, yet their ability to maintain flow of instructions remains underexplored. Existing benchmarks conflate task complexity with structural ordering, making it difficult to isolate the impact of prompt topology on performance. We introduce RIFT, Reordered Instruction Following Testbed, to assess instruction following by disentangling structure from content. Using rephrased Jeopardy! question-answer pairs, we test LLMs across two prompt structures: linear prompts, which progress sequentially, and jumping prompts, which preserve identical content but require non-sequential traversal. Across 10,000 evaluations spanning six state-of-the-art open-source LLMs, accuracy dropped by up to 72% under jumping conditions (compared to baseline), revealing a strong dependence on positional continuity. Error analysis shows that approximately 50% of failures stem from instruction-order violations and semantic drift, indicating that current architectures internalize instruction following as a sequential pattern rather than a reasoning skill. These results reveal structural sensitivity as a fundamental limitation in current architectures, with direct implications for applications requiring non-sequential control flow such as workflow automation and multi-agent systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced RIFT, a new testbed designed to evaluate how well Large Language Models (LLMs) follow instructions in different prompt structures. In tests with 10,000 evaluations, accuracy dropped by up to 72% when prompts required non-sequential responses. This highlights a crucial limitation: LLMs struggle with maintaining flow when instructions aren't linear. Understanding these weaknesses is vital as LLMs are increasingly used in complex workflows.",
+  "why_it_matters": [
+    "Developers relying on LLMs for automation could face significant challenges due to these limitations in instruction following. This could lead to inefficiencies in workflow systems.",
+    "This research indicates a broader need for advancements in LLM design, particularly for applications that require non-linear instruction processing, reflecting a shift in how AI models may need to evolve."
+  ],
+  "lenses": {
+    "eli12": "RIFT is like a test for how well LLMs can follow instructions when the order isn't straightforward. The study found that LLMs performed much worse—up to 72% lower accuracy—when asked to jump around in the instructions. This matters because it shows that even smart AI can struggle with tasks that require flexibility, affecting how we use them in everyday applications.",
+    "pm": "For product managers, RIFT highlights a user need for LLMs that can handle complex, non-linear instructions effectively. The significant drop in accuracy suggests that relying on current models for automation could lead to costly errors. This insight could guide future product development to enhance user experience in workflow automation.",
+    "engineer": "The introduction of RIFT reveals that LLMs exhibit a strong dependence on instruction order, with accuracy dropping significantly under non-linear conditions. The research indicates that about 50% of errors arise from instruction-order violations and semantic drift, suggesting that current architectures may not effectively internalize complex reasoning. Addressing these structural sensitivities could enhance model performance in multi-agent systems and workflow automation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-29T04:53:27.364Z",
+  "updated_at": "2026-01-29T04:53:27.364Z",
+  "processing_order": 1769662407367
+}

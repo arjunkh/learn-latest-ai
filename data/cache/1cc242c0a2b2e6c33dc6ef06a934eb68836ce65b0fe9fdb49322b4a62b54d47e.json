@@ -1,0 +1,31 @@
+{
+  "content_hash": "1cc242c0a2b2e6c33dc6ef06a934eb68836ce65b0fe9fdb49322b4a62b54d47e",
+  "share_id": "lddkf9",
+  "title": "LLM Driven Design of Continuous Optimization Problems with Controllable High-level Properties",
+  "optimized_headline": "Unlocking LLMs: Designing Continuous Optimization with Controllable Properties",
+  "url": "https://arxiv.org/abs/2601.18846",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-28T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.18846v1 Announce Type: new \nAbstract: Benchmarking in continuous black-box optimisation is hindered by the limited structural diversity of existing test suites such as BBOB. We explore whether large language models embedded in an evolutionary loop can be used to design optimisation problems with clearly defined high-level landscape characteristics. Using the LLaMEA framework, we guide a",
+  "raw_body": "arXiv:2601.18846v1 Announce Type: new \nAbstract: Benchmarking in continuous black-box optimisation is hindered by the limited structural diversity of existing test suites such as BBOB. We explore whether large language models embedded in an evolutionary loop can be used to design optimisation problems with clearly defined high-level landscape characteristics. Using the LLaMEA framework, we guide an LLM to generate problem code from natural-language descriptions of target properties, including multimodality, separability, basin-size homogeneity, search-space homogeneity and globallocal optima contrast. Inside the loop we score candidates through ELA-based property predictors. We introduce an ELA-space fitness-sharing mechanism that increases population diversity and steers the generator away from redundant landscapes. A complementary basin-of-attraction analysis, statistical testing and visual inspection, verifies that many of the generated functions indeed exhibit the intended structural traits. In addition, a t-SNE embedding shows that they expand the BBOB instance space rather than forming an unrelated cluster. The resulting library provides a broad, interpretable, and reproducible set of benchmark problems for landscape analysis and downstream tasks such as automated algorithm selection.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have explored using large language models (LLMs) to create diverse optimization problems for benchmarking in continuous black-box optimization. They employed the LLaMEA framework to generate problems based on natural language descriptions of desired properties, achieving a broader range of structural traits. This matters now because it could enhance the effectiveness of optimization algorithms by providing a more varied set of challenges, ultimately improving their performance in real-world applications.",
+  "why_it_matters": [
+    "This development could directly benefit researchers and practitioners in optimization by offering them a wider variety of benchmark problems to test their algorithms.",
+    "On a broader scale, it signals a shift in how AI can contribute to problem-solving in optimization, potentially leading to more efficient and innovative solutions across various industries."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve puzzles that all look the same; it gets boring and unhelpful. This research shows how AI can create diverse puzzles for optimization, making it easier for scientists to test their solutions. By generating these new problems, everyday people could see better technology and services that come from improved algorithms.",
+    "pm": "For product managers and founders, this research highlights a user need for diverse testing environments in optimization algorithms. It suggests that investing in AI-driven problem generation could enhance algorithm efficiency and effectiveness. Practically, this means teams could leverage a wider array of benchmarks to refine their products, leading to better user experiences.",
+    "engineer": "From a technical perspective, the study introduces the LLaMEA framework for generating optimization problems with specific high-level properties. Key specifics include using ELA-based property predictors and a fitness-sharing mechanism to enhance diversity in generated landscapes. The results indicate that the generated functions not only meet intended traits but also expand the existing BBOB instance space, providing valuable benchmarks for further research."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-29T04:53:13.029Z",
+  "updated_at": "2026-01-29T04:53:13.029Z",
+  "processing_order": 1769662393030
+}
