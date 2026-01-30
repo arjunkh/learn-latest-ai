@@ -1,0 +1,31 @@
+{
+  "content_hash": "af08bc3dc1f9fb3b59bfa36d9ee979ecdb51d394bc5687aee0da479b5fc94085",
+  "share_id": "tla2zd",
+  "title": "Teaching LLMs to Ask: Self-Querying Category-Theoretic Planning for Under-Specified Reasoning",
+  "optimized_headline": "How Self-Querying Enhances LLMs' Reasoning Through Category Theory Techniques",
+  "url": "https://arxiv.org/abs/2601.20014",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-29T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.20014v1 Announce Type: new \nAbstract: Inference-time planning with large language models frequently breaks under partial observability: when task-critical preconditions are not specified at query time, models tend to hallucinate missing facts or produce plans that violate hard constraints. We introduce \\textbf{Self-Querying Bidirectional Categorical Planning (SQ-BCP)}, which explicitly ",
+  "raw_body": "arXiv:2601.20014v1 Announce Type: new \nAbstract: Inference-time planning with large language models frequently breaks under partial observability: when task-critical preconditions are not specified at query time, models tend to hallucinate missing facts or produce plans that violate hard constraints. We introduce \\textbf{Self-Querying Bidirectional Categorical Planning (SQ-BCP)}, which explicitly represents precondition status (\\texttt{Sat}/\\texttt{Viol}/\\texttt{Unk}) and resolves unknowns via (i) targeted self-queries to an oracle/user or (ii) \\emph{bridging} hypotheses that establish the missing condition through an additional action. SQ-BCP performs bidirectional search and invokes a pullback-based verifier as a categorical certificate of goal compatibility, while using distance-based scores only for ranking and pruning. We prove that when the verifier succeeds and hard constraints pass deterministic checks, accepted plans are compatible with goal requirements; under bounded branching and finite resolution depth, SQ-BCP finds an accepting plan when one exists. Across WikiHow and RecipeNLG tasks with withheld preconditions, SQ-BCP reduces resource-violation rates to \\textbf{14.9\\%} and \\textbf{5.8\\%} (vs.\\ \\textbf{26.0\\%} and \\textbf{15.7\\%} for the best baseline), while maintaining competitive reference quality.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new method called Self-Querying Bidirectional Categorical Planning (SQ-BCP) to enhance how large language models plan tasks when they lack complete information. This method significantly reduces errors in task execution, with resource-violation rates dropping to 14.9% and 5.8%, compared to 26.0% and 15.7% from existing models. This improvement is crucial because it helps AI systems make better decisions even when they don't have all the necessary details.",
+  "why_it_matters": [
+    "This method could help developers create more reliable AI systems that perform well even with incomplete information, benefiting industries relying on AI-driven decision-making.",
+    "The introduction of SQ-BCP signals a shift towards more robust AI planning techniques, potentially leading to broader applications in complex problem-solving scenarios."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle without all the pieces. SQ-BCP helps AI fill in the gaps by asking questions or making educated guesses. This is important for everyday people because it could lead to smarter AI that can help with planning tasks like cooking or organizing events, even when some details are missing.",
+    "pm": "For product managers and founders, SQ-BCP addresses a critical user need: reliable task execution under uncertainty. By reducing errors and improving efficiency, this method could lower costs associated with failed tasks. It implies that integrating such advanced planning techniques could enhance product offerings in AI-driven applications.",
+    "engineer": "SQ-BCP utilizes a bidirectional search strategy and a pullback-based verifier to ensure that plans meet goal requirements. It explicitly tracks precondition statuses and performs targeted self-queries, allowing it to resolve unknowns effectively. This approach leads to a significant reduction in resource-violation rates, making it a promising advancement over previous models."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-30T04:55:18.473Z",
+  "updated_at": "2026-01-30T04:55:18.473Z",
+  "processing_order": 1769748918474
+}
