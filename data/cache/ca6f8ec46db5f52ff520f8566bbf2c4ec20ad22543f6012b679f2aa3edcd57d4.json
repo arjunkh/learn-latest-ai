@@ -1,0 +1,31 @@
+{
+  "content_hash": "ca6f8ec46db5f52ff520f8566bbf2c4ec20ad22543f6012b679f2aa3edcd57d4",
+  "share_id": "fcpg1v",
+  "title": "Fuzzy Categorical Planning: Autonomous Goal Satisfaction with Graded Semantic Constraints",
+  "optimized_headline": "Autonomous Goal Satisfaction: How Fuzzy Categorical Planning Transforms Decision-Making",
+  "url": "https://arxiv.org/abs/2601.20021",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-30T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.20021v1 Announce Type: new \nAbstract: Natural-language planning often involves vague predicates (e.g., suitable substitute, stable enough) whose satisfaction is inherently graded. Existing category-theoretic planners provide compositional structure and pullback-based hard-constraint verification, but treat applicability as crisp, forcing thresholding that collapses meaningful distinctio",
+  "raw_body": "arXiv:2601.20021v1 Announce Type: new \nAbstract: Natural-language planning often involves vague predicates (e.g., suitable substitute, stable enough) whose satisfaction is inherently graded. Existing category-theoretic planners provide compositional structure and pullback-based hard-constraint verification, but treat applicability as crisp, forcing thresholding that collapses meaningful distinctions and cannot track quality degradation across multi-step plans. We propose Fuzzy Category-theoretic Planning (FCP), which annotates each action (morphism) with a degree in [0,1], composes plan quality via a t-norm Lukasiewicz, and retains crisp executability checks via pullback verification. FCP grounds graded applicability from language using an LLM with k-sample median aggregation and supports meeting-in-the-middle search using residuum-based backward requirements. We evaluate on (i) public PDDL3 preference/oversubscription benchmarks and (ii) RecipeNLG-Subs, a missing-substitute recipe-planning benchmark built from RecipeNLG with substitution candidates from Recipe1MSubs and FoodKG. FCP improves success and reduces hard-constraint violations on RecipeNLG-Subs compared to LLM-only and ReAct-style baselines, while remaining competitive with classical PDDL3 planners.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Fuzzy Category-theoretic Planning (FCP), a new approach to natural-language planning that addresses the challenges posed by vague predicates like 'suitable substitute.' By annotating actions with degrees of applicability and employing advanced techniques like t-norm Lukasiewicz for plan quality, FCP shows improved success rates and fewer constraint violations in benchmarks like RecipeNLG-Subs. This innovation matters now as it enhances the ability of AI to understand and execute complex, nuanced instructions.",
+  "why_it_matters": [
+    "FCP offers immediate benefits for developers creating AI systems that require nuanced decision-making, improving their effectiveness in real-world applications.",
+    "On a broader scale, this development represents a shift towards more flexible and sophisticated AI planning methods, potentially impacting various industries reliant on AI decision-making."
+  ],
+  "lenses": {
+    "eli12": "Fuzzy Category-theoretic Planning (FCP) helps AI understand vague instructions better, like figuring out what 'suitable' means in different contexts. Imagine trying to pick a movie based on a friend's description; FCP allows the AI to gauge how well options match those fuzzy criteria. This matters because it could make AI assistants more helpful in everyday tasks.",
+    "pm": "For product managers and founders, FCP signals a shift towards AI that can handle complex, nuanced requests more effectively. This could lead to improved user satisfaction and reduced costs associated with miscommunication. Implementing FCP may enhance product features, making them more competitive in the market.",
+    "engineer": "FCP utilizes a graded approach to planning by annotating actions with values between 0 and 1, allowing for nuanced decision-making. It applies a t-norm Lukasiewicz for quality assessment and integrates LLMs for grounding language with k-sample median aggregation. Compared to traditional methods, FCP shows better performance on benchmarks like RecipeNLG-Subs, reducing hard-constraint violations significantly."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-31T04:47:49.357Z",
+  "updated_at": "2026-01-31T04:47:49.357Z",
+  "processing_order": 1769834869359
+}

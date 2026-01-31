@@ -1,0 +1,31 @@
+{
+  "content_hash": "e51652f8b155dcce78b6d532cc22f13a175c884132d2057b24f01cb0bc4abd0b",
+  "share_id": "ialykw",
+  "title": "Insight Agents: An LLM-Based Multi-Agent System for Data Insights",
+  "optimized_headline": "Revolutionizing Data Insights: How LLM-Based Agents Transform Analysis",
+  "url": "https://arxiv.org/abs/2601.20048",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-30T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.20048v1 Announce Type: new \nAbstract: Today, E-commerce sellers face several key challenges, including difficulties in discovering and effectively utilizing available programs and tools, and struggling to understand and utilize rich data from various tools. We therefore aim to develop Insight Agents (IA), a conversational multi-agent Data Insight system, to provide E-commerce sellers wi",
+  "raw_body": "arXiv:2601.20048v1 Announce Type: new \nAbstract: Today, E-commerce sellers face several key challenges, including difficulties in discovering and effectively utilizing available programs and tools, and struggling to understand and utilize rich data from various tools. We therefore aim to develop Insight Agents (IA), a conversational multi-agent Data Insight system, to provide E-commerce sellers with personalized data and business insights through automated information retrieval. Our hypothesis is that IA will serve as a force multiplier for sellers, thereby driving incremental seller adoption by reducing the effort required and increase speed at which sellers make good business decisions. In this paper, we introduce this novel LLM-backed end-to-end agentic system built on a plan-and-execute paradigm and designed for comprehensive coverage, high accuracy, and low latency. It features a hierarchical multi-agent structure, consisting of manager agent and two worker agents: data presentation and insight generation, for efficient information retrieval and problem-solving. We design a simple yet effective ML solution for manager agent that combines Out-of-Domain (OOD) detection using a lightweight encoder-decoder model and agent routing through a BERT-based classifier, optimizing both accuracy and latency. Within the two worker agents, a strategic planning is designed for API-based data model that breaks down queries into granular components to generate more accurate responses, and domain knowledge is dynamically injected to to enhance the insight generator. IA has been launched for Amazon sellers in US, which has achieved high accuracy of 90% based on human evaluation, with latency of P90 below 15s.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new system called Insight Agents (IA) is designed to help E-commerce sellers navigate data and tools more effectively. It uses a multi-agent structure that includes a manager and two worker agents to provide personalized insights. Notably, IA has achieved a 90% accuracy rate in evaluations, with a response time of under 15 seconds. This development is significant as it could streamline decision-making for sellers, enhancing their operational efficiency.",
+  "why_it_matters": [
+    "E-commerce sellers can now access tailored insights quickly, reducing the time and effort needed to analyze data.",
+    "This represents a shift towards more automated and intelligent tools in E-commerce, potentially increasing seller productivity and competitiveness."
+  ],
+  "lenses": {
+    "eli12": "Insight Agents act like a smart assistant for online sellers, helping them find and use data without getting overwhelmed. Imagine having a personal coach who knows all the rules and strategies for a game, guiding you to make the best moves. This matters because it could help everyday sellers make better decisions faster, improving their chances of success.",
+    "pm": "For product managers, Insight Agents highlight a growing need for tools that simplify complex data for users. By automating insights, this system could reduce operational costs and improve efficiency, allowing sellers to focus on strategy rather than data crunching. A practical implication is that product teams should consider how to integrate similar features into their offerings to enhance user experience.",
+    "engineer": "From a technical perspective, Insight Agents utilize a hierarchical multi-agent architecture to optimize information retrieval. The manager agent employs a lightweight encoder-decoder model for Out-of-Domain detection, while a BERT-based classifier aids in agent routing, achieving 90% accuracy and a P90 latency under 15 seconds. These metrics demonstrate the system’s efficiency, though ongoing evaluation will be essential to maintain performance as usage scales."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-31T04:47:58.586Z",
+  "updated_at": "2026-01-31T04:47:58.586Z",
+  "processing_order": 1769834878589
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "e552354a37b6a2e566d19333ef67c907059080cd5faf865113a96754d4399ef2",
+  "share_id": "tlau35",
+  "title": "Teaching LLMs to Ask: Self-Querying Category-Theoretic Planning for Under-Specified Reasoning",
+  "optimized_headline": "Revolutionizing LLMs: How Self-Querying Enhances Reasoning Through Category Theory",
+  "url": "https://arxiv.org/abs/2601.20014",
+  "source": "ArXiv AI",
+  "published_at": "2026-01-30T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.20014v1 Announce Type: new \nAbstract: Inference-time planning with large language models frequently breaks under partial observability: when task-critical preconditions are not specified at query time, models tend to hallucinate missing facts or produce plans that violate hard constraints. We introduce \\textbf{Self-Querying Bidirectional Categorical Planning (SQ-BCP)}, which explicitly ",
+  "raw_body": "arXiv:2601.20014v1 Announce Type: new \nAbstract: Inference-time planning with large language models frequently breaks under partial observability: when task-critical preconditions are not specified at query time, models tend to hallucinate missing facts or produce plans that violate hard constraints. We introduce \\textbf{Self-Querying Bidirectional Categorical Planning (SQ-BCP)}, which explicitly represents precondition status (\\texttt{Sat}/\\texttt{Viol}/\\texttt{Unk}) and resolves unknowns via (i) targeted self-queries to an oracle/user or (ii) \\emph{bridging} hypotheses that establish the missing condition through an additional action. SQ-BCP performs bidirectional search and invokes a pullback-based verifier as a categorical certificate of goal compatibility, while using distance-based scores only for ranking and pruning. We prove that when the verifier succeeds and hard constraints pass deterministic checks, accepted plans are compatible with goal requirements; under bounded branching and finite resolution depth, SQ-BCP finds an accepting plan when one exists. Across WikiHow and RecipeNLG tasks with withheld preconditions, SQ-BCP reduces resource-violation rates to \\textbf{14.9\\%} and \\textbf{5.8\\%} (vs.\\ \\textbf{26.0\\%} and \\textbf{15.7\\%} for the best baseline), while maintaining competitive reference quality.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a new method called Self-Querying Bidirectional Categorical Planning (SQ-BCP) to improve how large language models (LLMs) handle incomplete information during planning tasks. This approach reduces resource-violation rates significantly, achieving only 14.9% and 5.8% violations on WikiHow and RecipeNLG tasks, respectively, compared to 26.0% and 15.7% for existing methods. This advancement is crucial as it enhances LLMs' reliability in real-world applications where not all information is available.",
+  "why_it_matters": [
+    "This could help developers create more reliable AI systems, especially in applications requiring precise planning under uncertainty.",
+    "The success of SQ-BCP indicates a shift towards more robust AI solutions that can handle incomplete data, potentially transforming industries reliant on accurate decision-making."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle without all the pieces. SQ-BCP helps language models figure out what's missing by asking questions or making educated guesses. This means that everyday tools like virtual assistants could become much better at helping us, even when they don’t have all the details.",
+    "pm": "For product managers and founders, SQ-BCP represents a way to enhance user experience by improving the accuracy of AI-driven planning tools. By reducing errors in resource allocation, companies could save time and costs, leading to more efficient operations. This could ultimately result in higher user satisfaction and retention.",
+    "engineer": "From a technical perspective, SQ-BCP introduces a structured approach to handling partial observability in LLMs by representing precondition statuses and using bidirectional search. It leverages a pullback-based verifier to ensure goal compatibility, achieving lower resource-violation rates on tasks like WikiHow and RecipeNLG. This method demonstrates a promising direction for improving the robustness of LLMs in complex planning scenarios."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-01-31T04:47:40.278Z",
+  "updated_at": "2026-01-31T04:47:40.278Z",
+  "processing_order": 1769834860279
+}
