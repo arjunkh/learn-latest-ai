@@ -1,8 +1,71 @@
 {
-  "generated_at": "2026-01-31T04:49:46.233Z",
-  "total_articles": 480,
-  "total_in_cache": 2576,
+  "generated_at": "2026-02-01T05:12:02.376Z",
+  "total_articles": 476,
+  "total_in_cache": 2579,
   "articles": [
+    {
+      "id": "d82db564f3c1ab8bcf1f0fbe86079c0f19e725eb6f338461febd7023cd30659e",
+      "share_id": "mrsltp",
+      "category": "in_action_real_world",
+      "title": "Most RAG systems don’t understand sophisticated documents — they shred them",
+      "optimized_headline": "RAG Systems Fail to Comprehend Complex Documents: Here's Why",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/most-rag-systems-dont-understand-documents-they-shred-them",
+      "published_at": "2026-01-31T19:00:00.000Z",
+      "speedrun": "Recent advancements in Retrieval-Augmented Generation (RAG) systems highlight a significant challenge: they struggle with complex documents, especially in engineering contexts. Standard methods often break down technical manuals into arbitrary chunks, leading to misinterpretations. By shifting to semantic chunking and multimodal textualization, these systems could improve accuracy and better handle visual data. This matters now as industries seek more reliable AI tools to manage intricate information.",
+      "why_it_matters": [
+        "Engineers and technical teams could benefit from improved accuracy in retrieving specific data, which enhances productivity and decision-making.",
+        "This shift indicates a broader trend toward more sophisticated AI systems that respect document structure, potentially transforming how enterprises leverage their data."
+      ],
+      "lenses": {
+        "eli12": "Many companies are using AI to make sense of complex documents, but traditional methods often fail. Imagine trying to read a book by cutting every page into random pieces—important ideas get lost. By improving how AI processes these documents, everyday users could find the information they need more easily, making work more efficient.",
+        "pm": "For product managers and founders, this means that RAG systems need to evolve beyond simple text parsing. Addressing user needs for accurate data retrieval could enhance customer satisfaction and reduce operational costs. Implementing semantic chunking could be a practical step in delivering more reliable AI solutions.",
+        "engineer": "From a technical standpoint, the article emphasizes the need for semantic chunking over fixed-size character segmentation to maintain logical cohesion in documents. By using layout-aware parsing and multimodal textualization, engineers can ensure that both text and visual data are preserved for accurate retrieval. This approach could significantly enhance the performance of RAG systems in handling complex engineering documents."
+      },
+      "hype_meter": 4
+    },
+    {
+      "id": "b291b0e45f47ec725cdfb04c7d8c5922412bc156cc72d8e013e787c4b33b9447",
+      "share_id": "haa2vs",
+      "category": "capabilities_and_how",
+      "title": "How to Apply Agentic Coding to Solve Problems",
+      "optimized_headline": "Unlock Problem-Solving: Master Agentic Coding in Simple Steps",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/how-to-apply-agentic-coding-to-solve-problem/",
+      "published_at": "2026-01-31T15:00:00.000Z",
+      "speedrun": "The article introduces agentic coding, a method where coding agents autonomously tackle problems. This approach enhances efficiency by allowing agents to learn and adapt over time. The key idea is that these agents can operate independently, making decisions based on their environment. This matters now as businesses seek innovative ways to optimize processes and reduce human error in problem-solving.",
+      "why_it_matters": [
+        "Businesses could see immediate efficiency gains, as coding agents can handle repetitive tasks without constant supervision.",
+        "This trend reflects a broader shift towards automation in the tech industry, signaling a move away from traditional coding practices."
+      ],
+      "lenses": {
+        "eli12": "Agentic coding is like having a smart robot that learns to fix problems on its own. Instead of waiting for a person to give instructions, the robot figures things out based on what it sees. This matters because it could save time and reduce mistakes in everyday tasks, making life easier for everyone.",
+        "pm": "For product managers, adopting agentic coding could streamline workflows and reduce costs by minimizing the need for human oversight. This approach addresses user needs for efficiency and reliability. A practical implication is that teams could focus more on strategic tasks while agents handle routine problem-solving.",
+        "engineer": "From a technical perspective, agentic coding leverages algorithms that allow agents to learn from their environment, improving decision-making over time. Key specifics may include reinforcement learning models that adapt based on feedback. However, the implementation complexity could vary depending on the specific use case."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "5077a866b1f71efa45330b75c3a342d66d1afb44da00ca482e1c4beb57b52b51",
+      "share_id": "hrcshw",
+      "category": "in_action_real_world",
+      "title": "How to Run Claude Code for Free with Local and Cloud Models from Ollama",
+      "optimized_headline": "Run Claude Code for Free: Local vs. Cloud Models Explained",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/run-claude-code-for-free-with-local-and-cloud-models-from-ollama/",
+      "published_at": "2026-01-31T13:00:00.000Z",
+      "speedrun": "Ollama has introduced compatibility with the Anthropic API, allowing users to run Claude code for free using both local and cloud models. This development makes it easier for developers to access advanced AI capabilities without incurring costs. With this move, Ollama aims to democratize AI access, making powerful tools available to a wider audience. This is significant as it could accelerate innovation in AI applications across various sectors.",
+      "why_it_matters": [
+        "Developers can now experiment with advanced AI models without financial barriers, fostering creativity and innovation in software development.",
+        "This shift signals a growing trend towards making AI tools more accessible, which could reshape the competitive landscape of AI services."
+      ],
+      "lenses": {
+        "eli12": "Ollama’s new feature lets anyone use Claude code for free, either on their own computer or through the cloud. It’s like having a powerful toolbox available to everyone, regardless of their budget. This change is important because it opens up opportunities for more people to create and innovate with AI technology.",
+        "pm": "For product managers and founders, Ollama's Anthropic API compatibility means reduced costs for integrating AI into products. It allows teams to experiment and iterate quickly without worrying about expenses. This could lead to faster development cycles and more user-friendly applications as they leverage advanced AI capabilities.",
+        "engineer": "From a technical perspective, Ollama's integration with the Anthropic API allows seamless use of Claude models, whether locally or in the cloud. This flexibility enables developers to choose the best environment for their needs. It's essential to consider the performance benchmarks of these models to ensure optimal efficiency in applications."
+      },
+      "hype_meter": 2
+    },
     {
       "id": "e0e988424038c364d5dee5c61091ca24623bdc8f247a25161d3a221486981266",
       "share_id": "opalin",
@@ -9935,153 +9998,6 @@
         "engineer": "From a technical perspective, the lack of visibility into AI model usage poses significant risks, with 76% of organizations experiencing prompt injection attacks. Current SBOM practices are inadequate for dynamic AI models, which change over time and can introduce security vulnerabilities. Engineers need to adopt more rigorous tracking and governance processes to mitigate these risks effectively."
       },
       "hype_meter": 3
-    },
-    {
-      "id": "f2e9e87b6b9f4dd8ef96e6d6a66396dcfe0dd80987a136d8c2c9d1acbcdc70b5",
-      "share_id": "eppjjg",
-      "category": "capabilities_and_how",
-      "title": "EDA in Public (Part 3): RFM Analysis for Customer Segmentation in Pandas",
-      "optimized_headline": "Unlocking Customer Insights: RFM Analysis with Pandas in Public EDA Part 3",
-      "source": "Towards Data Science",
-      "url": "https://towardsdatascience.com/eda-in-public-part-3-rfm-analysis-for-customer-segmentation-in-pandas/",
-      "published_at": "2026-01-01T15:00:00.000Z",
-      "speedrun": "The article discusses how to perform RFM (Recency, Frequency, Monetary) analysis using Pandas for customer segmentation. It provides a step-by-step guide on building, scoring, and interpreting RFM segments. Key specifics include the importance of identifying customer behavior patterns to tailor marketing strategies effectively. This approach is crucial now as businesses seek to enhance customer engagement and retention in a competitive market.",
-      "why_it_matters": [
-        "Businesses can use RFM analysis to identify high-value customers, allowing targeted marketing efforts and improved customer retention.",
-        "This method reflects a broader trend towards data-driven decision-making, as companies increasingly rely on analytics for strategic insights."
-      ],
-      "lenses": {
-        "eli12": "RFM analysis helps businesses understand their customers by looking at how recently they bought, how often they buy, and how much they spend. Think of it like sorting friends based on how often they visit you, which helps you decide who to invite to a party. This matters for everyday people because it leads to more personalized experiences and better service from companies.",
-        "pm": "For product managers and founders, RFM analysis highlights user segments that could be more valuable, guiding marketing strategies. By focusing on high-frequency and high-spending customers, businesses can allocate resources more efficiently. This approach could lead to better customer loyalty and increased sales.",
-        "engineer": "From a technical perspective, implementing RFM analysis in Pandas involves calculating scores for recency, frequency, and monetary value based on transaction data. The article likely emphasizes using dataframes to manipulate and segment data efficiently. However, it's important to ensure data quality to avoid skewed results in customer segmentation."
-      },
-      "hype_meter": 2
-    },
-    {
-      "id": "4233a1afca46d47125403574f0cfde1484e6766d0692f1a654d40b62f9c7901c",
-      "share_id": "drlqxe",
-      "category": "capabilities_and_how",
-      "title": "Deep Reinforcement Learning: The Actor-Critic Method",
-      "optimized_headline": "Unlocking Deep Reinforcement Learning: How the Actor-Critic Method Works",
-      "source": "Towards Data Science",
-      "url": "https://towardsdatascience.com/deep-reinforcement-learning-the-actor-critic-method/",
-      "published_at": "2026-01-01T13:00:00.000Z",
-      "speedrun": "The Actor-Critic method in deep reinforcement learning allows robots to learn tasks, like flying a drone, by collaborating. This approach combines two key components: the 'actor' which decides actions, and the 'critic' that evaluates those actions. Recent advancements show that this method can significantly improve learning efficiency. Understanding this could lead to better robotic applications in various fields.",
-      "why_it_matters": [
-        "Robots learning together could enhance efficiency in training, benefiting industries that rely on automation.",
-        "This method signals a shift toward more collaborative AI systems, potentially transforming how machines learn and operate."
-      ],
-      "lenses": {
-        "eli12": "Think of the Actor-Critic method like a sports team. The actor is the player making decisions on the field, while the critic is the coach providing feedback. Together, they improve performance over time. This matters because it shows how machines can learn complex tasks more effectively, which could lead to smarter robots in everyday life.",
-        "pm": "For product managers, the Actor-Critic method highlights a user need for more adaptive AI systems. By improving learning efficiency, products could become more responsive and cost-effective. This means faster development cycles and better user experiences as AI systems learn from interactions.",
-        "engineer": "The Actor-Critic method leverages two neural networks: one for policy (actor) and another for value estimation (critic). This dual approach allows for more efficient learning, as seen in recent benchmarks where robots showed improved performance in complex tasks. However, careful tuning of these networks is essential to avoid instability during training."
-      },
-      "hype_meter": 2
-    },
-    {
-      "id": "24d7461cbabb98275ee5f119aa82d4b14065a69a62f332b6e7cbaa3794826dfb",
-      "share_id": "frtzt1",
-      "category": "trends_risks_outlook",
-      "title": "Four AI research trends enterprise teams should watch in 2026",
-      "optimized_headline": "\"Discover 2026's Key AI Research Trends for Enterprise Teams\"",
-      "source": "VentureBeat",
-      "url": "https://venturebeat.com/technology/four-ai-research-trends-enterprise-teams-should-watch-in-2026",
-      "published_at": "2026-01-01T08:00:00.000Z",
-      "speedrun": "AI research is evolving beyond just improving model performance to focus on practical applications for enterprises. Key trends include continual learning, which helps models retain knowledge while learning new information, and world models that enable AI to understand environments without human input. These advancements could lead to more robust and adaptable AI systems by 2026, making it crucial for businesses to stay informed about these developments now.",
-      "why_it_matters": [
-        "Enterprises could benefit from AI systems that adapt and learn continuously, enhancing efficiency and effectiveness in operations.",
-        "A shift towards practical AI applications signals a broader trend of moving from theoretical models to real-world implementations, impacting various industries."
-      ],
-      "lenses": {
-        "eli12": "AI is learning to remember better, like a student who can recall past lessons while learning new ones. This is crucial because it means AI can adapt to new situations without forgetting important information. For everyday people, this could lead to smarter AI tools that help in daily tasks, making life easier.",
-        "pm": "For product managers, these trends highlight the need for AI solutions that can learn continuously and adapt to user needs. This could reduce costs associated with retraining models and improve user experience. As a practical implication, focusing on continual learning and orchestration could lead to more reliable and efficient products.",
-        "engineer": "From a technical perspective, continual learning aims to prevent catastrophic forgetting, with models like Google’s Titans incorporating long-term memory modules. World models, such as DeepMind's Genie, simulate environments for better decision-making without relying on labeled data. These advancements could enhance AI's ability to operate in real-world scenarios, but they also require careful engineering to implement effectively."
-      },
-      "hype_meter": 3
-    },
-    {
-      "id": "b414308fdd70b21612234f3b5ba2ec4fb32468abc8e628c2edc7e2679a8141eb",
-      "share_id": "ssperz",
-      "category": "capabilities_and_how",
-      "title": "SPARK: Search Personalization via Agent-Driven Retrieval and Knowledge-sharing",
-      "optimized_headline": "Unlocking SPARK: How Agent-Driven Retrieval Transforms Search Personalization",
-      "source": "ArXiv AI",
-      "url": "https://arxiv.org/abs/2512.24008",
-      "published_at": "2026-01-01T05:00:00.000Z",
-      "speedrun": "Researchers introduced SPARK, a new framework for personalized search that uses multiple specialized agents to better understand users' evolving information needs. It relies on a Persona Coordinator to activate the most relevant agents based on user queries. Each agent independently retrieves and generates information, collaborating through structured communication. This approach could enhance the personalization quality and efficiency of search systems, making them more responsive to how people actually seek information.",
-      "why_it_matters": [
-        "Users could experience more relevant search results tailored to their specific context and needs, improving their overall search efficiency.",
-        "This development signals a shift towards more dynamic and responsive search technologies, potentially transforming how businesses approach user engagement and information retrieval."
-      ],
-      "lenses": {
-        "eli12": "Imagine trying to find a book in a library without a catalog. SPARK acts like a librarian who knows exactly what you want and who can call on different assistants to help you find it. This means that everyday users could enjoy a more tailored search experience, making it easier to find the right information quickly.",
-        "pm": "For product managers, SPARK highlights the need for adaptive search features that respond to user context. By leveraging specialized agents, products could offer more efficient and personalized search experiences, potentially reducing user frustration and increasing engagement. This could lead to higher satisfaction rates and better retention.",
-        "engineer": "SPARK employs a multi-agent system where each agent specializes in different aspects of information retrieval, enhancing personalization. It utilizes a Persona Coordinator to dynamically interpret queries and activate relevant agents, which operate with independent retrieval-augmented generation processes. This framework could improve coordination efficiency and personalization quality while distributing cognitive load among agents."
-      },
-      "hype_meter": 3
-    },
-    {
-      "id": "41896daf9a2232209c5c5cc934e270480c8f7a095d243681936081fc7f51f074",
-      "share_id": "pfewn9",
-      "category": "capabilities_and_how",
-      "title": "A Proof-of-Concept for Explainable Disease Diagnosis Using Large Language Models and Answer Set Programming",
-      "optimized_headline": "\"Exploring Explainable Disease Diagnosis: Can Language Models Transform Healthcare?\"",
-      "source": "ArXiv AI",
-      "url": "https://arxiv.org/abs/2512.23932",
-      "published_at": "2026-01-01T05:00:00.000Z",
-      "speedrun": "Researchers have developed McCoy, a new framework that blends Large Language Models (LLMs) with Answer Set Programming (ASP) to enhance disease diagnosis. This approach translates medical literature into code, allowing for better integration with patient data. Early results indicate that McCoy performs well on small-scale diagnosis tasks, which could lead to more accurate and interpretable medical predictions. This is significant as it addresses the challenges of building reliable knowledge bases in healthcare.",
-      "why_it_matters": [
-        "Healthcare professionals could benefit from improved diagnostic tools, leading to faster and more accurate patient care.",
-        "This framework represents a shift towards combining AI and traditional programming, potentially transforming how medical knowledge is applied in practice."
-      ],
-      "lenses": {
-        "eli12": "McCoy is like a translator that turns complex medical documents into a language a computer can understand. By combining powerful AI with logical programming, it helps doctors make better diagnoses. This matters because improved disease prediction could save lives and enhance patient treatment.",
-        "pm": "For product managers and founders, McCoy could streamline the way healthcare applications utilize AI for diagnosis. It addresses the user need for accurate predictions while potentially lowering costs associated with knowledge base construction. The practical implication is that healthcare apps could become more effective and user-friendly.",
-        "engineer": "From a technical perspective, McCoy utilizes LLMs to convert medical literature into Answer Set Programming code, which is then processed by an ASP solver. Preliminary results show strong performance on small-scale disease diagnosis tasks, indicating that this hybrid approach could effectively bridge the gap between AI and traditional programming methods in healthcare."
-      },
-      "hype_meter": 3
-    },
-    {
-      "id": "5669b667ca80b19a8b27f46bb7b046e3e6d579c0b13e6d2098b56fff87d08554",
-      "share_id": "ccage3",
-      "category": "capabilities_and_how",
-      "title": "CASCADE: Cumulative Agentic Skill Creation through Autonomous Development and Evolution",
-      "optimized_headline": "Unlocking CASCADE: How Autonomous Development Shapes Agentic Skill Growth",
-      "source": "ArXiv AI",
-      "url": "https://arxiv.org/abs/2512.23880",
-      "published_at": "2026-01-01T05:00:00.000Z",
-      "speedrun": "Researchers have introduced CASCADE, a self-evolving framework for large language model (LLM) agents that shifts their capabilities from just tool use to acquiring skills. By leveraging continuous learning and self-reflection, CASCADE achieved a remarkable 93.3% success rate on complex scientific tasks, compared to only 35.4% without these mechanisms. This advancement could significantly enhance AI's role in scientific research, allowing for more sophisticated and autonomous experimentation.",
-      "why_it_matters": [
-        "Scientists and researchers could benefit from enhanced AI tools that adapt and evolve, improving efficiency in complex tasks.",
-        "The introduction of CASCADE signals a broader shift toward more autonomous AI systems, which could redefine how scientific research is conducted."
-      ],
-      "lenses": {
-        "eli12": "CASCADE is like giving a language model a brain that helps it learn and grow. Instead of just using tools, it can now acquire new skills by searching the web and reflecting on its knowledge. This matters because it could make AI smarter and more useful for everyday tasks, especially in science.",
-        "pm": "For product managers and founders, CASCADE presents an opportunity to develop AI products that are not just reactive but proactive in learning. This could reduce costs related to manual tool integration and improve user experience by providing smarter, more adaptable solutions. It suggests a shift towards AI systems that continuously evolve based on user interactions.",
-        "engineer": "From a technical perspective, CASCADE utilizes continuous learning and introspection to enhance LLM capabilities. It was evaluated on SciSkillBench, achieving a 93.3% success rate with GPT-5, demonstrating the effectiveness of its evolutionary mechanisms. This approach could lead to more robust models that can tackle complex scientific tasks autonomously."
-      },
-      "hype_meter": 2
-    },
-    {
-      "id": "ab5a92dd349222b460a32378c6c261d4a0de41c76c80e064ba654cd59372473c",
-      "share_id": "tdavyl",
-      "category": "capabilities_and_how",
-      "title": "The Drill-Down and Fabricate Test (DDFT): A Protocol for Measuring Epistemic Robustness in Language Models",
-      "optimized_headline": "New Protocol Reveals How to Measure Language Models' Epistemic Robustness",
-      "source": "ArXiv AI",
-      "url": "https://arxiv.org/abs/2512.23850",
-      "published_at": "2026-01-01T05:00:00.000Z",
-      "speedrun": "Researchers have introduced the Drill-Down and Fabricate Test (DDFT) to evaluate how well language models maintain accuracy under stress. Unlike traditional benchmarks, DDFT assesses a model's ability to withstand information degradation through a two-system cognitive model. Findings show that error detection capability is a key predictor of robustness, with flagship models often being less reliable than smaller ones. This matters now as it challenges existing beliefs about model size and reliability in critical applications.",
-      "why_it_matters": [
-        "Developers and researchers can better understand how to build more reliable AI systems that perform well under real-world conditions.",
-        "This shift in evaluation could lead to more resilient AI applications, enhancing trust and safety in critical areas like healthcare and finance."
-      ],
-      "lenses": {
-        "eli12": "The DDFT is like a stress test for language models, checking how well they hold up when information gets tricky. Instead of just seeing what they know, it looks at how they cope when facts get fuzzy or misleading. This is important for everyday people because it means AI could become more trustworthy and useful in situations where accuracy is crucial.",
-        "pm": "For product managers and founders, the DDFT highlights the need for robust AI that can handle real-world challenges. It suggests that focusing solely on model size isn't enough; understanding how models verify information is crucial. This insight could lead to better user experiences and more reliable products in the market.",
-        "engineer": "From a technical perspective, the DDFT evaluates language models using a two-system cognitive model that separates text generation from factual verification. The study assessed nine models across eight knowledge domains and found that error detection capability is a strong predictor of robustness. This indicates that current design paradigms may overlook critical factors influencing a model's reliability."
-      },
-      "hype_meter": 2
     }
   ]
 }
