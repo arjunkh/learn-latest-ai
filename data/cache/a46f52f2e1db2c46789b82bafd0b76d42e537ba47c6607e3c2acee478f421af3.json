@@ -1,0 +1,31 @@
+{
+  "content_hash": "a46f52f2e1db2c46789b82bafd0b76d42e537ba47c6607e3c2acee478f421af3",
+  "share_id": "srr2es",
+  "title": "Sparks of Rationality: Do Reasoning LLMs Align with Human Judgment and Choice?",
+  "optimized_headline": "Do Reasoning LLMs Reflect Human Judgment and Decision-Making?",
+  "url": "https://arxiv.org/abs/2601.22329",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-02T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.22329v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly positioned as decision engines for hiring, healthcare, and economic judgment, yet real-world human judgment reflects a balance between rational deliberation and emotion-driven bias. If LLMs are to participate in high-stakes decisions or serve as models of human behavior, it is critical to assess whether ",
+  "raw_body": "arXiv:2601.22329v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly positioned as decision engines for hiring, healthcare, and economic judgment, yet real-world human judgment reflects a balance between rational deliberation and emotion-driven bias. If LLMs are to participate in high-stakes decisions or serve as models of human behavior, it is critical to assess whether they exhibit analogous patterns of (ir)rationalities and biases. To this end, we evaluate multiple LLM families on (i) benchmarks testing core axioms of rational choice and (ii) classic decision domains from behavioral economics and social norms where emotions are known to shape judgment and choice. Across settings, we show that deliberate \"thinking\" reliably improves rationality and pushes models toward expected-value maximization. To probe human-like affective distortions and their interaction with reasoning, we use two emotion-steering methods: in-context priming (ICP) and representation-level steering (RLS). ICP induces strong directional shifts that are often extreme and difficult to calibrate, whereas RLS produces more psychologically plausible patterns but with lower reliability. Our results suggest that the same mechanisms that improve rationality also amplify sensitivity to affective interventions, and that different steering methods trade off controllability against human-aligned behavior. Overall, this points to a tension between reasoning and affective steering, with implications for both human simulation and the safe deployment of LLM-based decision systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research explores how Large Language Models (LLMs) compare to human judgment in decision-making roles like hiring and healthcare. The study shows that when LLMs engage in deliberate reasoning, their rationality improves, mimicking human decision patterns. However, the models also exhibit sensitivity to emotional influences, which can skew their judgments. This matters now as LLMs are increasingly used in high-stakes decisions, necessitating a better understanding of their decision-making processes.",
+  "why_it_matters": [
+    "Organizations using LLMs for decisions must consider how emotional biases could affect outcomes, potentially leading to unfair or irrational choices.",
+    "The findings indicate a broader shift in AI development, where balancing rationality and emotional understanding is crucial for effective AI deployment in sensitive areas."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how LLMs make decisions and whether they think like humans. When LLMs use careful reasoning, they make better choices, similar to how people balance logic and feelings. However, they can also be swayed by emotions, which can lead to poor decisions. Understanding this helps everyone, as it may affect how LLMs are used in everyday situations like hiring or medical advice.",
+    "pm": "For product managers and founders, this research highlights the importance of integrating emotional intelligence into AI decision-making tools. Users expect AI to make rational choices, but emotional influences can lead to unexpected results. Therefore, ensuring that LLMs can balance logic and emotion could enhance user trust and satisfaction in AI-driven applications.",
+    "engineer": "The study evaluates LLMs across benchmarks that test rational choice and decision-making influenced by emotions. It employs methods like in-context priming (ICP) and representation-level steering (RLS) to assess how emotional factors affect LLM outputs. While ICP shows significant shifts, it lacks calibratability, whereas RLS offers more realistic patterns but with less reliability. These findings reveal the complex interplay between reasoning capabilities and emotional influences in AI decision-making."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-02T05:12:34.944Z",
+  "updated_at": "2026-02-02T05:12:34.944Z",
+  "processing_order": 1770009154947
+}

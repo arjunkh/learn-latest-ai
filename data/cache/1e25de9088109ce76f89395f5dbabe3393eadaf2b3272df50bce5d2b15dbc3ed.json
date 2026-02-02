@@ -1,0 +1,31 @@
+{
+  "content_hash": "1e25de9088109ce76f89395f5dbabe3393eadaf2b3272df50bce5d2b15dbc3ed",
+  "share_id": "wrfs02",
+  "title": "Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents",
+  "optimized_headline": "Exploring Long-Term Decision-Making Challenges in LLM Agents’ Planning Strategies",
+  "url": "https://arxiv.org/abs/2601.22311",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-02T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2601.22311v1 Announce Type: new \nAbstract: Large language model (LLM)-based agents exhibit strong step-by-step reasoning capabilities over short horizons, yet often fail to sustain coherent behavior over long planning horizons. We argue that this failure reflects a fundamental mismatch: step-wise reasoning induces a form of step-wise greedy policy that is adequate for short horizons but fail",
+  "raw_body": "arXiv:2601.22311v1 Announce Type: new \nAbstract: Large language model (LLM)-based agents exhibit strong step-by-step reasoning capabilities over short horizons, yet often fail to sustain coherent behavior over long planning horizons. We argue that this failure reflects a fundamental mismatch: step-wise reasoning induces a form of step-wise greedy policy that is adequate for short horizons but fails in long-horizon planning, where early actions must account for delayed consequences. From this planning-centric perspective, we study LLM-based agents in deterministic, fully structured environments with explicit state transitions and evaluation signals. Our analysis reveals a core failure mode of reasoning-based policies: locally optimal choices induced by step-wise scoring lead to early myopic commitments that are systematically amplified over time and difficult to recover from. We introduce FLARE (Future-aware Lookahead with Reward Estimation) as a minimal instantiation of future-aware planning to enforce explicit lookahead, value propagation, and limited commitment in a single model, allowing downstream outcomes to influence early decisions. Across multiple benchmarks, agent frameworks, and LLM backbones, FLARE consistently improves task performance and planning-level behavior, frequently allowing LLaMA-8B with FLARE to outperform GPT-4o with standard step-by-step reasoning. These results establish a clear distinction between reasoning and planning.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights a significant limitation of large language model (LLM) agents: while they excel at short-term reasoning, they struggle with long-term planning. The study introduces FLARE (Future-aware Lookahead with Reward Estimation), which improves decision-making by allowing agents to consider future consequences. Notably, LLaMA-8B with FLARE outperformed GPT-4o using standard reasoning methods. This matters as it suggests a need for better planning strategies in AI to enhance their decision-making capabilities over extended periods.",
+  "why_it_matters": [
+    "This has immediate implications for AI developers who rely on LLMs for complex tasks, as it highlights the necessity for improved planning mechanisms.",
+    "On a broader scale, it signals a shift in AI development priorities, pushing for models that integrate long-term reasoning into their frameworks."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve a puzzle by only looking at one piece at a time. This is how LLMs often operate—they excel at immediate tasks but struggle with seeing the bigger picture. FLARE helps these models think ahead, improving their overall performance. This is important for everyday users who rely on AI for more complex, long-term tasks.",
+    "pm": "For product managers and founders, this research highlights a critical user need: AI that can plan and execute over longer periods. FLARE shows that integrating future considerations can enhance efficiency and effectiveness in AI applications. This could lead to better products that meet user demands for more advanced decision-making capabilities.",
+    "engineer": "From a technical perspective, the study reveals that traditional step-wise reasoning in LLMs leads to myopic decisions that hinder long-term success. FLARE introduces mechanisms like lookahead and value propagation, which allow models to consider future outcomes. Notably, LLaMA-8B with FLARE consistently outperformed GPT-4o, demonstrating the potential of future-aware planning in enhancing AI decision-making."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-02T05:12:24.322Z",
+  "updated_at": "2026-02-02T05:12:24.322Z",
+  "processing_order": 1770009144324
+}
