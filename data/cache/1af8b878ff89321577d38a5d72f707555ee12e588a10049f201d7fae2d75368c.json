@@ -1,0 +1,31 @@
+{
+  "content_hash": "1af8b878ff89321577d38a5d72f707555ee12e588a10049f201d7fae2d75368c",
+  "share_id": "sasa8f",
+  "title": "Scalable and Secure AI Inference in Healthcare: A Comparative Benchmarking of FastAPI and Triton Inference Server on Kubernetes",
+  "optimized_headline": "Comparing FastAPI and Triton for Scalable AI Inference in Healthcare",
+  "url": "https://arxiv.org/abs/2602.00053",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.00053v1 Announce Type: new \nAbstract: Efficient and scalable deployment of machine learning (ML) models is a prerequisite for modern production environments, particularly within regulated domains such as healthcare and pharmaceuticals. In these settings, systems must balance competing requirements, including minimizing inference latency for real-time clinical decision support, maximizin",
+  "raw_body": "arXiv:2602.00053v1 Announce Type: new \nAbstract: Efficient and scalable deployment of machine learning (ML) models is a prerequisite for modern production environments, particularly within regulated domains such as healthcare and pharmaceuticals. In these settings, systems must balance competing requirements, including minimizing inference latency for real-time clinical decision support, maximizing throughput for batch processing of medical records, and ensuring strict adherence to data privacy standards such as HIPAA. This paper presents a rigorous benchmarking analysis comparing two prominent deployment paradigms: a lightweight, Python-based REST service using FastAPI, and a specialized, high-performance serving engine, NVIDIA Triton Inference Server. Leveraging a reference architecture for healthcare AI, we deployed a DistilBERT sentiment analysis model on Kubernetes to measure median (p50) and tail (p95) latency, as well as throughput, under controlled experimental conditions. Our results indicate a distinct trade-off. While FastAPI provides lower overhead for single-request workloads with a p50 latency of 22 ms, Triton achieves superior scalability through dynamic batching, delivering a throughput of 780 requests per second on a single NVIDIA T4 GPU, nearly double that of the baseline. Furthermore, we evaluate a hybrid architectural approach that utilizes FastAPI as a secure gateway for protected health information de-identification and Triton for backend inference. This study validates the hybrid model as a best practice for enterprise clinical AI and offers a blueprint for secure, high-availability deployments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study benchmarks FastAPI and NVIDIA Triton Inference Server for deploying AI models in healthcare. FastAPI excels in single-request latency at 22 ms, while Triton significantly boosts throughput, processing 780 requests per second on a single NVIDIA T4 GPU. This comparison highlights the trade-offs between low latency and high scalability, crucial for real-time clinical support. Understanding these differences is vital as healthcare increasingly relies on AI for decision-making.",
+  "why_it_matters": [
+    "Healthcare organizations can enhance patient care by choosing the right deployment strategy for AI models, impacting real-time decision-making.",
+    "This benchmarking reveals a shift towards hybrid models that combine the strengths of different technologies, influencing future AI infrastructure in healthcare."
+  ],
+  "lenses": {
+    "eli12": "This study compares two methods for deploying AI in healthcare. FastAPI is great for quick responses, while Triton handles many requests at once. Think of it like a restaurant: FastAPI serves your meal quickly, but Triton can feed a whole crowd at a banquet. This matters because better AI tools can help doctors make faster, more accurate decisions.",
+    "pm": "For product managers, this research highlights the importance of choosing the right AI deployment strategy. FastAPI can meet urgent user needs for low-latency responses, while Triton offers efficiency for high-volume tasks. A practical implication is that a hybrid approach may optimize both speed and scalability, enhancing overall user experience and operational performance.",
+    "engineer": "From a technical perspective, the study shows that FastAPI achieves a median latency of 22 ms for single requests, while Triton’s dynamic batching allows it to reach a throughput of 780 requests per second using a single NVIDIA T4 GPU. This performance difference emphasizes the importance of selecting the appropriate framework based on workload requirements, especially in regulated environments like healthcare."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-03T05:01:48.357Z",
+  "updated_at": "2026-02-03T05:01:48.357Z",
+  "processing_order": 1770094908357
+}

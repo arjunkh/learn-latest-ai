@@ -1,0 +1,31 @@
+{
+  "content_hash": "0bc19c80c306c7bac89ea783b997a0ac6ddd1c543f7e081ccc9becaf607f4342",
+  "share_id": "fgt0dm",
+  "title": "From Gameplay Traces to Game Mechanics: Causal Induction with Large Language Models",
+  "optimized_headline": "Unlocking Game Mechanics: How Large Language Models Reveal Gameplay Insights",
+  "url": "https://arxiv.org/abs/2602.00190",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.00190v1 Announce Type: new \nAbstract: Deep learning agents can achieve high performance in complex game domains without often understanding the underlying causal game mechanics. To address this, we investigate Causal Induction: the ability to infer governing laws from observational data, by tasking Large Language Models (LLMs) with reverse-engineering Video Game Description Language (VG",
+  "raw_body": "arXiv:2602.00190v1 Announce Type: new \nAbstract: Deep learning agents can achieve high performance in complex game domains without often understanding the underlying causal game mechanics. To address this, we investigate Causal Induction: the ability to infer governing laws from observational data, by tasking Large Language Models (LLMs) with reverse-engineering Video Game Description Language (VGDL) rules from gameplay traces. To reduce redundancy, we select nine representative games from the General Video Game AI (GVGAI) framework using semantic embeddings and clustering. We compare two approaches to VGDL generation: direct code generation from observations, and a two-stage method that first infers a structural causal model (SCM) and then translates it into VGDL. Both approaches are evaluated across multiple prompting strategies and controlled context regimes, varying the amount and form of information provided to the model, from just raw gameplay observations to partial VGDL specifications. Results show that the SCM-based approach more often produces VGDL descriptions closer to the ground truth than direct generation, achieving preference win rates of up to 81\\% in blind evaluations and yielding fewer logically inconsistent rules. These learned SCMs can be used for downstream use cases such as causal reinforcement learning, interpretable agents, and procedurally generating novel but logically consistent games.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers explored how Large Language Models (LLMs) can infer game mechanics from gameplay data, a process called Causal Induction. They tested two methods for generating Video Game Description Language (VGDL) rules, finding that a two-stage approach, which first builds a structural causal model, outperformed direct code generation. This method achieved up to 81% preference win rates in evaluations, suggesting LLMs can better understand game mechanics. This is significant as it could enhance AI's capability to learn and create games more effectively.",
+  "why_it_matters": [
+    "Game developers could benefit by creating AI that better understands game mechanics, leading to more engaging experiences for players.",
+    "This research indicates a shift toward more interpretable AI systems, potentially affecting various industries that rely on complex decision-making processes."
+  ],
+  "lenses": {
+    "eli12": "Think of LLMs as detectives piecing together clues from gameplay to figure out game rules. By doing this, they can create better game experiences and new games that make sense logically. This matters because it could lead to smarter AI that understands how games work, improving entertainment for everyone.",
+    "pm": "For product managers, this research highlights a way to enhance AI's understanding of user interactions in games. By using a two-stage method, companies could create more efficient game design processes and reduce development costs. This could lead to more innovative products that resonate better with users.",
+    "engineer": "The study focused on Causal Induction, where LLMs reverse-engineer VGDL rules from gameplay traces. The two-stage method, which constructs a structural causal model before generating VGDL, proved more effective, achieving an 81% win rate in evaluations. This suggests that using causal models could lead to more consistent and logical game mechanics, enhancing AI's applicability in game development."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-03T05:02:01.729Z",
+  "updated_at": "2026-02-03T05:02:01.729Z",
+  "processing_order": 1770094921731
+}
