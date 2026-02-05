@@ -1,0 +1,31 @@
+{
+  "content_hash": "c10c53264d1bfdea32284e80b96f4d63307b50e5133ed7dfd2e3b8c34dece28b",
+  "share_id": "kmpd88",
+  "title": "Knowledge Model Prompting Increases LLM Performance on Planning Tasks",
+  "optimized_headline": "\"How Knowledge Model Prompting Boosts LLMs in Planning Tasks\"",
+  "url": "https://arxiv.org/abs/2602.03900",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-05T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.03900v1 Announce Type: new \nAbstract: Large Language Models (LLM) can struggle with reasoning ability and planning tasks. Many prompting techniques have been developed to assist with LLM reasoning, notably Chain-of-Thought (CoT); however, these techniques, too, have come under scrutiny as LLMs' ability to reason at all has come into question. Borrowing from the domain of cognitive and e",
+  "raw_body": "arXiv:2602.03900v1 Announce Type: new \nAbstract: Large Language Models (LLM) can struggle with reasoning ability and planning tasks. Many prompting techniques have been developed to assist with LLM reasoning, notably Chain-of-Thought (CoT); however, these techniques, too, have come under scrutiny as LLMs' ability to reason at all has come into question. Borrowing from the domain of cognitive and educational science, this paper investigates whether the Task-Method-Knowledge (TMK) framework can improve LLM reasoning capabilities beyond its previously demonstrated success in educational applications. The TMK framework's unique ability to capture causal, teleological, and hierarchical reasoning structures, combined with its explicit task decomposition mechanisms, makes it particularly well-suited for addressing language model reasoning deficiencies, and unlike other hierarchical frameworks such as HTN and BDI, TMK provides explicit representations of not just what to do and how to do it, but also why actions are taken. The study evaluates TMK by experimenting on the PlanBench benchmark, focusing on the Blocksworld domain to test for reasoning and planning capabilities, examining whether TMK-structured prompting can help language models better decompose complex planning problems into manageable sub-tasks. Results also highlight significant performance inversion in reasoning models. TMK prompting enables the reasoning model to achieve up to an accuracy of 97.3\\% on opaque, symbolic tasks (Random versions of Blocksworld in PlanBench) where it previously failed (31.5\\%), suggesting the potential to bridge the gap between semantic approximation and symbolic manipulation. Our findings suggest that TMK functions not merely as context, but also as a mechanism that steers reasoning models away from their default linguistic modes to engage formal, code-execution pathways in the context of the experiments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study introduced the Task-Method-Knowledge (TMK) framework to improve Large Language Models' (LLMs) reasoning and planning abilities. By applying TMK prompting, models achieved an impressive accuracy of 97.3% on complex tasks, up from just 31.5%. This shift suggests TMK could enhance how LLMs tackle intricate problems, moving beyond simple language processing to more structured reasoning. Understanding these advancements is crucial as AI continues to evolve and integrate into various applications.",
+  "why_it_matters": [
+    "This development could directly benefit AI researchers and developers by providing a method to enhance model performance on complex reasoning tasks.",
+    "On a broader scale, it signals a potential shift in how AI systems could be designed, focusing on structured reasoning rather than just language processing."
+  ],
+  "lenses": {
+    "eli12": "The TMK framework helps AI models think more like humans by breaking down complex tasks into smaller steps. Imagine trying to solve a puzzle by first sorting the pieces instead of jumping straight to assembly. This method could make AI more reliable in everyday applications, helping us with tasks that require careful planning.",
+    "pm": "For product managers and founders, the TMK framework represents a way to enhance user experience by improving AI's problem-solving capabilities. As users demand more intelligent and efficient solutions, integrating TMK could reduce costs associated with task failures and enhance overall product performance. This could lead to increased user satisfaction and retention.",
+    "engineer": "From a technical perspective, the TMK framework offers a structured way to improve LLMs' reasoning capabilities, achieving a 97.3% accuracy on tasks where previous models struggled at 31.5%. By decomposing tasks and providing clear causal and hierarchical reasoning, TMK prompts shift models from linguistic processing to formal reasoning pathways. This could reshape how engineers approach model training and task design."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-05T05:03:53.726Z",
+  "updated_at": "2026-02-05T05:03:53.726Z",
+  "processing_order": 1770267833726
+}

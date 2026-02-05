@@ -1,0 +1,31 @@
+{
+  "content_hash": "baa382bb651ab680d512c1eba391dd8f84589e2cc330fb117e75e3553b5ba037",
+  "share_id": "admakp",
+  "title": "AgentArk: Distilling Multi-Agent Intelligence into a Single LLM Agent",
+  "optimized_headline": "AgentArk: Unifying Multi-Agent Intelligence into One Powerful LLM Agent",
+  "url": "https://arxiv.org/abs/2602.03955",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-05T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.03955v1 Announce Type: new \nAbstract: While large language model (LLM) multi-agent systems achieve superior reasoning performance through iterative debate, practical deployment is limited by their high computational cost and error propagation. This paper proposes AgentArk, a novel framework to distill multi-agent dynamics into the weights of a single model, effectively transforming expl",
+  "raw_body": "arXiv:2602.03955v1 Announce Type: new \nAbstract: While large language model (LLM) multi-agent systems achieve superior reasoning performance through iterative debate, practical deployment is limited by their high computational cost and error propagation. This paper proposes AgentArk, a novel framework to distill multi-agent dynamics into the weights of a single model, effectively transforming explicit test-time interactions into implicit model capabilities. This equips a single agent with the intelligence of multi-agent systems while remaining computationally efficient. Specifically, we investigate three hierarchical distillation strategies across various models, tasks, scaling, and scenarios: reasoning-enhanced fine-tuning; trajectory-based augmentation; and process-aware distillation. By shifting the burden of computation from inference to training, the distilled models preserve the efficiency of one agent while exhibiting strong reasoning and self-correction performance of multiple agents. They further demonstrate enhanced robustness and generalization across diverse reasoning tasks. We hope this work can shed light on future research on efficient and robust multi-agent development. Our code is at https://github.com/AIFrontierLab/AgentArk.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "AgentArk introduces a new framework that condenses the strengths of multi-agent systems into a single large language model (LLM). By distilling multi-agent dynamics, this model can perform complex reasoning tasks efficiently, reducing computational costs. The approach includes strategies like reasoning-enhanced fine-tuning and process-aware distillation. This matters now as it could pave the way for more practical AI applications without the heavy resource demands of traditional multi-agent systems.",
+  "why_it_matters": [
+    "This development could significantly benefit organizations needing efficient AI solutions, minimizing costs and maximizing performance.",
+    "On a broader scale, it signals a shift towards more sustainable AI practices, allowing for advanced reasoning without the typical resource strain."
+  ],
+  "lenses": {
+    "eli12": "AgentArk is like teaching a single student the best ideas from a debate team. This allows one model to think critically and make decisions like a group, but without needing all the extra resources. It matters because it could make advanced AI more accessible and affordable for everyone.",
+    "pm": "For product managers and founders, AgentArk highlights a growing user need for efficient AI that doesn't compromise on performance. By reducing computational costs, teams could allocate resources to other areas, leading to faster development cycles. This could enable the creation of more robust applications that leverage advanced reasoning.",
+    "engineer": "Technically, AgentArk distills the capabilities of multiple agents into a single model, using strategies like trajectory-based augmentation. This allows the model to maintain strong reasoning and self-correction abilities while being computationally efficient. The focus on shifting computation from inference to training is a notable advancement, enhancing robustness across various reasoning tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-05T05:04:07.204Z",
+  "updated_at": "2026-02-05T05:04:07.204Z",
+  "processing_order": 1770267847206
+}
