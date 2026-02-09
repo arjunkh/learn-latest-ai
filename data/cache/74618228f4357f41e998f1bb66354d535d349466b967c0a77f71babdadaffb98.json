@@ -1,0 +1,31 @@
+{
+  "content_hash": "74618228f4357f41e998f1bb66354d535d349466b967c0a77f71babdadaffb98",
+  "share_id": "jobahc",
+  "title": "Jackpot: Optimal Budgeted Rejection Sampling for Extreme Actor-Policy Mismatch Reinforcement Learning",
+  "optimized_headline": "Unlocking Success: Budgeted Rejection Sampling for Mismatched Reinforcement Learning Strategies",
+  "url": "https://arxiv.org/abs/2602.06107",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-09T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.06107v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for large language models (LLMs) remains expensive, particularly because the rollout is expensive. Decoupling rollout generation from policy optimization (e.g., leveraging a more efficient model to rollout) could enable substantial efficiency gains, yet doing so introduces a severe distribution mismatch that destabilizes ",
+  "raw_body": "arXiv:2602.06107v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for large language models (LLMs) remains expensive, particularly because the rollout is expensive. Decoupling rollout generation from policy optimization (e.g., leveraging a more efficient model to rollout) could enable substantial efficiency gains, yet doing so introduces a severe distribution mismatch that destabilizes learning. We propose Jackpot, a framework that leverages Optimal Budget Rejection Sampling (OBRS) to directly reduce the discrepancy between the rollout model and the evolving policy. Jackpot integrates a principled OBRS procedure, a unified training objective that jointly updates the policy and rollout models, and an efficient system implementation enabled by top-$k$ probability estimation and batch-level bias correction. Our theoretical analysis shows that OBRS consistently moves the rollout distribution closer to the target distribution under a controllable acceptance budget. Empirically, \\sys substantially improves training stability compared to importance-sampling baselines, achieving performance comparable to on-policy RL when training Qwen3-8B-Base for up to 300 update steps of batchsize 64. Taken together, our results show that OBRS-based alignment brings us a step closer to practical and effective decoupling of rollout generation from policy optimization for RL for LLMs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called Jackpot aims to improve reinforcement learning (RL) efficiency for large language models (LLMs). It uses Optimal Budget Rejection Sampling (OBRS) to reduce discrepancies between rollout and policy models. This approach has shown significant improvements in training stability, achieving results similar to on-policy RL after 300 update steps with a batch size of 64. This matters now as it could lead to more efficient RL systems, making advanced AI more accessible and practical.",
+  "why_it_matters": [
+    "This framework could benefit AI researchers and developers by making RL training more cost-effective and stable.",
+    "It signals a shift in RL strategies that may enhance the performance of LLMs across various applications, potentially lowering barriers to entry for new innovations."
+  ],
+  "lenses": {
+    "eli12": "Jackpot is like finding a shortcut in a maze, helping AI learn faster without getting lost. By using a smarter method to generate training data, it makes the learning process more stable and effective. This is important because it could help create better AI tools that everyone can use more easily.",
+    "pm": "For product managers, Jackpot could mean reduced costs and faster development cycles in training AI models. By improving training stability, it addresses user needs for reliable AI performance. This could lead to quicker iterations and more robust features in AI products.",
+    "engineer": "Jackpot leverages Optimal Budget Rejection Sampling to align rollout and policy models in RL, significantly enhancing training stability. Empirical results indicate that it achieves performance comparable to on-policy RL after 300 update steps with a batch size of 64. This suggests that OBRS could be a valuable technique in optimizing RL for LLMs."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-09T05:15:40.089Z",
+  "updated_at": "2026-02-09T05:15:40.089Z",
+  "processing_order": 1770614140089
+}

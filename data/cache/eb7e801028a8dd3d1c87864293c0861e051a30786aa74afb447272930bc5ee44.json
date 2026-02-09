@@ -1,0 +1,31 @@
+{
+  "content_hash": "eb7e801028a8dd3d1c87864293c0861e051a30786aa74afb447272930bc5ee44",
+  "share_id": "llmu8m",
+  "title": "Large Language Model Reasoning Failures",
+  "optimized_headline": "Exploring the Surprising Limitations of Large Language Model Reasoning",
+  "url": "https://arxiv.org/abs/2602.06176",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-09T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.06176v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have exhibited remarkable reasoning capabilities, achieving impressive results across a wide range of tasks. Despite these advances, significant reasoning failures persist, occurring even in seemingly simple scenarios. To systematically understand and address these shortcomings, we present the first comprehensive survey ",
+  "raw_body": "arXiv:2602.06176v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have exhibited remarkable reasoning capabilities, achieving impressive results across a wide range of tasks. Despite these advances, significant reasoning failures persist, occurring even in seemingly simple scenarios. To systematically understand and address these shortcomings, we present the first comprehensive survey dedicated to reasoning failures in LLMs. We introduce a novel categorization framework that distinguishes reasoning into embodied and non-embodied types, with the latter further subdivided into informal (intuitive) and formal (logical) reasoning. In parallel, we classify reasoning failures along a complementary axis into three types: fundamental failures intrinsic to LLM architectures that broadly affect downstream tasks; application-specific limitations that manifest in particular domains; and robustness issues characterized by inconsistent performance across minor variations. For each reasoning failure, we provide a clear definition, analyze existing studies, explore root causes, and present mitigation strategies. By unifying fragmented research efforts, our survey provides a structured perspective on systemic weaknesses in LLM reasoning, offering valuable insights and guiding future research towards building stronger, more reliable, and robust reasoning capabilities. We additionally release a comprehensive collection of research works on LLM reasoning failures, as a GitHub repository at https://github.com/Peiyang-Song/Awesome-LLM-Reasoning-Failures, to provide an easy entry point to this area.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new survey highlights the reasoning failures of Large Language Models (LLMs), despite their impressive capabilities. It categorizes reasoning into embodied and non-embodied types and identifies three main failure types: fundamental, application-specific, and robustness issues. This matters because understanding these shortcomings could lead to more reliable AI systems in the future, improving their performance across various tasks.",
+  "why_it_matters": [
+    "Researchers and developers can better target their efforts to improve LLMs, enhancing their reliability and effectiveness in real-world applications.",
+    "This survey signals a shift in focus within the AI community towards understanding and fixing foundational weaknesses in LLMs, which could reshape future model development."
+  ],
+  "lenses": {
+    "eli12": "Think of LLMs like students who excel in many subjects but struggle with basic math. This survey breaks down their reasoning problems into categories, helping us understand why they sometimes fail. By addressing these issues, we could make AI tools more dependable for everyone, from students to professionals.",
+    "pm": "For product managers, this survey highlights user needs for more reliable AI systems. Understanding the types of reasoning failures can guide the development of features that enhance performance. Focusing on these areas could lead to more efficient products that meet user expectations.",
+    "engineer": "This survey categorizes reasoning failures in LLMs into fundamental, application-specific, and robustness issues. It emphasizes the need for a structured approach to address these shortcomings, which could involve refining model architectures or improving training datasets. Understanding these failures is crucial for developing more robust AI solutions."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-09T05:15:45.476Z",
+  "updated_at": "2026-02-09T05:15:45.476Z",
+  "processing_order": 1770614145477
+}

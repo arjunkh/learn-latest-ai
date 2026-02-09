@@ -1,9 +1,93 @@
 {
   "month": "February 2026",
   "year": 2026,
-  "total": 103,
-  "generated_at": "2026-02-08T05:12:55.403Z",
+  "total": 107,
+  "generated_at": "2026-02-09T05:15:59.192Z",
   "articles": [
+    {
+      "id": "64aabb9d867003c4e6604a65d6d7e1feb92b255b624c66b15968b123f11d2f17",
+      "share_id": "lalwb0",
+      "category": "capabilities_and_how",
+      "title": "Do LLMs Act Like Rational Agents? Measuring Belief Coherence in Probabilistic Decision Making",
+      "optimized_headline": "Are LLMs Truly Rational? Examining Their Belief Coherence in Decision Making",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.06286",
+      "published_at": "2026-02-09T05:00:00.000Z",
+      "speedrun": "A recent study explored whether large language models (LLMs) act as rational agents in decision-making. Researchers examined their ability to maximize utility and maintain coherent beliefs, especially in medical diagnostics. The findings suggest that LLMs may not always align with ideal Bayesian utility maximization, raising questions about their reliability in high-stakes situations. This matters now as LLMs are increasingly used in critical areas, emphasizing the need for understanding their decision-making processes.",
+      "why_it_matters": [
+        "Medical professionals relying on LLMs could face challenges if these models do not consistently represent rational decision-making.",
+        "The study indicates a broader concern for industries using LLMs, as it highlights potential gaps in their decision-making reliability."
+      ],
+      "lenses": {
+        "eli12": "This study looks at how well large language models make decisions, especially in important fields like healthcare. Think of it like checking if a GPS gives reliable directions; if it doesn’t, you might end up lost. Understanding how these models think is crucial for everyone since they affect decisions that can impact lives.",
+        "pm": "For product managers, this research highlights the need to assess LLMs' decision-making accuracy, especially in sensitive applications like healthcare. If models don’t reliably maximize utility, it could affect user trust and product effectiveness. Ensuring LLMs align with rational decision-making could improve their adoption and reliability in critical sectors.",
+        "engineer": "From a technical perspective, the study investigates LLMs' alignment with Bayesian utility maximization, examining their probability outputs against observed actions. It establishes falsifiable conditions to test the coherence of LLM beliefs, which could inform model design and evaluation. Understanding these dynamics is essential for developing more reliable AI systems in high-stakes environments."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "d13111e1f1a78597424e221a50a159fb43ca4693e815c46121aa4cd30483f277",
+      "share_id": "fhfilm",
+      "category": "capabilities_and_how",
+      "title": "Do It for HER: First-Order Temporal Logic Reward Specification in Reinforcement Learning (Extended Version)",
+      "optimized_headline": "Unlocking Reinforcement Learning: New Insights on Temporal Logic Rewards",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.06227",
+      "published_at": "2026-02-09T05:00:00.000Z",
+      "speedrun": "Researchers have introduced a new framework for specifying non-Markovian rewards in Markov Decision Processes (MDPs), using an advanced form of temporal logic called Linear Temporal Logic Modulo Theories (LTLfMT). This approach allows for more complex task definitions in diverse data environments without the need for manual predicate encoding. The method has shown promise in continuous-control settings, making it easier to tackle complex goals. This development is significant as it could enhance how AI systems learn from intricate tasks in real-world applications.",
+      "why_it_matters": [
+        "This framework could immediately benefit AI developers by streamlining the process of defining complex tasks, making it easier to implement in various applications.",
+        "On a broader scale, this could signal a shift towards more sophisticated AI systems capable of handling unstructured data, potentially transforming industries reliant on AI."
+      ],
+      "lenses": {
+        "eli12": "This new framework helps AI understand complex tasks better by using advanced logic that goes beyond simple yes or no questions. Imagine teaching a robot to navigate a maze not just by walls but by understanding different paths and their meanings. This matters because it could make everyday AI applications, like personal assistants or smart home devices, much more effective at understanding our needs.",
+        "pm": "For product managers or founders, this framework could greatly influence how user needs are addressed in AI applications. It allows for defining complex user behaviors without extensive manual input, which could save time and reduce costs. Practically, this means teams can focus on higher-level design and user experience rather than getting bogged down in technical specifications.",
+        "engineer": "From a technical perspective, this work leverages LTLfMT to specify rewards in MDPs, enhancing expressiveness for infinite-state spaces. The research identifies a tractable fragment of LTLfMT that balances complexity and usability, which is crucial for implementing reward machines. The application of Hindsight Experience Replay (HER) alongside this logic shows promising results in continuous-control tasks, indicating a significant advancement in reward specification methodologies."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "eb7e801028a8dd3d1c87864293c0861e051a30786aa74afb447272930bc5ee44",
+      "share_id": "llmu8m",
+      "category": "capabilities_and_how",
+      "title": "Large Language Model Reasoning Failures",
+      "optimized_headline": "Exploring the Surprising Limitations of Large Language Model Reasoning",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.06176",
+      "published_at": "2026-02-09T05:00:00.000Z",
+      "speedrun": "A new survey highlights the reasoning failures of Large Language Models (LLMs), despite their impressive capabilities. It categorizes reasoning into embodied and non-embodied types and identifies three main failure types: fundamental, application-specific, and robustness issues. This matters because understanding these shortcomings could lead to more reliable AI systems in the future, improving their performance across various tasks.",
+      "why_it_matters": [
+        "Researchers and developers can better target their efforts to improve LLMs, enhancing their reliability and effectiveness in real-world applications.",
+        "This survey signals a shift in focus within the AI community towards understanding and fixing foundational weaknesses in LLMs, which could reshape future model development."
+      ],
+      "lenses": {
+        "eli12": "Think of LLMs like students who excel in many subjects but struggle with basic math. This survey breaks down their reasoning problems into categories, helping us understand why they sometimes fail. By addressing these issues, we could make AI tools more dependable for everyone, from students to professionals.",
+        "pm": "For product managers, this survey highlights user needs for more reliable AI systems. Understanding the types of reasoning failures can guide the development of features that enhance performance. Focusing on these areas could lead to more efficient products that meet user expectations.",
+        "engineer": "This survey categorizes reasoning failures in LLMs into fundamental, application-specific, and robustness issues. It emphasizes the need for a structured approach to address these shortcomings, which could involve refining model architectures or improving training datasets. Understanding these failures is crucial for developing more robust AI solutions."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "74618228f4357f41e998f1bb66354d535d349466b967c0a77f71babdadaffb98",
+      "share_id": "jobahc",
+      "category": "capabilities_and_how",
+      "title": "Jackpot: Optimal Budgeted Rejection Sampling for Extreme Actor-Policy Mismatch Reinforcement Learning",
+      "optimized_headline": "Unlocking Success: Budgeted Rejection Sampling for Mismatched Reinforcement Learning Strategies",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.06107",
+      "published_at": "2026-02-09T05:00:00.000Z",
+      "speedrun": "A new framework called Jackpot aims to improve reinforcement learning (RL) efficiency for large language models (LLMs). It uses Optimal Budget Rejection Sampling (OBRS) to reduce discrepancies between rollout and policy models. This approach has shown significant improvements in training stability, achieving results similar to on-policy RL after 300 update steps with a batch size of 64. This matters now as it could lead to more efficient RL systems, making advanced AI more accessible and practical.",
+      "why_it_matters": [
+        "This framework could benefit AI researchers and developers by making RL training more cost-effective and stable.",
+        "It signals a shift in RL strategies that may enhance the performance of LLMs across various applications, potentially lowering barriers to entry for new innovations."
+      ],
+      "lenses": {
+        "eli12": "Jackpot is like finding a shortcut in a maze, helping AI learn faster without getting lost. By using a smarter method to generate training data, it makes the learning process more stable and effective. This is important because it could help create better AI tools that everyone can use more easily.",
+        "pm": "For product managers, Jackpot could mean reduced costs and faster development cycles in training AI models. By improving training stability, it addresses user needs for reliable AI performance. This could lead to quicker iterations and more robust features in AI products.",
+        "engineer": "Jackpot leverages Optimal Budget Rejection Sampling to align rollout and policy models in RL, significantly enhancing training stability. Empirical results indicate that it achieves performance comparable to on-policy RL after 300 update steps with a batch size of 64. This suggests that OBRS could be a valuable technique in optimizing RL for LLMs."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "9654eb1e6d3c654ade5d219743f561a2919565c9297e2a8db487a7159f930f0d",
       "share_id": "wdsq98",
