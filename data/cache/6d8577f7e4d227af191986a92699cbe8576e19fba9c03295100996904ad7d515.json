@@ -1,0 +1,31 @@
+{
+  "content_hash": "6d8577f7e4d227af191986a92699cbe8576e19fba9c03295100996904ad7d515",
+  "share_id": "lslyjo",
+  "title": "LLM-FSM: Scaling Large Language Models for Finite-State Reasoning in RTL Code Generation",
+  "optimized_headline": "Scaling Large Language Models for RTL Code: A New Finite-State Approach",
+  "url": "https://arxiv.org/abs/2602.07032",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-10T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.07032v1 Announce Type: new \nAbstract: Finite-state reasoning, the ability to understand and implement state-dependent behavior, is central to hardware design. In this paper, we present LLM-FSM, a benchmark that evaluates how well large language models (LLMs) can recover finite-state machine (FSM) behavior from natural-language specifications and translate it into correct register transf",
+  "raw_body": "arXiv:2602.07032v1 Announce Type: new \nAbstract: Finite-state reasoning, the ability to understand and implement state-dependent behavior, is central to hardware design. In this paper, we present LLM-FSM, a benchmark that evaluates how well large language models (LLMs) can recover finite-state machine (FSM) behavior from natural-language specifications and translate it into correct register transfer-level (RTL) implementations. Unlike prior specification-to-RTL benchmarks that rely on manually constructed examples, LLM-FSM is built through a fully automated pipeline. LLM-FSM first constructs FSM with configurable state counts and constrained transition structures. It then prompts LLMs to express each FSM in a structured YAML format with an application context, and to further convert that YAML into a natural-language (NL) specification. From the same YAML, our pipeline synthesizes the reference RTL and testbench in a correct-by-construction manner. All 1,000 problems are verified using LLM-based and SAT-solver-based checks, with human review on a subset. Our experiments show that even the strongest LLMs exhibit sharply declining accuracy as FSM complexity increases. We further demonstrate that training-time scaling via supervised fine-tuning (SFT) generalizes effectively to out-of-distribution (OOD) tasks, while increasing test-time compute improves reasoning reliability. Finally, LLM-FSM remains extensible by allowing its FSM complexity to scale with future model capabilities.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced LLM-FSM, a benchmark designed to test how well large language models (LLMs) can translate natural-language descriptions into finite-state machine (FSM) behavior for hardware design. Unlike previous benchmarks that used manual examples, LLM-FSM automates the process, generating 1,000 problems that are verified with both LLMs and SAT solvers. Results showed that LLM accuracy drops significantly as FSM complexity rises, highlighting the challenges in scaling these models for intricate tasks. This matters now as the demand for reliable hardware design increases.",
+  "why_it_matters": [
+    "Engineers and developers in hardware design could benefit from improved tools that automate FSM behavior translation, saving time and reducing errors.",
+    "This development indicates a shift towards more automated benchmarks in AI, emphasizing the need for LLMs to tackle increasingly complex tasks effectively."
+  ],
+  "lenses": {
+    "eli12": "LLM-FSM is like a test that checks how well AI can understand and create systems based on rules, similar to how a translator converts a book from one language to another. It matters because as technology grows, we need smarter tools that can help engineers design better hardware without making mistakes.",
+    "pm": "For product managers, LLM-FSM highlights a user need for efficient translation of specifications into hardware designs. It could reduce costs associated with manual translations and improve product development timelines, making it essential to consider LLM capabilities in future tools.",
+    "engineer": "LLM-FSM evaluates LLMs on their ability to recover FSM behavior from natural language and generate RTL code. The benchmark consists of 1,000 automated problems, revealing that even top LLMs struggle with complex FSMs. This indicates a need for enhanced model training and computational resources to improve reasoning reliability."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-10T05:16:38.034Z",
+  "updated_at": "2026-02-10T05:16:38.034Z",
+  "processing_order": 1770700598034
+}

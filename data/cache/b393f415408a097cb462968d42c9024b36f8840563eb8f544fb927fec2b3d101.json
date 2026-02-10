@@ -1,0 +1,31 @@
+{
+  "content_hash": "b393f415408a097cb462968d42c9024b36f8840563eb8f544fb927fec2b3d101",
+  "share_id": "dad9n3",
+  "title": "DLLM-Searcher: Adapting Diffusion Large Language Model for Search Agents",
+  "optimized_headline": "How DLLM-Searcher Transforms Language Models for Enhanced Search Capabilities",
+  "url": "https://arxiv.org/abs/2602.07035",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-10T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.07035v1 Announce Type: new \nAbstract: Recently, Diffusion Large Language Models (dLLMs) have demonstrated unique efficiency advantages, enabled by their inherently parallel decoding mechanism and flexible generation paradigm. Meanwhile, despite the rapid advancement of Search Agents, their practical deployment is constrained by a fundamental limitation, termed as 1) Latency Challenge: t",
+  "raw_body": "arXiv:2602.07035v1 Announce Type: new \nAbstract: Recently, Diffusion Large Language Models (dLLMs) have demonstrated unique efficiency advantages, enabled by their inherently parallel decoding mechanism and flexible generation paradigm. Meanwhile, despite the rapid advancement of Search Agents, their practical deployment is constrained by a fundamental limitation, termed as 1) Latency Challenge: the serial execution of multi-round reasoning, tool calling, and tool response waiting under the ReAct agent paradigm induces severe end-to-end latency. Intuitively, dLLMs can leverage their distinctive strengths to optimize the operational efficiency of agents under the ReAct agent paradigm. Practically, existing dLLM backbones face the 2) Agent Ability Challenge. That is, existing dLLMs exhibit remarkably weak reasoning and tool-calling capabilities, preventing these advantages from being effectively realized in practice. In this paper, we propose DLLM-Searcher, an optimization framework for dLLM-based Search Agents. To solve the Agent Ability Challenge, we design a two-stage post-training pipeline encompassing Agentic Supervised Fine-Tuning (Agentic SFT) and Agentic Variance-Reduced Preference Optimization Agentic VRPO, which enhances the backbone dLLM's information seeking and reasoning capabilities. To mitigate the Latency Challenge, we leverage the flexible generation mechanism of dLLMs and propose a novel agent paradigm termed Parallel-Reasoning and Acting P-ReAct. P-ReAct guides the model to prioritize decoding tool_call instructions, thereby allowing the model to keep thinking while waiting for the tool's return. Experimental results demonstrate that DLLM-Searcher achieves performance comparable to mainstream LLM-based search agents and P-ReAct delivers approximately 15% inference acceleration. Our code is available at https://anonymous.4open.science/r/DLLM-Searcher-553C",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced DLLM-Searcher, an optimization framework for Diffusion Large Language Models (dLLMs) aimed at improving search agents. This framework addresses two main challenges: latency in multi-round reasoning and weak reasoning capabilities of existing dLLMs. By implementing a two-stage training process and a new agent paradigm called P-ReAct, DLLM-Searcher boosts efficiency and enhances performance. This is significant as it could lead to faster and more effective search agents in various applications.",
+  "why_it_matters": [
+    "This development could directly benefit developers of search agents by improving response times and reasoning capabilities, making their tools more effective.",
+    "On a broader scale, the integration of dLLMs in search technology signals a shift toward more efficient AI systems, potentially transforming how users interact with information."
+  ],
+  "lenses": {
+    "eli12": "DLLM-Searcher is like upgrading a search engine to think faster and smarter. It helps search agents respond quickly by working on multiple tasks at once, rather than waiting. This matters because it could make finding information online much quicker and easier for everyone.",
+    "pm": "For product managers, DLLM-Searcher represents a way to enhance search functionalities while reducing costs associated with latency. The improved reasoning abilities could lead to better user satisfaction and retention, as users experience faster and more accurate search results.",
+    "engineer": "From a technical perspective, DLLM-Searcher employs a two-stage post-training pipeline to enhance the reasoning capabilities of dLLMs. The new P-ReAct paradigm allows for parallel processing, resulting in a 15% acceleration in inference times. This approach effectively addresses the latency challenge while improving the agent's overall performance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-10T05:16:55.693Z",
+  "updated_at": "2026-02-10T05:16:55.693Z",
+  "processing_order": 1770700615695
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "2097b4260502fc00cbf71af4f591e816dc7c3304c6b05a41df69d1ff467052a5",
+  "share_id": "sasmkp",
+  "title": "ST-Raptor: An Agentic System for Semi-Structured Table QA",
+  "optimized_headline": "\"ST-Raptor: A New Approach to Semi-Structured Table Question Answering\"",
+  "url": "https://arxiv.org/abs/2602.07034",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-10T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.07034v1 Announce Type: new \nAbstract: Semi-structured table question answering (QA) is a challenging task that requires (1) precise extraction of cell contents and positions and (2) accurate recovery of key implicit logical structures, hierarchical relationships, and semantic associations encoded in table layouts. In practice, such tables are often interpreted manually by human experts,",
+  "raw_body": "arXiv:2602.07034v1 Announce Type: new \nAbstract: Semi-structured table question answering (QA) is a challenging task that requires (1) precise extraction of cell contents and positions and (2) accurate recovery of key implicit logical structures, hierarchical relationships, and semantic associations encoded in table layouts. In practice, such tables are often interpreted manually by human experts, which is labor-intensive and time-consuming. However, automating this process remains difficult. Existing Text-to-SQL methods typically require converting semi-structured tables into structured formats, inevitably leading to information loss, while approaches like Text-to-Code and multimodal LLM-based QA struggle with complex layouts and often yield inaccurate answers. To address these limitations, we present ST-Raptor, an agentic system for semi-structured table QA. ST-Raptor offers an interactive analysis environment that combines visual editing, tree-based structural modeling, and agent-driven query resolution to support accurate and user-friendly table understanding. Experimental results on both benchmark and real-world datasets demonstrate that ST-Raptor outperforms existing methods in both accuracy and usability. The code is available at https://github.com/weAIDB/ST-Raptor, and a demonstration video is available at https://youtu.be/9GDR-94Cau4.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "ST-Raptor is a new system designed to improve question answering for semi-structured tables, which are often complex and require careful interpretation. It combines visual editing, structural modeling, and agent-driven query resolution, outperforming existing methods in accuracy and usability. This is significant as it could reduce the reliance on human experts, making table analysis faster and more efficient. The system's performance was validated on both benchmark and real-world datasets.",
+  "why_it_matters": [
+    "ST-Raptor could streamline workflows for data analysts and researchers who frequently interpret complex tables, saving them time and effort.",
+    "This development signals a shift towards greater automation in data analysis, potentially transforming how businesses handle information retrieval and decision-making."
+  ],
+  "lenses": {
+    "eli12": "ST-Raptor is like a smart assistant for understanding tables filled with data. It helps users ask questions about these tables without needing to restructure the data, making it easier to find answers. This matters because it can save time and reduce errors when working with complicated information.",
+    "pm": "For product managers, ST-Raptor represents a way to meet user demands for efficient data analysis tools. By automating complex table interaction, it could lower costs associated with manual data interpretation. This means teams can focus on insights rather than data wrangling.",
+    "engineer": "ST-Raptor utilizes an interactive environment that integrates visual editing with tree-based structural modeling, significantly enhancing its ability to resolve queries accurately. It outperformed traditional Text-to-SQL and multimodal LLM methods, showcasing its effectiveness on benchmark and real-world datasets. This approach could redefine how systems handle semi-structured data."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-10T05:16:47.613Z",
+  "updated_at": "2026-02-10T05:16:47.613Z",
+  "processing_order": 1770700607614
+}
