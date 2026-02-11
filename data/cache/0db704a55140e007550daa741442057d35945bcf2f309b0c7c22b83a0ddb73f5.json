@@ -1,0 +1,31 @@
+{
+  "content_hash": "0db704a55140e007550daa741442057d35945bcf2f309b0c7c22b83a0ddb73f5",
+  "share_id": "sasfti",
+  "title": "ST-Raptor: An Agentic System for Semi-Structured Table QA",
+  "optimized_headline": "Discover ST-Raptor: A New Approach to Semi-Structured Table Question Answering",
+  "url": "https://arxiv.org/abs/2602.07034",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-11T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.07034v1 Announce Type: new \nAbstract: Semi-structured table question answering (QA) is a challenging task that requires (1) precise extraction of cell contents and positions and (2) accurate recovery of key implicit logical structures, hierarchical relationships, and semantic associations encoded in table layouts. In practice, such tables are often interpreted manually by human experts,",
+  "raw_body": "arXiv:2602.07034v1 Announce Type: new \nAbstract: Semi-structured table question answering (QA) is a challenging task that requires (1) precise extraction of cell contents and positions and (2) accurate recovery of key implicit logical structures, hierarchical relationships, and semantic associations encoded in table layouts. In practice, such tables are often interpreted manually by human experts, which is labor-intensive and time-consuming. However, automating this process remains difficult. Existing Text-to-SQL methods typically require converting semi-structured tables into structured formats, inevitably leading to information loss, while approaches like Text-to-Code and multimodal LLM-based QA struggle with complex layouts and often yield inaccurate answers. To address these limitations, we present ST-Raptor, an agentic system for semi-structured table QA. ST-Raptor offers an interactive analysis environment that combines visual editing, tree-based structural modeling, and agent-driven query resolution to support accurate and user-friendly table understanding. Experimental results on both benchmark and real-world datasets demonstrate that ST-Raptor outperforms existing methods in both accuracy and usability. The code is available at https://github.com/weAIDB/ST-Raptor, and a demonstration video is available at https://youtu.be/9GDR-94Cau4.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "ST-Raptor is a new system designed to improve semi-structured table question answering (QA). It effectively combines visual editing and agent-driven query resolution, outperforming traditional methods in accuracy and usability. For example, existing methods often lose information when converting tables, while ST-Raptor retains key structures and relationships. This advancement matters now as it could significantly reduce the manual effort required for interpreting complex tables, making data analysis more efficient.",
+  "why_it_matters": [
+    "Data analysts and researchers could find immediate relief from the labor-intensive task of interpreting complex tables, saving time and resources.",
+    "On a broader scale, this development signals a shift towards more efficient AI tools that enhance data accessibility and usability across industries."
+  ],
+  "lenses": {
+    "eli12": "ST-Raptor is like a smart assistant for understanding tables. It helps users find answers by visually organizing data and making complex relationships clearer. This is important for everyday people because it could make accessing information faster and easier, especially for tasks that involve lots of data.",
+    "pm": "For product managers and founders, ST-Raptor addresses a key user need for efficient data interpretation. By reducing the time spent on manual table analysis, it could lower operational costs and improve productivity. A practical implication is that teams can leverage this tool to make quicker, data-driven decisions.",
+    "engineer": "From a technical perspective, ST-Raptor enhances semi-structured table QA by integrating visual editing with tree-based modeling. Its performance on benchmark datasets shows it outperforms traditional Text-to-SQL methods, which often lose information during conversion. This combination of features may lead to more accurate and reliable data extraction in real-world applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-11T05:15:19.417Z",
+  "updated_at": "2026-02-11T05:15:19.417Z",
+  "processing_order": 1770786919418
+}
