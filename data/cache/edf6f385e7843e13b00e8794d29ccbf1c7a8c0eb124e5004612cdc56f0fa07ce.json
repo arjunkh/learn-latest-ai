@@ -1,0 +1,31 @@
+{
+  "content_hash": "edf6f385e7843e13b00e8794d29ccbf1c7a8c0eb124e5004612cdc56f0fa07ce",
+  "share_id": "lcm2ve",
+  "title": "LiveMedBench: A Contamination-Free Medical Benchmark for LLMs with Automated Rubric Evaluation",
+  "optimized_headline": "\"Introducing LiveMedBench: A New Standard for Contamination-Free Medical LLM Evaluation\"",
+  "url": "https://arxiv.org/abs/2602.10367",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-12T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.10367v1 Announce Type: new \nAbstract: The deployment of Large Language Models (LLMs) in high-stakes clinical settings demands rigorous and reliable evaluation. However, existing medical benchmarks remain static, suffering from two critical limitations: (1) data contamination, where test sets inadvertently leak into training corpora, leading to inflated performance estimates; and (2) tem",
+  "raw_body": "arXiv:2602.10367v1 Announce Type: new \nAbstract: The deployment of Large Language Models (LLMs) in high-stakes clinical settings demands rigorous and reliable evaluation. However, existing medical benchmarks remain static, suffering from two critical limitations: (1) data contamination, where test sets inadvertently leak into training corpora, leading to inflated performance estimates; and (2) temporal misalignment, failing to capture the rapid evolution of medical knowledge. Furthermore, current evaluation metrics for open-ended clinical reasoning often rely on either shallow lexical overlap (e.g., ROUGE) or subjective LLM-as-a-Judge scoring, both inadequate for verifying clinical correctness. To bridge these gaps, we introduce LiveMedBench, a continuously updated, contamination-free, and rubric-based benchmark that weekly harvests real-world clinical cases from online medical communities, ensuring strict temporal separation from model training data. We propose a Multi-Agent Clinical Curation Framework that filters raw data noise and validates clinical integrity against evidence-based medical principles. For evaluation, we develop an Automated Rubric-based Evaluation Framework that decomposes physician responses into granular, case-specific criteria, achieving substantially stronger alignment with expert physicians than LLM-as-a-Judge. To date, LiveMedBench comprises 2,756 real-world cases spanning 38 medical specialties and multiple languages, paired with 16,702 unique evaluation criteria. Extensive evaluation of 38 LLMs reveals that even the best-performing model achieves only 39.2%, and 84% of models exhibit performance degradation on post-cutoff cases, confirming pervasive data contamination risks. Error analysis further identifies contextual application-not factual knowledge-as the dominant bottleneck, with 35-48% of failures stemming from the inability to tailor medical knowledge to patient-specific constraints.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced LiveMedBench, a new benchmark for evaluating Large Language Models (LLMs) in clinical settings. This tool addresses two major issues: data contamination and outdated medical knowledge. LiveMedBench includes 2,756 real-world clinical cases and 16,702 evaluation criteria, yet even the top LLMs only scored 39.2%. This matters now as it highlights the urgent need for more reliable AI tools in healthcare.",
+  "why_it_matters": [
+    "Healthcare professionals could benefit from more accurate AI evaluations, ensuring better patient outcomes based on reliable data.",
+    "This development could signal a shift in how medical AI systems are assessed, emphasizing the importance of real-time data and rigorous standards."
+  ],
+  "lenses": {
+    "eli12": "LiveMedBench is like a fresh recipe book for doctors using AI. It collects real patient cases weekly, ensuring that the information is current and reliable. This matters because it helps doctors make better decisions for their patients using AI that reflects the latest medical knowledge.",
+    "pm": "For product managers or founders, LiveMedBench highlights a crucial user need for trustworthy AI in healthcare. By addressing data contamination, it could reduce costs associated with inaccurate AI outputs. This means that incorporating such benchmarks could enhance product reliability and user trust.",
+    "engineer": "From a technical perspective, LiveMedBench utilizes a Multi-Agent Clinical Curation Framework to filter and validate clinical data. It achieves better alignment with expert evaluations through its Automated Rubric-based Evaluation Framework, which breaks down responses into specific criteria. This approach addresses the significant challenge of contextual application in LLMs, where 35-48% of errors arise."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-12T05:13:23.185Z",
+  "updated_at": "2026-02-12T05:13:23.185Z",
+  "processing_order": 1770873203186
+}

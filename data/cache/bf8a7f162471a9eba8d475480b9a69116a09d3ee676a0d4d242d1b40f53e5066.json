@@ -1,0 +1,31 @@
+{
+  "content_hash": "bf8a7f162471a9eba8d475480b9a69116a09d3ee676a0d4d242d1b40f53e5066",
+  "share_id": "ffmaid",
+  "title": "Found-RL: foundation model-enhanced reinforcement learning for autonomous driving",
+  "optimized_headline": "\"Discover Found-RL: A Breakthrough in Autonomous Driving with Enhanced Reinforcement Learning\"",
+  "url": "https://arxiv.org/abs/2602.10458",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-12T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.10458v1 Announce Type: new \nAbstract: Reinforcement Learning (RL) has emerged as a dominant paradigm for end-to-end autonomous driving (AD). However, RL suffers from sample inefficiency and a lack of semantic interpretability in complex scenarios. Foundation Models, particularly Vision-Language Models (VLMs), can mitigate this by offering rich, context-aware knowledge, yet their high in",
+  "raw_body": "arXiv:2602.10458v1 Announce Type: new \nAbstract: Reinforcement Learning (RL) has emerged as a dominant paradigm for end-to-end autonomous driving (AD). However, RL suffers from sample inefficiency and a lack of semantic interpretability in complex scenarios. Foundation Models, particularly Vision-Language Models (VLMs), can mitigate this by offering rich, context-aware knowledge, yet their high inference latency hinders deployment in high-frequency RL training loops. To bridge this gap, we present Found-RL, a platform tailored to efficiently enhance RL for AD using foundation models. A core innovation is the asynchronous batch inference framework, which decouples heavy VLM reasoning from the simulation loop, effectively resolving latency bottlenecks to support real-time learning. We introduce diverse supervision mechanisms: Value-Margin Regularization (VMR) and Advantage-Weighted Action Guidance (AWAG) to effectively distill expert-like VLM action suggestions into the RL policy. Additionally, we adopt high-throughput CLIP for dense reward shaping. We address CLIP's dynamic blindness via Conditional Contrastive Action Alignment, which conditions prompts on discretized speed/command and yields a normalized, margin-based bonus from context-specific action-anchor scoring. Found-RL provides an end-to-end pipeline for fine-tuned VLM integration and shows that a lightweight RL model can achieve near-VLM performance compared with billion-parameter VLMs while sustaining real-time inference (approx. 500 FPS). Code, data, and models will be publicly available at https://github.com/ys-qu/found-rl.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Found-RL, a new platform designed to enhance reinforcement learning (RL) for autonomous driving by integrating foundation models, particularly Vision-Language Models (VLMs). A key feature is its asynchronous batch inference framework, which allows real-time learning at approximately 500 frames per second (FPS). This innovation addresses RL's issues with sample inefficiency and interpretability. As autonomous driving technology advances, improving these systems could significantly enhance safety and efficiency on the roads.",
+  "why_it_matters": [
+    "Found-RL could immediately benefit developers working on autonomous driving by streamlining the integration of complex models into real-time applications.",
+    "This development indicates a broader trend in AI where combining different model types enhances performance, potentially reshaping the future of autonomous systems."
+  ],
+  "lenses": {
+    "eli12": "Found-RL is like giving a smart assistant the ability to learn from experience while also understanding context. By using advanced models that connect visual and language data, it can make better decisions on the road. This matters because it could lead to safer and more reliable self-driving cars that understand their environment better.",
+    "pm": "For product managers and founders in the autonomous driving space, Found-RL highlights a user need for more efficient learning systems. By enhancing RL with foundation models, companies could reduce costs associated with training and improve the speed of deployment. This means faster iterations on product features that could directly enhance user experience.",
+    "engineer": "From a technical perspective, Found-RL employs an asynchronous batch inference framework to decouple VLM reasoning from the simulation loop, resolving latency issues in real-time RL training. It utilizes mechanisms like Value-Margin Regularization and Advantage-Weighted Action Guidance to refine RL policies based on expert VLM suggestions. This allows for near-VLM performance with a lightweight model, achieving around 500 FPS, which is critical for real-time applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-12T05:13:31.212Z",
+  "updated_at": "2026-02-12T05:13:31.212Z",
+  "processing_order": 1770873211214
+}
