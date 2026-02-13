@@ -1,0 +1,31 @@
+{
+  "content_hash": "d52cc2e70842d26b27eddd3c0812898a706820ee2d03ae9016c7289e19992e94",
+  "share_id": "lgsjay",
+  "title": "Latent Generative Solvers for Generalizable Long-Term Physics Simulation",
+  "optimized_headline": "Unlocking Latent Generative Solvers for Advanced Long-Term Physics Simulations",
+  "url": "https://arxiv.org/abs/2602.11229",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-13T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.11229v1 Announce Type: new \nAbstract: We study long-horizon surrogate simulation across heterogeneous PDE systems. We introduce Latent Generative Solvers (LGS), a two-stage framework that (i) maps diverse PDE states into a shared latent physics space with a pretrained VAE, and (ii) learns probabilistic latent dynamics with a Transformer trained by flow matching. Our key mechanism is an ",
+  "raw_body": "arXiv:2602.11229v1 Announce Type: new \nAbstract: We study long-horizon surrogate simulation across heterogeneous PDE systems. We introduce Latent Generative Solvers (LGS), a two-stage framework that (i) maps diverse PDE states into a shared latent physics space with a pretrained VAE, and (ii) learns probabilistic latent dynamics with a Transformer trained by flow matching. Our key mechanism is an uncertainty knob that perturbs latent inputs during training and inference, teaching the solver to correct off-manifold rollout drift and stabilizing autoregressive prediction. We further use flow forcing to update a system descriptor (context) from model-generated trajectories, aligning train/test conditioning and improving long-term stability. We pretrain on a curated corpus of $\\sim$2.5M trajectories at $128^2$ resolution spanning 12 PDE families. LGS matches strong deterministic neural-operator baselines on short horizons while substantially reducing rollout drift on long horizons. Learning in latent space plus efficient architectural choices yields up to \\textbf{70$\\times$} lower FLOPs than non-generative baselines, enabling scalable pretraining. We also show efficient adaptation to an out-of-distribution $256^2$ Kolmogorov flow dataset under limited finetuning budgets. Overall, LGS provides a practical route toward generalizable, uncertainty-aware neural PDE solvers that are more reliable for long-term forecasting and downstream scientific workflows.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced Latent Generative Solvers (LGS) to enhance long-term physics simulations across various PDE systems. This framework uses a pretrained VAE to map diverse states into a shared latent space and employs a Transformer to learn probabilistic dynamics. Notably, LGS achieves up to 70 times lower computational costs compared to traditional methods while improving prediction stability. This advancement could significantly impact scientific workflows that rely on accurate long-term forecasting.",
+  "why_it_matters": [
+    "LGS could help scientists and engineers achieve more reliable simulations, facilitating better decision-making in fields like climate modeling or materials science.",
+    "This development indicates a shift towards more efficient and adaptable AI models in scientific computing, potentially transforming how complex systems are simulated."
+  ],
+  "lenses": {
+    "eli12": "Latent Generative Solvers (LGS) are like a smart assistant that learns how to predict complex physics scenarios over time. By organizing different physics states into a common language, LGS helps improve long-term forecasts. This matters to everyday people because better simulations can lead to advancements in technology, safety, and environmental protection.",
+    "pm": "For product managers and founders, LGS represents a way to meet user needs for accurate long-term predictions in complex systems. The significant reduction in computational costs means more efficient product development and deployment. Adopting such technologies could enhance user experience and broaden market opportunities in scientific applications.",
+    "engineer": "From a technical perspective, LGS leverages a pretrained Variational Autoencoder (VAE) to create a shared latent space for diverse PDE states. It utilizes a Transformer trained with flow matching to learn dynamics, achieving substantial reductions in computational load—up to 70 times fewer FLOPs than non-generative methods. This efficiency allows for scalable pretraining and effective adaptation to new datasets, making LGS a promising tool for long-term simulations."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-13T05:08:40.106Z",
+  "updated_at": "2026-02-13T05:08:40.106Z",
+  "processing_order": 1770959320107
+}

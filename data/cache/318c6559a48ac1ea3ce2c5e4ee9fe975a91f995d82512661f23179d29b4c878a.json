@@ -1,0 +1,31 @@
+{
+  "content_hash": "318c6559a48ac1ea3ce2c5e4ee9fe975a91f995d82512661f23179d29b4c878a",
+  "share_id": "vrudt",
+  "title": "Voxtral Realtime",
+  "optimized_headline": "\"Discover How Voxtral Realtime Transforms Data Processing in Seconds\"",
+  "url": "https://arxiv.org/abs/2602.11298",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-13T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.11298v1 Announce Type: new \nAbstract: We introduce Voxtral Realtime, a natively streaming automatic speech recognition model that matches offline transcription quality at sub-second latency. Unlike approaches that adapt offline models through chunking or sliding windows, Voxtral Realtime is trained end-to-end for streaming, with explicit alignment between audio and text streams. Our arc",
+  "raw_body": "arXiv:2602.11298v1 Announce Type: new \nAbstract: We introduce Voxtral Realtime, a natively streaming automatic speech recognition model that matches offline transcription quality at sub-second latency. Unlike approaches that adapt offline models through chunking or sliding windows, Voxtral Realtime is trained end-to-end for streaming, with explicit alignment between audio and text streams. Our architecture builds on the Delayed Streams Modeling framework, introducing a new causal audio encoder and Ada RMS-Norm for improved delay conditioning. We scale pretraining to a large-scale dataset spanning 13 languages. At a delay of 480ms, Voxtral Realtime achieves performance on par with Whisper, the most widely deployed offline transcription system. We release the model weights under the Apache 2.0 license.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Voxtral Realtime is a new streaming automatic speech recognition model that delivers offline transcription quality with less than a second of latency. It is trained end-to-end, ensuring better alignment between audio and text, and achieves performance comparable to Whisper, a leading offline system, at a delay of just 480 milliseconds. This development could significantly enhance real-time transcription applications, making them more efficient and accurate.",
+  "why_it_matters": [
+    "This model could benefit developers needing real-time transcription, improving user experience in applications like live captioning.",
+    "It signals a shift towards more efficient, real-time processing in speech recognition technology, which could influence market trends and competition."
+  ],
+  "lenses": {
+    "eli12": "Voxtral Realtime is like a fast-talking friend who can write down everything they say without missing a beat. It works instantly, matching the quality of traditional methods but much quicker. This matters because it could make tools like live subtitles and voice assistants more effective for everyone.",
+    "pm": "For product managers, Voxtral Realtime addresses the need for fast, accurate transcription in applications like virtual meetings. It could lower costs associated with delayed processing and improve user satisfaction. Implementing this technology might help products stand out in a crowded market.",
+    "engineer": "From a technical perspective, Voxtral Realtime employs a new causal audio encoder and Ada RMS-Norm to enhance delay conditioning. By achieving performance on par with Whisper at a 480ms delay, it demonstrates a significant advancement in real-time speech recognition. This model's end-to-end training approach could set a new standard for future developments."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-13T05:08:55.550Z",
+  "updated_at": "2026-02-13T05:08:55.550Z",
+  "processing_order": 1770959335553
+}

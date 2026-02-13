@@ -1,0 +1,31 @@
+{
+  "content_hash": "a8315e193fcb3c01c3f8db8952330b362e23a86c6e4e6602f4a29965845e97c0",
+  "share_id": "dmaou8",
+  "title": "On Decision-Valued Maps and Representational Dependence",
+  "optimized_headline": "Exploring Decision-Valued Maps: How Representation Shapes Our Choices",
+  "url": "https://arxiv.org/abs/2602.11295",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-13T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.11295v1 Announce Type: new \nAbstract: A computational engine applied to different representations of the same data can produce different discrete outcomes, with some representations preserving the result and others changing it entirely. A decision-valued map records which representations preserve the outcome and which change it, associating each member of a declared representation famil",
+  "raw_body": "arXiv:2602.11295v1 Announce Type: new \nAbstract: A computational engine applied to different representations of the same data can produce different discrete outcomes, with some representations preserving the result and others changing it entirely. A decision-valued map records which representations preserve the outcome and which change it, associating each member of a declared representation family with the discrete result it produces. This paper formalizes decision-valued maps and describes DecisionDB, an infrastructure that logs, replays and audits these relationships using identifiers computed from content and artifacts stored in write-once form. Deterministic replay recovers each recorded decision identifier exactly from stored artifacts, with all three identifying fields matching their persisted values. The contribution partitions representation space into persistence regions and boundaries, and treats decision reuse as a mechanically checkable condition.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new paper introduces decision-valued maps, which help track how different data representations affect outcomes. It highlights that some representations keep results consistent while others can alter them completely. This is crucial because understanding these dynamics can improve decision-making processes in AI systems. The paper also presents DecisionDB, a tool for logging and auditing these relationships, ensuring accurate decision recovery from stored data.",
+  "why_it_matters": [
+    "This could directly benefit data scientists and AI developers by providing clarity on how representation choices impact outcomes.",
+    "On a broader scale, it indicates a shift towards more robust auditing systems in AI, enhancing transparency and reliability in decision-making."
+  ],
+  "lenses": {
+    "eli12": "The paper discusses how different ways of looking at data can lead to different results. Think of it like using different lenses to view the same picture; some might show the details clearly, while others could distort them. This matters because clearer understanding can help everyone make better decisions based on data.",
+    "pm": "For product managers and founders, this research highlights the importance of representation in data-driven decisions. It suggests that choosing the right data format could enhance product reliability and user trust. One practical takeaway is to ensure that data representation is aligned with desired outcomes to avoid costly errors.",
+    "engineer": "Technically, the paper formalizes decision-valued maps and introduces DecisionDB, an infrastructure for tracking data representation outcomes. It emphasizes deterministic replay, ensuring that decision identifiers can be accurately retrieved from stored artifacts. This approach partitions representation space into specific regions, allowing for mechanical checks on decision reuse, which could enhance system reliability."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-13T05:08:48.701Z",
+  "updated_at": "2026-02-13T05:08:48.701Z",
+  "processing_order": 1770959328703
+}
