@@ -1,9 +1,408 @@
 {
   "month": "February 2026",
   "year": 2026,
-  "total": 183,
-  "generated_at": "2026-02-13T05:10:13.988Z",
+  "total": 203,
+  "generated_at": "2026-02-14T04:57:25.707Z",
   "articles": [
+    {
+      "id": "3fb0df87f77d01677ecbc65be3bcc48e45474b12eb916a595781cede4b369354",
+      "share_id": "atsrh9",
+      "category": "in_action_real_world",
+      "title": "AI agents turned Super Bowl viewers into one high-IQ team — now imagine this in the enterprise",
+      "optimized_headline": "AI agents turned Super Bowl viewers into one high-IQ team — now imagine this in the enterprise",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this",
+      "published_at": "2026-02-13T19:00:00.000Z",
+      "speedrun": "Recent research highlights the challenges of large team conversations, where the ideal size for productive discussions is only 4 to 7 people. To address this, Hyperchat AI technology enables large groups to engage in real-time, meaningful conversations by using AI agents to facilitate and connect smaller subgroups. In a Super Bowl experiment, 110 participants quickly identified the most effective ad, showing that this approach can lead to smarter, faster decisions. This matters as organizations seek better ways to harness collective intelligence.",
+      "why_it_matters": [
+        "For large teams, this technology could enhance collaboration, ensuring everyone feels heard and valued in discussions.",
+        "At a broader level, Hyperchat AI might shift how organizations approach team dynamics, moving from traditional communication tools to more interactive, engaging methods."
+      ],
+      "lenses": {
+        "eli12": "Imagine trying to have a meaningful chat at a party with 100 people—it's tough! Hyperchat AI breaks large groups into smaller, manageable conversations, making it easier for everyone to share ideas. This approach helps teams come up with better solutions and makes sure all voices are heard, which is important for everyday collaboration.",
+        "pm": "For product managers, Hyperchat AI could address the challenge of gathering diverse insights from large teams while maintaining engagement. This could reduce the time spent on surveys and increase the quality of feedback, leading to more informed product decisions. Implementing such technology might enhance user satisfaction and team cohesion.",
+        "engineer": "Hyperchat AI utilizes principles of Swarm Intelligence to facilitate real-time discussions among large groups. By dividing participants into smaller subgroups, each with an AI agent, the technology promotes efficient deliberation and knowledge sharing. In a study, groups using Hyperchat AI achieved a collective IQ in the 97th percentile, demonstrating its effectiveness in enhancing group decision-making."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "128b2678d6586fb62e62c26c7fc9c10a976ebd98cebf824730dd896895ff5392",
+      "share_id": "ogswnb",
+      "category": "capabilities_and_how",
+      "title": "OpenAI GPT-5.3-Codex-Spark Shows What's Possible With Cerebras",
+      "optimized_headline": "OpenAI's GPT-5.3-Codex-Spark: Unlocking New Possibilities with Cerebras Technology",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/generative-ai/openai-gpt-5-3-codex-spark-shows-what-s-possible-with-cerebras",
+      "published_at": "2026-02-13T18:01:44.000Z",
+      "speedrun": "OpenAI's new model, GPT-5.3-Codex-Spark, is designed for real-time coding and showcases the potential of using alternative hardware to Nvidia. This shift highlights the growing competition in the AI hardware market, as companies explore different options. The model's capabilities, though limited, suggest that innovation can thrive outside the Nvidia ecosystem. This is significant as it could lead to more diverse AI solutions and reduce dependency on a single supplier.",
+      "why_it_matters": [
+        "Developers could benefit from improved coding tools that enhance productivity and creativity, thanks to this new model's capabilities.",
+        "The move away from Nvidia could signal a broader trend where AI companies seek out diverse hardware solutions, fostering innovation and competition."
+      ],
+      "lenses": {
+        "eli12": "OpenAI's latest model is like trying a new recipe with different ingredients. It shows that using different hardware can lead to exciting new results in AI coding. This matters because it opens up more options for developers, making their work easier and potentially more creative.",
+        "pm": "For product managers and founders, this development highlights the need to consider various hardware options for AI applications. It could lead to cost savings and improved efficiency in coding tools. This shift might also influence product roadmaps, encouraging exploration of alternative technologies.",
+        "engineer": "Technically, GPT-5.3-Codex-Spark demonstrates the feasibility of real-time coding on non-Nvidia hardware, indicating potential performance benchmarks worth investigating. While the model is still limited, it could pave the way for future architectures that optimize coding tasks. This suggests a need for engineers to explore diverse hardware capabilities in AI development."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "a57f5cce1f9a71a0b4cef31fd3e1ec2ed205ea337203a393aa2d27f6b146f297",
+      "share_id": "htomnp",
+      "category": "in_action_real_world",
+      "title": "How to test OpenClaw without giving an autonomous agent shell access to your corporate laptop",
+      "optimized_headline": "Safely Test OpenClaw: Protecting Your Corporate Laptop from Autonomous Agents",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/security/how-to-test-openclaw-without-giving-an-autonomous-agent-shell-access-to-your",
+      "published_at": "2026-02-13T17:30:00.000Z",
+      "speedrun": "OpenClaw, an open-source AI agent, surged from 1,000 to over 21,000 deployments in just a week, prompting security concerns as employees install it on corporate machines. Critical vulnerabilities, like CVE-2026-25253, could allow attackers to steal authentication tokens with a single link. As organizations face the challenge of testing this tool securely, Cloudflare's Moltworker framework offers a way to isolate OpenClaw in ephemeral containers, reducing risks. This development is crucial as AI tools gain traction in business environments.",
+      "why_it_matters": [
+        "Security leaders must find safe ways to evaluate OpenClaw without compromising corporate data. The rapid deployment of OpenClaw poses immediate risks for businesses.",
+        "The rise of tools like OpenClaw signals a shift towards AI integration in workplaces, highlighting the need for robust security frameworks to manage new technologies."
+      ],
+      "lenses": {
+        "eli12": "OpenClaw is an AI tool that's quickly becoming popular, but it poses serious security risks when installed on work computers. Think of it like letting a stranger into your home; you need to be cautious about who you let in. For everyday people, this highlights the importance of keeping personal and work data safe, especially as new technologies emerge.",
+        "pm": "For product managers and founders, OpenClaw's rapid adoption points to a user need for AI tools that enhance productivity. However, the associated security risks could lead to higher costs if not managed properly. Implementing secure testing environments, like Cloudflare's Moltworker, could help mitigate these risks while allowing teams to explore AI capabilities safely.",
+        "engineer": "From a technical perspective, OpenClaw operates with full user privileges, exposing critical vulnerabilities like CVE-2026-25253, which allows remote code execution through a malicious link. The introduction of Cloudflare's Moltworker framework decouples the agent's execution from the host environment, using ephemeral containers to contain potential breaches. This architecture significantly reduces the risk of credential exposure and persistent threats, making it a valuable solution for securely testing AI agents."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "127c70ad931194d4bbb5428420da7d0eee0695e8d10440c43c377ba8367181f5",
+      "share_id": "ast1d7",
+      "category": "in_action_real_world",
+      "title": "ALS stole this musician’s voice. AI let him sing again.",
+      "optimized_headline": "AI Restores Musician's Voice After ALS Took It Away",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/02/13/1132913/als-stole-this-musicians-voice-ai-sing/",
+      "published_at": "2026-02-13T17:17:28.000Z",
+      "speedrun": "Patrick Darling, a musician who lost his ability to sing due to ALS, performed live again using AI technology that restored his voice. This marked a significant moment for Darling, as it was his first performance in two years, emotionally connecting him to his late great-grandfather through song. The AI technology allowed him to express himself musically once more, highlighting the potential of AI in assisting those with disabilities. This development matters now as it opens doors for others facing similar challenges.",
+      "why_it_matters": [
+        "This technology provides hope for musicians and artists with disabilities, allowing them to regain their voice and share their creativity.",
+        "The broader implication is a shift towards using AI in rehabilitation and creative expression, potentially transforming how we view accessibility in the arts."
+      ],
+      "lenses": {
+        "eli12": "Patrick Darling used AI to sing again after losing his voice to ALS. It's like giving someone a new set of tools to express themselves when they thought it was impossible. This matters because it shows how technology can help people connect with their passions and share their stories, even in tough circumstances.",
+        "pm": "For product managers and founders, this case highlights a growing user need for accessible technology that empowers individuals with disabilities. By focusing on cost-effective solutions, companies could tap into a market that values innovation in personal expression. This could lead to new products that enhance creativity and inclusivity in the arts.",
+        "engineer": "The AI technology used to restore Patrick Darling's voice likely involves advanced voice synthesis models that analyze and replicate vocal patterns. This showcases the capabilities of AI in generating realistic audio outputs from limited input data. However, developers should consider ethical implications and the importance of consent when creating such technologies."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "ff8215f4d267ea1f7d155c6c09d794675e964f168029b4c4205beb19e9eaf267",
+      "share_id": "nwrvbt",
+      "category": "in_action_real_world",
+      "title": "New Waymo Robotaxi now Running Fully Autonomously on US Roads",
+      "optimized_headline": "Waymo's New Robotaxi: Fully Autonomous on U.S. Roads for the First Time",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/generative-ai/new-waymo-robotaxi-now-running-fully-autonomously-on-us-roads",
+      "published_at": "2026-02-13T16:51:05.000Z",
+      "speedrun": "Waymo has launched a new fully autonomous robotaxi service on U.S. roads, marking a significant step in the expansion of self-driving technology. This service aims to enhance urban mobility and is already operational in several cities. As autonomous vehicles become more prevalent, they could reshape transportation and reduce reliance on traditional taxis. This development is crucial as cities look for innovative solutions to traffic and congestion issues.",
+      "why_it_matters": [
+        "Urban residents could benefit from improved transportation options, making commuting easier and more efficient.",
+        "This shift indicates a growing acceptance of autonomous vehicles, potentially transforming the transportation market and urban planning."
+      ],
+      "lenses": {
+        "eli12": "Waymo's new robotaxi service runs without a driver, similar to how a smart assistant can manage tasks without human help. This could make getting around cities easier and less stressful for everyone. As more people use these services, it could change how we think about transportation in our daily lives.",
+        "pm": "For product managers and founders, Waymo's expansion highlights a growing user demand for autonomous solutions. This could lead to reduced operational costs and increased efficiency in urban transport. Companies should consider how to integrate or compete with such technologies to meet evolving consumer needs.",
+        "engineer": "Waymo's robotaxi utilizes advanced algorithms and machine learning models to navigate complex urban environments autonomously. With this rollout, they are testing the limits of their technology in real-world conditions. Engineers should note the implications for safety and reliability benchmarks as these vehicles operate without human intervention."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "8fd4848b946a6447f7d771735fb2e7da08998a2fba0ff581ae29923805fe1932",
+      "share_id": "fmt2t9",
+      "category": "in_action_real_world",
+      "title": "AI forecasting model targets healthcare resource efficiency",
+      "optimized_headline": "\"New AI Model Aims to Revolutionize Healthcare Resource Efficiency\"",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/ai-forecasting-model-targets-healthcare-resource-efficiency/",
+      "published_at": "2026-02-13T16:07:06.000Z",
+      "speedrun": "Researchers at Hertfordshire University have created an AI forecasting model aimed at enhancing healthcare resource efficiency. This model leverages historical data from public sector organizations to make informed predictions about future needs. By collaborating with NHS health bodies, the project seeks to transform data into actionable insights for better operational planning. This initiative matters now as healthcare systems face increasing pressures to optimize resources amidst growing demand.",
+      "why_it_matters": [
+        "Healthcare providers could see immediate benefits in resource allocation, leading to improved patient care and reduced waste.",
+        "This development might indicate a larger trend towards data-driven decision-making in public sector organizations, potentially reshaping operational strategies."
+      ],
+      "lenses": {
+        "eli12": "Imagine trying to navigate a city using a map from 20 years ago. The new AI model helps healthcare systems use their old data to predict future needs better. This means hospitals could manage their resources more effectively, ensuring patients get the care they need without unnecessary delays or waste. It’s relevant to everyone because better healthcare planning can lead to improved services for all.",
+        "pm": "For product managers and founders in healthcare, this AI model highlights a growing user need for data-driven insights. By improving resource efficiency, organizations could reduce costs and enhance service delivery. A practical implication might be developing tools that integrate with existing healthcare data systems to streamline operational planning.",
+        "engineer": "The AI forecasting model employs machine learning techniques to analyze historical data from public sector organizations, aiming to enhance operational planning in healthcare. Key specifics include the model's ability to transform large data archives into predictive insights, addressing inefficiencies in resource allocation. While the exact algorithms weren't detailed, the focus on operational efficiency suggests a robust approach to data utilization."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "da666af76633644571ffaa223f4575929829af9eccbf8c12d4c1d2be54d1bfc1",
+      "share_id": "ar3qn9",
+      "category": "trends_risks_outlook",
+      "title": "Anthropic Raises $30B, Bringing its Valuation to $380B",
+      "optimized_headline": "Anthropic's $30B Raise: What Does a $380B Valuation Mean?",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/generative-ai/anthropic-raises-30b-bringing-valuation-to-380b",
+      "published_at": "2026-02-13T16:06:17.000Z",
+      "speedrun": "Anthropic has raised $30 billion, boosting its valuation to $380 billion. This significant funding highlights the intense competition in the AI sector, particularly against rivals like OpenAI. The influx of capital could accelerate Anthropic's development efforts and market presence. This matters now as companies race to innovate and capture market share in a rapidly evolving landscape.",
+      "why_it_matters": [
+        "This funding gives Anthropic the resources to enhance its AI capabilities, directly impacting its development team and projects.",
+        "The substantial valuation reflects a broader trend of increasing investments in AI, indicating a shift in how companies prioritize and view AI technologies."
+      ],
+      "lenses": {
+        "eli12": "Anthropic just got a huge boost of $30 billion, making it worth $380 billion. Imagine a sports team getting a big sponsorship deal; it can now buy better players and improve its game. This matters because it means more advanced AI tools could soon be available to everyone.",
+        "pm": "For product managers and founders, this funding means Anthropic can expand its product offerings and improve features. It suggests a growing user demand for advanced AI solutions, which could lead to more competitive pricing. Companies in the AI space may need to innovate quickly to keep up.",
+        "engineer": "From a technical perspective, Anthropic's $30 billion funding will likely enhance its research and development capabilities, possibly leading to breakthroughs in AI models. This funding could allow for more extensive training datasets and improved algorithms. However, competition with OpenAI means that performance benchmarks will remain critical."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "e446f1081a5841e94de3b15158c1404b8dd0bb8ad26621984a3e78ba2c804f8f",
+      "share_id": "wmmx5o",
+      "category": "capabilities_and_how",
+      "title": "What Murder Mystery 2 reveals about emergent behaviour in online games",
+      "optimized_headline": "\"How Murder Mystery 2 Uncovers Emergent Behavior in Online Gaming\"",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/what-murder-mystery-2-reveals-about-emergent-behaviour-in-online-games/",
+      "published_at": "2026-02-13T16:01:53.000Z",
+      "speedrun": "Murder Mystery 2, or MM2, is more than just a social deduction game on Roblox; it serves as a behavioral laboratory. Players take on roles like murderer and sheriff, but the game reveals complex social interactions and strategies. Recent observations show that player behavior can lead to unexpected alliances and tactics. Understanding these dynamics matters now as it could inform game design and enhance player engagement.",
+      "why_it_matters": [
+        "For players, this insight could enhance their gaming experience by fostering deeper social interactions and strategies.",
+        "At a broader level, it highlights a shift in game design, emphasizing the importance of emergent behavior in creating engaging online environments."
+      ],
+      "lenses": {
+        "eli12": "Murder Mystery 2 is like a playground for social behavior. Players take on different roles, and the way they interact can lead to surprising outcomes. This matters because it shows how games can help us understand teamwork and strategy in real life.",
+        "pm": "For product managers, MM2 illustrates the need to consider user interactions carefully. The game's emergent behaviors could inform features that enhance social engagement. This could lead to increased player retention and satisfaction.",
+        "engineer": "From a technical perspective, MM2 showcases how game mechanics can lead to complex emergent behaviors. By analyzing player interactions, developers can refine algorithms that govern in-game dynamics. This could improve game balance and player experience."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "a57fb885c778e777adccfd5049f2dd49632fbaec57df0d5b18e6872b9bc0866b",
+      "share_id": "ter1mq",
+      "category": "trends_risks_outlook",
+      "title": "The Evolving Role of the ML Engineer",
+      "optimized_headline": "How the Role of ML Engineers is Rapidly Transforming Today",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/the-evolving-role-of-the-ml-engineer/",
+      "published_at": "2026-02-13T15:00:00.000Z",
+      "speedrun": "Stephanie Kirmer discusses the evolving role of machine learning engineers amid a $200 billion investment bubble in AI. With the rise of large language models (LLMs), her daily tasks have shifted significantly, emphasizing the need for transparency and trust in AI development. This evolution reflects broader changes in the industry, where companies must adapt to maintain credibility. Understanding these shifts is crucial as they impact how AI technologies are developed and perceived.",
+      "why_it_matters": [
+        "Machine learning engineers must adapt their skills to meet new demands, ensuring that AI systems are transparent and trustworthy.",
+        "The investment bubble indicates a critical moment for AI companies, pushing them to innovate responsibly to sustain market confidence."
+      ],
+      "lenses": {
+        "eli12": "Machine learning engineers are changing how they work because of new technologies like large language models. Think of it like a chef who must learn new recipes as food trends change. This shift matters because it affects how AI is built and trusted in everyday life.",
+        "pm": "For product managers and founders, the changing role of ML engineers highlights the need to focus on transparency and user trust. As AI systems become more complex, ensuring they meet user needs efficiently could be a key differentiator. This could lead to more responsible product development and better user experiences.",
+        "engineer": "The rise of large language models is reshaping the responsibilities of ML engineers, requiring a focus on ethical AI practices and transparency. As companies navigate a $200 billion investment landscape, engineers must balance innovation with accountability. This evolution could influence how machine learning frameworks are designed and implemented."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "ce83470dbc2517ec527080d56b8b25b0ebbeee4326001c44416b97da71cb2e00",
+      "share_id": "tdekml",
+      "category": "in_action_real_world",
+      "title": "The Download: an exclusive chat with Jim O’Neill, and the surprising truth about heists",
+      "optimized_headline": "Exclusive Interview with Jim O’Neill Reveals Unexpected Insights on Heists",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/02/13/1132896/the-download-an-exclusive-chat-with-jim-oneill-and-the-surprising-truth-about-heists/",
+      "published_at": "2026-02-13T13:10:00.000Z",
+      "speedrun": "In a recent interview, Jim O’Neill, the US deputy health secretary, discussed the evolving nature of vaccine guidelines. He emphasized that these guidelines could change based on new data and public health needs. This highlights the ongoing adaptability required in public health policy, especially as new variants or health challenges emerge. Understanding this fluidity is essential for both health professionals and the public as they navigate vaccination strategies.",
+      "why_it_matters": [
+        "Health professionals must stay updated on changing vaccine guidelines to provide the best care possible.",
+        "This reflects a broader trend in public health where adaptability is crucial in response to emerging health threats."
+      ],
+      "lenses": {
+        "eli12": "Jim O’Neill is a key figure in public health, and he recently talked about how vaccine rules can change. Think of it like adjusting a recipe based on the ingredients you have. This matters because it shows how health guidelines need to be flexible to keep everyone safe.",
+        "pm": "For product managers and founders in health tech, O’Neill’s insights underline the importance of being responsive to new information. This could mean adjusting products to align with changing guidelines, which can enhance user trust and engagement. Staying ahead of these shifts could also improve efficiency in how health products are developed and marketed.",
+        "engineer": "From a technical perspective, O’Neill's comments suggest that data-driven models in health policy must be agile. Health guidelines should incorporate real-time data analytics to adapt quickly. This could involve using machine learning algorithms to predict the need for guideline changes based on emerging health data."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "d91b5930630dcb3ca5577c373a97c109dce9acbfa91cde2b5db17860c00bf26e",
+      "share_id": "mgps0u",
+      "category": "capabilities_and_how",
+      "title": "AI in Multiple GPUs: Point-to-Point and Collective Operations",
+      "optimized_headline": "Exploring AI Efficiency: Point-to-Point vs. Collective Operations in Multi-GPU Systems",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/point-to-point-and-collective-operations/",
+      "published_at": "2026-02-13T13:00:00.000Z",
+      "speedrun": "The article discusses how to leverage PyTorch for distributed AI workloads across multiple GPUs. It focuses on two types of operations: point-to-point and collective operations. Understanding these methods can significantly enhance the efficiency of AI training processes. This is particularly relevant as AI models grow larger and more complex, making effective resource utilization essential.",
+      "why_it_matters": [
+        "Data scientists and researchers can optimize their AI training, improving speed and performance in their projects.",
+        "As AI models become more demanding, effective multi-GPU strategies could lead to more scalable and efficient solutions across the industry."
+      ],
+      "lenses": {
+        "eli12": "The article explains how to use multiple GPUs for AI tasks. It’s like having a team of workers on a project; each one can handle a piece of the task to finish faster. This matters because it helps make AI training quicker and more efficient, which can benefit everyone from researchers to businesses.",
+        "pm": "For product managers and founders, understanding multi-GPU operations means improving AI model training efficiency. This could reduce costs and time, allowing teams to deliver better products faster. Implementing these strategies could lead to a more competitive edge in the AI market.",
+        "engineer": "The article dives into PyTorch's distributed operations, focusing on point-to-point and collective operations for multi-GPU setups. These methods allow for better synchronization and data sharing among GPUs, which is crucial for large-scale AI models. Effective use of these strategies can lead to significant performance improvements in training times."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "9def7f4f0d4f986f703b2c59abdd7dcb19a6e7e9b9102d651061f0bca90d7276",
+      "share_id": "adfuai",
+      "category": "in_action_real_world",
+      "title": "Agentic AI drives finance ROI in accounts payable automation",
+      "optimized_headline": "How Agentic AI Boosts Finance ROI in Accounts Payable Automation",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/agentic-ai-drives-finance-roi-in-accounts-payable-automation/",
+      "published_at": "2026-02-13T12:33:33.000Z",
+      "speedrun": "Finance leaders are increasingly adopting agentic AI for accounts payable automation, achieving higher returns on investment. Last year, general AI projects saw a 67% ROI, while autonomous agents reached an impressive 80%. This significant difference highlights the effectiveness of AI in streamlining complex financial processes. As businesses seek efficiency, the push toward autonomous solutions is becoming more urgent.",
+      "why_it_matters": [
+        "Finance teams could save time and reduce errors, making their processes more efficient and less reliant on human input.",
+        "The shift towards agentic AI reflects a broader trend in automation, indicating a potential transformation in how financial operations are managed."
+      ],
+      "lenses": {
+        "eli12": "Agentic AI is like having a smart assistant that takes care of tedious tasks for you. In finance, it automates accounts payable, which means fewer mistakes and more time for important work. This matters because it can help companies save money and operate more smoothly.",
+        "pm": "For product managers and founders, this development highlights a growing user need for efficiency in finance operations. By leveraging agentic AI, companies could cut costs and improve accuracy. A practical implication is the potential to reallocate human resources to more strategic tasks, enhancing overall productivity.",
+        "engineer": "From a technical perspective, agentic AI models are outperforming traditional AI in finance, achieving an 80% ROI compared to 67% for general AI projects. These autonomous agents can manage complex workflows independently, which reduces the need for human oversight. However, the article does not detail specific models or architectures used in these implementations."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "374adc6f2206863bc6c087b7d56e3fd6d74da11ec94277c7505c38cd563eeacb",
+      "share_id": "tmtmi8",
+      "category": "trends_risks_outlook",
+      "title": "The myth of the high-tech heist",
+      "optimized_headline": "Uncovering the Truth Behind High-Tech Heists: What Really Happens?",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/02/13/1132397/myth-of-high-tech-heist/",
+      "published_at": "2026-02-13T11:00:00.000Z",
+      "speedrun": "Steven Soderbergh, known for his heist films, compares filmmaking to executing a heist. He emphasizes the importance of creativity, teamwork, and overcoming technological hurdles. This analogy highlights how both processes require meticulous planning and precision. Understanding this comparison could deepen appreciation for the artistry in filmmaking.",
+      "why_it_matters": [
+        "Filmmakers can gain insights into effective collaboration and problem-solving from heist strategies, enhancing their production processes.",
+        "This analogy reflects a broader trend where creative industries are increasingly looking to innovative problem-solving techniques found in other fields."
+      ],
+      "lenses": {
+        "eli12": "Think of making a movie like planning a big surprise party. You need a theme, a team to help, and a way to keep everything running smoothly. Soderbergh's comparison shows how much effort and strategy go into filmmaking, just like any big project. This matters because it helps us appreciate the behind-the-scenes work that makes our favorite films possible.",
+        "pm": "For product managers or founders, Soderbergh's analogy highlights the need for creativity and teamwork in product development. Just as a film crew collaborates to overcome challenges, product teams must work together to innovate and solve user needs efficiently. This approach could lead to more successful product launches and better user experiences.",
+        "engineer": "From a technical perspective, Soderbergh's insights emphasize the importance of precise execution in both filmmaking and tech projects. Each role in a film crew, much like engineering teams, must work seamlessly to tackle complex challenges. This comparison underscores the need for collaboration and meticulous planning in achieving project goals."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "c74176d32ee1c5f2855d647b6cd5eac7ddf09935e45a6192919791a721e9c711",
+      "share_id": "gdngxl",
+      "category": "capabilities_and_how",
+      "title": "GPT-5.2 derives a new result in theoretical physics",
+      "optimized_headline": "GPT-5.2 Unveils Surprising Insights in Theoretical Physics Research",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/new-result-theoretical-physics",
+      "published_at": "2026-02-13T11:00:00.000Z",
+      "speedrun": "A recent preprint reveals that GPT-5.2 has proposed a new formula for gluon amplitudes, which has been formally verified by OpenAI and academic collaborators. This development highlights the model's potential in theoretical physics, showcasing its ability to contribute to complex scientific problems. The significance of this achievement lies in how AI can assist in advancing research in fundamental physics, potentially leading to new discoveries.",
+      "why_it_matters": [
+        "Researchers in theoretical physics could benefit from AI's ability to generate and verify complex formulas, streamlining their work.",
+        "This event marks a shift in how AI is perceived in scientific research, demonstrating its capability to tackle intricate problems traditionally reserved for human experts."
+      ],
+      "lenses": {
+        "eli12": "GPT-5.2 has come up with a new way to understand particles called gluons, which are crucial in physics. Think of it like a student solving a tough math problem that even teachers find challenging. This matters because it shows how AI can help scientists make sense of complex ideas and potentially lead to new discoveries.",
+        "pm": "For product managers and founders, this development illustrates a growing need for AI tools that can assist in specialized fields like physics. By leveraging AI for complex problem-solving, companies could reduce research time and costs. This could open up new markets or enhance existing products focused on scientific research.",
+        "engineer": "From a technical perspective, GPT-5.2's ability to propose a new formula for gluon amplitudes demonstrates its advanced reasoning capabilities. The verification by OpenAI and academic partners underscores the model's reliability in producing valid scientific results. This achievement could encourage further exploration of AI in generating hypotheses and solutions in various scientific disciplines."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "cf8c5faf9badf58654fda577e9a1921411066667df8b7806a1a0c23a43339af3",
+      "share_id": "ncd312",
+      "category": "trends_risks_outlook",
+      "title": "Newsweek CEO Dev Pragad warns publishers: adapt as AI becomes news gateway",
+      "optimized_headline": "Newsweek CEO Dev Pragad: Publishers Must Evolve with AI's Rise in News",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/newsweek-ceo-dev-pragad-warns-publishers-adapt-as-ai-becomes-news-gateway/",
+      "published_at": "2026-02-13T10:54:23.000Z",
+      "speedrun": "Dev Pragad, CEO of Newsweek, emphasizes a crucial shift in how news is consumed, driven by AI platforms. These technologies are changing the way audiences discover and trust information, often before they even reach a publisher’s site. This shift could redefine the relationship between journalism and the public, making adaptability essential for media outlets. As AI becomes a primary gateway for news, understanding its impact is vital for the future of journalism.",
+      "why_it_matters": [
+        "Publishers must adapt to AI-driven news discovery to maintain audience trust and engagement.",
+        "This trend signals a broader shift in media consumption, where AI tools dictate how news is accessed and perceived."
+      ],
+      "lenses": {
+        "eli12": "AI is changing how we find news, often before we even visit a news website. Think of it like a friend recommending articles based on what you like. This matters because it can affect which stories get attention and how we trust the information we see every day.",
+        "pm": "For product managers and founders, this shift highlights the need to prioritize user experience in AI-driven platforms. Understanding audience preferences could enhance engagement, while also considering costs related to adapting content strategies. It’s essential to develop tools that align with how users are increasingly discovering news.",
+        "engineer": "Technically, AI-driven platforms utilize algorithms that prioritize content based on user behavior and preferences. This can significantly affect traffic to publisher websites, as audiences may rely on AI for information validation. Engineers should focus on optimizing content for these algorithms to ensure visibility and trustworthiness."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "c687b1c9e845a33e8b1152fbacb730b9533c222125bc249c58eb6fb2e980fbba",
+      "share_id": "dhs4bp",
+      "category": "trends_risks_outlook",
+      "title": "US deputy health secretary: Vaccine guidelines are still subject to change",
+      "optimized_headline": "Vaccine Guidelines May Evolve, Warns US Deputy Health Secretary",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/02/13/1132889/us-deputy-health-secretary-vaccine-guidelines-longevity-arpa-h-cdc-nih/",
+      "published_at": "2026-02-13T10:37:40.000Z",
+      "speedrun": "Jim O’Neill, the US deputy health secretary, is set to leave his positions within the Department of Health and Human Services. His tenure has been significant, especially in shaping vaccine guidelines, which are still open to change. This transition raises questions about the future direction of public health policy in the U.S. and who will fill his influential role.",
+      "why_it_matters": [
+        "Health officials and vaccine developers may feel immediate uncertainty as guidelines could shift with new leadership.",
+        "This change signals a potential shift in public health strategy, affecting how vaccines are managed and communicated to the public."
+      ],
+      "lenses": {
+        "eli12": "Jim O’Neill is leaving his job as deputy health secretary, which could change how vaccine rules are made. Think of it like a coach leaving a sports team; the new coach might have different strategies. This matters because it could affect how vaccines are given and how people understand their importance.",
+        "pm": "For product managers in health, O’Neill's departure could mean a shift in vaccine guidance that impacts user trust and compliance. As regulations evolve, companies may need to adapt their products or messaging. This highlights the importance of staying agile in response to changes in public health leadership.",
+        "engineer": "From a technical perspective, O’Neill's exit may influence ongoing vaccine development protocols and regulatory benchmarks. His leadership has shaped vaccine guidelines, which could now shift with new leadership. Engineers and developers in health tech must stay alert to these potential changes, as they might affect project timelines and compliance requirements."
+      },
+      "hype_meter": 1
+    },
+    {
+      "id": "b0dd0d3680844efda94956e546ede967a3740e96b3a0224c76ea678e9a6df3ef",
+      "share_id": "ilm3h0",
+      "category": "capabilities_and_how",
+      "title": "Introducing Lockdown Mode and Elevated Risk labels in ChatGPT",
+      "optimized_headline": "ChatGPT Unveils Lockdown Mode and New Elevated Risk Labels",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt",
+      "published_at": "2026-02-13T10:00:00.000Z",
+      "speedrun": "OpenAI has launched Lockdown Mode and Elevated Risk labels in ChatGPT, aimed at enhancing security for organizations. Lockdown Mode helps prevent prompt injection attacks, while Elevated Risk labels signal potential vulnerabilities. These features are crucial as AI tools become more integrated into business operations, ensuring safer use of technology in sensitive environments.",
+      "why_it_matters": [
+        "Organizations using AI tools will benefit from enhanced security, reducing risks associated with data breaches and prompt injection attacks.",
+        "This development reflects a broader trend towards prioritizing security in AI applications, as companies increasingly recognize the importance of protecting sensitive information."
+      ],
+      "lenses": {
+        "eli12": "OpenAI has added new features to ChatGPT that make it safer for businesses. Lockdown Mode acts like a security guard, blocking harmful inputs, while Elevated Risk labels warn users about potential threats. This is important for everyday people because it helps protect their data when using AI tools at work.",
+        "pm": "For product managers and founders, these new features address user needs for security and trust in AI applications. Lockdown Mode could reduce costs related to data breaches by preventing attacks, while Elevated Risk labels enhance user awareness. This means teams can use AI more confidently, knowing there are safeguards in place.",
+        "engineer": "From a technical perspective, Lockdown Mode is designed to mitigate prompt injection risks, a common vulnerability in AI systems. Elevated Risk labels provide real-time alerts about potential security issues, which could help teams prioritize responses. These enhancements could lead to more robust AI deployments, but engineers must remain vigilant about evolving threats."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "9f018f4399f47ffb62cd3c4bc65b1921951fed48bea3d2a48433af85b94ee987",
+      "share_id": "sss4gx",
+      "category": "capabilities_and_how",
+      "title": "Scaling social science research",
+      "optimized_headline": "\"Unlocking Growth: Effective Strategies for Scaling Social Science Research\"",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/scaling-social-science-research",
+      "published_at": "2026-02-13T09:00:00.000Z",
+      "speedrun": "OpenAI has introduced GABRIEL, an open-source toolkit designed to assist social scientists in converting qualitative text and images into quantitative data. This tool leverages GPT technology to enable researchers to analyze large volumes of data more efficiently. By streamlining the research process, GABRIEL could significantly enhance the ability to derive insights from complex social science data. This development is particularly relevant as social scientists increasingly seek to scale their research efforts.",
+      "why_it_matters": [
+        "Social scientists can now analyze larger datasets more effectively, which could lead to deeper insights and more informed decisions.",
+        "This shift towards automated data analysis reflects a broader trend in academia, where technology is increasingly integrated into research methodologies."
+      ],
+      "lenses": {
+        "eli12": "GABRIEL is like having a super-smart assistant that helps researchers turn messy notes and pictures into clear numbers. This can make it easier for scientists to spot trends and patterns in their work. It matters because it could help researchers answer important questions about society more quickly and accurately.",
+        "pm": "For product managers and founders, GABRIEL addresses the user need for efficient data analysis in social research. By reducing the time and cost associated with traditional qualitative analysis, it opens up new opportunities for insights and innovation. This could lead to more informed product development and marketing strategies based on solid research data.",
+        "engineer": "From a technical standpoint, GABRIEL utilizes GPT to transform unstructured qualitative data into structured quantitative formats. This approach could enhance the scalability of social science research, allowing for analysis of larger datasets than traditional methods permit. However, the accuracy and reliability of the generated data will depend on the quality of the input material and the model's training."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "b54fb5091a43e285a6f9bf445443fb8c633bd814a075e58eb311932564435c3b",
+      "share_id": "brllom",
+      "category": "capabilities_and_how",
+      "title": "Beyond rate limits: scaling access to Codex and Sora",
+      "optimized_headline": "Unlocking Codex and Sora: Strategies for Scalable Access Beyond Limits",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/beyond-rate-limits",
+      "published_at": "2026-02-13T09:00:00.000Z",
+      "speedrun": "OpenAI has developed a new real-time access system for its Codex and Sora models, integrating rate limits, usage tracking, and credits. This system allows users to access these AI tools continuously without interruptions. Key specifics include the combination of usage tracking and credits to manage user access effectively. This matters now as it enhances user experience and could lead to broader adoption of AI technologies.",
+      "why_it_matters": [
+        "Users can now enjoy uninterrupted access to powerful AI tools, improving productivity and innovation. This mechanism promotes seamless interaction with AI.",
+        "This development indicates a shift towards more flexible and user-friendly AI access models, potentially influencing how businesses integrate AI into their workflows."
+      ],
+      "lenses": {
+        "eli12": "OpenAI has created a system that lets users access its AI tools without waiting. Think of it like having a library that’s always open, where you can borrow books whenever you need them. This matters because it makes using AI easier and more efficient for everyone.",
+        "pm": "For product managers and founders, this new access system addresses user needs for consistent AI interaction. By managing usage with credits, it could reduce costs associated with downtime. This means teams can rely on AI tools without interruptions, improving overall efficiency.",
+        "engineer": "The new access system combines rate limits and usage tracking to optimize how users interact with Codex and Sora. By implementing a credit system, OpenAI can efficiently manage real-time access while ensuring fair usage. This approach could lead to better resource allocation and performance monitoring."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "318c6559a48ac1ea3ce2c5e4ee9fe975a91f995d82512661f23179d29b4c878a",
       "share_id": "vrudt",
@@ -108,6 +507,27 @@
         "engineer": "From a technical perspective, DMS retrofits existing LLMs to optimize memory management by training them to decide which tokens to keep or discard. This approach allows models to maintain accuracy while reducing cache size, leading to up to 5x higher throughput in practical tests. The technique's compatibility with existing architectures means that engineers can integrate DMS with minimal adjustments, streamlining the deployment of advanced AI systems."
       },
       "hype_meter": 5
+    },
+    {
+      "id": "7a5912cd52ba734d6a986ec287a7cb123b8b2027bcd7ba478a10c5ce641a2af7",
+      "share_id": "mnomei",
+      "category": "capabilities_and_how",
+      "title": "MiniMax's new open M2.5 and M2.5 Lightning near state-of-the-art while costing 1/20th of Claude Opus 4.6",
+      "optimized_headline": "MiniMax’s M2.5 models rival top tech at just 1/20th the price.",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while",
+      "published_at": "2026-02-12T20:28:00.000Z",
+      "speedrun": "MiniMax, a Chinese AI startup, has launched its new M2.5 language model, available in two versions, which costs as little as 1/20th of competing models like Claude Opus 4.6. The M2.5 is open-source and designed to handle complex tasks in various fields, boasting a cost reduction of up to 95%. This shift from AI as a simple chatbot to a capable worker could change how businesses use AI, making it more accessible and practical for everyday tasks.",
+      "why_it_matters": [
+        "Businesses could benefit immediately from lower operational costs, allowing them to deploy AI for routine tasks without financial strain.",
+        "This release indicates a broader trend in the market towards affordable, efficient AI solutions that can handle more complex, real-world applications."
+      ],
+      "lenses": {
+        "eli12": "MiniMax's M2.5 model is like having a smart assistant that costs a fraction of what you'd pay for a consultant. It can perform tasks like coding and document creation at a much lower cost, making advanced AI accessible to more people. This matters because it allows everyday users and businesses to leverage powerful AI tools without worrying about high expenses.",
+        "pm": "For product managers and founders, MiniMax's M2.5 could reshape user needs by providing a cost-effective AI solution for complex tasks. The significant cost savings and efficiency improvements allow for broader deployment of AI in everyday operations. This could lead to more innovative applications and services that were previously too expensive to implement.",
+        "engineer": "Technically, MiniMax M2.5 uses a Mixture of Experts architecture, activating only 10 billion of its 230 billion parameters for efficiency. The model was trained using a proprietary Reinforcement Learning framework called Forge, which allows it to adapt to real-world tasks. This approach enables M2.5 to achieve high performance in coding benchmarks, rivaling top models while using fewer resources."
+      },
+      "hype_meter": 3
     },
     {
       "id": "27ac5d614f58ed7de915fe394ab4eadceea61875c65969eed41f137928886c78",
