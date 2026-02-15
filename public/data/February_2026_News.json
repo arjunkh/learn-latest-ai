@@ -1,9 +1,30 @@
 {
   "month": "February 2026",
   "year": 2026,
-  "total": 203,
-  "generated_at": "2026-02-14T04:57:25.707Z",
+  "total": 205,
+  "generated_at": "2026-02-15T05:07:28.107Z",
   "articles": [
+    {
+      "id": "750d51f60fc0cab527e5bcc194bcf049672f26b3eaaa818d90d90412a35cb09a",
+      "share_id": "yfd1ql",
+      "category": "in_action_real_world",
+      "title": "Your First 90 Days as a Data Scientist",
+      "optimized_headline": "Your First 90 Days as a Data Scientist",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/your-first-90-days-as-a-data-scientist/",
+      "published_at": "2026-02-14T11:25:00.000Z",
+      "speedrun": "The article outlines a practical onboarding checklist for new data scientists, emphasizing the importance of building trust, business fluency, and data intuition within the first 90 days. Key specifics include establishing relationships with stakeholders and understanding the business context for data projects. This approach is crucial as it helps data scientists integrate more effectively and contribute meaningfully to their teams right from the start.",
+      "why_it_matters": [
+        "New data scientists can quickly establish credibility by understanding their team's goals and the data landscape, fostering collaboration.",
+        "This onboarding strategy reflects a broader trend of prioritizing soft skills and business understanding in technical roles, enhancing overall team effectiveness."
+      ],
+      "lenses": {
+        "eli12": "Starting a new job as a data scientist can feel like learning to ride a bike. You need to build trust with your team and understand how data fits into the bigger picture. This onboarding checklist helps new data scientists hit the ground running, making it easier for them to contribute and succeed in their roles.",
+        "pm": "For product managers and founders, this onboarding checklist highlights the importance of aligning data science efforts with business objectives. By ensuring new hires focus on building relationships and understanding context, teams can become more efficient in using data to drive decisions. This could lead to faster project completion and improved product outcomes.",
+        "engineer": "From a technical perspective, the article suggests that new data scientists should prioritize understanding existing data systems and workflows. This includes familiarizing themselves with key tools and models used within the organization. By doing so, they can more effectively apply their skills to real-world problems, leading to better data-driven insights."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "3fb0df87f77d01677ecbc65be3bcc48e45474b12eb916a595781cede4b369354",
       "share_id": "atsrh9",
@@ -486,6 +507,27 @@
         "engineer": "From a technical perspective, the study implemented three explainability techniques—PDP, PFI, and KernelSHAP—within DashAI, showing a high task success rate of 80% or more for explainability tasks. The findings suggest that while novices appreciated the explanations, experts demanded more depth, indicating a potential area for improvement in balancing simplicity and detail in XAI tools."
       },
       "hype_meter": 3
+    },
+    {
+      "id": "109ae2dec5f30bb2e0f170fed983d637df08e46c51b9c315d2090ecc203b5290",
+      "share_id": "nnt134",
+      "category": "capabilities_and_how",
+      "title": "Nvidia’s new technique cuts LLM reasoning costs by 8x without losing accuracy",
+      "optimized_headline": "Nvidia’s technique slashes LLM reasoning costs 8x while maintaining accuracy",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy",
+      "published_at": "2026-02-12T22:00:00.000Z",
+      "speedrun": "Nvidia has introduced a technique called dynamic memory sparsification (DMS), which can reduce memory costs for large language model (LLM) reasoning by up to eight times without sacrificing accuracy. DMS intelligently compresses the key value cache, allowing LLMs to think longer and explore more solutions efficiently. This advancement not only enhances model performance but also addresses a significant economic challenge for enterprises by increasing throughput and reducing hardware costs. The implications for AI systems are substantial as they become more complex and demanding.",
+      "why_it_matters": [
+        "Enterprises can now serve five times more customer queries per second without compromising quality, directly impacting operational efficiency.",
+        "DMS signifies a broader shift in AI infrastructure, emphasizing intelligent memory management as a crucial component for scaling complex AI applications."
+      ],
+      "lenses": {
+        "eli12": "Nvidia's new technique, DMS, helps large language models think better while using less memory. Imagine a library that can keep only the most important books on the shelves, allowing for more visitors without overcrowding. This matters because it means AI can be more efficient and accessible for everyday tasks, making technology work better for everyone.",
+        "pm": "For product managers, DMS presents an opportunity to enhance user experience by increasing the number of simultaneous queries handled by AI systems. This reduction in memory costs could lead to lower operational expenses and improved efficiency. As a result, teams could deliver faster responses without sacrificing the quality of interactions, which is critical for user satisfaction.",
+        "engineer": "From a technical perspective, DMS retrofits existing LLMs to manage memory more effectively, allowing models like Qwen3-8B to maintain performance while reducing memory usage. The technique uses a 'delayed eviction' mechanism to optimize which tokens are kept or discarded, resulting in up to 5x higher throughput. This approach not only improves reasoning capabilities but also integrates seamlessly into existing AI frameworks without requiring extensive modifications."
+      },
+      "hype_meter": 4
     },
     {
       "id": "e5ba892fe90d79a2c86ce04c5731e39b114fda44f8b5506dd339d5ac091df5c4",
