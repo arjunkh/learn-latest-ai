@@ -1,0 +1,31 @@
+{
+  "content_hash": "5e71343f3af2c5ec88733ce8516642a84e97a019bed520075869d6c3285e11e6",
+  "share_id": "ebsosi",
+  "title": "Evolving Beyond Snapshots: Harmonizing Structure and Sequence via Entity State Tuning for Temporal Knowledge Graph Forecasting",
+  "optimized_headline": "Revolutionizing Temporal Knowledge Graphs: The Impact of Entity State Tuning",
+  "url": "https://arxiv.org/abs/2602.12389",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-16T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.12389v1 Announce Type: new \nAbstract: Temporal knowledge graph (TKG) forecasting requires predicting future facts by jointly modeling structural dependencies within each snapshot and temporal evolution across snapshots. However, most existing methods are stateless: they recompute entity representations at each timestamp from a limited query window, leading to episodic amnesia and rapid ",
+  "raw_body": "arXiv:2602.12389v1 Announce Type: new \nAbstract: Temporal knowledge graph (TKG) forecasting requires predicting future facts by jointly modeling structural dependencies within each snapshot and temporal evolution across snapshots. However, most existing methods are stateless: they recompute entity representations at each timestamp from a limited query window, leading to episodic amnesia and rapid decay of long-term dependencies. To address this limitation, we propose Entity State Tuning (EST), an encoder-agnostic framework that endows TKG forecasters with persistent and continuously evolving entity states. EST maintains a global state buffer and progressively aligns structural evidence with sequential signals via a closed-loop design. Specifically, a topology-aware state perceiver first injects entity-state priors into structural encoding. Then, a unified temporal context module aggregates the state-enhanced events with a pluggable sequence backbone. Subsequently, a dual-track evolution mechanism writes the updated context back to the global entity state memory, balancing plasticity against stability. Experiments on multiple benchmarks show that EST consistently improves diverse backbones and achieves state-of-the-art performance, highlighting the importance of state persistence for long-horizon TKG forecasting. The code is published at https://github.com/yuanwuyuan9/Evolving-Beyond-Snapshots",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduced Entity State Tuning (EST) for improving temporal knowledge graph (TKG) forecasting. Existing methods often forget past information, leading to poor long-term predictions. EST addresses this by maintaining a global state buffer that evolves over time, enhancing predictions by integrating structural and sequential data. This approach has shown significant improvements in performance across various benchmarks, making it a crucial advancement for future forecasting tasks.",
+  "why_it_matters": [
+    "This development could greatly enhance predictive accuracy for industries relying on TKGs, such as finance and healthcare, where timely insights are critical.",
+    "The approach signifies a shift towards more persistent and adaptable AI models, which may reshape how businesses leverage temporal data for strategic decisions."
+  ],
+  "lenses": {
+    "eli12": "Entity State Tuning (EST) helps AI predict future events by remembering past information better. Imagine trying to remember a long story—if you forget parts, the ending might not make sense. By keeping a consistent memory, EST allows AI to make smarter predictions. This matters because better predictions can lead to improved decision-making in everyday scenarios like shopping or planning.",
+    "pm": "For product managers and founders, EST could enhance how AI tools forecast trends and user behaviors. By maintaining a continuous memory of user interactions, products could become more efficient and responsive. This means businesses may save costs and improve user satisfaction by providing insights that are more accurate and contextually relevant.",
+    "engineer": "From a technical perspective, EST introduces a closed-loop design that maintains a global state buffer, allowing for persistent entity representations. This contrasts with traditional methods that reset entity states at each timestamp. By integrating structural and temporal data through a dual-track evolution mechanism, EST achieves state-of-the-art performance on multiple benchmarks, emphasizing the importance of memory in long-horizon forecasting."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-16T05:15:01.261Z",
+  "updated_at": "2026-02-16T05:15:01.261Z",
+  "processing_order": 1771218901263
+}

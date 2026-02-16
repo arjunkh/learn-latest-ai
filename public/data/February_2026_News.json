@@ -1,9 +1,135 @@
 {
   "month": "February 2026",
   "year": 2026,
-  "total": 205,
-  "generated_at": "2026-02-15T05:07:28.107Z",
+  "total": 211,
+  "generated_at": "2026-02-16T05:15:31.347Z",
   "articles": [
+    {
+      "id": "4170f7dcc082061432f2bfe57183f4b3f21c395105d519da5253a6542375be28",
+      "share_id": "ismx3o",
+      "category": "capabilities_and_how",
+      "title": "Intent-Driven Smart Manufacturing Integrating Knowledge Graphs and Large Language Models",
+      "optimized_headline": "How Knowledge Graphs and AI Transform Intent-Driven Smart Manufacturing",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.12419",
+      "published_at": "2026-02-16T05:00:00.000Z",
+      "speedrun": "A new study introduces a framework that combines Large Language Models (LLMs) with Knowledge Graphs (KGs) to improve smart manufacturing. By fine-tuning the Mistral-7B-Instruct-V02 model, the researchers achieved an impressive 89.33% exact match accuracy in translating human intents into machine actions. This integration could streamline interactions in Manufacturing-as-a-Service (MaaS) environments, making operations more efficient and aligned with human needs. Such advancements are crucial as manufacturing becomes increasingly complex.",
+      "why_it_matters": [
+        "Manufacturers could benefit from more intuitive interfaces that translate human instructions into machine actions, improving workflow efficiency.",
+        "This shift indicates a broader trend towards integrating AI into manufacturing, enhancing adaptability and responsiveness in production processes."
+      ],
+      "lenses": {
+        "eli12": "Imagine asking a factory robot to 'make more of product X' and it instantly knows how to do it. This new framework allows machines to understand human commands better, using advanced AI models. It matters because it could make factories smarter and more responsive to what people really want.",
+        "pm": "For product managers, this framework highlights a growing user need for seamless human-machine communication in manufacturing. By leveraging LLMs and KGs, companies could reduce operational costs and improve efficiency. A practical takeaway is that integrating such technologies could enhance user experience and adaptability in production lines.",
+        "engineer": "The framework merges instruction-tuned LLMs like Mistral-7B-Instruct-V02 with ontology-aligned KGs, achieving 89.33% exact match accuracy. This setup uses a Neo4j-based knowledge graph aligned with ISA-95 standards, ensuring accurate mapping of intents to manufacturing processes. While the results are promising, ongoing evaluation against more complex scenarios could further validate its effectiveness."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "5e71343f3af2c5ec88733ce8516642a84e97a019bed520075869d6c3285e11e6",
+      "share_id": "ebsosi",
+      "category": "capabilities_and_how",
+      "title": "Evolving Beyond Snapshots: Harmonizing Structure and Sequence via Entity State Tuning for Temporal Knowledge Graph Forecasting",
+      "optimized_headline": "Revolutionizing Temporal Knowledge Graphs: The Impact of Entity State Tuning",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.12389",
+      "published_at": "2026-02-16T05:00:00.000Z",
+      "speedrun": "Recent research introduced Entity State Tuning (EST) for improving temporal knowledge graph (TKG) forecasting. Existing methods often forget past information, leading to poor long-term predictions. EST addresses this by maintaining a global state buffer that evolves over time, enhancing predictions by integrating structural and sequential data. This approach has shown significant improvements in performance across various benchmarks, making it a crucial advancement for future forecasting tasks.",
+      "why_it_matters": [
+        "This development could greatly enhance predictive accuracy for industries relying on TKGs, such as finance and healthcare, where timely insights are critical.",
+        "The approach signifies a shift towards more persistent and adaptable AI models, which may reshape how businesses leverage temporal data for strategic decisions."
+      ],
+      "lenses": {
+        "eli12": "Entity State Tuning (EST) helps AI predict future events by remembering past information better. Imagine trying to remember a long story—if you forget parts, the ending might not make sense. By keeping a consistent memory, EST allows AI to make smarter predictions. This matters because better predictions can lead to improved decision-making in everyday scenarios like shopping or planning.",
+        "pm": "For product managers and founders, EST could enhance how AI tools forecast trends and user behaviors. By maintaining a continuous memory of user interactions, products could become more efficient and responsive. This means businesses may save costs and improve user satisfaction by providing insights that are more accurate and contextually relevant.",
+        "engineer": "From a technical perspective, EST introduces a closed-loop design that maintains a global state buffer, allowing for persistent entity representations. This contrasts with traditional methods that reset entity states at each timestamp. By integrating structural and temporal data through a dual-track evolution mechanism, EST achieves state-of-the-art performance on multiple benchmarks, emphasizing the importance of memory in long-horizon forecasting."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "1a8666f77e30399c3646d4ef9f6d4b0b7278e94c18ebf439a3abceccdf559714",
+      "share_id": "tfft96",
+      "category": "capabilities_and_how",
+      "title": "A Theoretical Framework for Adaptive Utility-Weighted Benchmarking",
+      "optimized_headline": "Exploring a New Framework for Adaptive Utility-Weighted Benchmarking Techniques",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.12356",
+      "published_at": "2026-02-16T05:00:00.000Z",
+      "speedrun": "A new framework for adaptive utility-weighted benchmarking has been proposed to enhance how we evaluate AI systems, especially large language models. This approach recognizes the diverse contexts in which AI operates and aims to incorporate the varied priorities of different stakeholders. By using human-in-the-loop updates, the framework allows benchmarks to evolve while remaining stable and interpretable. This matters now as AI systems become more integrated into critical applications, necessitating more accountable evaluation methods.",
+      "why_it_matters": [
+        "This framework could help developers create AI systems that better align with user needs, enhancing their effectiveness in real-world applications.",
+        "At a strategic level, it signals a shift towards more nuanced and flexible evaluation methods, potentially leading to more responsible AI deployment across industries."
+      ],
+      "lenses": {
+        "eli12": "Think of benchmarking like a report card for AI systems, but instead of just grades, it considers the different subjects that matter to various people. This new framework aims to make that report card more reflective of real-life situations and what different users care about. It matters because it could lead to AI tools that are more helpful and relevant in everyday life.",
+        "pm": "For product managers and founders, this framework could reshape how user needs are assessed in AI products. By integrating diverse stakeholder priorities into benchmarking, it might improve product alignment with market demands. The practical implication is that teams could develop more user-centric AI solutions, enhancing both satisfaction and performance.",
+        "engineer": "From a technical perspective, this framework introduces a multilayer, adaptive network for benchmarking AI models, allowing for dynamic updates based on human feedback. It leverages conjoint-derived utilities to formalize stakeholder preferences, offering a more contextual evaluation approach. This could enhance the interpretability and stability of benchmarks, though it requires careful implementation to balance complexity with usability."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "14e7623ed9336b8a10125621b3b49c9277b401f5a636eef308bb0c477aa9be44",
+      "share_id": "gbsl49",
+      "category": "capabilities_and_how",
+      "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
+      "optimized_headline": "Exploring AI Safety Risks: Insights from Game Theory and GT-HarmBench",
+      "source": "ArXiv AI",
+      "url": "https://arxiv.org/abs/2602.12316",
+      "published_at": "2026-02-16T05:00:00.000Z",
+      "speedrun": "Researchers have introduced GT-HarmBench, a benchmark designed to evaluate AI safety in multi-agent environments. It consists of 2,009 scenarios based on game theory, revealing that AI agents act in socially beneficial ways only 62% of the time. This benchmark aims to address the gaps in understanding coordination failures and conflicts among AI systems. As AI becomes more prevalent in complex situations, this tool helps ensure safer interactions among agents.",
+      "why_it_matters": [
+        "AI developers and researchers can use GT-HarmBench to better understand and mitigate risks in multi-agent systems, enhancing safety protocols.",
+        "This benchmark signals a shift toward more comprehensive evaluations of AI systems, emphasizing the importance of multi-agent interactions in real-world applications."
+      ],
+      "lenses": {
+        "eli12": "GT-HarmBench is like a report card for AI systems working together. It shows that while these systems can be smart, they often don't cooperate well, acting in everyone's best interest only 62% of the time. Understanding these dynamics is crucial as AI becomes more integrated into daily life, ensuring they work together safely and effectively.",
+        "pm": "For product managers and founders, GT-HarmBench highlights the importance of assessing AI interactions in multi-agent settings. The benchmark can help identify user needs for safer AI collaboration, potentially reducing risks and improving efficiency. Incorporating these insights could lead to better-designed systems that align with social goals.",
+        "engineer": "GT-HarmBench evaluates AI behavior across 15 frontier models, revealing that agents achieve socially beneficial outcomes only 62% of the time. The benchmark employs game-theoretic scenarios like the Prisoner's Dilemma, showing that targeted interventions can enhance positive outcomes by up to 18%. This tool provides a standardized framework for analyzing multi-agent coordination and safety risks."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "b4a552030035b2cf98bb41942308a9c22607a50e2b4171de630890ef9ab5ada0",
+      "share_id": "ngaduv",
+      "category": "trends_risks_outlook",
+      "title": "Nvidia, Groq and the limestone race to real-time AI: Why enterprises win or lose here",
+      "optimized_headline": "Nvidia and Groq's Limestone Race: Who Will Dominate Real-Time AI?",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or",
+      "published_at": "2026-02-15T19:00:00.000Z",
+      "speedrun": "Nvidia is exploring a partnership with Groq to enhance real-time AI capabilities by leveraging Groq’s Language Processing Unit (LPU) architecture. This technology could execute inference tasks significantly faster, reducing the thinking time for AI models from 20-40 seconds to under 2 seconds. This shift matters because it could redefine how businesses utilize AI, making it more efficient and responsive, ultimately enhancing user experience.",
+      "why_it_matters": [
+        "Businesses relying on AI for tasks like booking flights or coding could see faster results, improving productivity and user satisfaction.",
+        "This partnership signals a shift in the AI landscape, emphasizing the importance of inference speed and efficiency over traditional GPU reliance."
+      ],
+      "lenses": {
+        "eli12": "Nvidia's potential collaboration with Groq could speed up how AI thinks, much like upgrading from a bicycle to a sports car. Instead of waiting for answers, people could get them almost instantly. This matters because faster AI could make everyday tasks smoother and more efficient for everyone.",
+        "pm": "For product managers, the integration of Groq’s technology could address user frustrations around waiting for AI responses. By improving inference speed, products could become more engaging and efficient, potentially leading to increased user retention and satisfaction.",
+        "engineer": "From a technical perspective, Groq's LPU architecture is designed to eliminate memory bandwidth bottlenecks that GPUs face during small-batch inference. This allows models to process complex reasoning tasks much faster, fulfilling the growing demand for real-time AI capabilities. The shift towards this architecture could redefine how AI systems are built and deployed."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "3db498fa241a506bb870d99d22371a374925c18d4f60545fa2985bf236546c6d",
+      "share_id": "bgtbii",
+      "category": "capabilities_and_how",
+      "title": "A beginner’s guide to Tmux: a multitasking superpower for your terminal",
+      "optimized_headline": "Unlock Tmux: The Essential Beginner's Guide to Terminal Multitasking",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/a-beginners-guide-to-tmux-a-multitasking-superpower-for-your-terminal/",
+      "published_at": "2026-02-15T11:50:00.000Z",
+      "speedrun": "Tmux, or Terminal Multiplexer, is a tool that enhances your terminal experience by allowing you to split a single window into multiple panes. This multitasking capability can significantly improve productivity by enabling simultaneous work on different tasks. For example, you could run a server in one pane while editing code in another. As more developers adopt command-line tools, Tmux's utility becomes increasingly relevant.",
+      "why_it_matters": [
+        "Developers can manage multiple tasks efficiently, reducing the need to switch between windows and improving focus.",
+        "The rise of command-line tools indicates a broader trend towards streamlined workflows in software development and system administration."
+      ],
+      "lenses": {
+        "eli12": "Tmux is like having multiple tabs open in a web browser, but for your terminal. It allows you to work on several tasks at once without losing track of any. This is helpful for programmers who want to run scripts and edit files simultaneously. As more people use command-line tools, knowing Tmux could make daily tasks easier.",
+        "pm": "For product managers and founders, Tmux addresses the user need for efficient task management in coding environments. By enabling multitasking within a single terminal, it could reduce time spent switching between applications. This efficiency gain could lead to faster development cycles and more streamlined project management.",
+        "engineer": "Tmux provides a flexible environment for developers by allowing terminal sessions to be split into multiple panes. This feature supports simultaneous execution of commands and monitoring of outputs, which can enhance workflow efficiency. As a terminal multiplexer, Tmux can also maintain sessions across disconnects, making it useful for remote work."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "750d51f60fc0cab527e5bcc194bcf049672f26b3eaaa818d90d90412a35cb09a",
       "share_id": "yfd1ql",

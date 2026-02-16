@@ -1,0 +1,31 @@
+{
+  "content_hash": "14e7623ed9336b8a10125621b3b49c9277b401f5a636eef308bb0c477aa9be44",
+  "share_id": "gbsl49",
+  "title": "GT-HarmBench: Benchmarking AI Safety Risks Through the Lens of Game Theory",
+  "optimized_headline": "Exploring AI Safety Risks: Insights from Game Theory and GT-HarmBench",
+  "url": "https://arxiv.org/abs/2602.12316",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-16T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.12316v1 Announce Type: new \nAbstract: Frontier AI systems are increasingly capable and deployed in high-stakes multi-agent environments. However, existing AI safety benchmarks largely evaluate single agents, leaving multi-agent risks such as coordination failure and conflict poorly understood. We introduce GT-HarmBench, a benchmark of 2,009 high-stakes scenarios spanning game-theoretic ",
+  "raw_body": "arXiv:2602.12316v1 Announce Type: new \nAbstract: Frontier AI systems are increasingly capable and deployed in high-stakes multi-agent environments. However, existing AI safety benchmarks largely evaluate single agents, leaving multi-agent risks such as coordination failure and conflict poorly understood. We introduce GT-HarmBench, a benchmark of 2,009 high-stakes scenarios spanning game-theoretic structures such as the Prisoner's Dilemma, Stag Hunt and Chicken. Scenarios are drawn from realistic AI risk contexts in the MIT AI Risk Repository. Across 15 frontier models, agents choose socially beneficial actions in only 62% of cases, frequently leading to harmful outcomes. We measure sensitivity to game-theoretic prompt framing and ordering, and analyze reasoning patterns driving failures. We further show that game-theoretic interventions improve socially beneficial outcomes by up to 18%. Our results highlight substantial reliability gaps and provide a broad standardized testbed for studying alignment in multi-agent environments. The benchmark and code are available at https://github.com/causalNLP/gt-harmbench.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced GT-HarmBench, a benchmark designed to evaluate AI safety in multi-agent environments. It consists of 2,009 scenarios based on game theory, revealing that AI agents act in socially beneficial ways only 62% of the time. This benchmark aims to address the gaps in understanding coordination failures and conflicts among AI systems. As AI becomes more prevalent in complex situations, this tool helps ensure safer interactions among agents.",
+  "why_it_matters": [
+    "AI developers and researchers can use GT-HarmBench to better understand and mitigate risks in multi-agent systems, enhancing safety protocols.",
+    "This benchmark signals a shift toward more comprehensive evaluations of AI systems, emphasizing the importance of multi-agent interactions in real-world applications."
+  ],
+  "lenses": {
+    "eli12": "GT-HarmBench is like a report card for AI systems working together. It shows that while these systems can be smart, they often don't cooperate well, acting in everyone's best interest only 62% of the time. Understanding these dynamics is crucial as AI becomes more integrated into daily life, ensuring they work together safely and effectively.",
+    "pm": "For product managers and founders, GT-HarmBench highlights the importance of assessing AI interactions in multi-agent settings. The benchmark can help identify user needs for safer AI collaboration, potentially reducing risks and improving efficiency. Incorporating these insights could lead to better-designed systems that align with social goals.",
+    "engineer": "GT-HarmBench evaluates AI behavior across 15 frontier models, revealing that agents achieve socially beneficial outcomes only 62% of the time. The benchmark employs game-theoretic scenarios like the Prisoner's Dilemma, showing that targeted interventions can enhance positive outcomes by up to 18%. This tool provides a standardized framework for analyzing multi-agent coordination and safety risks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-16T05:14:45.075Z",
+  "updated_at": "2026-02-16T05:14:45.075Z",
+  "processing_order": 1771218885075
+}
