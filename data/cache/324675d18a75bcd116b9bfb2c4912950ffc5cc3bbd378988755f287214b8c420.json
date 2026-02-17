@@ -1,0 +1,31 @@
+{
+  "content_hash": "324675d18a75bcd116b9bfb2c4912950ffc5cc3bbd378988755f287214b8c420",
+  "share_id": "bslibj",
+  "title": "BotzoneBench: Scalable LLM Evaluation via Graded AI Anchors",
+  "optimized_headline": "\"Discover BotzoneBench: A New Approach to Scalable LLM Evaluation\"",
+  "url": "https://arxiv.org/abs/2602.13214",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-17T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.13214v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly deployed in interactive environments requiring strategic decision-making, yet systematic evaluation of these capabilities remains challenging. Existing benchmarks for LLMs primarily assess static reasoning through isolated tasks and fail to capture dynamic strategic abilities. Recent game-based evaluatio",
+  "raw_body": "arXiv:2602.13214v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly deployed in interactive environments requiring strategic decision-making, yet systematic evaluation of these capabilities remains challenging. Existing benchmarks for LLMs primarily assess static reasoning through isolated tasks and fail to capture dynamic strategic abilities. Recent game-based evaluations employ LLM-vs-LLM tournaments that produce relative rankings dependent on transient model pools, incurring quadratic computational costs and lacking stable performance anchors for longitudinal tracking. The central challenge is establishing a scalable evaluation framework that measures LLM strategic reasoning against consistent, interpretable standards rather than volatile peer models. Here we show that anchoring LLM evaluation to fixed hierarchies of skill-calibrated game Artificial Intelligence (AI) enables linear-time absolute skill measurement with stable cross-temporal interpretability. Built on the Botzone platform's established competitive infrastructure, our BotzoneBench evaluates LLMs across eight diverse games spanning deterministic perfect-information board games to stochastic imperfect-information card games. Through systematic assessment of 177,047 state-action pairs from five flagship models, we reveal significant performance disparities and identify distinct strategic behaviors, with top-performing models achieving proficiency comparable to mid-to-high-tier specialized game AI in multiple domains. This anchored evaluation paradigm generalizes beyond games to any domain with well-defined skill hierarchies, establishing a scalable and reusable framework for assessing interactive AI capabilities.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced BotzoneBench, a new framework for evaluating Large Language Models (LLMs) in strategic decision-making scenarios. By anchoring evaluations to fixed hierarchies of game AI, they achieved linear-time skill measurements across eight games. This method assessed 177,047 state-action pairs from five models, revealing notable performance differences. This is significant as it allows for consistent tracking of LLM capabilities over time, which is crucial for their deployment in dynamic environments.",
+  "why_it_matters": [
+    "This impacts AI developers and researchers by providing a reliable way to measure LLM performance in real-world applications, enhancing model training and deployment.",
+    "On a broader scale, it represents a shift towards more comprehensive evaluation methods in AI, ensuring that models can effectively handle complex, interactive tasks."
+  ],
+  "lenses": {
+    "eli12": "BotzoneBench is like a new report card for AI, helping to measure how well models make decisions in games. Instead of just testing them in isolation, this method compares them against established game AIs. This matters because it helps ensure AI can perform well in real-life situations where quick thinking is needed.",
+    "pm": "For product managers, BotzoneBench offers a way to assess LLMs’ strategic capabilities more reliably. By understanding how models perform in dynamic scenarios, they can better align product development with user needs. This could lead to more efficient AI systems that adapt to complex environments, ultimately enhancing user experience.",
+    "engineer": "BotzoneBench utilizes a framework that anchors LLM evaluations to fixed hierarchies of game AI, allowing linear-time skill measurement. It analyzed 177,047 state-action pairs from five models, uncovering performance variances and strategic behaviors. This approach not only aids in benchmarking but also provides a scalable method for future evaluations across various domains."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-17T05:09:32.880Z",
+  "updated_at": "2026-02-17T05:09:32.880Z",
+  "processing_order": 1771304972881
+}

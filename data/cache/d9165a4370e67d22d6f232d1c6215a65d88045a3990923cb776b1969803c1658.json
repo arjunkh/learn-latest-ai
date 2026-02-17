@@ -1,0 +1,31 @@
+{
+  "content_hash": "d9165a4370e67d22d6f232d1c6215a65d88045a3990923cb776b1969803c1658",
+  "share_id": "vvr9vv",
+  "title": "VeRA: Verified Reasoning Data Augmentation at Scale",
+  "optimized_headline": "Unlocking VeRA: How Verified Reasoning Enhances Data Augmentation at Scale",
+  "url": "https://arxiv.org/abs/2602.13217",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-17T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.13217v1 Announce Type: new \nAbstract: The main issue with most evaluation schemes today is their \"static\" nature: the same problems are reused repeatedly, allowing for memorization, format exploitation, and eventual saturation. To measure genuine AI progress, we need evaluation that is robust by construction, not by post-hoc detection. In response, we propose VeRA (Verified Reasoning Da",
+  "raw_body": "arXiv:2602.13217v1 Announce Type: new \nAbstract: The main issue with most evaluation schemes today is their \"static\" nature: the same problems are reused repeatedly, allowing for memorization, format exploitation, and eventual saturation. To measure genuine AI progress, we need evaluation that is robust by construction, not by post-hoc detection. In response, we propose VeRA (Verified Reasoning Data Augmentation), a framework that converts benchmark problems into executable specifications, comprising (i) a natural language template with placeholder slots, (ii) a coherent generator that samples valid configurations, and (iii) a deterministic verifier that validates parameters and calculates the corresponding correct answers for each configuration. From a single seed problem, VeRA automatically creates unlimited verified variants with reliable labels at near-zero marginal cost without human involvement.\n  VeRA operates in two complementary modes. VeRA-E (equivalent) rewrites problems while keeping the underlying logic intact, useful for detecting memorization versus genuine reasoning. VeRA-H (hardened) systematically increases complexity while remaining verifiable, enabling reliable creation and labelling of fresh difficult tasks at the boundary of intelligence. Evaluating 16 frontier models with VeRA, we find: (i) VeRA-E improves evaluation quality and reveals contamination patterns. (ii) VeRA-H enables human-free generation of hard tasks with reliable labels. (iii) VeRA establishes verified benchmarks as a general paradigm. VeRA reconceptualizes benchmarks from static objects used until exhausted, to executable specifications generating fresh, verified instances on demand, enhancing robustness and cost-effectiveness for evaluation.\n  With VeRA, we envision that evaluation in any verifiable domain can scale indefinitely without sacrificing label integrity. To stimulate future research, we have open-sourced all code and datasets.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "VeRA (Verified Reasoning Data Augmentation) introduces a new way to evaluate AI by transforming static benchmarks into dynamic, executable specifications. It features two modes: VeRA-E, which rewrites problems to test genuine reasoning, and VeRA-H, which creates complex tasks without human input. This allows for unlimited, verified problem variations at a near-zero cost. The approach could significantly enhance the evaluation of AI systems, ensuring they are tested on fresh challenges rather than recycled problems.",
+  "why_it_matters": [
+    "AI developers can now access a more reliable evaluation method that reduces the risk of memorization in models, ensuring they truly understand concepts.",
+    "This shift indicates a broader move towards more dynamic and scalable evaluation methods in AI research, potentially leading to more robust AI systems."
+  ],
+  "lenses": {
+    "eli12": "VeRA is like a puzzle maker that can create endless new puzzles from one original design. Instead of reusing the same puzzles, it generates fresh ones that test real understanding. This is important because it helps ensure that AI is genuinely learning and not just memorizing answers.",
+    "pm": "For product managers, VeRA could streamline the evaluation process by providing a cost-effective way to generate diverse testing scenarios. This means teams can focus on developing features rather than worrying about how to properly assess AI performance. The efficiency gained could lead to faster iterations and improved product quality.",
+    "engineer": "VeRA transforms benchmarks into dynamic specifications, using a coherent generator and a deterministic verifier. It allows for the creation of verified problem variants at minimal cost, which could improve the evaluation of AI models significantly. The study found that VeRA-E enhances evaluation quality and reveals memorization patterns, while VeRA-H generates complex tasks without human involvement."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-17T05:09:49.578Z",
+  "updated_at": "2026-02-17T05:09:49.578Z",
+  "processing_order": 1771304989581
+}

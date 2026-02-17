@@ -1,0 +1,31 @@
+{
+  "content_hash": "4b7bf941634840e673b64c280b93f88328942ad0d7ee9580daca4c5e783595c4",
+  "share_id": "wtfyns",
+  "title": "When to Think Fast and Slow? AMOR: Entropy-Based Metacognitive Gate for Dynamic SSM-Attention Switching",
+  "optimized_headline": "Unlocking AMOR: How Entropy Shapes Our Fast and Slow Thinking",
+  "url": "https://arxiv.org/abs/2602.13215",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-17T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.13215v1 Announce Type: new \nAbstract: Transformers allocate uniform computation to every position, regardless of difficulty. State Space Models (SSMs) offer efficient alternatives but struggle with precise information retrieval over a long horizon. Inspired by dual-process theories of cognition (Kahneman, 2011), we propose AMOR (Adaptive Metacognitive Output Router), a hybrid architectu",
+  "raw_body": "arXiv:2602.13215v1 Announce Type: new \nAbstract: Transformers allocate uniform computation to every position, regardless of difficulty. State Space Models (SSMs) offer efficient alternatives but struggle with precise information retrieval over a long horizon. Inspired by dual-process theories of cognition (Kahneman, 2011), we propose AMOR (Adaptive Metacognitive Output Router), a hybrid architecture that dynamically engages sparse attention only when an SSM backbone is \"uncertain\"--as measured by prediction entropy. Compared to standard transformers, AMOR gains efficiency by projecting keys and values from SSM hidden states (Ghost KV), reusing the SSM's O(n) computation rather than requiring O(n^2) attention at every layer. On small-scale synthetic retrieval tasks, AMOR outperforms both SSM-only and transformer-only baselines, achieving perfect retrieval accuracy while engaging attention on only 22% of positions. We validate that prediction entropy reliably signals retrieval need, with a gap of 1.09 nats (nearly half the entropy range) between retrieval and local positions. Additionally, our approach provides interpretable adaptive computation, where routing decisions can be understood in information-theoretic terms.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced AMOR, a new architecture that combines State Space Models (SSMs) with adaptive attention to enhance efficiency in information retrieval. AMOR activates attention only when uncertainty is high, achieving perfect retrieval accuracy while focusing attention on just 22% of positions. This shift could significantly reduce computational costs compared to traditional transformers, which use uniform attention across all data points. Understanding these advancements is crucial as they may reshape how AI systems manage complex tasks.",
+  "why_it_matters": [
+    "AMOR could improve efficiency for AI developers, allowing them to build models that require less computational power while maintaining high accuracy.",
+    "This development signals a broader trend towards more adaptive AI architectures, potentially transforming how models handle information retrieval and processing."
+  ],
+  "lenses": {
+    "eli12": "AMOR is like a smart librarian who only searches for books when you're unsure about what you need. It saves time and effort by focusing only on the tricky parts, achieving perfect results while ignoring the easy ones. This matters for everyday people because it could lead to faster and more efficient AI tools that help us find information more easily.",
+    "pm": "For product managers, AMOR highlights a user need for more efficient AI models that minimize costs while maximizing performance. By focusing computational resources only when necessary, products could become faster and more responsive. This could lead to better user experiences and lower operational costs, making it an appealing option for new AI applications.",
+    "engineer": "AMOR utilizes a hybrid approach, engaging sparse attention based on prediction entropy to enhance retrieval tasks. This method allows it to achieve perfect accuracy while only attending to 22% of positions, contrasting sharply with traditional transformers that require O(n^2) attention. Such efficiency could lead to significant performance improvements in real-world applications, although careful consideration of its implementation in complex scenarios is essential."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-17T05:09:42.411Z",
+  "updated_at": "2026-02-17T05:09:42.411Z",
+  "processing_order": 1771304982413
+}
