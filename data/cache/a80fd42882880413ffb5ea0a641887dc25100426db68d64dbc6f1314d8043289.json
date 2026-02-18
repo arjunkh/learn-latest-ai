@@ -1,0 +1,31 @@
+{
+  "content_hash": "a80fd42882880413ffb5ea0a641887dc25100426db68d64dbc6f1314d8043289",
+  "share_id": "reluep",
+  "title": "ResearchGym: Evaluating Language Model Agents on Real-World AI Research",
+  "optimized_headline": "\"ResearchGym: How Language Model Agents Impact Real-World AI Research Outcomes\"",
+  "url": "https://arxiv.org/abs/2602.15112",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.15112v1 Announce Type: new \nAbstract: We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. ",
+  "raw_body": "arXiv:2602.15112v1 Announce Type: new \nAbstract: We introduce ResearchGym, a benchmark and execution environment for evaluating AI agents on end-to-end research. To instantiate this, we repurpose five oral and spotlight papers from ICML, ICLR, and ACL. From each paper's repository, we preserve the datasets, evaluation harness, and baseline implementations but withhold the paper's proposed method. This results in five containerized task environments comprising 39 sub-tasks in total. Within each environment, agents must propose novel hypotheses, run experiments, and attempt to surpass strong human baselines on the paper's metrics. In a controlled evaluation of an agent powered by GPT-5, we observe a sharp capability--reliability gap. The agent improves over the provided baselines from the repository in just 1 of 15 evaluations (6.7%) by 11.5%, and completes only 26.5% of sub-tasks on average. We identify recurring long-horizon failure modes, including impatience, poor time and resource management, overconfidence in weak hypotheses, difficulty coordinating parallel experiments, and hard limits from context length. Yet in a single run, the agent surpasses the solution of an ICML 2025 Spotlight task, indicating that frontier agents can occasionally reach state-of-the-art performance, but do so unreliably. We additionally evaluate proprietary agent scaffolds including Claude Code (Opus-4.5) and Codex (GPT-5.2) which display a similar gap. ResearchGym provides infrastructure for systematic evaluation and analysis of autonomous agents on closed-loop research.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "ResearchGym has been introduced as a new benchmark for evaluating AI agents in real-world research scenarios. It features five task environments with a total of 39 sub-tasks, where agents must create hypotheses and conduct experiments. In tests, a GPT-5 powered agent only succeeded in improving on existing baselines 6.7% of the time, highlighting a significant reliability gap. This matters now as it reveals the challenges in developing reliable AI agents for complex research tasks.",
+  "why_it_matters": [
+    "Researchers can better understand the limitations of AI agents, helping them refine their approaches and improve outcomes.",
+    "This development signals a shift toward more rigorous evaluation methods in AI, which could enhance the reliability of AI applications in various fields."
+  ],
+  "lenses": {
+    "eli12": "ResearchGym is like a training ground for AI agents, where they learn to tackle real research problems. It provides a structured way to see how well they can come up with new ideas and test them. This is important for everyday people because it helps ensure that AI can contribute effectively to solving complex issues we face.",
+    "pm": "For product managers and founders, ResearchGym highlights the need for reliable AI tools that can handle complex tasks. The low success rate of agents suggests there’s room for improvement in user needs and efficiency. This insight could guide the development of better AI applications that meet market demands more effectively.",
+    "engineer": "From a technical perspective, ResearchGym evaluates AI agents using five distinct environments based on prior research papers. The GPT-5 agent showed a 6.7% improvement over baselines, indicating a significant reliability gap in its performance. Key challenges included managing long-term tasks and coordinating experiments, which engineers will need to address for future advancements."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-18T05:10:04.524Z",
+  "updated_at": "2026-02-18T05:10:04.524Z",
+  "processing_order": 1771391404525
+}

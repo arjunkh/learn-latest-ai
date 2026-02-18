@@ -1,0 +1,31 @@
+{
+  "content_hash": "89110ce69f6911f842df5df8f55e699e368558848cbd65d23b71d7616dbebdc4",
+  "share_id": "pcl5r7",
+  "title": "Panini: Continual Learning in Token Space via Structured Memory",
+  "optimized_headline": "Unlocking Structured Memory: How Panini Enhances Learning in Token Systems",
+  "url": "https://arxiv.org/abs/2602.15156",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-18T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.15156v1 Announce Type: new \nAbstract: Language models are increasingly used to reason over content they were not trained on, such as new documents, evolving knowledge, and user-specific data. A common approach is retrieval-augmented generation (RAG), which stores verbatim documents externally (as chunks) and retrieves only a relevant subset at inference time for an LLM to reason over. H",
+  "raw_body": "arXiv:2602.15156v1 Announce Type: new \nAbstract: Language models are increasingly used to reason over content they were not trained on, such as new documents, evolving knowledge, and user-specific data. A common approach is retrieval-augmented generation (RAG), which stores verbatim documents externally (as chunks) and retrieves only a relevant subset at inference time for an LLM to reason over. However, this results in inefficient usage of test-time compute (LLM repeatedly reasons over the same documents); moreover, chunk retrieval can inject irrelevant context that increases unsupported generation. We propose a human-like non-parametric continual learning framework, where the base model remains fixed, and learning occurs by integrating each new experience into an external semantic memory state that accumulates and consolidates itself continually. We present Panini, which realizes this by representing documents as Generative Semantic Workspaces (GSW) -- an entity- and event-aware network of question-answer (QA) pairs, sufficient for an LLM to reconstruct the experienced situations and mine latent knowledge via reasoning-grounded inference chains on the network. Given a query, Panini only traverses the continually-updated GSW (not the verbatim documents or chunks), and retrieves the most likely inference chains. Across six QA benchmarks, Panini achieves the highest average performance, 5%-7% higher than other competitive baselines, while using 2-30x fewer answer-context tokens, supports fully open-source pipelines, and reduces unsupported answers on curated unanswerable queries. The results show that efficient and accurate structuring of experiences at write time -- as achieved by the GSW framework -- yields both efficiency and reliability gains at read time. Code is available at https://github.com/roychowdhuryresearch/gsw-memory.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced Panini, a new framework for continual learning in language models. Unlike traditional methods that rely on retrieving verbatim documents, Panini uses a Generative Semantic Workspace (GSW) to store and integrate knowledge more efficiently. It outperformed existing models by 5-7% on six QA benchmarks while requiring 2-30 times fewer tokens. This advancement could lead to more efficient and accurate AI systems, particularly in dynamic environments where information evolves rapidly.",
+  "why_it_matters": [
+    "This could significantly enhance user experiences for those relying on AI for real-time information, ensuring more relevant and accurate responses.",
+    "Panini represents a shift toward more efficient AI processing, which could influence how developers design future language models and applications."
+  ],
+  "lenses": {
+    "eli12": "Panini is like a smart notebook that learns from every new page you add, organizing information so you can find it easily later. Instead of digging through piles of papers, it remembers key ideas and connections. This matters to everyday people because it could make AI assistants much better at answering questions with up-to-date information.",
+    "pm": "For product managers and founders, Panini addresses the need for efficient information retrieval in AI applications. By reducing the amount of data processed at once, it could lower costs and improve response times. This means teams can create smarter products that adapt quickly to user needs without overloading systems.",
+    "engineer": "Technically, Panini employs a non-parametric continual learning approach, utilizing Generative Semantic Workspaces to manage knowledge without altering the base model. It shows a 5-7% performance increase on six QA benchmarks while using significantly fewer tokens, enhancing both efficiency and accuracy. This could lead to more scalable and reliable AI systems in various applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-18T05:10:20.820Z",
+  "updated_at": "2026-02-18T05:10:20.820Z",
+  "processing_order": 1771391420823
+}
