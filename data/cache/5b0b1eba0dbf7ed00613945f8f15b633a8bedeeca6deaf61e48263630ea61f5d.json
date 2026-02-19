@@ -1,0 +1,31 @@
+{
+  "content_hash": "5b0b1eba0dbf7ed00613945f8f15b633a8bedeeca6deaf61e48263630ea61f5d",
+  "share_id": "oiazwn",
+  "title": "Optimization Instability in Autonomous Agentic Workflows for Clinical Symptom Detection",
+  "optimized_headline": "How Optimization Instability Affects Autonomous Workflows in Clinical Symptom Detection",
+  "url": "https://arxiv.org/abs/2602.16037",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.16037v1 Announce Type: new \nAbstract: Autonomous agentic workflows that iteratively refine their own behavior hold considerable promise, yet their failure modes remain poorly characterized. We investigate optimization instability, a phenomenon in which continued autonomous improvement paradoxically degrades classifier performance, using Pythia, an open-source framework for automated pro",
+  "raw_body": "arXiv:2602.16037v1 Announce Type: new \nAbstract: Autonomous agentic workflows that iteratively refine their own behavior hold considerable promise, yet their failure modes remain poorly characterized. We investigate optimization instability, a phenomenon in which continued autonomous improvement paradoxically degrades classifier performance, using Pythia, an open-source framework for automated prompt optimization. Evaluating three clinical symptoms with varying prevalence (shortness of breath at 23%, chest pain at 12%, and Long COVID brain fog at 3%), we observed that validation sensitivity oscillated between 1.0 and 0.0 across iterations, with severity inversely proportional to class prevalence. At 3% prevalence, the system achieved 95% accuracy while detecting zero positive cases, a failure mode obscured by standard evaluation metrics. We evaluated two interventions: a guiding agent that actively redirected optimization, amplifying overfitting rather than correcting it, and a selector agent that retrospectively identified the best-performing iteration successfully prevented catastrophic failure. With selector agent oversight, the system outperformed expert-curated lexicons on brain fog detection by 331% (F1) and chest pain by 7%, despite requiring only a single natural language term as input. These findings characterize a critical failure mode of autonomous AI systems and demonstrate that retrospective selection outperforms active intervention for stabilization in low-prevalence classification tasks.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study explored the challenges of autonomous workflows in detecting clinical symptoms, revealing a phenomenon called optimization instability. Using the Pythia framework, researchers found that as the system tried to improve, its performance on rare symptoms like Long COVID brain fog and chest pain often deteriorated. For example, at a 3% prevalence rate, the system achieved 95% accuracy but detected no positive cases. This research highlights the need for better oversight mechanisms in AI systems, especially for low-prevalence conditions.",
+  "why_it_matters": [
+    "Clinicians and AI developers face immediate challenges in ensuring reliable symptom detection, especially for rare conditions. This could lead to misdiagnoses or overlooked cases.",
+    "The findings suggest a broader shift in how AI systems should be designed, emphasizing the importance of oversight and retrospective evaluation over continuous optimization."
+  ],
+  "lenses": {
+    "eli12": "This study highlights a problem where AI systems can actually get worse as they try to improve. Imagine a student who studies harder but starts failing tests because they misunderstood the material. It’s crucial for everyday people to understand that not all AI improvements lead to better results, especially for rare health conditions.",
+    "pm": "For product managers and founders, this research underscores the importance of designing AI systems with oversight features. Users need reliable symptom detection, and the cost of misdiagnosis can be high. Implementing retrospective selection could enhance performance in low-prevalence scenarios, making the product more trustworthy.",
+    "engineer": "The study investigated optimization instability in autonomous workflows, revealing that classifiers can degrade performance as they self-improve. Key findings showed validation sensitivity oscillated between 1.0 and 0.0, particularly for symptoms with low prevalence. The selector agent approach outperformed traditional methods, achieving a 331% improvement in detecting brain fog. This emphasizes the need for careful design in low-prevalence classification tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-19T05:09:38.271Z",
+  "updated_at": "2026-02-19T05:09:38.271Z",
+  "processing_order": 1771477778272
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "049654c57e21786644445fd7d2407f9c23a5a2bd8d2ee52fe1436e31c059cb29",
+  "share_id": "esra1u",
+  "title": "Evidence-Grounded Subspecialty Reasoning: Evaluating a Curated Clinical Intelligence Layer on the 2025 Endocrinology Board-Style Examination",
+  "optimized_headline": "Evaluating a New Clinical Intelligence Tool for the 2025 Endocrinology Exam",
+  "url": "https://arxiv.org/abs/2602.16050",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-19T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.16050v1 Announce Type: new \nAbstract: Background: Large language models have demonstrated strong performance on general medical examinations, but subspecialty clinical reasoning remains challenging due to rapidly evolving guidelines and nuanced evidence hierarchies. Methods: We evaluated January Mirror, an evidence-grounded clinical reasoning system, against frontier LLMs (GPT-5, GPT-5.",
+  "raw_body": "arXiv:2602.16050v1 Announce Type: new \nAbstract: Background: Large language models have demonstrated strong performance on general medical examinations, but subspecialty clinical reasoning remains challenging due to rapidly evolving guidelines and nuanced evidence hierarchies. Methods: We evaluated January Mirror, an evidence-grounded clinical reasoning system, against frontier LLMs (GPT-5, GPT-5.2, Gemini-3-Pro) on a 120-question endocrinology board-style examination. Mirror integrates a curated endocrinology and cardiometabolic evidence corpus with a structured reasoning architecture to generate evidence-linked outputs. Mirror operated under a closed-evidence constraint without external retrieval. Comparator LLMs had real-time web access to guidelines and primary literature. Results: Mirror achieved 87.5% accuracy (105/120; 95% CI: 80.4-92.3%), exceeding a human reference of 62.3% and frontier LLMs including GPT-5.2 (74.6%), GPT-5 (74.0%), and Gemini-3-Pro (69.8%). On the 30 most difficult questions (human accuracy less than 50%), Mirror achieved 76.7% accuracy. Top-2 accuracy was 92.5% for Mirror versus 85.25% for GPT-5.2. Conclusions: Mirror provided evidence traceability: 74.2% of outputs cited at least one guideline-tier source, with 100% citation accuracy on manual verification. Curated evidence with explicit provenance can outperform unconstrained web retrieval for subspecialty clinical reasoning and supports auditability for clinical deployment.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new clinical reasoning system called January Mirror has outperformed leading large language models (LLMs) on a 120-question endocrinology exam. Mirror achieved an impressive accuracy of 87.5%, significantly higher than the human benchmark of 62.3% and other LLMs like GPT-5.2 at 74.6%. This is important as it highlights the potential for specialized AI tools to enhance clinical decision-making in rapidly evolving medical fields.",
+  "why_it_matters": [
+    "Clinicians could leverage this technology for better diagnostic accuracy, improving patient outcomes based on evidence-linked reasoning.",
+    "This could indicate a shift towards more specialized AI systems in healthcare, emphasizing the need for tailored solutions over general-purpose models."
+  ],
+  "lenses": {
+    "eli12": "January Mirror is like a specialized tutor for doctors, focusing on endocrinology. It uses a curated set of guidelines to answer questions accurately, unlike general models that might get lost in the vast sea of information. This matters because better decision-making tools can lead to improved patient care and outcomes.",
+    "pm": "For product managers and founders, January Mirror showcases a user need for specialized AI solutions in healthcare. Its success indicates that focusing on specific medical fields could enhance diagnostic accuracy and efficiency. This could lead to new opportunities for developing tailored applications that meet the nuanced needs of clinicians.",
+    "engineer": "From a technical perspective, January Mirror integrates a curated corpus specifically for endocrinology, achieving 87.5% accuracy on a challenging exam while operating under closed-evidence constraints. In contrast, frontier LLMs like GPT-5.2 and Gemini-3-Pro, which had real-time web access, scored lower at 74.6% and 69.8%, respectively. This highlights the effectiveness of structured reasoning with verified evidence in specialized domains."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-19T05:09:53.665Z",
+  "updated_at": "2026-02-19T05:09:53.665Z",
+  "processing_order": 1771477793668
+}
