@@ -1,0 +1,31 @@
+{
+  "content_hash": "697dd02a9bbe9423107e97272c6b19cc231c3fd4456a35caae2ff4c6beb62a35",
+  "share_id": "onig73",
+  "title": "Ontology-Guided Neuro-Symbolic Inference: Grounding Language Models with Mathematical Domain Knowledge",
+  "optimized_headline": "\"How Ontology-Guided Neuro-Symbolic Inference Enhances Language Models with Math Insights\"",
+  "url": "https://arxiv.org/abs/2602.17826",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.17826v1 Announce Type: new \nAbstract: Language models exhibit fundamental limitations -- hallucination, brittleness, and lack of formal grounding -- that are particularly problematic in high-stakes specialist fields requiring verifiable reasoning. I investigate whether formal domain ontologies can enhance language model reliability through retrieval-augmented generation. Using mathemati",
+  "raw_body": "arXiv:2602.17826v1 Announce Type: new \nAbstract: Language models exhibit fundamental limitations -- hallucination, brittleness, and lack of formal grounding -- that are particularly problematic in high-stakes specialist fields requiring verifiable reasoning. I investigate whether formal domain ontologies can enhance language model reliability through retrieval-augmented generation. Using mathematics as proof of concept, I implement a neuro-symbolic pipeline leveraging the OpenMath ontology with hybrid retrieval and cross-encoder reranking to inject relevant definitions into model prompts. Evaluation on the MATH benchmark with three open-source models reveals that ontology-guided context improves performance when retrieval quality is high, but irrelevant context actively degrades it -- highlighting both the promise and challenges of neuro-symbolic approaches.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study explores how using formal domain ontologies can improve the reliability of language models, especially in specialized fields like mathematics. By integrating the OpenMath ontology, researchers found that the quality of retrieved information significantly impacts performance. When relevant definitions were included, models performed better on the MATH benchmark. This research highlights the potential for enhancing AI's reasoning capabilities in critical applications where accuracy is essential.",
+  "why_it_matters": [
+    "This could directly benefit professionals in fields like mathematics or engineering, where precise language and reasoning are crucial for decision-making.",
+    "On a broader scale, improving AI reliability could shift how industries trust and implement language models, potentially leading to more widespread adoption in high-stakes environments."
+  ],
+  "lenses": {
+    "eli12": "The study shows that adding structured knowledge can help language models give better answers, especially in complex subjects like math. Think of it like a student using a textbook to find the right answers instead of guessing. This matters because it could make AI tools more reliable for everyone, from students to professionals.",
+    "pm": "For product managers and founders, this research highlights a user need for reliable AI in specialized areas. By focusing on integrating structured knowledge, products could become more efficient and trustworthy. This could lead to improved user satisfaction and potentially lower costs associated with incorrect outputs.",
+    "engineer": "The study implements a neuro-symbolic pipeline that combines retrieval-augmented generation with the OpenMath ontology. Evaluations on the MATH benchmark show that high-quality context boosts performance, while irrelevant context can degrade it. This illustrates the importance of context quality in enhancing model outputs, emphasizing both the potential and challenges of neuro-symbolic AI."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-23T05:14:15.260Z",
+  "updated_at": "2026-02-23T05:14:15.260Z",
+  "processing_order": 1771823655261
+}

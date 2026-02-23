@@ -1,0 +1,31 @@
+{
+  "content_hash": "28549f7314810555dcf320e25a4f848581f9a9a74b270c7adfabdac1290b556a",
+  "share_id": "ttg6ah",
+  "title": "The Token Games: Evaluating Language Model Reasoning with Puzzle Duels",
+  "optimized_headline": "Unlocking Language Models: How Puzzle Duels Test Reasoning Skills",
+  "url": "https://arxiv.org/abs/2602.17831",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.17831v1 Announce Type: new \nAbstract: Evaluating the reasoning capabilities of Large Language Models is increasingly challenging as models improve. Human curation of hard questions is highly expensive, especially in recent benchmarks using PhD-level domain knowledge to challenge the most capable models. Even then, there is always a concern about whether these questions test genuine reas",
+  "raw_body": "arXiv:2602.17831v1 Announce Type: new \nAbstract: Evaluating the reasoning capabilities of Large Language Models is increasingly challenging as models improve. Human curation of hard questions is highly expensive, especially in recent benchmarks using PhD-level domain knowledge to challenge the most capable models. Even then, there is always a concern about whether these questions test genuine reasoning or if similar problems have been seen during training. Here, we take inspiration from 16th-century mathematical duels to design The Token Games (TTG): an evaluation framework where models challenge each other by creating their own puzzles. We leverage the format of Programming Puzzles - given a Python function that returns a boolean, find inputs that make it return True - to flexibly represent problems and enable verifying solutions. Using results from pairwise duels, we then compute Elo ratings, allowing us to compare models relative to each other. We evaluate 10 frontier models on TTG, and closely match the ranking from existing benchmarks such as Humanity's Last Exam, without involving any human effort in creating puzzles. We also find that creating good puzzles is still a highly challenging task for current models, not measured by previous benchmarks. Overall, our work suggests new paradigms for evaluating reasoning that cannot be saturated by design, and that allow testing models for other skills like creativity and task creation alongside problem solving.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced The Token Games (TTG), a new framework for evaluating how well large language models reason by having them create and solve their own puzzles. This method avoids the high costs of human-generated questions and uses an Elo rating system to rank models based on their performance. In tests, TTG produced rankings similar to existing benchmarks, highlighting its effectiveness. This matters now as it opens up new ways to assess AI reasoning without relying on human input.",
+  "why_it_matters": [
+    "AI developers can quickly evaluate model performance without the high costs of human-curated questions, making it more accessible.",
+    "This shift could lead to more innovative evaluation methods, encouraging improvements in AI creativity and problem-solving skills."
+  ],
+  "lenses": {
+    "eli12": "The Token Games is like a friendly competition where AI models create and solve puzzles instead of just answering questions. This new way of testing helps us see how well they really think and solve problems. It's important for everyday people because it could lead to smarter AI that understands us better and helps in more creative ways.",
+    "pm": "For product managers and founders, The Token Games offers a cost-effective way to assess AI capabilities without heavy reliance on human input. This could streamline the development process and enhance user satisfaction by ensuring models are truly effective. Additionally, it opens avenues for innovative features based on AI's problem-solving and creative skills.",
+    "engineer": "The Token Games employs an Elo rating system to rank language models based on their performance in puzzle-solving duels. This method allows for direct comparisons without human-generated questions, addressing the limitations of traditional benchmarks. However, the study notes that creating high-quality puzzles remains a challenge for current models, indicating areas for further improvement."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-23T05:14:21.975Z",
+  "updated_at": "2026-02-23T05:14:21.975Z",
+  "processing_order": 1771823661977
+}

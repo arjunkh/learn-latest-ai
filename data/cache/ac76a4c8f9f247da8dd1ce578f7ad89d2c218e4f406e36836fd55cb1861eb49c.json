@@ -1,0 +1,31 @@
+{
+  "content_hash": "ac76a4c8f9f247da8dd1ce578f7ad89d2c218e4f406e36836fd55cb1861eb49c",
+  "share_id": "agszko",
+  "title": "El Agente Gr\\'afico: Structured Execution Graphs for Scientific Agents",
+  "optimized_headline": "\"Discover How Structured Execution Graphs Enhance Scientific Agents' Performance\"",
+  "url": "https://arxiv.org/abs/2602.17902",
+  "source": "ArXiv AI",
+  "published_at": "2026-02-23T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.17902v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used to automate scientific workflows, yet their integration with heterogeneous computational tools remains ad hoc and fragile. Current agentic approaches often rely on unstructured text to manage context and coordinate execution, generating often overwhelming volumes of information that may obscure deci",
+  "raw_body": "arXiv:2602.17902v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used to automate scientific workflows, yet their integration with heterogeneous computational tools remains ad hoc and fragile. Current agentic approaches often rely on unstructured text to manage context and coordinate execution, generating often overwhelming volumes of information that may obscure decision provenance and hinder auditability. In this work, we present El Agente Gr\\'afico, a single-agent framework that embeds LLM-driven decision-making within a type-safe execution environment and dynamic knowledge graphs for external persistence. Central to our approach is a structured abstraction of scientific concepts and an object-graph mapper that represents computational state as typed Python objects, stored either in memory or persisted in an external knowledge graph. This design enables context management through typed symbolic identifiers rather than raw text, thereby ensuring consistency, supporting provenance tracking, and enabling efficient tool orchestration. We evaluate the system by developing an automated benchmarking framework across a suite of university-level quantum chemistry tasks previously evaluated on a multi-agent system, demonstrating that a single agent, when coupled to a reliable execution engine, can robustly perform complex, multi-step, and parallel computations. We further extend this paradigm to two other large classes of applications: conformer ensemble generation and metal-organic framework design, where knowledge graphs serve as both memory and reasoning substrates. Together, these results illustrate how abstraction and type safety can provide a scalable foundation for agentic scientific automation beyond prompt-centric designs.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced El Agente Gráfico, a framework that improves how large language models (LLMs) automate scientific workflows. It uses structured execution graphs and knowledge graphs to manage context and decision-making more effectively than traditional unstructured text methods. This approach not only enhances consistency but also supports better tracking of decisions. Its significance lies in its potential to streamline complex scientific computations, making them more reliable and efficient.",
+  "why_it_matters": [
+    "Scientists and researchers could experience a smoother workflow, as El Agente Gráfico simplifies managing complex tasks and decision tracking.",
+    "This development could signal a shift towards more structured and reliable AI tools in scientific research, enhancing overall productivity."
+  ],
+  "lenses": {
+    "eli12": "El Agente Gráfico is like having a well-organized toolbox instead of a messy pile of tools. It helps scientists use AI to automate their tasks more effectively by keeping everything structured and easy to track. This matters because it could make scientific research faster and more accurate, benefiting everyone from students to professionals.",
+    "pm": "For product managers and founders, El Agente Gráfico addresses a key user need for reliable automation in scientific tasks. It could reduce costs and improve efficiency by ensuring better decision tracking and context management. This means that products built on this framework could offer users a smoother experience when handling complex computations.",
+    "engineer": "El Agente Gráfico employs a structured abstraction of scientific concepts, integrating LLMs with a type-safe execution environment. It utilizes typed Python objects for computational states, enhancing provenance tracking and tool orchestration. The framework's performance was evaluated against university-level quantum chemistry tasks, showing that a single agent can effectively handle complex computations, which is a notable improvement over traditional multi-agent systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-02-23T05:14:30.035Z",
+  "updated_at": "2026-02-23T05:14:30.035Z",
+  "processing_order": 1771823670038
+}
