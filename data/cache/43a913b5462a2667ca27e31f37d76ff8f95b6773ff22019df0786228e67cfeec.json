@@ -1,0 +1,31 @@
+{
+  "content_hash": "43a913b5462a2667ca27e31f37d76ff8f95b6773ff22019df0786228e67cfeec",
+  "share_id": "hhqm49",
+  "title": "HumanMCP: A Human-Like Query Dataset for Evaluating MCP Tool Retrieval Performance",
+  "optimized_headline": "\"Discover HumanMCP: A New Dataset for Assessing MCP Tool Effectiveness\"",
+  "url": "https://arxiv.org/abs/2602.23367",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-02T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.23367v1 Announce Type: new \nAbstract: Model Context Protocol (MCP) servers contain a collection of thousands of open-source standardized tools, linking LLMs to external systems; however, existing datasets and benchmarks lack realistic, human-like user queries, remaining a critical gap in evaluating the tool usage and ecosystems of MCP servers. Existing datasets often do contain tool des",
+  "raw_body": "arXiv:2602.23367v1 Announce Type: new \nAbstract: Model Context Protocol (MCP) servers contain a collection of thousands of open-source standardized tools, linking LLMs to external systems; however, existing datasets and benchmarks lack realistic, human-like user queries, remaining a critical gap in evaluating the tool usage and ecosystems of MCP servers. Existing datasets often do contain tool descriptions but fail to represent how different users portray their requests, leading to poor generalization and inflated reliability of certain benchmarks. This paper introduces the first large-scale MCP dataset featuring diverse, high-quality diverse user queries generated specifically to match 2800 tools across 308 MCP servers, developing on the MCP Zero dataset. Each tool is paired with multiple unique user personas that we have generated, to capture varying levels of user intent ranging from precise task requests, and ambiguous, exploratory commands, reflecting the complexity of real-world interaction patterns.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new dataset called HumanMCP has been introduced to improve the evaluation of Model Context Protocol (MCP) servers. This dataset features realistic user queries linked to 2,800 tools across 308 MCP servers, addressing a significant gap in existing benchmarks. By pairing each tool with diverse user personas, it captures a range of user intents, from precise requests to ambiguous commands. This matters now as it could enhance the effectiveness of AI tools in real-world applications.",
+  "why_it_matters": [
+    "Developers and researchers can better evaluate how well AI tools respond to realistic user queries, improving user experience.",
+    "This shift could lead to more effective AI applications, as it encourages the development of tools that truly understand user needs."
+  ],
+  "lenses": {
+    "eli12": "The HumanMCP dataset helps AI systems understand how real people ask for help. Imagine trying to teach a robot to answer questions, but only using textbook examples. This new dataset gives it real conversations to learn from. This is important because it could make AI tools more helpful and user-friendly in everyday life.",
+    "pm": "For product managers, the HumanMCP dataset represents a valuable resource for testing AI tools against real user behavior. By understanding diverse user intents, teams can improve tool design and functionality, potentially reducing user frustration. This could lead to higher user satisfaction and engagement with AI products.",
+    "engineer": "The HumanMCP dataset advances MCP server evaluation by providing 2,800 tools with user queries that reflect various intents. It builds on the MCP Zero dataset and emphasizes the importance of realistic interactions. This could lead to better training and performance benchmarks for AI models, though engineers should consider the diversity of user personas when interpreting results."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-02T05:03:38.115Z",
+  "updated_at": "2026-03-02T05:03:38.115Z",
+  "processing_order": 1772427818116
+}

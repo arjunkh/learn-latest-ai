@@ -1,0 +1,31 @@
+{
+  "content_hash": "45377c12bccfb059809866cfc9a0a1b16b8d660e4436c6c2f19b87e372aafb84",
+  "share_id": "cif6eu",
+  "title": "Causal Identification from Counterfactual Data: Completeness and Bounding Results",
+  "optimized_headline": "Unlocking Causal Insights: New Findings on Counterfactual Data Completeness",
+  "url": "https://arxiv.org/abs/2602.23541",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-02T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2602.23541v1 Announce Type: new \nAbstract: Previous work establishing completeness results for $\\textit{counterfactual identification}$ has been circumscribed to the setting where the input data belongs to observational or interventional distributions (Layers 1 and 2 of Pearl's Causal Hierarchy), since it was generally presumed impossible to obtain data from counterfactual distributions, whi",
+  "raw_body": "arXiv:2602.23541v1 Announce Type: new \nAbstract: Previous work establishing completeness results for $\\textit{counterfactual identification}$ has been circumscribed to the setting where the input data belongs to observational or interventional distributions (Layers 1 and 2 of Pearl's Causal Hierarchy), since it was generally presumed impossible to obtain data from counterfactual distributions, which belong to Layer 3. However, recent work (Raghavan & Bareinboim, 2025) has formally characterized a family of counterfactual distributions which can be directly estimated via experimental methods - a notion they call $\\textit{counterfactual realizabilty}$. This leaves open the question of what $\\textit{additional}$ counterfactual quantities now become identifiable, given this new access to (some) Layer 3 data. To answer this question, we develop the CTFIDU+ algorithm for identifying counterfactual queries from an arbitrary set of Layer 3 distributions, and prove that it is complete for this task. Building on this, we establish the theoretical limit of which counterfactuals can be identified from physically realizable distributions, thus implying the $\\textit{fundamental limit to exact causal inference in the non-parametric setting}$. Finally, given the impossibility of identifying certain critical types of counterfactuals, we derive novel analytic bounds for such quantities using realizable counterfactual data, and corroborate using simulations that counterfactual data helps tighten the bounds for non-identifiable quantities in practice.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "New research has expanded our understanding of counterfactual identification, which traditionally relied on observational data. The CTFIDU+ algorithm allows for identifying counterfactual queries from Layer 3 distributions, which were previously thought to be inaccessible. This advancement could significantly enhance causal inference techniques, leading to better decision-making in various fields. Understanding these counterfactuals now opens doors to more precise analyses in complex scenarios.",
+  "why_it_matters": [
+    "Researchers and practitioners can now identify previously unattainable causal relationships, improving the accuracy of their models.",
+    "This development suggests a shift in causal inference methods, potentially transforming fields like economics, healthcare, and social sciences."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to understand how different choices affect outcomes, like deciding between two job offers. This new research shows that we can now better estimate the results of those choices using experimental data. It matters because it helps us make more informed decisions based on clearer causal relationships.",
+    "pm": "For product managers and founders, this research highlights the importance of utilizing counterfactual data to enhance user insights. By implementing the CTFIDU+ algorithm, teams could improve their understanding of user behavior and preferences. This could lead to more tailored products and efficient resource allocation.",
+    "engineer": "The CTFIDU+ algorithm introduces a method for identifying counterfactual queries from Layer 3 distributions, expanding the boundaries of causal inference. This research establishes a fundamental limit on the types of counterfactuals that can be identified and provides analytic bounds for non-identifiable quantities. These advancements could refine models and improve simulations in practical applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-02T05:03:54.965Z",
+  "updated_at": "2026-03-02T05:03:54.965Z",
+  "processing_order": 1772427834967
+}
