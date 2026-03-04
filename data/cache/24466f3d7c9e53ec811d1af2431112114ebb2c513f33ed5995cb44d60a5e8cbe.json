@@ -1,0 +1,31 @@
+{
+  "content_hash": "24466f3d7c9e53ec811d1af2431112114ebb2c513f33ed5995cb44d60a5e8cbe",
+  "share_id": "mmeuqs",
+  "title": "Multi-Sourced, Multi-Agent Evidence Retrieval for Fact-Checking",
+  "optimized_headline": "Revolutionary Multi-Agent System Enhances Fact-Checking with Diverse Evidence Sources",
+  "url": "https://arxiv.org/abs/2603.00267",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.00267v1 Announce Type: new \nAbstract: Misinformation spreading over the Internet poses a significant threat to both societies and individuals, necessitating robust and scalable fact-checking that relies on retrieving accurate and trustworthy evidence. Previous methods rely on semantic and social-contextual patterns learned from training data, which limits their generalization to new dat",
+  "raw_body": "arXiv:2603.00267v1 Announce Type: new \nAbstract: Misinformation spreading over the Internet poses a significant threat to both societies and individuals, necessitating robust and scalable fact-checking that relies on retrieving accurate and trustworthy evidence. Previous methods rely on semantic and social-contextual patterns learned from training data, which limits their generalization to new data distributions. Recently, Retrieval Augmented Generation (RAG) based methods have been proposed to utilize the reasoning capability of LLMs with retrieved grounding evidence documents. However, these methods largely rely on textual similarity for evidence retrieval and struggle to retrieve evidence that captures multi-hop semantic relations within rich document contents. These limitations lead to overlooking subtle factual correlations between the evidence and the claims to be fact-checked during evidence retrieval, thus causing inaccurate veracity predictions.\n  To address these issues, we propose WKGFC, which exploits authorized open knowledge graph as a core resource of evidence. LLM-enabled retrieval is designed to assess the claims and retrieve the most relevant knowledge subgraphs, forming structured evidence for fact verification. To augment the knowledge graph evidence, we retrieve web contents for completion. The above process is implemented as an automatic Markov Decision Process (MDP): A reasoning LLM agent decides what actions to take according to the current evidence and the claims. To adapt the MDP for fact-checking, we use prompt optimization to fine-tune the agentic LLM.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new method for fact-checking misinformation, called WKGFC, leverages open knowledge graphs to enhance evidence retrieval. Unlike previous approaches that mainly rely on textual similarity, WKGFC uses a reasoning LLM agent to assess claims and retrieve relevant knowledge subgraphs. This could improve the accuracy of fact-checking by capturing subtle semantic relations. As misinformation continues to spread, effective tools like WKGFC could play a crucial role in maintaining information integrity.",
+  "why_it_matters": [
+    "This method could directly benefit fact-checkers and journalists by providing them with more accurate and comprehensive evidence for verifying claims.",
+    "At a broader level, advancements like WKGFC could signal a shift in how technology addresses misinformation, potentially leading to more reliable information sources online."
+  ],
+  "lenses": {
+    "eli12": "WKGFC is like having a smart assistant that not only looks up information but also understands the connections between different facts. It uses open knowledge graphs to find the best evidence for checking claims. This matters because it could help everyone, from casual internet users to professionals, access more accurate information and combat misinformation effectively.",
+    "pm": "For product managers and founders, WKGFC highlights a growing user need for reliable fact-checking tools. By improving evidence retrieval, it could enhance the efficiency of fact-checking processes, leading to quicker and more accurate outcomes. This could be a valuable feature for platforms focused on content verification.",
+    "engineer": "WKGFC employs a Markov Decision Process (MDP) to optimize how a reasoning LLM agent retrieves evidence. It integrates open knowledge graphs with web content to form structured evidence for fact-checking. This approach aims to address limitations in current methods, which often miss nuanced semantic relationships, potentially leading to better accuracy in verifying claims."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-04T04:54:28.713Z",
+  "updated_at": "2026-03-04T04:54:28.714Z",
+  "processing_order": 1772600068714
+}

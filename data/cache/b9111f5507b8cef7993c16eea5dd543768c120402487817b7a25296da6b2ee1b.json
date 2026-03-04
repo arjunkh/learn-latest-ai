@@ -1,0 +1,31 @@
+{
+  "content_hash": "b9111f5507b8cef7993c16eea5dd543768c120402487817b7a25296da6b2ee1b",
+  "share_id": "thrdtv",
+  "title": "TraderBench: How Robust Are AI Agents in Adversarial Capital Markets?",
+  "optimized_headline": "Exploring AI Agents' Resilience in Challenging Capital Market Conditions",
+  "url": "https://arxiv.org/abs/2603.00285",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.00285v1 Announce Type: new \nAbstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trading, while LLM-based judges introduce uncontrolled variance on domain-specific tasks. We introduce TraderBench, a benchmark that addresses both issues. It combines expert-verified",
+  "raw_body": "arXiv:2603.00285v1 Announce Type: new \nAbstract: Evaluating AI agents in finance faces two key challenges: static benchmarks require costly expert annotation yet miss the dynamic decision-making central to real-world trading, while LLM-based judges introduce uncontrolled variance on domain-specific tasks. We introduce TraderBench, a benchmark that addresses both issues. It combines expert-verified static tasks (knowledge retrieval, analytical reasoning) with adversarial trading simulations scored purely on realized performance-Sharpe ratio, returns, and drawdown-eliminating judge variance entirely. The framework features two novel tracks: crypto trading with four progressive market-manipulation transforms, and options derivatives scoring across P&L accuracy, Greeks, and risk management. Trading scenarios can be refreshed with new market data to prevent benchmark contamination. Evaluating 13 models (8B open-source to frontier) on ~50 tasks, we find: (1) 8 of 13 models score ~33 on crypto with <1-point variation across adversarial conditions, exposing fixed non-adaptive strategies; (2) extended thinking helps retrieval (+26 points) but has zero impact on trading (+0.3 crypto, -0.1 options). These findings reveal that current agents lack genuine market adaptation, underscoring the need for performance-grounded evaluation in finance.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "TraderBench is a new benchmark designed to evaluate AI agents in finance, addressing the limitations of static benchmarks and LLM-based judges. It combines expert-verified tasks with dynamic trading simulations, focusing on metrics like Sharpe ratio and returns. In testing, 8 out of 13 models scored around 33 in crypto trading, revealing their inability to adapt to changing market conditions. This matters now as it highlights the need for more effective evaluation methods in AI-driven trading.",
+  "why_it_matters": [
+    "Traders and financial analysts could benefit from more reliable AI evaluations, helping them make better-informed decisions.",
+    "The introduction of TraderBench could signal a shift in how financial AI is assessed, moving towards performance-based evaluations that reflect real-world scenarios."
+  ],
+  "lenses": {
+    "eli12": "TraderBench is like a new game that tests players not just on their knowledge but also on how well they adapt to changing rules. This benchmark helps ensure that AI agents in finance are evaluated based on real performance, not just theory. For everyday people, this means that financial tools could become smarter, leading to better investment choices.",
+    "pm": "For product managers and founders, TraderBench offers a clearer framework for assessing AI tools in finance, focusing on real-world performance metrics. This could lead to more efficient trading solutions that adapt to market changes, potentially lowering costs for users. A practical implication is that developing AI with TraderBench in mind could enhance user trust and engagement.",
+    "engineer": "TraderBench combines static and dynamic evaluations to assess AI agents' performance in finance. It evaluates models based on metrics like Sharpe ratio and drawdown, eliminating variability from judges. Notably, the study found that while extended thinking improved knowledge retrieval by 26 points, it had negligible impact on actual trading performance, indicating a gap in market adaptability among current AI agents."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-04T04:54:35.365Z",
+  "updated_at": "2026-03-04T04:54:35.365Z",
+  "processing_order": 1772600075366
+}

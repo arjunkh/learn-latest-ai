@@ -1,0 +1,31 @@
+{
+  "content_hash": "8719bec50646ea38178115894cd191971d57281272744bf569b665ef6b9cc41b",
+  "share_id": "hwmfht",
+  "title": "How Well Do Multimodal Models Reason on ECG Signals?",
+  "optimized_headline": "Exploring Multimodal Models: Their Reasoning Skills with ECG Signals Unveiled",
+  "url": "https://arxiv.org/abs/2603.00312",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-03T05:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.00312v1 Announce Type: new \nAbstract: While multimodal large language models offer a promising solution to the \"black box\" nature of health AI by generating interpretable reasoning traces, verifying the validity of these traces remains a critical challenge. Existing evaluation methods are either unscalable, relying on manual clinician review, or superficial, utilizing proxy metrics (e.g",
+  "raw_body": "arXiv:2603.00312v1 Announce Type: new \nAbstract: While multimodal large language models offer a promising solution to the \"black box\" nature of health AI by generating interpretable reasoning traces, verifying the validity of these traces remains a critical challenge. Existing evaluation methods are either unscalable, relying on manual clinician review, or superficial, utilizing proxy metrics (e.g. QA) that fail to capture the semantic correctness of clinical logic. In this work, we introduce a reproducible framework for evaluating reasoning in ECG signals. We propose decomposing reasoning into two distinct, components: (i) Perception, the accurate identification of patterns within the raw signal, and (ii) Deduction, the logical application of domain knowledge to those patterns. To evaluate Perception, we employ an agentic framework that generates code to empirically verify the temporal structures described in the reasoning trace. To evaluate Deduction, we measure the alignment of the model's logic against a structured database of established clinical criteria in a retrieval-based approach. This dual-verification method enables the scalable assessment of \"true\" reasoning capabilities.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces a framework to evaluate how well multimodal models reason using ECG signals. It highlights two key components of reasoning: Perception, which identifies patterns in the signals, and Deduction, which applies clinical knowledge. The framework aims to overcome existing evaluation methods that are either too manual or superficial. This matters now as it could enhance the reliability of AI in healthcare, making it easier to understand and trust AI-generated insights.",
+  "why_it_matters": [
+    "Healthcare professionals could benefit from more reliable AI tools, which would improve diagnostic accuracy and patient care.",
+    "This approach could signal a shift toward more transparent AI systems in medicine, fostering greater trust and adoption of technology."
+  ],
+  "lenses": {
+    "eli12": "This research looks at how AI can better understand heart signals, which is crucial for diagnosing heart issues. By breaking down reasoning into two parts—seeing patterns and using medical knowledge—it helps ensure AI is making sense. This is important for everyone, as clearer AI insights could lead to better health outcomes.",
+    "pm": "For product managers, this framework highlights a user need for trustworthy AI in healthcare. It emphasizes the importance of scalable evaluation methods that could reduce costs and improve efficiency in developing AI tools. A practical implication is that incorporating this dual-verification could enhance product credibility in the medical field.",
+    "engineer": "This study proposes a dual-verification framework for evaluating ECG reasoning in multimodal models. It separates reasoning into Perception, which identifies temporal patterns, and Deduction, which checks alignment with clinical criteria. This structured approach could improve the scalability of validating AI's reasoning capabilities in healthcare applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-04T04:54:46.435Z",
+  "updated_at": "2026-03-04T04:54:46.435Z",
+  "processing_order": 1772600086438
+}
