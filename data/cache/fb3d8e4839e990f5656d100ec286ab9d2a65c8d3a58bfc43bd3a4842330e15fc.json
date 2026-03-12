@@ -1,0 +1,31 @@
+{
+  "content_hash": "fb3d8e4839e990f5656d100ec286ab9d2a65c8d3a58bfc43bd3a4842330e15fc",
+  "share_id": "bsegji",
+  "title": "Beyond Scalars: Evaluating and Understanding LLM Reasoning via Geometric Progress and Stability",
+  "optimized_headline": "Unraveling LLM Reasoning: Insights from Geometric Progress and Stability Analysis",
+  "url": "https://arxiv.org/abs/2603.10384",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-12T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.10384v1 Announce Type: new \nAbstract: Evaluating LLM reliability via scalar probabilities often fails to capture the structural dynamics of reasoning. We introduce TRACED, a framework that assesses reasoning quality through theoretically grounded geometric kinematics. By decomposing reasoning traces into Progress (displacement) and Stability (curvature), we reveal a distinct topological",
+  "raw_body": "arXiv:2603.10384v1 Announce Type: new \nAbstract: Evaluating LLM reliability via scalar probabilities often fails to capture the structural dynamics of reasoning. We introduce TRACED, a framework that assesses reasoning quality through theoretically grounded geometric kinematics. By decomposing reasoning traces into Progress (displacement) and Stability (curvature), we reveal a distinct topological divergence: correct reasoning manifests as high-progress, stable trajectories, whereas hallucinations are characterized by low-progress, unstable patterns (stalled displacement with high curvature fluctuations). Leveraging these signatures, our probabilistic framework achieves competitive performance and superior robustness across diverse benchmarks. Crucially, TRACED bridges geometry and cognition by mapping high curvature to ''Hesitation Loops'' and displacement to ''Certainty Accumulation'', offering a physical lens to decode the internal dynamics of machine thought.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called TRACED has been introduced to evaluate the reasoning quality of large language models (LLMs). Instead of relying solely on scalar probabilities, TRACED uses geometric kinematics to analyze reasoning through two key metrics: Progress and Stability. This method shows that effective reasoning has high progress and low curvature, while errors, or hallucinations, display low progress and high fluctuations. This approach could enhance our understanding of LLMs and improve their reliability in real-world applications.",
+  "why_it_matters": [
+    "Researchers and developers could gain deeper insights into LLM reasoning, potentially leading to more reliable AI systems.",
+    "This framework indicates a shift towards more nuanced evaluations of AI, moving beyond simple probability metrics to understand reasoning dynamics."
+  ],
+  "lenses": {
+    "eli12": "The TRACED framework helps us understand how AI thinks by analyzing its reasoning patterns like a map of its journey. Think of Progress as how far it travels and Stability as how smoothly it navigates. This matters because it could make AI systems more reliable and trustworthy for everyday tasks like answering questions or assisting with decisions.",
+    "pm": "For product managers and founders, TRACED offers a new way to assess LLM performance, focusing on the quality of reasoning rather than just output accuracy. This could help address user needs for more reliable AI interactions, ultimately reducing costs associated with errors. Implementing this could lead to more robust AI features that users can depend on.",
+    "engineer": "TRACED evaluates LLM reasoning by breaking down its performance into Progress (displacement) and Stability (curvature), revealing distinct patterns in reasoning quality. High-progress, stable trajectories indicate correct reasoning, while low-progress, high-curvature patterns signal hallucinations. This probabilistic framework demonstrates competitive performance across benchmarks, emphasizing the importance of understanding internal dynamics in AI reasoning."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-12T05:02:43.675Z",
+  "updated_at": "2026-03-12T05:02:43.675Z",
+  "processing_order": 1773291763678
+}
