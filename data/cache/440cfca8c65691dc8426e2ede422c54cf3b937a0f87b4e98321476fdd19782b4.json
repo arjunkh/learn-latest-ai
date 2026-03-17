@@ -1,0 +1,31 @@
+{
+  "content_hash": "440cfca8c65691dc8426e2ede422c54cf3b937a0f87b4e98321476fdd19782b4",
+  "share_id": "bzrqp8",
+  "title": "Benchmarking Zero-Shot Reasoning Approaches for Error Detection in Solidity Smart Contracts",
+  "optimized_headline": "Evaluating Zero-Shot Reasoning Methods for Detecting Errors in Solidity Contracts",
+  "url": "https://arxiv.org/abs/2603.13239",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.13239v1 Announce Type: new \nAbstract: Smart contracts play a central role in blockchain systems by encoding financial and operational logic. Still, their susceptibility to subtle security flaws poses significant risks of financial loss and erosion of trust. LLMs create new opportunities for automating vulnerability detection, yet the effectiveness of different prompting strategies and m",
+  "raw_body": "arXiv:2603.13239v1 Announce Type: new \nAbstract: Smart contracts play a central role in blockchain systems by encoding financial and operational logic. Still, their susceptibility to subtle security flaws poses significant risks of financial loss and erosion of trust. LLMs create new opportunities for automating vulnerability detection, yet the effectiveness of different prompting strategies and model choices in real-world contexts remains uncertain. This paper evaluates state-of-the-art LLMs on Solidity smart contract analysis using a balanced dataset of 400 contracts under two tasks: (i) Error Detection, where the model performs binary classification to decide whether a contract is vulnerable, and (ii) Error Classification, where the model must assign the predicted issue to a specific vulnerability category. Models are evaluated using zero-shot prompting strategies, including zero-shot, zero-shot Chain-of-Thought (CoT), and zero-shot Tree-of-Thought (ToT). In the Error Detection task, CoT and ToT substantially increase recall (often approaching $\\approx 95$--$99\\%$), but typically reduce precision, indicating a more sensitive decision regime with more false positives. In the Error Classification task, Claude 3 Opus attains the best Weighted F1-score (90.8) under the ToT prompt, followed closely by its CoT.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated large language models (LLMs) for detecting vulnerabilities in Solidity smart contracts, which are crucial for blockchain systems. Using a dataset of 400 contracts, the study found that advanced prompting strategies like Chain-of-Thought (CoT) and Tree-of-Thought (ToT) significantly improved recall rates to nearly 95-99% in error detection. However, this often led to reduced precision, meaning more false positives. This research highlights the potential and challenges of using AI for smart contract security, an area of growing importance.",
+  "why_it_matters": [
+    "Developers and organizations using blockchain technology need reliable tools to identify vulnerabilities, as flaws can lead to significant financial losses.",
+    "The findings indicate a shift towards using AI for security in blockchain, suggesting that automated solutions could become standard practice in the industry."
+  ],
+  "lenses": {
+    "eli12": "This study looks at how AI can help find flaws in smart contracts, which are like computer programs that manage money on the blockchain. They tested different methods to see which worked best, and found that some AI strategies could catch almost all errors, but might also flag too many false alarms. This matters because as blockchain use grows, finding reliable ways to ensure security becomes increasingly important for everyone involved.",
+    "pm": "For product managers and founders, this research underscores the need for effective security solutions in blockchain applications. The ability to detect vulnerabilities accurately could reduce risks and enhance user trust. However, the trade-off between recall and precision highlights the importance of refining AI tools to balance efficiency and reliability in vulnerability detection.",
+    "engineer": "The paper evaluates LLMs like Claude 3 Opus on their ability to analyze Solidity smart contracts, focusing on error detection and classification tasks. Using zero-shot prompting strategies, the study found that CoT and ToT approaches significantly boosted recall rates, achieving nearly 95-99%. However, this came at the cost of precision, leading to more false positives, which engineers need to consider when implementing these models in real-world applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-17T05:09:31.300Z",
+  "updated_at": "2026-03-17T05:09:31.300Z",
+  "processing_order": 1773724171302
+}

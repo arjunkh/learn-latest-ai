@@ -1,0 +1,31 @@
+{
+  "content_hash": "383657944a59b5e1ef9a50c8956442dbdefeac2b4494f1de042d19499f7e00ce",
+  "share_id": "dgfbnh",
+  "title": "A Dual-Path Generative Framework for Zero-Day Fraud Detection in Banking Systems",
+  "optimized_headline": "Discover a New Dual-Path Approach to Detect Zero-Day Banking Fraud",
+  "url": "https://arxiv.org/abs/2603.13237",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.13237v1 Announce Type: new \nAbstract: High-frequency banking environments face a critical trade-off between low-latency fraud detection and the regulatory explainability demanded by GDPR. Traditional rule-based and discriminative models struggle with \"zero-day\" attacks due to extreme class imbalance and the lack of historical precedents. This paper proposes a Dual-Path Generative Framew",
+  "raw_body": "arXiv:2603.13237v1 Announce Type: new \nAbstract: High-frequency banking environments face a critical trade-off between low-latency fraud detection and the regulatory explainability demanded by GDPR. Traditional rule-based and discriminative models struggle with \"zero-day\" attacks due to extreme class imbalance and the lack of historical precedents. This paper proposes a Dual-Path Generative Framework that decouples real-time anomaly detection from offline adversarial training. The architecture employs a Variational Autoencoder (VAE) to establish a legitimate transaction manifold based on reconstruction error, ensuring <50ms inference latency. In parallel, an asynchronous Wasserstein GAN with Gradient Penalty (WGAN-GP) synthesizes high-entropy fraudulent scenarios to stress-test the detection boundaries. Crucially, to address the non-differentiability of discrete banking data (e.g., Merchant Category Codes), we integrate a Gumbel-Softmax estimator. Furthermore, we introduce a trigger-based explainability mechanism where SHAP (Shapley Additive Explanations) is activated only for high-uncertainty transactions, reconciling the computational cost of XAI with real-time throughput requirements.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new paper presents a Dual-Path Generative Framework to improve fraud detection in high-frequency banking environments. This framework uses a Variational Autoencoder for real-time anomaly detection, achieving under 50 milliseconds of inference latency. It also employs a Wasserstein GAN to create synthetic fraud scenarios for testing. This approach is significant now as it balances the need for quick detection with regulatory requirements for explainability, addressing a critical challenge in modern banking.",
+  "why_it_matters": [
+    "Banks can enhance fraud detection speeds while meeting GDPR regulations, benefiting both security teams and customers. This framework could lead to quicker responses to fraudulent activities.",
+    "The approach signals a shift towards more adaptive and explainable AI in finance, potentially setting new standards for fraud detection technology across the industry."
+  ],
+  "lenses": {
+    "eli12": "This new framework helps banks detect fraud faster and more accurately. Think of it like a security guard who can quickly identify suspicious behavior while also being able to explain their decisions. This matters because it could protect customers' money while keeping banks compliant with laws.",
+    "pm": "For product managers and founders, this framework meets user needs for quick fraud detection without sacrificing transparency. The low-latency detection could reduce costs associated with fraud losses, while the explainability feature enhances user trust. Implementing such technology could give companies a competitive edge in the market.",
+    "engineer": "The Dual-Path Generative Framework combines a Variational Autoencoder for real-time detection and a Wasserstein GAN for stress-testing fraud scenarios. It maintains under 50ms latency while addressing data challenges with a Gumbel-Softmax estimator. This innovative architecture could significantly improve the robustness of fraud detection systems in banking."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-17T05:09:20.516Z",
+  "updated_at": "2026-03-17T05:09:20.516Z",
+  "processing_order": 1773724160517
+}
