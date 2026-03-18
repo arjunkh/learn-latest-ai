@@ -1,0 +1,31 @@
+{
+  "content_hash": "2494a78cf13ff04d9d4ef65c5e4b84760cafa6799a6348501a42ec6c539e1690",
+  "share_id": "adatmw",
+  "title": "AIDABench: AI Data Analytics Benchmark",
+  "optimized_headline": "Discover AIDABench: The New Standard for AI Data Analytics Performance",
+  "url": "https://arxiv.org/abs/2603.15636",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.15636v1 Announce Type: new \nAbstract: As AI-driven document understanding and processing tools become increasingly prevalent in real-world applications, the need for rigorous evaluation standards has grown increasingly urgent. Existing benchmarks and evaluations often focus on isolated capabilities or simplified scenarios, failing to capture the end-to-end task effectiveness required in",
+  "raw_body": "arXiv:2603.15636v1 Announce Type: new \nAbstract: As AI-driven document understanding and processing tools become increasingly prevalent in real-world applications, the need for rigorous evaluation standards has grown increasingly urgent. Existing benchmarks and evaluations often focus on isolated capabilities or simplified scenarios, failing to capture the end-to-end task effectiveness required in practical settings. To address this gap, we introduce AIDABench, a comprehensive benchmark for evaluating AI systems on complex data analytics tasks in an end-to-end manner. AIDABench encompasses 600+ diverse document analysis tasks across three core capability dimensions: question answering, data visualization, and file generation. These tasks are grounded in realistic scenarios involving heterogeneous data types, including spreadsheets, databases, financial reports, and operational records, and reflect analytical demands across diverse industries and job functions. Notably, the tasks in AIDABench are sufficiently challenging that even human experts require 1-2 hours per question when assisted by AI tools, underscoring the benchmark's difficulty and real-world complexity. We evaluate 11 state-of-the-art models on AIDABench, spanning both proprietary (e.g., Claude Sonnet 4.5, Gemini 3 Pro Preview) and open-source (e.g., Qwen3-Max-2026-01-23-Thinking) families. Our results reveal that complex, real-world data analytics tasks remain a significant challenge for current AI systems, with the best-performing model achieving only 59.43% pass-at-1. We provide a detailed analysis of failure modes across each capability dimension and identify key challenges for future research. AIDABench offers a principled reference for enterprise procurement, tool selection, and model optimization, and is publicly available at https://github.com/MichaelYang-lyx/AIDABench.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "AIDABench has been introduced as a new benchmark for evaluating AI systems on complex data analytics tasks. It includes over 600 tasks focused on question answering, data visualization, and file generation, reflecting real-world scenarios. Even AI-assisted human experts take 1-2 hours per question, highlighting the benchmark's complexity. This matters now as it provides a rigorous standard for assessing AI tools, helping businesses make informed decisions about their AI investments.",
+  "why_it_matters": [
+    "Businesses using AI for document processing will benefit from a clearer understanding of tool effectiveness, improving decision-making.",
+    "AIDABench signals a shift towards more comprehensive evaluation methods in the AI industry, promoting better performance and reliability."
+  ],
+  "lenses": {
+    "eli12": "AIDABench is like a tough exam for AI systems, testing them on real-world tasks like analyzing financial reports and databases. It’s important because it helps ensure that the AI tools we use are truly effective in practical situations, not just in theory. This means better results for everyday tasks like managing finances or organizing data, which can save time and improve accuracy.",
+    "pm": "For product managers, AIDABench highlights the importance of robust evaluation standards for AI tools. It addresses user needs for reliable performance in complex data tasks, indicating that current models still face challenges. This could inform product development and marketing strategies, ensuring offerings are aligned with real-world demands.",
+    "engineer": "AIDABench evaluates 11 state-of-the-art models on complex tasks, with the best achieving only 59.43% pass-at-1, indicating significant challenges remain. The benchmark covers diverse document types and tasks, emphasizing end-to-end effectiveness. This data can guide engineers in understanding model limitations and areas for improvement in AI systems."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-18T05:13:40.362Z",
+  "updated_at": "2026-03-18T05:13:40.362Z",
+  "processing_order": 1773810820364
+}

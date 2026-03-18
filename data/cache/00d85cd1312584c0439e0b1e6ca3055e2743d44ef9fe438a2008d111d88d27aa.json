@@ -1,0 +1,31 @@
+{
+  "content_hash": "00d85cd1312584c0439e0b1e6ca3055e2743d44ef9fe438a2008d111d88d27aa",
+  "share_id": "tca5c1",
+  "title": "The Comprehension-Gated Agent Economy: A Robustness-First Architecture for AI Economic Agency",
+  "optimized_headline": "Exploring a New Architecture for AI: The Comprehension-Gated Agent Economy",
+  "url": "https://arxiv.org/abs/2603.15639",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.15639v1 Announce Type: new \nAbstract: AI agents are increasingly granted economic agency (executing trades, managing budgets, negotiating contracts, and spawning sub-agents), yet current frameworks gate this agency on capability benchmarks that are empirically uncorrelated with operational robustness. We introduce the Comprehension-Gated Agent Economy (CGAE), a formal architecture in wh",
+  "raw_body": "arXiv:2603.15639v1 Announce Type: new \nAbstract: AI agents are increasingly granted economic agency (executing trades, managing budgets, negotiating contracts, and spawning sub-agents), yet current frameworks gate this agency on capability benchmarks that are empirically uncorrelated with operational robustness. We introduce the Comprehension-Gated Agent Economy (CGAE), a formal architecture in which an agent's economic permissions are upper-bounded by a verified comprehension function derived from adversarial robustness audits. The gating mechanism operates over three orthogonal robustness dimensions: constraint compliance (measured by CDCT), epistemic integrity (measured by DDFT), and behavioral alignment (measured by AGT), with intrinsic hallucination rates serving as a cross-cutting diagnostic. We define a weakest-link gate function that maps robustness vectors to discrete economic tiers, and prove three properties of the resulting system: (1) bounded economic exposure, ensuring maximum financial liability is a function of verified robustness; (2) incentive-compatible robustness investment, showing rational agents maximize profit by improving robustness rather than scaling capability alone; and (3) monotonic safety scaling, demonstrating that aggregate system safety does not decrease as the economy grows. The architecture includes temporal decay and stochastic re-auditing mechanisms that prevent post-certification drift. CGAE provides the first formal bridge between empirical AI robustness evaluation and economic governance, transforming safety from a regulatory burden into a competitive advantage.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The Comprehension-Gated Agent Economy (CGAE) introduces a new framework for AI agents with economic agency, focusing on operational robustness rather than just capability benchmarks. This system uses a comprehension function to limit economic permissions based on three dimensions of robustness. It ensures that agents are financially liable only to the extent of their verified robustness and encourages them to invest in safety for profit. This approach could reshape how AI agents operate in economic contexts, emphasizing safety alongside capability.",
+  "why_it_matters": [
+    "This framework could enhance safety for businesses using AI agents, as it ties economic permissions directly to verified operational robustness.",
+    "CGAE signals a shift in AI governance, where safety becomes a competitive advantage rather than merely a regulatory requirement."
+  ],
+  "lenses": {
+    "eli12": "The CGAE is like a safety net for AI agents that manage money and contracts. Instead of letting them act freely based only on skills, it checks their understanding and safety first. This could lead to more trustworthy AI in everyday transactions, protecting businesses and consumers alike.",
+    "pm": "For product managers, CGAE highlights the importance of building AI agents that not only perform tasks but also demonstrate robust safety. This could reduce risks and improve user trust, as agents will be incentivized to enhance their safety measures to unlock greater economic permissions. Investing in safety could lead to better market positioning.",
+    "engineer": "CGAE employs a unique gating mechanism based on three robustness dimensions: constraint compliance, epistemic integrity, and behavioral alignment. It includes a weakest-link gate function that correlates economic permissions with verified robustness, ensuring bounded financial exposure. This formal architecture emphasizes the importance of operational robustness in AI systems, potentially leading to safer economic interactions."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-18T05:13:49.994Z",
+  "updated_at": "2026-03-18T05:13:49.994Z",
+  "processing_order": 1773810829997
+}

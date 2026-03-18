@@ -1,0 +1,31 @@
+{
+  "content_hash": "44f6af50e7ffc7cb9235ca95ccc0b312730ab110497f48856d3bfd2e890e15bf",
+  "share_id": "nlqb3c",
+  "title": "Neural-Symbolic Logic Query Answering in Non-Euclidean Space",
+  "optimized_headline": "Unlocking Neural-Symbolic Logic: Answering Queries in Non-Euclidean Spaces",
+  "url": "https://arxiv.org/abs/2603.15633",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.15633v1 Announce Type: new \nAbstract: Answering complex first-order logic (FOL) queries on knowledge graphs is essential for reasoning. Symbolic methods offer interpretability but struggle with incomplete graphs, while neural approaches generalize better but lack transparency. Neural-symbolic models aim to integrate both strengths but often fail to capture the hierarchical structure of ",
+  "raw_body": "arXiv:2603.15633v1 Announce Type: new \nAbstract: Answering complex first-order logic (FOL) queries on knowledge graphs is essential for reasoning. Symbolic methods offer interpretability but struggle with incomplete graphs, while neural approaches generalize better but lack transparency. Neural-symbolic models aim to integrate both strengths but often fail to capture the hierarchical structure of logical queries, limiting their effectiveness. We propose HYQNET, a neural-symbolic model for logic query reasoning that fully leverages hyperbolic space. HYQNET decomposes FOL queries into relation projections and logical operations over fuzzy sets, enhancing interpretability. To address missing links, it employs a hyperbolic GNN-based approach for knowledge graph completion in hyperbolic space, effectively embedding the recursive query tree while preserving structural dependencies. By utilizing hyperbolic representations, HYQNET captures the hierarchical nature of logical projection reasoning more effectively than Euclidean-based approaches. Experiments on three benchmark datasets demonstrate that HYQNET achieves strong performance, highlighting the advantages of reasoning in hyperbolic space.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced HYQNET, a new neural-symbolic model designed to improve logic query answering on knowledge graphs. Unlike traditional models, HYQNET leverages hyperbolic space to better capture hierarchical structures, enhancing interpretability and addressing incomplete graphs. The model decomposes complex queries into manageable parts and uses a hyperbolic GNN for knowledge graph completion. This innovation is significant as it could lead to more effective reasoning in AI applications that rely on complex data relationships.",
+  "why_it_matters": [
+    "HYQNET could provide clearer insights for data scientists and AI developers dealing with incomplete knowledge graphs, improving decision-making. ",
+    "This model represents a shift towards more interpretable AI systems, potentially influencing how businesses utilize AI for complex reasoning tasks."
+  ],
+  "lenses": {
+    "eli12": "HYQNET is like a smart assistant that not only finds answers but also explains how it got them. By using hyperbolic space, it understands relationships better than traditional methods. This could help everyday people by making AI tools more reliable and understandable when dealing with complex information.",
+    "pm": "For product managers, HYQNET addresses the user need for clarity in AI reasoning, reducing confusion over how decisions are made. It could lead to more efficient systems that handle incomplete data, allowing for better user experiences. This means products could become more intuitive and trustworthy.",
+    "engineer": "HYQNET employs a hyperbolic GNN to enhance knowledge graph completion, effectively embedding recursive query trees while maintaining structural dependencies. By outperforming Euclidean models in hierarchical reasoning tasks, it demonstrates the potential of hyperbolic representations in neural-symbolic systems. This approach could open new avenues for developing interpretable AI solutions."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-18T05:13:21.529Z",
+  "updated_at": "2026-03-18T05:13:21.529Z",
+  "processing_order": 1773810801529
+}
