@@ -1,0 +1,31 @@
+{
+  "content_hash": "b46a9e0eeb762badab948db3ecd387393d1be0561459cff4be505dbed6c18a39",
+  "share_id": "hcar8q",
+  "title": "How Clued up are LLMs? Evaluating Multi-Step Deductive Reasoning in a Text-Based Game Environment",
+  "optimized_headline": "Evaluating LLMs: Can They Master Multi-Step Deductive Reasoning in Games?",
+  "url": "https://arxiv.org/abs/2603.17169",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-19T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.17169v1 Announce Type: new \nAbstract: Deducing whodunit proves challenging for LLM agents. In this paper, we implement a text-based multi-agent version of the classic board game Clue as a rule-based testbed for evaluating multi-step deductive reasoning, with six agents drawn from GPT-4o-mini and Gemini-2.5-Flash. We further investigate whether fine-tuning on structured logic puzzles tra",
+  "raw_body": "arXiv:2603.17169v1 Announce Type: new \nAbstract: Deducing whodunit proves challenging for LLM agents. In this paper, we implement a text-based multi-agent version of the classic board game Clue as a rule-based testbed for evaluating multi-step deductive reasoning, with six agents drawn from GPT-4o-mini and Gemini-2.5-Flash. We further investigate whether fine-tuning on structured logic puzzles transfers to improved in-game reasoning and gameplay. Across 18 simulated games, agents achieve only four correct wins, indicating difficulty in maintaining consistent deductive reasoning over the course of a full game. Additionally, we find that fine-tuning does not reliably improve performance and, in some cases, appears to increase reasoning volume without improving reasoning precision.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A study evaluated how well large language models (LLMs) handle multi-step deductive reasoning using a text-based version of the game Clue. Six agents from GPT-4o-mini and Gemini-2.5-Flash played 18 games, but they only achieved four correct wins, highlighting their struggle with consistent reasoning. Fine-tuning on structured logic puzzles didn't reliably enhance their performance, sometimes even worsening reasoning precision. This matters as it reveals limitations in LLMs’ reasoning capabilities, which could impact their use in complex decision-making tasks.",
+  "why_it_matters": [
+    "This finding is crucial for developers who rely on LLMs for reasoning tasks, as it shows a gap in their performance. They may need to reconsider how they implement these models in real-world applications.",
+    "On a broader scale, this research indicates that while LLMs are advancing, they still face significant challenges in logical reasoning, suggesting the need for further innovation in AI models."
+  ],
+  "lenses": {
+    "eli12": "This study looked at how well AI can solve puzzles like in the game Clue. The AI agents had a tough time figuring out who did it, winning only four out of 18 games. This shows that while AI is smart, it still struggles with complex reasoning tasks, which affects how we might use it in everyday life.",
+    "pm": "For product managers, this research highlights a clear user need for AI that can perform complex reasoning. Since the current models struggle with deductive tasks, there’s an opportunity to innovate and improve these capabilities, potentially leading to more reliable AI applications in decision-making processes.",
+    "engineer": "From a technical perspective, the study utilized six agents from GPT-4o-mini and Gemini-2.5-Flash in a multi-agent environment to assess deductive reasoning. Despite fine-tuning on structured logic puzzles, the agents only won four games out of 18, demonstrating a significant gap in their reasoning consistency. This suggests that current models may need more sophisticated training methods to enhance their logical reasoning abilities."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-19T05:10:07.034Z",
+  "updated_at": "2026-03-19T05:10:07.034Z",
+  "processing_order": 1773897007037
+}
