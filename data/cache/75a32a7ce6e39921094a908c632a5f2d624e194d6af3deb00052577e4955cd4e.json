@@ -1,0 +1,31 @@
+{
+  "content_hash": "75a32a7ce6e39921094a908c632a5f2d624e194d6af3deb00052577e4955cd4e",
+  "share_id": "emst9a",
+  "title": "Environment Maps: Structured Environmental Representations for Long-Horizon Agents",
+  "optimized_headline": "\"Exploring Long-Horizon Agents with Innovative Structured Environmental Maps\"",
+  "url": "https://arxiv.org/abs/2603.23610",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-27T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.23610v2 Announce Type: new \nAbstract: Although large language models (LLMs) have advanced rapidly, robust automation of complex software workflows remains an open problem. In long-horizon settings, agents frequently suffer from cascading errors and environmental stochasticity; a single misstep in a dynamic interface can lead to task failure, resulting in hallucinations or trial-and-erro",
+  "raw_body": "arXiv:2603.23610v2 Announce Type: new \nAbstract: Although large language models (LLMs) have advanced rapidly, robust automation of complex software workflows remains an open problem. In long-horizon settings, agents frequently suffer from cascading errors and environmental stochasticity; a single misstep in a dynamic interface can lead to task failure, resulting in hallucinations or trial-and-error. This paper introduces $\\textit{Environment Maps}$: a persistent, agent-agnostic representation that mitigates these failures by consolidating heterogeneous evidence, such as screen recordings and execution traces, into a structured graph. The representation consists of four core components: (1) Contexts (abstracted locations), (2) Actions (parameterized affordances), (3) Workflows (observed trajectories), and (4) Tacit Knowledge (domain definitions and reusable procedures). We evaluate this framework on the WebArena benchmark across five domains. Agents equipped with environment maps achieve a 28.2% success rate, nearly doubling the performance of baselines limited to session-bound context (14.2%) and outperforming agents that have access to the raw trajectory data used to generate the environment maps (23.3%). By providing a structured interface between the model and the environment, Environment Maps establish a persistent foundation for long-horizon planning that is human-interpretable, editable, and incrementally refinable.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach called Environment Maps aims to improve how AI agents handle complex tasks over long periods. This method creates a structured graph from various data sources, leading to a success rate of 28.2% in task completion, almost doubling the previous baseline of 14.2%. By offering a clearer representation of the environment, it helps reduce errors caused by missteps. This development is crucial as it addresses ongoing challenges in automating complex workflows.",
+  "why_it_matters": [
+    "This could significantly benefit developers and businesses relying on automation, reducing errors in software workflows.",
+    "The method indicates a shift towards more reliable AI systems that can operate effectively in dynamic environments, enhancing overall efficiency."
+  ],
+  "lenses": {
+    "eli12": "Environment Maps are like a detailed map for a traveler, showing not just the roads but also the landmarks and routes they can take. This helps AI agents navigate complex tasks without getting lost. For everyday people, this means better automation in software, leading to fewer mistakes and smoother operations.",
+    "pm": "For product managers and founders, Environment Maps could enhance user experience by ensuring that AI systems perform reliably over time. This method could reduce costs associated with errors and inefficiencies in software workflows. It’s practical for developing applications that require long-term planning and execution.",
+    "engineer": "Technically, Environment Maps utilize a structured graph composed of contexts, actions, workflows, and tacit knowledge to create a persistent representation for AI agents. In tests, agents using this framework achieved a 28.2% success rate, significantly outperforming those with limited session-bound context (14.2%) and even those with raw trajectory data (23.3%). This indicates a strong potential for improving long-horizon planning in AI."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-27T05:22:53.570Z",
+  "updated_at": "2026-03-27T05:22:53.570Z",
+  "processing_order": 1774588973571
+}
