@@ -1,0 +1,31 @@
+{
+  "content_hash": "df17ace78cf012407a0df70e64efea7b4a46da3a034e164d585cbf1cb70ea5a4",
+  "share_id": "bubvs1",
+  "title": "BeSafe-Bench: Unveiling Behavioral Safety Risks of Situated Agents in Functional Environments",
+  "optimized_headline": "\"Exploring Behavioral Safety Risks of Situated Agents in Real-World Settings\"",
+  "url": "https://arxiv.org/abs/2603.25747",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.25747v1 Announce Type: new \nAbstract: The rapid evolution of Large Multimodal Models (LMMs) has enabled agents to perform complex digital and physical tasks, yet their deployment as autonomous decision-makers introduces substantial unintentional behavioral safety risks. However, the absence of a comprehensive safety benchmark remains a major bottleneck, as existing evaluations rely on l",
+  "raw_body": "arXiv:2603.25747v1 Announce Type: new \nAbstract: The rapid evolution of Large Multimodal Models (LMMs) has enabled agents to perform complex digital and physical tasks, yet their deployment as autonomous decision-makers introduces substantial unintentional behavioral safety risks. However, the absence of a comprehensive safety benchmark remains a major bottleneck, as existing evaluations rely on low-fidelity environments, simulated APIs, or narrowly scoped tasks. To address this gap, we present BeSafe-Bench (BSB), a benchmark for exposing behavioral safety risks of situated agents in functional environments, covering four representative domains: Web, Mobile, Embodied VLM, and Embodied VLA. Using functional environments, we construct a diverse instruction space by augmenting tasks with nine categories of safety-critical risks, and adopt a hybrid evaluation framework that combines rule-based checks with LLM-as-a-judge reasoning to assess real environmental impacts. Evaluating 13 popular agents reveals a concerning trend: even the best-performing agent completes fewer than 40% of tasks while fully adhering to safety constraints, and strong task performance frequently coincides with severe safety violations. These findings underscore the urgent need for improved safety alignment before deploying agentic systems in real-world settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced BeSafe-Bench (BSB), a new benchmark that identifies behavioral safety risks in autonomous agents, particularly in real-world contexts. Current evaluations often fall short, using low-fidelity environments that don't capture real-life complexities. In tests, even the top-performing agent managed less than 40% task completion while adhering to safety protocols. This highlights a critical gap in ensuring the safe deployment of these advanced models, which is increasingly important as they become more integrated into daily tasks.",
+  "why_it_matters": [
+    "Developers and companies using autonomous agents need to understand these risks to protect users and ensure compliance with safety standards.",
+    "This benchmark could shift industry standards, prompting a reevaluation of how autonomous agents are tested and deployed, potentially leading to safer technologies."
+  ],
+  "lenses": {
+    "eli12": "BeSafe-Bench is like a safety checklist for robots and AI programs. It helps identify risks when these agents perform tasks in real-world settings. The benchmark shows that even the best AI struggles to follow safety rules while getting tasks done. This matters because it can help improve how we use AI in everyday life, making it safer for everyone.",
+    "pm": "For product managers, BeSafe-Bench emphasizes the importance of safety in deploying autonomous agents. Understanding behavioral risks can lead to better user experiences and compliance with regulations. Companies might need to invest in improved safety evaluations, which could increase initial costs but ultimately enhance product reliability and user trust.",
+    "engineer": "BeSafe-Bench evaluates 13 popular agents, revealing that the best performer adheres to safety constraints less than 40% of the time. This benchmark utilizes a hybrid evaluation framework, combining rule-based checks with LLM-as-a-judge reasoning. These findings indicate a critical need for enhanced safety alignment in real-world applications of LMMs, highlighting the importance of rigorous testing in functional environments."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-30T05:37:31.221Z",
+  "updated_at": "2026-03-30T05:37:31.221Z",
+  "processing_order": 1774849051221
+}

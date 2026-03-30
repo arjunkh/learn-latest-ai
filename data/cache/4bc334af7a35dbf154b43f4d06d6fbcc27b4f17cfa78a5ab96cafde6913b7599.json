@@ -1,0 +1,31 @@
+{
+  "content_hash": "4bc334af7a35dbf154b43f4d06d6fbcc27b4f17cfa78a5ab96cafde6913b7599",
+  "share_id": "all2yb",
+  "title": "AutoB2G: A Large Language Model-Driven Agentic Framework For Automated Building-Grid Co-Simulation",
+  "optimized_headline": "Discover AutoB2G: A New Framework for Automated Building-Grid Co-Simulation",
+  "url": "https://arxiv.org/abs/2603.26005",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.26005v1 Announce Type: new \nAbstract: The growing availability of building operational data motivates the use of reinforcement learning (RL), which can learn control policies directly from data and cope with the complexity and uncertainty of large-scale building clusters. However, most existing simulation environments prioritize building-side performance metrics and lack systematic eval",
+  "raw_body": "arXiv:2603.26005v1 Announce Type: new \nAbstract: The growing availability of building operational data motivates the use of reinforcement learning (RL), which can learn control policies directly from data and cope with the complexity and uncertainty of large-scale building clusters. However, most existing simulation environments prioritize building-side performance metrics and lack systematic evaluation of grid-level impacts, while their experimental workflows still rely heavily on manual configuration and substantial programming expertise. Therefore, this paper proposes AutoB2G, an automated building-grid co-simulation framework that completes the entire simulation workflow solely based on natural-language task descriptions. The framework extends CityLearn V2 to support Building-to-Grid (B2G) interaction and adopts the large language model (LLM)-based SOCIA (Simulation Orchestration for Computational Intelligence with Agents) framework to automatically generate, execute, and iteratively refine the simulator. As LLMs lack prior knowledge of the implementation context of simulation functions, a codebase covering simulation configurations and functional modules is constructed and organized as a directed acyclic graph (DAG) to explicitly represent module dependencies and execution order, guiding the LLM to retrieve a complete executable path. Experimental results demonstrate that AutoB2G can effectively enable automated simulator implementations, coordinating B2G interactions to improve grid-side performance metrics.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced AutoB2G, a new framework that uses large language models (LLMs) to automate building-grid co-simulations. This system allows users to describe tasks in natural language, streamlining the simulation process and improving efficiency. Notably, AutoB2G enhances grid performance metrics by coordinating interactions between buildings and the grid. This innovation is significant as it reduces reliance on manual configurations and programming expertise, making advanced simulations more accessible.",
+  "why_it_matters": [
+    "Building operators can now use natural language to set up complex simulations, reducing the barrier to entry for effective energy management.",
+    "This shift towards automated simulation could reshape the market by enabling more efficient energy systems and smarter buildings, ultimately influencing energy policy and sustainability efforts."
+  ],
+  "lenses": {
+    "eli12": "AutoB2G is like having a smart assistant that helps you plan a big event just by telling it what you need. Instead of wrestling with complicated software, you can simply describe your goals, and the system takes care of the details. This matters for everyday people because it could lead to smarter energy use in buildings, making them more efficient and environmentally friendly.",
+    "pm": "For product managers and founders, AutoB2G represents a significant user need: simplifying complex systems through natural language. This could lower costs associated with programming and manual setups, making it easier to deploy energy-efficient solutions. A practical implication is that companies can bring products to market faster by leveraging this automation.",
+    "engineer": "From a technical perspective, AutoB2G integrates reinforcement learning with a large language model to automate building-grid simulations. It builds on the CityLearn V2 framework and organizes simulation configurations as a directed acyclic graph (DAG), which helps manage module dependencies. This approach not only simplifies the simulation process but also enhances grid-side performance metrics, demonstrating the potential of LLMs in complex environments."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-30T05:37:40.858Z",
+  "updated_at": "2026-03-30T05:37:40.858Z",
+  "processing_order": 1774849060859
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "ab48bded4fb476656c23aeba3fa793e8646ddcc6077eacea147c903d95befa56",
+  "share_id": "skel8u",
+  "title": "Semi-Automated Knowledge Engineering and Process Mapping for Total Airport Management",
+  "optimized_headline": "Revolutionizing Airport Management: Semi-Automated Knowledge Engineering and Process Mapping Explained",
+  "url": "https://arxiv.org/abs/2603.26076",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.26076v1 Announce Type: new \nAbstract: Documentation of airport operations is inherently complex due to extensive technical terminology, rigorous regulations, proprietary regional information, and fragmented communication across multiple stakeholders. The resulting data silos and semantic inconsistencies present a significant impediment to the Total Airport Management (TAM) initiative. T",
+  "raw_body": "arXiv:2603.26076v1 Announce Type: new \nAbstract: Documentation of airport operations is inherently complex due to extensive technical terminology, rigorous regulations, proprietary regional information, and fragmented communication across multiple stakeholders. The resulting data silos and semantic inconsistencies present a significant impediment to the Total Airport Management (TAM) initiative. This paper presents a methodological framework for constructing a domain-grounded, machine-readable Knowledge Graph (KG) through a dual-stage fusion of symbolic Knowledge Engineering (KE) and generative Large Language Models (LLMs).\n  The framework employs a scaffolded fusion strategy in which expert-curated KE structures guide LLM prompts to facilitate the discovery of semantically aligned knowledge triples. We evaluate this methodology on the Google LangExtract library and investigate the impact of context window utilization by comparing localized segment-based inference with document-level processing. Contrary to prior empirical observations of long-context degradation in LLMs, document-level processing improves the recovery of non-linear procedural dependencies.\n  To ensure the high-fidelity provenance required in airport operations, the proposed framework fuses a probabilistic model for discovery and a deterministic algorithm for anchoring every extraction to its ground source. This ensures absolute traceability and verifiability, bridging the gap between \"black-box\" generative outputs and the transparency required for operational tooling. Finally, we introduce an automated framework that operationalizes this pipeline to synthesize complex operational workflows from unstructured textual corpora.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework for airport management combines expert knowledge with generative AI to create a machine-readable Knowledge Graph. This approach addresses the challenges of fragmented communication and data silos in airport operations. By using a dual-stage fusion of symbolic Knowledge Engineering and Large Language Models, it enhances the clarity and traceability of operational processes. This matters now as airports seek more efficient and reliable management solutions amidst growing complexities.",
+  "why_it_matters": [
+    "Airports could see improved operations through better data integration, leading to more efficient communication among stakeholders.",
+    "This framework could signal a shift in how industries manage complex data, utilizing AI to enhance transparency and operational efficiency."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to piece together a puzzle with missing or mismatched pieces; that’s how airport operations often feel due to complex terminology and fragmented information. The new framework provides a clearer picture by merging expert knowledge with AI, making it easier to track and manage airport processes. This is important for everyday travelers, as smoother operations could lead to shorter wait times and better overall experiences.",
+    "pm": "For product managers, this framework highlights a user need for clearer data integration in complex environments like airports. The dual approach of combining expert knowledge with AI could reduce operational costs and improve efficiency. A practical implication is the potential for developing tools that enhance real-time decision-making based on accurate, traceable data.",
+    "engineer": "From a technical perspective, the framework employs a scaffolded fusion strategy, integrating symbolic Knowledge Engineering with generative Large Language Models to create a Knowledge Graph. The methodology was evaluated using the Google LangExtract library, revealing that document-level processing improved the recovery of procedural dependencies, contrary to previous findings on long-context degradation. This approach ensures high-fidelity provenance, crucial for the reliability of airport operations."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-30T05:37:48.712Z",
+  "updated_at": "2026-03-30T05:37:48.712Z",
+  "processing_order": 1774849068714
+}

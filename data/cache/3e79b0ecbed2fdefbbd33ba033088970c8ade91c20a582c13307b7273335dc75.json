@@ -1,0 +1,31 @@
+{
+  "content_hash": "3e79b0ecbed2fdefbbd33ba033088970c8ade91c20a582c13307b7273335dc75",
+  "share_id": "grdm3p",
+  "title": "GUIDE: Resolving Domain Bias in GUI Agents through Real-Time Web Video Retrieval and Plug-and-Play Annotation",
+  "optimized_headline": "\"How Real-Time Video Retrieval Tackles Domain Bias in GUI Agents\"",
+  "url": "https://arxiv.org/abs/2603.26266",
+  "source": "ArXiv AI",
+  "published_at": "2026-03-30T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2603.26266v1 Announce Type: new \nAbstract: Large vision-language models have endowed GUI agents with strong general capabilities for interface understanding and interaction. However, due to insufficient exposure to domain-specific software operation data during training, these agents exhibit significant domain bias - they lack familiarity with the specific operation workflows (planning) and ",
+  "raw_body": "arXiv:2603.26266v1 Announce Type: new \nAbstract: Large vision-language models have endowed GUI agents with strong general capabilities for interface understanding and interaction. However, due to insufficient exposure to domain-specific software operation data during training, these agents exhibit significant domain bias - they lack familiarity with the specific operation workflows (planning) and UI element layouts (grounding) of particular applications, limiting their real-world task performance. In this paper, we present GUIDE (GUI Unbiasing via Instructional-Video Driven Expertise), a training-free, plug-and-play framework that resolves GUI agent domain bias by autonomously acquiring domain-specific expertise from web tutorial videos through a retrieval-augmented automated annotation pipeline. GUIDE introduces two key innovations. First, a subtitle-driven Video-RAG pipeline unlocks video semantics through subtitle analysis, performing progressive three-stage retrieval - domain classification, topic extraction, and relevance matching - to identify task-relevant tutorial videos. Second, a fully automated annotation pipeline built on an inverse dynamics paradigm feeds consecutive keyframes enhanced with UI element detection into VLMs, inferring the required planning and grounding knowledge that are injected into the agent's corresponding modules to address both manifestations of domain bias. Extensive experiments on OSWorld demonstrate GUIDE's generality as a plug-and-play component for both multi-agent systems and single-model agents. It consistently yields over 5% improvements and reduces execution steps - without modifying any model parameters or architecture - validating GUIDE as an architecture-agnostic enhancement to bridge GUI agent domain bias.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced GUIDE, a new framework designed to eliminate domain bias in GUI agents by leveraging web tutorial videos. This approach uses a unique video retrieval system and automated annotation to enhance agents' understanding of specific software workflows. In tests, GUIDE improved performance by over 5% and reduced execution steps without changing the underlying model architecture. This advancement could significantly enhance the usability of GUI agents in specialized applications.",
+  "why_it_matters": [
+    "This framework could directly benefit developers and companies relying on GUI agents for specific software tasks, enhancing their efficiency.",
+    "At a broader level, GUIDE signals a shift towards more adaptable AI systems that can learn from real-world resources, potentially reshaping how AI interacts with various domains."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to use a new app without any instructions; you might struggle to understand its features. GUIDE helps AI agents learn from tutorial videos, just like we would learn from a guidebook. This means everyday users could see more effective AI assistance tailored to their specific needs, making technology more accessible.",
+    "pm": "For product managers, GUIDE represents a way to enhance the functionality of GUI agents without incurring additional training costs. By tapping into existing video resources, teams could quickly improve user experience and efficiency. This could lead to faster development cycles and better product-market fit.",
+    "engineer": "From a technical perspective, GUIDE employs a subtitle-driven Video-RAG pipeline for video retrieval, focusing on domain classification and topic extraction. It also uses an inverse dynamics paradigm for automated annotation, allowing it to enhance vision-language models without altering their architecture. This approach not only improves task performance but does so with a consistent 5% increase in efficiency."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-03-30T05:37:55.714Z",
+  "updated_at": "2026-03-30T05:37:55.714Z",
+  "processing_order": 1774849075717
+}
