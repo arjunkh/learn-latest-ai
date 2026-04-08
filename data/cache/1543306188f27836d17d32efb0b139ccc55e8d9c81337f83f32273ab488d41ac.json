@@ -1,0 +1,31 @@
+{
+  "content_hash": "1543306188f27836d17d32efb0b139ccc55e8d9c81337f83f32273ab488d41ac",
+  "share_id": "rmrnui",
+  "title": "ReVEL: Multi-Turn Reflective LLM-Guided Heuristic Evolution via Structured Performance Feedback",
+  "optimized_headline": "Unlocking Multi-Turn LLMs: How Structured Feedback Enhances Heuristic Evolution",
+  "url": "https://arxiv.org/abs/2604.04940",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-08T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.04940v1 Announce Type: new \nAbstract: Designing effective heuristics for NP-hard combinatorial optimization problems remains a challenging and expertise-intensive task. Existing applications of large language models (LLMs) primarily rely on one-shot code synthesis, yielding brittle heuristics that underutilize the models' capacity for iterative reasoning. We propose ReVEL: Multi-Turn Re",
+  "raw_body": "arXiv:2604.04940v1 Announce Type: new \nAbstract: Designing effective heuristics for NP-hard combinatorial optimization problems remains a challenging and expertise-intensive task. Existing applications of large language models (LLMs) primarily rely on one-shot code synthesis, yielding brittle heuristics that underutilize the models' capacity for iterative reasoning. We propose ReVEL: Multi-Turn Reflective LLM-Guided Heuristic Evolution via Structured Performance Feedback, a hybrid framework that embeds LLMs as interactive, multi-turn reasoners within an evolutionary algorithm (EA). The core of ReVEL lies in two mechanisms: (i) performance-profile grouping, which clusters candidate heuristics into behaviorally coherent groups to provide compact and informative feedback to the LLM; and (ii) multi-turn, feedback-driven reflection, through which the LLM analyzes group-level behaviors and generates targeted heuristic refinements. These refinements are selectively integrated and validated by an EA-based meta-controller that adaptively balances exploration and exploitation. Experiments on standard combinatorial optimization benchmarks show that ReVEL consistently produces heuristics that are more robust and diverse, achieving statistically significant improvements over strong baselines. Our results highlight multi-turn reasoning with structured grouping as a principled paradigm for automated heuristic design.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced ReVEL, a new framework that enhances heuristic design for complex optimization problems using large language models (LLMs). Unlike previous methods that relied on single interactions, ReVEL employs multi-turn reasoning and structured feedback to refine heuristics. This approach showed statistically significant improvements over existing models in robustness and diversity. The development is crucial now as it could lead to more effective solutions for NP-hard problems, which are critical in fields like logistics and scheduling.",
+  "why_it_matters": [
+    "This framework could significantly aid researchers and practitioners in fields requiring complex problem-solving, such as operations research and AI.",
+    "ReVEL's approach signals a shift towards more interactive AI systems, enhancing the efficiency of heuristic design in various industries."
+  ],
+  "lenses": {
+    "eli12": "ReVEL is like having a coach for AI that helps it learn better strategies over time. Instead of just giving one piece of advice, it allows the AI to reflect and improve its ideas through multiple rounds of feedback. This matters for everyday people because better problem-solving tools can lead to more efficient services, from delivery systems to resource management.",
+    "pm": "For product managers and founders, ReVEL highlights a user need for more adaptive AI solutions that can evolve based on performance feedback. This could lead to cost savings and improved efficiency in product development. Practically, integrating such a system might enhance the robustness of algorithms used in applications like route optimization or inventory management.",
+    "engineer": "From a technical standpoint, ReVEL combines evolutionary algorithms with multi-turn reasoning from LLMs to create more effective heuristics. It utilizes performance-profile grouping for clustering heuristics, enhancing the feedback loop for the LLM. This approach achieved statistically significant improvements on standard benchmarks, indicating a promising direction for automated heuristic design."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-08T05:25:29.886Z",
+  "updated_at": "2026-04-08T05:25:29.886Z",
+  "processing_order": 1775625929889
+}
