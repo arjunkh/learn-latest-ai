@@ -1,0 +1,31 @@
+{
+  "content_hash": "5ae6066235697463834c9dd3910015548ed8858dbc64f74e68632c313c252795",
+  "share_id": "brluk3",
+  "title": "Blind Refusal: Language Models Refuse to Help Users Evade Unjust, Absurd, and Illegitimate Rules",
+  "optimized_headline": "\"Why Language Models Resist Assisting Users with Unjust Rules\"",
+  "url": "https://arxiv.org/abs/2604.06233",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-10T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.06233v1 Announce Type: new \nAbstract: Safety-trained language models routinely refuse requests for help circumventing rules. But not all rules deserve compliance. When users ask for help evading rules imposed by an illegitimate authority, rules that are deeply unjust or absurd in their content or application, or rules that admit of justified exceptions, refusal is a failure of moral rea",
+  "raw_body": "arXiv:2604.06233v1 Announce Type: new \nAbstract: Safety-trained language models routinely refuse requests for help circumventing rules. But not all rules deserve compliance. When users ask for help evading rules imposed by an illegitimate authority, rules that are deeply unjust or absurd in their content or application, or rules that admit of justified exceptions, refusal is a failure of moral reasoning. We introduce empirical results documenting this pattern of refusal that we call blind refusal: the tendency of language models to refuse requests for help breaking rules without regard to whether the underlying rule is defensible. Our dataset comprises synthetic cases crossing 5 defeat families (reasons a rule can be broken) with 19 authority types, validated through three automated quality gates and human review. We collect responses from 18 model configurations across 7 families and classify them on two behavioral dimensions -- response type (helps, hard refusal, or deflection) and whether the model recognizes the reasons that undermine the rule's claim to compliance -- using a blinded GPT-5.4 LLM-as-judge evaluation. We find that models refuse 75.4% (N=14,650) of defeated-rule requests and do so even when the request poses no independent safety or dual-use concerns. We also find that models engage with the defeat condition in the majority of cases (57.5%) but decline to help regardless -- indicating that models' refusal behavior is decoupled from their capacity for normative reasoning about rule legitimacy.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research highlights a concerning issue with safety-trained language models, which often refuse requests to bypass rules, even when those rules are unjust or absurd. In a study involving 14,650 requests, models rejected 75.4% of attempts to break rules deemed defensible. This pattern, termed 'blind refusal,' raises questions about the models' ability to engage in moral reasoning. Understanding this behavior is crucial as it impacts how AI interacts with users seeking fairness and justice.",
+  "why_it_matters": [
+    "Users seeking help to challenge unjust rules may find language models unhelpful, limiting their ability to navigate unfair systems.",
+    "This trend could indicate a broader challenge in AI ethics, highlighting the need for models to balance safety with moral reasoning in their responses."
+  ],
+  "lenses": {
+    "eli12": "Language models are designed to keep users safe, but they often refuse to help when users want to break unjust rules. Imagine asking a friend for advice on getting around a silly school rule, only to have them say no without considering the rule's fairness. This matters because it shows how AI could struggle to support people in challenging unfair situations.",
+    "pm": "For product managers and founders, this research underscores the importance of understanding user needs around fairness. Users may want AI to help them navigate unjust situations, but if models refuse, it could lead to frustration. This highlights a potential area for improvement in AI design, balancing safety with the ability to provide meaningful support.",
+    "engineer": "The study reveals that language models exhibit 'blind refusal,' rejecting 75.4% of requests to bypass rules, regardless of the rule's legitimacy. Notably, models engage with the conditions for breaking rules in 57.5% of cases but still refuse to assist. This indicates a disconnect between the models' understanding of rule legitimacy and their refusal behavior, which engineers should consider when developing future AI systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-10T05:37:36.211Z",
+  "updated_at": "2026-04-10T05:37:36.211Z",
+  "processing_order": 1775799456212
+}
