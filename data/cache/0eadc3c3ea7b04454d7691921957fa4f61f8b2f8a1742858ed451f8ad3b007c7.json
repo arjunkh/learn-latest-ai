@@ -1,0 +1,31 @@
+{
+  "content_hash": "0eadc3c3ea7b04454d7691921957fa4f61f8b2f8a1742858ed451f8ad3b007c7",
+  "share_id": "ogawb8",
+  "title": "OpenKedge: Governing Agentic Mutation with Execution-Bound Safety and Evidence Chains",
+  "optimized_headline": "\"Exploring OpenKedge: A New Approach to Safe Agentic Mutation Management\"",
+  "url": "https://arxiv.org/abs/2604.08601",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-13T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.08601v1 Announce Type: new \nAbstract: The rise of autonomous AI agents exposes a fundamental flaw in API-centric architectures: probabilistic systems directly execute state mutations without sufficient context, coordination, or safety guarantees. We introduce OpenKedge, a protocol that redefines mutation as a governed process rather than an immediate consequence of API invocation. OpenK",
+  "raw_body": "arXiv:2604.08601v1 Announce Type: new \nAbstract: The rise of autonomous AI agents exposes a fundamental flaw in API-centric architectures: probabilistic systems directly execute state mutations without sufficient context, coordination, or safety guarantees. We introduce OpenKedge, a protocol that redefines mutation as a governed process rather than an immediate consequence of API invocation. OpenKedge requires actors to submit declarative intent proposals, which are evaluated against deterministically derived system state, temporal signals, and policy constraints prior to execution. Approved intents are compiled into execution contracts that strictly bound permitted actions, resource scope, and time, and are enforced via ephemeral, task-oriented identities. This shifts safety from reactive filtering to preventative, execution-bound enforcement. Crucially, OpenKedge introduces an Intent-to-Execution Evidence Chain (IEEC), which cryptographically links intent, context, policy decisions, execution bounds, and outcomes into a unified lineage. This transforms mutation into a verifiable and reconstructable process, enabling deterministic auditability and reasoning about system behavior. We evaluate OpenKedge across multi-agent conflict scenarios and cloud infrastructure mutations. Results show that the protocol deterministically arbitrates competing intents and cages unsafe execution while maintaining high throughput, establishing a principled foundation for safely operating agentic systems at scale.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The introduction of OpenKedge addresses a critical flaw in API-centric architectures used by autonomous AI agents. Unlike traditional systems that execute state changes immediately, OpenKedge requires a structured proposal process, ensuring safety and context. It establishes an Intent-to-Execution Evidence Chain (IEEC) that links intentions and outcomes, making the entire process auditable. This matters now as AI systems grow more complex and require robust safety measures to operate effectively.",
+  "why_it_matters": [
+    "OpenKedge provides immediate safety improvements for developers working with autonomous AI, ensuring actions are well-governed and contextually aware.",
+    "This protocol signifies a broader shift towards safer, more accountable AI systems, promoting trust and reliability in autonomous technology across various industries."
+  ],
+  "lenses": {
+    "eli12": "OpenKedge is like a traffic system for AI, where each vehicle (or action) must follow a route before moving. This helps prevent accidents by ensuring every move is planned and safe. For everyday people, this means that as AI becomes more prevalent, it will operate more reliably and responsibly, reducing risks in daily interactions.",
+    "pm": "For product managers, OpenKedge highlights the importance of user intent in AI interactions. By requiring clear proposals before actions are taken, it could enhance user trust and satisfaction. This structured approach could also lead to more efficient resource management, as actions are better coordinated and less prone to error.",
+    "engineer": "From a technical perspective, OpenKedge redefines how state mutations are handled in AI systems. By using deterministic evaluations and execution contracts, it enhances safety and accountability. The protocol's ability to maintain high throughput while managing multi-agent conflicts demonstrates its effectiveness, positioning it as a significant advancement in operational safety for AI."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-13T06:00:51.840Z",
+  "updated_at": "2026-04-13T06:00:51.840Z",
+  "processing_order": 1776060051840
+}

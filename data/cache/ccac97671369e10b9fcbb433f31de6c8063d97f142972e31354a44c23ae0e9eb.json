@@ -1,0 +1,31 @@
+{
+  "content_hash": "ccac97671369e10b9fcbb433f31de6c8063d97f142972e31354a44c23ae0e9eb",
+  "share_id": "fbe5do",
+  "title": "From Business Events to Auditable Decisions: Ontology-Governed Graph Simulation for Enterprise AI",
+  "optimized_headline": "Unlocking Business Insights: How Ontology-Governed Graphs Transform AI Decisions",
+  "url": "https://arxiv.org/abs/2604.08603",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-13T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.08603v1 Announce Type: new \nAbstract: Existing LLM-based agent systems share a common architectural failure: they answer from the unrestricted knowledge space without first simulating how active business scenarios reshape that space for the event at hand -- producing decisions that are fluent but ungrounded and carrying no audit trail. We present LOM-action, which equips enterprise AI w",
+  "raw_body": "arXiv:2604.08603v1 Announce Type: new \nAbstract: Existing LLM-based agent systems share a common architectural failure: they answer from the unrestricted knowledge space without first simulating how active business scenarios reshape that space for the event at hand -- producing decisions that are fluent but ungrounded and carrying no audit trail. We present LOM-action, which equips enterprise AI with \\emph{event-driven ontology simulation}: business events trigger scenario conditions encoded in the enterprise ontology~(EO), which drive deterministic graph mutations in an isolated sandbox, evolving a working copy of the subgraph into the scenario-valid simulation graph $G_{\\text{sim}}$; all decisions are derived exclusively from this evolved graph. The core pipeline is \\emph{event $\\to$ simulation $\\to$ decision}, realized through a dual-mode architecture -- \\emph{skill mode} and \\emph{reasoning mode}. Every decision produces a fully traceable audit log. LOM-action achieves 93.82% accuracy and 98.74% tool-chain F1 against frontier baselines Doubao-1.8 and DeepSeek-V3.2, which reach only 24--36% F1 despite 80% accuracy -- exposing the \\emph{illusive accuracy} phenomenon. The four-fold F1 advantage confirms that ontology-governed, event-driven simulation, not model scale, is the architectural prerequisite for trustworthy enterprise decision intelligence.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces LOM-action, a new framework designed for enterprise AI that simulates business scenarios before making decisions. This method, which uses event-driven ontology simulation, has shown impressive results with 93.82% accuracy and a 98.74% F1 score, far surpassing existing models like Doubao-1.8 and DeepSeek-V3.2. This matters because it addresses the common issue of ungrounded decisions in AI, ensuring that choices are based on relevant scenarios and are fully auditable.",
+  "why_it_matters": [
+    "Businesses can now rely on AI to make decisions that are not only informed but also traceable, enhancing accountability.",
+    "This shift towards scenario-driven decision-making could redefine how enterprises integrate AI, moving from reactive to proactive intelligence."
+  ],
+  "lenses": {
+    "eli12": "LOM-action is like a GPS for AI decision-making, guiding it through real business scenarios rather than just general knowledge. By simulating events, it ensures that decisions are relevant and can be traced back. This is important for everyday people because it means businesses can make better, more responsible choices that affect everyone.",
+    "pm": "For product managers and founders, LOM-action highlights the need for AI systems that are not just accurate but also accountable. By focusing on event-driven simulations, it could reduce costs related to errors and improve efficiency in decision-making processes. This means products can be developed with a stronger foundation of reliability.",
+    "engineer": "Technically, LOM-action employs a dual-mode architecture combining skill and reasoning modes to enhance decision-making. It operates by evolving a subgraph into a scenario-valid simulation graph, achieving a remarkable F1 score of 98.74% compared to existing models that show significant limitations. This suggests a paradigm shift towards ontology-governed simulations as a necessity for robust AI systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-13T06:01:05.252Z",
+  "updated_at": "2026-04-13T06:01:05.252Z",
+  "processing_order": 1776060065253
+}

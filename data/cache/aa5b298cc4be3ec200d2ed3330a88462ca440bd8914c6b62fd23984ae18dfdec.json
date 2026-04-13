@@ -1,0 +1,31 @@
+{
+  "content_hash": "aa5b298cc4be3ec200d2ed3330a88462ca440bd8914c6b62fd23984ae18dfdec",
+  "share_id": "yra5iv",
+  "title": "Your ReAct Agent Is Wasting 90% of Its Retries — Here’s How to Stop It",
+  "optimized_headline": "Stop Your ReAct Agent from Wasting 90% of Its Retries Today",
+  "url": "https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/",
+  "source": "Towards Data Science",
+  "published_at": "2026-04-12T13:00:00.000Z",
+  "raw_excerpt": "Most ReAct-style agents are silently wasting their retry budget on errors that can never succeed. In a 200-task benchmark, 90.8% of retries were spent on hallucinated tool calls — not model mistakes, but architectural flaws. This article shows why prompt tuning won’t fix it, and the three structural changes that eliminate wasted retries entirely.\nThe post Your ReAct Agent Is Wasting 90% of Its Ret",
+  "raw_body": "Most ReAct-style agents are silently wasting their retry budget on errors that can never succeed. In a 200-task benchmark, 90.8% of retries were spent on hallucinated tool calls — not model mistakes, but architectural flaws. This article shows why prompt tuning won’t fix it, and the three structural changes that eliminate wasted retries entirely.\nThe post Your ReAct Agent Is Wasting 90% of Its Retries — Here’s How to Stop It appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "ReAct-style agents are currently misusing their retry budgets, wasting over 90% on ineffective tool calls due to architectural flaws. In a benchmark of 200 tasks, 90.8% of retries were spent on these hallucinated calls rather than actual model errors. The article outlines that prompt tuning won't resolve this issue and suggests three structural changes to prevent wasted retries. Understanding this problem is crucial for enhancing the efficiency of AI agents in real-world applications.",
+  "why_it_matters": [
+    "Developers and researchers can improve AI agent performance by addressing these architectural flaws, leading to more effective tools.",
+    "This highlights a significant shift in how AI systems are designed, emphasizing the need for foundational improvements rather than surface-level fixes."
+  ],
+  "lenses": {
+    "eli12": "ReAct agents are like a team that keeps trying to score points but keeps missing the goal due to bad strategies. They waste most of their retries on calls that just won't work. The article suggests some structural changes to help these agents succeed more often. This matters because better-performing AI tools can make everyday tasks easier and more efficient for everyone.",
+    "pm": "For product managers, this insight reveals a critical user need: improving AI agent efficiency. By addressing the structural issues causing wasted retries, teams can enhance user experience and reduce operational costs. Implementing the suggested changes could lead to more reliable AI products, ultimately increasing customer satisfaction.",
+    "engineer": "From a technical perspective, the article identifies that 90.8% of retries in ReAct agents are spent on hallucinated tool calls, indicating a need for architectural revisions. It argues that prompt tuning is not a viable solution and instead presents three structural changes to eliminate these inefficiencies. Addressing these issues could significantly improve the performance metrics of AI agents in practical applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-13T06:01:58.559Z",
+  "updated_at": "2026-04-13T06:01:58.559Z",
+  "processing_order": 1776060118561
+}

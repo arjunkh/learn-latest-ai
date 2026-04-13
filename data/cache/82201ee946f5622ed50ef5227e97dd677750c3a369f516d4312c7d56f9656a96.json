@@ -1,0 +1,31 @@
+{
+  "content_hash": "82201ee946f5622ed50ef5227e97dd677750c3a369f516d4312c7d56f9656a96",
+  "share_id": "rhd62b",
+  "title": "RAMP: Hybrid DRL for Online Learning of Numeric Action Models",
+  "optimized_headline": "RAMP: A New Hybrid Approach for Learning Numeric Action Models Online",
+  "url": "https://arxiv.org/abs/2604.08685",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-13T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.08685v1 Announce Type: new \nAbstract: Automated planning algorithms require an action model specifying the preconditions and effects of each action, but obtaining such a model is often hard. Learning action models from observations is feasible, but existing algorithms for numeric domains are offline, requiring expert traces as input. We propose the Reinforcement learning, Action Model l",
+  "raw_body": "arXiv:2604.08685v1 Announce Type: new \nAbstract: Automated planning algorithms require an action model specifying the preconditions and effects of each action, but obtaining such a model is often hard. Learning action models from observations is feasible, but existing algorithms for numeric domains are offline, requiring expert traces as input. We propose the Reinforcement learning, Action Model learning, and Planning (RAMP) strategy for learning numeric planning action models online via interactions with the environment. RAMP simultaneously trains a Deep Reinforcement Learning (DRL) policy, learns a numeric action model from past interactions, and uses that model to plan future actions when possible. These components form a positive feedback loop: the RL policy gathers data to refine the action model, while the planner generates plans to continue training the RL policy. To facilitate this integration of RL and numeric planning, we developed Numeric PDDLGym, an automated framework for converting numeric planning problems to Gym environments. Experimental results on standard IPC numeric domains show that RAMP significantly outperforms PPO, a well-known DRL algorithm, in terms of solvability and plan quality.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced RAMP, a new strategy for online learning of numeric action models in automated planning. Unlike traditional methods that rely on offline expert data, RAMP combines reinforcement learning with action model learning to adaptively improve its performance. In experiments, RAMP outperformed the popular PPO algorithm in both solvability and plan quality. This advancement could make automated planning more efficient and accessible across various applications.",
+  "why_it_matters": [
+    "RAMP could help developers create smarter AI systems that learn and adapt in real-time, benefiting industries reliant on automated decision-making.",
+    "This shift towards online learning models indicates a broader trend in AI development, where adaptability and efficiency are increasingly prioritized."
+  ],
+  "lenses": {
+    "eli12": "RAMP is like a student who learns by doing rather than just studying textbooks. It learns from its own experiences, improving its knowledge of how actions affect outcomes in real-time. This matters because it could lead to AI that better understands and reacts to complex situations in everyday life.",
+    "pm": "For product managers, RAMP highlights a user need for AI systems that learn and adapt continuously, reducing reliance on static data. This could lead to cost savings and increased efficiency in product development, as the system evolves based on real-world interactions.",
+    "engineer": "From a technical perspective, RAMP integrates deep reinforcement learning with action model learning, creating a feedback loop that enhances both policy and planning. In tests, RAMP showed significant improvements over the PPO algorithm, particularly in solvability and plan quality, indicating its potential effectiveness in numeric planning tasks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-13T06:01:30.509Z",
+  "updated_at": "2026-04-13T06:01:30.509Z",
+  "processing_order": 1776060090512
+}
