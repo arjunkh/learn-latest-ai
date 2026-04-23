@@ -1,0 +1,31 @@
+{
+  "content_hash": "f8461424b891e4fba8f238a9966d3198b6714044dc4eff5c23205c02d26e5b5b",
+  "share_id": "asw4pz",
+  "title": "Algorithm Selection with Zero Domain Knowledge via Text Embeddings",
+  "optimized_headline": "Selecting Algorithms Without Domain Knowledge: The Power of Text Embeddings",
+  "url": "https://arxiv.org/abs/2604.19753",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-23T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.19753v1 Announce Type: new \nAbstract: We propose a feature-free approach to algorithm selection that replaces hand-crafted instance features with pretrained text embeddings. Our method, ZeroFolio, proceeds in three steps: it reads the raw instance file as plain text, embeds it with a pretrained embedding model, and selects an algorithm via weighted k-nearest neighbors. The key to our ap",
+  "raw_body": "arXiv:2604.19753v1 Announce Type: new \nAbstract: We propose a feature-free approach to algorithm selection that replaces hand-crafted instance features with pretrained text embeddings. Our method, ZeroFolio, proceeds in three steps: it reads the raw instance file as plain text, embeds it with a pretrained embedding model, and selects an algorithm via weighted k-nearest neighbors. The key to our approach is the observation that pretrained embeddings produce representations that distinguish problem instances without any domain knowledge or task-specific training. This allows us to apply the same three-step pipeline (serialize, embed, select) across diverse problem domains with text-based instance formats. We evaluate our approach on 11 ASlib scenarios spanning 7 domains (SAT, MaxSAT, QBF, ASP, CSP, MIP, and graph problems). Our experiments show that this approach outperforms a random forest trained on hand-crafted features in 10 of 11 scenarios with a single fixed configuration, and in all 11 with two-seed voting; the margin is often substantial. Our ablation study shows that inverse-distance weighting, line shuffling, and Manhattan distance are the key design choices. On scenarios where both selectors are competitive, combining embeddings with hand-crafted features via soft voting yields further improvements.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new method called ZeroFolio simplifies algorithm selection by using pretrained text embeddings instead of traditional features. It processes raw text data through three steps: reading, embedding, and selecting. In tests across 11 scenarios from various domains, ZeroFolio outperformed a random forest model in 10 cases with a significant margin, showcasing its effectiveness. This approach could streamline algorithm selection in diverse fields without needing specialized knowledge.",
+  "why_it_matters": [
+    "This method could empower data scientists and analysts by reducing the need for extensive domain knowledge in algorithm selection.",
+    "ZeroFolio indicates a shift towards more accessible AI solutions, potentially democratizing advanced algorithmic techniques across various industries."
+  ],
+  "lenses": {
+    "eli12": "ZeroFolio is like using a universal remote instead of separate controls for each device. It reads text data, transforms it into useful information, and picks the best algorithm without needing deep expertise. This could make powerful AI tools available to more people, simplifying complex tasks in many areas.",
+    "pm": "For product managers, ZeroFolio addresses user needs by simplifying algorithm selection, which can save time and resources. Its efficiency could lead to faster deployment of AI solutions, enhancing product competitiveness. This might encourage teams to adopt AI technologies without extensive training.",
+    "engineer": "ZeroFolio leverages pretrained text embeddings to select algorithms using a weighted k-nearest neighbors approach. In experiments, it surpassed a random forest model in 10 out of 11 scenarios across diverse domains, demonstrating its robustness. Key design choices like inverse-distance weighting and Manhattan distance were critical for its performance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-23T05:42:47.560Z",
+  "updated_at": "2026-04-23T05:42:47.560Z",
+  "processing_order": 1776922967562
+}

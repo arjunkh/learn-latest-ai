@@ -1,0 +1,31 @@
+{
+  "content_hash": "ec6a7a0b774f1a6d4437bb9fa0ecbca222ffdb9dfe11d5ace8b13747c28bbe38",
+  "share_id": "tti49a",
+  "title": "The Tool-Overuse Illusion: Why Does LLM Prefer External Tools over Internal Knowledge?",
+  "optimized_headline": "Why Do LLMs Rely on External Tools Instead of Their Own Knowledge?",
+  "url": "https://arxiv.org/abs/2604.19749",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-23T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.19749v1 Announce Type: new \nAbstract: Equipping LLMs with external tools effectively addresses internal reasoning limitations. However, it introduces a critical yet under-explored phenomenon: tool overuse, the unnecessary tool-use during reasoning. In this paper, we first reveal this phenomenon is pervasive across diverse LLMs. We then experimentally elucidate its underlying mechanisms ",
+  "raw_body": "arXiv:2604.19749v1 Announce Type: new \nAbstract: Equipping LLMs with external tools effectively addresses internal reasoning limitations. However, it introduces a critical yet under-explored phenomenon: tool overuse, the unnecessary tool-use during reasoning. In this paper, we first reveal this phenomenon is pervasive across diverse LLMs. We then experimentally elucidate its underlying mechanisms through two key lenses: (1) First, by analyzing tool-use behavior across different internal knowledge availability regions, we identify a \\textit{knowledge epistemic illusion}: models misjudge internal knowledge boundaries and fail to accurately perceive their actual knowledge availability. To mitigate this, we propose a knowledge-aware epistemic boundary alignment strategy based on direct preference optimization, which reduces tool usage in by 82.8\\% while yielding an accuracy improvement. (2) Second, we establish a causal link between reward structures and tool-use behavior by visualizing the tool-augmented training process. It reveals that \\textit{outcome-only rewards} inadvertently encourage tool overuse by rewarding only final correctness, regardless of tool efficiency. To verify this, we balance reward signals during training rather than relying on outcome-only rewards, cutting unnecessary tool calls by 66.7\\% (7B) and 60.7\\% (32B) without sacrificing accuracy. Finally, we provide theoretical justification in this two lenses to understand tool overuse.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study highlights a problem called 'tool overuse' in large language models (LLMs), where they rely too much on external tools instead of their internal knowledge. The research shows that this overuse is common across various LLMs and can be reduced significantly—by up to 82.8%—by adjusting how models perceive their knowledge. This is important as it could lead to more efficient AI systems that make better use of their built-in capabilities.",
+  "why_it_matters": [
+    "Developers and researchers could benefit from refining LLMs to minimize reliance on external tools, enhancing their efficiency and accuracy.",
+    "This finding indicates a shift in AI development strategies, focusing on optimizing internal knowledge rather than solely enhancing external tool integration."
+  ],
+  "lenses": {
+    "eli12": "The study reveals that some AI models are like students who over-rely on calculators instead of understanding math. They often don’t realize how much they already know, leading to unnecessary tool use. This matters because improving how these models think could make AI smarter and more helpful in everyday tasks.",
+    "pm": "For product managers and founders, this research suggests that refining LLMs could meet user needs more effectively by reducing dependency on external tools. By optimizing internal knowledge, companies might lower costs associated with tool integration and improve user experience, which could lead to better product adoption.",
+    "engineer": "Technically, the study identifies two main issues contributing to tool overuse in LLMs. First, models misjudge their internal knowledge limits, leading to excessive external tool requests, which can be mitigated by a strategy that aligns knowledge boundaries. Second, the reliance on outcome-only rewards encourages inefficient tool use, but adjusting reward structures can significantly reduce unnecessary tool calls while maintaining accuracy."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-23T05:42:34.284Z",
+  "updated_at": "2026-04-23T05:42:34.284Z",
+  "processing_order": 1776922954284
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "5054f4b856879de6bf9cf07193db555526c2a05002a4e256ea142916d2360492",
+  "share_id": "eday6e",
+  "title": "Exploring Data Augmentation and Resampling Strategies for Transformer-Based Models to Address Class Imbalance in AI Scoring of Scientific Explanations in NGSS Classroom",
+  "optimized_headline": "Innovative Strategies to Balance Class Imbalance in AI Scoring for NGSS Classrooms",
+  "url": "https://arxiv.org/abs/2604.19754",
+  "source": "ArXiv AI",
+  "published_at": "2026-04-23T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.19754v1 Announce Type: new \nAbstract: Automated scoring of students' scientific explanations offers the potential for immediate, accurate feedback, yet class imbalance in rubric categories particularly those capturing advanced reasoning remains a challenge. This study investigates augmentation strategies to improve transformer-based text classification of student responses to a physical",
+  "raw_body": "arXiv:2604.19754v1 Announce Type: new \nAbstract: Automated scoring of students' scientific explanations offers the potential for immediate, accurate feedback, yet class imbalance in rubric categories particularly those capturing advanced reasoning remains a challenge. This study investigates augmentation strategies to improve transformer-based text classification of student responses to a physical science assessment based on an NGSS-aligned learning progression. The dataset consists of 1,466 high school responses scored on 11 binary-coded analytic categories. This rubric identifies six important components including scientific ideas needed for a complete explanation along with five common incomplete or inaccurate ideas. Using SciBERT as a baseline, we applied fine-tuning and test these augmentation strategies: (1) GPT-4--generated synthetic responses, (2) EASE, a word-level extraction and filtering approach, and (3) ALP (Augmentation using Lexicalized Probabilistic context-free grammar) phrase-level extraction.\n  While fine-tuning SciBERT improved recall over baseline, augmentation substantially enhanced performance, with GPT data boosting both precision and recall, and ALP achieving perfect precision, recall, and F1 scores across most severe imbalanced categories (5,6,7 and 9). Across all rubric categories EASE augmentation substantially increased alignment with human scoring for both scientific ideas (Categories 1--6) and inaccurate ideas (Categories 7--11). We compared different augmentation strategies to a traditional oversampling method (SMOTE) in an effort to avoid overfitting and retain novice-level data critical for learning progression alignment. Findings demonstrate that targeted augmentation can address severe imbalance while preserving conceptual coverage, offering a scalable solution for automated learning progression-aligned scoring in science education.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study explores how data augmentation can improve automated scoring of students' scientific explanations, addressing class imbalance in scoring categories. Researchers fine-tuned the SciBERT model and tested various augmentation strategies, including GPT-4 generated responses, which significantly boosted performance. Notably, the ALP method achieved perfect precision and recall in key imbalanced categories. This research is important as it presents scalable solutions for enhancing AI scoring in educational settings, potentially revolutionizing feedback for students.",
+  "why_it_matters": [
+    "Teachers could benefit from more accurate scoring of student explanations, allowing for timely and effective feedback.",
+    "This study reflects a broader trend in AI education technology, emphasizing the need for equitable assessment methods that support diverse learning styles."
+  ],
+  "lenses": {
+    "eli12": "This research looks at how to make AI better at scoring student work in science. By using techniques like generating new examples with GPT-4, the study found ways to balance the scoring categories. Think of it like adding more colors to a painting to make it richer. This matters because it could help teachers give students better feedback, which is essential for learning.",
+    "pm": "For product managers and founders, this study highlights the importance of addressing class imbalance in AI scoring systems. By leveraging augmentation techniques, companies could enhance user experience through more accurate assessments. This approach could reduce costs associated with manual grading while improving educational outcomes, making it a compelling value proposition for educational technology products.",
+    "engineer": "From a technical perspective, the study utilized the SciBERT model and explored augmentation strategies like GPT-4 generation and ALP for improving text classification. The results showed that augmentation significantly outperformed traditional methods like SMOTE, particularly in key imbalanced categories, achieving perfect precision and recall. This suggests that targeted augmentation can effectively enhance model performance while maintaining critical data for learning progression."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-04-23T05:42:54.872Z",
+  "updated_at": "2026-04-23T05:42:54.872Z",
+  "processing_order": 1776922974875
+}
