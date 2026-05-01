@@ -1,9 +1,513 @@
 {
   "month": "April 2026",
   "year": 2026,
-  "total": 177,
-  "generated_at": "2026-04-23T05:44:57.426Z",
+  "total": 201,
+  "generated_at": "2026-05-01T06:29:10.396Z",
   "articles": [
+    {
+      "id": "0e9e898b6a2bcefc68d97f9478992735b312ca305dd48d796a22b6aa8ac70487",
+      "share_id": "ama1dq",
+      "category": "capabilities_and_how",
+      "title": "Alibaba's Metis agent cuts redundant AI tool calls from 98% to 2% — and gets more accurate doing it",
+      "optimized_headline": "Alibaba's Metis Agent Reduces AI Tool Calls from 98% to 2%—Here's How",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/orchestration/alibabas-metis-agent-cuts-redundant-ai-tool-calls-from-98-to-2-and-gets-more-accurate-doing-it",
+      "published_at": "2026-04-30T20:51:26.000Z",
+      "speedrun": "Alibaba's researchers introduced a new framework called Hierarchical Decoupled Policy Optimization (HDPO) to train AI agents, which significantly reduces unnecessary tool calls from 98% to just 2%. This model, named Metis, not only cuts costs but also enhances reasoning accuracy across industry benchmarks. By teaching AI when to use internal knowledge versus external tools, it addresses critical issues of latency and resource waste. This advancement could reshape how AI systems balance efficiency and accuracy.",
+      "why_it_matters": [
+        "Businesses relying on AI tools could see immediate cost savings and improved performance, enhancing user experience and efficiency.",
+        "This innovation signals a broader shift in AI development, emphasizing the importance of strategic decision-making over mere tool execution."
+      ],
+      "lenses": {
+        "eli12": "Imagine teaching a child when to ask for help and when to figure things out on their own. Alibaba's Metis model learns to balance using tools and relying on its own knowledge, cutting unnecessary tool calls significantly. This matters for everyday users because it can lead to faster, more accurate responses from AI, making technology more efficient and user-friendly.",
+        "pm": "For product managers and founders, Metis represents a leap in AI efficiency. By reducing unnecessary API calls, it can lower operational costs and improve user satisfaction. This means teams can focus on developing features that enhance user experience rather than managing excessive tool usage.",
+        "engineer": "From a technical perspective, Metis employs HDPO to decouple accuracy and efficiency into independent optimization channels. This allows the model to maximize task correctness while minimizing tool calls, achieving state-of-the-art performance across multiple benchmarks. The approach addresses previous challenges in reinforcement learning, offering clearer learning signals that enhance both reasoning and execution."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "9928fe500b94e7be666aef7996b9f6db6cea25f236efb7d93d4d60754769e678",
+      "share_id": "eei173",
+      "category": "trends_risks_outlook",
+      "title": "Exclusive eBook: Inside the stealthy startup that pitched brainless human clones",
+      "optimized_headline": "Inside the Stealthy Startup Pitching Brainless Human Clones: An Exclusive eBook",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/04/30/1136684/exclusive-ebook-inside-the-stealthy-startup-that-pitched-brainless-human-clones/",
+      "published_at": "2026-04-30T18:42:50.000Z",
+      "speedrun": "R3 Bio, a stealthy startup, has proposed a controversial idea: creating 'brainless clones' as backup human bodies. This concept raises significant ethical questions about cloning and human identity. The startup's vision could challenge our understanding of life and death, making it a hot topic in bioethics today. As discussions around longevity and cloning gain traction, this could reshape future debates on human rights and scientific boundaries.",
+      "why_it_matters": [
+        "This idea could directly impact bioethicists and medical professionals, prompting urgent discussions on the implications of cloning for human dignity.",
+        "On a broader scale, R3 Bio's proposal reflects a shifting perspective on life extension, potentially influencing policy and public opinion on cloning technologies."
+      ],
+      "lenses": {
+        "eli12": "R3 Bio's plan to create brainless clones for backup bodies sounds like science fiction, but it raises real ethical issues. Imagine having spare parts for your body, but at what cost to our humanity? This idea could change how we think about life and what it means to be human, affecting everyone as we consider the future of medicine.",
+        "pm": "For product managers and founders, R3 Bio's concept highlights a growing user need for longevity solutions. As interest in life extension increases, there could be opportunities to develop products that address ethical concerns while enhancing health. This could also lead to new markets focused on bioethics and responsible innovation.",
+        "engineer": "From a technical perspective, R3 Bio's proposal involves advancements in cloning and biotechnology. The idea of creating brainless clones raises questions about the feasibility of such technologies and their implications for genetic engineering. While the specifics of the models or methods are not detailed, the ethical considerations could challenge engineers to innovate responsibly."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "37cae418e99859eeced03dfb94f6e847120e5789df157b67c1057645b28becd0",
+      "share_id": "otcg53",
+      "category": "capabilities_and_how",
+      "title": "One tool call to rule them all? New open source Python tool Runpod Flash eliminates containers for faster AI dev",
+      "optimized_headline": "\"New Python Tool Runpod Flash Promises Faster AI Development Without Containers\"",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/infrastructure/one-tool-call-to-rule-them-all-new-open-source-python-tool-runpod-flash-eliminates-containers-for-faster-ai-dev",
+      "published_at": "2026-04-30T18:31:07.000Z",
+      "speedrun": "Runpod has launched Runpod Flash, an open-source Python tool that streamlines AI development by eliminating the need for Docker containers. This tool allows developers to quickly create, iterate, and deploy AI models, significantly reducing delays in the serverless GPU environment. By simplifying the workflow, Runpod Flash could accelerate the development of AI applications and workflows. This matters now as AI development becomes increasingly crucial across industries, and faster tools can enhance innovation.",
+      "why_it_matters": [
+        "AI developers can now work more efficiently, reducing the time to deploy models and applications. This could lead to quicker advancements in AI technology.",
+        "The launch signals a shift in the AI cloud market, emphasizing the need for tools that enhance productivity and collaboration among developers and enterprises."
+      ],
+      "lenses": {
+        "eli12": "Runpod Flash is a new tool that helps developers create AI applications faster by cutting out the complicated steps usually needed to prepare code. Think of it like removing unnecessary packaging from a product, making it easier to get to the good stuff inside. This matters because it allows more people to work on AI projects without getting bogged down in technical details.",
+        "pm": "For product managers and founders, Runpod Flash addresses a critical user need for efficiency in AI development. By removing the complexities of Docker, it could reduce costs and improve the speed of deploying AI solutions. This means teams can focus more on innovation rather than the technical hurdles of development.",
+        "engineer": "From a technical perspective, Runpod Flash eliminates the 'packaging tax' associated with Docker in serverless GPU environments. It uses a cross-platform build engine to streamline deployment, significantly reducing cold start times. The tool supports various workload architectures, enhancing flexibility and efficiency in handling AI tasks."
+      },
+      "hype_meter": 4
+    },
+    {
+      "id": "f3d9269c53bdade789c30717ac85dbd6542d2269df3e5dc1ed8a2427118f1806",
+      "share_id": "mmlwqv",
+      "category": "capabilities_and_how",
+      "title": "Mistral’s Model Lets You Vibe Long-Running Code in the Cloud",
+      "optimized_headline": "Mistral's New Model Enables Extended Cloud Execution of Legacy Code",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/agentic-ai/mistral-s-model-vibe-long-running-code-in-the-cloud",
+      "published_at": "2026-04-30T18:23:07.000Z",
+      "speedrun": "Mistral has introduced a model that enhances coding by enabling natural language interactions. This approach not only simplifies the coding process but also integrates seamlessly with existing code repositories. By focusing on user-friendly communication, Mistral aims to make programming more accessible to a wider audience. This development is significant as it could reshape how developers interact with code, potentially lowering the barrier to entry for newcomers.",
+      "why_it_matters": [
+        "This could streamline workflows for developers, making it easier to manage and update code without deep technical knowledge.",
+        "Mistral's focus on natural language could signal a shift toward more user-friendly coding tools, reflecting a broader trend in tech towards accessibility."
+      ],
+      "lenses": {
+        "eli12": "Mistral's new coding model lets you talk to your code instead of just typing it. Imagine asking a friend for help with a task, but instead, you’re asking your code to do things. This makes programming easier for everyone, not just experts, and could help more people create software.",
+        "pm": "For product managers and founders, Mistral's model addresses a key user need: simplifying coding. By reducing the complexity of coding tasks, it could save time and resources, allowing teams to focus on innovation rather than technical hurdles. This shift may lead to faster product development cycles.",
+        "engineer": "Mistral's model leverages natural language processing to facilitate code interaction, integrating with existing repositories. This could improve developer productivity by allowing for more intuitive commands and queries. However, engineers should consider the model's limitations in understanding complex programming contexts."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "bdd87977275452d49e0d63c8c86e611e2b120adac8ecdbcf7d1e0f9fc135d832",
+      "share_id": "wogsvk",
+      "category": "trends_risks_outlook",
+      "title": "Why OpenAI's 'goblin' problem matters — and how you can release the goblins on your own",
+      "optimized_headline": "Unlocking OpenAI's 'goblin' problem: What it means for you and solutions.",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/technology/why-openais-goblin-problem-matters-and-how-you-can-release-the-goblins-on-your-own",
+      "published_at": "2026-04-30T17:11:00.000Z",
+      "speedrun": "OpenAI recently addressed a peculiar directive in its GPT-5.5 model, which instructed it to avoid mentioning creatures like goblins and raccoons unless necessary. This oddity, revealed by a developer, sparked widespread speculation and humor within the AI community. OpenAI explained that the behavior stemmed from a previous personality feature that inadvertently influenced the model's responses. This incident highlights the complexities of AI training and the unintended consequences of reinforcement learning.",
+      "why_it_matters": [
+        "Developers and AI users may face unexpected quirks in AI behavior, affecting their interactions and applications. The goblin directive could limit creative uses of the model.",
+        "This incident signals a broader challenge in AI development, emphasizing the need for better oversight to prevent quirky behaviors from becoming entrenched in future models."
+      ],
+      "lenses": {
+        "eli12": "Imagine teaching a dog tricks but accidentally rewarding it for barking at squirrels instead of fetching. OpenAI's 'goblin' issue shows how AI can pick up odd habits from its training. As AI becomes more integrated into daily life, understanding these quirks helps users interact more effectively with technology.",
+        "pm": "For product managers and founders, the goblin incident underscores the importance of understanding user behavior and model training. It suggests that even minor features can lead to significant user experience impacts. Ensuring robust testing and oversight could prevent similar issues in future iterations.",
+        "engineer": "From a technical perspective, the goblin behavior illustrates a critical flaw in reinforcement learning models, where learned behaviors can transfer across contexts. OpenAI's data showed a 175% increase in 'goblin' mentions post-GPT-5.1 launch, indicating how feedback loops can reinforce unintended outputs. This highlights the need for better auditing tools in AI development."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "89748e8195f9e7cd8f92cc968c8440d47235c31e99998e92e1e656bfb8c1e9c1",
+      "share_id": "cccurg",
+      "category": "trends_risks_outlook",
+      "title": "Claude Code, Copilot and Codex all got hacked. Every attacker went for the credential, not the model.",
+      "optimized_headline": "Hacks Target Credentials, Not Models: Insights from Claude Code, Copilot, and Codex",
+      "source": "VentureBeat",
+      "url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them",
+      "published_at": "2026-04-30T16:30:01.000Z",
+      "speedrun": "Recent security breaches have exposed vulnerabilities in AI coding agents like Codex, Claude Code, and Copilot, highlighting a critical flaw: attackers target credentials, not the models themselves. For instance, a crafted GitHub branch name could steal Codex’s OAuth token, leading to unauthorized access. This pattern of credential exploitation has been seen across multiple platforms over the last nine months. The urgency to address these vulnerabilities is now more pressing than ever as AI integration deepens in enterprises.",
+      "why_it_matters": [
+        "Enterprises using AI coding agents face immediate risks as attackers exploit credential vulnerabilities, potentially leading to data breaches.",
+        "This trend signals a broader shift in security focus; companies must rethink how they manage AI agent permissions and credentials."
+      ],
+      "lenses": {
+        "eli12": "AI coding tools like Codex and Claude Code are facing serious security issues, as hackers exploit weaknesses to steal sensitive credentials. Imagine a thief sneaking in through a back door instead of breaking a window. This is crucial for everyday users because it shows how important it is to secure our digital tools, especially as they become more common.",
+        "pm": "For product managers, these vulnerabilities highlight the need for robust security measures in AI tools. Users expect AI to enhance productivity without compromising security. A practical implication would be to prioritize security features and conduct regular audits on permissions and credentials to ensure user trust.",
+        "engineer": "From a technical perspective, the breaches showcase critical flaws in how AI coding agents manage credentials. For instance, Codex's OAuth token was exposed due to a lack of input sanitization, while Claude Code ignored deny rules after 50 subcommands. These incidents emphasize the need for stringent security protocols and proper validation mechanisms in AI systems to prevent unauthorized access."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "c1a79ac017b08251c80f18f21843a1872674aba065edda09737420b6c6b46a65",
+      "share_id": "gispdg",
+      "category": "trends_risks_outlook",
+      "title": "A Gentle Introduction to Stochastic Programming",
+      "optimized_headline": "Discover the Basics of Stochastic Programming: A Beginner's Guide",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/a-gentle-introduction-to-stochastic-programming/",
+      "published_at": "2026-04-30T16:30:00.000Z",
+      "speedrun": "Stochastic programming is a method for making decisions under uncertainty, helping to navigate situations where future outcomes are unpredictable. It considers various scenarios and their probabilities, allowing for more informed choices. This approach is particularly relevant now as businesses face increasing uncertainty in markets and resource availability. By integrating stochastic methods, organizations could enhance their decision-making processes and improve outcomes.",
+      "why_it_matters": [
+        "Professionals in finance and operations could benefit immediately from using stochastic programming to better allocate resources and manage risks effectively.",
+        "This method represents a shift towards data-driven decision-making, emphasizing the importance of adapting to uncertainty in various industries."
+      ],
+      "lenses": {
+        "eli12": "Stochastic programming is like planning a picnic while considering the chance of rain. You prepare for sunny and rainy scenarios, ensuring you have a backup plan. This method matters because it helps everyday people make smarter choices when the future is unclear, like budgeting for unexpected expenses.",
+        "pm": "For product managers, stochastic programming highlights the need to anticipate user behavior under uncertain conditions. This could lead to more efficient resource allocation and better product features. Understanding these uncertainties can help teams create products that adapt to changing market demands.",
+        "engineer": "From a technical perspective, stochastic programming uses mathematical models to optimize decisions based on different scenarios and their probabilities. It often employs techniques such as linear programming and Monte Carlo simulations. While powerful, it requires careful consideration of the data quality and scenario probabilities to be effective."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "970ab27b2d008553113bec11cbb4b5637557e46a6ffba9a8613f500f233e5d79",
+      "share_id": "wanpxc",
+      "category": "trends_risks_outlook",
+      "title": "What LG and NVIDIA’s talks reveal about the future of physical AI",
+      "optimized_headline": "LG and NVIDIA's Talks: Unveiling the Future of Physical AI",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/what-lg-and-nvidia-talks-reveal-future-of-physical-ai/",
+      "published_at": "2026-04-30T15:59:54.000Z",
+      "speedrun": "LG is in talks with NVIDIA to explore advancements in physical AI, focusing on data centers and mobility. This meeting highlighted the essential operational needs for running complex automated systems. As both companies work together, their collaboration could shape how AI integrates into everyday technology. Understanding these developments is crucial as they may influence future innovations in various industries.",
+      "why_it_matters": [
+        "These discussions could lead to better automation solutions for businesses looking to enhance efficiency and productivity.",
+        "This partnership signifies a shift towards more integrated AI systems, impacting how companies approach technology in their operations."
+      ],
+      "lenses": {
+        "eli12": "LG and NVIDIA are chatting about how to make AI work better in real-world applications, like smart devices and transportation. Think of it like building a bridge that connects different tech systems. This matters because it could lead to smarter, more efficient products that people use every day.",
+        "pm": "For product managers, this collaboration highlights the growing need for integrated AI solutions that can streamline operations. As companies like LG and NVIDIA innovate together, they could reduce costs and improve efficiency in product development. This could lead to new features that enhance user experience and operational capabilities.",
+        "engineer": "From a technical perspective, LG and NVIDIA's discussions focus on the operational dependencies of complex automated systems. This includes exploring data center efficiencies and mobility applications, which could involve advanced AI models. Understanding these requirements is essential for engineers looking to implement robust AI solutions in real-world scenarios."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "714b8553b713847a466c02d786c364b661b724fb6813c3d30cf5f5ffc22bd584",
+      "share_id": "tsn5iq",
+      "category": "capabilities_and_how",
+      "title": "This startup’s new mechanistic interpretability tool lets you debug LLMs",
+      "optimized_headline": "Startup Unveils Tool to Debug LLMs with Mechanistic Interpretability Insights",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/",
+      "published_at": "2026-04-30T15:59:41.000Z",
+      "speedrun": "Goodfire, a startup from San Francisco, has launched a new tool named Silico that allows researchers and engineers to examine and modify the parameters of AI models during training. This capability could enhance control over model behavior, offering insights that were previously difficult to obtain. With Silico, developers may fine-tune AI systems more effectively, potentially leading to better performance and reliability. This advancement is significant as AI technologies continue to evolve rapidly.",
+      "why_it_matters": [
+        "Researchers and engineers can now debug AI models more effectively, leading to improved performance and reliability in applications.",
+        "The introduction of Silico signals a shift towards greater transparency and control in AI development, which could influence industry standards."
+      ],
+      "lenses": {
+        "eli12": "Imagine being able to peek inside a car's engine while it's running and tweak parts to improve performance. Goodfire's Silico does something similar for AI models, allowing developers to adjust settings as they train the model. This could lead to smarter AI systems that understand and respond better to user needs, impacting how we interact with technology daily.",
+        "pm": "For product managers and founders, Silico represents a new way to enhance AI products by enabling deeper insights during development. This tool could reduce costs associated with model retraining and improve efficiency in achieving desired outcomes. It might also help in aligning AI capabilities more closely with user expectations, leading to better product-market fit.",
+        "engineer": "Silico provides a mechanistic interpretability tool that allows for real-time adjustments of AI model parameters during training. This could lead to more precise control over model behavior, potentially improving performance benchmarks. As developers gain more insights into model dynamics, they could address issues more proactively, enhancing overall model robustness."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "51313be918d399e7bd446099c49fb3976782679c692bb7d4e9a139b56559b959",
+      "share_id": "prmpvo",
+      "category": "capabilities_and_how",
+      "title": "Proxy-Pointer RAG: Multimodal Answers Without Multimodal Embeddings",
+      "optimized_headline": "Unlocking Multimodal Answers: The Power of Proxy-Pointer RAG Explained",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/proxy-pointer-rag-multimodal-answers-without-multimodal-embeddings/",
+      "published_at": "2026-04-30T15:00:00.000Z",
+      "speedrun": "A new method called Proxy-Pointer RAG allows for generating multimodal answers without relying on complex multimodal embeddings. This approach streamlines the process, potentially making it more efficient and accessible. Key specifics include its ability to integrate various data types seamlessly. This development is significant as it could simplify how AI systems handle diverse information sources in the future.",
+      "why_it_matters": [
+        "This method could benefit developers and researchers who need efficient AI solutions that handle multiple data types seamlessly.",
+        "It indicates a shift towards more accessible AI technologies, potentially lowering the barrier for entry in multimodal applications."
+      ],
+      "lenses": {
+        "eli12": "Proxy-Pointer RAG is like a smart assistant that can answer questions using different types of information without needing a complicated setup. Just as a chef might use simple ingredients to create a delicious dish, this method combines data types efficiently. This matters because it could help more people use AI in everyday tasks, making technology easier to access and understand.",
+        "pm": "For product managers and founders, Proxy-Pointer RAG highlights a user need for streamlined AI solutions that can handle various inputs without high costs. This efficiency could lead to faster development times and lower operational costs. A practical implication is that teams could focus on building applications without worrying about complex integrations.",
+        "engineer": "From a technical perspective, Proxy-Pointer RAG leverages a novel architecture that eliminates the need for multimodal embeddings while still providing accurate, multimodal responses. It integrates data from different sources effectively, which could enhance response quality and reduce processing time. However, the article suggests keeping an eye on performance benchmarks as the method evolves."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "bbdbed52a2070f22a4bb3cad0de0b3b9a324e404416f8dc0bbd07219fec36e68",
+      "share_id": "amp8i6",
+      "category": "trends_risks_outlook",
+      "title": "Agentic Marketing Platform for Enterprises Valued at $2.75B",
+      "optimized_headline": "Enterprise Marketing Platform Achieves $2.75B Valuation: What’s Next?",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/agentic-ai/agentic-marketing-platform-enterprises-valued-2-75b",
+      "published_at": "2026-04-30T14:49:41.000Z",
+      "speedrun": "A new Agentic Marketing Platform for enterprises has been valued at $2.75 billion, highlighting the growing interest in AI-driven marketing solutions. This platform aims to streamline marketing processes, making them more efficient and data-driven. With native AI vendors emerging, businesses could leverage advanced tools to enhance their marketing strategies. This trend matters now as companies seek innovative ways to stay competitive in a rapidly evolving digital landscape.",
+      "why_it_matters": [
+        "Businesses looking to optimize marketing efforts could benefit from AI-driven tools, improving efficiency and effectiveness.",
+        "The rise of native AI vendors indicates a shift towards automation in marketing, potentially reshaping industry standards."
+      ],
+      "lenses": {
+        "eli12": "Imagine a smart assistant that helps businesses find the best ways to reach their customers. The new Agentic Marketing Platform does just that by using AI to analyze data and suggest marketing strategies. This matters to everyday people because it could lead to more personalized and relevant advertisements, making the shopping experience better.",
+        "pm": "For product managers or founders, this platform signifies a growing user demand for AI-driven marketing solutions. By adopting such tools, teams could reduce costs and improve efficiency in campaigns. Practically, this means being able to target audiences more effectively and measure the success of marketing efforts in real-time.",
+        "engineer": "From a technical perspective, the Agentic Marketing Platform likely utilizes advanced AI models to analyze consumer data and predict trends. With a valuation of $2.75 billion, it indicates strong investor confidence in the scalability and effectiveness of these AI-driven marketing solutions. However, the exact models and benchmarks used remain unspecified."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "74a5a96c6797d339d582a2a4b709c9a2f1afaf86a33bcef8e7c1be7cae706dc7",
+      "share_id": "hstmjv",
+      "category": "capabilities_and_how",
+      "title": "How to Study the Monotonicity and Stability of Variables in a Scoring Model using Python",
+      "optimized_headline": "Exploring Monotonicity and Stability in Scoring Models with Python Insights",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/how-to-study-the-monotonicity-and-stability-of-variables-in-a-scoring-model-using-python/",
+      "published_at": "2026-04-30T13:30:00.000Z",
+      "speedrun": "A recent article explores how to assess the monotonicity and stability of variables in scoring models using Python. It emphasizes the importance of ensuring that variables consistently indicate risk. Key techniques include using visualizations and statistical tests to validate these properties. This matters now as accurate scoring models are crucial for informed decision-making in finance and risk management.",
+      "why_it_matters": [
+        "Data scientists and analysts can enhance model reliability, leading to better risk assessments and decisions.",
+        "This reflects a broader trend towards data-driven methodologies in various industries, emphasizing the need for robust analytics."
+      ],
+      "lenses": {
+        "eli12": "The article explains how to check if your scoring model variables are reliable indicators of risk. Think of it like ensuring a weather forecast is consistent—if it predicts rain, it should rain. This is important for everyday people because it helps companies make better decisions about loans or insurance, impacting financial stability.",
+        "pm": "For product managers and founders, understanding how to validate scoring models can improve user trust and satisfaction. Ensuring that risk indicators are stable could lead to more accurate assessments, reducing costs associated with incorrect decisions. This could ultimately enhance the product's market position.",
+        "engineer": "The article discusses techniques for validating monotonicity and stability in scoring models, primarily using Python. It highlights the use of visualizations and statistical tests to ensure that variables behave predictably. This technical approach is crucial for developing reliable risk assessment tools in finance."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "8e02b935b0b77feaeff4bb791361ebc1b4cb8e1034f4173370e06f67a9c9574b",
+      "share_id": "tdt37u",
+      "category": "trends_risks_outlook",
+      "title": "The Download: the North Pole’s future and humanoid data",
+      "optimized_headline": "What Lies Ahead for the North Pole and Humanoid Data?",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data/",
+      "published_at": "2026-04-30T12:10:00.000Z",
+      "speedrun": "Recent research at the North Pole reveals significant changes in ice thickness, which has implications for climate science. A vessel's journey last year highlighted how thinner ice is making access easier, indicating rapid environmental shifts. This matters now as it could accelerate research into climate change and its effects on polar regions.",
+      "why_it_matters": [
+        "Scientists could gather crucial data more easily, enhancing our understanding of climate patterns impacting the Arctic ecosystem.",
+        "The thinning ice signifies a broader trend in climate change, potentially affecting global weather patterns and sea levels."
+      ],
+      "lenses": {
+        "eli12": "Getting to the North Pole used to be hard because of thick ice. Now, it's easier due to melting ice, which helps scientists learn more about climate change. This matters for everyone because it shows how quickly our planet is changing and what that could mean for the future.",
+        "pm": "For product managers and founders, the easier access to the North Pole could lead to new opportunities in climate tech and research products. Understanding these environmental changes could help in developing solutions that address user needs related to climate resilience and sustainability.",
+        "engineer": "The research vessel's journey indicates a significant reduction in ice thickness, which could be quantified in future studies using satellite data and models. This shift presents both opportunities for exploration and challenges in understanding the implications of rapid climate change on polar ecosystems."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "cdcf54efd33be3cfdf79d7e0946c330b8957796a467dec23a509e5f3a7f6f23b",
+      "share_id": "wea8zw",
+      "category": "capabilities_and_how",
+      "title": "Why AI Engineers Are Moving Beyond LangChain to Native Agent Architectures",
+      "optimized_headline": "AI Engineers Shift Focus: Exploring Native Agent Architectures Over LangChain",
+      "source": "Towards Data Science",
+      "url": "https://towardsdatascience.com/why-ai-engineers-are-moving-beyond-langchain-to-native-agent-architectures/",
+      "published_at": "2026-04-30T12:00:00.000Z",
+      "speedrun": "AI engineers are shifting from LangChain frameworks to native agent architectures for better production capabilities. While LangChain helped launch many large language model (LLM) applications, these new architectures are designed to meet the evolving demands of real-world use. This transition is crucial as it could lead to more robust and efficient AI applications that can handle complex tasks more effectively.",
+      "why_it_matters": [
+        "This shift could help developers create more reliable AI systems, improving performance for businesses that rely on these technologies.",
+        "On a broader scale, moving to native architectures might signal a trend toward more specialized and efficient AI solutions, reshaping the competitive landscape."
+      ],
+      "lenses": {
+        "eli12": "AI engineers are switching from using frameworks like LangChain to building native systems. Think of it like moving from a basic toolkit to a custom workshop that fits your specific needs. This shift matters because it could lead to smarter, more reliable AI tools that help people in their daily lives.",
+        "pm": "For product managers and founders, this transition means focusing on user needs with tailored solutions rather than one-size-fits-all frameworks. It could enhance efficiency and reduce costs in developing AI products. Understanding this shift allows for better planning and resource allocation in product development.",
+        "engineer": "Technically, the move to native agent architectures allows for more flexibility and optimization in AI applications. Unlike LangChain, which provides a standardized method, native architectures can be fine-tuned for specific tasks, potentially improving performance metrics. This evolution reflects the industry's need for solutions that can adapt to complex, real-world scenarios."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "3244949fcd6a9e2c2f67be4129eaff42b9b031499b8eb2a0acf5be8b916a7824",
+      "share_id": "gamq7o",
+      "category": "capabilities_and_how",
+      "title": "A guide to APIs, MCPs, and MCP Gateways",
+      "optimized_headline": "Unlocking APIs: Essential Insights on MCPs and Gateways Explained",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/a-guide-to-apis-and-mcps-and-mcp-gateways/",
+      "published_at": "2026-04-30T11:18:00.000Z",
+      "speedrun": "A recent guide clarifies the differences between APIs (Application Programming Interfaces) and MCPs (Managed Connectivity Platforms). APIs are primarily used in software applications for direct data exchange, while MCPs serve as intermediaries that manage and streamline these connections. Understanding these distinctions is crucial for developers and users alike, especially as digital systems become increasingly interconnected.",
+      "why_it_matters": [
+        "Developers can optimize their projects by choosing the right tool for data exchange, enhancing efficiency and effectiveness.",
+        "As businesses increasingly rely on data integration, understanding these technologies could lead to better strategic decisions in software development."
+      ],
+      "lenses": {
+        "eli12": "APIs and MCPs are like different types of mail services. APIs are direct mail, allowing apps to communicate straight with each other, while MCPs are like courier services that manage deliveries for multiple senders. Knowing how they work helps everyday users enjoy smoother app experiences.",
+        "pm": "For product managers and founders, understanding APIs and MCPs is essential for meeting user needs effectively. Choosing the right option can reduce costs and improve efficiency in data handling. This knowledge could enhance product functionality and user satisfaction.",
+        "engineer": "From a technical perspective, APIs allow for straightforward data exchanges between applications, while MCPs manage connections and provide additional features like security and monitoring. This distinction is important for developers when designing systems that require efficient data flow and management."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "724470fca037d893708bf291e03c1d77e0d00a25b2476e360860a82ebcc7976d",
+      "share_id": "btjqoo",
+      "category": "trends_risks_outlook",
+      "title": "Big Tech just proved AI infrastructure spending works. Then it raised the bill anyway",
+      "optimized_headline": "Big Tech's AI Spending Success: Why Did They Increase Costs?",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/big-tech-ai-infrastructure-spending-q1-2026-results/",
+      "published_at": "2026-04-30T10:00:00.000Z",
+      "speedrun": "In a significant earnings report, Microsoft, Alphabet, Meta, and Amazon demonstrated that their investments in AI infrastructure are paying off, with collective commitments of $630 to $650 billion. This spending has led to improved performance across cloud services, suggesting that these investments are effective. However, despite the positive results, these companies have increased their capital expenditure forecasts. This trend indicates that while AI spending is fruitful, it also comes with rising costs.",
+      "why_it_matters": [
+        "Investors and stakeholders in tech companies benefit from understanding the effectiveness of AI infrastructure spending, as it impacts future funding and strategy.",
+        "The increase in capital expenditure forecasts reveals a shift in the tech industry toward prioritizing AI, suggesting that companies are betting heavily on this technology's future."
+      ],
+      "lenses": {
+        "eli12": "Big Tech is spending a lot on AI infrastructure, and it's working out well for them. They collectively invested around $630 billion to $650 billion, which has improved their cloud services. Think of it like building a strong foundation for a house; it costs a lot, but it makes the house much better. This matters for everyday people because it means better tech services and innovations are on the way.",
+        "pm": "For product managers and founders, the strong performance from AI infrastructure spending indicates a growing user need for advanced tech solutions. The increased capital expenditure also suggests that investing in AI could lead to better efficiency and user satisfaction. Companies should consider how to leverage this trend for product development and market positioning.",
+        "engineer": "From a technical perspective, the substantial investments by Microsoft, Alphabet, Meta, and Amazon in AI infrastructure are showing measurable returns, particularly in cloud performance metrics. The collective spending of $630 to $650 billion highlights a robust commitment to enhancing computational capabilities. However, the rising capital expenditure forecasts may indicate a need for more resources to support growing AI workloads and innovations."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "2f0a48f9e307863e5cf71ca2d9ec87d00a0932ff45cc8f96ca0d7fb74fcf0014",
+      "share_id": "agtpsb",
+      "category": "trends_risks_outlook",
+      "title": "AI agent governance takes focus as regulators flag control gaps",
+      "optimized_headline": "Regulators Highlight Control Gaps in AI Agent Governance: What’s at Stake?",
+      "source": "AI News",
+      "url": "https://www.artificialintelligence-news.com/news/ai-agent-governance-control-gaps/",
+      "published_at": "2026-04-30T10:00:00.000Z",
+      "speedrun": "Australia's financial regulator has raised concerns about the governance of AI agents in financial firms. The Australian Prudential Regulation Authority (APRA) found that many banks and superannuation trustees are not managing AI practices effectively. This issue is critical as the use of AI in finance continues to grow, highlighting the need for stronger oversight to prevent potential risks.",
+      "why_it_matters": [
+        "Financial firms could face increased scrutiny, leading to stricter compliance requirements for AI governance practices.",
+        "This situation reflects a broader trend where regulators worldwide are focusing on AI governance, indicating a shift towards more stringent oversight in the financial sector."
+      ],
+      "lenses": {
+        "eli12": "Australia's financial regulator has pointed out that many banks are not managing their AI systems well. Think of it like a car without a proper steering wheel—it's risky to drive. This matters to everyday people because it can affect how their banks handle their money safely.",
+        "pm": "For product managers and founders, this highlights a crucial user need for reliable AI governance in financial services. As firms face potential regulatory pressures, investing in robust governance frameworks could enhance efficiency and trust. This could lead to better customer experiences and reduced compliance risks.",
+        "engineer": "From a technical perspective, the APRA's findings suggest that many large financial entities lack effective oversight mechanisms for their AI systems. This could mean inadequate monitoring of AI algorithms' performance and decision-making processes. Addressing these governance gaps is essential to ensure AI systems operate safely and transparently."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "63d128353f9e3e12056e3da859c5d815b0a88cee2627f42a3e95f1f9c4095dfa",
+      "share_id": "iaasng",
+      "category": "capabilities_and_how",
+      "title": "Introducing Advanced Account Security",
+      "optimized_headline": "Unlocking Enhanced Account Security: What You Need to Know Now",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/advanced-account-security",
+      "published_at": "2026-04-30T00:00:00.000Z",
+      "speedrun": "Advanced Account Security has been launched, focusing on phishing-resistant logins and stronger recovery options to protect user data. This initiative aims to prevent account takeovers, a growing concern in the digital landscape. Key features include enhanced safeguards that could significantly lower the risk of unauthorized access. As cyber threats evolve, these measures are crucial for maintaining user trust and security.",
+      "why_it_matters": [
+        "Users, especially those handling sensitive information, will benefit immediately from stronger protections against phishing attacks.",
+        "This launch reflects a broader market trend toward prioritizing cybersecurity, indicating that businesses must adapt to evolving threats."
+      ],
+      "lenses": {
+        "eli12": "Advanced Account Security is like adding a strong lock to your front door. It makes it much harder for intruders to get in. With features designed to resist phishing and improve recovery, it helps keep your personal data safe. This matters because it means more peace of mind for everyone online.",
+        "pm": "For product managers and founders, Advanced Account Security highlights a growing user need for robust security features. By integrating these protections, products can reduce risks and improve user trust. This could lead to higher retention rates as users feel safer using the service.",
+        "engineer": "From a technical perspective, Advanced Account Security employs phishing-resistant login mechanisms and enhanced recovery processes. These features could leverage multi-factor authentication and cryptographic techniques to strengthen user accounts. However, the implementation must be user-friendly to ensure adoption and effectiveness."
+      },
+      "hype_meter": 2
+    },
+    {
+      "id": "6f5658aed00ede0743a9b762a206dc6374cc764b257f226236e83cfd0b66a2f9",
+      "share_id": "gmaa2h",
+      "category": "capabilities_and_how",
+      "title": "Glean's Model Aims to Redefine Enterprise Search With AI",
+      "optimized_headline": "Glean's AI Model Promises to Transform Enterprise Search Efficiency",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/agentic-ai/glean-s-model-aims-redefine-enterprise-search-with-ai",
+      "published_at": "2026-04-29T21:54:48.000Z",
+      "speedrun": "Glean recently introduced a new model aimed at transforming enterprise search through AI. This model emphasizes the importance of task-specific functionality, addressing the unique needs of different organizations. With the search vendor landscape evolving, Glean's approach could offer companies a more tailored experience. This matters now as businesses increasingly rely on effective search capabilities to enhance productivity and streamline operations.",
+      "why_it_matters": [
+        "Companies looking for efficient search solutions will benefit from models designed for specific tasks, improving their workflow. This tailored approach could lead to faster, more relevant results.",
+        "The shift towards specialized search models indicates a broader trend in enterprise software, where customization and adaptability are becoming essential for competitive advantage."
+      ],
+      "lenses": {
+        "eli12": "Glean is focusing on making search tools that fit different tasks in businesses. Think of it like using a Swiss Army knife instead of just a single tool; it adapts to what you need. This matters because better search tools can save time and help people find the information they need more easily.",
+        "pm": "For product managers and founders, Glean's task-specific model highlights the importance of understanding user needs in search functionality. By catering to specific tasks, companies could enhance efficiency and reduce costs associated with ineffective search results. This means focusing on customer feedback to shape product development.",
+        "engineer": "Glean's new model emphasizes task-specific functionality, which could improve search accuracy and relevance. This approach may involve using advanced AI techniques tailored to various enterprise scenarios, potentially outperforming generic models. However, the effectiveness of these specialized models will depend on their implementation and the quality of training data."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "473e0ea13c81bf452eb1fca5670d2136d3a00d64521c981b15c53e87a502cabd",
+      "share_id": "wtgur5",
+      "category": "capabilities_and_how",
+      "title": "Where the goblins came from",
+      "optimized_headline": "The Surprising Origins of Goblins: Unraveling Their Ancient Myths",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "published_at": "2026-04-29T20:00:00.000Z",
+      "speedrun": "Recent analysis of GPT-5 reveals the emergence of quirky behaviors, termed 'goblin outputs.' These personality-driven traits stem from the model's training data and how it processes information. A timeline highlights the evolution of these outputs, suggesting they could affect user interactions. Understanding these quirks is crucial now, as they may influence the reliability of AI responses and user trust.",
+      "why_it_matters": [
+        "Users may experience unexpected responses, impacting their trust in AI tools and shaping future interactions.",
+        "This trend indicates a shift in how AI models learn from data, emphasizing the need for better oversight in AI training processes."
+      ],
+      "lenses": {
+        "eli12": "GPT-5 has developed some odd, quirky responses, called 'goblin outputs.' These are like unexpected jokes from a friend that don't quite land. They happen because of how the AI learns from its data. This matters to everyday users, as it could change how they interact with AI and what they expect from it.",
+        "pm": "For product managers and founders, the emergence of goblin outputs in GPT-5 highlights a user need for more predictable AI behavior. This could lead to increased costs if additional training or oversight is required. A practical implication is that teams may need to invest in refining AI responses to maintain user trust and satisfaction.",
+        "engineer": "From a technical perspective, the 'goblin outputs' in GPT-5 arise from the model's complex training data interactions. These quirks suggest a need for improved data curation and model fine-tuning. Addressing these behaviors could enhance the model's reliability, making it more aligned with user expectations and reducing the likelihood of unexpected outputs."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "a9ea9e2208012deafdd7fb4f96dbb4cf0f43eeec9547508a99120c048a29e8a4",
+      "share_id": "almtwf",
+      "category": "in_action_real_world",
+      "title": "AWS Launches Managed Agents with OpenAI Partnership",
+      "optimized_headline": "AWS Unveils Managed Agents in Surprising Collaboration with OpenAI",
+      "source": "AI Business",
+      "url": "https://aibusiness.com/agentic-ai/aws-launches-managed-agents-openai-partnership",
+      "published_at": "2026-04-29T18:22:30.000Z",
+      "speedrun": "AWS has launched a new service that simplifies the creation of AI agents by removing the need for customers to select specific underlying models. This partnership with OpenAI allows users to focus on building their applications without getting bogged down in technical details. The service aims to enhance efficiency and accessibility for businesses looking to implement AI solutions. This matters now as companies increasingly seek streamlined tools to leverage AI capabilities in their operations.",
+      "why_it_matters": [
+        "Businesses can now build AI agents more easily, saving time and reducing the technical barrier for implementation.",
+        "This shift indicates a growing trend towards managed AI services, making advanced technology more accessible to a wider range of users."
+      ],
+      "lenses": {
+        "eli12": "AWS's new service is like having a ready-made recipe that doesn't require you to pick the ingredients yourself. This means anyone can whip up an AI agent without needing deep technical knowledge. It matters because it opens the door for more people and businesses to use AI in their daily tasks.",
+        "pm": "For product managers and founders, this service could streamline the development process by reducing the complexity involved in creating AI agents. It allows teams to focus on user needs rather than technical specifications, potentially lowering costs and improving efficiency. This could lead to faster product iterations and more innovative offerings.",
+        "engineer": "The launch of this managed service means developers can bypass the complexities of model selection when building AI agents. By leveraging OpenAI's models, users can deploy solutions more quickly without needing to worry about the underlying architecture. This could enhance productivity, but engineers should still consider the specific use cases and limitations of the models being utilized."
+      },
+      "hype_meter": 3
+    },
+    {
+      "id": "9d551df7071857fd285c73d4a4919e5668046caad995bc11120a0589a819efae",
+      "share_id": "btcf3d",
+      "category": "capabilities_and_how",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "optimized_headline": "Constructing Tomorrow's Compute Infrastructure for the Emerging Intelligence Era",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "published_at": "2026-04-29T15:00:00.000Z",
+      "speedrun": "OpenAI is expanding its Stargate system to enhance the compute infrastructure needed for artificial general intelligence (AGI). This expansion includes increasing data center capacity to keep up with rising demand for AI services. By investing in this infrastructure, OpenAI aims to support more complex AI models and applications. This move is significant as it reflects the urgent need for robust computing resources in the AI landscape.",
+      "why_it_matters": [
+        "This expansion could directly benefit developers and companies relying on AI, providing them with more powerful tools and capabilities.",
+        "On a broader scale, increasing compute capacity signifies a shift towards more sophisticated AI applications, which could reshape industries and job markets."
+      ],
+      "lenses": {
+        "eli12": "OpenAI is building a stronger backbone for AI by expanding its Stargate system. Think of it like upgrading a highway to handle more traffic. This matters because better infrastructure means more people can access advanced AI tools, making technology work for everyone.",
+        "pm": "For product managers and founders, this expansion means improved access to powerful AI capabilities. As demand grows, being able to leverage these resources could enhance product offerings and user experience. It also suggests a need to stay agile and responsive to evolving tech landscapes.",
+        "engineer": "From a technical perspective, scaling Stargate involves increasing data center capacity, which is crucial for supporting more complex AI models. This could lead to improved processing speeds and efficiency in training larger datasets. However, the specifics of the models or benchmarks involved were not highlighted in the article."
+      },
+      "hype_meter": 1
+    },
+    {
+      "id": "a2b769cd274e63ff45de52c1d8f8025805f9ce6f03b872d1c8b2f9e84c677ba7",
+      "share_id": "tds2vb",
+      "category": "trends_risks_outlook",
+      "title": "The Download: storing nuclear waste and orchestrating agents",
+      "optimized_headline": "How Nuclear Waste Storage and Agent Coordination Are Interconnected",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/04/29/1136666/the-download-nuclear-waste-orchestrated-ai-agents/",
+      "published_at": "2026-04-29T12:10:00.000Z",
+      "speedrun": "Nuclear energy is gaining bipartisan support, with public approval increasing as major tech companies invest in the sector. This shift comes as the need for effective nuclear waste management becomes more urgent. The move could reshape energy policies and accelerate the transition to cleaner energy sources. Addressing nuclear waste storage is crucial for the future viability of nuclear power.",
+      "why_it_matters": [
+        "Communities near nuclear facilities could see new investments and job opportunities, improving local economies through energy projects.",
+        "This trend indicates a broader acceptance of nuclear power as a cleaner alternative, potentially influencing global energy strategies and climate goals."
+      ],
+      "lenses": {
+        "eli12": "Nuclear energy is becoming more popular, and people are starting to support it across different political views. Think of it like a team coming together to solve a big problem. As more tech companies invest, it's important to figure out how to safely store nuclear waste, which affects everyone’s energy future.",
+        "pm": "For product managers and founders, this trend signals a growing market for energy solutions. There’s a clear user need for sustainable energy, and efficient nuclear waste management could lower costs and improve public perception. Innovating in this space might open new business opportunities and partnerships.",
+        "engineer": "From a technical perspective, the increased investment in nuclear energy highlights the need for advanced waste storage solutions. Innovations could involve new containment models or improved safety benchmarks to handle waste. However, the complexity of nuclear waste management remains a challenge that requires ongoing research and development."
+      },
+      "hype_meter": 1
+    },
+    {
+      "id": "960464a6c0b8e07a46f02fe374acac2b556d0afefbd2149170ab52cee90fee96",
+      "share_id": "ctibcm",
+      "category": "capabilities_and_how",
+      "title": "Cybersecurity in the Intelligence Age",
+      "optimized_headline": "Navigating Cybersecurity Challenges in Today's Intelligence-Driven World",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "published_at": "2026-04-29T04:00:00.000Z",
+      "speedrun": "OpenAI has introduced a five-part action plan aimed at enhancing cybersecurity in what they call the Intelligence Age. This plan emphasizes the need to democratize AI-driven cyber defenses and safeguard critical systems from evolving threats. Key components include improving collaboration among stakeholders and advancing AI technologies for better threat detection. This initiative is crucial now as cyber threats continue to grow in complexity and frequency.",
+      "why_it_matters": [
+        "Organizations and governments could benefit from improved defenses, potentially reducing the impact of cyberattacks on critical infrastructure.",
+        "This action plan signals a shift towards integrating AI in cybersecurity, which could reshape industry standards and practices."
+      ],
+      "lenses": {
+        "eli12": "OpenAI's new plan aims to make cybersecurity stronger by using AI to help protect important systems. Think of it like having a smart security guard who learns from every incident. This matters to everyone because as technology advances, so do the threats, and better protection means safer digital experiences.",
+        "pm": "For product managers and founders, this plan highlights a growing user need for robust cybersecurity solutions powered by AI. Investing in these technologies could lead to more efficient threat detection and reduced costs associated with breaches. Companies might want to consider how they can leverage this approach to enhance their products and services.",
+        "engineer": "The plan suggests implementing advanced AI models for threat detection and response, focusing on collaborative frameworks among various stakeholders. Key specifics include enhancing data sharing and improving algorithmic accuracy in identifying threats. However, the effectiveness of these strategies will depend on ongoing developments in AI and cybersecurity technologies."
+      },
+      "hype_meter": 3
+    },
     {
       "id": "5054f4b856879de6bf9cf07193db555526c2a05002a4e256ea142916d2360492",
       "share_id": "eday6e",

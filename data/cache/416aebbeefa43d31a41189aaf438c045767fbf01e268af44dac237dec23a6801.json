@@ -1,0 +1,31 @@
+{
+  "content_hash": "416aebbeefa43d31a41189aaf438c045767fbf01e268af44dac237dec23a6801",
+  "share_id": "cmf8sw",
+  "title": "Compositional Meta-Learning for Mitigating Task Heterogeneity in Physics-Informed Neural Networks",
+  "optimized_headline": "How Compositional Meta-Learning Enhances Physics-Informed Neural Networks' Versatility",
+  "url": "https://arxiv.org/abs/2604.26999",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-01T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2604.26999v1 Announce Type: new \nAbstract: Physics-informed neural networks (PINNs) approximate solutions of partial differential equations (PDEs) by embedding physical laws into the loss function. In parameterized PDE families, variations in coefficients or boundary/initial conditions define distinct tasks. This makes training individual PINNs for each task computationally prohibitive, whil",
+  "raw_body": "arXiv:2604.26999v1 Announce Type: new \nAbstract: Physics-informed neural networks (PINNs) approximate solutions of partial differential equations (PDEs) by embedding physical laws into the loss function. In parameterized PDE families, variations in coefficients or boundary/initial conditions define distinct tasks. This makes training individual PINNs for each task computationally prohibitive, while cross-task transfer can be sensitive to task heterogeneity. While meta-learning can reduce retraining cost, existing methods often rely on a single global initialization and may suffer from negative transfer, particularly under feature-scarce coordinate inputs and limited training-task availability. We propose the Learning-Affinity Adaptive Modular Physics-Informed Neural Network (LAM-PINN), a compositional framework that leverages task-specific learning dynamics. LAM-PINN combines PDE parameters with learning-affinity metrics from brief transfer sessions to construct a task representation and cluster tasks even with coordinate-only inputs. It decomposes the model into cluster-specialized subnetworks and a shared meta network, and learns routing weights to selectively reuse modules instead of relying on a single global initialization. Across three PDE benchmarks, LAM-PINN achieves an average 19.7-fold reduction in mean squared error (MSE) on unseen tasks using only 10% of the training iterations required by conventional PINNs. These results indicate its effectiveness for generalization to unseen configurations within bounded design spaces of parameterized PDE families in resource-constrained engineering settings.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced a new framework called LAM-PINN to improve the efficiency of physics-informed neural networks (PINNs) in solving partial differential equations (PDEs). By using task-specific learning dynamics, LAM-PINN reduces the mean squared error by an average of 19.7 times on unseen tasks, requiring only 10% of the training iterations of traditional methods. This development is significant as it enables more efficient training of models in resource-limited engineering applications.",
+  "why_it_matters": [
+    "Engineers and researchers can now solve complex PDEs faster and with fewer resources, making advanced simulations more accessible.",
+    "This approach reflects a broader trend in AI towards more efficient learning methods, potentially transforming how models are developed across various fields."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to solve different puzzles with limited pieces. LAM-PINN helps neural networks tackle these puzzles more efficiently by focusing on specific parts instead of starting from scratch each time. This matters because it allows scientists and engineers to create accurate models quickly, even with fewer resources.",
+    "pm": "For product managers and founders, LAM-PINN addresses the user need for faster and more efficient modeling in engineering. By reducing training costs and time, it could enhance product development cycles. Companies could leverage this technology to offer more robust simulations without significant resource investments.",
+    "engineer": "LAM-PINN enhances the performance of physics-informed neural networks by decomposing them into specialized subnetworks based on task similarities. It achieves a 19.7-fold reduction in mean squared error on unseen tasks while using only 10% of the training iterations compared to conventional PINNs. This modular approach allows for effective generalization in resource-constrained settings, although care must be taken with task heterogeneity."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-01T06:26:28.446Z",
+  "updated_at": "2026-05-01T06:26:28.446Z",
+  "processing_order": 1777616788446
+}
