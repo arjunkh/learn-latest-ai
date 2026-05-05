@@ -1,0 +1,31 @@
+{
+  "content_hash": "5b88293a532dabb9c58c8814370e67a9dc54ca466265361c1a586d76385bbc12",
+  "share_id": "mlco0y",
+  "title": "Minimal, Local, Causal Explanations for Jailbreak Success in Large Language Models",
+  "optimized_headline": "Exploring Local Factors Behind Successful Jailbreaks in Language Models",
+  "url": "https://arxiv.org/abs/2605.00123",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-05T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.00123v1 Announce Type: new \nAbstract: Safety trained large language models (LLMs) can often be induced to answer harmful requests through jailbreak prompts. Because we lack a robust understanding of why LLMs are susceptible to jailbreaks, future frontier models operating more autonomously in higher-stakes settings may similarly be vulnerable to such attacks. Prior work has studied jailb",
+  "raw_body": "arXiv:2605.00123v1 Announce Type: new \nAbstract: Safety trained large language models (LLMs) can often be induced to answer harmful requests through jailbreak prompts. Because we lack a robust understanding of why LLMs are susceptible to jailbreaks, future frontier models operating more autonomously in higher-stakes settings may similarly be vulnerable to such attacks. Prior work has studied jailbreak success by examining the model's intermediate representations, identifying directions in this space that causally encode concepts like harmfulness and refusal. Then, they globally explain all jailbreak attacks as attempting to reduce or strengthen these concepts (e.g., reduce harmfulness). However, different jailbreak strategies may succeed by strengthening or suppressing different intermediate concepts, and the same jailbreak strategy may not work for different harmful request categories (e.g., violence vs. cyberattack); thus, we seek to give a local explanation -- i.e., why did this specific jailbreak succeed? To address this gap, we introduce LOCA, a method that gives Local, CAusal explanations of jailbreak success by identifying a minimal set of interpretable, intermediate representation changes that causally induce model refusal on an otherwise successful jailbreak request. We evaluate LOCA on harmful original-jailbreak pairs from a large jailbreak benchmark across Gemma and Llama chat models, comparing against prior methods adapted to this setting. LOCA can successfully induce refusal by making, on average, six interpretable changes; prior work routinely fails to achieve refusal even after 20 changes. LOCA is a step toward mechanistic, local explanations of jailbreak success in LLMs. Code to be released.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a new method called LOCA to better understand why certain jailbreak prompts succeed in manipulating large language models (LLMs). By identifying minimal changes in the model's internal representations, LOCA can induce a refusal to harmful requests with an average of just six changes, while previous methods often fail even after 20. This advancement is crucial as LLMs are increasingly deployed in sensitive environments, raising concerns about their vulnerability to harmful prompts.",
+  "why_it_matters": [
+    "This could help developers create safer AI systems by understanding how to prevent harmful responses, protecting users from potential risks.",
+    "At a broader level, improving LLM safety could influence regulatory standards and public trust in AI technologies, shaping future deployment strategies."
+  ],
+  "lenses": {
+    "eli12": "The new LOCA method helps explain why some prompts can trick AI models into giving harmful answers. It works by making just a few specific changes in how the model thinks, leading to a refusal to harmful requests. This is important because as AI becomes more common in our lives, knowing how to keep it safe is essential for everyone.",
+    "pm": "For product managers, LOCA provides insights into how to enhance the safety of AI products. By understanding the minimal changes needed to prevent harmful outputs, teams can improve user experience and trust. This could lead to more efficient safety measures, ultimately reducing costs associated with harmful incidents.",
+    "engineer": "LOCA introduces a method for generating local causal explanations of jailbreak success in LLMs. By analyzing harmful original-jailbreak pairs, LOCA successfully induces refusal with an average of six changes, outperforming previous methods that required over 20 changes. This approach offers a more nuanced understanding of how specific internal representations can be manipulated, which is crucial for developing robust AI safety protocols."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-05T06:02:25.290Z",
+  "updated_at": "2026-05-05T06:02:25.290Z",
+  "processing_order": 1777960945292
+}

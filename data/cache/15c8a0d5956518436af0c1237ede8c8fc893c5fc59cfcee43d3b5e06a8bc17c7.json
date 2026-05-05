@@ -1,0 +1,31 @@
+{
+  "content_hash": "15c8a0d5956518436af0c1237ede8c8fc893c5fc59cfcee43d3b5e06a8bc17c7",
+  "share_id": "ttdqw6",
+  "title": "TADI: Tool-Augmented Drilling Intelligence via Agentic LLM Orchestration over Heterogeneous Wellsite Data",
+  "optimized_headline": "Unlocking TADI: How LLMs Transform Diverse Wellsite Data for Drilling Insights",
+  "url": "https://arxiv.org/abs/2605.00060",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-05T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.00060v1 Announce Type: new \nAbstract: We present TADI (Tool-Augmented Drilling Intelligence), an agentic AI system that transforms drilling operational data into evidence-based analytical intelligence. Applied to the Equinor Volve Field dataset, TADI integrates 1,759 daily drilling reports, selected WITSML real-time objects, 15,634 production records, formation tops, and perforations in",
+  "raw_body": "arXiv:2605.00060v1 Announce Type: new \nAbstract: We present TADI (Tool-Augmented Drilling Intelligence), an agentic AI system that transforms drilling operational data into evidence-based analytical intelligence. Applied to the Equinor Volve Field dataset, TADI integrates 1,759 daily drilling reports, selected WITSML real-time objects, 15,634 production records, formation tops, and perforations into a dual-store architecture: DuckDB for structured queries over 12 tables with 65,447 rows, and ChromaDB for semantic search over 36,709 embedded documents. Twelve domain-specialized tools, orchestrated by a large language model via iterative function calling, support multi-step evidence gathering that cross-references structured drilling measurements with daily report narratives. The system parses all 1,759 DDR XML files with zero errors, handles three incompatible well naming conventions, and is backed by 95 automated tests plus a 130-question stress-question taxonomy spanning six operational categories. We formalize the agent's behavior as a sequential tool-selection problem and propose the Evidence Grounding Score (EGS) as a simple grounding-compliance proxy based on measurements, attributed DDR quotations, and required answer sections. The complete 6,084-line, framework-free implementation is reproducible given the public Volve download and an API key, and the case studies and qualitative ablation analysis suggest that domain-specialized tool design, rather than model scale alone, is the primary driver of analytical quality in technical operations.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "TADI, or Tool-Augmented Drilling Intelligence, is a new AI system that enhances drilling operations by analyzing diverse data sources. It integrates 1,759 daily reports and 15,634 production records to provide evidence-based insights. Notably, it successfully parsed all XML files without errors and supports multi-step evidence gathering through 12 specialized tools. This advancement matters now as it could improve decision-making in drilling operations, potentially leading to safer and more efficient practices.",
+  "why_it_matters": [
+    "Drilling companies could benefit immediately from enhanced data analysis, leading to more informed operational decisions.",
+    "This development signals a shift towards more intelligent data integration in the oil and gas sector, emphasizing the importance of specialized tools over sheer model size."
+  ],
+  "lenses": {
+    "eli12": "TADI is like a smart assistant for drilling operations, helping teams make sense of complex data. It combines various reports and production records to provide clearer insights. This is important for everyday people as it could lead to safer and more efficient drilling practices, ultimately affecting energy availability and prices.",
+    "pm": "For product managers and founders, TADI highlights the need for tools that can efficiently handle and analyze operational data. Its dual-store architecture could reduce costs by improving data accessibility and analysis speed. A practical implication is the potential for developing similar systems in other industries where data integration is crucial.",
+    "engineer": "TADI employs a dual-store architecture, using DuckDB for structured data queries and ChromaDB for semantic searches. It successfully parses 1,759 XML files with zero errors and incorporates a unique Evidence Grounding Score (EGS) to assess data compliance. This approach shows that specialized tools can significantly enhance analytical quality beyond just increasing model size."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-05T06:02:03.731Z",
+  "updated_at": "2026-05-05T06:02:03.731Z",
+  "processing_order": 1777960923731
+}
