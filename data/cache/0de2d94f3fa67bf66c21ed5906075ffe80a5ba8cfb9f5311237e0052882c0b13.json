@@ -1,0 +1,31 @@
+{
+  "content_hash": "0de2d94f3fa67bf66c21ed5906075ffe80a5ba8cfb9f5311237e0052882c0b13",
+  "share_id": "blu0ld",
+  "title": "Beyond Lists: Using Python Deque for Real-Time Sliding Windows",
+  "optimized_headline": "Unlocking Python Deque: Master Real-Time Sliding Windows Effectively",
+  "url": "https://towardsdatascience.com/beyond-lists-using-python-deque-for-real-time-sliding-windows/",
+  "source": "Towards Data Science",
+  "published_at": "2026-05-06T16:30:00.000Z",
+  "raw_excerpt": "Stop shifting elements in lists! Discover why collections.deque is the secret to high-performance sliding windows, thread-safe queues, and efficient data streams in your next Python project.\nThe post Beyond Lists: Using Python Deque for Real-Time Sliding Windows appeared first on Towards Data Science.",
+  "raw_body": "Stop shifting elements in lists! Discover why collections.deque is the secret to high-performance sliding windows, thread-safe queues, and efficient data streams in your next Python project.\nThe post Beyond Lists: Using Python Deque for Real-Time Sliding Windows appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The article highlights the advantages of using Python's collections.deque over traditional lists for real-time sliding window applications. Deque offers more efficient data handling, particularly for operations that involve adding or removing elements from both ends, which can be crucial for performance. This shift could significantly enhance the efficiency of data streams and thread-safe queues in projects. Understanding this could help developers optimize their code for better performance.",
+  "why_it_matters": [
+    "Developers working with real-time data will find deque improves performance in applications like data streaming or processing. This is crucial for maintaining speed and efficiency.",
+    "The move towards using deque signals a broader trend in programming where efficiency and performance are prioritized, reflecting a shift in best practices among developers."
+  ],
+  "lenses": {
+    "eli12": "Using collections.deque in Python is like having a flexible toolbox that lets you quickly grab the right tool without rummaging through a messy drawer. It helps manage data more efficiently, especially when you need to add or remove items on the fly. This matters for everyday users who want their apps to run smoothly and quickly.",
+    "pm": "For product managers, adopting collections.deque can enhance user experience by ensuring that applications handle data more efficiently. This could lead to lower operational costs and improved performance. It’s a practical choice for building responsive applications that meet user expectations.",
+    "engineer": "From a technical perspective, collections.deque provides O(1) time complexity for append and pop operations from both ends, unlike lists, which can be O(n) for these actions. This makes deque a superior choice for implementing sliding windows and managing data streams effectively. Developers should consider this when optimizing their Python applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-07T06:23:16.607Z",
+  "updated_at": "2026-05-07T06:23:16.607Z",
+  "processing_order": 1778134996608
+}

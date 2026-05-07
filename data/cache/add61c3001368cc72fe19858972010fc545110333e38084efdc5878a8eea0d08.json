@@ -1,0 +1,31 @@
+{
+  "content_hash": "add61c3001368cc72fe19858972010fc545110333e38084efdc5878a8eea0d08",
+  "share_id": "ceaa8x",
+  "title": "CreativityBench: Evaluating Agent Creative Reasoning via Affordance-Based Tool Repurposing",
+  "optimized_headline": "Exploring CreativityBench: How Agents Innovate Through Tool Repurposing",
+  "url": "https://arxiv.org/abs/2605.02910",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-07T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.02910v2 Announce Type: new \nAbstract: Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes ra",
+  "raw_body": "arXiv:2605.02910v2 Announce Type: new \nAbstract: Recent advances in large language models have led to strong performance on reasoning and environment-interaction tasks, yet their ability for creative problem-solving remains underexplored. We study this capability through the lens of creative tool use, where a model repurposes available objects by reasoning about their affordances and attributes rather than relying on canonical usage. As a first step, we introduce CreativityBench, a benchmark for evaluating affordance-based creativity in LLMs. To this end, we build a large-scale affordance knowledge base (KB) with 4K entities and 150K+ affordance annotations, explicitly linking objects, parts, attributes, and actionable uses. Building on this KB, we generate 14K grounded tasks that require identifying non-obvious yet physically plausible solutions under constraints. Evaluations across 10 state-of-the-art LLMs, including closed and open-source models, show that models can often select a plausible object, but fail to identify the correct parts, their affordances, and the underlying physical mechanism needed to solve the task, leading to a significant drop in performance. Furthermore, improvements from model scaling quickly saturate, strong general reasoning does not reliably translate to creative affordance discovery, and common inference-time strategies such as Chain-of-Thought yield limited gains. These results suggest that creative tool use remains a major challenge for current models, and that CreativityBench provides a useful testbed for studying this missing dimension of intelligence, with potential implications for planning and reasoning modules in future agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces CreativityBench, a new benchmark for evaluating how well large language models (LLMs) can creatively repurpose tools by understanding their affordances. It includes a vast knowledge base with over 150,000 annotations and 14,000 tasks to test models' creative reasoning. The findings reveal that while models can choose plausible objects, they often struggle with identifying the right parts and their uses, indicating a gap in creative problem-solving abilities. This matters now as it highlights the limitations of current AI in tasks requiring innovative thinking.",
+  "why_it_matters": [
+    "This research could directly impact AI developers focusing on enhancing creative reasoning in models, improving their utility in real-world applications.",
+    "It signifies a broader shift in AI research, emphasizing the need for models that can think creatively, which is essential for advanced automation and intelligent systems."
+  ],
+  "lenses": {
+    "eli12": "CreativityBench is like a test that checks how well AI can think outside the box. It looks at whether AI can use everyday items in new ways, not just their usual purposes. This matters because if AI can learn to be more creative, it could help with tasks that require innovative solutions in our daily lives.",
+    "pm": "For product managers, CreativityBench highlights the importance of developing AI that can adapt to new situations creatively. This could lead to more efficient solutions that meet user needs in unexpected ways. Understanding these capabilities could help in designing products that leverage AI to solve complex problems creatively.",
+    "engineer": "CreativityBench evaluates LLMs' creative reasoning through a structured framework, employing a knowledge base with 4,000 entities and over 150,000 affordance annotations. Despite strong performance in reasoning tasks, models often fail at identifying the correct components and their uses, indicating a gap in creative affordance discovery. This suggests that scaling models does not necessarily enhance their creative capabilities, which could inform future research directions."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-07T06:22:36.116Z",
+  "updated_at": "2026-05-07T06:22:36.116Z",
+  "processing_order": 1778134956116
+}

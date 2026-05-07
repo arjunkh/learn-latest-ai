@@ -1,0 +1,31 @@
+{
+  "content_hash": "63ca7c4731dd1f1f032213d4f08ac0550e96536cfd1dd1e248b18dbbc89ccbb4",
+  "share_id": "ctryqi",
+  "title": "Computing Thiele Rules on Interval Elections and their Generalizations",
+  "optimized_headline": "Exploring Thiele Rules in Interval Elections: Insights and Generalizations Unveiled",
+  "url": "https://arxiv.org/abs/2605.03067",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-07T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.03067v1 Announce Type: new \nAbstract: Approval-based committee voting has received significant attention in the social choice community. Among the studied rules, Thiele rules, and especially Proportional Approval Voting (PAV), stand out for desirable properties such as proportional representation, Pareto optimality, and support monotonicity. Their main drawback is that computing a Thiel",
+  "raw_body": "arXiv:2605.03067v1 Announce Type: new \nAbstract: Approval-based committee voting has received significant attention in the social choice community. Among the studied rules, Thiele rules, and especially Proportional Approval Voting (PAV), stand out for desirable properties such as proportional representation, Pareto optimality, and support monotonicity. Their main drawback is that computing a Thiele outcome is NP-hard in general.\n  A glimpse of hope comes from the fact that Thiele rules are better behaved under structured preferences. On the candidate interval (CI) domain, they are computable in polynomial time via a linear program (LP) that has a totally unimodular constraint matrix. Surprisingly, this approach fails for the related voter interval (VI) domain, and the complexity of the problem has repeatedly been posed as an open question. Our main result resolves this question: although the relevant matrix is not totally unimodular, the ``standard'' LP still admits at least one optimal integral solution, and we provide a fast algorithm for finding it.\n  Our technique naturally extends to the voter-candidate interval (VCI) domain, also known as the 1-dimensional voter-candidate range (1D-VCR) domain, and to the linearly consistent (LC) domain, both of which generalize the candidate and voter interval domains. Although both the VCI and LC domains have been studied in social choice, their relationship was unknown. We show, through connections to graph theory, that LC strictly contains VCI. We also provide an alternative definition of LC that is closer in spirit to VCI and has a natural interpretation in approval elections; this equivalence may be of independent interest. Finally, we study an alternative tree-based generalization of VCI and show that Thiele rules become NP-hard to compute on this domain.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research delves into Thiele rules in approval-based committee voting, highlighting Proportional Approval Voting (PAV) for its favorable traits like proportional representation. While computing Thiele outcomes is generally NP-hard, a new polynomial-time algorithm has been developed for a specific voter-candidate interval domain. This breakthrough could enhance the efficiency of approval voting systems, making them more practical for real-world applications.",
+  "why_it_matters": [
+    "This finding could streamline decision-making processes for organizations and committees that rely on approval voting, improving fairness in representation.",
+    "On a broader scale, it indicates a shift towards more efficient voting methods, potentially influencing how elections and selections are conducted in various sectors."
+  ],
+  "lenses": {
+    "eli12": "This research focuses on how to make voting systems fairer and easier to compute. Think of it like finding a faster route on a map that still takes you to all the important places. This matters because more efficient voting can lead to better representation for everyone involved.",
+    "pm": "For product managers and founders, this research highlights a way to enhance the efficiency of voting tools. By utilizing the new algorithm, they could provide users with quicker and more reliable outcomes in decision-making processes, potentially increasing user satisfaction and engagement.",
+    "engineer": "The study introduces a polynomial-time algorithm for computing Thiele outcomes in the voter-candidate interval domain, overcoming previous NP-hard limitations. It shows that the standard linear program, despite a non-totally unimodular matrix, still yields an optimal integral solution. This advancement could lead to more efficient algorithms in social choice theory."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-07T06:22:51.957Z",
+  "updated_at": "2026-05-07T06:22:51.957Z",
+  "processing_order": 1778134971959
+}

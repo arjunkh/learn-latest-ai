@@ -1,0 +1,31 @@
+{
+  "content_hash": "477d852bcd5e5e0199cdbef98ce9fe4b42e401e8b9d5351a87d0a79a2a11c415",
+  "share_id": "sacws6",
+  "title": "Stable Agentic Control: Tool-Mediated LLM Architecture for Autonomous Cyber Defense",
+  "optimized_headline": "Revolutionary LLM Architecture Enhances Autonomous Cyber Defense Capabilities",
+  "url": "https://arxiv.org/abs/2605.03034",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-07T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.03034v1 Announce Type: new \nAbstract: Agentic systems involved in high-stake decision-making under adversarial pressure need formal guarantees not offered by existing approaches. Motivated by the operational needs of security operations centers (SOCs) that must configure endpoint detection and response (EDR) policies under adversarial pressure, we present a tool-mediated architecture: L",
+  "raw_body": "arXiv:2605.03034v1 Announce Type: new \nAbstract: Agentic systems involved in high-stake decision-making under adversarial pressure need formal guarantees not offered by existing approaches. Motivated by the operational needs of security operations centers (SOCs) that must configure endpoint detection and response (EDR) policies under adversarial pressure, we present a tool-mediated architecture: LLM agents use deterministic tools (Stackelberg best-response, Bayesian observer updates, attack-graph primitives) and select from finite action catalogs enforced at the tool-output interface. A composite Lyapunov function machine-checked in Lean 4 with zero sorry certifies controllability, observability from asymmetric sensor data, and Input-to-State Stability (ISS) robustness under intelligent adversarial disturbance, with two corollaries extending the certificate to any controller or adversary from the catalogs. On 282 real enterprise attack graphs, the claims hold with margin. On paired offensive/defensive telemetry, a tool-mediated Claude Sonnet 4 controller reduces the attacker's expected payoff (game value) by 59% relative to a deterministic greedy baseline, with zero variance across 40 runs at four temperatures. A Claude Haiku 4.5 controller converges to suboptimal game values but stays catalog-bounded over an additional 40 runs, demonstrating that architectural stability is not dependent on the controller capability. The LLM agent's non-determinism furthers creative exploration of strategies, while the tool-mediated architecture ensures system stability.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new architecture for autonomous cyber defense has been introduced, focusing on high-stakes decision-making under pressure. This tool-mediated approach uses deterministic tools and a composite Lyapunov function to ensure stability and observability in adversarial environments. Notably, a Claude Sonnet 4 controller reduced an attacker's expected payoff by 59% compared to traditional methods. This development is significant as it enhances the effectiveness of security operations centers (SOCs) in combating cyber threats.",
+  "why_it_matters": [
+    "Security operations centers could benefit immediately by implementing this architecture, improving their response to cyber threats effectively.",
+    "This shift could signal a broader trend in cybersecurity towards more reliable, autonomous systems capable of adapting to dynamic threats."
+  ],
+  "lenses": {
+    "eli12": "This new system helps computers make smart choices in tough situations, like defending against cyber attacks. Think of it as a chess player using a strategy guide to outsmart an opponent. It matters because it could help keep our data safer in an increasingly digital world.",
+    "pm": "For product managers, this architecture addresses a critical user need for robust cybersecurity solutions. By improving efficiency and reducing potential losses, it could lead to stronger market offerings. Companies might find that investing in such technology could enhance customer trust and satisfaction.",
+    "engineer": "The architecture employs a tool-mediated approach with a composite Lyapunov function verified in Lean 4, ensuring controllability and robustness against adversarial disturbances. Using 282 real enterprise attack graphs, the Claude Sonnet 4 controller demonstrated a 59% reduction in expected payoff for attackers, showcasing the effectiveness of this method. This indicates that even with non-deterministic elements, system stability can be maintained."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-07T06:22:45.192Z",
+  "updated_at": "2026-05-07T06:22:45.192Z",
+  "processing_order": 1778134965193
+}
