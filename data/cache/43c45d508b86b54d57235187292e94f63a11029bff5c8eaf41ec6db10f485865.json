@@ -1,0 +1,31 @@
+{
+  "content_hash": "43c45d508b86b54d57235187292e94f63a11029bff5c8eaf41ec6db10f485865",
+  "share_id": "mtm9je",
+  "title": "More Thinking, More Bias: Length-Driven Position Bias in Reasoning Models",
+  "optimized_headline": "How Length Influences Bias in Reasoning Models: Insights Revealed",
+  "url": "https://arxiv.org/abs/2605.06672",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-11T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.06672v1 Announce Type: new \nAbstract: Chain-of-thought (CoT) reasoning and reasoning-tuned models such as DeepSeek-R1 are commonly assumed to reduce shallow heuristic biases by thinking carefully. We test this on position bias in multiple-choice QA and find a different story: within any reasoning-capable model, per-question position bias scales with the length of the reasoning trajector",
+  "raw_body": "arXiv:2605.06672v1 Announce Type: new \nAbstract: Chain-of-thought (CoT) reasoning and reasoning-tuned models such as DeepSeek-R1 are commonly assumed to reduce shallow heuristic biases by thinking carefully. We test this on position bias in multiple-choice QA and find a different story: within any reasoning-capable model, per-question position bias scales with the length of the reasoning trajectory.\n  Across thirteen reasoning-mode configurations (two R1-distilled 7-8B models, two base models prompted with CoT, and DeepSeek-R1 at 671B) on MMLU, ARC-Challenge, and GPQA, twelve show a positive partial correlation between trajectory length and Position Bias Score (PBS) after controlling for accuracy, ranging from 0.11 to 0.41 (all p < 0.05). All twelve open-weight reasoning-mode configurations show monotonically increasing PBS across length quartiles. A truncation intervention provides causal evidence: continuations resumed from later points in the trajectory are increasingly likely to shift toward position-preferred options (16% to 32% for R1-Qwen-7B across absolute-position buckets).\n  At 671B, aggregate PBS collapses to 0.019, but the length effect still manifests in the longest quartile (PBS = 0.071), suggesting that accuracy gates the expression of length-driven bias rather than eliminating the underlying mechanism. We additionally find that direct-answer position bias is a distinct phenomenon with a different footprint (strong in Llama-Instruct-direct, weak in Qwen-Instruct-direct, and uncorrelated with trajectory length): CoT reasoning replaces this baseline bias with length-accumulated bias.\n  Our results argue that reasoning-capable models should not be treated as order-robust by default in MCQ evaluation pipelines, and offer a diagnostic toolkit (PBS, commitment change point, effective switching, truncation probes) for auditing position bias in reasoning models.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study examined how reasoning models, like Chain-of-Thought (CoT) and DeepSeek-R1, handle position bias in multiple-choice questions. Surprisingly, the research found that longer reasoning paths can actually increase position bias, with a correlation of 0.11 to 0.41 across various models. This matters because it challenges the assumption that careful reasoning inherently reduces biases, highlighting the need for better evaluation methods in AI models.",
+  "why_it_matters": [
+    "This finding is crucial for developers of AI models, as it suggests that longer reasoning can lead to greater biases in decision-making. Understanding this mechanism could help improve AI reliability.",
+    "On a broader scale, this research indicates a shift in how we evaluate reasoning in AI. It reveals that even advanced models may still exhibit biases, prompting a reevaluation of existing assessment frameworks."
+  ],
+  "lenses": {
+    "eli12": "The study shows that even smart AI models can be biased, especially when they think for longer periods. Imagine a student who starts to favor answers just because they take longer to think. This is important for everyone because it reminds us that more thinking doesn't always mean better decisions.",
+    "pm": "For product managers, this research highlights a critical user need: ensuring that AI models provide unbiased answers, regardless of reasoning length. It suggests that longer reasoning might not always lead to better results, which could affect user trust and satisfaction. Companies might need to invest in tools to measure and mitigate these biases.",
+    "engineer": "The study reveals that position bias in reasoning models scales with the length of reasoning trajectories, with a correlation of 0.11 to 0.41 observed across multiple configurations. Even high-capacity models like DeepSeek-R1 show a length-driven bias, particularly in longer reasoning paths. This indicates that while accuracy may mask bias, it doesn't eliminate the underlying mechanisms, necessitating new diagnostic tools for evaluating position bias."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-11T06:54:54.258Z",
+  "updated_at": "2026-05-11T06:54:54.258Z",
+  "processing_order": 1778482494259
+}

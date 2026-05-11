@@ -1,0 +1,31 @@
+{
+  "content_hash": "d3f7c9a5dddd7a4d32aeb4b51ebd542a56bbbf369504af84f874d0f0a1779292",
+  "share_id": "rbtvro",
+  "title": "RAG Is Blind to Time — I Built a Temporal Layer to Fix It in Production",
+  "optimized_headline": "\"How a Temporal Layer Transformed RAG's Time Blindness in Production\"",
+  "url": "https://towardsdatascience.com/rag-is-blind-to-time-i-built-a-temporal-layer-to-fix-it-in-production/",
+  "source": "Towards Data Science",
+  "published_at": "2026-05-09T13:00:00.000Z",
+  "raw_excerpt": "Three weeks into testing, a learner told me my AI tutor gave her the wrong answer.\nNot obviously wrong — just outdated enough to mislead.\nThat was the moment I realized something most RAG systems quietly ignore: they have no sense of time. My system retrieved the most similar document, not the most current one. And in a knowledge base that changes constantly, that’s a serious flaw.\nThe fix wasn’t ",
+  "raw_body": "Three weeks into testing, a learner told me my AI tutor gave her the wrong answer.\nNot obviously wrong — just outdated enough to mislead.\nThat was the moment I realized something most RAG systems quietly ignore: they have no sense of time. My system retrieved the most similar document, not the most current one. And in a knowledge base that changes constantly, that’s a serious flaw.\nThe fix wasn’t in the retriever or the model. It was in the gap between them.\nI built a temporal layer that filters expired facts, boosts time-sensitive signals, and makes the system prefer what’s still true — not just what matches.\nThe post RAG Is Blind to Time — I Built a Temporal Layer to Fix It in Production appeared first on Towards Data Science.",
+  "category": "in_action_real_world",
+  "category_confidence": "medium",
+  "speedrun": "A recent development highlights a significant flaw in Retrieval-Augmented Generation (RAG) systems: they lack a sense of time. During testing, an AI tutor provided outdated information, leading to confusion. To address this, a new temporal layer was created to prioritize current facts over simply similar ones. This innovation is crucial as knowledge bases evolve rapidly, making timely accuracy essential for effective AI communication.",
+  "why_it_matters": [
+    "Learners relying on AI tutors could face misinformation, impacting their education and decision-making. This temporal layer could enhance their learning experience.",
+    "This improvement signals a broader shift in AI development, emphasizing the need for systems that adapt to changing information landscapes, which could influence future AI designs."
+  ],
+  "lenses": {
+    "eli12": "Imagine using a map that only shows old roads. It might be similar to where you want to go, but it won't get you there accurately. The new temporal layer helps AI focus on the most current information, making it more reliable. This matters because accurate information helps everyone, from students to professionals, make better choices.",
+    "pm": "For product managers and founders, this temporal layer addresses a critical user need: reliable, up-to-date information. It could enhance user trust and satisfaction, reducing errors in decision-making. Implementing this feature could also streamline content updates, making the product more efficient and relevant.",
+    "engineer": "From a technical perspective, the introduction of a temporal layer bridges the gap between document retrieval and model output. By filtering out outdated information and enhancing time-sensitive signals, it improves the accuracy of responses. This approach could be a pivotal shift in how RAG systems are designed, focusing more on temporal relevance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-11T06:55:59.432Z",
+  "updated_at": "2026-05-11T06:55:59.432Z",
+  "processing_order": 1778482559435
+}

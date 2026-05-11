@@ -1,0 +1,31 @@
+{
+  "content_hash": "05bd43dc4e8b2a0f564a927d25f12036652ee8fdb3db563aee3035c963e6b37c",
+  "share_id": "srakrp",
+  "title": "State Representation and Termination for Recursive Reasoning Systems",
+  "optimized_headline": "Exploring State Representation and Termination in Recursive Reasoning Systems",
+  "url": "https://arxiv.org/abs/2605.06690",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-11T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.06690v1 Announce Type: new \nAbstract: Recursive reasoning systems alternate between acquiring new evidence and refining an accumulated understanding. Two design choices are typically left implicit: how to represent the evolving reasoning state, and when to stop iterating. This paper addresses both. We represent the reasoning state as an epistemic state graph encoding extracted claims, e",
+  "raw_body": "arXiv:2605.06690v1 Announce Type: new \nAbstract: Recursive reasoning systems alternate between acquiring new evidence and refining an accumulated understanding. Two design choices are typically left implicit: how to represent the evolving reasoning state, and when to stop iterating. This paper addresses both. We represent the reasoning state as an epistemic state graph encoding extracted claims, evidential relations, open questions, and confidence weights. We define the order-gap as the distance between the states reached by expand-then-consolidate versus consolidate-then-expand; a small order-gap suggests that the two orderings agree and further iteration is unlikely to help. Our main result gives a necessary and sufficient condition for the linearised order-gap to be non-degenerate near the fixed point, showing when the criterion is informative rather than algebraically vacuous. This is a local condition, not a global convergence guarantee. We apply the framework to recursive reasoning systems and sketch its application to agent loops, tree-of-thought reasoning, theorem proving, and continual learning.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent paper explores how recursive reasoning systems can better represent their evolving thought processes and decide when to stop refining their understanding. It introduces an epistemic state graph that captures claims, relationships, and confidence levels. A key finding is the 'order-gap,' which indicates the effectiveness of different reasoning approaches. This research could enhance AI's reasoning capabilities, making systems more efficient in processing information.",
+  "why_it_matters": [
+    "Researchers and developers of AI systems could benefit from clearer frameworks for reasoning processes, improving AI decision-making. This could lead to more reliable and efficient AI applications.",
+    "The findings suggest a shift towards more structured approaches in AI reasoning, potentially influencing future AI development and deployment strategies across various sectors."
+  ],
+  "lenses": {
+    "eli12": "This paper looks at how AI systems think and learn over time. It introduces a way to visualize their thought process, like a map showing where they've been and what they've learned. Understanding when to stop refining ideas could help make AI smarter and faster, which matters for everyone using these technologies.",
+    "pm": "For product managers, this research highlights the importance of how AI systems manage their reasoning. By using the proposed state graph, teams could create more efficient AI that makes better decisions. This could lead to reduced costs and improved user experiences as AI systems become more adept at understanding complex information.",
+    "engineer": "The paper presents an epistemic state graph that encodes claims and confidence levels, which could enhance recursive reasoning systems. It introduces the 'order-gap' concept, indicating when further iterations may not yield better results. While this provides a local condition for reasoning effectiveness, it doesn't guarantee global convergence, which is crucial for engineers to consider in system design."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-11T06:55:15.791Z",
+  "updated_at": "2026-05-11T06:55:15.791Z",
+  "processing_order": 1778482515794
+}
