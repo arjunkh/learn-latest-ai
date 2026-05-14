@@ -1,0 +1,31 @@
+{
+  "content_hash": "d6682ed6bee0109528c5953dacc00fe282842c6664b433c87c5b9887ff3b0757",
+  "share_id": "mbmxtl",
+  "title": "Macro-Action Based Multi-Agent Instruction Following through Value Cancellation",
+  "optimized_headline": "Exploring Multi-Agent Instruction Following: The Role of Value Cancellation",
+  "url": "https://arxiv.org/abs/2605.12655",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-14T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.12655v1 Announce Type: new \nAbstract: Multi-agent reinforcement learning (MARL) in real-world use cases may need to adapt to external natural language instructions that interrupt ongoing behavior and conflict with long-horizon objectives. However, conditioning rewards on instructions introduces a fundamental failure mode as Bellman updates couple value estimates across instruction conte",
+  "raw_body": "arXiv:2605.12655v1 Announce Type: new \nAbstract: Multi-agent reinforcement learning (MARL) in real-world use cases may need to adapt to external natural language instructions that interrupt ongoing behavior and conflict with long-horizon objectives. However, conditioning rewards on instructions introduces a fundamental failure mode as Bellman updates couple value estimates across instruction contexts, leading to inconsistent values when instructions interrupt macro-actions. We propose Macro-Action Value Correction for Instruction Compliance (MAVIC), which corrects Bellman backups at instruction boundaries by correcting the incoming instruction objective and restoring the continuation value under the current objective. Unlike reward shaping, MAVIC modifies the bootstrapping target itself, enabling consistent value estimation under stochastic instruction switching within a unified policy. We provide theoretical analysis and an actor-critic implementation, and show that MAVIC achieves high instruction compliance while preserving base task performance in increasingly complex cooperative multi-agent environments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced a new method called Macro-Action Value Correction for Instruction Compliance (MAVIC) to improve multi-agent reinforcement learning (MARL). MAVIC addresses issues where natural language instructions conflict with ongoing actions, which can disrupt value estimates. The method corrects value calculations at instruction boundaries, leading to better adherence to instructions while maintaining task performance. This advancement could enhance how AI systems operate in dynamic environments, making them more reliable in real-world applications.",
+  "why_it_matters": [
+    "MAVIC could significantly improve AI systems that rely on natural language instructions, benefiting developers and users who need consistent performance.",
+    "This development signals a shift towards more adaptable AI, which could lead to better performance in complex, real-world scenarios where instructions may vary."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to follow a recipe while someone keeps changing the ingredients. MAVIC helps AI systems handle changing instructions without losing track of their main task. This is important for everyday applications like virtual assistants, ensuring they understand and follow user commands accurately.",
+    "pm": "For product managers, MAVIC highlights a way to enhance user experience in AI applications. It addresses the need for systems that adapt to changing instructions without sacrificing performance, potentially reducing user frustration and increasing satisfaction.",
+    "engineer": "MAVIC modifies the bootstrapping target in MARL, correcting value estimates when instructions change. This approach allows for consistent value estimation across different instruction contexts, which is crucial in multi-agent environments. The theoretical analysis and actor-critic implementation demonstrate its effectiveness in maintaining compliance while preserving performance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-14T06:36:48.713Z",
+  "updated_at": "2026-05-14T06:36:48.713Z",
+  "processing_order": 1778740608714
+}

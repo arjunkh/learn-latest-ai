@@ -1,0 +1,31 @@
+{
+  "content_hash": "7057c90d193e0c5271163093e895cac16a903190a4e40f10861a8a656aa7f2e3",
+  "share_id": "rif1kl",
+  "title": "Revealing Interpretable Failure Modes of VLMs",
+  "optimized_headline": "Uncovering Interpretable Failure Modes in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2605.12674",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-14T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.12674v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) are increasingly used in safety-critical applications because of their broad reasoning capabilities and ability to generalize with minimal task-specific engineering. Despite these advantages, they can exhibit catastrophic failures in specific real-world situations, constituting failure modes.\n  We introduce REVELIO, a f",
+  "raw_body": "arXiv:2605.12674v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) are increasingly used in safety-critical applications because of their broad reasoning capabilities and ability to generalize with minimal task-specific engineering. Despite these advantages, they can exhibit catastrophic failures in specific real-world situations, constituting failure modes.\n  We introduce REVELIO, a framework for systematically uncovering interpretable failure modes in VLMs. We define a failure mode as a composition of interpretable, domain-relevant concepts-such as pedestrian proximity or adverse weather conditions-under which a target VLM consistently behaves incorrectly. Identifying such failures requires searching over an exponentially large discrete combinatorial space. To address this challenge, REVELIO combines two search procedures: a diversity-aware beam search that efficiently maps the failure landscape, and a Gaussian-process Thompson Sampling strategy that enables broader exploration of complex failure modes.\n  We apply REVELIO to autonomous driving and indoor robotics domains, uncovering previously unreported vulnerabilities in state-of-the-art VLMs. In driving environments, the models often demonstrate weak spatial grounding and fail to account for major obstructions, leading to recommendations that would result in simulated crashes. In indoor robotics tasks, VLMs either miss safety hazards or behave excessively conservatively, producing false alarms and reducing operational efficiency. By identifying structured and interpretable failure modes, REVELIO offers actionable insights that can support targeted VLM safety improvements.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called REVELIO has been introduced to identify failure modes in Vision-Language Models (VLMs), which are increasingly used in critical applications. This framework helps uncover specific conditions, like pedestrian proximity and adverse weather, under which VLMs perform poorly. For instance, in autonomous driving, these models can misinterpret spatial data, potentially leading to simulated accidents. Understanding these failures is crucial as VLMs become more integrated into safety-sensitive areas.",
+  "why_it_matters": [
+    "This framework could help developers improve VLMs, ensuring safer applications in fields like autonomous driving and robotics.",
+    "Identifying and addressing these failure modes signals a shift towards more reliable AI systems, which is vital for broader adoption in safety-critical environments."
+  ],
+  "lenses": {
+    "eli12": "REVELIO is like a detective for AI models, helping to find out why they sometimes make big mistakes. It looks for specific situations, like how close a pedestrian is, that can cause problems. By understanding these issues, we could make AI safer and more reliable for everyday tasks, like driving or home robots.",
+    "pm": "For product managers, REVELIO highlights the importance of understanding user safety in AI applications. It identifies specific failure modes that could lead to costly errors, allowing for targeted improvements. This focus on safety could enhance user trust and satisfaction, making products more appealing in competitive markets.",
+    "engineer": "REVELIO employs a diversity-aware beam search and Gaussian-process Thompson Sampling to explore a vast space of potential failure modes in VLMs. In practical tests, it revealed that VLMs struggle with spatial grounding in driving contexts, leading to unsafe recommendations. This approach emphasizes the need for rigorous testing protocols to enhance the reliability of VLMs in real-world applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-14T06:37:07.231Z",
+  "updated_at": "2026-05-14T06:37:07.231Z",
+  "processing_order": 1778740627234
+}
