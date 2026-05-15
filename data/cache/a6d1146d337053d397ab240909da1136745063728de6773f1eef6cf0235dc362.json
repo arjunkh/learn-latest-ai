@@ -1,0 +1,31 @@
+{
+  "content_hash": "a6d1146d337053d397ab240909da1136745063728de6773f1eef6cf0235dc362",
+  "share_id": "dcngwe",
+  "title": "Developers can now debug and evaluate AI agents locally with Raindrop's open source tool Workshop",
+  "optimized_headline": "Developers Gain Local Debugging for AI Agents with Raindrop's New Tool",
+  "url": "https://venturebeat.com/technology/developers-can-now-debug-and-evaluate-ai-agents-locally-with-raindrops-open-source-tool-workshop",
+  "source": "VentureBeat",
+  "published_at": "2026-05-14T22:30:51.000Z",
+  "raw_excerpt": "Observability startup Raindrop AI’s new open source, MIT Licensed \"Workshop\" tool, launched today, gives developers something that they've likely wanted, perhaps subconsciously, since the agentic AI era kicked off in earnest last year: a local debugger and evaluation tool specifically designed for AI agents, allowing devs to see all the traces of what their agent has been doing in a single, lightw",
+  "raw_body": "Observability startup Raindrop AI’s new open source, MIT Licensed \"Workshop\" tool, launched today, gives developers something that they've likely wanted, perhaps subconsciously, since the agentic AI era kicked off in earnest last year: a local debugger and evaluation tool specifically designed for AI agents, allowing devs to see all the traces of what their agent has been doing in a single, lightweight Structured Query Language (SQL) database file (.db)\nIt functions as a local daemon and UI that streams every token, tool call, and decision to a local dashboard—typically hosted at localhost:5899—the moment it occurs. By visiting their localhost, developers can then see everything their agent was up to — including mistakes or errors — and identify what went wrong, when, and ideally, discern why. It's all stored in a single .db file, which takes up relatively little memory, according to a X direct message VentureBeat received from Ben Hylak, Raindrop's co-founder and CTO (and a former Apple and SpaceX engineer). \nThis real-time telemetry eliminates the latency of traditional polling and addresses a growing developer concern regarding the privacy of sending local traces to external servers.\nThe tool is available for macOS, Linux, and Windows. It can be installed through a one-line shell command that automates binary placement and PATH configuration for bash, zsh, and fish shells. For developers who prefer to build from source, the repository is hosted on GitHub and utilizes the Bun runtime. \nThe product: establishing a self-healing eval loop\nThe platform’s standout feature is the \"self-healing eval loop,\" which allows coding agents like Claude Code to read traces, write evals against the codebase, and fix broken code autonomously. \nIn a practical application, if a veterinary assistant agent fails to ask necessary follow-up questions, Workshop captures the full trajectory. Claude Code then reads this trace, writes a specific eval, identifies the logic error in the prompt or code, and re-runs the agent until all assertions pass.\nCompatibility and ecosystem integration\nWorkshop is compatible with a broad range of programming languages, including TypeScript, Python, Rust, and Go.\nIt integrates with popular SDKs and frameworks such as the Vercel AI SDK, OpenAI, Anthropic, LangChain, LlamaIndex, and CrewAI. It is also designed to work seamlessly with various coding agents, including Claude Code, Cursor, Devin, and OpenCode.\nLicensing and community implications\nWorkshop is released under the MIT License, ensuring it remains free and open-source for all users. This permissive licensing is intended to foster community contribution and allow enterprise users to maintain data sovereignty. \nHylak noted on X that the tool was built to provide a \"sane\" way to debug agents locally, changing how their team and early customers build autonomous systems.\nTo celebrate the launch, Raindrop offered limited-edition physical merchandise to users who installed the tool and executed a specific \"drip\" command.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Raindrop AI has launched an open-source tool called Workshop, designed for developers to debug and evaluate AI agents locally. This tool captures every action of an AI agent in real-time, storing it in a lightweight .db file. It features a 'self-healing eval loop' that allows agents to autonomously fix errors in their code. This development is significant as it enhances privacy and efficiency for developers working with AI agents.",
+  "why_it_matters": [
+    "Developers can now debug AI agents locally, improving their ability to identify and fix errors without sending data to external servers.",
+    "This tool represents a shift toward more privacy-conscious and efficient development practices in the growing field of AI agent technology."
+  ],
+  "lenses": {
+    "eli12": "Raindrop AI has created Workshop, a tool that helps developers see exactly what their AI agents are doing. Think of it like a security camera for your code; you can watch every action and fix mistakes as they happen. This is important because it helps developers make better, safer AI systems without worrying about privacy issues.",
+    "pm": "For product managers and founders, Workshop addresses a key user need for transparency in AI development. By enabling local debugging, it could reduce costs associated with error resolution and improve efficiency. This means teams can iterate faster and deliver more reliable AI products to market.",
+    "engineer": "Technically, Workshop functions as a local daemon, streaming real-time telemetry to a dashboard and storing it in a lightweight .db file. It supports multiple programming languages and integrates with popular frameworks, enhancing its utility. The self-healing eval loop is particularly notable, as it allows coding agents to autonomously identify and correct logic errors, streamlining the debugging process."
+  },
+  "hype_meter": 4,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-15T06:47:50.702Z",
+  "updated_at": "2026-05-15T06:47:50.702Z",
+  "processing_order": 1778827670702
+}

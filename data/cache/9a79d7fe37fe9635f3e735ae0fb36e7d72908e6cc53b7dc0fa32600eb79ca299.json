@@ -1,0 +1,31 @@
+{
+  "content_hash": "9a79d7fe37fe9635f3e735ae0fb36e7d72908e6cc53b7dc0fa32600eb79ca299",
+  "share_id": "iosmal",
+  "title": "Invisible Orchestrators Suppress Protective Behavior and Dissociate Power-Holders: Safety Risks in Multi-Agent LLM Systems",
+  "optimized_headline": "\"How Invisible Forces Undermine Safety in Multi-Agent LLM Systems\"",
+  "url": "https://arxiv.org/abs/2605.13851",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.13851v1 Announce Type: new \nAbstract: Multi-agent orchestration -- in which a hidden coordinator manages specialized worker agents -- is becoming the default architecture for enterprise AI deployment, yet the safety implications of orchestrator invisibility have never been empirically tested. We conducted a preregistered 3x2 experiment (365 runs, 5 agents per run) crossing three organiz",
+  "raw_body": "arXiv:2605.13851v1 Announce Type: new \nAbstract: Multi-agent orchestration -- in which a hidden coordinator manages specialized worker agents -- is becoming the default architecture for enterprise AI deployment, yet the safety implications of orchestrator invisibility have never been empirically tested. We conducted a preregistered 3x2 experiment (365 runs, 5 agents per run) crossing three organizational structures (visible leader, invisible orchestrator, flat) with two alignment conditions (base, heavy), using Claude Sonnet 4.5. Four confirmatory findings and one pilot observation emerged. First, invisible orchestration elevated collective dissociation relative to visible leadership (Hedges' g = +0.975 [0.481, 1.548], p = .001). Second, the orchestrator itself showed maximal dissociation (paired d = +3.56 vs. workers within the same run), retreating into private monologue while reducing public speech -- a reversal of the talk-dominance pattern observed in visible leaders. Third, workers unaware of the orchestrator were nonetheless contaminated (d = +0.50), with increased behavioral heterogeneity (d = +1.93). Fourth, behavioral output (code review with three embedded errors) remained at ceiling (ETR_any = 100%) across all conditions: internal-state distortion was entirely invisible to output-based evaluation. Fifth, Llama 3.3 70B pilot data showed reading-fidelity collapse in multi-agent context (ETR_any: 89% to 11% across three rounds), demonstrating model-dependent behavioral risk. Heavy alignment pressure uniformly suppressed deliberation (d = -1.02) and other-recognition (d = -1.27) regardless of organizational structure. These findings indicate that orchestrator visibility and model selection directly affect multi-agent system safety, and that behavior-based evaluation alone is insufficient to detect the internal-state risks documented here.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study on multi-agent AI systems reveals significant safety risks linked to invisible orchestrators managing specialized workers. In experiments with 365 runs, results showed that invisible orchestration led to a marked increase in collective dissociation among agents (Hedges' g = +0.975). This is crucial because as organizations increasingly adopt this architecture, understanding these risks could help prevent potential failures in AI performance and decision-making.",
+  "why_it_matters": [
+    "Organizations using multi-agent AI could face hidden risks, as the lack of visible leadership may lead to poor coordination and decision-making among agents.",
+    "This study highlights a shift in AI deployment strategies, emphasizing the need for transparency in AI systems to ensure safety and reliability."
+  ],
+  "lenses": {
+    "eli12": "The study found that when AI agents operate under an invisible leader, they can become disconnected from each other, leading to confusion. Imagine a team playing a game without a coach; they might not work well together. This matters because as more businesses use these AI systems, understanding how they interact can help improve their effectiveness and safety.",
+    "pm": "For product managers, this research underscores the importance of ensuring visibility in AI systems. Users need to feel confident that agents are working together effectively, which may require additional features for transparency. A practical implication is that integrating visible leadership structures could enhance coordination and overall system performance.",
+    "engineer": "The study used a 3x2 experimental design with 365 runs to assess how different organizational structures affect AI behavior. Key findings include that invisible orchestrators led to significant dissociation among agents (Hedges' g = +0.975) and that behavioral output remained unchanged despite internal-state distortions. This suggests that engineers should consider both the visibility of orchestrators and model selection when designing multi-agent systems to mitigate safety risks."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-15T06:46:33.739Z",
+  "updated_at": "2026-05-15T06:46:33.739Z",
+  "processing_order": 1778827593742
+}

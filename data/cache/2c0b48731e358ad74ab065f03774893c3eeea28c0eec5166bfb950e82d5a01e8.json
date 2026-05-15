@@ -1,0 +1,31 @@
+{
+  "content_hash": "2c0b48731e358ad74ab065f03774893c3eeea28c0eec5166bfb950e82d5a01e8",
+  "share_id": "ggauiv",
+  "title": "GraphBit: A Graph-based Agentic Framework for Non-Linear Agent Orchestration",
+  "optimized_headline": "Discover GraphBit: Revolutionizing Non-Linear Agent Orchestration with Graph-Based Framework",
+  "url": "https://arxiv.org/abs/2605.13848",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.13848v1 Announce Type: new \nAbstract: Agentic LLM frameworks that rely on prompted orchestration, where the model itself determines workflow transitions, often suffer from hallucinated routing, infinite loops, and non-reproducible execution. We introduce GraphBit, an engine-orchestrated framework that defines workflows explicitly and deterministically as a directed acyclic graph (DAG). ",
+  "raw_body": "arXiv:2605.13848v1 Announce Type: new \nAbstract: Agentic LLM frameworks that rely on prompted orchestration, where the model itself determines workflow transitions, often suffer from hallucinated routing, infinite loops, and non-reproducible execution. We introduce GraphBit, an engine-orchestrated framework that defines workflows explicitly and deterministically as a directed acyclic graph (DAG). Unlike prompted orchestration, agents in GraphBit operate as typed functions, while a Rust-based engine governs routing, state transitions, and tool invocation, ensuring reproducibility and auditability. The engine supports parallel branch execution, conditional control flow over structured state predicates, and configurable error recovery. A three-tier memory architecture consisting of ephemeral scratch space, structured state, and external connectors isolates context across stages, preventing cascading context bloat that degrades reasoning in long-running pipelines. Across GAIA benchmark tasks spanning zero-tool, document-augmented, and web-enabled workflows, GraphBit outperforms six existing frameworks, achieving the highest accuracy (67.6 percent), zero framework-induced hallucinations, the lowest latency (11.9 ms overhead), and the highest throughput. Ablation studies demonstrate that each memory tier contributes measurably to performance, with deterministic execution providing the greatest gains on tool-intensive tasks representative of real-world deployments.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called GraphBit has been introduced to improve the orchestration of AI agents. Unlike traditional models that can lead to errors like infinite loops, GraphBit uses a directed acyclic graph (DAG) to define workflows clearly. This approach ensures reproducibility and reduces hallucinations, achieving an impressive accuracy of 67.6% in benchmark tasks. As AI applications become more complex, reliable frameworks like GraphBit are crucial for effective performance.",
+  "why_it_matters": [
+    "Developers and researchers can rely on GraphBit for more consistent AI behavior, reducing the risk of errors in automation tasks.",
+    "This framework signals a shift towards more structured AI systems, emphasizing the need for reliability in increasingly complex applications."
+  ],
+  "lenses": {
+    "eli12": "GraphBit is like a well-organized recipe that clearly outlines each step, preventing mistakes while cooking. By using a directed acyclic graph, it helps AI agents work together without getting lost or making errors. This matters because it means AI can perform tasks more reliably, which is important for everyday applications like virtual assistants and automated systems.",
+    "pm": "For product managers, GraphBit addresses the need for reliable AI orchestration in product development. It reduces costs associated with debugging and error handling by ensuring reproducible workflows. This could lead to faster deployment of AI features, enhancing user experience and trust.",
+    "engineer": "GraphBit leverages a Rust-based engine to manage workflow transitions in a directed acyclic graph format, which enhances performance and reduces errors. It achieves a notable accuracy of 67.6% across various benchmark tasks while maintaining low latency at 11.9 ms. The three-tier memory architecture ensures efficient context management, making it a strong choice for tool-intensive applications."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-15T06:46:07.488Z",
+  "updated_at": "2026-05-15T06:46:07.488Z",
+  "processing_order": 1778827567488
+}

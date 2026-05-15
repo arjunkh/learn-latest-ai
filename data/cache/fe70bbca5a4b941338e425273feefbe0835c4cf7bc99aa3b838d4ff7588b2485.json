@@ -1,0 +1,31 @@
+{
+  "content_hash": "fe70bbca5a4b941338e425273feefbe0835c4cf7bc99aa3b838d4ff7588b2485",
+  "share_id": "tfffil",
+  "title": "A Two-Dimensional Framework for AI Agent Design Patterns: Cognitive Function and Execution Topology",
+  "optimized_headline": "\"Exploring a New Framework for Designing AI Agents: Patterns Revealed\"",
+  "url": "https://arxiv.org/abs/2605.13850",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.13850v1 Announce Type: new \nAbstract: Existing frameworks for LLM-based agent architectures describe systems from a single perspective: industry guides (Anthropic, Google, LangChain) focus on execution topology -- how data flows -- while cognitive science surveys focus on cognitive function -- what the agent does. Neither axis alone disambiguates architecturally distinct systems: the sa",
+  "raw_body": "arXiv:2605.13850v1 Announce Type: new \nAbstract: Existing frameworks for LLM-based agent architectures describe systems from a single perspective: industry guides (Anthropic, Google, LangChain) focus on execution topology -- how data flows -- while cognitive science surveys focus on cognitive function -- what the agent does. Neither axis alone disambiguates architecturally distinct systems: the same Orchestrator-Workers topology can implement Plan-and-Execute, Hierarchical Delegation, or Adversarial Verification -- three patterns with fundamentally different failure modes and design trade-offs.\n  We propose a two-dimensional classification that combines (1) a Cognitive Function axis with seven categories (Context Engineering, Memory, Reasoning, Action, Reflection, Collaboration, Governance) and (2) an Execution Topology axis with six structural archetypes (Chain, Route, Parallel, Orchestrate, Loop, Hierarchy). The resulting 7x6 matrix identifies 27 named patterns, 13 with original names. We demonstrate orthogonality through systematic cross-axis analysis, define eight representative patterns in detail, and validate descriptive coverage across four real-world domains (financial lending, legal due diligence, network operations, healthcare triage). Cross-domain analysis yields five empirical laws of pattern selection governing the relationship between environmental constraints (time pressure, action authority, failure cost asymmetry, volume) and architectural choices. The framework provides a principled, framework-neutral, and model-agnostic vocabulary for AI agent architecture design.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework for designing AI agents combines two perspectives: cognitive function and execution topology. It categorizes cognitive functions into seven types and execution structures into six, creating a matrix with 27 distinct patterns. This approach clarifies how different agent designs can lead to varying performance and failure modes. Understanding these patterns could help developers create more effective AI systems tailored to specific tasks.",
+  "why_it_matters": [
+    "This framework could help AI developers select the right design patterns for their specific applications, improving functionality and reliability.",
+    "It signals a shift towards more nuanced AI design strategies, moving beyond one-size-fits-all solutions to more tailored architectures."
+  ],
+  "lenses": {
+    "eli12": "Think of AI agents like different types of vehicles. Just as cars, trucks, and buses serve different purposes, AI agents can be designed for specific tasks based on how they think and operate. This new framework helps clarify which design is best for a given job, making it easier for everyday users to benefit from smarter AI tools.",
+    "pm": "For product managers, this framework highlights the importance of aligning AI design with user needs. By understanding the cognitive functions and execution structures, they can create more efficient products that better serve their target audience. This could lead to reduced costs and improved user satisfaction as AI systems become more specialized.",
+    "engineer": "From a technical standpoint, this framework introduces a 7x6 matrix categorizing AI agent designs into 27 patterns, which can be analyzed for performance and failure modes. It emphasizes the importance of selecting the right cognitive functions and execution topologies based on environmental constraints. This systematic approach could enhance the robustness of AI systems across various domains, such as healthcare and finance."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-15T06:46:24.724Z",
+  "updated_at": "2026-05-15T06:46:24.724Z",
+  "processing_order": 1778827584726
+}

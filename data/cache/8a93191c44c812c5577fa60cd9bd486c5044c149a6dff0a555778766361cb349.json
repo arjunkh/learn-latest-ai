@@ -1,0 +1,31 @@
+{
+  "content_hash": "8a93191c44c812c5577fa60cd9bd486c5044c149a6dff0a555778766361cb349",
+  "share_id": "mig4zg",
+  "title": "Mixed Integer Goal Programming for Personalized Meal Optimization with User-Defined Serving Granularity",
+  "optimized_headline": "Revolutionizing Meal Planning: Customizing Nutrition with Goal Programming Techniques",
+  "url": "https://arxiv.org/abs/2605.13849",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-15T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.13849v1 Announce Type: new \nAbstract: Determining what to eat to satisfy nutritional requirements is one of the oldest optimization problems in operations research, yet existing formulations have two persistent limitations: continuous variables produce impractical fractional servings (1.7 eggs, 0.37 bananas), and hard nutrient constraints cause infeasibility when targets conflict. A sys",
+  "raw_body": "arXiv:2605.13849v1 Announce Type: new \nAbstract: Determining what to eat to satisfy nutritional requirements is one of the oldest optimization problems in operations research, yet existing formulations have two persistent limitations: continuous variables produce impractical fractional servings (1.7 eggs, 0.37 bananas), and hard nutrient constraints cause infeasibility when targets conflict. A systematic review of 56 diet optimization papers found that none combine integer programming with goal programming to address both issues. We propose Mixed Integer Goal Programming (MIGP) for personalized meal optimization. The formulation uses integer variables for practical serving counts and goal programming deviations for soft nutrient targets, with inverse-target normalization to balance multi-nutrient optimization. Per-food serving granularity allows natural units (one egg, one tablespoon of oil) without post-hoc rounding. We characterize the integrality gap in the goal programming context and identify a deviation absorption property: GP deviation variables buffer the cost of requiring integer servings, making the gap structurally smaller than in hard-constraint MIP. For meals with 15+ foods, the integer solution matches the continuous optimum in every benchmark instance. A computational evaluation across 810 instances (30 USDA foods, 9 configurations, 3 methods) shows MIGP finds strictly better solutions than GP with post-hoc rounding in 66% of cases (never worse) while maintaining 100% feasibility; hard-constraint IP achieves only 48%. Solve times stay under 100 ms for typical meal sizes using the open-source HiGHS solver. The implementation is available as an open-source Python module integrated into an interactive meal planning application.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach called Mixed Integer Goal Programming (MIGP) aims to optimize meal planning by using whole servings rather than impractical fractions. This method combines integer programming with goal programming to handle conflicting nutrient targets better. In tests, MIGP produced superior meal solutions 66% of the time compared to traditional methods while ensuring all targets were met. This innovation could significantly improve personalized meal planning, making it more practical and effective for users.",
+  "why_it_matters": [
+    "Individuals seeking tailored meal plans could benefit from more feasible serving sizes and improved nutritional balance.",
+    "This development signals a shift towards more user-friendly optimization methods in nutrition, potentially influencing diet planning tools in the market."
+  ],
+  "lenses": {
+    "eli12": "MIGP is like finding the perfect recipe that uses whole ingredients instead of weird fractions, like 1.7 eggs. It helps people create meal plans that are both nutritious and practical. This matters because it can make healthy eating easier and more enjoyable for everyone.",
+    "pm": "For product managers, MIGP addresses a real user need for practical meal planning by eliminating awkward serving sizes. It could enhance user satisfaction and engagement in meal planning apps, potentially leading to higher adoption rates. This method could also reduce costs related to dietary consultations by providing effective, automated solutions.",
+    "engineer": "MIGP leverages integer variables for serving sizes and goal programming to manage nutrient conflicts, achieving 100% feasibility in meal planning. In tests with 810 meal instances, it outperformed traditional methods in 66% of cases while keeping solve times under 100 ms. This efficiency and effectiveness could reshape how dietary optimization algorithms are developed."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-15T06:46:16.274Z",
+  "updated_at": "2026-05-15T06:46:16.274Z",
+  "processing_order": 1778827576275
+}
