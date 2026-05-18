@@ -1,0 +1,31 @@
+{
+  "content_hash": "b3d34306e2f59ceea84bd826f2ceb155241993e3d19aac1816103abd0612268c",
+  "share_id": "scax3r",
+  "title": "SkillSmith: Compiling Agent Skills into Boundary-Guided Runtime Interfaces",
+  "optimized_headline": "Unlocking Agent Skills: How SkillSmith Transforms Runtime Interfaces with Boundaries",
+  "url": "https://arxiv.org/abs/2605.15215",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.15215v1 Announce Type: new \nAbstract: Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically injected into the agent reasoning loop as contextual guidance once matched to a runtime task, enabling specialized task-solving capabilities. We find that this execution paradigm introduces ",
+  "raw_body": "arXiv:2605.15215v1 Announce Type: new \nAbstract: Recently, skills have been widely adopted in large language model (LLM)-based agent systems across various domains. In existing frameworks, skills are typically injected into the agent reasoning loop as contextual guidance once matched to a runtime task, enabling specialized task-solving capabilities. We find that this execution paradigm introduces two major sources of redundancy: irrelevant context injection and repeated skill-specific reasoning and planning. To this end, we propose SkillSmith, a boundary-first compiler-runtime framework that compiles skill packages offline into minimal executable interfaces. By extracting fine-grained operational boundaries from skills, SkillSmith enables agents to dynamically access and execute only the relevant components at runtime, thereby minimizing unnecessary context injection and redundant reasoning overhead. In the evaluation on SkillsBench benchmark, SkillSmith reduces solve-stage token usage by 57.44%, thinking iterations by 42.99%, solve time by 50.57% (2.02x faster), and token-proportional monetary cost by 57.44% compared with using raw-skills. Moreover, compiled artifacts produced by a stronger model can be reused by a smaller or more efficient runtime model, improving task accuracy in cases where raw skill interpretation fails. The source code and data are available at https://github.com/AetherHeart-AI/Aeloon.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new framework called SkillSmith enhances how large language model (LLM)-based agents use skills. By compiling skills into streamlined interfaces, it reduces redundant reasoning and context injection. Evaluation results show a 57.44% drop in token usage and a 50.57% faster solve time. This matters now as it could lead to more efficient AI systems, making them more accessible and cost-effective.",
+  "why_it_matters": [
+    "For developers, SkillSmith could significantly cut down resource usage, allowing them to build faster and more efficient AI applications.",
+    "This shift could signal a broader trend in AI towards more efficient models, impacting how businesses approach AI integration and cost management."
+  ],
+  "lenses": {
+    "eli12": "SkillSmith is like a smart organizer for AI skills, helping them work faster and more efficiently. By focusing only on what's needed at the moment, it cuts down on wasted effort. This is important because it can make AI tools cheaper and quicker for everyone to use.",
+    "pm": "For product managers and founders, SkillSmith addresses the need for efficiency in AI applications. It reduces both time and cost associated with using AI skills, which could lead to enhanced user experiences. This means teams could deliver better products faster and at a lower cost.",
+    "engineer": "SkillSmith introduces a boundary-first approach that compiles skills into minimal executable interfaces. In tests using the SkillsBench benchmark, it achieved a 57.44% reduction in token usage and a 50.57% improvement in solve time. This framework allows for the reuse of compiled artifacts across different model sizes, enhancing accuracy and efficiency."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-18T07:09:25.594Z",
+  "updated_at": "2026-05-18T07:09:25.594Z",
+  "processing_order": 1779088165597
+}

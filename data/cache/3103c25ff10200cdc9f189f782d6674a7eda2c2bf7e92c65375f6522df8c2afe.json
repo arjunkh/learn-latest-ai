@@ -1,0 +1,31 @@
+{
+  "content_hash": "3103c25ff10200cdc9f189f782d6674a7eda2c2bf7e92c65375f6522df8c2afe",
+  "share_id": "sttey8",
+  "title": "SDOF: Taming the Alignment Tax in Multi-Agent Orchestration with State-Constrained Dispatch",
+  "optimized_headline": "\"How SDOF Reduces Alignment Tax in Multi-Agent Orchestration\"",
+  "url": "https://arxiv.org/abs/2605.15204",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.15204v1 Announce Type: new \nAbstract: Multi-agent orchestration frameworks such as LangChain, LangGraph, and CrewAI route tasks through graph-based pipelines but do not enforce the stage constraints that govern real business processes. We present SDOF, a framework that treats multi-agent execution as a constrained state machine. SDOF operates through two primary defensive layers, implem",
+  "raw_body": "arXiv:2605.15204v1 Announce Type: new \nAbstract: Multi-agent orchestration frameworks such as LangChain, LangGraph, and CrewAI route tasks through graph-based pipelines but do not enforce the stage constraints that govern real business processes. We present SDOF, a framework that treats multi-agent execution as a constrained state machine. SDOF operates through two primary defensive layers, implemented by three components: (1) an Online-RLHF Specialized Intent Router trained via Generative Reward Modeling (GRPO) and (2) a StateAwareDispatcher with GoalStage finite-automaton checks and precondition/postcondition SkillRegistry validation for auditable execution control. On a recruitment system backed by the Beisen iTalent platform (6000+ enterprises), 185 expert-curated scenarios trigger 1671 live API calls. Our GSPO-aligned 7B Intent Router achieves higher joint accuracy than zero-shot GPT-4o on this FSM-constrained adversarial routing benchmark (80.9% versus 48.9%). In end-to-end execution, SDOF reaches 86.5% task completion (95% confidence interval 80.8 to 90.7) and blocks all 22 operations in the injection, illegal HR subset. Under a broader message-level blocking audit, SDOF attains precision 100% and recall 88%, expert agreement kappa=0.94. A separate evaluation on 960 SGD-derived dialogues spanning 8 service domains surfaces 201 stage-order conflicts under our FSM mapping, 41 of which arise in the normal split. This arXiv version reports the current validated scope; extended multi-seed training comparisons and deeper workflow evaluations will be released in a subsequent update.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced SDOF, a new framework for multi-agent orchestration that improves task routing by enforcing business process constraints. It uses a specialized intent router and a state-aware dispatcher to enhance accuracy and control. In tests involving over 6,000 enterprises, SDOF achieved an impressive 86.5% task completion rate, significantly outperforming previous models like GPT-4o. This advancement is crucial as it addresses the need for reliable execution in complex, real-world applications.",
+  "why_it_matters": [
+    "Businesses relying on automated systems could see improved efficiency and reliability in task execution, minimizing errors in critical processes.",
+    "This framework represents a shift towards more structured and accountable AI systems, indicating a growing trend in the industry towards enhanced operational integrity."
+  ],
+  "lenses": {
+    "eli12": "SDOF is like having a traffic cop for AI tasks, ensuring they follow the right path without getting lost. By enforcing rules, it helps businesses run smoother and avoids mistakes. This matters because it can make AI tools more dependable for everyday tasks, like hiring or customer service.",
+    "pm": "For product managers, SDOF could mean creating more reliable AI-driven applications that align closely with business processes. Its focus on task completion and error reduction can enhance user satisfaction and trust. This could lead to lower costs in the long run as efficiency improves.",
+    "engineer": "Technically, SDOF utilizes a 7B parameter intent router trained with Generative Reward Modeling, achieving 80.9% accuracy on a benchmark against GPT-4o's 48.9%. It features a state-aware dispatcher that validates execution through finite-automaton checks, ensuring high precision and recall in task management. This structured approach could redefine how multi-agent systems are developed."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-18T07:09:05.134Z",
+  "updated_at": "2026-05-18T07:09:05.134Z",
+  "processing_order": 1779088145135
+}
