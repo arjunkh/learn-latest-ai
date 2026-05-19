@@ -1,0 +1,31 @@
+{
+  "content_hash": "bbd5e69c23fd28ee4fee10652b80187b8d0aeed6afbec2e9ffcc1176a25e6920",
+  "share_id": "aalbar",
+  "title": "ANNEAL: Adapting LLM Agents via Governed Symbolic Patch Learning",
+  "optimized_headline": "\"Discover How Anneal Transforms LLM Agents with Symbolic Patch Learning\"",
+  "url": "https://arxiv.org/abs/2605.16309",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-19T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.16309v1 Announce Type: new \nAbstract: LLM-based agents can recover from individual execution errors, yet they repeatedly fail on the same fault when the underlying process knowledge--operator schemas, preconditions, and constraints--remains unrepaired. Existing self-evolving approaches address this gap by updating prompts, memory, or model weights, but none directly repair the symbolic ",
+  "raw_body": "arXiv:2605.16309v1 Announce Type: new \nAbstract: LLM-based agents can recover from individual execution errors, yet they repeatedly fail on the same fault when the underlying process knowledge--operator schemas, preconditions, and constraints--remains unrepaired. Existing self-evolving approaches address this gap by updating prompts, memory, or model weights, but none directly repair the symbolic structures that encode how tasks are executed, and few provide the governance guarantees required for safe deployment. We introduce ANNEAL, a neuro-symbolic agent that converts recurring failures into governed symbolic edits of a process knowledge graph without modifying foundation model weights. Its core mechanism, Failure-Driven Knowledge Acquisition (FDKA), localizes the responsible operator, synthesizes a typed patch through constrained LLM generation, and validates the proposal via multi-dimensional scoring, symbolic guardrails, and canary testing before commit. Every accepted edit carries full provenance and deterministic rollback capability. Across four domains and 27 multi-seed runs, ANNEAL is the only evaluated system that commits persistent structural repairs--strong baselines such as ReAct and Reflexion achieve high episodic recovery yet retain 72-100% holdout failure rates on recurring faults, whereas ANNEAL reduces these to 0% in the tested recurring-failure settings. Ablation confirms that removing FDKA eliminates all structural repairs and drops success rate by up to 26.7 percentage points. These results suggest that governed symbolic repair offers a complementary paradigm to weight-level and prompt-level adaptation for persistent fault elimination.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced ANNEAL, a neuro-symbolic agent designed to fix recurring errors in large language model (LLM) agents. Unlike previous methods that only adjusted prompts or weights, ANNEAL directly repairs the underlying process knowledge. Its Failure-Driven Knowledge Acquisition mechanism ensures that errors are identified and corrected, achieving a remarkable 0% failure rate in tested scenarios. This matters now as it could lead to more reliable AI systems in critical applications.",
+  "why_it_matters": [
+    "ANNEAL could significantly improve LLM agents used in high-stakes environments, ensuring they operate correctly over time.",
+    "This development signals a shift toward more robust AI solutions that integrate both symbolic reasoning and machine learning, enhancing overall system reliability."
+  ],
+  "lenses": {
+    "eli12": "ANNEAL is a new AI tool that helps fix mistakes made by other AI agents. Think of it like a mechanic that not only finds the problem but also repairs the engine itself. This is important because it could make AI systems more dependable in everyday tasks, from customer service to healthcare.",
+    "pm": "For product managers, ANNEAL demonstrates a way to enhance AI reliability without overhauling existing models. By addressing recurring errors directly, it could reduce user frustration and support smoother interactions. This means a better product experience and potentially lower costs related to error management.",
+    "engineer": "ANNEAL employs a novel Failure-Driven Knowledge Acquisition (FDKA) method to localize and repair faults in LLMs without altering model weights. In tests, it achieved a 0% failure rate on recurring errors, outperforming strong baselines like ReAct and Reflexion, which retained high failure rates. This indicates that integrating symbolic repair mechanisms could be a valuable addition to existing AI frameworks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-19T07:00:50.556Z",
+  "updated_at": "2026-05-19T07:00:50.556Z",
+  "processing_order": 1779174050557
+}

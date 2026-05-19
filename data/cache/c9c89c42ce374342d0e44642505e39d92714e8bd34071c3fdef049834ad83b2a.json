@@ -1,0 +1,31 @@
+{
+  "content_hash": "c9c89c42ce374342d0e44642505e39d92714e8bd34071c3fdef049834ad83b2a",
+  "share_id": "arsdw5",
+  "title": "AgentWall: A Runtime Safety Layer for Local AI Agents",
+  "optimized_headline": "\"Discover AgentWall: Enhancing Local AI Agents with Runtime Safety Features\"",
+  "url": "https://arxiv.org/abs/2605.16265",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-19T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.16265v1 Announce Type: new \nAbstract: The safety of autonomous AI agents is increasingly recognized as a critical open problem. As agents transition from passive text generators to active actors capable of executing shell commands, modifying files, calling APIs, and browsing the web, the consequences of unsafe or adversarially manipulated behavior become immediate and tangible. Existing",
+  "raw_body": "arXiv:2605.16265v1 Announce Type: new \nAbstract: The safety of autonomous AI agents is increasingly recognized as a critical open problem. As agents transition from passive text generators to active actors capable of executing shell commands, modifying files, calling APIs, and browsing the web, the consequences of unsafe or adversarially manipulated behavior become immediate and tangible. Existing AI safety work has focused primarily on model alignment and input filtering, but these approaches do not address what happens at the moment an agent's intent becomes a real action on a real machine. This gap is especially acute in local environments, where developers run agents against their own filesystems, credentials, and infrastructure with little runtime control. This paper introduces AgentWall, a runtime safety and observability layer for local AI agents. AgentWall intercepts every proposed agent action before it reaches the host environment, evaluates it against an explicit declarative policy, requires human approval for sensitive operations, and records a complete execution trail for audit and replay. It is implemented as a policy-enforcing MCP proxy and native OpenClaw plugin, working across Claude Desktop, Cursor, Windsurf, Claude Code, and OpenClaw with a single install command. We present the design, architecture, threat model, and policy model of AgentWall, and demonstrate 92.9% policy enforcement accuracy with sub-millisecond overhead across 14 benchmark tests. AgentWall is open-source at https://github.com/agentwall/Agentwall.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new paper introduces AgentWall, a runtime safety layer designed for local AI agents, addressing a critical gap in AI safety. As these agents evolve from simple text generators to active systems that can modify files and execute commands, the risk of unsafe actions increases. AgentWall evaluates agent actions against a policy before execution, requiring human approval for sensitive tasks. This innovation matters now as it enhances control and safety for developers working with AI in local environments.",
+  "why_it_matters": [
+    "Developers using local AI agents can now operate with greater safety, reducing risks of unintended actions on sensitive data.",
+    "The introduction of runtime safety layers like AgentWall signals a shift towards more responsible AI development practices in the industry."
+  ],
+  "lenses": {
+    "eli12": "AgentWall acts like a safety net for local AI agents, checking their actions before they can cause problems. Imagine a security guard who approves every risky move before it happens. This is important because it helps prevent accidents when developers work with powerful AI systems.",
+    "pm": "For product managers and founders, AgentWall addresses user needs for safer AI interactions. It reduces the risk of costly mistakes by requiring human approval for sensitive actions, which could lead to more trust in AI products. This could improve user satisfaction and adoption rates.",
+    "engineer": "AgentWall is a runtime layer that intercepts actions of AI agents, enforcing a policy model with 92.9% accuracy and minimal overhead. It operates as a proxy and plugin across various platforms, ensuring that potentially harmful actions are evaluated before execution. This could significantly enhance the safety of local AI applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-19T07:00:38.318Z",
+  "updated_at": "2026-05-19T07:00:38.318Z",
+  "processing_order": 1779174038318
+}
