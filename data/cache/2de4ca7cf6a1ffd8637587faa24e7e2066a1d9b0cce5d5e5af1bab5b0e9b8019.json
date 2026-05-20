@@ -1,0 +1,31 @@
+{
+  "content_hash": "2de4ca7cf6a1ffd8637587faa24e7e2066a1d9b0cce5d5e5af1bab5b0e9b8019",
+  "share_id": "odm3l6",
+  "title": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
+  "optimized_headline": "Unlocking Document AI: Microservice Architecture for Effective OCR and LLM Integration",
+  "url": "https://arxiv.org/abs/2605.18818",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.18818v1 Announce Type: new \nAbstract: Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large la",
+  "raw_body": "arXiv:2605.18818v1 Announce Type: new \nAbstract: Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as well as our experience running this pipeline on thousands of multi-page documents per hour. We describe our primary design decisions, including a hybrid classification, separation of GPU-bound inference from CPU-bound orchestration, use of asynchronous processing for the many IO-bound operations in the pipeline, and an independent, horizontal scaling strategy. Using batch profiling, we identified two surprising qualitative findings that shape production deployments: OCR, not language-model parsing, dominates end-to-end latency, and the system saturates at a concurrency determined by shared GPU-inference capacity rather than worker count. Our goal is to provide practitioners with concrete architectural patterns for building document understanding systems that work beyond the benchmark; effectively operationalizing models in production.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces a microservice architecture designed to enhance the operational efficiency of document AI systems, particularly for optical character recognition (OCR) and large language models (LLMs). This architecture allows for the processing of thousands of multi-page documents per hour and emphasizes the importance of separating GPU-bound tasks from CPU-bound ones. Key findings reveal that OCR significantly influences overall processing speed, and system performance is limited by GPU capacity rather than the number of workers. This matters now as organizations seek to implement effective document understanding systems in real-world applications.",
+  "why_it_matters": [
+    "Organizations that rely on document processing could see faster and more accurate outputs, improving workflow efficiency.",
+    "This architecture represents a shift towards more practical applications of AI, bridging the gap between theoretical models and real-world deployment."
+  ],
+  "lenses": {
+    "eli12": "This study shows how to make AI systems for reading documents work better in real life. Think of it like organizing a busy restaurant kitchen where each chef has specific tasks. By streamlining processes, businesses can handle more documents quickly and accurately, which is important for everyone who deals with paperwork.",
+    "pm": "For product managers and founders, this architecture highlights the need for efficient document processing. By focusing on separating tasks and scaling effectively, teams can reduce costs and improve user satisfaction. This could lead to a more reliable product that meets user demands for speed and accuracy.",
+    "engineer": "The proposed microservice architecture separates GPU-bound inference tasks from CPU-bound orchestration, optimizing processing efficiency. Key findings indicate that OCR tasks dominate end-to-end latency, and system throughput is constrained by GPU capacity rather than worker count. This approach allows for better scaling and operationalization of document understanding models in production environments."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-20T07:01:01.926Z",
+  "updated_at": "2026-05-20T07:01:01.926Z",
+  "processing_order": 1779260461927
+}

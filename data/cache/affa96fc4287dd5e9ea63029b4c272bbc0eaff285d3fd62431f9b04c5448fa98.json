@@ -1,0 +1,31 @@
+{
+  "content_hash": "affa96fc4287dd5e9ea63029b4c272bbc0eaff285d3fd62431f9b04c5448fa98",
+  "share_id": "cac6ki",
+  "title": "Claude agents can finally connect to enterprise APIs without leaking credentials",
+  "optimized_headline": "Claude Agents Now Securely Connect to Enterprise APIs—Discover How!",
+  "url": "https://venturebeat.com/orchestration/claude-agents-can-finally-connect-to-enterprise-apis-without-leaking-credentials",
+  "source": "VentureBeat",
+  "published_at": "2026-05-19T19:45:24.000Z",
+  "raw_excerpt": "The reason enterprises have been slow to connect AI agents to internal APIs and databases isn't the models — it's the credentials. In most production deployments, the agent carries authentication tokens with it as it executes tool calls, which means a compromised or misbehaving agent takes the keys with it.\nAnthropic is addressing that problem with two new capabilities for Claude Managed Agents: s",
+  "raw_body": "The reason enterprises have been slow to connect AI agents to internal APIs and databases isn't the models — it's the credentials. In most production deployments, the agent carries authentication tokens with it as it executes tool calls, which means a compromised or misbehaving agent takes the keys with it.\nAnthropic is addressing that problem with two new capabilities for Claude Managed Agents: self-hosted sandboxes, which let teams run tool execution inside their own infrastructure perimeter, and MCP tunnels, which connect agents to private MCP servers without exposing credentials in the agent's context. Together they move credential control to the network boundary rather than leaving it inside the agent.\nRight now, self-hosted sandboxes are available to Claude Managed Agent users in public beta, while MCP tunnels are currently in research preview.  \nAnthropic isn't the only model provider making this bet. OpenAI added local execution to its Agents SDK in April in response to similar demand. The architectural distinction Anthropic draws is a split: the agent loop runs on Anthropic's infrastructure, while tool execution runs on the enterprise's own system — a separation that existing sandbox approaches, including OpenAI's, don't make.\nThe architecture problem in sandboxes and agents\nMCP moved to enterprise production faster than the security architecture around it matured. In most deployments, credentials travel through the agent itself as it executes tool calls against internal systems — meaning a compromised or misbehaving agent has everything it needs to cause damage.\nSelf-hosted sandboxes, such as those offered on Claude Managed Agents, help keep files and packages within an enterprise's infrastructure. The agentic loop—orchestration, context management and error recovery—moves to the platform, and ideally, enterprises control compute resources. \nThis allows the agent to complete tool calls without holding the keys that unlock it. \nPrivate network connectivity works similarly — a lightweight outbound-only gateway inside the organization's network, with no credentials passing through the agent.\nOrchestration teams get some control\nFor orchestration teams, the capabilities represent more than just a security update; they help agents run better. But the first thing they need to understand is how this split architecture can affect their deployment. \nSince sandboxes determine tool execution locations and the resources agents access, and MCP tunnels tell agents how to reach internal systems, these are separate concerns—splitting them up enables enterprises to map agents' workflows more effectively.\nFor teams already on Claude Managed Agents, the practical starting point is sandboxes — move tool execution onto your own infrastructure and test the boundary before touching MCP tunnels, which are still in research preview. Teams evaluating the platform for the first time should treat the sandbox architecture as the primary technical differentiator: it's the piece that changes the threat model, not just the deployment model.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Anthropic has introduced new features for Claude Managed Agents that allow them to connect to enterprise APIs securely. The key innovations are self-hosted sandboxes, which keep execution within an enterprise's infrastructure, and MCP tunnels, which connect to private servers without exposing credentials. These changes aim to enhance security by preventing compromised agents from accessing sensitive authentication tokens. This matters now as companies are increasingly looking to integrate AI while safeguarding their data.",
+  "why_it_matters": [
+    "These advancements immediately benefit enterprises that require secure connections for their AI agents, reducing the risk of credential leaks.",
+    "On a broader scale, this shift indicates a growing focus on security in AI deployments, as more companies seek to integrate AI without compromising their data integrity."
+  ],
+  "lenses": {
+    "eli12": "Anthropic's new features for Claude Managed Agents allow businesses to use AI safely. Think of it like having a secure vault for your keys instead of carrying them around. This is important because it helps everyday people trust that their data is protected when using AI tools.",
+    "pm": "For product managers and founders, these updates highlight a crucial user need for secure AI integrations. By allowing tool execution within a company's own infrastructure, costs related to data breaches could be reduced. This means companies can adopt AI more confidently, knowing their sensitive information is less at risk.",
+    "engineer": "From a technical perspective, the self-hosted sandboxes and MCP tunnels represent a significant architectural shift. Unlike traditional models where credentials travel with the agent, these features keep sensitive tokens out of the agent's context. This design change could enhance security and efficiency, as it allows the agent to function without direct access to credentials."
+  },
+  "hype_meter": 4,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-20T07:03:14.340Z",
+  "updated_at": "2026-05-20T07:03:14.340Z",
+  "processing_order": 1779260594341
+}

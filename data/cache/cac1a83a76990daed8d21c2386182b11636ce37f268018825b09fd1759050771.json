@@ -1,0 +1,31 @@
+{
+  "content_hash": "cac1a83a76990daed8d21c2386182b11636ce37f268018825b09fd1759050771",
+  "share_id": "ltctbw",
+  "title": "Learn-by-Wire Training Control Governance: Bounded Autonomous Training Under Stress for Stability and Efficiency",
+  "optimized_headline": "Unlocking Stability: Autonomous Training Governance for High-Stress Environments",
+  "url": "https://arxiv.org/abs/2605.19008",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.19008v1 Announce Type: new \nAbstract: Modern language-model training is increasingly exposed to instability, degraded runs, and wasted compute, especially under aggressive learning-rate, scale, and runtime-stress conditions. This paper introduces Learn-by-Wire Guard (LBW-Guard), a bounded autonomous training-control governance layer that operates above AdamW. Rather than replacing the o",
+  "raw_body": "arXiv:2605.19008v1 Announce Type: new \nAbstract: Modern language-model training is increasingly exposed to instability, degraded runs, and wasted compute, especially under aggressive learning-rate, scale, and runtime-stress conditions. This paper introduces Learn-by-Wire Guard (LBW-Guard), a bounded autonomous training-control governance layer that operates above AdamW. Rather than replacing the optimizer update rule, LBW-Guard observes training telemetry, interprets instability-sensitive regimes, and applies bounded control to optimizer execution while preserving fixed training objectives.\n  We evaluate LBW-Guard in a Qwen2.5-centered stress-and-robustness suite using WikiText-103, with Qwen2.5-7B as the empirical anchor, model-size comparisons against Qwen2.5-3B and Qwen2.5-14B, learning-rate stress tests, gradient-clipping baselines, and a no-LoRA TinyLlama-1B full-parameter sanity check. In the 7B reference setting, LBW-Guard reduces final perplexity from 13.21 to 10.74, an 18.7% improvement, while reducing end-to-end time from 392.54s to 357.02s, a 1.10x speedup. Under stronger learning-rate stress, AdamW degrades to 1885.24 final perplexity at LR=3e-3 and 659.76 at LR=1e-3, whereas LBW-Guard remains trainable at 11.57 and 10.33, respectively. Gradient-clipping baselines do not reproduce this effect.\n  These results support a scoped systems conclusion that stability-sensitive LLM training can benefit from a governance plane above the optimizer. LBW-Guard provides evidence that bounded runtime control can preserve productive compute under stress while remaining distinct from optimizer replacement and local gradient suppression.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach called Learn-by-Wire Guard (LBW-Guard) has been introduced to enhance the stability of language model training, particularly under stress. This method shows an 18.7% reduction in final perplexity and speeds up training time by 1.10x. LBW-Guard monitors training conditions and adjusts optimizer execution, helping to prevent wasted compute resources. This is significant as AI models require efficient training to handle increasingly complex tasks.",
+  "why_it_matters": [
+    "For researchers and developers, LBW-Guard could lead to more reliable model training, minimizing wasted computational resources during high-stress conditions.",
+    "This development indicates a shift towards more sophisticated training governance systems, which could enhance overall efficiency in AI model development."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to bake a cake in a hot oven. If the temperature fluctuates too much, the cake could burn. LBW-Guard acts like an oven monitor, ensuring the training process for AI models stays stable, even under pressure. This matters because stable training helps create better AI tools for everyone.",
+    "pm": "For product managers and founders, LBW-Guard addresses a crucial user need for more efficient and stable AI model training. By improving training reliability and speed, it could reduce costs associated with wasted compute resources. This means faster time-to-market for AI products with higher performance.",
+    "engineer": "Technically, LBW-Guard operates above the AdamW optimizer, enhancing stability during training by adjusting optimizer execution based on real-time telemetry. In tests, it achieved a final perplexity reduction from 13.21 to 10.74 and maintained performance under stress, outperforming traditional methods like gradient clipping. These results suggest that a governance layer could effectively support LLM training without altering the underlying optimizer."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-20T07:01:23.981Z",
+  "updated_at": "2026-05-20T07:01:23.981Z",
+  "processing_order": 1779260483984
+}
