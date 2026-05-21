@@ -1,0 +1,31 @@
+{
+  "content_hash": "3def1d4ac753d4eacd9c1f65169f5d4caea8434cb18661780912e6d06cffe620",
+  "share_id": "etuuz1",
+  "title": "Evaluating the Utility of Personal Health Records in Personalized Health AI",
+  "optimized_headline": "How Personal Health Records Enhance Personalized Health AI Effectiveness",
+  "url": "https://arxiv.org/abs/2605.18937",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-21T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.18937v1 Announce Type: new \nAbstract: Patient-managed Personal Health Records (PHRs) promises to empower patients to better understand their health; but information in the record is complex, potentially hindering insights. In this study, we assess the potential of large language models (LLMs, Gemini 3.0 Flash) to provide helpful answers to user health queries, when provided clinical dat",
+  "raw_body": "arXiv:2605.18937v1 Announce Type: new \nAbstract: Patient-managed Personal Health Records (PHRs) promises to empower patients to better understand their health; but information in the record is complex, potentially hindering insights. In this study, we assess the potential of large language models (LLMs, Gemini 3.0 Flash) to provide helpful answers to user health queries, when provided clinical data from PHRs as context. A total of 2,257 user queries were drawn from 3 different distributions to represent patient questions: shorter web search queries, longer questions derived from templates of chatbot conversations, and questions patients asked to their healthcare team (patient calls). Queries were matched with de-identified PHRs (from a pool of 1,945). Gemini responses were generated (1) without PHR context; (2) with a basic summary of demographics, conditions, and medications; (3) with full, extensive clinical notes. For evaluation, we leveraged an existing rating framework (SHARP), and developed a new framework for specific error modes when interpreting PHRs. Evaluation was performed using autoraters for the full set, and with clinician ratings for a subset (n=95), with both sets of raters knowing the full PHR context. We see significant improvements in the helpfulness of answers to all question types with PHR data (p < 0.001, paired t-test). We also observe potential gains in safety, accuracy, relevance and personalization of answers. Our PHR evaluation framework further identifies gaps in LLM understanding of particular aspects of complex PHRs, such as temporal disorientation, and rare but meaningful confabulations. These results suggest potential for PHR data to help people with a wide range of user needs; and provide a framework for monitoring for gaps in LLM answers based on PHR context. This study motivates further work to assess and realize potential benefits to users from understanding their health records.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluates how large language models (LLMs), specifically Gemini 3.0 Flash, can enhance the utility of Personal Health Records (PHRs) for patient health queries. Analyzing 2,257 user queries, the research found that using PHR data significantly improved the helpfulness of responses (p < 0.001). This matters now as it highlights the potential for AI to make complex health information more accessible and understandable for patients, empowering them in their health journeys.",
+  "why_it_matters": [
+    "Patients could gain clearer insights into their health, making it easier to manage conditions and communicate with healthcare providers.",
+    "This research indicates a shift towards integrating AI with personal health data, which could redefine patient engagement and personalized healthcare solutions."
+  ],
+  "lenses": {
+    "eli12": "This study shows how AI can help people understand their health records better. Imagine trying to read a complicated book; AI acts like a helpful guide that simplifies the text. This matters because clearer health information could lead to better health decisions for everyone.",
+    "pm": "For product managers, this research highlights a user need for clearer health communication tools. By integrating LLMs with PHRs, products could improve user engagement and satisfaction while potentially reducing the costs associated with miscommunication in healthcare.",
+    "engineer": "The study utilized Gemini 3.0 Flash to evaluate 2,257 health queries, showing significant improvements in response quality when PHR context was included. Key findings include enhanced accuracy and relevance of answers, alongside identified gaps in LLM understanding of complex health data, such as temporal disorientation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-21T07:05:09.640Z",
+  "updated_at": "2026-05-21T07:05:09.640Z",
+  "processing_order": 1779347109642
+}

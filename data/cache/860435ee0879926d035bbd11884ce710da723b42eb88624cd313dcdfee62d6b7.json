@@ -1,0 +1,31 @@
+{
+  "content_hash": "860435ee0879926d035bbd11884ce710da723b42eb88624cd313dcdfee62d6b7",
+  "share_id": "odmb47",
+  "title": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
+  "optimized_headline": "Unlocking Document AI: How Microservices Transform OCR and LLM in Production",
+  "url": "https://arxiv.org/abs/2605.18818",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-21T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.18818v1 Announce Type: new \nAbstract: Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large la",
+  "raw_body": "arXiv:2605.18818v1 Announce Type: new \nAbstract: Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as well as our experience running this pipeline on thousands of multi-page documents per hour. We describe our primary design decisions, including a hybrid classification, separation of GPU-bound inference from CPU-bound orchestration, use of asynchronous processing for the many IO-bound operations in the pipeline, and an independent, horizontal scaling strategy. Using batch profiling, we identified two surprising qualitative findings that shape production deployments: OCR, not language-model parsing, dominates end-to-end latency, and the system saturates at a concurrency determined by shared GPU-inference capacity rather than worker count. Our goal is to provide practitioners with concrete architectural patterns for building document understanding systems that work beyond the benchmark; effectively operationalizing models in production.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study presents a microservice architecture designed to enhance the production of document understanding models, bridging the gap between research and practical application. Key features include hybrid classification and asynchronous processing, enabling the handling of thousands of multi-page documents per hour. Surprisingly, the research found that optical character recognition (OCR) significantly impacts latency, overshadowing language model parsing. This matters now as organizations seek efficient ways to implement AI in real-world document processing.",
+  "why_it_matters": [
+    "Practitioners can now adopt a structured approach to operationalize document AI, improving efficiency and scalability in handling large volumes of documents.",
+    "This architecture reflects a shift towards more practical applications of AI, emphasizing the need for efficient processing in various industries reliant on document management."
+  ],
+  "lenses": {
+    "eli12": "This study offers a way to make document processing faster and more efficient. Think of it like organizing a busy restaurant kitchen where chefs work on different tasks simultaneously. By improving how AI systems handle documents, everyday people could see quicker responses when they interact with automated services.",
+    "pm": "For product managers and founders, this research highlights the importance of building scalable document processing systems. With a focus on efficiency, businesses could reduce costs associated with document handling. Implementing these architectural patterns may lead to better user experiences and faster service delivery.",
+    "engineer": "The study introduces a microservice architecture that separates GPU-bound inference from CPU-bound tasks, optimizing the processing of OCR and language models. Notably, it reveals that OCR contributes more to latency than language model parsing, which could influence how engineers prioritize system design. Understanding concurrency limits based on GPU capacity rather than worker count is crucial for performance tuning in production environments."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-21T07:05:02.792Z",
+  "updated_at": "2026-05-21T07:05:02.792Z",
+  "processing_order": 1779347102793
+}
