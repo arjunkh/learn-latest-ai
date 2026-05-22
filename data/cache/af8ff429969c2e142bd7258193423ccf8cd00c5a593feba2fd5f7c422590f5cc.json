@@ -1,0 +1,31 @@
+{
+  "content_hash": "af8ff429969c2e142bd7258193423ccf8cd00c5a593feba2fd5f7c422590f5cc",
+  "share_id": "oraza3",
+  "title": "OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind",
+  "optimized_headline": "Exploring OSCToM: How RL-Guided Adversarial Generation Enhances Mind Theory",
+  "url": "https://arxiv.org/abs/2605.20423",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-22T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.20423v1 Announce Type: new \nAbstract: Large Language Models (LLMs) perform well on many language tasks, but their Theory of Mind (ToM) reasoning is still uneven in complex social settings. Existing benchmarks, including ExploreToM, do not always test the recursive beliefs and information asymmetries that make these settings difficult. This paper presents OSCToM (Observer-Self Conflict T",
+  "raw_body": "arXiv:2605.20423v1 Announce Type: new \nAbstract: Large Language Models (LLMs) perform well on many language tasks, but their Theory of Mind (ToM) reasoning is still uneven in complex social settings. Existing benchmarks, including ExploreToM, do not always test the recursive beliefs and information asymmetries that make these settings difficult. This paper presents OSCToM (Observer-Self Conflict Theory of Mind), an approach for modeling nested belief conflicts in LLM-based ToM tasks. The key case is one in which an observer's view of another agent conflicts with the observer's own belief state. Such cases go beyond simple perspective-taking and require recursive, multi-layered reasoning. OSCToM combines reinforcement learning (RL), an extended domain-specific language, and compositional surrogate models to generate observer-self conflicts. In our experiments, OSCToM-8B gives the best overall result among the systems tested. It improves on the reported ExploreToM results on FANToM and remains competitive on Hi-ToM and BigToM. On the information-asymmetric FANToM benchmark, OSCToM reaches 76% accuracy, compared with the 0.2% reported by ExploreToM. The data-synthesis procedure is also 6x more efficient, indicating that targeted training data can help smaller models handle advanced cognitive reasoning. The project code is available at https://github.com/sharminsrishty/osct.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new approach called OSCToM has been developed to enhance Large Language Models' ability to understand complex social situations. This method addresses recursive beliefs and information asymmetries that traditional benchmarks like ExploreToM often miss. Notably, OSCToM-8B achieved 76% accuracy on the challenging FANToM benchmark, a significant improvement from the mere 0.2% accuracy of ExploreToM. This advancement is crucial as it could lead to better AI understanding of human-like reasoning in diverse contexts.",
+  "why_it_matters": [
+    "This development could significantly improve AI's interactions in fields like customer service, where understanding nuanced human emotions is essential.",
+    "On a broader scale, it indicates a shift towards more sophisticated AI models that can handle complex reasoning, enhancing their applicability across various industries."
+  ],
+  "lenses": {
+    "eli12": "OSCToM is like teaching AI to read between the lines in social situations. It helps models understand when someone might think one thing while also believing another. This matters because it could make AI better at understanding people, improving how we interact with technology in everyday life.",
+    "pm": "For product managers, OSCToM represents a leap in AI's capability to understand user perspectives, which is crucial for creating more intuitive products. The efficiency of data synthesis means that resources can be better allocated, potentially lowering costs while enhancing user experience. This could lead to more engaging and responsive applications.",
+    "engineer": "Technically, OSCToM employs reinforcement learning and compositional surrogate models to tackle nested belief conflicts, achieving a remarkable 76% accuracy on the FANToM benchmark. This is a significant benchmark improvement compared to previous models. However, it’s important to consider the complexity of implementation and the need for targeted training data."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-22T07:01:03.092Z",
+  "updated_at": "2026-05-22T07:01:03.092Z",
+  "processing_order": 1779433263094
+}
