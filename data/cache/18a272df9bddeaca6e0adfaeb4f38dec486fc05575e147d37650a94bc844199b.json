@@ -1,0 +1,31 @@
+{
+  "content_hash": "18a272df9bddeaca6e0adfaeb4f38dec486fc05575e147d37650a94bc844199b",
+  "share_id": "bzhwsc",
+  "title": "BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems",
+  "optimized_headline": "Unlocking Zero-Cost Hierarchical Attribution for Advanced AI Systems",
+  "url": "https://arxiv.org/abs/2605.22866",
+  "source": "ArXiv AI",
+  "published_at": "2026-05-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2605.22866v1 Announce Type: new \nAbstract: Compound AI systems route tasks through hierarchies of specialised components. Attribution is dominated by Shapley-based methods (SHAP), which decompose a coalition value function into per-component marginal contributions and require evaluation of the system on arbitrary component subsets. That requirement fails for third-party APIs, opaque endpoint",
+  "raw_body": "arXiv:2605.22866v1 Announce Type: new \nAbstract: Compound AI systems route tasks through hierarchies of specialised components. Attribution is dominated by Shapley-based methods (SHAP), which decompose a coalition value function into per-component marginal contributions and require evaluation of the system on arbitrary component subsets. That requirement fails for third-party APIs, opaque endpoints, and agentic orchestrators that concentrate routing on a few tools, leaving most coalitions un-evaluable from the deployed orchestrator. We introduce BOHM, which extracts a hierarchical attribution tree directly from the routing weights such systems already maintain: leaf attribution is the path product of root-to-leaf routing weights; level-k attribution is the induced distribution over depth-k nodes. The method has zero marginal cost, requires no access to component internals, and provides multi-resolution attribution at every level simultaneously, which flat methods cannot offer at any evaluation budget. BOHM and SHAP answer different questions and converge when the deployed router routes near-optimally. On 18 LLMs in a 3-level hierarchy over 880 LiveCodeBench problems, BOHM yields Kendall tau=0.928; SHAP reaches tau=0.980 at 9,000x more coalition evaluations per seed. On a 5-driver, 7-benchmark agentic study (35 cells, complete coverage), drivers concentrate routing on a single tool (top-share median 0.65), and cell-level tau(BOHM,SHAP) is predicted by whether the driver's top pick is the empirically best tool (mean +0.22 vs ~+0.01). On a US Census hierarchy (475 leaves, 4 levels), BOHM recovers ground-truth rankings at every level (tau up to 0.722). BOHM satisfies efficiency, monotonicity, symmetry, and weak suppression but not Shapley's additivity. It is best understood as a complementary primitive: a multi-resolution decomposition computable wherever routing state exists, whose disagreement with Shapley is itself diagnostic.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced BOHM, a new method for attributing tasks in compound AI systems, which operates at zero cost and doesn't require access to internal components. Unlike Shapley-based methods, which need extensive evaluations, BOHM uses existing routing weights to provide multi-resolution attribution. In tests on 18 large language models, BOHM achieved a Kendall tau of 0.928, while SHAP required 9,000 times more evaluations to reach 0.980. This innovation could reshape how we understand AI system performance and attribution.",
+  "why_it_matters": [
+    "This method could benefit developers and companies using compound AI systems by simplifying attribution without needing extensive evaluations.",
+    "BOHM represents a shift in AI attribution methods, emphasizing efficiency and accessibility, which could influence future AI system designs and evaluations."
+  ],
+  "lenses": {
+    "eli12": "BOHM is like a shortcut for figuring out how well different parts of an AI system work together. Instead of needing to check every combination of parts, it uses existing routing information to give insights at multiple levels. This matters because it makes understanding AI systems easier and more efficient for everyone, from researchers to everyday users.",
+    "pm": "For product managers and founders, BOHM offers a way to assess AI system performance without the high costs of traditional methods. By simplifying attribution, it could lead to better insights into user needs and system efficiency. This means teams can focus on improving their products rather than getting bogged down in complex evaluations.",
+    "engineer": "From a technical perspective, BOHM provides a new approach to attribution in compound AI systems by leveraging routing weights to create a hierarchical attribution tree. It achieves a Kendall tau of 0.928 on 18 LLMs, significantly outperforming traditional SHAP methods that require extensive evaluations. While it doesn't satisfy all properties of Shapley’s method, its efficiency and scalability make it a valuable tool in AI system analysis."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-25T08:03:02.017Z",
+  "updated_at": "2026-05-25T08:03:02.017Z",
+  "processing_order": 1779696182017
+}
