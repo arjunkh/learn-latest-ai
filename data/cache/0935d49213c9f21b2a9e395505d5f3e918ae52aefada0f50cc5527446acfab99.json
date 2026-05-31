@@ -1,0 +1,31 @@
+{
+  "content_hash": "0935d49213c9f21b2a9e395505d5f3e918ae52aefada0f50cc5527446acfab99",
+  "share_id": "eamweo",
+  "title": "Embeddings Aren’t Magic: The Predictable Failure Modes of RAG Retrieval",
+  "optimized_headline": "\"Exploring Common Failures in RAG Retrieval: What Embeddings Can't Do\"",
+  "url": "https://towardsdatascience.com/embeddings-arent-magic-the-predictable-failure-modes-of-rag-retrieval-enterprise-document-intelligence-vol-1-2/",
+  "source": "Towards Data Science",
+  "published_at": "2026-05-30T15:00:00.000Z",
+  "raw_excerpt": "Enterprise Document Intelligence [Vol. 1 #2] Why the same vector search that handles synonyms and paraphrase silently fails on negation, exact identifiers, and your company’s acronyms, and what to use when it does.\nThe post Embeddings Aren’t Magic: The Predictable Failure Modes of RAG Retrieval appeared first on Towards Data Science.",
+  "raw_body": "Enterprise Document Intelligence [Vol. 1 #2] Why the same vector search that handles synonyms and paraphrase silently fails on negation, exact identifiers, and your company’s acronyms, and what to use when it does.\nThe post Embeddings Aren’t Magic: The Predictable Failure Modes of RAG Retrieval appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent article highlights that while vector search is effective for handling synonyms and paraphrases, it struggles with negation, exact identifiers, and specific acronyms. These predictable failure modes can lead to significant misunderstandings in enterprise document retrieval. For instance, if a system misinterprets 'not approved' as 'approved,' it could create serious issues. Understanding these limitations is crucial as businesses increasingly rely on AI for accurate information retrieval.",
+  "why_it_matters": [
+    "Organizations using AI for document retrieval need to be aware of these limitations to avoid critical errors in decision-making.",
+    "This highlights a broader trend in AI where reliance on embeddings requires careful consideration of context and language nuances."
+  ],
+  "lenses": {
+    "eli12": "The article explains that while AI can understand similar words, it often gets confused by negations or specific terms like company acronyms. Imagine trying to find a book in a library but only searching by synonyms; you might miss the exact title. This matters because businesses need reliable information, and any misinterpretation can lead to poor decisions.",
+    "pm": "For product managers and founders, this insight emphasizes the importance of understanding user queries in depth. If a retrieval system can't accurately interpret negations or specific terms, it could lead to user frustration and inefficiency. Ensuring AI tools can handle these nuances could improve user satisfaction and enhance decision-making processes.",
+    "engineer": "From a technical perspective, the article points out that current vector search models excel at capturing semantic similarities but falter with logical constructs like negation. This limitation can lead to incorrect results when handling specific identifiers or acronyms. Engineers should consider integrating additional logic or fallback mechanisms to address these predictable failure modes."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-05-31T07:09:08.660Z",
+  "updated_at": "2026-05-31T07:09:08.660Z",
+  "processing_order": 1780211348661
+}
