@@ -1,0 +1,31 @@
+{
+  "content_hash": "18169fbc25dca18e6b2d4dc6051cbb31b172258144ce4429db677665944f59b5",
+  "share_id": "bmrc27",
+  "title": "BehaviorBench: Modeling Real-World User Decisions from Behavioral Traces",
+  "optimized_headline": "Unveiling BehaviorBench: How User Choices Shape Real-World Decision Models",
+  "url": "https://arxiv.org/abs/2606.02798",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.02798v1 Announce Type: new \nAbstract: Many decision-support settings require systems that adapt to individual users, but evaluation data for this problem remain limited. Existing benchmarks for user understanding often rely on simulated users or model-generated behavior, even though recent work cautions that model-based simulations can diverge systematically from human behavior. We intr",
+  "raw_body": "arXiv:2606.02798v1 Announce Type: new \nAbstract: Many decision-support settings require systems that adapt to individual users, but evaluation data for this problem remain limited. Existing benchmarks for user understanding often rely on simulated users or model-generated behavior, even though recent work cautions that model-based simulations can diverge systematically from human behavior. We introduce \\textsc{BehaviorBench}, a benchmark for evaluating personalized decision modeling from real-world behavioral traces. \\textsc{BehaviorBench} reconstructs wallet-level decision histories from observed public prediction-market and on-chain records, and organizes them into two complementary task layers: \\emph{Belief prediction}, which predicts a user's final revealed stance and confidence in a market, and \\emph{Trade prediction}, which predicts the direction and amount of individual transactions. Across 2,000 evaluation wallets, the benchmark contains 141,445 Belief instances and 1,485,972 Trade instances, with disjoint support pools for retrieval-based evaluation. We evaluate frontier and open-weight generative models under four history interfaces: no personalization, direct recent history, generated user profiles, and retrieved support-wallet evidence. Personalization improves Belief prediction more consistently than Trade prediction, model rankings change across task layers and metrics, and different history interfaces expose different failure modes. \\textsc{BehaviorBench} provides an evaluation setting for studying whether personalized methods can use real-world behavioral evidence rather than simulated users alone.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced BehaviorBench, a new benchmark for evaluating personalized decision-making models using real-world user data. It includes 141,445 belief instances and nearly 1.5 million trade instances from 2,000 wallets. This benchmark aims to improve how systems adapt to individual users by relying on actual behavior rather than simulated data. Its introduction is significant as it could enhance the accuracy of decision-support systems in various applications.",
+  "why_it_matters": [
+    "BehaviorBench offers immediate benefits for developers and researchers seeking to create more accurate decision-support systems based on real user behavior.",
+    "This benchmark signals a shift in the field towards using authentic data, potentially leading to better user experiences and more effective AI applications."
+  ],
+  "lenses": {
+    "eli12": "BehaviorBench is like a recipe book for understanding how real people make decisions. Instead of relying on fake examples, it uses actual data from users to predict choices. This matters because it could lead to smarter systems that better cater to individual needs in everyday life.",
+    "pm": "For product managers, BehaviorBench highlights the importance of using real user data to enhance decision-making features. It shows that personalized approaches can lead to better predictions, which could improve user satisfaction and retention. This could also mean rethinking how to collect and analyze user behavior data effectively.",
+    "engineer": "From a technical perspective, BehaviorBench evaluates generative models using real-world data, offering insights into how personalization impacts belief and trade predictions. The benchmark's extensive dataset includes over 1.4 million trade instances, allowing for robust model testing across various history interfaces. This could lead to improved model performance, particularly in belief prediction tasks."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-03T08:33:31.762Z",
+  "updated_at": "2026-06-03T08:33:31.762Z",
+  "processing_order": 1780475611765
+}

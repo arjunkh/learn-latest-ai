@@ -1,0 +1,31 @@
+{
+  "content_hash": "4b671fd9a8383a91c6476738cca8c6c1a28bb70f1cfe4c62df9bd6c0d5e79e47",
+  "share_id": "aamweu",
+  "title": "AURA: Action-Gated Memory for Robot Policies at Constant VRAM",
+  "optimized_headline": "Revolutionary AURA Memory Enables Efficient Robot Policies with Constant VRAM Usage",
+  "url": "https://arxiv.org/abs/2606.02775",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-03T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.02775v1 Announce Type: new \nAbstract: The KV-cache is the right memory for datacenters but the wrong memory for robots. Datacenter inference batches many short requests and resets them, amortizing an attention cache across a crowd. Embodied agents instead run one long, non-resetting episode on bandwidth-limited edge hardware, where high-bandwidth memory and flash are scarce, flash has f",
+  "raw_body": "arXiv:2606.02775v1 Announce Type: new \nAbstract: The KV-cache is the right memory for datacenters but the wrong memory for robots. Datacenter inference batches many short requests and resets them, amortizing an attention cache across a crowd. Embodied agents instead run one long, non-resetting episode on bandwidth-limited edge hardware, where high-bandwidth memory and flash are scarce, flash has finite write endurance, and memory writes rather than compute can become the binding constraint.\n  AURA-Mem (Action-Utility Recurrent Adaptive Memory) targets this regime. It wraps a frozen vision-language-action backbone with a constant-size recurrent memory and a learned gate that writes only when the current observation would change the next action: memory that knows when to stay silent. Unlike reconstruction-based memory, the gate is trained directly against a closed-loop action-error signal. Its inference state is fixed at 4,224 bytes regardless of horizon, while a KV-cache grows to 6,061 times larger at 100,000 steps.\n  On a controlled synthetic benchmark, AURA-Mem matches the best O(1) baseline in accuracy while using 5.19-6.13 times fewer writes, and up to 9.19 times fewer writes on easier configurations. Budget-matched random and periodic schedules do not recover this gain, isolating the benefit to the action-surprise signal. On a trained closed-loop OpenVLA-OFT 7B panel on LIBERO-Long (n=60 episodes per arm), the gate does not hurt success: AURA-Mem matches the ungated base policy (0.233) and slightly exceeds an always-write KV arm (0.217), while using 7.0 times fewer writes and constant memory. We also instantiate an approximate-information-state value-loss bound as a methodology demonstration; at this scale, the bound is vacuous rather than a guarantee.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced AURA-Mem, a new memory system designed for robots that addresses the limitations of traditional KV-caches used in datacenters. AURA-Mem maintains a constant memory size of 4,224 bytes while significantly reducing memory writes by up to 9.19 times in certain scenarios. This innovation is crucial as it allows robots to operate more efficiently on bandwidth-limited hardware, which is essential for their real-time decision-making capabilities.",
+  "why_it_matters": [
+    "This could improve the performance of robots operating in real-world environments, enhancing their ability to make timely decisions.",
+    "AURA-Mem highlights a shift towards optimizing memory systems for edge devices, potentially influencing future AI hardware developments."
+  ],
+  "lenses": {
+    "eli12": "AURA-Mem is like a smart filing cabinet for robots, remembering only what’s necessary to make decisions without cluttering up space. This means robots can work faster and smarter without using too much memory. For everyday people, this could lead to more efficient robots in homes and workplaces, making tasks easier and quicker.",
+    "pm": "For product managers and founders, AURA-Mem represents a way to enhance robotic applications by improving efficiency and reducing costs associated with memory usage. This could meet user needs for faster, more reliable robotic performance in constrained environments. The practical implication is that products could become more competitive by integrating such optimized memory systems.",
+    "engineer": "AURA-Mem utilizes a constant-size memory architecture that operates with a learned gating mechanism, which writes data only when necessary. This approach reduces memory writes significantly compared to traditional KV-caches, achieving up to 9.19 times fewer writes in easier scenarios. Engineers might find this method beneficial for developing robots that require efficient memory management on edge devices."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-03T08:33:17.610Z",
+  "updated_at": "2026-06-03T08:33:17.610Z",
+  "processing_order": 1780475597611
+}
