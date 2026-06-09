@@ -1,0 +1,31 @@
+{
+  "content_hash": "57cbf039f5f93e3807044f838d13f6738b6e5eda5e2eda35bd7e80b7f9192555",
+  "share_id": "ptmdfg",
+  "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
+  "optimized_headline": "Revolutionizing Pathology: How PathoSage Enhances Evidence Adjudication with AI",
+  "url": "https://arxiv.org/abs/2606.07549",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-09T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.07549v1 Announce Type: new \nAbstract: Recent advances in Multimodal Large Language Models (MLLMs) and agent workflows have shown strong promise for computational pathology, yet reliable patch-level reasoning remains challenging. End-to-end pathology MLLMs often hallucinate morphological features, while recent agentic systems usually merge tool outputs and retrieved knowledge into a shar",
+  "raw_body": "arXiv:2606.07549v1 Announce Type: new \nAbstract: Recent advances in Multimodal Large Language Models (MLLMs) and agent workflows have shown strong promise for computational pathology, yet reliable patch-level reasoning remains challenging. End-to-end pathology MLLMs often hallucinate morphological features, while recent agentic systems usually merge tool outputs and retrieved knowledge into a shared context, making decisions vulnerable to conflicting evidence and context contamination. We propose PathoSage, a three-stage framework that explicitly separates knowledge retrieval, evidence collection, and evidence adjudication for patch-level pathology multimodal reasoning. Its core component, Structured Evidence Deliberation, independently evaluates heterogeneous evidence from tools, performs conflict analysis, and generates the final judgment in a fresh context to reduce anchoring bias. We further introduce a training-free Beta-Bernoulli experience system with continuous credit assignment to model long-term tool reliability and construct similarity-weighted priors for future tool use. Experiments show that PathoSage effectively mitigates VQA hallucinations and classifier disagreement, outperforming strong pathology MLLM and agentic baselines. Our results highlight explicit evidence adjudication and reliability-aware tool modeling as key ingredients for robust pathology agents.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced PathoSage, a new framework for enhancing decision-making in computational pathology. It separates knowledge retrieval, evidence collection, and adjudication to improve accuracy in patch-level reasoning. Experiments indicate that PathoSage reduces inaccuracies like hallucinations and disagreements among classifiers, outperforming existing models. This development is significant as it could lead to more reliable diagnostic tools in healthcare.",
+  "why_it_matters": [
+    "PathoSage could immediately benefit pathologists by providing more accurate diagnostic support, thereby improving patient care.",
+    "This advancement indicates a shift towards more reliable AI systems in healthcare, potentially transforming how medical professionals utilize technology."
+  ],
+  "lenses": {
+    "eli12": "PathoSage is like a well-organized library for doctors, where each piece of information is carefully evaluated before being used. By separating different stages of decision-making, it helps reduce mistakes caused by conflicting information. This matters because it could lead to better diagnoses and treatments for patients in the future.",
+    "pm": "For product managers and founders, PathoSage highlights the importance of structured workflows in AI applications. By addressing user needs for accuracy in diagnostics, it could lead to more efficient tools that save time and resources. The practical implication is that developing similar frameworks could enhance the reliability of AI in healthcare products.",
+    "engineer": "Technically, PathoSage employs a three-stage framework that includes Structured Evidence Deliberation to assess and integrate diverse evidence types. By focusing on conflict analysis and minimizing anchoring bias, it effectively reduces hallucinations common in other models. The introduction of a Beta-Bernoulli experience system for tool reliability adds a novel approach to ensuring consistent performance in real-world applications."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-09T07:02:08.783Z",
+  "updated_at": "2026-06-09T07:02:08.783Z",
+  "processing_order": 1780988528783
+}

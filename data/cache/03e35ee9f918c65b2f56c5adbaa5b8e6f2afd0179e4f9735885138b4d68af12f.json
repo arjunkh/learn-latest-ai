@@ -1,0 +1,31 @@
+{
+  "content_hash": "03e35ee9f918c65b2f56c5adbaa5b8e6f2afd0179e4f9735885138b4d68af12f",
+  "share_id": "cse8kk",
+  "title": "A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline",
+  "optimized_headline": "Evaluating AI Agents: Insights from a Neuroscience Data Discovery Case Study",
+  "url": "https://arxiv.org/abs/2606.07718",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-09T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.07718v1 Announce Type: new \nAbstract: Agentic AI tools offer a promising path to automating software development bottlenecks in scientific research pipelines, particularly for stages that take domain experts days to months to build, where scientists care about correctness and robustness, not implementation details. We present an empirical study of general-purpose coding agents on a fly ",
+  "raw_body": "arXiv:2606.07718v1 Announce Type: new \nAbstract: Agentic AI tools offer a promising path to automating software development bottlenecks in scientific research pipelines, particularly for stages that take domain experts days to months to build, where scientists care about correctness and robustness, not implementation details. We present an empirical study of general-purpose coding agents on a fly optogenetics data-to-discovery pipeline. We assess agents on tasks substantially larger than existing benchmarks, datasets orders of magnitude bigger, and evaluation criteria grounded in domain expert standards. We show that agents can solve several individual pipeline stages, suggesting stage-level automation is tractable. By analyzing agents' code iterations, we show that they struggle most when there is not a pre-defined criterion to iterate on, and they must instead use their scientific judgment to assess their current solution, a key open challenge. Mirroring scientific practice, they sometimes attempt visual inspection of intermediate outputs for self-evaluation, but largely fail to interpret what they see or act on it appropriately. Solving the end-to-end pipeline correctly requires stringing together successes across all pipeline stages, and this is beyond agents' current abilities. We identify challenges largely absent from existing benchmarks, including computational resource management and generalization to large held-out data collections. Finally, we distill principles for constructing scientific tasks and rigorous evaluation criteria for open-ended problems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent study evaluated AI agents in automating scientific research pipelines, particularly in neuroscience. The agents tackled tasks larger than existing benchmarks, but struggled with self-evaluation and integrating successes across multiple stages. Notably, they performed well in individual segments but faltered when faced with complex, end-to-end tasks. This research highlights the potential for AI to streamline scientific processes, yet underscores the need for improved self-assessment capabilities.",
+  "why_it_matters": [
+    "This could significantly reduce the time scientists spend on coding, allowing them to focus more on research and discovery.",
+    "The findings indicate a shift towards integrating AI in scientific workflows, potentially transforming how research is conducted in various fields."
+  ],
+  "lenses": {
+    "eli12": "AI tools are being tested to help scientists automate coding tasks that usually take a long time. Imagine if a chef could automate chopping vegetables—this could speed up meal prep. For everyday people, this means faster advancements in science and medicine, as researchers can spend more time on important discoveries rather than tedious coding.",
+    "pm": "For product managers and founders, this study highlights the need to develop AI tools that can handle complex tasks while ensuring accuracy. There’s a clear user need for efficiency in scientific coding. A practical takeaway is focusing on improving AI's self-evaluation capabilities to enhance overall productivity in research settings.",
+    "engineer": "The study assessed AI agents on a large optogenetics data-to-discovery pipeline, revealing that while they can automate individual stages, they struggle with end-to-end processes. Agents faced challenges in self-evaluation and managing computational resources, which were not present in existing benchmarks. This suggests a need for new evaluation criteria and task construction methodologies to better align AI capabilities with scientific workflows."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-09T07:02:33.005Z",
+  "updated_at": "2026-06-09T07:02:33.005Z",
+  "processing_order": 1780988553008
+}
