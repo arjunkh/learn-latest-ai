@@ -1,0 +1,31 @@
+{
+  "content_hash": "95dfdde2c95262f54572b8f8b234a9305308f8718a4646d693fc56d001d5e336",
+  "share_id": "dmfv0s",
+  "title": "Deployment-Time Memorization in Foundation-Model Agents",
+  "optimized_headline": "Unlocking Rapid Memorization: How Foundation-Model Agents Learn in Real-Time",
+  "url": "https://arxiv.org/abs/2606.10062",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-10T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.10062v1 Announce Type: new \nAbstract: Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than solely a property of model weights. Existing work addresses parametric memorization or audits fixed memory configurations, but does not characterize how memory-design choices jointl",
+  "raw_body": "arXiv:2606.10062v1 Announce Type: new \nAbstract: Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than solely a property of model weights. Existing work addresses parametric memorization or audits fixed memory configurations, but does not characterize how memory-design choices jointly shape personalization utility, extraction risk, and deletion fidelity. We study this surface as deployment-time memorization, formulating agent memory as a privacy-utility frontier measured by Personalization Recall (PR) and Adversarial Extraction Rate (AER), and sweeping three memory-design knobs: summarization aggressiveness, retrieval breadth (k), and deletion mode. We further introduce the Forgetting Residue Score (FRS) to quantify whether deleted information remains recoverable from derived memory tiers. On LongMemEval, key-fact summarization reduces canary extraction by 76% on Gemma 3 12B and 64% on GPT-4o-mini while preserving nearly all personalization recall; critically, once content is compressed away, increasing k no longer restores leakage. The same compression, however, induces a deletion-fidelity failure: raw-only deletion leaves derived summary copies recoverable in approximately 20% of instances, and only full-pipeline purge or tombstone redaction drives worst-tier residue to zero. Together, these results establish that persistent agent memory must be evaluated as a first-class memorization mechanism -- assessed by what it helps agents recall, what it makes extractable, and what it can truly erase.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research emphasizes the importance of deployment-time memorization in foundation-model agents, which remember user interactions over time. By examining memory-design choices, the study introduces metrics like Personalization Recall (PR) and Adversarial Extraction Rate (AER) to evaluate privacy and utility. Notably, key-fact summarization can significantly reduce data leakage while maintaining personalization. This understanding is crucial as these agents become integral in various applications, impacting privacy and user experience.",
+  "why_it_matters": [
+    "Users could benefit from improved personalization without compromising their privacy, as agents learn and adapt over time.",
+    "The findings could signal a shift in how companies design AI systems, focusing on balancing user experience with data security."
+  ],
+  "lenses": {
+    "eli12": "This research explores how AI agents can remember user interactions while keeping their data safe. Think of it like a smart assistant that learns your preferences but knows when to forget sensitive information. This balance is important for building trust with users and ensuring their information is handled responsibly.",
+    "pm": "For product managers, this study highlights the need to design AI systems that prioritize user privacy while enhancing personalization. Understanding the metrics like Personalization Recall can help in creating features that meet user needs without sacrificing data security. This could lead to more user-friendly products that maintain trust.",
+    "engineer": "The study introduces critical metrics for assessing memory in AI agents, focusing on the balance between personalization and security. Key-fact summarization showed a 76% reduction in data leakage while preserving recall, but deletion methods can leave traces. Engineers should consider these findings when designing memory systems to ensure effective data management."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-10T07:52:05.481Z",
+  "updated_at": "2026-06-10T07:52:05.482Z",
+  "processing_order": 1781077925483
+}
