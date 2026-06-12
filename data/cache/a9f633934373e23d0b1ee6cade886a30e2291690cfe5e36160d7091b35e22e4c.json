@@ -1,0 +1,31 @@
+{
+  "content_hash": "a9f633934373e23d0b1ee6cade886a30e2291690cfe5e36160d7091b35e22e4c",
+  "share_id": "atstcq",
+  "title": "Arbor: Tree Search as a Cognition Layer for Autonomous Agents",
+  "optimized_headline": "Arbor: How Tree Search Enhances Decision-Making in Autonomous Agents",
+  "url": "https://arxiv.org/abs/2606.12563",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-12T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.12563v1 Announce Type: new \nAbstract: Arbor is a multi-agent framework that introduces structured tree search as a cognition layer for autonomous agents operating in large, stateful action spaces. Prior autonomous optimization systems operate on isolated targets with stateless evaluation. Arbor instead maintains an explicit search tree of scored hypotheses that serves as the shared work",
+  "raw_body": "arXiv:2606.12563v1 Announce Type: new \nAbstract: Arbor is a multi-agent framework that introduces structured tree search as a cognition layer for autonomous agents operating in large, stateful action spaces. Prior autonomous optimization systems operate on isolated targets with stateless evaluation. Arbor instead maintains an explicit search tree of scored hypotheses that serves as the shared working memory across agents, evolving with every measurement, treating failures as diagnostic signal that reshapes subsequent exploration, and expanding as prior successes shift the bottleneck distribution.\n  We validate Arbor on full-stack LLM inference optimization, a domain where achieving peak performance has historically required coordinated effort from engineering teams across the application, framework, compiler, kernel, and hardware stack. Arbor pairs an Orchestrator agent, which drives optimization by delegating to Domain Specialists across the inference stack, with a Critic agent that safeguards stability through root-cause analysis, introspection, and measurement validation -- a checks-and-balances architecture where neither agent can unilaterally drive the system. Agent capabilities are decomposed into hard skills (domain expertise) and soft skills (coordination protocols that determine how contributions compose), enabling fully autonomous multi-day campaigns. Arbor achieves up to 193% inference throughput-latency Pareto improvement over vendor-optimized baselines, while a single agent without the harness plateaus at +33% throughput improvement and crashes irrecoverably within hours. Arbor generalizes to multiple generations of hardware platform, and run-to-run variance is within 2 percentage points demonstrating that the method is hardware-agnostic and reproducible.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Arbor is a new framework that enhances autonomous agents by using structured tree search as a cognitive layer. Unlike traditional systems that work on isolated targets, Arbor maintains a shared search tree that evolves with each measurement. This approach has shown remarkable results, achieving up to 193% improvement in inference throughput-latency compared to vendor-optimized systems. Its ability to generalize across hardware platforms makes Arbor significant for future AI developments.",
+  "why_it_matters": [
+    "Developers and engineers could see immediate benefits from improved performance in AI systems, making their tasks more efficient.",
+    "This advancement indicates a shift towards more collaborative and adaptive AI frameworks, potentially transforming how autonomous systems are designed and optimized."
+  ],
+  "lenses": {
+    "eli12": "Arbor acts like a smart team of agents that share notes and learn from each other's successes and failures. Instead of working alone, they build a collective memory that helps them make better decisions over time. This matters because it could lead to more reliable and efficient AI systems that benefit everyone, from tech companies to everyday users.",
+    "pm": "For product managers and founders, Arbor represents a way to enhance AI performance without needing extensive engineering resources. By leveraging a collaborative framework, teams could achieve significant efficiency gains, reducing costs while improving product capabilities. This could allow for faster iterations and better user experiences.",
+    "engineer": "From a technical perspective, Arbor employs a dual-agent system with an Orchestrator and a Critic, optimizing inference across the entire stack. It achieves up to 193% improvement in throughput-latency, significantly outperforming single-agent setups. Its hardware-agnostic nature and low run-to-run variance (within 2 percentage points) suggest it could be a robust solution across various platforms."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-12T08:08:22.555Z",
+  "updated_at": "2026-06-12T08:08:22.555Z",
+  "processing_order": 1781251702556
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "d984f598e4f7b00bafdc4b6383eba8047962cfce442b11d0804b4cb9b21d9b8a",
+  "share_id": "pae8re",
+  "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
+  "optimized_headline": "\"Discover How Pythagoras-Prover Enhances Efficient Formal Proofs with Lean\"",
+  "url": "https://arxiv.org/abs/2606.12594",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-12T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.12594v1 Announce Type: new \nAbstract: Modern Lean theorem provers achieve strong performance only with substantial training and inference compute, driven in part by scarce verified proof data and the long reasoning traces of formal proof search, making both supervised fine-tuning (SFT) and sampling expensive. We introduce Pythagoras-Prover, a compute-efficient open-source family of Lean",
+  "raw_body": "arXiv:2606.12594v1 Announce Type: new \nAbstract: Modern Lean theorem provers achieve strong performance only with substantial training and inference compute, driven in part by scarce verified proof data and the long reasoning traces of formal proof search, making both supervised fine-tuning (SFT) and sampling expensive. We introduce Pythagoras-Prover, a compute-efficient open-source family of Lean theorem provers built for practical compute budgets. The family spans two generation paradigms: autoregressive models at 4B and 32B parameters, and a first proof-of-concept diffusion-based prover (4B) that iteratively refines Lean proofs at inference time. For training efficiency, we build a Lean-verified corpus stratified into easy, medium, and hard problems for curriculum SFT, so models acquire proof skills progressively from shorter, simpler proofs to longer, harder ones. During SFT, a dynamic proof-reasoning filtering scheme preserves informative proof traces while keeping each instance within an 8k-token context budget. We also introduce Augmented Lean Formalisation (ALF), which expands scarce verified corpora into variants of formal statements, populated via self-distillation for extra training signal without formally verifying every mutated instance. By perturbing known problems while preserving their formal character, ALF reduces reliance on any statement's surface form. Empirically, Pythagoras-Prover-4B surpasses DeepSeek-Prover-V2-671B at pass@32 on MiniF2F-Test (86.1% vs 82.4%) with ~167x fewer parameters, while Pythagoras-Prover-32B sets the open-source state of the art at 93.0% on MiniF2F-Test and solves 93 of 672 PutnamBench problems. We release MiniF2F-ALF, an ALF-mutated contamination-sensitive benchmark on which every evaluated model loses accuracy; here our 32B remains strongest and our 4B matches the prior state of the art, Goedel-Prover-V2-32B.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The introduction of Pythagoras-Prover marks a significant advancement in formal proof systems, designed to be more compute-efficient. This open-source family of Lean theorem provers includes models with 4 billion and 32 billion parameters, improving performance while reducing training costs. Notably, the 32B model achieved a 93% success rate on the MiniF2F-Test benchmark. This development is crucial as it addresses the high computational demands of existing theorem provers, making formal proofs more accessible.",
+  "why_it_matters": [
+    "Researchers and developers could benefit from reduced computational costs, enabling more efficient theorem proving in various applications.",
+    "This shift could signal a broader trend toward more efficient AI models, allowing smaller teams and organizations to leverage advanced formal proof systems."
+  ],
+  "lenses": {
+    "eli12": "Pythagoras-Prover is like a smart assistant that learns to solve puzzles in stages, starting with easier ones and gradually tackling harder challenges. By creating variations of known problems, it learns more effectively without needing to verify every single case. This matters because it could help more people use formal proofs in their work, making complex tasks simpler.",
+    "pm": "For product managers and founders, Pythagoras-Prover presents an opportunity to leverage advanced theorem proving without the high costs typically associated with AI models. The focus on training efficiency and reduced compute needs could lead to faster product development cycles. This means teams could deliver more reliable software solutions at a lower cost.",
+    "engineer": "From a technical perspective, Pythagoras-Prover utilizes autoregressive models with 4B and 32B parameters, achieving impressive results on benchmarks like MiniF2F-Test. The incorporation of Augmented Lean Formalisation (ALF) allows for enhanced training through the generation of variant formal statements, improving model robustness. These advancements could set new standards for efficiency in theorem proving systems."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-12T08:08:37.108Z",
+  "updated_at": "2026-06-12T08:08:37.108Z",
+  "processing_order": 1781251717111
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "725db8802068f156b02534a8ba5a44c5faf903cb9015bcb07582b1e30e9d06ca",
+  "share_id": "tdfmy7",
+  "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+  "optimized_headline": "Discover ToolSense: A New Framework for Evaluating LLM Tool Knowledge",
+  "url": "https://arxiv.org/abs/2606.12451",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-12T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.12451v1 Announce Type: new \nAbstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned i",
+  "raw_body": "arXiv:2606.12451v1 Announce Type: new \nAbstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce \\textbf{ToolSense}, an open-source LLM-powered diagnostic framework that takes any tool catalog as input and automatically generates three benchmarks: a Realistic Retrieval Benchmark (RRB) with queries at three ambiguity tiers, an MCQ probing benchmark, and a QA probing benchmark. Applying ToolSense to ToolBench (~47k tools) and evaluating five parametric model training configurations reveals a knowledge-retrieval dissociation: on RRB queries, several configurations collapse by ~50-64 percentage points compared to fully-specified ToolBench benchmarks, falling below the embedding-model baseline. Additionally, despite strong retrieval performance, some models score near-random on factual probes, suggesting a knowledge-retrieval dissociation. We open-source the ToolSense framework and the ToolBench diagnostic benchmarks at https://github.com/SAP/toolsense.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced ToolSense, a diagnostic framework aimed at improving how large language models (LLMs) retrieve and understand tools from extensive catalogs. It identifies a significant gap in tool retrieval performance, revealing that some models can drop by 50-64 percentage points on realistic queries compared to standard benchmarks. This matters now as LLMs become more integrated into tool usage, highlighting the need for better understanding and retrieval capabilities.",
+  "why_it_matters": [
+    "Tool developers and AI practitioners could benefit from improved retrieval accuracy, enhancing their tools' usability and effectiveness.",
+    "This framework could signal a shift in AI development, focusing on better understanding rather than just retrieval efficiency, influencing future model training strategies."
+  ],
+  "lenses": {
+    "eli12": "ToolSense is like a teacher checking if students really understand their subjects. It helps find out if AI models can accurately retrieve information about tools. This is important because as AI gets used more, we want it to be reliable and helpful for everyone.",
+    "pm": "For product managers, ToolSense highlights the need for models that not only retrieve tools but also understand them. This could lead to more efficient user experiences and lower costs by ensuring users find the right tools quickly. The practical implication is that investing in better retrieval models could enhance product effectiveness.",
+    "engineer": "ToolSense introduces a new way to evaluate LLMs by generating benchmarks that reflect real-world queries. Notably, it shows that some models can underperform significantly on realistic retrieval tasks, dropping up to 64 percentage points. This indicates a potential gap in model training that engineers may need to address for improved tool understanding."
+  },
+  "hype_meter": 1,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-12T08:08:15.967Z",
+  "updated_at": "2026-06-12T08:08:15.968Z",
+  "processing_order": 1781251695968
+}
