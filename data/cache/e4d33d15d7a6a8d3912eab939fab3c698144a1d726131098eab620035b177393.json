@@ -1,0 +1,31 @@
+{
+  "content_hash": "e4d33d15d7a6a8d3912eab939fab3c698144a1d726131098eab620035b177393",
+  "share_id": "gtfu94",
+  "title": "GPU Time-Slicing for Concurrent LLM Agents on Kubernetes",
+  "optimized_headline": "Unlocking GPU Time-Slicing for Efficient LLM Agents on Kubernetes",
+  "url": "https://towardsdatascience.com/gpu-time-slicing-for-concurrent-llm-agents-on-kubernetes/",
+  "source": "Towards Data Science",
+  "published_at": "2026-06-14T13:00:00.000Z",
+  "raw_excerpt": "A systems-level deep dive into the hidden microarchitectural costs of Kubernetes GPU time-slicing, and what it actually costs to co-locate Agentic AI workloads.\nThe post GPU Time-Slicing for Concurrent LLM Agents on Kubernetes appeared first on Towards Data Science.",
+  "raw_body": "A systems-level deep dive into the hidden microarchitectural costs of Kubernetes GPU time-slicing, and what it actually costs to co-locate Agentic AI workloads.\nThe post GPU Time-Slicing for Concurrent LLM Agents on Kubernetes appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent analysis highlights the microarchitectural costs of using GPU time-slicing in Kubernetes for running multiple AI agents simultaneously. It reveals that co-locating these workloads can lead to performance trade-offs that developers need to consider. Understanding these costs is crucial for optimizing resource allocation in AI applications. This knowledge is particularly relevant as AI workloads continue to grow and demand efficient processing solutions.",
+  "why_it_matters": [
+    "Developers can make informed decisions about resource allocation, potentially improving the performance of AI applications. This could lead to more efficient use of GPU resources.",
+    "As AI deployment scales, understanding these costs reflects a broader trend towards optimizing cloud resources and enhancing operational efficiency in tech environments."
+  ],
+  "lenses": {
+    "eli12": "This article explains how using GPUs for multiple AI tasks at once can slow things down due to hidden costs. It’s like trying to fit too many people in a small car; it works, but not efficiently. Knowing these costs helps developers make better choices for their AI projects, which affects everyone using these technologies.",
+    "pm": "For product managers, understanding the costs of GPU time-slicing is essential for meeting user needs while managing budgets. Efficient resource use could lower operational costs and improve service delivery. This insight allows for better planning and prioritization in AI product development.",
+    "engineer": "From a technical perspective, the analysis focuses on the performance trade-offs when co-locating LLM agents on Kubernetes with GPU time-slicing. It emphasizes the microarchitectural costs, which can impact throughput and latency. This information is vital for engineers aiming to optimize AI workloads in cloud environments."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-15T09:43:40.683Z",
+  "updated_at": "2026-06-15T09:43:40.683Z",
+  "processing_order": 1781516620685
+}

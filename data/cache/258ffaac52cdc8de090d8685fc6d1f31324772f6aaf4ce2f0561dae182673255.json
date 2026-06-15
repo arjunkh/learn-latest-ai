@@ -1,0 +1,31 @@
+{
+  "content_hash": "258ffaac52cdc8de090d8685fc6d1f31324772f6aaf4ce2f0561dae182673255",
+  "share_id": "lcw6m9",
+  "title": "Larger Context Windows Don’t Fix RAG — So I Built a System That Does",
+  "optimized_headline": "\"How I Developed a System to Enhance RAG Beyond Larger Context Windows\"",
+  "url": "https://towardsdatascience.com/larger-context-windows-dont-fix-rag-so-i-built-a-system-that-does/",
+  "source": "Towards Data Science",
+  "published_at": "2026-06-13T17:00:00.000Z",
+  "raw_excerpt": "Increasing context size in RAG systems doesn’t improve accuracy for aggregation tasks—it makes errors harder to detect. In this article, I benchmark retrieval-based pipelines against a deterministic full-scan engine across 100,000 rows and show why computation queries must be routed away from RAG entirely.\nThe post Larger Context Windows Don’t Fix RAG — So I Built a System That Does appeared first",
+  "raw_body": "Increasing context size in RAG systems doesn’t improve accuracy for aggregation tasks—it makes errors harder to detect. In this article, I benchmark retrieval-based pipelines against a deterministic full-scan engine across 100,000 rows and show why computation queries must be routed away from RAG entirely.\nThe post Larger Context Windows Don’t Fix RAG — So I Built a System That Does appeared first on Towards Data Science.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new analysis reveals that simply increasing context size in Retrieval-Augmented Generation (RAG) systems does not enhance accuracy for aggregation tasks. In fact, it complicates error detection. The author benchmarks retrieval pipelines against a full-scan engine using 100,000 rows, suggesting that computation queries should be handled separately from RAG. This insight is crucial as it challenges common assumptions about improving AI performance through larger data contexts.",
+  "why_it_matters": [
+    "Developers and data scientists may need to rethink how they design RAG systems, focusing on error detection over context size.",
+    "This finding indicates a shift in AI development strategies, emphasizing the importance of precise data handling rather than just increasing data volume."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to find a mistake in a long book by reading more pages instead of looking closely at a few. This article shows that bigger context in AI doesn’t help find errors in data aggregation. It’s important for everyday people because it suggests that better accuracy in AI might come from smarter querying rather than just more information.",
+    "pm": "For product managers, this insight highlights the need to prioritize error detection in RAG systems. By understanding that larger context windows don't equate to better accuracy, they could focus on optimizing query handling, potentially reducing costs and improving user satisfaction. This could lead to more reliable AI products that meet user expectations.",
+    "engineer": "From a technical perspective, the article benchmarks RAG systems against a deterministic full-scan engine using 100,000 rows, revealing that larger context sizes do not enhance accuracy for aggregation tasks. Instead, they complicate error detection, suggesting that computational queries should be routed away from RAG systems. This emphasizes the need for engineers to consider alternative approaches to data handling in AI."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-15T09:43:47.262Z",
+  "updated_at": "2026-06-15T09:43:47.262Z",
+  "processing_order": 1781516627265
+}
