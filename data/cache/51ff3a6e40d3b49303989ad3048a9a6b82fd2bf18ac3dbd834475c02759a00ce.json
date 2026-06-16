@@ -1,0 +1,31 @@
+{
+  "content_hash": "51ff3a6e40d3b49303989ad3048a9a6b82fd2bf18ac3dbd834475c02759a00ce",
+  "share_id": "tbazck",
+  "title": "Trust Between AI Agents: Measuring Formation, Breakage, and Recovery, with Implications for Governing Multi-Agent Systems",
+  "optimized_headline": "\"Exploring Trust Dynamics Among AI Agents: Formation, Breakage, and Recovery Insights\"",
+  "url": "https://arxiv.org/abs/2606.14923",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-16T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.14923v1 Announce Type: new \nAbstract: As language-model agents increasingly work in teams, each agent must decide how much to trust its teammates. Yet we lack a standard way to measure trust between AI agents. We propose a behavioral measure based on costly verification. In a cooperative survival game, checking a teammate's work consumes resources, while trusting a wrong answer can be f",
+  "raw_body": "arXiv:2606.14923v1 Announce Type: new \nAbstract: As language-model agents increasingly work in teams, each agent must decide how much to trust its teammates. Yet we lack a standard way to measure trust between AI agents. We propose a behavioral measure based on costly verification. In a cooperative survival game, checking a teammate's work consumes resources, while trusting a wrong answer can be fatal. Relative to a memoryless version of the same model, reduced verification provides an observable measure of trust. Using this framework, we study trust formation, breakage, and recovery across six frontier model snapshots. When paired with a consistently reliable teammate, four snapshots (Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.1, and Gemini 3.1 Pro) reduce verification by roughly 60-85%, whereas two smaller snapshots show little or no such adjustment. Failures reverse this discount, but models differ in how they respond. Some concentrate renewed scrutiny on the culprit, while others become more cautious toward the entire team. Recovery is slower than formation, and clustered failures sustain suspicion far longer than the same number of failures spread apart. These differences have practical consequences. Models that form trust verify less, decide more quickly, and achieve higher payoffs in our environment. By contrast, persistent over-verification is associated with indecision rather than safety. Our results show that trust dispositions can be measured before deployment and suggest that calibration, rather than maximal suspicion, should be the central concern in the governance of multi-agent AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a new way to measure trust between AI agents working in teams. They introduced a behavioral measure based on costly verification, where checking a teammate's work uses resources. In experiments, models like Claude Opus 4.6 and GPT-5.1 reduced verification by 60-85% when paired with reliable teammates. This understanding of trust dynamics is crucial as AI agents become more integrated into collaborative systems, influencing their efficiency and decision-making.",
+  "why_it_matters": [
+    "AI teams can operate more efficiently by trusting each other, which reduces wasted resources on verification. This is vital for applications where quick decisions are needed.",
+    "Understanding trust dynamics could reshape how multi-agent systems are governed, moving towards a focus on calibration rather than constant suspicion, enhancing overall performance."
+  ],
+  "lenses": {
+    "eli12": "Imagine a group of friends working on a project. If they trust each other, they spend less time double-checking work and can finish faster. This research shows how AI agents can do the same, which matters because it could lead to smarter, quicker AI systems that help us in everyday tasks.",
+    "pm": "For product managers, this research highlights the importance of trust in AI systems. By understanding how agents can trust each other, products can be designed to reduce unnecessary checks, saving time and resources. This could lead to more efficient AI applications that meet user needs faster.",
+    "engineer": "This study introduces a behavioral measure for trust based on verification costs in cooperative survival games. Notably, models like GPT-5.1 and Claude Opus 4.6 showed a 60-85% reduction in verification when working with reliable partners. Understanding these dynamics can inform how we design and deploy multi-agent systems, emphasizing the need for balanced trust calibration."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-16T09:08:20.985Z",
+  "updated_at": "2026-06-16T09:08:20.985Z",
+  "processing_order": 1781600900988
+}

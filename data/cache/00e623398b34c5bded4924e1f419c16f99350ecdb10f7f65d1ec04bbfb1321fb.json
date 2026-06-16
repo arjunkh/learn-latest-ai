@@ -1,0 +1,31 @@
+{
+  "content_hash": "00e623398b34c5bded4924e1f419c16f99350ecdb10f7f65d1ec04bbfb1321fb",
+  "share_id": "dsdggb",
+  "title": "Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion",
+  "optimized_headline": "Unlocking Direct Corpus Interaction: How Dynamic Workspace Expansion Transforms Collaboration",
+  "url": "https://arxiv.org/abs/2606.14885",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-16T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.14885v1 Announce Type: new \nAbstract: Agentic search over large corpora relies on retriever-mediated interfaces (e.g., BM25 or ColBERT) for scalable candidate discovery. While effective at ranking relevant documents, these interfaces expose evidence only as ranked results or bounded document views, limiting agents' ability to reorganize material and verify constraints across documents. ",
+  "raw_body": "arXiv:2606.14885v1 Announce Type: new \nAbstract: Agentic search over large corpora relies on retriever-mediated interfaces (e.g., BM25 or ColBERT) for scalable candidate discovery. While effective at ranking relevant documents, these interfaces expose evidence only as ranked results or bounded document views, limiting agents' ability to reorganize material and verify constraints across documents. Direct Corpus Interaction (DCI) addresses this limitation by exposing shell-executable corpus operations for flexible search, filtering, comparison, and verification. However, full-corpus terminal commands become slow and unstable as the corpus grows, degrading performance and efficiency. We introduce DR-DCI, a retriever-steered DCI framework that treats retrieval as an agent-callable action for expanding a local workspace. Rather than operating directly over the full corpus, the agent dynamically pulls relevant documents into an evolving workspace and conducts DCI operations within it. This design combines retriever-level recall with DCI-style precision: retrieval keeps exploration scalable, while DCI preserves the local operations needed for effective evidence resolution. Experiments show that DR-DCI is both effective and efficient across scales. On Browsecomp-Plus, DR-DCI reaches 71.2\\% accuracy, improving over raw DCI and ablated variants by up to 8.3 points while reducing tool usage, wall time, and estimated cost. With workspace-preserving context reset, accuracy further improves to 73.3\\%. In corpus-scaling experiments, DR-DCI remains effective from 100K to 10M documents, whereas raw DCI becomes unstable and BM25 performs substantially worse. DR-DCI also scales to a 20M-scale file-per-document Wiki-18 QA setting, achieving an average score of 63.0 across six benchmarks and outperforming retrieval-based and trained search-agent baselines. Ablation analysis further shows that ranked previews and inter-document DCI are key to performance.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced DR-DCI, a new framework for improving document retrieval in large corpora. This system allows agents to dynamically pull relevant documents into a local workspace, enhancing both efficiency and accuracy. In tests, DR-DCI achieved 71.2% accuracy, outperforming previous models and maintaining effectiveness even with up to 10 million documents. This advancement is significant as it could change how agents interact with vast amounts of information, making retrieval faster and more reliable.",
+  "why_it_matters": [
+    "This innovation could greatly enhance researchers and professionals who depend on fast, reliable access to large document collections for their work.",
+    "On a broader scale, DR-DCI signals a shift towards more efficient and scalable AI tools, which could transform industries reliant on data-driven decision-making."
+  ],
+  "lenses": {
+    "eli12": "DR-DCI is like having a smart assistant that can quickly gather and organize important documents for you. Instead of sifting through piles of information, it pulls in only what you need, making it easier to find answers. This matters because it helps everyday people get information faster, whether for school, work, or personal projects.",
+    "pm": "For product managers and founders, DR-DCI represents a significant improvement in user experience when accessing large data sets. By enabling efficient retrieval and local operations, it could reduce costs associated with data processing. This means products can be more responsive and user-friendly, meeting the growing demand for quick information access.",
+    "engineer": "Technically, DR-DCI combines retrieval and direct corpus interaction to optimize document access. It achieved 71.2% accuracy on the Browsecomp-Plus dataset, outperforming earlier models and handling up to 10 million documents effectively. This framework's dynamic workspace allows for scalable retrieval while maintaining precision, showcasing a promising direction for future AI document interaction systems."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-16T09:08:09.130Z",
+  "updated_at": "2026-06-16T09:08:09.130Z",
+  "processing_order": 1781600889131
+}
