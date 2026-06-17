@@ -1,0 +1,31 @@
+{
+  "content_hash": "af319fb56eb2cf21d2e8e50b871a857b423acfb76b090f6159f5aedab5bcdd90",
+  "share_id": "wrlo05",
+  "title": "When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval",
+  "optimized_headline": "Self-Evolving Agent Transforms Legal Case Retrieval: How It Works",
+  "url": "https://arxiv.org/abs/2606.17220",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.17220v1 Announce Type: new \nAbstract: Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. Although dense retrieval models have achieved notable progress, empirical studies show that BM25 continues to serve as a strong baseline in this domain. It motivates us to propose a self-evol",
+  "raw_body": "arXiv:2606.17220v1 Announce Type: new \nAbstract: Legal case retrieval remains challenging due to the complexity of legal language and the need for precise lexical alignment between queries and relevant cases. Although dense retrieval models have achieved notable progress, empirical studies show that BM25 continues to serve as a strong baseline in this domain. It motivates us to propose a self-evolving framework for rule-driven query rewriting that enhances BM25 without any parameter training. The framework equips an LLM-based agent with an automatic evaluation environment, enabling it to iteratively create rewriting rules, plan validation experiments over rule combinations, and eliminate ineffective rules based on historical feedbacks. We evaluate our method on the Chinese legal case retrieval benchmark LeCaRD-v2. Experimental results demonstrate that the proposed framework outperforms non-evolutionary baselines, including human-designed rules and greedy rule selection, particularly when powered by a highcapacity core LLM. We also conduct detailed analyses to investigate the mechanisms underlying self-evolution. Our findings reveal that LLM's capabilities to leverage previous experimental results and its intrinsic knowledge of rule elimination play critical roles in refining the rule set via self-evolution.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have introduced a self-evolving framework for legal case retrieval that enhances the traditional BM25 model without requiring parameter training. This framework uses a large language model (LLM) to create and refine query rewriting rules based on historical feedback. In tests on the LeCaRD-v2 benchmark, this method outperformed both human-designed rules and simpler algorithms. This innovation matters now as it could streamline legal research, making it more efficient and accessible.",
+  "why_it_matters": [
+    "Legal professionals could benefit from faster and more accurate case retrieval, improving their work efficiency.",
+    "This development could signify a shift towards more adaptive AI systems in legal tech, emphasizing the importance of continuous learning."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to find a specific book in a huge library but only having a vague description. This new framework acts like a librarian who learns from past searches to find the right book faster. It matters to everyday people because it could make legal information more accessible and easier to navigate.",
+    "pm": "For product managers and founders in legal tech, this framework highlights a user need for efficient case retrieval. It could reduce costs associated with manual searches and improve user satisfaction. Practically, this means focusing on developing tools that leverage self-evolving AI to meet evolving legal demands.",
+    "engineer": "This framework enhances the BM25 model by integrating a self-evolving agent that iteratively generates and tests query rewriting rules. It leverages a high-capacity LLM to refine these rules based on historical performance, demonstrating superior results on the LeCaRD-v2 benchmark. Key specifics include the elimination of ineffective rules and the framework's ability to learn from past experiments."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-17T08:40:45.181Z",
+  "updated_at": "2026-06-17T08:40:45.181Z",
+  "processing_order": 1781685645182
+}

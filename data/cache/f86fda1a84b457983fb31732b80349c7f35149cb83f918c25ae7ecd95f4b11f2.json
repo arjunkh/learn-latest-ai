@@ -1,0 +1,31 @@
+{
+  "content_hash": "f86fda1a84b457983fb31732b80349c7f35149cb83f918c25ae7ecd95f4b11f2",
+  "share_id": "sbfewb",
+  "title": "SkillChain-Gym: A Benchmark for Reskilling-Aware Production-Inventory Control under Disruptions",
+  "optimized_headline": "\"SkillChain-Gym: Revolutionizing Production-Inventory Control Amid Disruptions\"",
+  "url": "https://arxiv.org/abs/2606.17266",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.17266v1 Announce Type: new \nAbstract: Production planning increasingly has to treat workforce capability as a decision variable: certifications lapse when skills are not maintained, new products require skills the current workforce does not hold, and reskilling competes for the same worker hours needed for production. Existing operations benchmarks usually treat labor as exogenous, whil",
+  "raw_body": "arXiv:2606.17266v1 Announce Type: new \nAbstract: Production planning increasingly has to treat workforce capability as a decision variable: certifications lapse when skills are not maintained, new products require skills the current workforce does not hold, and reskilling competes for the same worker hours needed for production. Existing operations benchmarks usually treat labor as exogenous, while workforce-planning models with skills and learning are rarely released as reusable testbeds. We introduce SkillChain-Gym, a benchmark specification for reskilling-aware production-inventory control: a single-site environment with stylized worker skill-state dynamics, hard threshold certification, forgetting, and capacity-consuming training actions constrained by the same per-worker time budget as production. The benchmark includes seed-controlled disruption scenarios, three feasibility modes with projection diagnostics, deterministic replay, and metrics covering operations, resilience, capability growth, and training-access distribution. We evaluate production-only, reactive adaptive, water-filling adaptive, and static-insurance policies with budget variants over 60-shift horizons with paired statistical tests. The results are regime-dependent rather than a ranking. Training-capable policies dominate the production-only baseline, and maintenance training is necessary under forgetting even without disruptions. Among training-capable classes, adaptive training helps when bottlenecks are visible in the forecast, while a lean static cross-training plan, a deliberately favorable comparator whose structure encodes relevant skill contingencies, acts as strong insurance under surprise shocks and absenteeism. Capacity slack and the forgetting rate govern the boundary between these regimes. No policy class dominates across regimes, motivating forecast-driven controllers that decide when to buy skill insurance and when to react.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "SkillChain-Gym introduces a new benchmark for managing production and inventory while considering workforce skills. It highlights how training and maintaining skills are crucial for adapting to disruptions. The research shows that policies focused on training outperform traditional production-only strategies. This matters now as industries face increasing challenges related to workforce capabilities and unexpected changes in demand.",
+  "why_it_matters": [
+    "Companies reliant on skilled labor could enhance their production resilience by integrating training into their planning processes.",
+    "This shift reflects a broader trend where workforce skills are becoming a key factor in operational efficiency and adaptability."
+  ],
+  "lenses": {
+    "eli12": "SkillChain-Gym is like a fitness tracker for factories, helping them monitor and improve their workers' skills. Just as people need to stay fit to perform well, workers need ongoing training to keep up with production demands. This matters for everyday people because it could lead to more stable jobs and better products as companies adapt to changes in the market.",
+    "pm": "For product managers, SkillChain-Gym emphasizes the importance of integrating workforce capabilities into planning. This approach could lead to more efficient production processes and better resource allocation. A practical implication is that managers might need to invest in training programs to ensure their teams can adapt to new challenges and maintain productivity.",
+    "engineer": "From a technical perspective, SkillChain-Gym evaluates various production policies over 60 shifts, focusing on how training impacts performance under different conditions. Key findings indicate that adaptive training strategies can mitigate the effects of workforce shortages and skill gaps. However, no single policy consistently outperforms others, suggesting the need for flexible, data-driven approaches to workforce management."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-17T08:40:51.719Z",
+  "updated_at": "2026-06-17T08:40:51.719Z",
+  "processing_order": 1781685651721
+}

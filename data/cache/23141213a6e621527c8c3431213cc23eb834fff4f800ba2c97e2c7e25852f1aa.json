@@ -1,0 +1,31 @@
+{
+  "content_hash": "23141213a6e621527c8c3431213cc23eb834fff4f800ba2c97e2c7e25852f1aa",
+  "share_id": "bpsaqj",
+  "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+  "optimized_headline": "Unlocking Agentic Search: How Diverse Query Initialization Transforms Results",
+  "url": "https://arxiv.org/abs/2606.17209",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.17209v1 Announce Type: new \nAbstract: Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we focus on breadth scaling, showing that standard parallel sampling yields diminishing returns, tracing this to query redundancy at the first turn. When models issue similar first queries across",
+  "raw_body": "arXiv:2606.17209v1 Announce Type: new \nAbstract: Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we focus on breadth scaling, showing that standard parallel sampling yields diminishing returns, tracing this to query redundancy at the first turn. When models issue similar first queries across rollouts, the threads retrieve overlapping evidence, and subsequent turns are conditioned on this shared retrieval. We address this limitation with DivInit, a training-free intervention at the first turn. Rather than sampling k independent first queries, DivInit draws n candidates from a single call, picks k < n diverse seeds, and runs them as parallel trajectories. Across five open-weight models and eight benchmarks, DivInit consistently improves over standard parallel sampling, with average gains of five to seven points on multi-hop QA at matched compute. Code available at https://github.com/cxcscmu/diverse-query-initialization",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Recent research introduces DivInit, a method that enhances agentic search by improving the diversity of initial queries. Traditional parallel sampling shows diminishing returns due to redundancy in first queries, which leads to overlapping results. DivInit tackles this by generating diverse seeds from a single call, resulting in average gains of five to seven points on multi-hop question answering across various models. This advancement could significantly improve the efficiency and effectiveness of AI search systems.",
+  "why_it_matters": [
+    "AI developers could see immediate benefits as DivInit enhances search accuracy, making systems more reliable for users. This could lead to better user experiences in applications relying on AI-driven search.",
+    "This shift towards diverse query initialization might signal a broader trend in AI towards optimizing efficiency and reducing redundancy, potentially influencing future model training strategies."
+  ],
+  "lenses": {
+    "eli12": "Think of DivInit like a chef who decides to use a variety of spices instead of just one. This method helps AI systems start with different initial questions, leading to richer and more varied answers. It matters because it can make AI tools smarter and more helpful for everyone, improving how we find information.",
+    "pm": "For product managers, DivInit highlights a user need for more accurate and efficient AI search tools. By reducing redundancy, this approach could lower costs and improve user satisfaction. Implementing such innovations could set products apart in a competitive market.",
+    "engineer": "From a technical perspective, DivInit addresses the limitations of standard parallel sampling in agentic search by generating diverse initial queries from a single model call. This approach leads to consistent improvements in multi-hop question answering benchmarks, showcasing the potential for enhanced performance without additional computational costs."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-17T08:40:37.297Z",
+  "updated_at": "2026-06-17T08:40:37.297Z",
+  "processing_order": 1781685637297
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "6cab76f3101834a8d521eda3437532d63d87934126fc5a8855d64d0e84408fd3",
+  "share_id": "smp32z",
+  "title": "Skill-Constrained Model Predictive Control for Resilient Manufacturing Supply Chains",
+  "optimized_headline": "\"Enhancing Manufacturing Supply Chains with Skill-Constrained Model Predictive Control\"",
+  "url": "https://arxiv.org/abs/2606.17269",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-17T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.17269v1 Announce Type: new \nAbstract: In skill-constrained production-inventory systems, the qualified human capacity available tomorrow depends on training decisions made today: production requires certified workers, certifications decay unless maintained, and training consumes the same scarce worker hours that production needs now. We study a closed-loop skill-constrained model predic",
+  "raw_body": "arXiv:2606.17269v1 Announce Type: new \nAbstract: In skill-constrained production-inventory systems, the qualified human capacity available tomorrow depends on training decisions made today: production requires certified workers, certifications decay unless maintained, and training consumes the same scarce worker hours that production needs now. We study a closed-loop skill-constrained model predictive controller that, at every shift, solves a finite-horizon mixed-integer program over production, inventory, backlog, and training, with binary predicted certification, hard production eligibility, and an interpretable terminal value that prices certified-capacity gaps at the horizon boundary; only the first-period action is applied before replanning. On synthetic, seed-controlled SkillChain-Gym scenarios - announced and surprise new-skill shocks, demand shocks, absenteeism, forecast- and availability-quality modes, capacity-boundary and training-rate sweeps, and negative controls - we evaluate the controller against production-only and maintenance-only ablations, static cross-training insurance plans, and a strong reactive heuristic, under an ex-ante locked configuration and paired statistics. The result is regime dependence, not superiority: no policy class dominates. Predictive control helps when skill or labor bottlenecks are forecastable early enough for training to complete; lean static insurance remains hard to beat under surprise shocks, near the demand-capacity boundary, and wherever pre-shock slack makes insurance cheap. Attribution ablations separate certification maintenance, re-acquisition of lapsed certifications, and greenfield skill acquisition. Forecastability, not adaptivity per se, decides when predictive control pays.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have developed a new model predictive controller to manage skill-constrained manufacturing supply chains. This approach addresses how training decisions today impact the availability of certified workers tomorrow. Key findings reveal that predictive control is effective when skill shortages are anticipated, but static insurance plans often outperform during unexpected shocks. Understanding this balance is crucial for optimizing workforce management in manufacturing.",
+  "why_it_matters": [
+    "Manufacturers could better align training and production schedules, ensuring qualified workers are available when needed.",
+    "This research indicates a shift toward more dynamic workforce management strategies, potentially reshaping how companies approach training and production planning."
+  ],
+  "lenses": {
+    "eli12": "This study explores how training workers affects their availability in manufacturing. Think of it like a sports team: if players don’t practice, they can’t play well. By managing training and production effectively, companies can ensure they have the right skills on hand. This is important for keeping production running smoothly, especially when unexpected challenges arise.",
+    "pm": "For product managers, this model highlights the importance of integrating training into production planning. By anticipating skill shortages, companies could reduce downtime and improve efficiency. One practical takeaway is to consider flexible training schedules that align with production needs, maximizing resource use and minimizing disruptions.",
+    "engineer": "The study introduces a skill-constrained model predictive controller that optimizes production and training in manufacturing environments. It uses a finite-horizon mixed-integer program to balance production, inventory, and training needs. Results show that while predictive control can be beneficial when skill shortages are predictable, static plans may outperform in surprise scenarios, indicating the importance of forecasting in workforce management."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-17T08:40:57.723Z",
+  "updated_at": "2026-06-17T08:40:57.723Z",
+  "processing_order": 1781685657726
+}
