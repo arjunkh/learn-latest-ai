@@ -1,0 +1,31 @@
+{
+  "content_hash": "0410712efcef16ca943ef312f799a44093172d140a2bd0ac134355d2d772a1e9",
+  "share_id": "cca8l0",
+  "title": "CEO-Bench: Can Agents Play the Long Game?",
+  "optimized_headline": "\"CEO-Bench: Are Agents Ready to Commit to Long-Term Strategies?\"",
+  "url": "https://arxiv.org/abs/2606.18543",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.18543v1 Announce Type: new \nAbstract: Language model agents are becoming proficient executors at isolated, short-horizon tasks such as software engineering and customer service. Yet real-world challenges require a combination of sophisticated skills that remain largely untested in agents: (1) navigating long horizons amid uncertainty; (2) acquiring information in noisy environments; (3)",
+  "raw_body": "arXiv:2606.18543v1 Announce Type: new \nAbstract: Language model agents are becoming proficient executors at isolated, short-horizon tasks such as software engineering and customer service. Yet real-world challenges require a combination of sophisticated skills that remain largely untested in agents: (1) navigating long horizons amid uncertainty; (2) acquiring information in noisy environments; (3) adapting to a changing world; (4) orchestrating multiple moving parts toward a coherent goal. We introduce CEO-Bench, which evaluates these capabilities together by simulating a representative real-world task: operating a startup for 500 days. An agent manages pricing, marketing, budgeting, and many other aspects of a fictional company through a programmable Python interface, operating in the same environment and facing the same challenges as a human CEO. Success demands analyzing noisy, interconnected business databases, translating signals into sound strategy, and coordinating many decisions with programming. The strongest agents write sophisticated code that simulates customer cohorts to forecast future cash and mines negotiation history to uncover hidden customer preferences. Even so, most state-of-the-art models struggle in this environment. Only Claude Opus 4.8 and GPT-5.5 finish above the $1M starting balance, and neither consistently turns a profit. CEO-Bench takes a first step toward measuring the intelligence required to drive sustained, adaptive progress over time.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced CEO-Bench to test language model agents on complex, long-term tasks, like running a startup for 500 days. The study found that only Claude Opus 4.8 and GPT-5.5 could maintain a balance above the $1M starting point, but neither reliably turned a profit. This highlights the gap in current AI capabilities for navigating real-world challenges where uncertainty and adaptation are key. Understanding these limitations is crucial as AI continues to evolve in business contexts.",
+  "why_it_matters": [
+    "For startups and entrepreneurs, this could mean relying on AI for decision-making may still be risky due to current limitations in long-term strategic planning.",
+    "At a market level, the findings suggest a need for further development in AI to handle complex, multi-faceted tasks, which could reshape how businesses operate."
+  ],
+  "lenses": {
+    "eli12": "CEO-Bench is like a test for AI agents, putting them in charge of a fictional startup for 500 days. While some models can keep money in the bank, they struggle to make profits. This matters because it shows that, even though AI is getting smarter, it's not yet ready to handle the messy realities of running a business.",
+    "pm": "For product managers, CEO-Bench highlights that AI tools may not yet meet user needs for complex decision-making in uncertain environments. The cost of relying on these tools could be high if they fail to deliver consistent results. This suggests a need for ongoing improvements in AI capabilities to enhance efficiency and effectiveness.",
+    "engineer": "From a technical perspective, CEO-Bench evaluates agents' abilities to manage interconnected tasks in a noisy environment, simulating real-world business challenges. Notably, only Claude Opus 4.8 and GPT-5.5 performed adequately, maintaining a balance above $1M but failing to achieve profitability. This underscores the limitations of current models in long-term strategic planning and adaptation."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-18T08:24:22.071Z",
+  "updated_at": "2026-06-18T08:24:22.071Z",
+  "processing_order": 1781771062074
+}

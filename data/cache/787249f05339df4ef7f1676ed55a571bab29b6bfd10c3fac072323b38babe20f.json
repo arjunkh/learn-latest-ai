@@ -1,0 +1,31 @@
+{
+  "content_hash": "787249f05339df4ef7f1676ed55a571bab29b6bfd10c3fac072323b38babe20f",
+  "share_id": "civ7ko",
+  "title": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+  "optimized_headline": "Discover the CaVe-VLM-CoT: A New Framework for Interpretable Vision-Language Models",
+  "url": "https://arxiv.org/abs/2606.18385",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-18T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.18385v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) remain prone to hallucinations, producing fluent but visually unfaithful outputs. Existing chain-of-thought and retrieval-augmented methods only partially address this, as they neither enforce step-level citation grounding nor route verification failures back to retrieval for correction. We present CaVe-VLM-CoT, a modul",
+  "raw_body": "arXiv:2606.18385v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) remain prone to hallucinations, producing fluent but visually unfaithful outputs. Existing chain-of-thought and retrieval-augmented methods only partially address this, as they neither enforce step-level citation grounding nor route verification failures back to retrieval for correction. We present CaVe-VLM-CoT, a modular reflection-based agentic-RAG framework that enforces evidence-grounded reasoning through a five-stage closed-loop pipeline: Extractor, Retriever, Solver, Citation Injector, and Verifier, in which detected ungrounded claims trigger structured feedback to the Extractor for targeted re-retrieval. Since no existing framework jointly measures retrieval quality, step-wise citation faithfulness, and cross-modal grounding, we propose a suite of 23 component-wise metrics across all stages, anchored by CaVeScore, a composite metric weighting accuracy, citation precision and recall, attribution, and evidence grounding. Without any architectural or prompt modifications, CaVe-VLM-CoT achieves 87.1\\% accuracy and 56.6\\% CaVeScore on ScienceQA , and 55.2\\% accuracy and 35.7\\% CaVeScore on MMMU (30 subjects).",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers introduced CaVe-VLM-CoT, a new framework designed to improve Vision-Language Models (VLMs) by reducing hallucinations in outputs. This model employs a five-stage pipeline that enhances evidence-based reasoning and corrects retrieval errors. Notably, it achieved 87.1% accuracy on ScienceQA and introduced 23 metrics to assess performance. This development is crucial as it addresses reliability issues in AI-generated content, which is increasingly important in various applications.",
+  "why_it_matters": [
+    "This framework could significantly improve accuracy for developers and researchers relying on VLMs for data-driven tasks, enhancing trust in AI outputs.",
+    "The introduction of comprehensive metrics may shift industry standards for evaluating AI models, pushing for more reliable and accountable AI systems."
+  ],
+  "lenses": {
+    "eli12": "CaVe-VLM-CoT is like a smart assistant that checks its facts before answering. It uses a five-step process to ensure the information it provides is accurate and well-supported. This is important for everyday people who rely on AI for trustworthy information, especially in education or decision-making.",
+    "pm": "For product managers, CaVe-VLM-CoT highlights a growing user need for reliable AI outputs that minimize errors. By improving accuracy and accountability, it could enhance user trust and satisfaction. This framework also suggests that investing in advanced evaluation metrics can differentiate products in a competitive market.",
+    "engineer": "CaVe-VLM-CoT employs a five-stage closed-loop pipeline that includes Extractor, Retriever, Solver, Citation Injector, and Verifier. It achieves notable performance metrics, with 87.1% accuracy on ScienceQA and a unique CaVeScore for assessing citation precision and recall. This approach emphasizes the importance of evidence-grounded reasoning in VLMs, setting a new benchmark for model evaluation."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-18T08:24:07.461Z",
+  "updated_at": "2026-06-18T08:24:07.461Z",
+  "processing_order": 1781771047462
+}
