@@ -1,0 +1,31 @@
+{
+  "content_hash": "400d562e4bb883ac28c69ef8676a1a640b7b112f635c7a28dcb2247a91ad0e2b",
+  "share_id": "dpf3op",
+  "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+  "optimized_headline": "Exploring Deontic Policies for Governing Agentic AI Systems in Real-Time",
+  "url": "https://arxiv.org/abs/2606.19464",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.19464v1 Announce Type: new \nAbstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the f",
+  "raw_body": "arXiv:2606.19464v1 Announce Type: new \nAbstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of enterprise governance. This includes specifying what agents are permitted and prohibited from doing, what they areobliged to do after certain actions (e.g., notify the CISO), under what conditions a standing obligation may be waived, and which rules take precedence when policies conflict. This governance problem exceeds what current policy engines provide. Systems such as XACML, Rego, and Cedar address only the permit/prohibit subset of this governance structure. They do not provide obligation lifecycle management, meta-policy conflict resolution, dispensations that waive obligations in specific circumstances, and ontological reasoning over domain class hierarchies commonly found in applications such as healthcare, cybersecurity, or data privacy. We propose AgenticRei, which realizes key governance requirements such as obligations, dispensations, policy conflict resolutions, and reasoning over policies, as well as the basic permit/prohibit constraints. We use a deontic policy language built on the Rei framework, expressed as OWL (Web Ontology Language) and evaluated at runtime by a high-performance logic engine entirely outside the LLM. The same pipeline governs both tool invocations by the agent and agent-to-agent messages. We show through examples that deontic policies capture governance constraints around security and privacy that mostly cannot be expressed in current production engines. Our approach composes naturally with industry-standard frameworks like A2AS.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A new study introduces AgenticRei, a governance system designed for autonomous AI agents powered by Large Language Models (LLMs). Current policy engines like XACML and Rego fall short in managing complex obligations and conflicts. AgenticRei addresses these issues by incorporating obligations, dispensations, and meta-policy conflict resolution. This matters now because as AI systems become more autonomous, ensuring their compliance with governance structures is crucial for security and privacy.",
+  "why_it_matters": [
+    "Organizations using autonomous AI could face immediate security and compliance risks without proper governance mechanisms in place.",
+    "The introduction of AgenticRei signals a broader shift towards more sophisticated AI governance, essential for industries like healthcare and cybersecurity."
+  ],
+  "lenses": {
+    "eli12": "Imagine trying to manage a team of robots that can make decisions and interact with each other. AgenticRei acts like a manager, ensuring they follow rules about what they can and cannot do. This is important for everyday people because it helps protect sensitive information and keeps systems secure from misuse.",
+    "pm": "For product managers and founders, AgenticRei highlights a growing user need for robust governance in AI systems. By addressing compliance and security challenges, it could enhance product reliability and user trust. Implementing such governance could streamline operations and reduce risks associated with autonomous AI.",
+    "engineer": "From a technical perspective, AgenticRei utilizes a deontic policy language based on the Rei framework, evaluated in real-time by a high-performance logic engine. It extends beyond traditional policy engines by including obligation lifecycle management and conflict resolution. This approach could significantly improve governance in sectors requiring strict compliance, like cybersecurity."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-20T07:12:08.167Z",
+  "updated_at": "2026-06-20T07:12:08.167Z",
+  "processing_order": 1781939528167
+}

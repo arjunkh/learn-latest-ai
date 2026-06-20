@@ -1,0 +1,31 @@
+{
+  "content_hash": "2809ebca5d9fd4148f4aa77e81b7a65a88637389727253a07e2bedd496c97ef5",
+  "share_id": "hamufe",
+  "title": "Hidden Anchors in Multi-Agent LLM Deliberation",
+  "optimized_headline": "Uncovering Hidden Anchors in Multi-Agent LLM Decision-Making Processes",
+  "url": "https://arxiv.org/abs/2606.19494",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-20T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.19494v1 Announce Type: new \nAbstract: Multi-agent LLM deliberation, where agents exchange and revise answers over several rounds, is increasingly used to improve reasoning and accuracy, yet how and why it works is rarely modelled. Such deliberation mirrors how humans reach decisions. As social animals we are pulled both by the group, the herd effect that classical opinion-dynamics model",
+  "raw_body": "arXiv:2606.19494v1 Announce Type: new \nAbstract: Multi-agent LLM deliberation, where agents exchange and revise answers over several rounds, is increasingly used to improve reasoning and accuracy, yet how and why it works is rarely modelled. Such deliberation mirrors how humans reach decisions. As social animals we are pulled both by the group, the herd effect that classical opinion-dynamics models such as DeGroot and Friedkin--Johnsen capture, and by our own internal belief, which they do not. We model multi-agent deliberation as a closed-loop dynamical system in which each agent carries a hidden internal belief, its anchor, that continually pulls its opinion regardless of its neighbours. We show this anchor can be recovered from the deliberation alone, and that it explains a behaviour classical consensus rules forbid: an agent's confidence in the correct answer can climb past where any agent started, escaping the space (convexhull) formed by the initial beliefs. Checking whether the recovered anchor also predicts held-out runs (generalizes) gives a simple test for when a model is truly driven bysuch an anchor. Across three open-weight model families this is a spectrum, not all-or-nothing. All anchors' influence are about equally strongly, but they differ in where the anchor sits, and only when it sits far from the initial opinions does deliberation escape the hull and need the full closed-loop model.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have explored how multi-agent deliberation among language models can enhance reasoning and accuracy. They found that each agent has a hidden internal belief, or 'anchor,' influencing its opinions during discussions. This process allows agents to surpass their initial beliefs, a phenomenon classical models don't account for. Understanding these dynamics is crucial as AI systems become more integrated into decision-making processes.",
+  "why_it_matters": [
+    "This insight could help AI developers create systems that better mimic human decision-making, improving user interactions. ",
+    "On a broader scale, it signals a shift towards more sophisticated AI models that can handle complex reasoning beyond traditional methods."
+  ],
+  "lenses": {
+    "eli12": "Imagine a group of friends discussing where to eat. Each person has a favorite restaurant in mind, but as they talk, they might end up suggesting a place none of them initially considered. This study shows how AI agents can do the same by having hidden beliefs that influence their decisions, which could lead to smarter, more collaborative AI in everyday life.",
+    "pm": "For product managers, this research highlights the importance of understanding user beliefs and biases in collaborative tools. By leveraging multi-agent deliberation, products could enhance user confidence and decision-making efficiency. This could lead to more effective AI-driven solutions that adapt and improve based on user interactions.",
+    "engineer": "This study models multi-agent deliberation as a closed-loop system, revealing how agents' hidden anchors influence their opinions. It demonstrates that agents can exceed initial beliefs through deliberation, a behavior not captured by classical consensus models. The findings suggest that the influence of these anchors varies across model families, indicating a need for nuanced approaches in AI design."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-20T07:12:27.409Z",
+  "updated_at": "2026-06-20T07:12:27.409Z",
+  "processing_order": 1781939547412
+}
