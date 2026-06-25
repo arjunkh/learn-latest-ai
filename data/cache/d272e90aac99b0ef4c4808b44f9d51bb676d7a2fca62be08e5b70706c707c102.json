@@ -1,0 +1,31 @@
+{
+  "content_hash": "d272e90aac99b0ef4c4808b44f9d51bb676d7a2fca62be08e5b70706c707c102",
+  "share_id": "camcot",
+  "title": "Critique of Agent Model",
+  "optimized_headline": "Exploring the Flaws in the Current Agent Model: A Critical Analysis",
+  "url": "https://arxiv.org/abs/2606.23991",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.23991v1 Announce Type: new \nAbstract: What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic\" tools that promise to drive up productivity, and at the same time, ``existential\" concerns such as AI escaping human control with destructive power under a speculative ``machine agen",
+  "raw_body": "arXiv:2606.23991v1 Announce Type: new \nAbstract: What is an agent? What constitutes agency? With the rise of Large Language Model (LLM) systems marketed as ``coding agents'', ``AI co-scientists'', and other ``agentic\" tools that promise to drive up productivity, and at the same time, ``existential\" concerns such as AI escaping human control with destructive power under a speculative ``machine agency\" against humans, it has become essential to clarify where automation ends and agency begins, both for building capable systems and for understanding whether and what to fear. Drawing on Descartes' grounding of agency in independent thought, and on portrayals of autonomous beings in science fiction, we survey the current landscape of AI agents, and analyze agent architectures along five dimensions: goal, identity, decision-making, self-regulation, and learning. Specifically, we argue that genuine agency requires these structures to be \\emph{internalized within the system itself} rather than assembled through external scaffolding. This distinction between \\emph{agentic} systems, whose competence resides in engineered workflows, and \\emph{agentive} systems, whose capabilities (including social interaction) arise endogenously, defines the boundary between systems designed for prescribed tasks, and those capable of operating in the open world with true autonomy. Building on this analysis, we propose the Goal-Identity-Configurator (GIC) architecture for a general-purpose agent model, combining hierarchical goal decomposition, identity evolution, simulative reasoning grounded in a separately trained world model, learned self-regulation, and self-directed learning from both real and simulated experience. Furthermore, we share insight on the auditability, controllability, and safety of agentive systems that possess greater autonomy and ``agency\", but remain under human oversight.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "A recent critique of AI agent models explores what defines agency in systems like Large Language Models (LLMs). The authors argue that true agency must be internalized within the system, distinguishing between tools designed for specific tasks and those capable of autonomous operation. They propose a new architecture called the Goal-Identity-Configurator (GIC), which emphasizes self-regulation and learning. This discussion is crucial as it shapes our understanding of AI's potential and risks in real-world applications.",
+  "why_it_matters": [
+    "This critique impacts developers and researchers who are building AI systems, guiding them to create more autonomous and capable tools.",
+    "On a broader scale, it highlights a shift in AI development towards systems that can operate independently while still being manageable by humans."
+  ],
+  "lenses": {
+    "eli12": "The article dives into what makes an AI system an 'agent.' It suggests that real agency should come from within the AI, not just from external programming. Think of it like a plant that grows from its own roots instead of being propped up by sticks. Understanding this difference is important for everyone as it influences how we interact with AI in our daily lives.",
+    "pm": "For product managers and founders, this critique emphasizes the need to focus on building AI systems that can learn and adapt autonomously. By prioritizing internalized agency, products could become more efficient and user-friendly. A practical takeaway is to consider how your AI can evolve in response to user needs without constant external input.",
+    "engineer": "From a technical perspective, the critique outlines a framework for developing agentive systems through the Goal-Identity-Configurator (GIC) architecture. This model incorporates hierarchical goal decomposition and self-regulation, allowing AI to learn from both real and simulated experiences. However, it also stresses the importance of maintaining human oversight to ensure safety and controllability."
+  },
+  "hype_meter": 3,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-25T07:00:38.986Z",
+  "updated_at": "2026-06-25T07:00:38.986Z",
+  "processing_order": 1782370838988
+}

@@ -1,0 +1,31 @@
+{
+  "content_hash": "528474a134c6b5351919e36d217d72f120643670b8d70614887078dd05c3e4ba",
+  "share_id": "rdrvth",
+  "title": "RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+  "optimized_headline": "Discover RIFT-Bench: A New Approach to Testing Agentic AI Systems",
+  "url": "https://arxiv.org/abs/2606.23927",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-25T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.23927v1 Announce Type: new \nAbstract: Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific implementations or domains, limiting unified comparison across heterogeneous systems. To address thi",
+  "raw_body": "arXiv:2606.23927v1 Announce Type: new \nAbstract: Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific implementations or domains, limiting unified comparison across heterogeneous systems. To address this gap, we introduce RIFT-Bench, a graph representation-driven methodology for dynamic red-teaming that enables unified evaluations across diverse agentic architectures. Building on a novel hierarchical representation, RIFT-Bench operates in two automated phases: Discovery, which extracts system structure, and Scanning, which deploys adaptive adversarial attacks and produces a comprehensive evaluation report. It evaluates the examined system itself, leveraging a broad set of dynamically adaptable adversarial probes across diverse attack vectors and objectives. We demonstrate the effectiveness of the proposed evaluation pipeline across 45 agentic systems spanning a diverse range of implementations, showing that the approach generalizes effectively to heterogeneous agentic architectures. Beyond systems and attacks, RIFT-Bench also supports direct evaluation of mitigation strategies. These key capabilities make RIFT-Bench a scalable foundation for security evaluation of agentic AI systems.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "RIFT-Bench is a new methodology designed to enhance security evaluations of agentic AI systems, which are increasingly autonomous. It uses a two-phase process: Discovery to map system structures and Scanning to launch adaptive adversarial attacks. Tested on 45 different agentic systems, it shows strong effectiveness in identifying vulnerabilities across various architectures. This matters now as AI systems become more complex and autonomous, necessitating robust security measures.",
+  "why_it_matters": [
+    "Developers and organizations using agentic AI systems need reliable security evaluations to protect against emerging threats. RIFT-Bench provides a standardized approach for this.",
+    "As AI systems become more integrated into critical applications, ensuring their security could influence market trust and adoption rates across industries."
+  ],
+  "lenses": {
+    "eli12": "RIFT-Bench is like a security drill for AI systems, checking how well they can withstand attacks. It helps find weaknesses in AI that make decisions on their own. This is important for everyone, as stronger security means safer technology we can rely on in our daily lives.",
+    "pm": "For product managers, RIFT-Bench highlights the need for robust security assessments in AI products. Understanding vulnerabilities can help improve user trust and product reliability. This approach could also lead to cost savings by identifying issues before they escalate into bigger problems.",
+    "engineer": "RIFT-Bench employs a graph-based methodology to evaluate agentic AI systems through a two-phase process: Discovery and Scanning. The framework adapts to various adversarial probes, demonstrating effectiveness across 45 diverse systems. Its design allows for comprehensive evaluations, including mitigation strategies, making it a valuable tool in enhancing AI security."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-25T07:00:24.587Z",
+  "updated_at": "2026-06-25T07:00:24.587Z",
+  "processing_order": 1782370824587
+}
