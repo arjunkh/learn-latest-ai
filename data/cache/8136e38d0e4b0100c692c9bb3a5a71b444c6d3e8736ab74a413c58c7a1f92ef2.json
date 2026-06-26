@@ -1,0 +1,31 @@
+{
+  "content_hash": "8136e38d0e4b0100c692c9bb3a5a71b444c6d3e8736ab74a413c58c7a1f92ef2",
+  "share_id": "labii9",
+  "title": "Life After Benchmark Saturation: A Case Study of CORE-Bench",
+  "optimized_headline": "Exploring CORE-Bench: Insights from Life Beyond Benchmark Saturation",
+  "url": "https://arxiv.org/abs/2606.26158",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-26T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.26158v1 Announce Type: new \nAbstract: When a benchmark's accuracy saturates, it is often retired and replaced with a more challenging version. We show that this approach privileges accuracy and misses the opportunity to study six other key dimensions of agent performance: construct validity issues such as shortcuts, out-of-distribution generalizability, efficiency, reliability, the rela",
+  "raw_body": "arXiv:2606.26158v1 Announce Type: new \nAbstract: When a benchmark's accuracy saturates, it is often retired and replaced with a more challenging version. We show that this approach privileges accuracy and misses the opportunity to study six other key dimensions of agent performance: construct validity issues such as shortcuts, out-of-distribution generalizability, efficiency, reliability, the relative importance of the model versus the scaffold, and uplift from human-agent collaboration. We use CORE-Bench Hard, a benchmark for computational reproducibility of scientific code, as a case study to demonstrate that measuring agents along these dimensions yields meaningful insights into agent performance even after accuracy saturates. First, we surface threats to construct validity in CORE-Bench Hard that are difficult to anticipate with less capable agents. We introduce an improved benchmark, CORE-Bench v1.1, and an out-of-distribution task suite, CORE-Bench OOD. Second, we find that despite accuracy saturation, CORE-Bench v1.1 remains useful for measuring efficiency, reliability, model performance, and scaffold performance. Finally, we conduct a small-scale randomized experiment to measure uplift from human-agent collaboration on real-world computational reproducibility tasks. We find a statistically significant speedup by about a factor of two -- likely underestimated due to one-fifth of human-only reproductions reaching the time limit before completing -- and describe various other findings. Together, our contributions present a more rigorous alternative to the dominant accuracy-centric evaluation paradigm.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "The study introduces CORE-Bench, a new benchmark focusing on broader performance metrics beyond just accuracy. It highlights six key dimensions, such as efficiency and reliability, that provide deeper insights into agent performance. Notably, a randomized experiment showed that human-agent collaboration can double task completion speed. This approach challenges the traditional reliance on accuracy alone and suggests a more comprehensive evaluation of AI systems.",
+  "why_it_matters": [
+    "Researchers and developers can gain a more nuanced understanding of AI performance, leading to better models and applications.",
+    "This shift could reshape evaluation standards in AI, encouraging a focus on diverse performance metrics rather than just accuracy."
+  ],
+  "lenses": {
+    "eli12": "The study emphasizes that just measuring how accurate an AI is doesn't tell the whole story. Think of it like judging a car only by its top speed, ignoring fuel efficiency or safety features. By examining other aspects of AI performance, we could better understand their real-world usefulness and reliability.",
+    "pm": "For product managers, this research suggests that user experience could improve by focusing on various performance metrics. Instead of only aiming for high accuracy, considering efficiency and collaboration can enhance product functionality. This broader approach could lead to more effective AI tools that meet user needs better.",
+    "engineer": "The study critiques the traditional accuracy-focused benchmarks, introducing CORE-Bench v1.1 and CORE-Bench OOD to assess efficiency and reliability. It reveals that even when accuracy saturates, these metrics remain valuable. A randomized experiment showed a significant speedup in tasks with human-agent collaboration, highlighting the importance of diverse evaluation methods."
+  },
+  "hype_meter": 2,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-26T07:07:12.985Z",
+  "updated_at": "2026-06-26T07:07:12.985Z",
+  "processing_order": 1782457632986
+}
