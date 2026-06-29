@@ -1,0 +1,31 @@
+{
+  "content_hash": "7f73dd8ddf2fdee998728b021b76221cd729c23a63db4db4f8a81a5a0a102b0b",
+  "share_id": "itf2wv",
+  "title": "Internalizing the Future: A Unified Agentic Training Paradigm for World Model Planning",
+  "optimized_headline": "\"Exploring a New Training Paradigm for Enhanced World Model Planning\"",
+  "url": "https://arxiv.org/abs/2606.27483",
+  "source": "ArXiv AI",
+  "published_at": "2026-06-29T04:00:00.000Z",
+  "raw_excerpt": "arXiv:2606.27483v1 Announce Type: new \nAbstract: Large language model (LLM) agents have demonstrated strong capability in sequential decision-making, yet they remains fundamentally reactive in long-horizon tasks. Unlike humans who employ \"what-if\" reasoning to evaluate potential plans before commitment, standard agents lack an internal world model to simulate future outcomes. Therefore, we propose",
+  "raw_body": "arXiv:2606.27483v1 Announce Type: new \nAbstract: Large language model (LLM) agents have demonstrated strong capability in sequential decision-making, yet they remains fundamentally reactive in long-horizon tasks. Unlike humans who employ \"what-if\" reasoning to evaluate potential plans before commitment, standard agents lack an internal world model to simulate future outcomes. Therefore, we propose to internalize future-aware planning by training a single autoregressive model to verbalize both a prospective state rollout and a plan-conditioned success estimate-a textual analogue of the Q-value. Crucially, we identify a format-capability gap: simply fine-tuning agents on look-ahead traces during post-training leads to superficial mimicry of foresight without genuine predictive grounding. To bridge this gap, we introduce a three-stage training paradigm: (i) World Model Agentic Mid-Training (WM-AMT) to inject latent predictive capabilities into the policy; (ii) Format-Eliciting SFT (FE-SFT) to structure this injected capability; and (iii) Foresight-Conditioned Reinforcement Learning (FC-RL) to refine the calibration and utility of the generated simulations. Evaluated on search and mathematical reasoning tasks, our approach consistently outperforms other training baselines. Our results demonstrate that effective internal world modeling in LLM agents requires a capability-first training pipeline to achieve grounded and calibrated foresight.",
+  "category": "capabilities_and_how",
+  "category_confidence": "medium",
+  "speedrun": "Researchers have proposed a new training method for large language model (LLM) agents to enhance their decision-making abilities over longer tasks. Current models react to situations but lack the ability to simulate future outcomes like humans do. The new three-stage training paradigm aims to instill predictive capabilities, leading to better performance in tasks like search and mathematical reasoning. This matters now as it could significantly improve how AI plans and executes complex tasks.",
+  "why_it_matters": [
+    "This approach could directly enhance AI applications in fields requiring long-term planning, such as robotics and autonomous systems.",
+    "It signals a shift toward more proactive AI, potentially transforming industries reliant on predictive analytics and decision-making."
+  ],
+  "lenses": {
+    "eli12": "The new training method helps AI agents think ahead, similar to how people use 'what-if' scenarios to plan. By simulating future outcomes, these agents could make better decisions over time. This is important for everyday tasks where planning and foresight can lead to better results, like scheduling or budgeting.",
+    "pm": "For product managers, this new training paradigm addresses user needs for AI that can plan rather than just react. It promises improved efficiency in decision-making tasks, potentially reducing costs associated with trial-and-error approaches. A practical implication is that products could offer smarter automation features, enhancing user experience.",
+    "engineer": "The proposed training method involves a three-stage process: World Model Agentic Mid-Training (WM-AMT) to infuse predictive abilities, Format-Eliciting SFT (FE-SFT) to organize these capabilities, and Foresight-Conditioned Reinforcement Learning (FC-RL) to optimize the simulations. Evaluations show consistent performance improvements over traditional training methods, emphasizing the importance of a capability-first approach for internal world modeling."
+  },
+  "hype_meter": 5,
+  "model_meta": {
+    "model": "gpt-4o-mini",
+    "prompt_version": "v2.1"
+  },
+  "created_at": "2026-06-29T08:30:56.543Z",
+  "updated_at": "2026-06-29T08:30:56.543Z",
+  "processing_order": 1782721856545
+}
